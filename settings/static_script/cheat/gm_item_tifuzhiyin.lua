@@ -134,6 +134,7 @@ function admin_2()
 		"ßµo r≠¨ng di ÆÈng/ruongqt",
 		"Toc chay/tochay",
 		"NhÀn Chi’n T≠Óng/chientuong",
+		"NhÀn Ngua fake/nguafake",
 		"Nhan Ngua moi/nhanthucuoimoi",
 		-- "Nhan Ngua/tmkl",
 		"Nhan Kim Phieu/nhansen",
@@ -5935,4 +5936,11 @@ function  really_hotrogmer1st()
 		SetLevel(87, 1);
 		AddItem(2,1,30668,10);
 		Talk(1,"","Vui lﬂng tho∏t game vµ Æ®ng nhÀp lπi!")
+end
+
+function nguafake()
+	AddItem(0,105,220,1,1,7,403,7,-1,7,-1,7,0);
+	AddItem(0,105,221,1,1,7,403,7,-1,7,-1,7,0);
+	AddItem(0,105,222,1,1,7,403,7,-1,7,-1,7,0);
+	AddItem(0,105,223,1,1,7,403,7,-1,7,-1,7,0);
 end

@@ -226,6 +226,10 @@ function getfruit()
 				AddItem(2,1,30402,10)
 			end
 		end
+		if nDate_1 == 18 or nDate_1 == 22 then
+			AwardGenuineQi(100);
+			Msg2Player(format("C∏c hπ nhÀn Æ≠Óc %d Æi”m ch©n kh›", 100))
+		end
 		local rand = random(1,20)
 		if rand < 3 then
 			gf_AddItemEx2({2,1,30668,1,1}, "Tinh Hoa U»n Linh C p(Ng…u Nhi™n)", "nhÀn th≠Îng thµnh c´ng", "hoµn thµnh nhi÷m vÙ trÂng c©y B∏t Nh∑ LÌn", 30 * 24 * 3600, 1)
