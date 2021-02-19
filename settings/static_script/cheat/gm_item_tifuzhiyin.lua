@@ -141,6 +141,7 @@ function admin_2()
 		-- "Nhan Rac/NhanBua",
 		-- "NhËn admin Item_1/mtc",
 		-- "Kim Xa 3/Get_JinShe_admin",
+		"NhËn Cöu ChuyÓn Håi Hån §an/cuuchuyen",
 		"\nRa khái/nothing",
 	}
 	SelectSay(tSay);
@@ -1663,29 +1664,43 @@ function getkx3()
 end
 
 function Get_JinShe_2()
-AddItem(0,152,4,1,1,-1,-1,-1,-1,-1,-1,-1,0);
-AddItem(0,153,4,1,1,-1,-1,-1,-1,-1,-1,-1,0);
-AddItem(0,154,4,1,1,-1,-1,-1,-1,-1,-1,-1,0);
 
-AddItem(0,152,5,1,1,-1,-1,-1,-1,-1,-1,-1,0);
-AddItem(0,153,5,1,1,-1,-1,-1,-1,-1,-1,-1,0);
-AddItem(0,154,5,1,1,-1,-1,-1,-1,-1,-1,-1,0);
-
-AddItem(0,152,6,1,1,-1,-1,-1,-1,-1,-1,-1,0);
-AddItem(0,153,6,1,1,-1,-1,-1,-1,-1,-1,-1,0);
-AddItem(0,154,6,1,1,-1,-1,-1,-1,-1,-1,-1,0);
-
-AddItem(0,152,7,1,1,-1,-1,-1,-1,-1,-1,-1,0);
-AddItem(0,153,7,1,1,-1,-1,-1,-1,-1,-1,-1,0);
-AddItem(0,154,7,1,1,-1,-1,-1,-1,-1,-1,-1,0);
-
-AddItem(0,152,8,1,1,-1,-1,-1,-1,-1,-1,-1,0);
-AddItem(0,153,8,1,1,-1,-1,-1,-1,-1,-1,-1,0);
-AddItem(0,154,8,1,1,-1,-1,-1,-1,-1,-1,-1,0);
-
-AddItem(0,152,9,1,1,-1,-1,-1,-1,-1,-1,-1,0);
-AddItem(0,153,9,1,1,-1,-1,-1,-1,-1,-1,-1,0);
-AddItem(0,154,9,1,1,-1,-1,-1,-1,-1,-1,-1,0);
+local ret1, xIndex = AddItem(0,152,4,1,1,-1,-1,-1,-1,-1,-1,-1,0);
+FeedItem(xIndex,1000000)
+local ret1, xIndex = AddItem(0,153,4,1,1,-1,-1,-1,-1,-1,-1,-1,0);
+FeedItem(xIndex,1000000)
+local ret1, xIndex = AddItem(0,154,4,1,1,-1,-1,-1,-1,-1,-1,-1,0);
+FeedItem(xIndex,1000000)
+local ret1, xIndex = AddItem(0,152,5,1,1,-1,-1,-1,-1,-1,-1,-1,0);
+FeedItem(xIndex,1000000)
+local ret1, xIndex = AddItem(0,153,5,1,1,-1,-1,-1,-1,-1,-1,-1,0);
+FeedItem(xIndex,1000000)
+local ret1, xIndex = AddItem(0,154,5,1,1,-1,-1,-1,-1,-1,-1,-1,0);
+FeedItem(xIndex,1000000)
+local ret1, xIndex = AddItem(0,152,6,1,1,-1,-1,-1,-1,-1,-1,-1,0);
+FeedItem(xIndex,1000000)
+local ret1, xIndex = AddItem(0,153,6,1,1,-1,-1,-1,-1,-1,-1,-1,0);
+FeedItem(xIndex,1000000)
+local ret1, xIndex = AddItem(0,154,6,1,1,-1,-1,-1,-1,-1,-1,-1,0);
+FeedItem(xIndex,1000000)
+local ret1, xIndex = AddItem(0,152,7,1,1,-1,-1,-1,-1,-1,-1,-1,0);
+FeedItem(xIndex,1000000)
+local ret1, xIndex = AddItem(0,153,7,1,1,-1,-1,-1,-1,-1,-1,-1,0);
+FeedItem(xIndex,1000000)
+local ret1, xIndex = AddItem(0,154,7,1,1,-1,-1,-1,-1,-1,-1,-1,0);
+FeedItem(xIndex,1000000)
+local ret1, xIndex = AddItem(0,152,8,1,1,-1,-1,-1,-1,-1,-1,-1,0);
+FeedItem(xIndex,1000000)
+local ret1, xIndex = AddItem(0,153,8,1,1,-1,-1,-1,-1,-1,-1,-1,0);
+FeedItem(xIndex,1000000)
+local ret1, xIndex = AddItem(0,154,8,1,1,-1,-1,-1,-1,-1,-1,-1,0);
+FeedItem(xIndex,1000000)
+local ret1, xIndex = AddItem(0,152,9,1,1,-1,-1,-1,-1,-1,-1,-1,0);
+FeedItem(xIndex,1000000)
+local ret1, xIndex = AddItem(0,153,9,1,1,-1,-1,-1,-1,-1,-1,-1,0);
+FeedItem(xIndex,1000000)
+local ret1, xIndex = AddItem(0,154,9,1,1,-1,-1,-1,-1,-1,-1,-1,0);
+FeedItem(xIndex,1000000)
 end
 
 function Get_JinShe()
@@ -1992,7 +2007,7 @@ function Get_JinShe_3()
 				SetItemFeedUpAttrs(hIndex,188,183,181,-1,-1,-1)
 				FeedItem(hIndex,1000000)
 				local xie,xIndex	=AddItem(0,154,9,1,1,-1,-1,-1,-1,-1,-1,0,nLevel)
-				SetItemFeedUpAttrs(xIndex,188,183,181,7-1,-1,-1)
+				SetItemFeedUpAttrs(xIndex,188,183,181,-1,-1,-1)
 				FeedItem(xIndex,1000000)
 		end
 

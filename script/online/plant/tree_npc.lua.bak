@@ -217,15 +217,6 @@ function getfruit()
 				Msg2Player("Bπn nhÀn Æ≠Óc 10000000 kinh nghi÷m");
 			end
 		end
-		if GetLevel() == 99 then
-			ModifyExp(1000000);
-			Msg2Player("Bπn nhÀn Æ≠Óc 1000000 kinh nghi÷m");
-			if nDate_1 ~= 18 or nDate_1 == 22 then
-				ModifyExp(1000000);
-				Msg2Player("Bπn nhÀn Æ≠Óc 1000000 kinh nghi÷m");
-				AddItem(2,1,30402,10)
-			end
-		end
 		local rand = random(1,20)
 		if rand < 3 then
 			gf_AddItemEx2({2,1,30668,1,1}, "Tinh Hoa U»n Linh C p(Ng…u Nhi™n)", "nhÀn th≠Îng thµnh c´ng", "hoµn thµnh nhi÷m vÙ trÂng c©y B∏t Nh∑ LÌn", 30 * 24 * 3600, 1)
@@ -250,8 +241,7 @@ function getfruit()
 				Msg2Player("Bπn nhÀn Æ≠Óc 1 Th∏i H≠ B∏t Qu∏i Bµi");
 				WriteLog("[Hoπt ÆÈng trÂng c©y Th∏i H≠]:"..GetName().."NhÀn Æ≠Óc 1 Th∏i H≠ B∏t Qu∏i Bµi-Li");
 			end;		
-		end;
-		nRandomNum = random(1,200);
+		end;nRandomNum = random(1,200);
 		if nRandomNum == 1 then
 			if AddItem(2,1,474,1) == 1 then
 				Msg2Player("Bπn nhÀn Æ≠Óc 1 Th∏i H≠ B∏t Qu∏i Bµi");

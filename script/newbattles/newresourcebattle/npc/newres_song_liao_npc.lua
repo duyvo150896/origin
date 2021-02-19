@@ -258,8 +258,10 @@ function use_VIP_tainguyenchien()
 	local nExpVIPTNC = tAward_VIP[nPhongHam][1]* nDoubleExpFlag
 	if GetLevel() < 90 then
 		nExpVIPTNC = floor(nExpVIPTNC * 1.5)
+	elseif GetLevel() >= 90 and GetLevel() < 98 then
+		nExpVIPTNC = floor(nExpVIPTNC * 2)
 	end
-	if GetLevel() >  96 then
+	if GetLevel() >=  98 then
 		nExpVIPTNC = 40000000
 	end
 	ModifyExp(nExpVIPTNC)	

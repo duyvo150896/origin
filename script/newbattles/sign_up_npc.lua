@@ -502,8 +502,10 @@ function get_all_award(nType)
 		--< Added by SunZhuoshi
 		HBRewardInSmallBattleField();
 		-->
-		if GetLevel() >  96 then
+		if GetLevel() >=  98 then
 			nExpAward = floor(nExpAward*0.8)
+		elseif GetLevel() >=  90 and GetLevel() <  98 then
+			nExpAward = floor(nExpAward*2)
 		end
 		ModifyExp(nExpAward);
 		Msg2Player("B¹n nhËn ®­îc "..nExpAward.." ®iÓm kinh nghiÖm");	

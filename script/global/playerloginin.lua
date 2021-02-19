@@ -943,7 +943,12 @@ function main(ExchangeComing)
 --	ForgetPetSkillMain();
 	-- revert_chankhi();
 	-- removelevel99();
-	
+	-- if GetWorldPos() == 300 or  GetWorldPos() == 302 or  GetWorldPos() == 303 then
+		-- if date("%H") == 21 or date("%H") == 22 then
+			-- Msg2Player ("Tay Thanh Do");
+			-- SetPKFlag(2, 0);
+		-- end
+	-- end
 	-------------------------------------------------------
 end;
 --*****************************删除过期物品*************************

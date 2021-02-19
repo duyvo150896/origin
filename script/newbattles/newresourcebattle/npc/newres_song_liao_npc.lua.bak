@@ -167,7 +167,6 @@ function finish_newres_task_more()
 		return
 	end
 	local nQuest = 4
-	Msg2Player(nQuest)
 	local nPetLevel = mod(GetTask(TASK_VNG_PET), 100)
 --	local nIsPS = mod(floor(GetTask(TSK_PET_PS_GIAIDOAN_B)/10),10)
 	
@@ -250,17 +249,19 @@ function use_VIP_tainguyenchien()
 	end	
 	local nPhongHam = abs(GetTask(704))	
 	local tAward_VIP = {
-		[2] = {18000000,4600},
-		[3] = {25000000,4600},
-		[4] = {30000000,4600},
-		[5] = {32000000,4600},
-		[6] = {35000000,4600},
+		[2] = {18000000,5600},
+		[3] = {25000000,5600},
+		[4] = {30000000,5600},
+		[5] = {32000000,5600},
+		[6] = {35000000,5600},
 	}	
 	local nExpVIPTNC = tAward_VIP[nPhongHam][1]* nDoubleExpFlag
 	if GetLevel() < 90 then
 		nExpVIPTNC = floor(nExpVIPTNC * 1.5)
+	else if GetLevel() >= 90 and GetLevel() < 98 then
+		nExpVIPTNC = floor(nExpVIPTNC * 2)
 	end
-	if GetLevel() >  96 then
+	if GetLevel() >=  98 then
 		nExpVIPTNC = 40000000
 	end
 	ModifyExp(nExpVIPTNC)	
@@ -273,9 +274,9 @@ function use_VIP_tainguyenchien()
 	Msg2Player("B¹n nhËn ®­îc "..tAward_VIP[nPhongHam][2].." ®iÓm c«ng tr¹ng")
 	gf_WriteLogEx("TAI NGUYEN CHIEN NEW LOG", "nhËn th­ëng thµnh c«ng", 1, "NhËn th­ëng lo¹i VIP")
 	local nDate = tonumber(date("%y%m%d"))
-	if nDate >= 130919 and nDate <=131013 then	
-		gf_AddItemEx2({2,1,30567 ,500}, "Nguyªn liÖu Event VIP TNC", "Hoat dong thang 08 nam 2013", "hoµn thµnh nhiÖm vô Tµi Nguyªn ChiÕn VIP")
-		Msg2Player("B¹n nhËn ®­îc 500 Nguyªn LiÖu Event")
+	if nDate >= 130919 and nDate <=331013 then	
+		gf_AddItemEx2({2,1,30400 ,100}, "Nguyªn liÖu Event", "Hoat dong thang 02 nam 2021", "hoµn thµnh nhiÖm vô Tµi Nguyªn ChiÕn VIP")
+		Msg2Player("B¹n nhËn ®­îc 100 Nguyªn LiÖu Event")
 	end
 	gf_SetTaskByte(TSK_NEWRES_FINISH,BYTE_NEWRES_STATE,0)	
 	gf_SetTaskByte(TSK_NEWRES_FINISH,BYTE_NEWRES_DONE,gf_GetTaskByte(TSK_NEWRES_FINISH,BYTE_NEWRES_DONE) + 1)

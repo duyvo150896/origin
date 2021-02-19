@@ -270,7 +270,36 @@ g_tInfo = {
 		tLimitSkill	= {20},
 		bLimitInteractive	= 1;
 	},
-
+       [219]	= {
+		tItem		= {0, 105, 219},
+		nEffectID	= 219,
+		tLimitSkill	= {20},
+		bLimitInteractive	= 1;
+	},
+       [220]	= {
+		tItem		= {0, 105, 220},
+		nEffectID	= 220,
+		tLimitSkill	= {20},
+		bLimitInteractive	= 1;
+	},
+       [221]	= {
+		tItem		= {0, 105, 221},
+		nEffectID	= 221,
+		tLimitSkill	= {20},
+		bLimitInteractive	= 1;
+	},
+       [222]	= {
+		tItem		= {0, 105, 222},
+		nEffectID	= 222,
+		tLimitSkill	= {20},
+		bLimitInteractive	= 1;
+	},
+       [223]	= {
+		tItem		= {0, 105, 223},
+		nEffectID	= 223,
+		tLimitSkill	= {20},
+		bLimitInteractive	= 1;
+	},
 
 };
 
