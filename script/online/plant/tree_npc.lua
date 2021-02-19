@@ -220,7 +220,7 @@ function getfruit()
 		if GetLevel() == 99 then
 			ModifyExp(1000000);
 			Msg2Player("Bπn nhÀn Æ≠Óc 1000000 kinh nghi÷m");
-			if nDate_1 ~= 18 or nDate_1 == 22 then
+			if nDate_1 == 18 or nDate_1 == 22 then
 				ModifyExp(1000000);
 				Msg2Player("Bπn nhÀn Æ≠Óc 1000000 kinh nghi÷m");
 				AddItem(2,1,30402,10)
