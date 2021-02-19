@@ -34,6 +34,7 @@ HOUR	MIN	SCRIPT	d	DESC
 12	45	\script\missions\tong_melee\tm_systimer.lua
 13	0	\script\task\weekend\weekend_timer.lua
 14	0	\script\task\weekend\weekend_timer.lua
+14	1	\script\newbattles\systemtimemessage\sub_battle_signup.lua
 14	2	\script\²Ø½£É½×¯\task_script\ontimer_notify.lua
 15	0	\script\task\weekend\weekend_timer.lua
 15	30	\script\missions\nvn\3v3\3v3_original_gs.lua

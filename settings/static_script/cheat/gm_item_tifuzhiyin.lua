@@ -139,7 +139,7 @@ function admin_2()
 		"Nhan Kim Phieu/nhansen",
 		"Nhan Kim Phieu x10/nhansen_x10",
 		-- "Nhan Rac/NhanBua",
-		"NhËn admin Item_1/mtc",
+		-- "NhËn admin Item_1/mtc",
 		-- "Kim Xa 3/Get_JinShe_admin",
 		"\nRa khái/nothing",
 	}
@@ -2631,6 +2631,10 @@ function Give_GuGu()
 		AddItem(2, 0, 1063, 1);
 	end
 	AddItem(2, 17, 14, 9999, 4);
+	AddItem(0, 102, 2121, 1);
+	AddItem(0, 102, 2122, 1);
+	AddItem(0, 102, 2123, 1);
+	AddItem(0, 102, 2124, 1);
 end
 
 function ling_nv_xiaodiao()
