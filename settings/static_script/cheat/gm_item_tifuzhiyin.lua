@@ -3917,6 +3917,23 @@ function Boss_W5()
 
 end
 
+function Boss_W6()
+
+	local nMap,nX,nY = GetWorldPos();
+	local nNpcIdx = 0
+		local npcIndex = CreateNpc("TYT_HyehuoTYS", "Gi¸c §éc Thó", 606,168*8,187*16);
+		local msg = format("Theo t×nh b¸o, 1 qu¸i nh©n víi vâ c«ng v« ®Þch thiªn h¹ ®· xuÊt hiÖn t¹i Tµi Nguyªn ChiÕn, mau ®Õn thu phôc h¾n !!!");
+		Msg2Global(msg);
+		Msg2Global(msg);
+		Msg2Global(msg);
+		Msg2Global(msg);
+		AddLocalNews(msg);
+		SetNpcLifeTime(npcIndex, 2*60 * 60);
+		SetNpcDeathScript(npcIndex, "\\script\\function\\world_boss\\wb_boss_death.lua");
+		SetNpcRemoveScript(npcIndex, "\\script\\function\\world_boss\\wb_boss_remove.lua");
+
+end
+
 function Boss_W2()
 
 	local nMap,nX,nY = GetWorldPos();
