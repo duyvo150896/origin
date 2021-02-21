@@ -366,9 +366,17 @@ function Boss_LanHoa()
 	local npcIndex = 0
 	npcIndex = CreateNpc("lanhua_viet","Lan Hoa", nMap, nX + 2, nY + 2,-1,1,1,30)
 	--Msg2Global("Cã ng­êi nh×n thÊy Lan Hoa ®ang ë t©y TuyÒn Ch©u 181/190, mau ®Õn ®ã xem!")
-	SetNpcLifeTime(npcIndex, 7200)
-	SetNpcScript(npcIndex, "\\script\\online\\viet_event\\lanhua_boss\\lanhua_boss.lua")
-
+	-- SetNpcLifeTime(npcIndex, 7200)
+	-- SetNpcScript(npcIndex, "\\script\\online\\viet_event\\lanhua_boss\\lanhua_boss.lua")
+		local msg = format("Cã ng­êi nh×n thÊy Lan Hoa ®ang ë H¹nh Hoa Th«n, mau ®Õn ®ã xem! !!!");
+		Msg2Global(msg);
+		Msg2Global(msg);
+		Msg2Global(msg);
+		Msg2Global(msg);
+		AddLocalNews(msg);
+		SetNpcLifeTime(npcIndex, 2*60 * 60);
+		SetNpcDeathScript(npcIndex, "\\script\\function\\world_boss\\wb_boss_death.lua");
+		SetNpcRemoveScript(npcIndex, "\\script\\function\\world_boss\\wb_boss_remove.lua");
 end
 
 function Boss_AnhTu()
@@ -376,9 +384,18 @@ function Boss_AnhTu()
 	local nMap,nX,nY = GetWorldPos();
 	local npcIndex = 0
 	npcIndex = CreateNpc("yingzi_viet","Anh Tö", nMap, nX + 2, nY + 2,-1,1,1,30)
-	--Msg2Global("Cã ng­êi nh×n thÊy Anh Tö  ®ang ë t©y TuyÒn Ch©u 179/192, mau ®Õn ®ã xem!")
-	SetNpcLifeTime(npcIndex, 7200)
-	SetNpcScript(npcIndex, "\\script\\online\\viet_event\\lanhua_boss\\lanhua_boss.lua")
+	--Msg2Global("Cã ng­êi nh×n thÊy Lan Hoa ®ang ë t©y TuyÒn Ch©u 181/190, mau ®Õn ®ã xem!")
+	-- SetNpcLifeTime(npcIndex, 7200)
+	-- SetNpcScript(npcIndex, "\\script\\online\\viet_event\\lanhua_boss\\lanhua_boss.lua")
+		local msg = format("Cã ng­êi nh×n thÊy Lan Hoa ®ang ë H¹nh Hoa Th«n, mau ®Õn ®ã xem! !!!");
+		Msg2Global(msg);
+		Msg2Global(msg);
+		Msg2Global(msg);
+		Msg2Global(msg);
+		AddLocalNews(msg);
+		SetNpcLifeTime(npcIndex, 2*60 * 60);
+		SetNpcDeathScript(npcIndex, "\\script\\function\\world_boss\\wb_boss_death.lua");
+		SetNpcRemoveScript(npcIndex, "\\script\\function\\world_boss\\wb_boss_remove.lua");
 
 end
 
@@ -3015,6 +3032,7 @@ function Get_Mored()
 		-- "NhËn M¸u /receiveTiLi",
 		"NhËn B¸nh Ng«/banhngo",
 		-- "NhËn TT3 LL3 TT4 LL4/ttll3",
+		 "NhËn TT1 LL/ttll1",
 		-- "NhËn Thiªn NghÜa/thienghia",
 		-- "NhËn Thiªn Chi tµng KiÕm/tctk",
 --		"HHVD/huyhoang5",
@@ -4197,13 +4215,13 @@ function DoBuffNMK()
 	-- }
 	-- Say(g_szTitle.."------------------", getn(tSay), tSay);
 	
-	AddItem(0,110,516,1,1,-1,-1,3,484,7,41,-1,0);
-	AddItem(0,109,516,1,1,-1,-1,3,484,7,41,-1,0);
-	AddItem(0,108,516,1,1,-1,-1,3,484,7,41,-1,0);
+	AddItem(0,110,516,1,1,3,484,7,41,-1,0);
+	AddItem(0,109,516,1,1,3,484,7,41,-1,0);
+	AddItem(0,108,516,1,1,3,484,7,41,-1,0);
 	
-	AddItem(0,110,517,1,1,-1,-1,3,484,7,41,-1,0);
-	AddItem(0,109,517,1,1,-1,-1,3,484,7,41,-1,0);
-	AddItem(0,108,517,1,1,-1,-1,3,484,7,41,-1,0);
+	AddItem(0,110,517,1,1,3,484,7,41,-1,0);
+	AddItem(0,109,517,1,1,3,484,7,41,-1,0);
+	AddItem(0,108,517,1,1,3,484,7,41,-1,0);
 end
 
 --Gia nhËp Ph¸i
@@ -4431,7 +4449,10 @@ function ttll3()
 	-- AddItem(2,1,30530,999);
 end
 
-
+function ttll1()
+	AddItem(2,1,30521,999);
+	AddItem(2,1,30527,999);
+end
 g_szTitleMain = "<color=green>Kim xµ 7: <color> Thuéc tÝnh tù chän vµ cao nhÊt"
 function Get_kx7()
 	local tSay = {

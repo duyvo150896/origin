@@ -7,6 +7,8 @@ WB_WORLD_BOSS = {
 	[3] = {"WorldBoss_TJ", "Ngäc S¬n Chi Linh Thiªn Cöu"},
 	[4] = {"WorldBoss_MW", "U Tr¹ch Chi ¶nh Minh Vâ"},
 	[5] = {"WorldBoss_dfbb", "§«ng Ph­¬ng BÊt B¹i"},
+	[6] = {"lanhua_viet", "Lan Hoa"},
+	[7] = {"yingzi_viet", "Anh Tö"},
 }
 
 WB_WORLD_BOSS_MAP = {

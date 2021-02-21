@@ -22,9 +22,9 @@ g_szFileName = "lanhua_bag.lua"					--ÎÄ¼þÃû
 g_tbItem = 
 {
 	--		ÀàÐÍ	   ¸ÅÂÊ	ÊýÁ¿ Ãû×Ö	ID1,ID2,ID3
-	[1] = {TYPE_EQUIP,	50,	1,	"§«ng Ph­¬ng Long Ch©u",	0,	102,	24,	},
-	[2] = {TYPE_EQUIP,	25,	1,	"Nh­ ý",		0,	102,	23,	},
-	[3] = {TYPE_EQUIP,	25,	1,	"C¸t T­êng",		0,	102,	22,	},
+	[1] = {TYPE_EQUIP,	20,	1,	"§«ng Ph­¬ng Long Ch©u",	0,	102,	24,	},
+	[2] = {TYPE_EQUIP,	40,	1,	"Nh­ ý",		0,	102,	23,	},
+	[3] = {TYPE_EQUIP,	40,	1,	"C¸t T­êng",		0,	102,	22,	},
 }
 
 
