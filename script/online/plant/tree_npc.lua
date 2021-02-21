@@ -201,46 +201,55 @@ function getfruit()
 			Msg2Player("Bπn nhÀn Æ≠Óc 20 vπn kinh nghi÷m");
 			WriteLog("[Hoπt ÆÈng trÂng c©y Th∏i H≠]:"..GetName().."NhÀn Æ≠Óc 20 vπn kinh nghi÷m");
 		end;
-		if GetLevel() < 90 then
-			if nRandomNum <= 100 then
-				ModifyExp(5000000);	--∂˛ ÆÕÚæ≠—È
-				Msg2Player("Bπn nhÀn Æ≠Óc 500 vπn kinh nghi÷m");
-				WriteLog("[Hoπt ÆÈng trÂng c©y Th∏i H≠]:"..GetName().."NhÀn Æ≠Óc 500 vπn kinh nghi÷m");
-			end;
-		end
+		-- if GetLevel() < 90 then
+			-- if nRandomNum <= 100 then
+				-- ModifyExp(5000000);	--∂˛ ÆÕÚæ≠—È
+				-- Msg2Player("Bπn nhÀn Æ≠Óc 500 vπn kinh nghi÷m");
+				-- WriteLog("[Hoπt ÆÈng trÂng c©y Th∏i H≠]:"..GetName().."NhÀn Æ≠Óc 500 vπn kinh nghi÷m");
+			-- end;
+		-- end
 		local nDate_1 =  tonumber(date("%H"))
-		if GetLevel() < 98 and GetLevel() >= 90 then
-			ModifyExp(10000000);
-			Msg2Player("Bπn nhÀn Æ≠Óc 10000000 kinh nghi÷m");
-			if nDate_1 == 18 or nDate_1 == 22 then
-				ModifyExp(10000000);
-				Msg2Player("Bπn nhÀn Æ≠Óc 10000000 kinh nghi÷m");
-			end
-		end
-		if GetLevel() == 99 then
-			ModifyExp(1000000);
-			Msg2Player("Bπn nhÀn Æ≠Óc 1000000 kinh nghi÷m");
-			if nDate_1 == 18 or nDate_1 == 22 then
-				ModifyExp(1000000);
-				Msg2Player("Bπn nhÀn Æ≠Óc 1000000 kinh nghi÷m");
-				AddItem(2,1,30402,10)
-			end
-		end
-		if nDate_1 == 18 or nDate_1 == 22 then
-			AwardGenuineQi(100);
-			Msg2Player(format("C∏c hπ nhÀn Æ≠Óc %d Æi”m ch©n kh›", 100))
-		end
+		-- if GetLevel() < 98 and GetLevel() >= 90 then
+			-- ModifyExp(10000000);
+			-- Msg2Player("Bπn nhÀn Æ≠Óc 10000000 kinh nghi÷m");
+			-- if nDate_1 == 18 or nDate_1 == 22 then
+				-- ModifyExp(10000000);
+				-- Msg2Player("Bπn nhÀn Æ≠Óc 10000000 kinh nghi÷m");
+			-- end
+		-- end
+		-- if GetLevel() == 99 then
+			-- ModifyExp(1000000);
+			-- Msg2Player("Bπn nhÀn Æ≠Óc 1000000 kinh nghi÷m");
+			-- if nDate_1 == 18 or nDate_1 == 22 then
+				-- ModifyExp(1000000);
+				-- Msg2Player("Bπn nhÀn Æ≠Óc 1000000 kinh nghi÷m");
+				-- AddItem(2,1,30402,10)
+			-- end
+		-- end
+		-- if nDate_1 == 18 or nDate_1 == 22 then
+			-- AwardGenuineQi(100);
+			-- Msg2Player(format("C∏c hπ nhÀn Æ≠Óc %d Æi”m ch©n kh›", 100))
+		-- end
 		local rand = random(1,20)
-		if rand < 3 then
-			gf_AddItemEx2({2,1,30668,1,1}, "Tinh Hoa U»n Linh C p(Ng…u Nhi™n)", "nhÀn th≠Îng thµnh c´ng", "hoµn thµnh nhi÷m vÙ trÂng c©y B∏t Nh∑ LÌn", 30 * 24 * 3600, 1)
+		-- if rand < 3 then
+			-- gf_AddItemEx2({2,1,30668,1,1}, "Tinh Hoa U»n Linh C p(Ng…u Nhi™n)", "nhÀn th≠Îng thµnh c´ng", "hoµn thµnh nhi÷m vÙ trÂng c©y B∏t Nh∑ LÌn", 30 * 24 * 3600, 1)
+		-- end
+		if rand < 10 then
+			AddItem(1,1,14,10);
+			AddItem(1,1,16,10);
+			AddItem(1,1,18,10);
 		end
 		nRandomNum = random(1,100);
-		if nRandomNum <= 10 then
-			if AddItem(1,0,32,2) == 1 then
-				Msg2Player("Bπn nhÀn Æ≠Óc 2 Cˆu Chuy”n Hoµn HÂn ß¨n");
-				WriteLog("[Hoπt ÆÈng trÂng c©y Th∏i H≠]:"..GetName().."NhÀn Æ≠Óc 2 Cˆu Chuy”n Hoµn HÂn ß¨n");
+		if nRandomNum <= 50 then
+			if AddItem(1,0,32,10) == 1 then
+				Msg2Player("Bπn nhÀn Æ≠Óc 10 Cˆu Chuy”n Hoµn HÂn ß¨n");
+				WriteLog("[Hoπt ÆÈng trÂng c©y Th∏i H≠]:"..GetName().."NhÀn Æ≠Óc 10 Cˆu Chuy”n Hoµn HÂn ß¨n");
 			end;		
 		end;
+		local ranmt = random(1,32);
+		if nRandomNum <= 20 then
+			AddItem(0,107,ranmt,1)
+		end
 		nRandomNum = random(1,100);
 		if nRandomNum <= 20 then
 			if AddItem(2,2,8,3) == 1 then

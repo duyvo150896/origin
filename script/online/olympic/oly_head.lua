@@ -14,8 +14,8 @@ OLY_ACTIVITY_DURATION = 172800000 --3600 * 24 * 2000days
 
 --活动开始时间(根据格式调整)!!!!!!!!!
 --activity start time
---ACTIVITY_START_DATE = {2012,7,6} --{year，mouth，day}
-ACTIVITY_START_DATE = {2020,1,1} --{year，mouth，day}
+ACTIVITY_START_DATE = {2012,7,6} --{year，mouth，day}
+-- ACTIVITY_START_DATE = {2020,1,1} --{year，mouth，day}
 
 --活动开启时间判断
 function oly_IsActivityOpen()
