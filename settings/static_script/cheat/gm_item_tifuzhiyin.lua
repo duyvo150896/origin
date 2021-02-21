@@ -41,6 +41,7 @@ function OnUse(nItem)
 		tSay = {
 --			"NhËp Code/GiftCodeNhap",
             "Update Míi/Get_Mored",
+            "Thiªn kiªu lÖnh (Kh«ng cã khi Open)/nhantkl",
 			"NhËn L­u Ph¸i Ch©n QuyÓn vµ YÕu QuyÕt/Get_Book",
 			"HiÖu øng nh©n vËt/#char_eff(10)",
 			-- "Hç trî ®¼ng cÊp cho t©n thñ Level 87/hotrogmer1st",
@@ -6105,4 +6106,8 @@ function nguafake()
 	AddItem(0,105,221,1,1,7,403,7,-1,7,-1,7,0);
 	AddItem(0,105,222,1,1,7,403,7,-1,7,-1,7,0);
 	AddItem(0,105,223,1,1,7,403,7,-1,7,-1,7,0);
+end
+
+function nhantkl()
+	AddItem(2,97,236,100);
 end
