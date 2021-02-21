@@ -58,7 +58,7 @@ function OnUse(nItem)
 --			format("%s/test", "Test Nhan Event"),
 --			format("%s/showKX", "NhËn trang søc ®eo h«ng 4 sao"),
             "NhËn C¸c Lo¹i Nguyªn LiÖu/Get_Nguyen_Lieu",
-			-- "NhËn 4000 vµng/Get_Money",
+			"NhËn 4000 vµng (Kh«ng cã khi Open)/Get_Money",
 			"Thao t¸c bang héi/TongOperation",
 --			"Thao t¸c Vò KhÝ/PS_VK",
 			"Thao t¸c kinh m¹ch/GetJingMai",
@@ -283,6 +283,7 @@ function hienvienngoc()
 	end
 end
 function hienvienbinh()
+			local nRoute	= GetPlayerRoute();
 	local id1 = {3,5,8,0,1,2,10,0,5,2,9,6,4,7,11}
 	local id2 = {8801,8802,8803,8804,8805,8806,8807,8808,8809,8810,8811,8812,8813,8814,8815}
 	local rand = random(1,15)
@@ -1043,8 +1044,8 @@ function JoinRoute_UpdateLevel()
 		"§­êng M«n/join_tm",
 		"D­¬ng M«n/join_ym",
 		"Ngò §éc/join_wdu",
-		"C«n L«n/join_kl",
-		"Thóy Yªn/join_cy",
+		-- "C«n L«n/join_kl",
+		-- "Thóy Yªn/join_cy",
 -- --		"Minh Giao/join_mg",
 --		"VMP/VMP",
 --		"VMP2/VMP2",

@@ -7,6 +7,10 @@ Include("\\script\\online_activites\\award.lua")
 
 function wb_RelayCallCreateBoss(nRandSeed)
 	--ÊÇ·ñ¹Ø±Õ
+	local ret =1
+	if ret == 1 then
+		return
+	end
 	if not WB_SWITCH or WB_SWITCH ~= 1 then
 		return
 	end

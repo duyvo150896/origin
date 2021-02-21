@@ -9,9 +9,10 @@ function OnDeath(id, f, x)
 	if f == 0 then
 		killer = GetName();
 		if nMap == 202 then
-			AddItem(2,1,30072,2);
+				AddItem(2,1,30072,8);
+		else
+			gf_TeamOperateEX(wb_KillAward);
 		end
-		gf_TeamOperateEX(wb_KillAward);
 	end
 	local msg = format("Sau mét håi chiÕn ®Êu kÞch liÖt, cuèi cïng BOSS %s ®· bÞ %s tiªu diÖt thµnh c«ng.", npcName, killer);
 	Msg2Global(msg);
