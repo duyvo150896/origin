@@ -56,9 +56,9 @@ function OnUse(nItemIdx)
 	
 	-- local nUsed = mod(GetTask(TSK_LUCKY_STAR_201011), 10)	
 	local nUsed = mod(GetTask(TSK_LUCKY_STAR_201011), 100) 				-- 2 so cuoi luu so lan su dung trong ngay
-	if GetLevel() < 90 then
-		LUCKY_STAR_MAX_USE = 16
-	end
+	-- if GetLevel() < 90 then
+		-- LUCKY_STAR_MAX_USE = 16
+	-- end
 	
 	if nUsed >= LUCKY_STAR_MAX_USE then
 		Talk(1,"","Mçi ngµy chØ cã thÓ sö dông "..LUCKY_STAR_MAX_USE.." Ng«i Sao May M¾n")

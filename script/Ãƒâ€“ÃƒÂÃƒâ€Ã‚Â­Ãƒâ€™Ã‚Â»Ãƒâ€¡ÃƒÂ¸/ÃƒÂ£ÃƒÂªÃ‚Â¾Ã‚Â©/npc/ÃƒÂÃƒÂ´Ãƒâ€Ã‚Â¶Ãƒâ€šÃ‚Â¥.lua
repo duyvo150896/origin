@@ -16,10 +16,10 @@ function main()
 			-- if GetGlbValue(GLB_TSK_SERVER_ID) == 92 then -- Server Háa Phông
 				local tbSay = {}
 				local nDate = tonumber(date("%Y%m%d"))
-				if nDate >= 20141121 then
-					tinsert(tbSay,"Ta muèn nhËn ®iÓm cña chiÕn tr­êng 4x/Denbu_NhanThuong4x")
-					tinsert(tbSay,"Ta muèn nhËn ®iÓm cña chiÕn tr­êng 6x/Denbu_NhanThuong6x")
-				end
+				-- if nDate >= 20141121 then
+					-- tinsert(tbSay,"Ta muèn nhËn ®iÓm cña chiÕn tr­êng 4x/Denbu_NhanThuong4x")
+					-- tinsert(tbSay,"Ta muèn nhËn ®iÓm cña chiÕn tr­êng 6x/Denbu_NhanThuong6x")
+				-- end
 				
 				tinsert(tbSay,"Rêi khái/gf_DoNothing")
 				Say(szNpcName.."§Ó cã thÓ bï ®¾p hÕt mäi lçi lÇm, c¸c h¹ h·y chän phÇn th­ëng cho m×nh. \n",getn(tbSay),tbSay)

@@ -83,7 +83,7 @@ L­u Thñy HiÖu	Tr¹ng th¸i (1 më 0 ®ãng)	Script ban ®Çu cña ho¹t ®éng	Server run f
 82	1	\script\online_activites\head\init.lua	ServerStartUp	PlayerLogin	2013021400	2013022900	Event lÔ t×nh nh©n 2013
 83	1	\script\online_activites\head\init.lua	ServerStartUp	PlayerLogin	2013030800	2013041500	Event quèc tÕ phô n÷ 2013
 84	1	\script\online_activites\head\init.lua	ServerStartUp	PlayerLogin	2013030800	2013041500	Event tÆng quµ quèc tÕ phô n÷ 2013
-85	1	\script\online_activites\head\init.lua	ServerStartUp	PlayerLogin	2013041900	2013051300	Event quèc tÕ lao ®éng 2013
+85	1	\script\online_activites\head\init.lua	ServerStartUp	PlayerLogin	2013041900	2014051300	Event quèc tÕ lao ®éng
 86	1	\script\online_activites\head\init.lua	ServerStartUp	PlayerLogin	2013041900	2013051300	Event h©u ph­¬n v÷ng ch¾c 2013
 87	1	\script\online_activites\head\init.lua	ServerStartUp	PlayerLogin	2013051700	2013061000	Event m¸t l¹nh mïa hÌ n¨m 2013
 88	1	\script\online_activites\head\init.lua	ServerStartUp	PlayerLogin	2013051700	2013061500	Event hoa hång th¸ng 5 n¨m 2013
@@ -105,7 +105,7 @@ L­u Thñy HiÖu	Tr¹ng th¸i (1 më 0 ®ãng)	Script ban ®Çu cña ho¹t ®éng	Server run f
 104	1	\script\online_activites\head\init.lua	ServerStartUp	PlayerLogin	2013111500	2013121600	Event phô th¸ng 11 n¨m 2014
 105	1	\script\online_activites\head\init.lua	ServerStartUp	PlayerLogin	2013122000	2014011300	Event chÝnh th¸ng 12 n¨m 2013
 106	1	\script\online_activites\head\init.lua	ServerStartUp	PlayerLogin	2013122000	2014011300	Event phô th¸ng 12 n¨m 2013
-107	1	\script\online_activites\head\init.lua	ServerStartUp	PlayerLogin	2014011700	2024021700	Event chÝnh th¸ng 1 n¨m 2014
+107	1	\script\online_activites\head\init.lua	ServerStartUp	PlayerLogin	2014011700	2014021700	Event chÝnh th¸ng 1 n¨m 2014
 108	1	\script\online_activites\head\init.lua	ServerStartUp	PlayerLogin	2014011700	2014021700	Event phô 1 th¸ng 1 n¨m 2014
 109	1	\script\online_activites\head\init.lua	ServerStartUp	PlayerLogin	2014012500	2014020900	Event phô 2 th¸ng 1 n¨m 2014
 110	1	\script\online_activites\head\init.lua	ServerStartUp	PlayerLogin	2014021300	2014021600	Event phô 3 th¸ng 1 n¨m 2014
@@ -136,6 +136,6 @@ L­u Thñy HiÖu	Tr¹ng th¸i (1 më 0 ®ãng)	Script ban ®Çu cña ho¹t ®éng	Server run f
 135	1	\script\online_activites\head\init.lua	ServerStartUp	PlayerLogin	2014100400	2014110100	Ho¹t ®éng th¸ng 10/2014
 136	1	\script\online_activites\head\init.lua	ServerStartUp	PlayerLogin	2014100400	2014110100	Ho¹t ®éng phô th¸ng 10/2014
 137	1	\script\online_activites\head\init.lua	ServerStartUp	PlayerLogin	2014100500	2014110100	Ho¹t ®éng phô th¸ng 10/2014
-138	1	\script\online_activites\head\init.lua	ServerStartUp	PlayerLogin	2014110700	2014120100	Ho¹t ®éng 11/2014
+138	1	\script\online_activites\head\init.lua	ServerStartUp	PlayerLogin	2014110700	2014120100	Ho¹t ®éng Nhµ Gi¸o ViÖt Nam
 139	1	\script\online_activites\head\init.lua	ServerStartUp	PlayerLogin	2014110700	2014120100	Ho¹t ®éng phô 11/2014
 140	1	\script\online_activites\head\init.lua	ServerStartUp	PlayerLogin	2014110700	2014120100	Ho¹t ®éng phô 11/2014

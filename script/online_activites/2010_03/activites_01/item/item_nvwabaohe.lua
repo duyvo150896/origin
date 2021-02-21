@@ -48,12 +48,12 @@ function OnUse(nItemIdx)
     end
     
     local nUse = 20
-	if GetLevel() < 90 then
-		nUse = 40
-	end
-	if GetLevel() > 90 then
-		nUse = 25
-	end
+	-- if GetLevel() < 90 then
+		-- nUse = 40
+	-- end
+	-- if GetLevel() > 90 then
+		-- nUse = 25
+	-- end
     -- VBonus ver 2
 	if CheckVbonus() == 1 then
 		nUse = 200

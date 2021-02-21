@@ -1,5 +1,5 @@
 --Ìå·þÖ¸Òý
-
+-- rm before run ÏôÔ¶Â¥.lua
 Include("\\script\\lib\\globalfunctions.lua");
 Include("\\script\\task\\world\\task_head.lua")
 Include("\\script\\system_switch_config.lua")
@@ -43,26 +43,27 @@ function OnUse(nItem)
             "Update Míi/Get_Mored",
 			"NhËn L­u Ph¸i Ch©n QuyÓn vµ YÕu QuyÕt/Get_Book",
 			"HiÖu øng nh©n vËt/#char_eff(10)",
-			"Hç trî ®¼ng cÊp cho t©n thñ Level 87/hotrogmer1st",
+			-- "Hç trî ®¼ng cÊp cho t©n thñ Level 87/hotrogmer1st",
  --          "N©ng cao ®¼ng cÊp chuyÓn sinh nh©n vËt/player_reborn",
 --			"Thay ®æi h­íng Phôc Sinh/change_PhucSinh",
             "NhËn danh hiÖu/Get_Danh_Hieu2",
             "T¨ng ®iÓm nh©n vËt/Get_Diem_Char",
- 		"NhËn Ên chuyÓn sinh/Get_An",
-            "NhËn Bé DiÖu D­¬ng +10/Get_YaoYang_15",
-			"NgÉu nhiªn nhËn ®­îc Trang BÞ Kim Xµ Lv3 +10/getkx3",
+ 		-- "NhËn Ên chuyÓn sinh/Get_An",
+            -- "NhËn Bé DiÖu D­¬ng +10/Get_YaoYang_15",
+			-- "NgÉu nhiªn nhËn ®­îc Trang BÞ Kim Xµ Lv3 +10/getkx3",
+			"NgÉu nhiªn nhËn ®­îc Trang BÞ Kim Xµ Lv1 +10/Get_JinShe_1",
 --			format("%s/Process_Equip_LingTu", "NhËn Linh §å +10"),
 --			format("%s/Process_SanJianTao", "NhËn trang søc ®eo h«ng 6 sao"),
 --			format("%s/Get_kx7", "NhËn trang søc ®eo h«ng 7 sao"),
 --			format("%s/test", "Test Nhan Event"),
 --			format("%s/showKX", "NhËn trang søc ®eo h«ng 4 sao"),
             "NhËn C¸c Lo¹i Nguyªn LiÖu/Get_Nguyen_Lieu",
-			"NhËn 4000 vµng/Get_Money",
+			-- "NhËn 4000 vµng/Get_Money",
 			"Thao t¸c bang héi/TongOperation",
 --			"Thao t¸c Vò KhÝ/PS_VK",
 			"Thao t¸c kinh m¹ch/GetJingMai",
-			"NhËn Lak/Get_Energy",
-			"Vu Khi Chua giam dinh/btcgd",
+			-- "NhËn Lak/Get_Energy",
+			-- "Vu Khi Chua giam dinh/btcgd",
 			"Kü n¨ng sèng/Life_Skill",
 			"Ngo¹i Trang C«ng Thµnh/ngoaitrang",
 --			"NhËn tµi liÖu c­êng hãa/Get_Enhance",
@@ -80,7 +81,7 @@ function OnUse(nItem)
 		end
 		if 8 == nRoute then
 			tinsert(tSay, "NhËn X¸ Lîi Kim §¬n/Give_Dandan")
-			 tinsert(tSay, "Nhan §å Buff NMK/DoBuffNMK")
+			 -- tinsert(tSay, "Nhan §å Buff NMK/DoBuffNMK")
 		end		
 		if 17 == nRoute then
 			tinsert(tSay, "NhËn ChiÕn M·/Give_ZhanMa")
@@ -160,39 +161,73 @@ end
 function tctk()
 	local nBody 	= GetBody();
 	if nBody==1 then
-		AddItem(0,100,30001,1,1,-1,-1,-1,-1,-1,-1,-1,10);
-		AddItem(0,101,30001,1,1,-1,-1,-1,-1,-1,-1,-1,10);
-		AddItem(0,103,30001,1,1,-1,-1,-1,-1,-1,-1,-1,10);
+		-- AddItem(0,100,30001,1,1,-1,-1,-1,-1,-1,-1,-1,10);
+		-- AddItem(0,101,30001,1,1,-1,-1,-1,-1,-1,-1,-1,10);
+		-- AddItem(0,103,30001,1,1,-1,-1,-1,-1,-1,-1,-1,10);
 		AddItem(0,102,30001,1,1,-1,-1,-1,-1,-1,-1,-1,0);
 		AddItem(0,102,30002,1,1,-1,-1,-1,-1,-1,-1,-1,0);
 		AddItem(0,102,30003,1,1,-1,-1,-1,-1,-1,-1,-1,0);
 	end 
 	if nBody==2 then
-		AddItem(0,100,30002,1,1,-1,-1,-1,-1,-1,-1,-1,10);
-		AddItem(0,101,30002,1,1,-1,-1,-1,-1,-1,-1,-1,10);
-		AddItem(0,103,30002,1,1,-1,-1,-1,-1,-1,-1,-1,10);
+		-- AddItem(0,100,30002,1,1,-1,-1,-1,-1,-1,-1,-1,10);
+		-- AddItem(0,101,30002,1,1,-1,-1,-1,-1,-1,-1,-1,10);
+		-- AddItem(0,103,30002,1,1,-1,-1,-1,-1,-1,-1,-1,10);
 		AddItem(0,102,30004,1,1,-1,-1,-1,-1,-1,-1,-1,0);
 		AddItem(0,102,30005,1,1,-1,-1,-1,-1,-1,-1,-1,0);
 		AddItem(0,102,30006,1,1,-1,-1,-1,-1,-1,-1,-1,0);
 	end
 		if nBody==3 then
-		AddItem(0,100,30003,1,1,-1,-1,-1,-1,-1,-1,-1,10);
-		AddItem(0,101,30003,1,1,-1,-1,-1,-1,-1,-1,-1,10);
-		AddItem(0,103,30003,1,1,-1,-1,-1,-1,-1,-1,-1,10);
+		-- AddItem(0,100,30003,1,1,-1,-1,-1,-1,-1,-1,-1,10);
+		-- AddItem(0,101,30003,1,1,-1,-1,-1,-1,-1,-1,-1,10);
+		-- AddItem(0,103,30003,1,1,-1,-1,-1,-1,-1,-1,-1,10);
 		AddItem(0,102,30007,1,1,-1,-1,-1,-1,-1,-1,-1,0);
 		AddItem(0,102,30008,1,1,-1,-1,-1,-1,-1,-1,-1,0);
 		AddItem(0,102,30009,1,1,-1,-1,-1,-1,-1,-1,-1,0);
 	end
 		if nBody==4 then
-		AddItem(0,100,30004,1,1,-1,-1,-1,-1,-1,-1,-1,10);
-		AddItem(0,101,30004,1,1,-1,-1,-1,-1,-1,-1,-1,10);
-		AddItem(0,103,30004,1,1,-1,-1,-1,-1,-1,-1,-1,10);
+		-- AddItem(0,100,30004,1,1,-1,-1,-1,-1,-1,-1,-1,10);
+		-- AddItem(0,101,30004,1,1,-1,-1,-1,-1,-1,-1,-1,10);
+		-- AddItem(0,103,30004,1,1,-1,-1,-1,-1,-1,-1,-1,10);
 		AddItem(0,102,30010,1,1,-1,-1,-1,-1,-1,-1,-1,0);
 		AddItem(0,102,30011,1,1,-1,-1,-1,-1,-1,-1,-1,0);
 		AddItem(0,102,30012,1,1,-1,-1,-1,-1,-1,-1,-1,0);
 	end
 end
-
+function tk_8x()
+	local nBody 	= GetBody();
+	if nBody==1 then
+		-- AddItem(0,100,30001,1,1,-1,-1,-1,-1,-1,-1,-1,10);
+		-- AddItem(0,101,30001,1,1,-1,-1,-1,-1,-1,-1,-1,10);
+		-- AddItem(0,103,30001,1,1,-1,-1,-1,-1,-1,-1,-1,10);
+		AddItem(0,102,30001,1,1,-1,-1,-1,-1,-1,-1,-1,0);
+		AddItem(0,102,30002,1,1,-1,-1,-1,-1,-1,-1,-1,0);
+		AddItem(0,102,30003,1,1,-1,-1,-1,-1,-1,-1,-1,0);
+	end 
+	if nBody==2 then
+		-- AddItem(0,100,30002,1,1,-1,-1,-1,-1,-1,-1,-1,10);
+		-- AddItem(0,101,30002,1,1,-1,-1,-1,-1,-1,-1,-1,10);
+		-- AddItem(0,103,30002,1,1,-1,-1,-1,-1,-1,-1,-1,10);
+		AddItem(0,102,30004,1,1,-1,-1,-1,-1,-1,-1,-1,0);
+		AddItem(0,102,30005,1,1,-1,-1,-1,-1,-1,-1,-1,0);
+		AddItem(0,102,30006,1,1,-1,-1,-1,-1,-1,-1,-1,0);
+	end
+		if nBody==3 then
+		-- AddItem(0,100,30003,1,1,-1,-1,-1,-1,-1,-1,-1,10);
+		-- AddItem(0,101,30003,1,1,-1,-1,-1,-1,-1,-1,-1,10);
+		-- AddItem(0,103,30003,1,1,-1,-1,-1,-1,-1,-1,-1,10);
+		AddItem(0,102,30007,1,1,-1,-1,-1,-1,-1,-1,-1,0);
+		AddItem(0,102,30008,1,1,-1,-1,-1,-1,-1,-1,-1,0);
+		AddItem(0,102,30009,1,1,-1,-1,-1,-1,-1,-1,-1,0);
+	end
+		if nBody==4 then
+		-- AddItem(0,100,30004,1,1,-1,-1,-1,-1,-1,-1,-1,10);
+		-- AddItem(0,101,30004,1,1,-1,-1,-1,-1,-1,-1,-1,10);
+		-- AddItem(0,103,30004,1,1,-1,-1,-1,-1,-1,-1,-1,10);
+		AddItem(0,102,30010,1,1,-1,-1,-1,-1,-1,-1,-1,0);
+		AddItem(0,102,30011,1,1,-1,-1,-1,-1,-1,-1,-1,0);
+		AddItem(0,102,30012,1,1,-1,-1,-1,-1,-1,-1,-1,0);
+	end
+end
 function thienghia()
 	local nBody 	= GetBody();
 	if nBody==1 then
@@ -239,7 +274,20 @@ function huyhoang5()
 	AddItem(0,102,8846, 1,1,-1,-1,-1,-1,2,564,-1,0)
 	AddItem(0,102,8847, 1,1,-1,-1,-1,-1,2,564,-1,0)
 end
-
+function hienvienngoc()
+	local rand = 0
+	local i = 0
+	for i = 1, 10 do
+		rand =  random(8801,8830)
+		AddItem(0,102,rand, 1,1,-1,-1,-1,-1,-1,-1,-1,0)
+	end
+end
+function hienvienbinh()
+	local id1 = {3,5,8,0,1,2,10,0,5,2,9,6,4,7,11}
+	local id2 = {8801,8802,8803,8804,8805,8806,8807,8808,8809,8810,8811,8812,8813,8814,8815}
+	local rand = random(1,15)
+	AddItem(0,id1[rand],id2[rand], 1,1,-1,-1,-1,-1,-1,-1,-1,0)
+end
 function phaquan()
 	AddItem(2,1,30815,1);
 end
@@ -1197,7 +1245,7 @@ function enter_mp(nRoute)
 		LearnSkill(89);
 		nBegin = 75
 		nEnd = 88;
-		AddItem(0,102,131,2,1,-1,-1,-1,-1,-1,-1,1,0);
+		-- AddItem(0,102,131,2,1,-1,-1,-1,-1,-1,-1,1,0);
 		AddItem(0,2,8996,1,1,-1,-1,-1,-1,-1,-1,1,0);
 	elseif nRoute == 9 then					--¶ëáÒË×¼Ò
 		LearnSkill(10);
@@ -1281,21 +1329,22 @@ function enter_mp(nRoute)
 		end
 	end;
 
-	----------------------------ÉèÖÃÊýÖµ------------
-	SetTask(336, 20000);				--ÉèÖÃÊ¦ÃÅ¹±Ï×¶È
-	ModifyReputation(20000, 0);			--ÉèÖÃÉùÍû
-	PlayerReborn(0, 4);			--6×ª
-	gf_SetTaskByte(1538, 1, 5) 			--5×ª
-	SetLevel(80, 1);								--ÉèÖÃµÈ¼¶
+	-- ----------------------------ÉèÖÃÊýÖµ------------
+	-- -- SetTask(336, 20000);				--ÉèÖÃÊ¦ÃÅ¹±Ï×¶È
+	-- -- ModifyReputation(20000, 0);			--ÉèÖÃÉùÍû
+	-- -- PlayerReborn(0, 4);			--6×ª
+	-- -- gf_SetTaskByte(1538, 1, 5) 			--5×ª
+	SetLevel(80, 0);								--ÉèÖÃµÈ¼¶
 	PlaySound("\\sound\\sound_i016.wav");
-	SetCurrentNpcSFX(PIdx2NpcIdx(),913,0,0)
+	-- -- SetCurrentNpcSFX(PIdx2NpcIdx(),913,0,0)
 	Msg2Player("Thao t¸c thµnh c«ng, h·y ®¨ng nhËp l¹i")
---	AddItem(0,105,15,1,1,-1,-1,-1,-1,-1,-1);
+-- --	AddItem(0,105,15,1,1,-1,-1,-1,-1,-1,-1);
 	AddItem(2, 1, 1005, 1);
 	AddItem(0, 200,40, 1);
 	AddItem(2, 1, 1003, 1);
 	AddItem(2, 1, 1004, 1);
 	AddItem(2, 1, 2, 10);
+	Earn(100000);
 	SaveNow()
 	Talk(1,"","Thao t¸c thµnh c«ng, h·y ®¨ng nhËp l¹i")
 end
@@ -1662,6 +1711,17 @@ function getkx3()
 		"T¹i h¹ chØ xem qua th«i/nothing",
 	}
 	Say(g_szTitle.."------------------", getn(tSay), tSay);
+end
+
+
+function Get_JinShe_1()
+
+local ret1, xIndex = AddItem(0,152,1,1,1,-1,-1,-1,-1,-1,-1,-1,10);
+FeedItem(xIndex,1000000)
+local ret1, xIndex = AddItem(0,153,1,1,1,-1,-1,-1,-1,-1,-1,-1,10);
+FeedItem(xIndex,1000000)
+local ret1, xIndex = AddItem(0,154,1,1,1,-1,-1,-1,-1,-1,-1,-1,10);
+FeedItem(xIndex,1000000)
 end
 
 function Get_JinShe_2()
@@ -2357,10 +2417,10 @@ end
 function Get_Book()
 	local szSay = {
 		g_szTitle.."NhËn L­u Ph¸i Ch©n QuyÓn vµ QuyÕt YÕu!",
-		"NhËn Ch©n QuyÓn/Get_Book_ZhenJuan",
+		"Mat tich/mtphu",
+		-- "NhËn Ch©n QuyÓn/Get_Book_ZhenJuan",
 		"NhËn QuyÕt YÕu/Get_Book_JueYao",
 		"Th¨ng cÊp mËt tÞch ®· trang bÞ/Get_Book_Update",
-		"Mat tich phu/mtphu",
 		"Ra khái/nothing",
 	};
 	SelectSay(szSay);
@@ -2373,14 +2433,14 @@ function Get_Nguyen_Lieu()
 		-- "NhËn 100 Thiªn Cang LÖnh/Get_NL_TCL",
 --		"Nguyen Lieu Kich Bao Tay/kichbaotay",
 		"NhËn B¨ng Th¹ch vµ m¶nh b¨ng th¹ch/bangthach",
-		"NhËn 1000 Ma Tinh/Get_NL_MT",
-		"NhËn lt1 /lt1",
-		"NhËn lt2 /lt2",
-		"NhËn lt3 /lt3",
-		"NhËn lt4 /lt4",
-		"NhËn lt5 /lt5",
-		"NhËn lt6 /lt6",
-		"NhËn lt7 /lt7",
+		-- "NhËn 1000 Ma Tinh/Get_NL_MT",
+		"NhËn linh th¹ch 1 /lt1",
+		"NhËn linh th¹ch 2 /lt2",
+		"NhËn linh th¹ch 3 /lt3",
+		"NhËn linh th¹ch 4 /lt4",
+		"NhËn linh th¹ch 5 /lt5",
+		-- "NhËn linh th¹ch 6 /lt6",
+		-- "NhËn lt7 /lt7",
 		"Ra khái/nothing",
 	};
 	SelectSay(szSay);
@@ -2833,13 +2893,17 @@ function Get_Energy()
 	AddItem(1,1,15,200);
 	AddItem(1,1,17,200);
 end
-
+function Get_Energy_5x()
+	AddItem(1,1,14,200);
+	AddItem(1,1,16,200);
+	AddItem(1,1,18,200);
+end
 function Life_Skill()
 	local tSay = {
 		"Muèn t¨ng cÊp kü n¨ng thu thËp/upgrade_gather_skill",
 		"Muèn t¨ng cÊp kü n¨ng s¶n xuÊt/upgrade_compose_skill",
 --		"NhËn nguyªn liÖu chÕ trang bÞ Linh §å/get_lingtu_equip_material",
-		"NhËn NHCT/nhct",
+		-- "NhËn NHCT/nhct",
 		"T¹i h¹ chØ xem qua th«i/nothing",
 	}
 	Say(g_szTitle.."T¨ng cÊp kü n¨ng sèng", getn(tSay), tSay);
@@ -2941,13 +3005,14 @@ function Get_Mored()
 --		"NhËn Thiªn H¹ V« Song/thvs",	
 --	"NhËn HiÖu ChiÕn Tr­êng/hieudothong",
 --		"NhËn HKDNP/hkdnp",
-		"NhËn M¸u /receiveTiLi",
+		-- "NhËn M¸u /receiveTiLi",
 		"NhËn B¸nh Ng«/banhngo",
-		"NhËn TT3 LL3 TT4 LL4/ttll3",
-		"NhËn Thiªn NghÜa/thienghia",
-		"NhËn Thiªn Chi tµng KiÕm/tctk",
+		-- "NhËn TT3 LL3 TT4 LL4/ttll3",
+		-- "NhËn Thiªn NghÜa/thienghia",
+		-- "NhËn Thiªn Chi tµng KiÕm/tctk",
 --		"HHVD/huyhoang5",
-		"uÈn Linh cÊp 5/nhanul",
+		-- "HHVD/huyhoang5",
+		"uÈn Linh cÊp 3/nhanul",
 --		"Vâ L©m b¸ Chñ/vlbc",
 --		"NhËn Cöu ChuyÓn Håi Hån §an/cuuchuyen",
 --		"NhËn ChiÕn T­îng/chientuong",
@@ -2958,18 +3023,21 @@ function Get_Mored()
 		-- "NhËn Thó Míi/nhanthucuoimoi",
 		"NhËn Thó C­ìi/thucuoipro",
 --		"NhËn Thiªn Chi Viªm §Õ/thienchiviemde",
+		"NhËn Viªm §Õ/viemde",
 		"NhËn ®å buff/dobuffhttc",
-    	"NhËn B¹ch Kim Viªm §Õ/bkvd",
+		"NhËn tö quang hiªn viªn ngäc/hienvienngoc",
+		"NhËn tö quang hiªn viªn thÇn binh/hienvienbinh",
+    	-- "NhËn B¹ch Kim Viªm §Õ/bkvd",
 --		"LuyÖn max skill trÊn ph¸i/maxtranphai",
 --		"NhËn Th«ng Thiªn/getTiLi",
 --		"NhËn Thien Chi T­íng Qu©n/thienchituongquan",
 --		"NhËn T­íng Qu©n/tuongquan",
-		"QuÇn ¸o  TLQ/aosm",
+		-- "QuÇn ¸o  TLQ/aosm",
 --		"C¸c Lo¹i Ngäc/ngoctoc",
 --      "C¸c Lo¹i Ngäc/ngocdame",
-		"Ma Dao thach 3/madao",
-		"§å 3 Lç/do3lo",
-		"Vu khi 3 Lç/vukhi",
+		-- "Ma Dao thach 3/madao",
+		-- "§å 3 Lç/do3lo",
+		-- "Vu khi 3 Lç/vukhi",
 --		"QuÎ 8 qu¸i/que8w", 
 --		"Ngo¹i Trang/ngoaitrangnew", 
 		"T¹i h¹ chØ xem qua th«i/nothing",
@@ -3328,15 +3396,15 @@ function thucuoipro()
 		return 0;
 	end
 	AddItem(0,105,30023,1,1,7,403,7,-1,7,-1,7,0);
-	AddItem(0,105,30025,1,1,7,403,7,-1,7,-1,7,0);
-	AddItem(0,105,30027,1,1,7,403,7,-1,7,-1,7,0);
-	AddItem(0,105,30030,1,1,7,403,7,-1,7,-1,7,0);
-	AddItem(0,105,10107,1,1,7,403,7,-1,7,-1,7,0);
-	AddItem(0,105,10108,1,1,7,403,7,-1,7,-1,7,0);
-	AddItem(0,105,10109,1,1,7,403,7,-1,7,-1,7,0);
-	AddItem(0,105,10110,1,1,7,403,7,-1,7,-1,7,0);
-	AddItem(0,105,10111,1,1,7,403,7,-1,7,-1,7,0);
-	AddItem(0,105,10112,1,1,7,403,7,-1,7,-1,7,0);
+	-- AddItem(0,105,30025,1,1,7,403,7,-1,7,-1,7,0);
+	-- AddItem(0,105,30027,1,1,7,403,7,-1,7,-1,7,0);
+	-- AddItem(0,105,30030,1,1,7,403,7,-1,7,-1,7,0);
+	-- AddItem(0,105,10107,1,1,7,403,7,-1,7,-1,7,0);
+	-- AddItem(0,105,10108,1,1,7,403,7,-1,7,-1,7,0);
+	-- AddItem(0,105,10109,1,1,7,403,7,-1,7,-1,7,0);
+	-- AddItem(0,105,10110,1,1,7,403,7,-1,7,-1,7,0);
+	-- AddItem(0,105,10111,1,1,7,403,7,-1,7,-1,7,0);
+	-- AddItem(0,105,10112,1,1,7,403,7,-1,7,-1,7,0);
 	-- AddItem(0,105,195,1,1,-1,-1,-1,-1,-1,-1);
 	-- AddItem(0,105,194,1,1,-1,-1,-1,-1,-1,-1);
 	-- AddItem(0,105,139,1,1,7,403,-1,-1,-1,-1);
@@ -3374,6 +3442,34 @@ function thienchiviemde()
 		AddItem(0,100,8058,1,1,-1,-1,-1,-1,-1,-1,-1,10);
 		AddItem(0,101,8058,1,1,-1,-1,-1,-1,-1,-1,-1,10);
 		AddItem(0,103,8058,1,1,-1,-1,-1,-1,-1,-1,-1,10);
+	 end
+end
+function viemde()
+	if gf_Judge_Room_Weight(3, 100) ~= 1 then
+		Talk(1,"",format("Tói kh«ng ®ñ %d « trèng", 3));
+		return 0;
+	
+	end
+	local nBody 	= GetBody();
+	if nBody==1 then
+		AddItem(0,100,8001,1,1,-1,-1,-1,-1,-1,-1,-1,10);
+		AddItem(0,101,8001,1,1,-1,-1,-1,-1,-1,-1,-1,10);
+		AddItem(0,103,8001,1,1,-1,-1,-1,-1,-1,-1,-1,10);
+	end 
+	if nBody==2 then
+		AddItem(0,100,8002,1,1,-1,-1,-1,-1,-1,-1,-1,10);
+		AddItem(0,101,8002,1,1,-1,-1,-1,-1,-1,-1,-1,10);
+		AddItem(0,103,8002,1,1,-1,-1,-1,-1,-1,-1,-1,10);
+	end
+	 if nBody==3 then
+		AddItem(0,100,8003,1,1,-1,-1,-1,-1,-1,-1,-1,10);
+		AddItem(0,101,8003,1,1,-1,-1,-1,-1,-1,-1,-1,10);
+		AddItem(0,103,8003,1,1,-1,-1,-1,-1,-1,-1,-1,10);
+	 end
+	 if nBody==4 then
+		AddItem(0,100,8004,1,1,-1,-1,-1,-1,-1,-1,-1,10);
+		AddItem(0,101,8004,1,1,-1,-1,-1,-1,-1,-1,-1,10);
+		AddItem(0,103,8004,1,1,-1,-1,-1,-1,-1,-1,-1,10);
 	 end
 end
 
@@ -4035,24 +4131,43 @@ end
 
 function UL3_non()
 	for i = 1, 10 do
-		local non = random(69,84)
+		local non = random(35,51)
 		AddItem(0, 148, non, 1, 1);
 	end
 end
 function UL3_ao()
 
 	for i = 1, 10 do
-		local non = random(70,86)
+		local non = random(35,51)
 		AddItem(0, 149, non, 1, 1);
 	end
 end
 function UL3_quan()
 	for i = 1, 10 do
-		local non = random(69,84)
+		local non = random(35,51)
 		AddItem(0, 150, non, 1, 1);
 	end
 end
 
+function UL5_non()
+	for i = 1, 10 do
+		local non = random(69,84)
+		AddItem(0, 148, non, 1, 1);
+	end
+end
+function UL5_ao()
+
+	for i = 1, 10 do
+		local non = random(70,86)
+		AddItem(0, 149, non, 1, 1);
+	end
+end
+function UL5_quan()
+	for i = 1, 10 do
+		local non = random(69,84)
+		AddItem(0, 150, non, 1, 1);
+	end
+end
 function UL7()
 	AddItem(0, 148, 102, 1, 1);
 	AddItem(0, 148, 103, 1, 1);

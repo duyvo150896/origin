@@ -44,6 +44,6 @@ function main()
 	-- Msg2SubWorld(GetLocalHour());
 	if  GetLocalHour() == 21 then
 	-- Msg2SubWorld("OKKK")
-		Boss_W6();
+		Boss_W5();
 	end
 end;

@@ -124,11 +124,11 @@ function finish_newres_task()
 		Talk(1,"",szNpcName.."Mau ®i thu thËp tµi nguyªn råi h·y l·nh th­ëng!")
 		return
 	end
-	local nQuest = 4
+	local nQuest = 1
 	local nPetLevel = mod(GetTask(TASK_VNG_PET), 100)
 --	local nIsPS = mod(floor(GetTask(TSK_PET_PS_GIAIDOAN_B)/10),10)
 	if nPetLevel >= 1 then
-		nQuest = 5
+		nQuest = 2
 	end
 	-- if nPetLevel >= 1 then
 		-- nQuest = 5
@@ -144,7 +144,7 @@ function finish_newres_task()
 		"Sö dông Qu©n C«ng Ch­¬ng/#use_jungong(1)",
 		"Sö dông Qu©n C«ng §¹i/#use_jungong(2)",
 		"Sö dông Qu©n C«ng Huy Hoµng/#use_jungong(3)",
-		"Sö dông Qu©n C«ng Vinh Dù/use_VIP_tainguyenchien",
+		-- "Sö dông Qu©n C«ng Vinh Dù/use_VIP_tainguyenchien",
 		"Kh«ng muèn sö dông qu©n c«ng/#confirm_use_jungong(4)",
 		"Ch­a muèn nhËn th­ëng/gd_DoNothing",	
 	}
@@ -387,12 +387,14 @@ function confirm_use_jungong(nType)
 	--gf_AddItemEx2({2,1,30340,tJungongItem[nType][5]},"Méc R­¬ng lo¹i "..tJungongItem[nType][1],"ThÇn Tµi B¶o R­¬ng","Tµi nguyªn chiÕn",0,1)
 	--Msg2Player("B¹n nhËn ®­îc "..tJungongItem[nType][5].." Méc R­¬ng")
 	ModifyExp(nExpAward)	
+	AddItem(2,1,1009,100);
 	if GetTask(701) >= 0 then
 		SetTask(701,GetTask(701) + nJunGongAward)
 	else
 		SetTask(701,GetTask(701) - nJunGongAward)
 	end
 	Msg2Player("B¹n nhËn ®­îc "..nExpAward.." ®iÓm kinh nghiÖm")
+	Msg2Player("B¹n nhËn ®­îc 100 Thiªn th¹ch tinh th¹ch")
 	Msg2Player("B¹n nhËn ®­îc "..nJunGongAward.." ®iÓm c«ng tr¹ng")
 	--- §iÓm VËn May
 --	local nPointVM = gf_GetTaskByte(TSK_LUCKY_DAOHUU, BYTE_POINT_LUCKY)	

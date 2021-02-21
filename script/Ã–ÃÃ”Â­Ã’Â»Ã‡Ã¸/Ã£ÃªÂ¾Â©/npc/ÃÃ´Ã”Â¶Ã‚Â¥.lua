@@ -12,28 +12,28 @@ szNpcName = "<color=green>Tiªu ViÔn L©u: <color>"
 
 function main()
 
-		if GetTargetNpcName() == "Tiªu ViÔn L©u" then
-			-- if GetGlbValue(GLB_TSK_SERVER_ID) == 92 then -- Server Háa Phông
-				local tbSay = {}
-				local nDate = tonumber(date("%Y%m%d"))
-				if nDate >= 20141121 then
-					tinsert(tbSay,"Ta muèn nhËn ®iÓm cña chiÕn tr­êng 4x/Denbu_NhanThuong4x")
-					tinsert(tbSay,"Ta muèn nhËn ®iÓm cña chiÕn tr­êng 6x/Denbu_NhanThuong6x")
-				end
+		-- if GetTargetNpcName() == "Tiªu ViÔn L©u" then
+			-- -- if GetGlbValue(GLB_TSK_SERVER_ID) == 92 then -- Server Háa Phông
+				-- local tbSay = {}
+				-- local nDate = tonumber(date("%Y%m%d"))
+				-- if nDate >= 20241121 then
+					-- tinsert(tbSay,"Ta muèn nhËn ®iÓm cña chiÕn tr­êng 4x/Denbu_NhanThuong4x")
+					-- tinsert(tbSay,"Ta muèn nhËn ®iÓm cña chiÕn tr­êng 6x/Denbu_NhanThuong6x")
+				-- end
 				
-				tinsert(tbSay,"Rêi khái/gf_DoNothing")
-				Say(szNpcName.."Cao thñ ®¨ng cÊp 90 ®Õn 95 kinh nghiÖm cßn 1 nöa, trªn ®¼ng cÊp 95 cßn 1/10 \n",getn(tbSay),tbSay)
-				return
-			-- else
-				--Talk(1,"",szNpcName.."Tr¨ng thanh giã m¸t, c¸c h¹ cã viÖc cÇn chi?")
-				--return
-			-- end
-		end		
+				-- tinsert(tbSay,"Rêi khái/gf_DoNothing")
+				-- Say(szNpcName.."Cao thñ ®¨ng cÊp 90 ®Õn 95 kinh nghiÖm cßn 1 nöa, trªn ®¼ng cÊp 95 cßn 1/10 \n",getn(tbSay),tbSay)
+				-- return
+			-- -- else
+				-- --Talk(1,"",szNpcName.."Tr¨ng thanh giã m¸t, c¸c h¹ cã viÖc cÇn chi?")
+				-- --return
+			-- -- end
+		-- end		
 		
-		if random(1,50) == 1 then
-				NpcChat(GetTargetNpc(),"§Ó khİch lÖ t­íng sÜ §¹i Liªu ta anh dòng giÕt giÆc, nh÷ng ai tham gia trËn ®¸nh Nh¹n m«n quan ®Òu ®­îc nhËn Linh Th¹ch!");
-		end;
-		battle_main();			
+		-- if random(1,50) == 1 then
+				-- NpcChat(GetTargetNpc(),"§Ó khİch lÖ t­íng sÜ §¹i Liªu ta anh dòng giÕt giÆc, nh÷ng ai tham gia trËn ®¸nh Nh¹n m«n quan ®Òu ®­îc nhËn Linh Th¹ch!");
+		-- end;
+		-- battle_main();			
 end;
 
 function Denbu_NhanThuong4x()
