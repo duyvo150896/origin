@@ -58,7 +58,7 @@ function OnUse(nItem)
 --			format("%s/test", "Test Nhan Event"),
 --			format("%s/showKX", "NhËn trang søc ®eo h«ng 4 sao"),
             "NhËn C¸c Lo¹i Nguyªn LiÖu/Get_Nguyen_Lieu",
-			-- "NhËn 4000 vµng/Get_Money",
+			"NhËn 4000 vµng (Kh«ng cã khi Open)/Get_Money",
 			"Thao t¸c bang héi/TongOperation",
 --			"Thao t¸c Vò KhÝ/PS_VK",
 			"Thao t¸c kinh m¹ch/GetJingMai",
