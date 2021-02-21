@@ -46,4 +46,10 @@ function main()
 	-- Msg2SubWorld("OKKK")
 		Boss_W5();
 	end
+	if  GetLocalHour() == 15 then
+	-- Msg2SubWorld("OKKK")
+		 Boss_LanHoa();
+		 Boss_AnhTu();
+	end
+	
 end;
