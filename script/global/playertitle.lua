@@ -1596,7 +1596,8 @@ function PT_AddAllWhenEquip(type, stateID, number1, number2)
 		CastState("state_burst_enhance_rate", number1, -1, 1, stateID+1);
 		CastState("state_add_allability", number2, -1, 1, stateID+2);
 		CastState("state_accuracy_point_increase", 3000, -1, 1, stateID+ 3);
-		Msg2Player(format("%s%d%%%s%d%s","HiÖu qu?nhËn ®­îc: T¨ng tèc ®é thi triÓn", number1, ",T¨ng Sinh lùc", number2, " ®iÓm"));
+		CastState("state_life_max_point_add", 10000, -1, 1, stateID+ 3);
+		Msg2Player(format("%s%d%%s%d%s%d","HiÖu qu¶ nhËn ®­îc: T¨ng tèc ®é thi triÓn", number1, ",T¨ng Sinh lùc", number2, " ®iÓm", "T¨ng Sinh lùc", 10000));
 	end
 end
 
@@ -1609,7 +1610,7 @@ function _65_02_(type, stateID)
 end
 
 function _65_03_(type, stateID)
-	PT_AddAllWhenEquip(type, stateID, 14, 14);
+	PT_AddAllWhenEquip_duyvo_2(type, stateID, 15, 15,10000);
 end
 
 --function _65_04_(type, stateID)
@@ -2153,6 +2154,16 @@ function PT_AddAllWhenEquip_duyvo(type, stateID, number1, number2, number3)
 		CastState("state_life_max_point_add", number3, -1, 1, stateID + 2);
 		CastState("state_magic_parmor_per_add",5, -1, 1, stateID + 3);
 		-- CastState("state_physical_parmor_per_add",15, -1, 1, stateID + 4);
-		Msg2Player(format("%s%d%s%d%s%d","HiÖu qu¶ : KTC", number1, "  t¨ng sinh lùc : ", number2, "  Sinh lùc t¨ng: ", number3));
+		-- Msg2Player(format("%s%d%s%d%s%d","HiÖu qu¶ : KTC", number1, "  t¨ng sinh lùc : ", number2, "  Sinh lùc t¨ng: ", number3));
+	end
+end
+
+function PT_AddAllWhenEquip_duyvo_2(type, stateID, number1, number2, number3)
+	if 1 == type then
+		CastState("state_magic_parmor_per_add",5, -1, 1, stateID);
+		CastState("state_burst_enhance_rate", number1, -1, 1, stateID+1);
+		CastState("state_add_allability", number2, -1, 1, stateID+2);
+		CastState("state_life_max_point_add", number3, -1, 1, stateID+ 3);
+		-- Msg2Player(format("%s%d%%s%d%s%s%d","HiÖu qu¶ nhËn ®­îc: T¨ng tèc ®é thi triÓn", number1, ",T¨ng Sinh lùc", number2, " ®iÓm", "T¨ng Sinh lùc", number3));
 	end
 end

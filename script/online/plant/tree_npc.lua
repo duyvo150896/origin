@@ -240,6 +240,9 @@ function getfruit()
 			AddItem(1,1,18,10);
 		end
 		nRandomNum = random(1,100);
+		if nRandomNum <= 20 then
+			AddItem(0,107,30346,1);
+		end
 		if nRandomNum <= 50 then
 			if AddItem(1,0,32,10) == 1 then
 				Msg2Player("B¹n nhËn ®­îc 10 Cöu ChuyÓn Hoµn Hån §¬n");
