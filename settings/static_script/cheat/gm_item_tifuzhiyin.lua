@@ -81,7 +81,7 @@ function OnUse(nItem)
 		end
 		if 8 == nRoute then
 			tinsert(tSay, "NhËn X¸ Lîi Kim §¬n/Give_Dandan")
-			 -- tinsert(tSay, "Nhan §å Buff NMK/DoBuffNMK")
+			tinsert(tSay, "Nhan §å Buff NMK/DoBuffNMK")
 		end		
 		if 17 == nRoute then
 			tinsert(tSay, "NhËn ChiÕn M·/Give_ZhanMa")
@@ -286,7 +286,14 @@ function hienvienbinh()
 	local id1 = {3,5,8,0,1,2,10,0,5,2,9,6,4,7,11}
 	local id2 = {8801,8802,8803,8804,8805,8806,8807,8808,8809,8810,8811,8812,8813,8814,8815}
 	local rand = random(1,15)
-	AddItem(0,id1[rand],id2[rand], 1,1,-1,-1,-1,-1,-1,-1,-1,0)
+	AddItem(0,id1[rand],id2[rand], 1,1,-1,-1,-1,-1,-1,-1,-1,10)
+end
+
+function cuuthienngoc()
+	local i =0
+	for id = 129, 135 do
+	AddItem(0,102,id, 1,1,-1,-1,-1,-1,-1,-1,-1,0)
+	end
 end
 function phaquan()
 	AddItem(2,1,30815,1);
@@ -2802,9 +2809,9 @@ function TongOperation_Create()
   if GetReputation() < 2000 then
   	ModifyReputation(2000 - GetReputation(), 0)
   end
-  if GetCash() < 5000000 then
-  	Earn(5000000 - GetCash())
-  end
+  -- if GetCash() < 5000000 then
+  	-- Earn(5000000 - GetCash())
+  -- end
   CreateTongDialog()
 end
 
@@ -3027,6 +3034,7 @@ function Get_Mored()
 		"NhËn ®å buff/dobuffhttc",
 		"NhËn tö quang hiªn viªn ngäc/hienvienngoc",
 		"NhËn tö quang hiªn viªn thÇn binh/hienvienbinh",
+		"NhËn Cöu Thiªn Ngäc/cuuthienngoc",
     	-- "NhËn B¹ch Kim Viªm §Õ/bkvd",
 --		"LuyÖn max skill trÊn ph¸i/maxtranphai",
 --		"NhËn Th«ng Thiªn/getTiLi",
@@ -4189,13 +4197,13 @@ function DoBuffNMK()
 	-- }
 	-- Say(g_szTitle.."------------------", getn(tSay), tSay);
 	
-	AddItem(0,110,516,1,1,7,484,3,484,7,41,-1,0);
-	AddItem(0,109,516,1,1,7,484,7,41,7,41,-1,0);
-	AddItem(0,108,516,1,1,7,484,7,41,7,41,-1,0);
+	AddItem(0,110,516,1,1,-1,-1,3,484,7,41,-1,0);
+	AddItem(0,109,516,1,1,-1,-1,3,484,7,41,-1,0);
+	AddItem(0,108,516,1,1,-1,-1,3,484,7,41,-1,0);
 	
-	AddItem(0,110,517,1,1,7,484,3,484,7,41,-1,0);
-	AddItem(0,109,517,1,1,7,484,7,41,7,41,-1,0);
-	AddItem(0,108,517,1,1,7,484,7,41,7,41,-1,0);
+	AddItem(0,110,517,1,1,-1,-1,3,484,7,41,-1,0);
+	AddItem(0,109,517,1,1,-1,-1,3,484,7,41,-1,0);
+	AddItem(0,108,517,1,1,-1,-1,3,484,7,41,-1,0);
 end
 
 --Gia nhËp Ph¸i
