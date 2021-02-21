@@ -365,7 +365,7 @@ function Boss_LanHoa()
 
 	local nMap,nX,nY = GetWorldPos();
 	local npcIndex = 0
-	npcIndex = CreateNpc("lanhua_viet","Lan Hoa", nMap, nX + 2, nY + 2,-1,1,1,30)
+	npcIndex = CreateNpc("lanhua_viet","Lan Hoa", 202, 1514, 2946,-1,1,1,30)
 	--Msg2Global("Cã ng­êi nh×n thÊy Lan Hoa ®ang ë t©y TuyÒn Ch©u 181/190, mau ®Õn ®ã xem!")
 	-- SetNpcLifeTime(npcIndex, 7200)
 	-- SetNpcScript(npcIndex, "\\script\\online\\viet_event\\lanhua_boss\\lanhua_boss.lua")
@@ -375,7 +375,7 @@ function Boss_LanHoa()
 		Msg2Global(msg);
 		Msg2Global(msg);
 		AddLocalNews(msg);
-		SetNpcLifeTime(npcIndex, 2*60 * 60);
+		SetNpcLifeTime(npcIndex, 1*60 * 60);
 		SetNpcDeathScript(npcIndex, "\\script\\function\\world_boss\\wb_boss_death.lua");
 		SetNpcRemoveScript(npcIndex, "\\script\\function\\world_boss\\wb_boss_remove.lua");
 end
@@ -384,17 +384,17 @@ function Boss_AnhTu()
 
 	local nMap,nX,nY = GetWorldPos();
 	local npcIndex = 0
-	npcIndex = CreateNpc("yingzi_viet","Anh Tö", nMap, nX + 2, nY + 2,-1,1,1,30)
+	npcIndex = CreateNpc("yingzi_viet","Anh Tö", 202, 1514, 2946,-1,1,1,30)
 	--Msg2Global("Cã ng­êi nh×n thÊy Lan Hoa ®ang ë t©y TuyÒn Ch©u 181/190, mau ®Õn ®ã xem!")
 	-- SetNpcLifeTime(npcIndex, 7200)
 	-- SetNpcScript(npcIndex, "\\script\\online\\viet_event\\lanhua_boss\\lanhua_boss.lua")
-		local msg = format("Cã ng­êi nh×n thÊy Lan Hoa ®ang ë H¹nh Hoa Th«n, mau ®Õn ®ã xem! !!!");
+		local msg = format("Cã ng­êi nh×n thÊy Anh Tö ®ang ë H¹nh Hoa Th«n, mau ®Õn ®ã xem! !!!");
 		Msg2Global(msg);
 		Msg2Global(msg);
 		Msg2Global(msg);
 		Msg2Global(msg);
 		AddLocalNews(msg);
-		SetNpcLifeTime(npcIndex, 2*60 * 60);
+		SetNpcLifeTime(npcIndex, 1*60 * 60);
 		SetNpcDeathScript(npcIndex, "\\script\\function\\world_boss\\wb_boss_death.lua");
 		SetNpcRemoveScript(npcIndex, "\\script\\function\\world_boss\\wb_boss_remove.lua");
 
