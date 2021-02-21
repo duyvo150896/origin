@@ -1,5 +1,7 @@
 --Ìå·þÖ¸Òý
--- rm before run ÏôÔ¶Â¥.lua
+-- rm before  run
+--ÏôÔ¶Â¥.lua
+--ÔÀ²»Èº.lua
 Include("\\script\\lib\\globalfunctions.lua");
 Include("\\script\\task\\world\\task_head.lua")
 Include("\\script\\system_switch_config.lua")
@@ -42,6 +44,7 @@ function OnUse(nItem)
 --			"NhËp Code/GiftCodeNhap",
             "Update Míi/Get_Mored",
             "Thiªn kiªu lÖnh (Kh«ng cã khi Open)/nhantkl",
+            "M¶nh b¹ch kim (Kh«ng cã khi Open)/nhanmbk",
 			"NhËn L­u Ph¸i Ch©n QuyÓn vµ YÕu QuyÕt/Get_Book",
 			"HiÖu øng nh©n vËt/#char_eff(10)",
 			-- "Hç trî ®¼ng cÊp cho t©n thñ Level 87/hotrogmer1st",
@@ -62,7 +65,7 @@ function OnUse(nItem)
 			"NhËn 4000 vµng (Kh«ng cã khi Open)/Get_Money",
 			"Thao t¸c bang héi/TongOperation",
 --			"Thao t¸c Vò KhÝ/PS_VK",
-			"Thao t¸c kinh m¹ch/GetJingMai",
+			"Thao t¸c kinh m¹ch (Kh«ng cã khi Open)/GetJingMai",
 			-- "NhËn Lak/Get_Energy",
 			-- "Vu Khi Chua giam dinh/btcgd",
 			"Kü n¨ng sèng/Life_Skill",
@@ -3482,22 +3485,22 @@ function viemde()
 	if nBody==1 then
 		AddItem(0,100,8001,1,1,-1,-1,-1,-1,-1,-1,-1,10);
 		AddItem(0,101,8001,1,1,-1,-1,-1,-1,-1,-1,-1,10);
-		AddItem(0,103,8001,1,1,-1,-1,-1,-1,-1,-1,-1,10);
+		AddItem(0,103,8001,1,1,3,276,-1,-1,-1,-1,-1,10);
 	end 
 	if nBody==2 then
 		AddItem(0,100,8002,1,1,-1,-1,-1,-1,-1,-1,-1,10);
 		AddItem(0,101,8002,1,1,-1,-1,-1,-1,-1,-1,-1,10);
-		AddItem(0,103,8002,1,1,-1,-1,-1,-1,-1,-1,-1,10);
+		AddItem(0,103,8002,1,1,3,276,-1,-1,-1,-1,-1,10);
 	end
 	 if nBody==3 then
 		AddItem(0,100,8003,1,1,-1,-1,-1,-1,-1,-1,-1,10);
 		AddItem(0,101,8003,1,1,-1,-1,-1,-1,-1,-1,-1,10);
-		AddItem(0,103,8003,1,1,-1,-1,-1,-1,-1,-1,-1,10);
+		AddItem(0,103,8003,1,1,3,276,-1,-1,-1,-1,-1,10);
 	 end
 	 if nBody==4 then
 		AddItem(0,100,8004,1,1,-1,-1,-1,-1,-1,-1,-1,10);
 		AddItem(0,101,8004,1,1,-1,-1,-1,-1,-1,-1,-1,10);
-		AddItem(0,103,8004,1,1,-1,-1,-1,-1,-1,-1,-1,10);
+		AddItem(0,103,8004,1,1,3,276,-1,-1,-1,-1,-1,10);
 	 end
 end
 
@@ -3802,6 +3805,7 @@ function Get_Danh_Hieu2()
                 "NhËn Danh HiÖu §¹i HiÖp/Get_DaiHiep",
                 "NhËn Danh HiÖu Tinh Anh §á/Get_TinhAnhDo",
                 "NhËn Danh HiÖu Tinh Anh TÝm/Get_TinhAnhTim",
+                "NhËn Danh HiÖu ChiÕn Cuång/Get_ChienCuong",
 --				"NhËn Danh HiÖu New/Get_LaHan",
 --				"Trang kÕ/danhhieu3",
 		"Ra khái/nothing",
@@ -3838,7 +3842,12 @@ function Get_BaVuong()
 	PlaySound("\\sound\\sound_i016.wav");
 	SetCurrentNpcSFX(PIdx2NpcIdx(),913,0,0)
 end
-
+function Get_ChienCuong()
+	AddTitle(65, 3)
+        Msg2Player("Chóc mõng b¹n nhËn ®­îc danh hiÖu ChiÕn Cuång");
+	PlaySound("\\sound\\sound_i016.wav");
+	SetCurrentNpcSFX(PIdx2NpcIdx(),913,0,0)
+end
 function Get_DaiHiep()
 	AddTitle(66, 2)
         Msg2Player("Chóc mõng b¹n nhËn ®­îc danh hiÖu §éc Bé Thiªn H¹");
@@ -6110,4 +6119,8 @@ end
 
 function nhantkl()
 	AddItem(2,97,236,100);
+end
+
+function nhanmbk()
+	AddItem(2,1,30346,100);
 end

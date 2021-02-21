@@ -78,7 +78,7 @@ function ViemDeMenu()
 		"N©ng cÊp trang bÞ Viªm §Õ thµnh Thiªn Chi Viªm §Õ/upgrade_emperor",
 		"N©ng cÊp trang bÞ Viªm §Õ thµnh Thiªn Chi Viªm §Õ (100%)/upgrade_thienchiviemde",
 --		"N©ng cÊp Thiªn Chi Viªm §Õ thµnh B¹ch Kim Viªm §Õ/upgrade_bachkimviemde",
-		"N©ng cÊp Thiªn Chi Viªm §Õ thµnh B¹ch Kim Viªm §Õ (100%)/upgrade_bachkimviemde_100_Form",
+		-- "N©ng cÊp Thiªn Chi Viªm §Õ thµnh B¹ch Kim Viªm §Õ (100%)/upgrade_bachkimviemde_100_Form",
 		"C¶i t¹o trang bÞ Tö Quang Viªm §Õ/upgrade_tqvd",
 		"T¹i h¹ chØ tiÖn ghÐ ngang!/gf_DoNothing"
 	}
