@@ -1,6 +1,5 @@
 Task_Name	Task_ID	Task_Flag	From_NPC	To_NPC	Ex_Condition	Finish_Condition	Task_Action	Task_Prize	Action_Room_Weight	Prize_Room_Weight	Cancel_Task	Skip_Task
 Tªn nhiÖm vô 	ID nhiÖm vô (yªu cÇu ®Õm liªn tôc tõ 1 trë lªn)	lËp l¹i, ghi kı hiÖu	Tªn npc nhËn nhiÖm vô	Tªn npc hoµn thµnh nhiÖm vô	§iÒu kiÖn tiÒn ®Ò. b¶ng gtask_condition.txt	§iÒu kiÖn hoµn thµnh, b¶ng gtask_condition.txt	NhiÖm vô Action, b¶ng gtask_prize.txt	PhÇn th­ëng hoµn thµnh, b¶ng gtask_prize.txt	KiÓm tra träng l­îng kh«ng gian Action, dïng kı hiÖu ";" ®Ó c¸ch ra	KiÓm tra träng l­îng kh«ng gian Prize, dïng kı hiÖu "," ®Ó c¸ch ra	Hñy nhiÖm vô, ®iÒn-1 tøc kh«ng thÓ hñy nhÖm vô, ®iÒn sè tøc cÇn tiªu hao l­îng tiÒn, ®¬n vŞ tİnh: ®ång	Bá qua nhiÖm vô, ®iÒn -1 tøc kh«ng thÓ bá qua nhiÖm vô nµy, ®iÒn sè tøc cÇn tiªu hao l­îng tiÒn t­¬ng øng, ®¬n vŞ: ®ång
-T×m kú d­îc kh¸ng ®éc	1	0	Chñ töu lÇu	Nh¹c BÊt QuÇn	30001			30001&30019	1;0	1;0	-1	-1
 Thu thËp nguyªn liÖu chÕ d­îc	2	0	Nh¹c BÊt QuÇn	Nh¹c BÊt QuÇn	30002	30003&30004	30103&30104	30020	1;0	1;0	1	-1
 T×m hiÓu t×nh h×nh b¸ t¸nh	3	0	Nh¹c BÊt QuÇn	B¸ch HiÓu Sinh	30002	30134	30002	30021	1;0	1;0	-1	-1
 ThØnh gi¸o B¹ch Danh Danh	4	0	B¸ch HiÓu Sinh	B¹ch Doanh Doanh	30128			30023	1;0	1;0	-1	-1

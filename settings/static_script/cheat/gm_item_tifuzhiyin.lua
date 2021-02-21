@@ -1,5 +1,7 @@
 --体服指引
--- rm before run 萧远楼.lua
+-- rm before  run
+--萧远楼.lua
+--岳不群.lua
 Include("\\script\\lib\\globalfunctions.lua");
 Include("\\script\\task\\world\\task_head.lua")
 Include("\\script\\system_switch_config.lua")
