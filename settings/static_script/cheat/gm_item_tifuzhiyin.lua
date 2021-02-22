@@ -87,6 +87,7 @@ function OnUse(nItem)
 		if 8 == nRoute then
 			tinsert(tSay, "NhËn X¸ Lîi Kim §¬n/Give_Dandan")
 			tinsert(tSay, "Nhan §å Buff NMK/DoBuffNMK")
+			tinsert(tSay, "Nhan §å Buff NMK_test (Kh«ng cã khi Open)/DoBuffNMK_test")
 		end		
 		if 17 == nRoute then
 			tinsert(tSay, "NhËn ChiÕn M·/Give_ZhanMa")
@@ -4369,7 +4370,26 @@ function DoBuffNMK()
 		AddItem(0,108,517,1,1,3,402,7,292,7,398,-1,0);
 	end
 end
+function DoBuffNMK_test()
 
+	-- local tSay = {
+		-- "Non/nhanngoaitrangNMK_non",
+		-- "Ao/nhanngoaitrangNMK_Ao",
+		-- "Quan/nhanngoaitrangNMK_Quan",
+		-- "T¹i h¹ chØ xem qua th«i/nothing",
+	-- }
+	-- Say(g_szTitle.."------------------", getn(tSay), tSay);
+	local nBody 	= GetBody();
+	if nBody == 3 then
+		AddItem(0,110,516,1,1,3,402,7,398,7,292,-1,0);
+		AddItem(0,109,516,1,1,3,402,7,398,7,292,-1,0);
+		AddItem(0,108,516,1,1,3,402,7,292,7,398,-1,0);
+	else
+		AddItem(0,110,517,1,1,3,402,7,398,7,292,-1,0);
+		AddItem(0,109,517,1,1,3,402,7,398,7,292,-1,0);
+		AddItem(0,108,517,1,1,3,402,7,292,7,398,-1,0);
+	end
+end
 --Gia nhËp Ph¸i
 -- function JoinRoute_UpdateLevel()
 	-- local tMenu = {
