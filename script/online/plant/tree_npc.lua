@@ -254,7 +254,7 @@ function getfruit()
 			AddItem(0,107,ranmt,1)
 		end
 		if nRandomNum <= 10 then
-			gf_AddItemEx({0, 112, 158,1, 4}, "L¨ng Ba Vi Bé toµn tËp")
+			gf_AddItemEx({0, 112, 78,1, 4}, "L¨ng Ba Vi Bé")
 		end
 		nRandomNum = random(1,100);
 		if nRandomNum <= 20 then
