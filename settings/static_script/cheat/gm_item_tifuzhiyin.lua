@@ -36,12 +36,13 @@ function OnUse(nItem)
 	if nRoute <= 0 then
 		tSay = {
 			"Gia nhËp m«n ph¸i/JoinRoute_UpdateLevel",
-			"L¨ng ba vi bé cho VMP/langbavibott",
-			"Th¨ng cÊp mËt tÞch ®· trang bÞ/Get_Book_Update",
+			-- "L¨ng ba vi bé cho VMP/langbavibott",
+			-- "Th¨ng cÊp mËt tÞch ®· trang bÞ/Get_Book_Update",
 		}
 	else
 		tSay = {
 --			"NhËp Code/GiftCodeNhap",
+		-- "NhËn tö quang hiªn viªn ngäc/hienvienngoc",
             "Update Míi/Get_Mored",
             -- "Thiªn kiªu lÖnh (Kh«ng cã khi Open)/nhantkl",
             -- "M¶nh b¹ch kim (Kh«ng cã khi Open)/nhanmbk",
@@ -62,10 +63,10 @@ function OnUse(nItem)
 --			format("%s/test", "Test Nhan Event"),
 --			format("%s/showKX", "NhËn trang søc ®eo h«ng 4 sao"),
             "NhËn C¸c Lo¹i Nguyªn LiÖu/Get_Nguyen_Lieu",
-			-- "NhËn 4000 vµng (Kh«ng cã khi Open)/Get_Money",
+			"NhËn 4000 vµng (Kh«ng cã khi Open)/Get_Money",
 			"Thao t¸c bang héi/TongOperation",
 --			"Thao t¸c Vò KhÝ/PS_VK",
-			-- "Thao t¸c kinh m¹ch (Kh«ng cã khi Open)/GetJingMaiGetJingMai",
+			-- "Thao t¸c kinh m¹ch (Kh«ng cã khi Open)/GetJingMaiGetJing",
 			-- "NhËn Lak/Get_Energy",
 			-- "Vu Khi Chua giam dinh/btcgd",
 			"Kü n¨ng sèng/Life_Skill",
@@ -279,19 +280,129 @@ function huyhoang5()
 	AddItem(0,102,8847, 1,1,-1,-1,-1,-1,2,564,-1,0)
 end
 function hienvienngoc()
-	local rand = 0
-	local i = 0
-	for i = 1, 10 do
-		rand =  random(8801,8830)
-		AddItem(0,102,rand, 1,1,-1,-1,-1,-1,-1,-1,-1,0)
+	local nRoute = GetPlayerRoute();
+	local i = 1 
+	local  ID = {8801,8802,8803,8804,8805,8806,8807,8808,8809,8810,8811,8812,8813,8814,8815,8816,8817,8818,8819,8820,8821,8822,8823,8824,8825,8826,8827,8828,8829,8830}
+	if nRoute == 2 then
+		AddItem(0,102,ID[i], 1,1,-1,-1,-1,-1,-1,-1,-1,0)
+		AddItem(0,102,ID[i+1], 1,1,-1,-1,-1,-1,-1,-1,-1,0)
+	end
+	i = i + 2
+	if nRoute ==  3 then
+		AddItem(0,102,ID[i], 1,1,-1,-1,-1,-1,-1,-1,-1,0)
+		AddItem(0,102,ID[i+1], 1,1,-1,-1,-1,-1,-1,-1,-1,0)
+	end
+		i = i + 2
+	if nRoute ==  4 then
+		AddItem(0,102,ID[i], 1,1,-1,-1,-1,-1,-1,-1,-1,0)
+		AddItem(0,102,ID[i+1], 1,1,-1,-1,-1,-1,-1,-1,-1,0)
+	end
+		i = i + 2
+	if nRoute ==  6 then
+		AddItem(0,102,ID[i], 1,1,-1,-1,-1,-1,-1,-1,-1,0)
+		AddItem(0,102,ID[i+1], 1,1,-1,-1,-1,-1,-1,-1,-1,0)
+	end
+		i = i + 2
+	if nRoute ==  8 then
+		AddItem(0,102,ID[i], 1,1,-1,-1,-1,-1,-1,-1,-1,0)
+		AddItem(0,102,ID[i+1], 1,1,-1,-1,-1,-1,-1,-1,-1,0)
+	end
+		i = i + 2
+	if nRoute ==  9 then
+		AddItem(0,102,ID[i], 1,1,-1,-1,-1,-1,-1,-1,-1,0)
+		AddItem(0,102,ID[i+1], 1,1,-1,-1,-1,-1,-1,-1,-1,0)
+	end
+		i = i + 2
+	if nRoute ==  11 then
+		AddItem(0,102,ID[i], 1,1,-1,-1,-1,-1,-1,-1,-1,0)
+		AddItem(0,102,ID[i+1], 1,1,-1,-1,-1,-1,-1,-1,-1,0)
+	end
+		i = i + 2
+	if nRoute ==  12 then
+		AddItem(0,102,ID[i], 1,1,-1,-1,-1,-1,-1,-1,-1,0)
+		AddItem(0,102,ID[i+1], 1,1,-1,-1,-1,-1,-1,-1,-1,0)
+	end
+		i = i + 2
+	if nRoute ==  14 then
+		AddItem(0,102,ID[i], 1,1,-1,-1,-1,-1,-1,-1,-1,0)
+		AddItem(0,102,ID[i+1], 1,1,-1,-1,-1,-1,-1,-1,-1,0)
+	end
+	i = i + 2
+	if nRoute ==  15 then
+		AddItem(0,102,ID[i], 1,1,-1,-1,-1,-1,-1,-1,-1,0)
+		AddItem(0,102,ID[i+1], 1,1,-1,-1,-1,-1,-1,-1,-1,0)
+	end
+		i = i + 2
+	if nRoute ==  17 then
+		AddItem(0,102,ID[i], 1,1,-1,-1,-1,-1,-1,-1,-1,0)
+		AddItem(0,102,ID[i+1], 1,1,-1,-1,-1,-1,-1,-1,-1,0)
+	end
+		i = i + 2
+	if nRoute ==  18 then
+		AddItem(0,102,ID[i], 1,1,-1,-1,-1,-1,-1,-1,-1,0)
+		AddItem(0,102,ID[i+1], 1,1,-1,-1,-1,-1,-1,-1,-1,0)
+	end
+		i = i + 2
+	if nRoute ==  20 then
+		AddItem(0,102,ID[i], 1,1,-1,-1,-1,-1,-1,-1,-1,0)
+		AddItem(0,102,ID[i+1], 1,1,-1,-1,-1,-1,-1,-1,-1,0)
+	end
+		i = i + 2
+	if nRoute ==  21 then
+		AddItem(0,102,ID[i], 1,1,-1,-1,-1,-1,-1,-1,-1,0)
+		AddItem(0,102,ID[i+1], 1,1,-1,-1,-1,-1,-1,-1,-1,0)
 	end
 end
 function hienvienbinh()
 			local nRoute	= GetPlayerRoute();
 	local id1 = {3,5,8,0,1,2,10,0,5,2,9,6,4,7,11}
 	local id2 = {8801,8802,8803,8804,8805,8806,8807,8808,8809,8810,8811,8812,8813,8814,8815}
-	local rand = random(1,15)
-	AddItem(0,id1[rand],id2[rand], 1,1,-1,-1,-1,-1,-1,-1,-1,10)
+	if nRoute == 2 then
+		AddItem(0,id1[1],id2[1], 1,1,-1,-1,-1,-1,-1,-1,-1,10)
+		AddItem(0,id1[2],id2[2], 1,1,-1,-1,-1,-1,-1,-1,-1,10)
+	end
+	if nRoute ==  3 then
+		AddItem(0,id1[3],id2[3], 1,1,-1,-1,-1,-1,-1,-1,-1,10)
+	end
+		
+	if nRoute ==  4 then
+		AddItem(0,id1[4],id2[4], 1,1,-1,-1,-1,-1,-1,-1,-1,10)
+	end
+	if nRoute ==  6 then
+		AddItem(0,id1[5],id2[5], 1,1,-1,-1,-1,-1,-1,-1,-1,10)
+	end
+	if nRoute ==  8 then
+		AddItem(0,id1[6],id2[6], 1,1,-1,-1,-1,-1,-1,-1,-1,10)
+	end
+	if nRoute ==  9 then
+		AddItem(0,id1[7],id2[7], 1,1,-1,-1,-1,-1,-1,-1,-1,10)
+	end
+	if nRoute ==  11 then
+		AddItem(0,id1[8],id2[8], 1,1,-1,-1,-1,-1,-1,-1,-1,10)
+	end
+	if nRoute ==  12 then
+		AddItem(0,id1[9],id2[9], 1,1,-1,-1,-1,-1,-1,-1,-1,10)
+	end
+	if nRoute ==  14 then
+		AddItem(0,id1[10],id2[10], 1,1,-1,-1,-1,-1,-1,-1,-1,10)
+	end
+	if nRoute ==  15 then
+		AddItem(0,id1[11],id2[11], 1,1,-1,-1,-1,-1,-1,-1,-1,10)
+	end
+	if nRoute ==  17 then
+		AddItem(0,id1[12],id2[12], 1,1,-1,-1,-1,-1,-1,-1,-1,10)
+	end
+	if nRoute ==  18 then
+		AddItem(0,id1[13],id2[13], 1,1,-1,-1,-1,-1,-1,-1,-1,10)
+	end
+	if nRoute ==  20 then
+		AddItem(0,id1[14],id2[14], 1,1,-1,-1,-1,-1,-1,-1,-1,10)
+	end
+	if nRoute ==  21 then
+		AddItem(0,id1[15],id2[15], 1,1,-1,-1,-1,-1,-1,-1,-1,10)
+	end
+	
+
 end
 
 function cuuthienngoc()
@@ -1373,6 +1484,10 @@ function enter_mp(nRoute)
 	AddItem(2, 1, 1003, 1);
 	AddItem(2, 1, 1004, 1);
 	AddItem(2, 1, 2, 10);
+	hienvienbinh();
+	hienvienngoc();
+	viemde();
+	dobuffhttc();
 	Earn(100000);
 	SaveNow()
 	Talk(1,"","Thao t¸c thµnh c«ng, h·y ®¨ng nhËp l¹i")
@@ -2721,7 +2836,8 @@ function Give_Fengshifu()
 	AddItem(1, 6, 84,	30, 4);
 	AddItem(1, 6, 153,30, 4);
 	AddItem(1, 6, 154,30, 4);
-	AddItem(1,6,150,100);
+	AddItem(1, 6, 147,30, 4);
+	-- AddItem(1,6,150,100);
 end
 
 function Give_GuGu()
@@ -2735,11 +2851,11 @@ function Give_GuGu()
 	if 0 >= GetItemCount(2, 0, 1063) and 1 == gf_Judge_Room_Weight(1, 1) then
 		AddItem(2, 0, 1063, 1);
 	end
-	AddItem(2, 17, 14, 9999, 4);
-	AddItem(0, 102, 2121, 1);
-	AddItem(0, 102, 2122, 1);
-	AddItem(0, 102, 2123, 1);
-	AddItem(0, 102, 2124, 1);
+	AddItem(2, 17, 14, 999, 4);
+	-- AddItem(0, 102, 2121, 1);
+	-- AddItem(0, 102, 2122, 1);
+	-- AddItem(0, 102, 2123, 1);
+	-- AddItem(0, 102, 2124, 1);
 end
 
 function ling_nv_xiaodiao()
@@ -3042,7 +3158,7 @@ function Get_Mored()
 		-- "NhËn Thiªn Chi tµng KiÕm/tctk",
 --		"HHVD/huyhoang5",
 		-- "HHVD/huyhoang5",
-		"uÈn Linh cÊp 3/nhanul",
+		"uÈn Linh cÊp 2/nhanul",
 --		"Vâ L©m b¸ Chñ/vlbc",
 --		"NhËn Cöu ChuyÓn Håi Hån §an/cuuchuyen",
 --		"NhËn ChiÕn T­îng/chientuong",
@@ -3053,10 +3169,9 @@ function Get_Mored()
 		-- "NhËn Thó Míi/nhanthucuoimoi",
 		"NhËn Thó C­ìi/thucuoipro",
 --		"NhËn Thiªn Chi Viªm §Õ/thienchiviemde",
-		"NhËn Viªm §Õ/viemde",
-		"NhËn ®å buff/dobuffhttc",
-		"NhËn tö quang hiªn viªn ngäc/hienvienngoc",
-		"NhËn tö quang hiªn viªn thÇn binh/hienvienbinh",
+		-- "NhËn Viªm §Õ/viemde",
+		-- "NhËn ®å buff/dobuffhttc",
+		-- "NhËn tö quang hiªn viªn thÇn binh/hienvienbinh",
 		"NhËn Cöu Thiªn Ngäc/cuuthienngoc",
     	-- "NhËn B¹ch Kim Viªm §Õ/bkvd",
 --		"LuyÖn max skill trÊn ph¸i/maxtranphai",
@@ -3150,9 +3265,9 @@ end
 function nhanul()
 	local tSay = {
 		g_szTitle.."Lùa chän",
-		"NgÉu nhiªn nãn/UL3_non",
-		"NgÉu nhiªn ¸o/UL3_ao",
-		"NgÉu nhiªn quÇn/UL3_quan",
+		"NgÉu nhiªn nãn/UL2_non",
+		"NgÉu nhiªn ¸o/UL2_ao",
+		"NgÉu nhiªn quÇn/UL2_quan",
 		"\nRa khái/nothing",
 	}
 	SelectSay(tSay);
@@ -4165,7 +4280,25 @@ end
 function Batlc()
 SetFightState(0)
 end
+function UL2_non()
+	for i = 1, 10 do
+		local non = random(18,34)
+		AddItem(0, 148, non, 1, 1);
+	end
+end
+function UL2_ao()
 
+	for i = 1, 10 do
+		local non = random(18,34)
+		AddItem(0, 149, non, 1, 1);
+	end
+end
+function UL2_quan()
+	for i = 1, 10 do
+		local non = random(18,34)
+		AddItem(0, 150, non, 1, 1);
+	end
+end
 function UL3_non()
 	for i = 1, 10 do
 		local non = random(35,51)
@@ -4225,14 +4358,16 @@ function DoBuffNMK()
 		-- "T¹i h¹ chØ xem qua th«i/nothing",
 	-- }
 	-- Say(g_szTitle.."------------------", getn(tSay), tSay);
-	
-	AddItem(0,110,516,1,1,3,484,7,41,-1,0);
-	AddItem(0,109,516,1,1,3,484,7,41,-1,0);
-	AddItem(0,108,516,1,1,3,484,7,41,-1,0);
-	
-	AddItem(0,110,517,1,1,3,484,7,41,-1,0);
-	AddItem(0,109,517,1,1,3,484,7,41,-1,0);
-	AddItem(0,108,517,1,1,3,484,7,41,-1,0);
+	local nBody 	= GetBody();
+	if nBody == 3 then
+		AddItem(0,110,516,1,1,3,402,3,398,7,292,-1,0);
+		AddItem(0,109,516,1,1,3,402,3,398,7,292,-1,0);
+		AddItem(0,108,516,1,1,3,402,7,292,7,398,-1,0);
+	else
+		AddItem(0,110,517,1,1,3,402,3,398,7,292,-1,0);
+		AddItem(0,109,517,1,1,3,402,3,398,7,292,-1,0);
+		AddItem(0,108,517,1,1,3,402,7,292,7,398,-1,0);
+	end
 end
 
 --Gia nhËp Ph¸i
