@@ -387,14 +387,14 @@ function confirm_use_jungong(nType)
 	--gf_AddItemEx2({2,1,30340,tJungongItem[nType][5]},"Méc R­¬ng lo¹i "..tJungongItem[nType][1],"ThÇn Tµi B¶o R­¬ng","Tµi nguyªn chiÕn",0,1)
 	--Msg2Player("B¹n nhËn ®­îc "..tJungongItem[nType][5].." Méc R­¬ng")
 	ModifyExp(nExpAward)	
-	AddItem(2,1,1009,100);
+	AddItem(2,1,1009,10);
 	if GetTask(701) >= 0 then
 		SetTask(701,GetTask(701) + nJunGongAward)
 	else
 		SetTask(701,GetTask(701) - nJunGongAward)
 	end
 	Msg2Player("B¹n nhËn ®­îc "..nExpAward.." ®iÓm kinh nghiÖm")
-	Msg2Player("B¹n nhËn ®­îc 100 Thiªn th¹ch tinh th¹ch")
+	Msg2Player("B¹n nhËn ®­îc 10 Thiªn th¹ch tinh th¹ch")
 	Msg2Player("B¹n nhËn ®­îc "..nJunGongAward.." ®iÓm c«ng tr¹ng")
 	--- §iÓm VËn May
 --	local nPointVM = gf_GetTaskByte(TSK_LUCKY_DAOHUU, BYTE_POINT_LUCKY)	

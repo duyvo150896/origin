@@ -241,7 +241,7 @@ function getfruit()
 		end
 		nRandomNum = random(1,100);
 		if nRandomNum <= 20 then
-			AddItem(0,107,30346,1);
+			AddItem(2,1,30346,1);
 		end
 		if nRandomNum <= 50 then
 			if AddItem(1,0,32,10) == 1 then
@@ -284,7 +284,14 @@ function getfruit()
 				WriteLog("[Ho¹t ®éng trång c©y Th¸i H­]:"..GetName().."Thu ®­îc 1 ".."Ngò Hµnh MËt tÞch");
 			end;		
 		end;
-		
+		nRandomNum = random ( 1,3);
+		if nRandomNum == 1 then
+			UL3_non();
+		elseif nRandomNum == 2 then
+			UL3_ao();
+		else
+			UL3_quan();
+		end
 		-- NhiÖm vô ChuyÓn Sinh 3
 		 if GetTask(TRANSLIFE_MISSION_ID) == 19 and gf_GetTaskByte(TRANSLIFE_TASK_34,TRANSLIFE_BYTE_TASK4) < 64 then
 			gf_SetTaskByte(TRANSLIFE_TASK_34, TRANSLIFE_BYTE_TASK4, gf_GetTaskByte(TRANSLIFE_TASK_34,TRANSLIFE_BYTE_TASK4) +1)
@@ -422,4 +429,17 @@ function fruitcheckserver()
 		end	
 	end
 	return 0
+end
+
+function UL3_non()
+	local non = random(35,51)
+	AddItem(0, 148, non, 1, 1);
+end
+function UL3_ao()
+	local non = random(35,51)
+	AddItem(0, 149, non, 1, 1);
+end
+function UL3_quan()
+	local non = random(35,51)
+	AddItem(0, 150, non, 1, 1);
 end
