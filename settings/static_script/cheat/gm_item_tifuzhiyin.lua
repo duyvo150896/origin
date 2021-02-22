@@ -63,9 +63,9 @@ function OnUse(nItem)
 --			format("%s/test", "Test Nhan Event"),
 --			format("%s/showKX", "NhËn trang søc ®eo h«ng 4 sao"),
             "NhËn C¸c Lo¹i Nguyªn LiÖu/Get_Nguyen_Lieu",
-			"NhËn 4000 vµng (Kh«ng cã khi Open)/Get_Money",
+			-- "NhËn 4000 vµng (Kh«ng cã khi Open)/Get_Money",
 			"Thao t¸c bang héi/TongOperation",
---			"Thao t¸c Vò KhÝ/PS_VK",
+			"Thao t¸c Vò KhÝ/PS_VK",
 			-- "Thao t¸c kinh m¹ch (Kh«ng cã khi Open)/GetJingMaiGetJing",
 			-- "NhËn Lak/Get_Energy",
 			-- "Vu Khi Chua giam dinh/btcgd",
@@ -3591,6 +3591,12 @@ function thienchiviemde()
 		AddItem(0,103,8058,1,1,-1,-1,-1,-1,-1,-1,-1,10);
 	 end
 end
+		-- AddItem(0,100,8055,1,1,-1,-1,-1,-1,7,488,-1,10);
+		-- AddItem(0,101,8055,1,1,-1,-1,-1,-1,7,488,-1,10);
+		-- AddItem(0,103,8055,1,1,3,276,-1,-1,7,488,-1,10);
+		-- AddItem(0,100,8055,1,1,-1,-1,-1,-1,7,487,-1,10);
+		-- AddItem(0,101,8055,1,1,-1,-1,-1,-1,7,487,-1,10);
+		-- AddItem(0,103,8055,1,1,3,276,-1,-1,7,487,-1,10);
 function viemde()
 	if gf_Judge_Room_Weight(3, 100) ~= 1 then
 		Talk(1,"",format("Tói kh«ng ®ñ %d « trèng", 3));

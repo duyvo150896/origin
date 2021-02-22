@@ -388,6 +388,7 @@ function confirm_use_jungong(nType)
 	--Msg2Player("B¹n nhËn ®­îc "..tJungongItem[nType][5].." Méc R­¬ng")
 	ModifyExp(nExpAward)	
 	AddItem(2,1,1009,10);
+	AddItem(2,1,30430,100);
 	if GetTask(701) >= 0 then
 		SetTask(701,GetTask(701) + nJunGongAward)
 	else
