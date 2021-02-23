@@ -38,6 +38,11 @@ function plant()
 		Talk(1,"","C©y b¸t nh· chØ sinh tr­ëng tèt ë T©y Thµnh §« mµ th«i");
 		return 0;
 	end
+	local nDate = tonumber(date("%H"));
+	if nDate >= 0 and nDate <= 7  then
+		Talk(1,"","Tõ 0h ®Õn 7h c©y b¸t nh· thiÕu Oxi kh«ng ph¸t triÓn ®­îc");
+		return 0;
+	end
 	if nstate ~= 2 and nstate ~= 3 then
 		Talk(1,"","Yªu cÇu tr¹ng th¸i ®å s¸t c¸ nh©n hoÆc ®å sat bang héi ®Ó trång c©y");
 		return 0;

@@ -75,7 +75,7 @@ function main()
 		
 		--local nGroup = fruitcheckserver()
 		--gf_AddItemEx2({tFruitAwardJune2010[nGroup][6][1], tFruitAwardJune2010[nGroup][6][2], tFruitAwardJune2010[nGroup][6][3], 1}, tFruitAwardJune2010[nGroup][7], "Bat Nha Lon", "nhËn")
-		gf_EventGiveCustomAward(2,100000,0,"Bat Nha Lon","nhËn")
+		gf_EventGiveCustomAward(2,50000,0,"Bat Nha Lon","nhËn")
 	end
 end
 --	
