@@ -85,9 +85,9 @@ function OnUse(nItem)
 			tinsert(tSay, "NhËn ¸m KhÝ vµ C¬ Quan/Give_JiguanAnqi")
 		end
 		if 8 == nRoute then
-			tinsert(tSay, "NhËn X¸ Lîi Kim §¬n/Give_Dandan")
+			-- tinsert(tSay, "NhËn X¸ Lîi Kim §¬n/Give_Dandan")
 			tinsert(tSay, "Nhan §å Buff NMK/DoBuffNMK")
-			tinsert(tSay, "Nhan §å Buff NMK_test (Kh«ng cã khi Open)/DoBuffNMK_test")
+			-- tinsert(tSay, "Nhan §å Buff NMK_test (Kh«ng cã khi Open)/DoBuffNMK_test")
 		end		
 		if 17 == nRoute then
 			tinsert(tSay, "NhËn ChiÕn M·/Give_ZhanMa")
@@ -162,7 +162,7 @@ function nhansen()
 	AddItem(2,1,30882,10);
 end
 function nhansen_x10()
-	AddItem(2,1,30882,100);
+	AddItem(2,1,30882,50);
 end
 function tctk()
 	local nBody 	= GetBody();
