@@ -76,7 +76,7 @@ function ViemDeMenu()
 		"N©ng cÊp trang bÞ Tö Quang Viªm §Õ thµnh Viªm §Õ/upgrade_tq_emperor",
 		"N©ng cÊp trang bÞ Tö Quang Viªm §Õ thµnh Viªm §Õ (thµnh c«ng 100%)/upgrade_tq_emperor_100",
 		-- "N©ng cÊp trang bÞ Viªm §Õ thµnh Thiªn Chi Viªm §Õ/upgrade_emperor",
-		-- "N©ng cÊp trang bÞ Viªm §Õ thµnh Thiªn Chi Viªm §Õ (100%)/upgrade_thienchiviemde",
+		"N©ng cÊp trang bÞ Viªm §Õ thµnh Thiªn Chi Viªm §Õ (100%)/upgrade_thienchiviemde",
 --		"N©ng cÊp Thiªn Chi Viªm §Õ thµnh B¹ch Kim Viªm §Õ/upgrade_bachkimviemde",
 		-- "N©ng cÊp Thiªn Chi Viªm §Õ thµnh B¹ch Kim Viªm §Õ (100%)/upgrade_bachkimviemde_100_Form",
 		"C¶i t¹o trang bÞ Tö Quang Viªm §Õ/upgrade_tqvd",
@@ -1041,12 +1041,12 @@ function OnPutinComplete(param)
 			Talk(1, "", g_szNpcName.."Ng©n l­îng trªn ng­êi kh«ng ®ñ");
 			return 0;
 		end
-		if GetItemCount(2,1,30346) < 15 then
-			Talk(1, "", g_szNpcName.."C¸c h¹ kh«ng mang ®ñ 15 m¶nh b¹ch kim!");
+		if GetItemCount(2,1,30346) < 20 then
+			Talk(1, "", g_szNpcName.."C¸c h¹ kh«ng mang ®ñ 20 m¶nh b¹ch kim!");
 			return 0;
 		end
-		if GetItemCount(2,1,539) < 15 then
-			Talk(1,"","Ta cÇn 15 hoµng kim ®¹i hång bao, ng­¬i ®· cã ®ñ ch­a?")
+		if GetItemCount(2,1,539) < 20 then
+			Talk(1,"","Ta cÇn 20 hoµng kim ®¹i hång bao, ng­¬i ®· cã ®ñ ch­a?")
 			return 0
 		end
 	end
@@ -1416,7 +1416,7 @@ function OnPutinComplete(param)
 					end
 --N©ng cÊp Thiªn Chi Viªm §Õ
 				elseif nUpgradeType == 85 then
-					if Pay(2000000)==1 and DelItem(2,1,539,15)==1 and DelItem(2,1,30346,15)==1 then
+					if Pay(2000000)==1 and DelItem(2,1,539,20)==1 and DelItem(2,1,30346,20)==1 then
 						for i=1,12 do
 							if get_item_count(t, tbThienChiViemDe[i][2][1], tbThienChiViemDe[i][2][2], tbThienChiViemDe[i][2][3]) >=1 then
 								nRet, nItemIdx = gf_AddItemEx({tbThienChiViemDe[i][3][1], tbThienChiViemDe[i][3][2], tbThienChiViemDe[i][3][3],1,1, -1,-1, -1, -1, -1, -1, -1, tbThienChiViemDe[i][3][13]}, tbThienChiViemDe[i][1]);
@@ -1884,7 +1884,7 @@ function upgrade_thienchiviemde()
 		"*TiÕn hµnh n©ng cÊp/#do_upgrade(85,0)",
 		"T¹i h¹ chØ tiÖn ghÐ ngang/gf_DoNothing"
 	}
-	Say(g_szNpcName.."N©ng cÊp Viªm §Õ thµnh Thiªn Chi Viªm §Õ cÇn 15 m¶nh b¹ch kim + 15 hoµng kim ®¹i hång bao (999 vµng) + 300 vµng.\n<color=red>Tû lÖ thµnh c«ng 100%<color>",getn(tSay),tSay)
+	Say(g_szNpcName.."N©ng cÊp Viªm §Õ thµnh Thiªn Chi Viªm §Õ cÇn 20 m¶nh b¹ch kim + 20 hoµng kim ®¹i hång bao (999 vµng) + 300 vµng.\n<color=red>Tû lÖ thµnh c«ng 100%<color>",getn(tSay),tSay)
 end
 
 
