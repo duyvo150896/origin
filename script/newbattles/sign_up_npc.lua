@@ -15,7 +15,7 @@ Include("\\script\\function\\vip_card\\vc_head.lua")
 Include("\\script\\lib\\globalfunctions.lua");
 Include("\\settings\\static_script\\global\\merit.lua")
 
-Include("\\script\\lib.lua");
+-- Include("\\script\\lib.lua");
 --g_sNpcName和g_nNpcCamp都是一个全局变量，它们在萧远楼和赵延年的脚本上定义
 
 function battle_main()
