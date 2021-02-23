@@ -1081,18 +1081,18 @@ BigDelItem(1,0,270,BigGetItemCount(1,0,270))
 -- BigDelItem(0,153,31,BigGetItemCount(0,153,31))
 -- BigDelItem(0,153,32,BigGetItemCount(0,153,32))
 -- BigDelItem(0,153,33,BigGetItemCount(0,153,33))
-BigDelItem(2,1,205,BigGetItemCount(2,1,205))
-BigDelItem(2,1,206,BigGetItemCount(2,1,206))
-BigDelItem(2,1,207,BigGetItemCount(2,1,207))
-BigDelItem(2,1,203,BigGetItemCount(2,1,203))
-BigDelItem(1,0,63,BigGetItemCount(1,0,63))
-BigDelItem(1,0,65,BigGetItemCount(1,0,65))
-BigDelItem(1,0,54,BigGetItemCount(1,0,54))
-BigDelItem(1,0,55,BigGetItemCount(1,0,55))
-BigDelItem(1,0,68,BigGetItemCount(1,0,68))
-BigDelItem(1,0,53,BigGetItemCount(1,0,53))
-BigDelItem(1,0,50,BigGetItemCount(1,0,50))
-BigDelItem(1,0,63,BigGetItemCount(1,0,63))
+-- BigDelItem(2,1,205,BigGetItemCount(2,1,205))
+-- BigDelItem(2,1,206,BigGetItemCount(2,1,206))
+-- BigDelItem(2,1,207,BigGetItemCount(2,1,207))
+-- BigDelItem(2,1,203,BigGetItemCount(2,1,203))
+-- BigDelItem(1,0,63,BigGetItemCount(1,0,63))
+-- BigDelItem(1,0,65,BigGetItemCount(1,0,65))
+-- BigDelItem(1,0,54,BigGetItemCount(1,0,54))
+-- BigDelItem(1,0,55,BigGetItemCount(1,0,55))
+-- BigDelItem(1,0,68,BigGetItemCount(1,0,68))
+-- BigDelItem(1,0,53,BigGetItemCount(1,0,53))
+-- BigDelItem(1,0,50,BigGetItemCount(1,0,50))
+-- BigDelItem(1,0,63,BigGetItemCount(1,0,63))
 
 
 -- BigDelItem(0,107,30001,BigGetItemCount(0,107,30001))
@@ -1164,14 +1164,14 @@ BigDelItem(0,103,30209,BigGetItemCount(0,103,30209))
 --BigDelItem(0,105,38,BigGetItemCount(0,105,38));
 BigDelItem(0,105,139,BigGetItemCount(0,105,139));
 BigDelItem(0,105,138,BigGetItemCount(0,105,138));
-BigDelItem(2,1,469,BigGetItemCount(2,1,469));
-BigDelItem(2,1,470,BigGetItemCount(2,1,470));
-BigDelItem(2,1,471,BigGetItemCount(2,1,471));
-BigDelItem(2,1,472,BigGetItemCount(2,1,472));
-BigDelItem(2,1,473,BigGetItemCount(2,1,473));
-BigDelItem(2,1,474,BigGetItemCount(2,1,474));
-BigDelItem(2,1,475,BigGetItemCount(2,1,475));
-BigDelItem(2,1,476,BigGetItemCount(2,1,476));
+-- BigDelItem(2,1,469,BigGetItemCount(2,1,469));
+-- BigDelItem(2,1,470,BigGetItemCount(2,1,470));
+-- BigDelItem(2,1,471,BigGetItemCount(2,1,471));
+-- BigDelItem(2,1,472,BigGetItemCount(2,1,472));
+-- BigDelItem(2,1,473,BigGetItemCount(2,1,473));
+-- BigDelItem(2,1,474,BigGetItemCount(2,1,474));
+-- BigDelItem(2,1,475,BigGetItemCount(2,1,475));
+-- BigDelItem(2,1,476,BigGetItemCount(2,1,476));
 -- tmkl tcl
 ------
 end

@@ -953,7 +953,7 @@ function ZgcNpcCreate()
 	--npc_index = CreateNpc("Giang hå tuÊn kiÖt","Tiªu ViÔn L©u",200,1409,2772);	--ãê¾©£º176,173
 	--npc_index = CreateNpc("Chñ qu¶n Háa Khİ phßng","TiÓu Ngäc",350,1469,2970);	
 	npc_index = CreateNpc("Chñ qu¶n Háa Khİ phßng","TiÓu Ngäc",200,1377,2895);		
-	SetNpcScript(npc_index, "\\script\\ÖĞÔ­Ò»Çø\\ãê¾©\\npc\\ÏôÔ¶Â¥.lua")
+	SetNpcScript(npc_index, "\\script\\battles\\battlejoin2.lua")
 	--npc_index = CreateNpc("Giang hå tuÊn kiÖt","Tiªu ViÔn L©u",200,1402,2918);	--ãê¾©£º175,182
 	--SetNpcScript(npc_index, "\\script\\ÖĞÔ­Ò»Çø\\ãê¾©\\npc\\ÏôÔ¶Â¥.lua")
 	--*****************************NPCĞÅÏ¢±í*********************************
