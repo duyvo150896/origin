@@ -2565,7 +2565,7 @@ function Get_Book()
 		"Mat tich/mtphu",
 		-- "NhÀn Ch©n Quy”n/Get_Book_ZhenJuan",
 		"NhÀn Quy’t Y’u/Get_Book_JueYao",
-		"Th®ng c p mÀt tﬁch Æ∑ trang bﬁ/Get_Book_Update",
+		-- "Th®ng c p mÀt tﬁch Æ∑ trang bﬁ/Get_Book_Update",
 		"Ra kh·i/nothing",
 	};
 	SelectSay(szSay);

@@ -240,7 +240,7 @@ function getfruit()
 			AddItem(1,1,18,10);
 		end
 		nRandomNum = random(1,100);
-		if nRandomNum <= 20 then
+		if nRandomNum <= 20 and  nRandomNum >= 10 then
 			AddItem(2,1,30346,1);
 		end
 		if nRandomNum <= 50 then
@@ -250,10 +250,10 @@ function getfruit()
 			end;		
 		end;
 		local ranmt = random(1,32);
-		if nRandomNum <= 20 then
+		if nRandomNum <= 40 and  nRandomNum >= 20 then
 			AddItem(0,107,ranmt,1)
 		end
-		if nRandomNum <= 10 then
+		if nRandomNum <= 50 and  nRandomNum >= 40 then
 			gf_AddItemEx({0, 112, 78,1, 4}, "L¨ng Ba Vi Bé")
 		end
 		nRandomNum = random(1,100);
