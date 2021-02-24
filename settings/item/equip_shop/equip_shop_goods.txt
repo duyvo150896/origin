@@ -13911,7 +13911,7 @@ ID	Title	AwrdItem	NeedSex	NeedBody	NeedRoute	AwardTimes	GlobalMsg	ExchangeMode	T
 53368	V« Song ChiÕn ThÇn trang	0;101;30653;1	2	3			1	52402		
 53369	V« Song ChiÕn ThÇn trang	0;101;30654;1	2	4			1	52403			
 60000	Kim tÖ 1	2;1;30880;1						60000	720	
-60001	Kim tÖ 10	2;1;30881;1						60001	720	
+60001	Kim tÖ 1000	2;1;30881;1						60001	720	
 60002	Kim tÖ 10000	2;1;30882;1						60002	720	
 60003	ChÝ T«n LÖnh	2;1;50003;1						60003	720
 60004	Bao Tiªu Dao Ngäc	2;1;30605;1						60004	720
@@ -14094,3 +14094,4 @@ ID	Title	AwrdItem	NeedSex	NeedBody	NeedRoute	AwardTimes	GlobalMsg	ExchangeMode	T
 60181	Qu©n C«ng bµi	2;1;9997;1						60181	720
 60182	Bao §¸ Ngò S¾c nhá	2;1;30404;1						60182	720
 60183	Bao §¸ Ngò S¾c lín	2;1;30405;1						60183	720
+60184	Bao Thiªn Th¹ch Tinh Th¹ch	2;1;1051;1						60184	720
