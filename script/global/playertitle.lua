@@ -1610,7 +1610,7 @@ function _65_02_(type, stateID)
 end
 
 function _65_03_(type, stateID)
-	PT_AddAllWhenEquip_duyvo_2(type, stateID, 10, 15,10000);
+	PT_AddAllWhenEquip_duyvo_2(type, stateID, 10, 15,7000);
 end
 
 --function _65_04_(type, stateID)
@@ -2029,19 +2029,19 @@ function _61_06_(nType, nStateID)
 end
 
 function _66_01_(nType, nStateID)
-	PT_AddAllWhenEquip_duyvo(nType, nStateID, 40, 12,20000)
+	PT_AddAllWhenEquip_duyvo(nType, nStateID, 40, 12,13000)
 end
 
 function _66_02_(nType, nStateID)
-	PT_AddAllWhenEquip_duyvo(nType, nStateID, 40, 12,20000)
+	PT_AddAllWhenEquip_duyvo(nType, nStateID, 40, 12,13000)
 end
 
 function _66_03_(nType, nStateID)
-	PT_AddAllWhenEquip_duyvo(nType, nStateID, 40, 12,20000)
+	PT_AddAllWhenEquip_duyvo(nType, nStateID, 40, 12,13000)
 end
 
 function _66_04_(nType, nStateID)
-	PT_AddAllWhenEquip_duyvo(nType, nStateID, 40, 12,20000)
+	PT_AddAllWhenEquip_duyvo(nType, nStateID, 40, 12,13000)
 end
 
 function _67_01_(nType, nStateID)
@@ -2096,30 +2096,30 @@ end
 
 function _68_01_(nType, nStateID)
 	if 1 == nType then
-		PT_AddAllWhenEquip_duyvo(nType, nStateID, 40, 12,20000);
+		PT_AddAllWhenEquip_duyvo(nType, nStateID, 40, 12,13000);
 	end
 end
 
 function _68_02_(nType, nStateID)
 	if 1 == nType then
-		PT_AddAllWhenEquip_duyvo(nType, nStateID, 40, 12,20000);
+		PT_AddAllWhenEquip_duyvo(nType, nStateID, 40, 12,13000);
 	end
 end
 
 function _68_03_(nType, nStateID)
 	if 1 == nType then
-		PT_AddAllWhenEquip_duyvo(nType, nStateID, 40, 12,20000);
+		PT_AddAllWhenEquip_duyvo(nType, nStateID, 40, 12,13000);
 	end
 end
 
 function _68_04_(nType, nStateID)
 	if 1 == nType then
-		PT_AddAllWhenEquip_duyvo(nType, nStateID, 40, 12,20000);
+		PT_AddAllWhenEquip_duyvo(nType, nStateID, 40, 12,13000);
 	end
 end
 function _25_02_(nType, nStateID)
 	-- if 1 == nType then
-		-- PT_AddAllWhenEquip_duyvo(nType, nStateID, 40, 12,20000);
+		-- PT_AddAllWhenEquip_duyvo(nType, nStateID, 40, 12,13000);
 	-- end
 end
 function _70_02_(nType, nStateID)
@@ -2135,7 +2135,7 @@ function _70_06_(nType, nStateID)
 function _70_07_(nType, nStateID)
 
 	if 1 == nType then
-		PT_AddAllWhenEquip_duyvo(nType, nStateID, 40, 12,20000);
+		PT_AddAllWhenEquip_duyvo(nType, nStateID, 40, 12,13000);
 		-- SetCurrentNpcSFX(PIdx2NpcIdx(),978,1,1)
 	end
 
@@ -2152,7 +2152,9 @@ function PT_AddAllWhenEquip_duyvo(type, stateID, number1, number2, number3)
 		CastState("state_add_allability", number1, -1, 1, stateID);
 		CastState("imme_life_percent_add", number2, -1, 1, stateID + 1);
 		CastState("state_life_max_point_add", number3, -1, 1, stateID + 2);
-		CastState("state_magic_parmor_per_add",5, -1, 1, stateID + 3);
+		CastState("state_m_attack_percent_add", 15, -1, 1, stateID+ 3);
+		CastState("state_p_attack_percent_add", 15, -1, 1, stateID+ 4);
+		-- CastState("state_magic_parmor_per_add",5, -1, 1, stateID + 3);
 		-- CastState("state_physical_parmor_per_add",15, -1, 1, stateID + 4);
 		-- Msg2Player(format("%s%d%s%d%s%d","HiÖu qu¶ : KTC", number1, "  t¨ng sinh lùc : ", number2, "  Sinh lùc t¨ng: ", number3));
 	end
@@ -2160,10 +2162,12 @@ end
 
 function PT_AddAllWhenEquip_duyvo_2(type, stateID, number1, number2, number3)
 	if 1 == type then
-		CastState("state_magic_parmor_per_add",5, -1, 1, stateID);
-		CastState("state_burst_enhance_rate", number1, -1, 1, stateID+1);
-		CastState("state_add_allability", number2, -1, 1, stateID+2);
-		CastState("state_life_max_point_add", number3, -1, 1, stateID+ 3);
+		-- CastState("state_magic_parmor_per_add",5, -1, 1, stateID);
+		CastState("state_burst_enhance_rate", number1, -1, 1, stateID);
+		CastState("state_add_allability", number2, -1, 1, stateID+1);
+		CastState("state_life_max_point_add", number3, -1, 1, stateID+ 2);
+		CastState("state_m_attack_percent_add", 15, -1, 1, stateID+ 3);
+		CastState("state_p_attack_percent_add", 15, -1, 1, stateID+ 4);
 		-- Msg2Player(format("%s%d%%s%d%s%s%d","HiÖu qu¶ nhËn ®­îc: T¨ng tèc ®é thi triÓn", number1, ",T¨ng Sinh lùc", number2, " ®iÓm", "T¨ng Sinh lùc", number3));
 	end
 end
