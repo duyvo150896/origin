@@ -2242,7 +2242,7 @@ Tói Quµ Ngo¹i Trang PhÇn Háa ¶m S­¬ng (§en)	2	1	30877	0	0	1												\image\it
 Phèi ph­¬ng NhÉn Hµo HiÖp	2	1	30878	1	0	1												\image\item\other\Åä·½¼¼ÄÜÊéa1.spr	\image\item\other\Åä·½¼¼ÄÜÊéa0.spr	"Phèi ph­¬ng ghi chĞp c«ng nghÖ chÕ t¹o NhÉn Hµo HiÖp.<enter><color=Gold>(NhÊp chuét ph¶i ®Ó häc, yªu cÇu kü n¨ng chÕ t¹o t­¬ng øng cÊp 90)"		§· khãa		1	2	1			999				
 PhiÕu §æi MËt TŞch Siªu CÊp	2	1	30879	0	0	1												\image\item\other\ÀñÆ·°ü×°Ö½32.spr	\image\item\other\ÀñÆ·°ü×°Ö½80.spr	"Khi danh väng thÕ lùc ®¹t V¹n ng­êi ng­ìng mé, sÏ cã thÓ vµo TiÖm Danh Väng ®æi 1 quyÓn MËt TŞch Siªu CÊp; cÇn tiªu hao 2 quyÓn MËt TŞch Cao CÊp t­¬ng øng."		ThÇn bİ		1	1	1							
 Kim tÖ 1	2	1	30880	0	0	1000												\image\item\other\»¨ºìa1.spr	\image\item\other\»¨ºìa0.spr	Sö dông nhËn ®­îc 1 Kim phiÕu		ThÇn bİ	\script\item\jinjuan_1.lua	1	3	1							
-Kim tÖ 10	2	1	30881	0	0	1000												\image\item\other\»¨ºìa1.spr	\image\item\other\»¨ºìa0.spr	Sö dông nhËn ®­îc 10 Kim phiÕu		ThÇn bİ	\script\item\jinjuan_10.lua	1	3	1							
+Kim tÖ 1000	2	1	30881	0	0	1000												\image\item\other\»¨ºìa1.spr	\image\item\other\»¨ºìa0.spr	Sö dông nhËn ®­îc 10 Kim phiÕu		ThÇn bİ	\script\item\jinjuan_10.lua	1	3	1							
 Kim tÖ10000	2	1	30882	0	0	1000												\image\item\other\»¨ºìa1.spr	\image\item\other\»¨ºìa0.spr	Sö dông nhËn ®­îc 10000 Kim phiÕu		ThÇn bİ	\script\item\jinjuan_100.lua	1	0	1							
 LÖnh Bµi	2	1	30883	0	0	2000												\image\item\other\ÁîÅÆ32.spr	\image\item\other\ÁîÅÆ80.spr	Dïng ®Ó chÕ t¹o Qu©n LÖnh Trung CÊp vµ Qu©n LÖnh Cao CÊp		ThÇn bİ		1	0	0							
 Qu©n Phôc	2	1	30884	0	0	2000												\image\item\other\¾ü·ş32.spr	\image\item\other\¾ü·ş80.spr	Dïng ®Ó chÕ t¹o Qu©n LÖnh Trung CÊp vµ Qu©n LÖnh Cao CÊp		ThÇn bİ		1	0	0							
