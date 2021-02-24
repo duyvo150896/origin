@@ -8,11 +8,7 @@ function OnDeath(id, f, x)
 	--Ë­´òËÀµÄ
 	if f == 0 then
 		killer = GetName();
-		if nMap == 202 then
-				AddItem(2,1,30072,8);
-		else
-			gf_TeamOperateEX(wb_KillAward);
-		end
+		gf_TeamOperateEX(wb_KillAward);
 	end
 	local msg = format("Sau mét håi chiÕn ®Êu kŞch liÖt, cuèi cïng BOSS %s ®· bŞ %s tiªu diÖt thµnh c«ng.", npcName, killer);
 	Msg2Global(msg);

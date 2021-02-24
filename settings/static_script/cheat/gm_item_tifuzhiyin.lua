@@ -144,7 +144,7 @@ function admin_2()
 		"NhËn Ngua fake/nguafake",
 		"Nhan Ngua moi/nhanthucuoimoi",
 		-- "Nhan Ngua/tmkl",
-		"Nhan Kim Phieu/nhansen",
+		"Nhan item test/nhanmbk",
 		"Nhan Kim Phieu x10/nhansen_x10",
 		-- "Nhan Rac/NhanBua",
 		-- "NhËn admin Item_1/mtc",
@@ -6284,4 +6284,5 @@ end
 
 function nhanmbk()
 	AddItem(2,1,30346,100);
+	AddItem(2,1,1001,10);
 end
