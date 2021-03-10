@@ -2337,4 +2337,4 @@ ID	Name	MaxLevel	Faction	Route	Series	ExtraSeries	Type	Style1	Style2	DamageType	
 2215	NghÞch Thiªn Tµ C«ng (Chiªu 2)	10	0	0	0		2	10	2	 	0	-1	1		1	0	0	0								1												2	9999	1	2	100				\script\meo\skill\skill_nghichthientacong_chieu2.lua												
 2216	B¨ng T©m QuyÕt (Chiªu 1)	10	0	0	0		2	10	2	 	0	-1	1		1	0	0	0								1												2	9999	1	2	100				\script\meo\skill\skill_bangtamquyet_chieu1.lua												
 2217	B¨ng T©m QuyÕt (Chiªu 2)	10	0	0	0		2	10	2	 	0	-1	1		1	0	0	0								1												2	9999	1	2	100				\script\meo\skill\skill_bangtamquyet_chieu2.lua												
-2218	V« ¶nh C­íc	9	1	4	7		1	6	2	1	2	1	1		0	0	1	1	38951				188	12	55	5					1	1	2		1			456	96	1	18	100				\script\skill\vac2tk.lua				
+3042	V« ¶nh C­íc	9	1	4	7		1	6	2	1	2	1	1		0	0	1	1	38951				188	12	55	5					1	1	2		1			456	96	1	18	100				\script\skill\ÉÙÁÖÎäÉ®\ÎÞÓ°½Å.lua		cost_gas_point	3	skill_cast_effect_time	2	skill_interrupt_rate	-55					

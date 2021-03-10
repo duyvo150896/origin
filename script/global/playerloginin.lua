@@ -1132,15 +1132,18 @@ BigDelItem(1,0,270,BigGetItemCount(1,0,270))
 -- BigDelItem(0,107,30034,BigGetItemCount(0,107,30034))
 BigDelItem(2,1,1157,BigGetItemCount(2,1,1157))
 BigDelItem(1,6,150,BigGetItemCount(1,6,150))
-BigDelItem(0,100,30207,BigGetItemCount(0,100,30207))
-BigDelItem(0,101,30207,BigGetItemCount(0,101,30207))
-BigDelItem(0,103,30207,BigGetItemCount(0,103,30207))
-BigDelItem(0,100,30208,BigGetItemCount(0,100,30208))
-BigDelItem(0,101,30208,BigGetItemCount(0,101,30208))
-BigDelItem(0,103,30208,BigGetItemCount(0,103,30208))
-BigDelItem(0,100,30209,BigGetItemCount(0,100,30209))
-BigDelItem(0,101,30209,BigGetItemCount(0,101,30209))
-BigDelItem(0,103,30209,BigGetItemCount(0,103,30209))
+
+-- thvs 
+-- BigDelItem(0,100,30207,BigGetItemCount(0,100,30207))
+-- BigDelItem(0,101,30207,BigGetItemCount(0,101,30207))
+-- BigDelItem(0,103,30207,BigGetItemCount(0,103,30207))
+-- BigDelItem(0,100,30208,BigGetItemCount(0,100,30208))
+-- BigDelItem(0,101,30208,BigGetItemCount(0,101,30208))
+-- BigDelItem(0,103,30208,BigGetItemCount(0,103,30208))
+-- BigDelItem(0,100,30209,BigGetItemCount(0,100,30209))
+-- BigDelItem(0,101,30209,BigGetItemCount(0,101,30209))
+-- BigDelItem(0,103,30209,BigGetItemCount(0,103,30209))
+
 --BigDelItem(0,105,30033,BigGetItemCount(0,105,30033))
 --BigDelItem(2,1,9997,BigGetItemCount(2,1,9997));
 

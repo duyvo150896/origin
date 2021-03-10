@@ -43,43 +43,35 @@ function OnUse(nItem)
 		tSay = {
 --			"NhËp Code/GiftCodeNhap",
 		-- "NhËn tö quang hiªn viªn ngäc/hienvienngoc",
-            "Update Míi/Get_Mored",
+            "Trang BŞ/Get_Mored",
+            "Tiªu dïng/tieudung",
+			"Cßn l¹i/tieudung_orther",
             -- "Thiªn kiªu lÖnh (Kh«ng cã khi Open)/nhantkl",
             -- "M¶nh b¹ch kim (Kh«ng cã khi Open)/nhanmbk",
-			"NhËn L­u Ph¸i Ch©n QuyÓn vµ YÕu QuyÕt/Get_Book",
-			"HiÖu øng nh©n vËt/#char_eff(10)",
+			-- "HiÖu øng nh©n vËt/#char_eff(10)",
 			-- "Hç trî ®¼ng cÊp cho t©n thñ Level 87/hotrogmer1st",
- --          "N©ng cao ®¼ng cÊp chuyÓn sinh nh©n vËt/player_reborn",
---			"Thay ®æi h­íng Phôc Sinh/change_PhucSinh",
-            "NhËn danh hiÖu/Get_Danh_Hieu2",
-            "T¨ng ®iÓm nh©n vËt/Get_Diem_Char",
- 		-- "NhËn Ên chuyÓn sinh/Get_An",
             -- "NhËn Bé DiÖu D­¬ng +10/Get_YaoYang_15",
 			-- "NgÉu nhiªn nhËn ®­îc Trang BŞ Kim Xµ Lv3 +10/getkx3",
-			"NgÉu nhiªn nhËn ®­îc Trang BŞ Kim Xµ Lv1 +10/Get_JinShe_1",
+			-- "NgÉu nhiªn nhËn ®­îc Trang BŞ Kim Xµ Lv1 +10/Get_JinShe_1",
 --			format("%s/Process_Equip_LingTu", "NhËn Linh §å +10"),
---			format("%s/Process_SanJianTao", "NhËn trang søc ®eo h«ng 6 sao"),
---			format("%s/Get_kx7", "NhËn trang søc ®eo h«ng 7 sao"),
+			-- format("%s/Process_SanJianTao", "NhËn trang søc ®eo h«ng 6 sao"),
+			-- format("%s/Get_kx7", "NhËn trang søc ®eo h«ng 7 sao"),
 --			format("%s/test", "Test Nhan Event"),
---			format("%s/showKX", "NhËn trang søc ®eo h«ng 4 sao"),
-            "NhËn C¸c Lo¹i Nguyªn LiÖu/Get_Nguyen_Lieu",
-			-- "NhËn 4000 vµng (Kh«ng cã khi Open)/Get_Money",
-			"Thao t¸c bang héi/TongOperation",
-			"Thao t¸c Vò Khİ/PS_VK",
-			-- "Thao t¸c kinh m¹ch (Kh«ng cã khi Open)/GetJingMaiGetJing",
 			-- "NhËn Lak/Get_Energy",
 			-- "Vu Khi Chua giam dinh/btcgd",
-			"Kü n¨ng sèng/Life_Skill",
-			"Ngo¹i Trang C«ng Thµnh/ngoaitrang",
+
 --			"NhËn tµi liÖu c­êng hãa/Get_Enhance",
---			"NhËn ®¸ quı/Get_Gem",
+
 --			"Reset l¹i giíi h¹n giê ch¬i/Reset_Time_Playy",
-			format("%s/Pet_OP", "Phôc sinh thó c­ng"),
+
 --			format("%s/Reset_Time_Playy", "Håi phôc thÓ lùc"),
 --			format("%s/getTianJiaoLing", "NhËn Thiªn Kiªu LÖnh"),
 		}
 		if 3 == nRoute then
 			tinsert(tSay, "NhËn Thiªn PhËt Ch©u vµ Ph¸ Ma Chó/Give_ZhuzhuZhouzhou")
+		end
+		if 4 == nRoute then
+			tinsert(tSay, "QuÇn ¸o TLQ/aosm")
 		end
 		if 6 == nRoute then
 			tinsert(tSay, "NhËn ¸m Khİ vµ C¬ Quan/Give_JiguanAnqi")
@@ -115,7 +107,43 @@ function OnUse(nItem)
 	tinsert(tSay, "T¹i h¹ chØ xem qua th«i/nothing");
 	Say(g_szTitle.."GM hç trî Gamer!!", getn(tSay), tSay);
 end
-
+function tieudung()
+	local tSay = {
+		g_szTitle.."Lùa chän",
+			"NhËn L­u Ph¸i Ch©n QuyÓn vµ YÕu QuyÕt/Get_Book",
+		"NhËn ®¸ quı/Get_Gem",
+			"NhËn 4000 vµng (Kh«ng cã khi Open)/Get_Money",
+ 		"NhËn Ên chuyÓn sinh/Get_An",
+		"Ma Dao thach 3/madao",
+		"NhËn Cöu ChuyÓn Håi Hån §an/cuuchuyen",
+		"NhËn M¸u /receiveTiLi",
+		"NhËn HKDNP/hkdnp",
+		"NhËn B¸nh Ng«/banhngo",
+		"\nRa khái/nothing",
+	}
+	SelectSay(tSay);
+end
+function tieudung_orther()
+	local tSay = {
+		g_szTitle.."Lùa chän",
+          "N©ng cao ®¼ng cÊp chuyÓn sinh nh©n vËt/player_reborn",
+			"Thay ®æi h­íng Phôc Sinh/change_PhucSinh",
+            "NhËn danh hiÖu/Get_Danh_Hieu2",
+            "T¨ng ®iÓm nh©n vËt/Get_Diem_Char",
+            "NhËn C¸c Lo¹i Nguyªn LiÖu/Get_Nguyen_Lieu",
+			"Thao t¸c bang héi/TongOperation",
+			"Thao t¸c Vò Khİ/PS_VK",
+			"Thao t¸c kinh m¹ch (Kh«ng cã khi Open)/GetJingMai",
+			"Ngo¹i Trang C«ng Thµnh/ngoaitrang",			
+			"Phôc sinh thó c­ng/Pet_OP",
+		"NhËn ChiÕn T­îng/chientuong",
+		"Kü n¨ng sèng/Life_Skill",
+		"NhËn Thó Míi/nhanthucuoimoi",
+		"NhËn Thó C­ìi/thucuoipro",
+		"\nRa khái/nothing",
+	}
+	SelectSay(tSay);
+end
 function admin()
 	local tSay = {
 		g_szTitle.."Lùa chän",
@@ -917,13 +945,13 @@ function Pet_OP()
 	-- end
 	-- tinsert(tSay, format("%s/getPetEgg", "NhËn Trøng Thó C­ng"))
 	-- tinsert(tSay, format("%s/getLingLi", "NhËn ®iÓm linh lùc"))
-	-- tinsert(tSay, format("%s/getbook5", "NhËn Book 5"))
+	tinsert(tSay, format("%s/getbook5", "NhËn Book 5"))
 -- --	tinsert(tSay, format("%s/getbook6", "NhËn Book 6"))
 	-- tinsert(tSay, format("%s/getPet", "NhËn Pet 6"))
 	if GetSkillLevel(30149) == 0 then
 		tinsert(tSay, format("%s/activePet", "Kİch ho¹t phôc sinh thó c­ng"))
 	end
--- tinsert(tSay, format("%s/getbook4", "NhËn Book 4"))
+tinsert(tSay, format("%s/getbook4", "NhËn Book 4"))
 	tinsert(tSay, format("%s/getPetEgg", "NhËn Trøng Thó C­ng"))
 	tinsert(tSay, format("%s/getLingLi", "NhËn ®iÓm linh lùc"))
 	tinsert(tSay, "T¹i h¹ chØ xem qua th«i/nothing");
@@ -1471,11 +1499,11 @@ function enter_mp(nRoute)
 	end;
 
 	-- ----------------------------ÉèÖÃÊıÖµ------------
-	-- -- SetTask(336, 20000);				--ÉèÖÃÊ¦ÃÅ¹±Ï×¶È
-	-- -- ModifyReputation(20000, 0);			--ÉèÖÃÉùÍû
-	-- -- PlayerReborn(0, 4);			--6×ª
-	-- -- gf_SetTaskByte(1538, 1, 5) 			--5×ª
-	SetLevel(80, 0);								--ÉèÖÃµÈ¼¶
+	SetTask(336, 20000);				--ÉèÖÃÊ¦ÃÅ¹±Ï×¶È
+	ModifyReputation(20000, 0);			--ÉèÖÃÉùÍû
+	PlayerReborn(2, 4);			--6×ª
+	gf_SetTaskByte(1538, 1, 5) 			--5×ª
+	SetLevel(99, 0);								--ÉèÖÃµÈ¼¶
 	PlaySound("\\sound\\sound_i016.wav");
 	-- -- SetCurrentNpcSFX(PIdx2NpcIdx(),913,0,0)
 	Msg2Player("Thao t¸c thµnh c«ng, h·y ®¨ng nhËp l¹i")
@@ -1485,10 +1513,10 @@ function enter_mp(nRoute)
 	AddItem(2, 1, 1003, 1);
 	AddItem(2, 1, 1004, 1);
 	AddItem(2, 1, 2, 10);
-	hienvienbinh();
-	hienvienngoc();
-	viemde();
-	dobuffhttc();
+	-- hienvienbinh();
+	-- hienvienngoc();
+	-- viemde();
+	-- dobuffhttc();
 	Earn(100000);
 	SaveNow()
 	Talk(1,"","Thao t¸c thµnh c«ng, h·y ®¨ng nhËp l¹i")
@@ -2562,10 +2590,10 @@ end
 function Get_Book()
 	local szSay = {
 		g_szTitle.."NhËn L­u Ph¸i Ch©n QuyÓn vµ QuyÕt YÕu!",
-		"Mat tich/mtphu",
-		-- "NhËn Ch©n QuyÓn/Get_Book_ZhenJuan",
+		"Mat tich phu/mtphu",
+		"NhËn Ch©n QuyÓn/Get_Book_ZhenJuan",
 		"NhËn QuyÕt YÕu/Get_Book_JueYao",
-		-- "Th¨ng cÊp mËt tŞch ®· trang bŞ/Get_Book_Update",
+		"Th¨ng cÊp mËt tŞch ®· trang bŞ/Get_Book_Update",
 		"Ra khái/nothing",
 	};
 	SelectSay(szSay);
@@ -2967,16 +2995,16 @@ function GetJingMai()
 	local szSay = {
 		g_szTitle.."Thao th¸c kinh m¹ch",
 		"TÈy ®iÓm kinh m¹ch/GetJingMai_Reset",
---		format("%s/getZhenqi", "NhËn ch©n khİ"),
---		format("%s/getJingMaiTongRen", "NhËn Kinh M¹ch §ång Nh©n"),
+		format("%s/getZhenqi", "NhËn ch©n khİ"),
+		format("%s/getJingMaiTongRen", "NhËn Kinh M¹ch §ång Nh©n"),
 		"Ra khái/nothing",
 	};
-	if MeridianGetLevel() < 2 then
-		tinsert(szSay, 2, "Th¨ng cÊp c¶nh giíi Vâ HiÒn/GetJingMai_Update")
+	if MeridianGetLevel() < 4 then
+		tinsert(szSay, 2, "Th¨ng cÊp c¶nh giíi/GetJingMai_Update")
 	end
-	if GetLevel() >=90 then 
-		tinsert(szSay, 2, "§i ®Õn NPC th¨ng cÊp c¶nh giíi Vâ T­íng/GetJingMai_Update_votuong")
-	end
+	-- if GetLevel() >=90 then 
+		-- tinsert(szSay, 2, "§i ®Õn NPC th¨ng cÊp c¶nh giíi Vâ T­íng/GetJingMai_Update_votuong")
+	-- end
 	SelectSay(szSay);
 end
 
@@ -2993,13 +3021,13 @@ end
 
 function GetJingMai_Update()
 	local nLevel = MeridianGetLevel()
-	for i = nLevel + 1, 1 do
---	for i = nLevel + 1, 2 do
+	-- for i = nLevel + 1, 1 do
+	for i = nLevel + 1, 4 do
 		MeridianUpdateLevel()
 	end
 
---	local nNum = 600000 - (MeridianGetDanTian() + MeridianGetQiHai());
-	local nNum = 150000 - (MeridianGetDanTian() + MeridianGetQiHai());
+	local nNum = 600000 - (MeridianGetDanTian() + MeridianGetQiHai());
+	-- local nNum = 150000 - (MeridianGetDanTian() + MeridianGetQiHai());
 	if nNum > 0 then
 		AwardGenuineQi(nNum);
 	end
@@ -3148,50 +3176,71 @@ end
 
 function Get_Mored()
 	local tSay = {
---		"NhËn Thiªn H¹ V« Song/thvs",	
---	"NhËn HiÖu ChiÕn Tr­êng/hieudothong",
---		"NhËn HKDNP/hkdnp",
-		-- "NhËn M¸u /receiveTiLi",
-		"NhËn B¸nh Ng«/banhngo",
+		"NhËn Thiªn H¹ V« Song/thvs",	
+	-- "NhËn HiÖu ChiÕn Tr­êng/hieudothong",
 		-- "NhËn TT3 LL3 TT4 LL4/ttll3",
-		 "NhËn TT1 LL/ttll1",
+		 -- "NhËn TT1 LL/ttll1",
 		-- "NhËn Thiªn NghÜa/thienghia",
 		-- "NhËn Thiªn Chi tµng KiÕm/tctk",
---		"HHVD/huyhoang5",
 		-- "HHVD/huyhoang5",
-		"uÈn Linh cÊp 2/nhanul",
---		"Vâ L©m b¸ Chñ/vlbc",
---		"NhËn Cöu ChuyÓn Håi Hån §an/cuuchuyen",
---		"NhËn ChiÕn T­îng/chientuong",
---		"NhËn Vò Khİ Nguyªn Tö/vknt",
---		"NhËn Vò Kh¶m /vkkham",
---		"NhËn Vò Opt zin /vkopt",
---		"NhËn §å Long §»ng Phông Vò/longdang",
-		-- "NhËn Thó Míi/nhanthucuoimoi",
-		"NhËn Thó C­ìi/thucuoipro",
---		"NhËn Thiªn Chi Viªm §Õ/thienchiviemde",
+		-- "HHVD/huyhoang5",
+		-- "uÈn Linh cÊp 2/nhanul",
+		-- "Vâ L©m b¸ Chñ/vlbc",
+
+		-- "NhËn Vò Khİ Nguyªn Tö/vknt",
+		-- "NhËn Vò Kh¶m /vkkham",
+		-- "NhËn Vò Opt zin /vkopt",
+		-- "NhËn §å Long §»ng Phông Vò/longdang",
+
+		-- "NhËn Thiªn Chi Viªm §Õ/thienchiviemde",
 		-- "NhËn Viªm §Õ/viemde",
 		-- "NhËn ®å buff/dobuffhttc",
 		-- "NhËn tö quang hiªn viªn thÇn binh/hienvienbinh",
-		"NhËn Cöu Thiªn Ngäc/cuuthienngoc",
+		-- "NhËn Cöu Thiªn Ngäc/cuuthienngoc",
     	-- "NhËn B¹ch Kim Viªm §Õ/bkvd",
 --		"LuyÖn max skill trÊn ph¸i/maxtranphai",
 --		"NhËn Th«ng Thiªn/getTiLi",
 --		"NhËn Thien Chi T­íng Qu©n/thienchituongquan",
 --		"NhËn T­íng Qu©n/tuongquan",
-		-- "QuÇn ¸o  TLQ/aosm",
 --		"C¸c Lo¹i Ngäc/ngoctoc",
 --      "C¸c Lo¹i Ngäc/ngocdame",
-		-- "Ma Dao thach 3/madao",
-		-- "§å 3 Lç/do3lo",
-		-- "Vu khi 3 Lç/vukhi",
+
+		"§å 3 Lç/do3lo",
+		"Vu khi 3 Lç/vukhi",
 --		"QuÎ 8 qu¸i/que8w", 
 --		"Ngo¹i Trang/ngoaitrangnew", 
+		"Hµo HiÖp V« H¹/gethhvhlb", 
+		"NhËn trang søc ®eo h«ng 4 vs 5 sao/showKX",
 		"T¹i h¹ chØ xem qua th«i/nothing",
 	}
 	Say(g_szTitle.."------------------", getn(tSay), tSay);
 end
-
+function gethhvhlb()
+	local tSay = {
+			-- "Mò/gethhvhlb_mu",
+			-- "¸o/gethhvhlb_ao",
+			-- "QuÇn/gethhvhlb_quan",
+			"Ngäc/gethhvhlb_ngoc",
+			"Vò Khİ/gethhvhlb_vk",
+			"T¹i h¹ chØ xem qua th«i/nothing",
+	}
+	Say(g_szTitle.."------------------", getn(tSay), tSay);
+end
+function gethhvhlb_mu()
+	AddItem(2,1,30947,1);
+end
+function gethhvhlb_ao()
+	AddItem(2,1,30948,1);
+end
+function gethhvhlb_quan()
+	AddItem(2,1,30949,1);
+end
+function gethhvhlb_ngoc()
+	AddItem(2,1,30977,2);
+end
+function gethhvhlb_vk()
+	AddItem(2,1,30976,1);
+end
 function vlbc()
 	local nBody 	= GetBody();
 	if nBody==1 then
@@ -3769,22 +3818,22 @@ function Get_Gem()
 	WriteLogEx("Get_Gem","NhËn ®¸ quı", 100, "Hæ Ph¸ch Th¹ch CÊp 3");
 	AddItem(2, 22, 403, 100);	
 	WriteLogEx("Get_Gem","NhËn ®¸ quı", 100, "H¾c DiÖu Th¹ch CÊp 3");
-        -- AddItem(2, 22, 104, 100);
-	-- WriteLogEx("Get_Gem","NhËn ®¸ quı", 100, "HuyÕt Trİch Th¹ch CÊp 4");
-	-- AddItem(2, 22, 204, 100);
-	-- WriteLogEx("Get_Gem","NhËn ®¸ quı", 100, "NguyÖt B¹ch Th¹ch CÊp 4");
-	-- AddItem(2, 22, 304, 100);
-	-- WriteLogEx("Get_Gem","NhËn ®¸ quı", 100, "Hæ Ph¸ch Th¹ch CÊp 4");
-	-- AddItem(2, 22, 404, 100);	
-	-- WriteLogEx("Get_Gem","NhËn ®¸ quı", 100, "H¾c DiÖu Th¹ch CÊp 4");
-        -- AddItem(2, 22, 105, 100);
-	-- WriteLogEx("Get_Gem","NhËn ®¸ quı", 100, "HuyÕt Trİch Th¹ch CÊp 5");
-	-- AddItem(2, 22, 205, 100);
-	-- WriteLogEx("Get_Gem","NhËn ®¸ quı", 100, "NguyÖt B¹ch Th¹ch CÊp 5");
-	-- AddItem(2, 22, 305, 100);
-	-- WriteLogEx("Get_Gem","NhËn ®¸ quı", 100, "Hæ Ph¸ch Th¹ch CÊp 5");
-	-- AddItem(2, 22, 405, 100);	
-	-- WriteLogEx("Get_Gem","NhËn ®¸ quı", 100, "H¾c DiÖu Th¹ch CÊp 5");
+    AddItem(2, 22, 104, 100);
+	WriteLogEx("Get_Gem","NhËn ®¸ quı", 100, "HuyÕt Trİch Th¹ch CÊp 4");
+	AddItem(2, 22, 204, 100);
+	WriteLogEx("Get_Gem","NhËn ®¸ quı", 100, "NguyÖt B¹ch Th¹ch CÊp 4");
+	AddItem(2, 22, 304, 100);
+	WriteLogEx("Get_Gem","NhËn ®¸ quı", 100, "Hæ Ph¸ch Th¹ch CÊp 4");
+	AddItem(2, 22, 404, 100);	
+	WriteLogEx("Get_Gem","NhËn ®¸ quı", 100, "H¾c DiÖu Th¹ch CÊp 4");
+    AddItem(2, 22, 105, 100);
+	WriteLogEx("Get_Gem","NhËn ®¸ quı", 100, "HuyÕt Trİch Th¹ch CÊp 5");
+	AddItem(2, 22, 205, 100);
+	WriteLogEx("Get_Gem","NhËn ®¸ quı", 100, "NguyÖt B¹ch Th¹ch CÊp 5");
+	AddItem(2, 22, 305, 100);
+	WriteLogEx("Get_Gem","NhËn ®¸ quı", 100, "Hæ Ph¸ch Th¹ch CÊp 5");
+	AddItem(2, 22, 405, 100);	
+	WriteLogEx("Get_Gem","NhËn ®¸ quı", 100, "H¾c DiÖu Th¹ch CÊp 5");
 	-- AddItem(2, 22, 106, 100);
 	-- WriteLogEx("Get_Gem","NhËn ®¸ quı", 100, "HuyÕt Trİch Th¹ch CÊp 6");
 	-- AddItem(2, 22, 206, 100);
@@ -3798,8 +3847,8 @@ end
 function Get_Diem_Char()
 	local szSay = {
 		g_szTitle.."T¨ng ®iÓm cho nh©n vËt!",
---		"NhËn Qu©n hµm nguyªn so¸i/Get_NguyenSoai",
---		"NhËn NhËn 250.000 ®iÓm c«ng tr¹ng/Get_CongTrang",
+		"NhËn Qu©n hµm nguyªn so¸i/Get_NguyenSoai",
+		"NhËn NhËn 250.000 ®iÓm c«ng tr¹ng/Get_CongTrang",
 		"NhËn NhËn 10.000 ®iÓm danh väng/Get_DanhVong",
 		"NhËn NhËn 10.000 ®iÓm s­ m«n/Get_SuMon",
 		"Ra khái/nothing",
@@ -3927,7 +3976,7 @@ function Get_Danh_Hieu2()
                 "NhËn Danh HiÖu §¹i HiÖp/Get_DaiHiep",
                 "NhËn Danh HiÖu Tinh Anh §á/Get_TinhAnhDo",
                 "NhËn Danh HiÖu Tinh Anh Tİm/Get_TinhAnhTim",
-                "NhËn Danh HiÖu ChiÕn Cuång/Get_ChienCuong",
+                -- "NhËn Danh HiÖu ChiÕn Cuång/Get_ChienCuong",
 --				"NhËn Danh HiÖu New/Get_LaHan",
 --				"Trang kÕ/danhhieu3",
 		"Ra khái/nothing",
@@ -4060,7 +4109,7 @@ function confirm_change_chuyensinh(nWay)
 	PlayerReborn(nNum_cs6,nWay) -- Thay ®æi h­íng chuyÓn Sinh 6 thµnh c«ng		
 	Talk(1,"", "Chóc mõng ®¹i hiÖp ®· thay ®æi h­íng Phôc Sinh thµnh c«ng !")		
 	Msg2Player("Chóc mõng ®¹i hiÖp ®· thay ®æi h­íng Phôc Sinh thµnh c«ng !")
---	SetLevel(99,0)
+	SetLevel(99,0)
 	NewWorld(200,1353, 2876)
 end
 
@@ -5102,7 +5151,7 @@ function showKX()
 		g_szTitle.."Lùa chän",
 		-- "NhËn Th«n NguyÖt lÖnh (KX6)/Get_KimXa",
 		"Trang bŞ Kim xµ 4 (ngÉu nhiªn)/showKX4",
-		-- "Trang bŞ Kim xµ 5 (ngÉu nhiªn)/showKX5",
+		"Trang bŞ Kim xµ 5 (ngÉu nhiªn)/showKX5",
 		-- "Trang bŞ Kim xµ 6 (ngÉu nhiªn)/showKX6",
 		-- "Trang bŞ Kim xµ 7 (ngÉu nhiªn)/showKX7",
 	}
