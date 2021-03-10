@@ -583,7 +583,9 @@ function translife_cloth_confirm(nType)
 		if DelItemByIndex(nItemIdx,-1) and Pay(8000000) == 1 then	
 			local nType_cs7 = GetPlayerRebornParam(1)
 			local nBody = GetBody()	
-			local  lvatt1, att1, lvatt2, att2, lvatt3, att3  = gf_UnPack(tb_translife_cloth_cs7_nhanlai[nType_cs7][nBody][nType-5])	--gf_UnPack(tb_translife_cloth[nFaction][nTransCount][nType-5][2])
+			local  a1, a2, a3, a4, a5, lvatt1, att1, lvatt2, att2, lvatt3, att3  = gf_UnPack(tb_translife_cloth_cs7_nhanlai[nType_cs7][nBody][nType-5])	--gf_UnPack(tb_translife_cloth[nFaction][nTransCount][nType-5][2])
+			-- Msg2Player(gf_UnPack(tb_translife_cloth_cs7_nhanlai[nType_cs7][nBody][nType-5]))
+			-- Msg2Player(a1, lvatt1, att1, lvatt2, att2, lvatt3, att3)
 			local nRet, nItemIdx2 = AddItem(nG, nD, nP, 1,1, lvatt1, att1, lvatt2, att2, lvatt3, att3)
 			if nRet ==1 then
 				SetItemStatus(nItemIdx2, 0, 1)

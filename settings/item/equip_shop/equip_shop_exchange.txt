@@ -8251,8 +8251,8 @@ ID	Type	Title	Remark	BaguaFlag	SpecialOpStr	SpecialOpDesc	BangdingFlag	BatchNum	
 60051	0	Kim phi’u						100				<color=green> 9999999						3;9999999
 60109	0	Kim phi’u						100				<color=green> 0							3;0				
 60110	0	Kim phi’u						100				<color=green> 0							3;0				
-60111	0	Kim phi’u						100				<color=green> 50000							3;50000				
-60112	0	Kim phi’u						100				<color=green> 50000							3;50000			
+60111	0	Kim phi’u						100				<color=green> 9999999							3;9999999				
+60112	0	Kim phi’u						100				<color=green> 9999999							3;9999999			
 60113	0	Kim phi’u						100				<color=green> 0							3;0			
 60114	0	Kim phi’u						100				<color=green> 0							3;0			
 60115	0	Kim phi’u						100				<color=green> 0							3;0			
