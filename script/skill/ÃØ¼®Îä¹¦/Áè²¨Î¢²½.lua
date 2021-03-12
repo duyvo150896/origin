@@ -49,10 +49,10 @@ SKILL = {
 	damage_factor_z={{1,477},{10,477}},
 	},
 	{magic="state_lost_stamina_per18",
-	damage_factor_z={{0,0},{10,2}},
+	damage_factor_z={{1,2},{10,2}},
 	},
 	},
-	
+
 	SKILL_MAGIC_IMME_ATTRIB   =	--技能等级相关立即魔法属性
 	{
 	},

@@ -673,7 +673,7 @@ ID	Name	MaxLevel	Faction	Route	Series	ExtraSeries	Type	Style1	Style2	DamageType	
 729	D­¬ng Gia §¶o H¶i Th­¬ng	6	16	17	7		20	2	2		1	64	2		0	0	1	1		754						3												456	600	1	54	-100				\script\skill\ÑîÃÅÇ¹Æï\Ñî¼Òµ¹º£Ç¹.lua		skill_cast_interval	270	skill_interrupt_rate	-55							
 730	D­¬ng Gia Ngù M· ThuËt	6	16	17	0		1	9	1	0	1	64	2		0	0	1	1							405	18	757	758			1		2					456	9999	1	27	100			1	\script\skill\ÑîÃÅÇ¹Æï\Ñî¼ÒÓùÂíÊõ.lua		skill_interrupt_rate	-35	skill_cast_interval	360							
 731	Bİch NguyÖt Phi Tinh Th­¬ng	7	16	17	7		20	2	2	0	1	64	2		0	0	0	1		767						1												456	600	3	54	-100				\script\skill\ÑîÃÅÇ¹Æï\±ÌÔÂ·ÉĞÇÇ¹.lua		skill_cast_interval	540	skill_interrupt_rate	-55							
-732	Liªn Hoµn Toµn Long th­¬ng	20	16	17	7		20	3	2	0	1	64	2		0	0	0	0					555	1		6												456	600	"6,15"	186	100				\script\skill\ÑîÃÅÇ¹Æï\Á¬»·×êÁúÇ¹.lua		skill_interrupt_rate	-500									
+732	Liªn Hoµn Toµn Long th­¬ng	20	16	17	7		20	3	2	0	1	64	2		0	0	0	0					555	1		6												456	600	6,15	186	100				\script\skill\ÑîÃÅÇ¹Æï\Á¬»·×êÁúÇ¹.lua		skill_interrupt_rate	-500									
 733	D­¬ng Gia Cung T©m Ph¸p	10	16	18	0		3	15	1		0	-1	0		1	0	0	0																				2								\script\skill\ÑîÃÅ¹­Æï\Ñî¼Ò¹­ĞÄ·¨.lua												
 734	Cung Ph¸p Tæng quyÕt	10	16	18	0		3	14	1		0	16	0		1	0	0	0																				2								\script\skill\ÑîÃÅ¹­Æï\Ñî¼Ò¹­·¨×Ü¾ö.lua												
 735	D­¬ng Gia Liªn X¹ ThuËt	7	16	18	7		1	0	2	0	1	16	0		0	1	1	0							406	8	759				2		3		3			456	600	1	27	120			9	\script\skill\ÑîÃÅ¹­Æï\Ñî¼ÒÁ¬ÉäÊõ.lua		skill_cast_interval	18	cost_goods_id	983050	cost_goods_num	1	skill_interrupt_rate	-55			
@@ -797,7 +797,12 @@ ID	Name	MaxLevel	Faction	Route	Series	ExtraSeries	Type	Style1	Style2	DamageType	
 894	Hç trî t¨ng néi lùc tèi ®a	10	0	0	0		1	8	1	1	1	-1	0		1	0	0	0							132	27					1	1	2					6	9999	19	37	100			1	\script\skill\ÆÕÍ¨¹¥»÷\Ôö¼ÓÄÚÁ¦ÉÏÏŞ¹â»·.lua												
 895	Hç trî håi sinh lùc	10	0	0	0		1	8	1	1	1	-1	0		1	0	0	0							132	27					1	1	2					6	9999	19	37	100			1	\script\skill\ÆÕÍ¨¹¥»÷\»ØÃü¹â»·.lua												
 896	Hç trî xuÊt chiªu	10	0	0	0		1	8	1	1	1	-1	0		1	0	0	0							132	27					1	1	2					6	9999	19	37	100			1	\script\skill\ÆÕÍ¨¹¥»÷\·¢ÕĞ¹â»·.lua												
-897	"Hç trî Néi, ngo¹i kİch"	5	0	0	0		1	8	1	1	1	-1	0		1	0	0	0							132	27					1	1	2					6	9999	19	37	100			1	\script\skill\ÆÕÍ¨¹¥»÷\ÄÚÍâ¹¥¹â»·.lua												
+897	Hç trî Néi, ngo¹i kİch	5	0	0	0		1	8	1	1	1	-1	0		1	0	0	0							132	27					1	1	2					6	9999	19	37	100			1	\script\skill\ÆÕÍ¨¹¥»÷\ÄÚÍâ¹¥¹â»·.lua												
+898	Søc m¹nh t¹m th¬i n©ng cao	10	0	0	0		50	12	1		0	-1	0		1	0	0	0							416	18					1	0	2					2	9999	3	18	100			1	\script\skill\ÆäËû\Á¦Á¿ÔİÊ±Ìá¸ß.lua												
+899	Néi c«ng t¹m thêi n©ng cao	10	0	0	0		50	12	1		0	-1	0		1	0	0	0							416	18					1	0	2					2	9999	3	18	100			1	\script\skill\ÆäËû\ÄÚ¹¦ÔİÊ±Ìá¸ß.lua												
+900	G©n cèt t¹m thêi n©ng cao	10	0	0	0		50	12	1		0	-1	0		1	0	0	0							416	18					1	0	2					2	9999	3	18	100			1	\script\skill\ÆäËû\¸ù¹ÇÔİÊ±Ìá¸ß.lua												
+901	Th©n ph¸p t¹m thêi n©ng cao	10	0	0	0		50	12	1		0	-1	0		1	0	0	0							416	18					1	0	2					2	9999	3	18	100			1	\script\skill\ÆäËû\Éí·¨ÔİÊ±Ìá¸ß.lua												
+902	Linh ho¹t t¹m thêi n©ng cao	10	0	0	0		50	12	1		0	-1	0		1	0	0	0							416	18					1	0	2					2	9999	3	18	100			1	\script\skill\ÆäËû\¶´²ìÔİÊ±Ìá¸ß.lua												
 904	§éc s¸t th­¬ng t¹m thêi n©ng cao	10	0	0	0		50	12	1		0	-1	0		1	0	0	0							416	18					1	0	2					2	9999	3	18	100			1	\script\skill\ÆäËû\¹Æ¶¾ÉËº¦ÔİÊ±Ìá¸ß.lua												
 905	Tèc ®é di chuyÓn t¹m thêi n©ng cao	10	0	0	0		50	12	1		0	-1	0		1	0	0	0							416	18					1	0	2					2	9999	3	18	100			1	\script\skill\ÆäËû\ÒÆ¶¯ËÙ¶ÈÔİÊ±Ìá¸ß.lua												
 906	Gi¶m tÊn c«ng hµng lo¹t NPC	10	0	0	0		1	1	1	0	0	-1	0		0	0	0	0							20	6					2	1	0		0			456	600	3	17	100			10	\script\skill\npc¼¼ÄÜ\NPC·¶Î§½µ·À×Óµ¯Èº.lua												
@@ -807,6 +812,7 @@ ID	Name	MaxLevel	Faction	Route	Series	ExtraSeries	Type	Style1	Style2	DamageType	
 910	§éc L­u HuyÕt NPC	10	0	0	0		1	1	1	1	0	-1	0		0	0	0	0							415	3					1	1	2					456	600	1	3	100			1	\script\skill\npc¼¼ÄÜ\NPCĞ¡·¶Î§Ñª¹Æ.lua												
 911	Vò NhuËn Chóng Sinh	10	0	0	0		50	12	1	1	1	-1	0		1	0	0	0							417	9					1	0	2					6	999	1	9	100			1	\script\skill\Ì«ÊØ¼¼ÄÜ\ÓêÈóÖÚÉú.lua												
 912	Thiªn Gi¸ng Cam L©m	10	0	0	0		50	12	1	1	1	-1	0		1	0	0	0							417	9					1	0	2					6	999	1	9	100			1	\script\skill\Ì«ÊØ¼¼ÄÜ\Ìì½µ¸ÊÁØ.lua												
+913	Tu La T¸i ThÕ	10	0	0	0		50	12	1		0	-1	0		1	0	0	0							416	18					1	0	2					2	9999	3	18	100			1	\script\skill\Ì«ÊØ¼¼ÄÜ\ĞŞÂŞÔÙÊÀ.lua												
 914	BOSS §¸nh h×nh qu¹t 1 (ngo¹i) 1	20	0	0	0		0	0	2	0	1	-1	0		0	0	0	0							418	6					2		5					456	9999	1	19	100			8	\script\skill\npc¼¼ÄÜ\bossÉÈĞÍ¹¥»÷1-1.lua												
 915	BOSS §¸nh h×nh qu¹t 1 (néi) 1	20	0	0	0		0	4	2	1	1	-1	0		0	0	0	0							418	6					2		5					456	9999	1	19	100			8	\script\skill\npc¼¼ÄÜ\bossÉÈĞÍ¹¥»÷1-1.lua												
 916	BOSS §¸nh h×nh qu¹t 2 (ngo¹i) 1	20	0	0	0		0	0	2	0	1	-1	0		0	0	0	0							418	6					2		5					456	9999	1	19	100			8	\script\skill\npc¼¼ÄÜ\bossÉÈĞÍ¹¥»÷2-1.lua												
@@ -1230,6 +1236,7 @@ ID	Name	MaxLevel	Faction	Route	Series	ExtraSeries	Type	Style1	Style2	DamageType	
 1342	B×nh nhiªn liÖu ch¸y	1	0	0	0		15	9	1			-1	1		1	0	0	0																				458	9999	9	18	100				\script\skill\Íâ´«ĞÂÔö\È¼ÉÕÆ¿È¼ÉÕ.lua												
 1343	Vá chuèi	1					50	9	1			-1	1		1	0	0	0							484	15												456	9999		18	100			1	\script\skill\Íâ´«ĞÂÔö\Ïã½¶Æ¤.lua												
 1344	BÉy kÑp	1					50	9	1			-1	1		1	0	0	0							485	15												456	9999		18	100			1	\script\skill\Íâ´«ĞÂÔö\²¶ÊŞ¼Ğ.lua												
+1345	M«n ph¸i ¸m tiªu	11					50					-1	1		1	0	0	0							212	15					4	1	2					2	9999		18	100			6	\script\skill\Íâ´«ĞÂÔö\ÃÅÅÉ°µÉÚ.lua		skill_param1	7	skill_param2	7							
 1346	§Çm lÇy	1					50	9	1			-1	1		1	0	0	0							486	15												456	9999		18	100			1	\script\skill\Íâ´«ĞÂÔö\ÄàÌ¶.lua												
 1347	TriÖu gäi ¸m tiªu m«n ph¸i	11					22										0									1															2					\script\skill\Íâ´«ĞÂÔö\ÃÅÅÉ°µÉÚÕÙ»½.lua												
 1360	§éc V©n ThuËt	2	0	0	0		1	5	2	1	0	-1	0		0	0	0	0							475	6					1	0	2					458	96	1	15	100			1	\script\skill\Íâ´«ĞÂÔö\¶¾ÔÆÊõ.lua												
@@ -2144,197 +2151,3 @@ ID	Name	MaxLevel	Faction	Route	Series	ExtraSeries	Type	Style1	Style2	DamageType	
 2736	V« Song Thiªn Phong Trôy (Chiªu)	10					28	2	2		1	-1	1		0	0	0	0							537	7					1	3	2					456	600	1	18	100			1	\script\skill\À¥ÂØ½£×ğ\ÎŞË«Ìì·æ×¹(ÕĞ).lua												
 2737	Xu©n L«i	1	0	0	0		1	0	2	2	1	-1	1		1	0	0	0							675	18					1		2					456	500	1	54	-100			1	\script\skill\ÆäËû\´ºÀ×Ò»Ïì³ı¾ÉËê.lua		cost_goods_id	31272	cost_goods_num	1							
 2738	M·n Hång	1	0	0	0		1	0	2	2	1	-1	1		1	0	0	0							676	18					1		2					456	500	1	54	-100			1	\script\skill\ÆäËû\ÅÚÕÌÉùÉùÓ­ĞÂÄê.lua		cost_goods_id	31287	cost_goods_num	1							
-2300	Needle	1	5	6	0		1	1	2	0	2	2	1		0	1	1	0							580	6	2303				1							128	600	1	20	100			1	\script\skill\ÌÆÃÅ\´©ĞÄÕë.lua		cost_goods_id	720896	cost_goods_num	1	skill_cast_interval	72	skill_interrupt_rate	-55			
-2301	Locust Sting	1	5	6	0		1	1	2	0	2	2	1		0	1	1	0							581	8	2304				1		2					128	600	1	20	100			1	\script\skill\ÌÆÃÅ\·É»ÈÕë.lua		skill_interrupt_rate	-55	cost_goods_id	720896	cost_goods_num	1	skill_cast_interval	1			
-2302	Poison sand	1	5	6	0		1	8	2	0	2	2	1		0	1	1	1					2306	3	584	9					1	1	2					128	600	1	28	100			1	\script\skill\ÌÆÃÅ\Òı¶¾É°.lua		skill_interrupt_rate	-55	skill_cast_interval	216							
-2303	Needle (Trick)	1	5	6	0		1	1	2	0	2	2	1		0	1	0	0							580	6					1							128	600	1	20	100			1	\script\skill\ÌÆÃÅ\´©ĞÄÕë(ÕĞ).lua												
-2304	Locust Sting (stroke)	1	5	6	0		1	1	2	0		2	1		0	1	0	0					2305	3	581	8					1		2					128	600	1	20	100			1	\script\skill\ÌÆÃÅ\·É»ÈÕë(ÕĞ).lua		cost_goods_id	720896	cost_goods_num	1							
-2305	Locust Needles (Tricks)	1	5	6	0		2	1	2		0	-1	1		1	0	0	0								6												2	9999	1	13	100				\script\skill\ÌÆÃÅ\·É»ÈÕë(ÕĞ×Ó).lua												
-2306	Poison sand	1	5	6	0		2	8	1		0	-1	1		0	0	0	0								3												2	9999	1	6	100				\script\skill\ÌÆÃÅ\Òı¶¾É°(×Ó).lua												
-2307	Return air	1	5	31	0		1	1	1	0	2	16384	1		0	1	1	1							525	11	2311				1		2					128	144	1	18	100			1	\script\skill\ÌÆÃÅÈÎÏÀ\»Ø·ç.lua		skill_cast_interval	1	skill_interrupt_rate	-55							
-2308	Shower	1	5	31	0		1	1	1	0	2	16384	1		0	1	1	1					2312	1	582	18					1	0	2					128	9999	1	27	100			1	\script\skill\ÌÆÃÅÈÎÏÀ\É±ÒâÏûºÄ.lua		skill_cast_interval	72	skill_interrupt_rate	-55							
-2309	Magic Kill	1	5	31	0		2	10	2		0	-1	1		1	0	0	0								6												2	9999	1	27	100				\script\skill\ÌÆÃÅÈÎÏÀ\»ÃÉ±Õó.lua		skill_cast_interval	720	skill_interrupt_rate	-55							
-2310	Mirage Murder Sword	1	5	31	0		1	1	1	0	1	16384	1		0	1	1	1							615	11					3		2					128	600	1	18	100			9	\script\skill\ÌÆÃÅÈÎÏÀ\»ÃÎíÉ±ÈËµ¶.lua												
-2311	Return wind (stroke)	1	5	31	0		1	1	1	0	2	16384	1		0	1	0	1							525	11					1		2					128	144	1	18	100			1	\script\skill\ÌÆÃÅÈÎÏÀ\»Ø·ç(ÕĞ).lua												
-2312	Shower (child)	1	5	31	0		1	1	1	0	2	16384	1		0	1	1	1							582	18	2313				1		2					128	9999	1		100			1	\script\skill\ÌÆÃÅÈÎÏÀ\ÖèÓê(×Ó).lua												
-2313	Shower (child)	1	5	31	0		1	1	1	0	2	16384	1		0	1	0	1							582	18					1		2					128	9999	1		100			1	\script\skill\ÌÆÃÅÈÎÏÀ\ÖèÓê(×ÓÕĞ).lua												
-2314	Zhenyang Jianqi	1	13	14	0		1	4	2	1	2	4	1		0	1	1	0					2317	3	592	27	2318				1							128	600	1	28	100			1	\script\skill\Îäµ±µÀ¼Ò\ÕæÑô½£Æø.lua		skill_interrupt_rate	25									
-2315	Xuanyin Jianqi	1	13	14	0		1	4	2	1	2	4	1		0	1	1	0					2319	3	593	27	2320				1							128	600	1	28	100			1	\script\skill\Îäµ±µÀ¼Ò\ĞşÒõ½£Æø.lua		skill_interrupt_rate	25									
-2316	Internal force	1	13	14	0		2	10	2		0	4	1		1	0	0	0								1												2	9999	1	3	100				\script\skill\Îäµ±µÀ¼Ò\Á½ÒÇÄÚÁ¦.lua		skill_interrupt_rate	-55	skill_cast_interval	720							
-2317	Zhenyang Jianqi (child)	1	13	14	0		2	10	2		0	4	1		1	0	0	0								3												2	9999	1	6	100				\script\skill\Îäµ±µÀ¼Ò\ÕæÑô½£Æø(×Ó).lua												
-2318	Zhen Yang Sword (Stroke)	1	13	14	0		1	4	2	1	2	4	1		0	1	0	0							592	27					1							128	600	1	28	100			1	\script\skill\Îäµ±µÀ¼Ò\ÕæÑô½£Æø(ÕĞ).lua												
-2319	Xuanyin Sword Qi (child)	1	13	14	0		2	10	2		0	4	1		1	0	0	0								3												2	9999	1	6	100				\script\skill\Îäµ±µÀ¼Ò\ĞşÒõ½£Æø(×Ó).lua												
-2320	Xuanyin Sword (Stroke)	1	13	14	0		1	4	2	1	2	4	1		0	1	0	0							593	27					1							128	600	1	28	100			1	\script\skill\Îäµ±µÀ¼Ò\ĞşÒõ½£Æø(ÕĞ).lua												
-2321	Freehand brushwork	1	13	15	0		1	1	2	0	2	512	1		0	0	1	1							88	6	2324				1	1	2					128	144	1	15	100			1	\script\skill\Îäµ±Ë×¼Ò\åĞÒ£±Ê·¨.lua		skill_interrupt_rate	-55	skill_cast_interval	1							
-2322	Intoxicated	1	13	15	0		1	0	2	0	2	512	1		0	0	1	1					2326	1	618	6					1	1	2					128	144	1	27	100			1	\script\skill\Îäµ±Ë×¼Ò\³Á×íÒ÷.lua				skill_cast_interval	720							
-2323	Freehand articles	1	13	15	0		1	1	2	0	1	512	1		0	0	1	1							594	11	2327				2	0	0					128	600	1	19	100			3	\script\skill\Îäµ±Ë×¼Ò\Ğ´ÒâÆª.lua		skill_interrupt_rate	-55	skill_cast_interval	1							
-2324	Freestyle (strokes)	1	13	15	0		1	0	2	0	2	512	1		0	0	0	1					2325	1	88	6					1	1	2					128	144	1	15	100			1	\script\skill\Îäµ±Ë×¼Ò\åĞÒ£±Ê·¨(ÕĞ).lua												
-2325	Happy strokes (recruitment)	1	13	15	0		2	10	2		0	512	1		1	0	0	0								3												2	9999	1	6	100				\script\skill\Îäµ±Ë×¼Ò\åĞÒ£±Ê·¨(ÕĞ×Ó).lua												
-2326	Intoxicated (child)	1	13	15	0		2	10	2		0	512	1		1	0	0	0								3												2	9999	1	16	100				\script\skill\Îäµ±Ë×¼Ò\³Á×íÒ÷(×Ó).lua												
-2327	Freehand articles (strokes)	1	13	15	0		1	0	2	0	2	512	1		0	0	0	1							594	11					2	0	0					128	144	1	12	100			3	\script\skill\Îäµ±Ë×¼Ò\Ğ´ÒâÆª(ÕĞ).lua												
-2328	Royal Dragon Palm	1	10	11	0		1	0	2	0	2	1	1		0	1	1	1							595	12	2332				1	1	2					128	96	1	18	100			1	\script\skill\Ø¤°ï¾»ÒÂ\ÓùÁúÕÆ·¨.lua		skill_cast_interval	1	skill_interrupt_rate	-55							
-2329	Landslide	1	10	11	0		1	0	2	0	2	1	1		0	1	1	1							627	12	2335				1	1	2					128	96	1	18	100			1	\script\skill\Ø¤°ï¾»ÒÂ\É½±À.lua		skill_cast_interval	72	skill_interrupt_rate	-55							
-2330	Drunk Eight Immortals	1	10	11	0		2	8	2	0	0	1	1		0	1	0	1								12												2	9999	1	18	100				\script\skill\Ø¤°ï¾»ÒÂ\×í°ËÏÉ.lua		skill_cast_interval	720	skill_interrupt_rate	-55							
-2331	Royal Dragon Palm Method (Trick)	1	10	11	0		2	0	2	0	2	1	1		0	1	1	1								3												2	96	1	18	100			1	\script\skill\Ø¤°ï¾»ÒÂ\ÓùÁúÕÆ·¨(×Ó).lua												
-2332	Royal Dragon Palm (Stroke)	1	10	11	0		1	0	2	0	2	1	1		0	1	0	1					2331	2	595	12					1	1	2					128	96	1	18	100			1	\script\skill\Ø¤°ï¾»ÒÂ\ÓùÁúÕÆ·¨(ÕĞ).lua												
-2333	Drunk Eight Immortals (child) abandoned	1	10	11	0		2	8	2	0	0	1	1		0	1	1	1							595	12					1	1	2					128	96	1	18	100			1	\script\skill\Ø¤°ï¾»ÒÂ\×í°ËÏÉ.lua												
-2334	Royal Dragon Palm (Stroke 4) Abandoned	1	10	11	0		1	0	2	0	2	1	1		0	1	1	1							595	12					1	1	2					128	96	1	18	100			1	\script\skill\Ø¤°ï¾»ÒÂ\°ÔÍõÈ­.lua												
-2335	Landslide (stroke)	1	10	11	0		1	0	2	0	2	1	1		0	1	0	1							627	12					1	1	2					128	96	1	18	100			1	\script\skill\Ø¤°ï¾»ÒÂ\É½±À(ÕĞ).lua												
-2336	Dead end stick method	1	10	12	0		1	0	2	0	2	32	1		0	1	1	1							69	16	2340				1	1	2		4			128	300	1	22	150			1	\script\skill\Ø¤°ïÎÛÒÂ\ÇîÍ¾¹÷·¨.lua		skill_cast_interval	1	skill_interrupt_rate	-55							
-2337	Sweep Liuhe	1	10	12	0		1	0	2	0	2	32	1		0	1	1	1							596	16	2342				1	0	2		4			128	300	1	22	100			1	\script\skill\Ø¤°ïÎÛÒÂ\¹÷É¨ÁùºÏ.lua		skill_cast_interval	1	skill_interrupt_rate	-55							
-2338	Lotus	1	10	12	0		2	0	2		0	32	1		1	0	0	0								3												2	9999	1	27	100				\script\skill\Ø¤°ïÎÛÒÂ\Á«»¨Õó.lua		skill_interrupt_rate	-55	skill_cast_interval	720							
-2339	Sweep Liuhe EX	1	10	12	0		1	0	2	0	2	32	1		0	1	1	1							596	16					1	0	2		4			128	300	1	22	100			1	\script\skill\Ø¤°ïÎÛÒÂ\¹÷É¨ÁùºÏEX.lua												
-2340	Dead end stick method (stroke)	1	10	12	0		1	0	2	0	2	32	1		0	1	0	1					2341	3	69	16					1	1	2		4			128	300	1	22	150			1	\script\skill\Ø¤°ïÎÛÒÂ\ÇîÍ¾¹÷·¨(ÕĞ).lua												
-2341	Dead end stick method (trick)	1	10	12	0		2	0	2		0	-1	1		1	0	0	0								3												2	9999	1	12	100				\script\skill\Ø¤°ïÎÛÒÂ\ÇîÍ¾¹÷·¨(ÕĞ×Ó).lua												
-2342	Stick sweep Liuhe (stroke)	1	10	12	0		1	0	2	0	2	32	1		0	1	0	1							596	16					1	0	2		4			128	300	1	22	100			1	\script\skill\Ø¤°ïÎÛÒÂ\¹÷É¨ÁùºÏ(ÕĞ).lua												
-2343	Thunder	1	22	23	0		1	6	2	1	2	4	1		0	1	1	1							597	30	2346				1	1	2					128	600	1	36	100			1	\script\skill\À¥ÂØÌìÊ¦\ÂäÀ×.lua		skill_interrupt_rate	-55									
-2344	whirlwind	1	22	23	0		1	6	2	1	2	4	1		0	1	1	1							598	27	2348				1	1	2					128	600	1	28	100			1	\script\skill\À¥ÂØÌìÊ¦\Ğı·ç.lua		skill_interrupt_rate	-55									
-2345	Wind Thunder Curse	1	22	23	0		1	6	2	1	2	4	1		0	1	1	1							599	35					1	1	2					128	600	1	36	100			1	\script\skill\À¥ÂØÌìÊ¦\·çÀ×Öä.lua		skill_interrupt_rate	-55	skill_cast_interval	144							
-2346	Thunder (stroke)	1	22	23	0		1	6	2	1	2	4	1		0	1	0	1					2347	3	597	35					1	1	2					128	600	1	36	100			1	\script\skill\À¥ÂØÌìÊ¦\ÂäÀ×(ÕĞ).lua												
-2347	Lightning (recruitment)	1	22	23	0		2	10	2		0	4	1		1	0	0	0								1												2	9999	1	12	100				\script\skill\À¥ÂØÌìÊ¦\ÂäÀ×(ÕĞ×Ó).lua		skill_interrupt_rate	-55									
-2348	Cyclone (stroke)	1	22	23	0		1	6	2	1	2	4	1		0	1	0	1					2349	3	598	27					1	1	2					128	600	1	28	100			1	\script\skill\À¥ÂØÌìÊ¦\Ğı·ç(ÕĞ).lua												
-2349	Whirlwind	1	22	23	0		2	10	2		0	4	1		1	0	0	0								1												2	9999	1	12	100				\script\skill\À¥ÂØÌìÊ¦\Ğı·ç(ÕĞ×Ó).lua		skill_interrupt_rate	-55									
-2350	Frightened sword	1	22	32	0		1	1	1		2	4	1		0	1	1	1					2354	1	529	9	2476				1	1	2		2			128	144	1	18	100			1	\script\skill\À¥ÂØ½£×ğ\¾ªÕİ½£î¸.lua		skill_cast_interval	1	skill_interrupt_rate	-55							
-2351	Ling Shuang Jianqi	1	22	32	0		1	1	1		2	4	1		0	0	1	1					2356	1	601	16					1	1	2		1			128	144	1	27	100			1	\script\skill\À¥ÂØ½£×ğ\ÁèËª½£Æø.lua		skill_cast_interval	144	skill_interrupt_rate	-55							
-2352	Swordmaking-Twilight	1	22	32	0		2	8	1		0	4	1		1	0	0	0								7												2	9999	1	18	100				\script\skill\À¥ÂØ½£×ğ\Á¶½£-ÄºÏş.lua		skill_cast_interval	720	skill_interrupt_rate	10							
-2353	Twilight Attack	1			0		2	5	1		2	-1	1		0	0	1	0								1												128	9999	1	2	100			1	\script\skill\À¥ÂØ½£×ğ\ÄºÏş¹¥»÷.lua												
-2354	Frightened Sword Sword (Sub)	1			0		2	8	2		0	-1	1		0	0	0	0								1												2	9999	1		100				\script\skill\À¥ÂØ½£×ğ\¾ªÕİ½£î¸(×Ó).lua												
-2355	Frightened Sword (Spirit Sword)	1			0		1	5	1	1	2	-1	1		0	0	0	0							600	6					1	1	2					128	160	1	6	100			1	\script\skill\À¥ÂØ½£×ğ\¾ªÕİ½£î¸(Áé½£).lua												
-2356	Ling Frost Sword (child)	1	22	32	0		2	1	1		0	4	1		0	0	0	0							601	3					1	1	2		1			2	9999	1	1	100			1	\script\skill\À¥ÂØ½£×ğ\ÁèËª½£Æø(×Ó).lua												
-2357	Swordmaking-Twilight (Spirit Sword)	1			0		2	8	1		0	-1	1		0	0	0	0								1												2	9999	1	2	100				\script\skill\À¥ÂØ½£×ğ\Á¶½£buff.lua												
-2358	Ling Frost Sword Qi (Spirit Sword)	1			0		1	1	1		2	-1	1		0	0	1	1							601	16					1	1	2		1			128	9999	1	16	100			1	\script\skill\À¥ÂØ½£×ğ\ÁèËª½£Æø(Áé½£).lua												
-2359	Slayer Knife	1	1	2	0		1	1	2	0	2	8	1		0	0	1	1							620	12	2363				1	0	2					128	144	1	18	100			1	\script\skill\ÉÙÁÖË×¼Ò\ÍÀÄ§µ¶·¨.lua		skill_cast_interval	1	skill_interrupt_rate	-55							
-2360	Innocent knife	1	1	2	0		1	1	2	0	2	8	1		0	0	1	1							620	12	2364				1	0	2					128	144	1	18	100			1	\script\skill\ÉÙÁÖË×¼Ò\ÎŞ²Àµ¶·¨.lua		skill_cast_interval	72	skill_interrupt_rate	-55							
-2361	All phases	1	1	2	0		2	1	2	0	0	8	1		0	0	0	1													1	0	2					2	9999	1	18	100			1	\script\skill\ÉÙÁÖË×¼Ò\Öî·¨¿ÕÏà.lua		skill_cast_interval	720									
-2362	Slaughter Sword Technique (Trick)	1	1	2	0		2	1	2	0	0	8	1		0	0	0	0								3					1	0	2					2	300	1	18	100			1	\script\skill\ÉÙÁÖË×¼Ò\ÍÀÄ§µ¶·¨(ÕĞ×Ó).lua												
-2363	Slaughter Sword Technique (stroke)	1	1	2	0		1	1	2	0	2	8	1		0	0	0	1					2362		620	12					1	0	2					128	300	1	18	100			1	\script\skill\ÉÙÁÖË×¼Ò\ÍÀÄ§µ¶·¨(ÕĞ).lua												
-2364	Intrepid Swordsmanship	1	1	2	0		1	1	2	0	2	8	1		0	0	0	1							620	12					1	0	2					128	300	1	18	100			1	\script\skill\ÉÙÁÖË×¼Ò\ÎŞ²Àµ¶·¨(ÕĞ).lua												
-2365	Innocent Knife (Abandoned)	1	1	2	0		1	1	2	0	1	8	1		0	0	1	1							620	12	2364				1	0	2					128	300	1	18	100			1	\script\skill\ÉÙÁÖË×¼Ò\ÎŞ²Àµ¶·¨.lua				skill_interrupt_rate	-55							
-2366	Demon	1	1	3	0		1	6	2	1	2	256	1		0	1	1	1							602	20	2370				1	1	0					128	600	1	27	100			1	\script\skill\ÉÙÁÖìøÉ®\µ´Ä§î¸Æø.lua		skill_cast_interval	1	skill_interrupt_rate	10							
-2367	Der Spiegel	1	1	3	0		1	6	2	1	1	256	1		0	1	1	1							603	20	2372				1	1	2		1			128	600	1	27	100			3	\script\skill\ÉÙÁÖìøÉ®\Ã÷¾µ·ÇÌ¨.lua		skill_cast_interval	1	skill_interrupt_rate	10							
-2368	Great Tragedy	1	1	3	0		2	6	2	1	0	256	1		0	0	0	0								3												2	9999	1	27	100				\script\skill\ÉÙÁÖìøÉ®\´ó±¯Öä.lua		skill_cast_interval	720	skill_interrupt_rate	10							
-2369	Demon Breath (Child)	1	1	3	0		2	6	2	1	0	256	1		0	0	0	0								3												2	9999	1	9	100			1	\script\skill\ÉÙÁÖìøÉ®\µ´Ä§î¸Æø(×Ó).lua												
-2370	Devour the Devil (Stroke)	1	1	3	0		1	6	2	1	2	256	1		0	1	0	1					2369	3	602	20					1	1	0					128	600	1	27	100			1	\script\skill\ÉÙÁÖìøÉ®\µ´Ä§î¸Æø(ÕĞ).lua												
-2371	Der Spiegel (abandoned)	1	1	3	0		2	6	2	1	0	256	1		0	0	0	0								3					1	0	2					2	9999	1	9	100			1	\script\skill\ÉÙÁÖìøÉ®\Ã÷¾µ·ÇÌ¨(ÕĞ×Ó).lua												
-2372	Der Spiegel (recruit)	1	1	3	0		1	6	2	1	1	256	1		0	1	0	1							603	20	2372				1	1	2		1			128	600	1	27	100			3	\script\skill\ÉÙÁÖìøÉ®\Ã÷¾µ·ÇÌ¨(ÕĞ).lua												
-2373	Great Sadness Curse	1	1	3	0		1	6	2	1	2	256	1		0	0	0	0							602	20					1	0	2					128	9999	1	27	100			1	\script\skill\ÉÙÁÖìøÉ®\´ó±¯Öä(ÕĞ).lua												
-2374	Plum blossom	1	1	4	0		1	4	2	1	2	1	1		0	1	1	1					2377	3	604	12					1	1	2		4			128	160	1	18	150			2	\script\skill\ÉÙÁÖÎäÉ®\Ã·»¨.lua		skill_cast_interval	1	skill_interrupt_rate	-55							
-2375	Flying Dragon	1	1	4	0		1	4	2	1	2	1	1		0	0	1	1							605	20	2379				1	0	2		4			128	160	1	27	150			3	\script\skill\ÉÙÁÖÎäÉ®\ÓÎÁú·É²½.lua		cost_gas_point	1	skill_cast_interval	1	skill_interrupt_rate	-55					
-2376	King Kong Furious	1	1	4	0		1	4	2	1	2	1	1		0	0	1	1							634	6	2380				1	1	2		4			128	160	1	22	150			1	\script\skill\ÉÙÁÖÎäÉ®\½ğ¸ÕÅ­Ä¿.lua		cost_gas_point	2	skill_cast_interval	1	skill_interrupt_rate	-55					
-2377	Plum (sub)	1	1	4	0		2	8	2		0	1	1		1	0	0	0								3												2	9999	1	12	100				\script\skill\ÉÙÁÖÎäÉ®\Ã·»¨(×Ó).lua												
-2378	Flying Dragon (Stroke)	1	1	4	0		2	4	2		0	1	1		1	0	0	0								3												2	9999	1	12	100				\script\skill\ÉÙÁÖÎäÉ®\ÓÎÁú·É²½(ÕĞ×Ó).lua												
-2379	Flying Dragon (Stroke)	1	1	4	0		1	4	2	1	2	1	1		0	0	0	1					2378	3	605	20					1	0	2		4			128	160	1	27	100			3	\script\skill\ÉÙÁÖÎäÉ®\ÓÎÁú·É²½(ÕĞ).lua						skill_interrupt_rate	-55					
-2380	King Kong's Furious Eye (stroke)	1	1	4	0		1	4	2	1	2	1	1		0	0	0	1							634	6					1	1	2		4			128	160	1	22	100			1	\script\skill\ÉÙÁÖÎäÉ®\½ğ¸ÕÅ­Ä¿(ÕĞ).lua						skill_interrupt_rate	-55					
-2381	Origami	1	28	30	0		1	9	1	0	2	4096	1		0	1	0	0					2384	1	477	6					1	1	0					128	600	1	27	100			1	\script\skill\´äÑÌÁéÅ®\ÕÛ»¨Áî.lua		skill_cast_interval	1	skill_interrupt_rate	-55							
-2382	Yu Linling	1	28	30	0		1	0	2	0	2	4096	1		0	0	0	0					2388	1	475	12					1	1	0					128	600	1	18	100			1	\script\skill\´äÑÌÁéÅ®\ÓêÁØÁå.lua		skill_cast_interval	180	skill_interrupt_rate	-55							
-2383	Four exquisite crimes	1	28	30	0		1	2	2	0	1	4096	1		0	0	0	0					2392	1	606	12	2395				2	0	0					128	600	1	27	100			4	\script\skill\´äÑÌÁéÅ®\ÁáççËÄ·¸.lua		skill_cast_interval	1	skill_interrupt_rate	-55							
-2384	Fold flower order (child)	1	28	30	0		2	8	2	0	0	4096	1		0	1	0	0								1	2387											2	9999	1		100				\script\skill\´äÑÌÁéÅ®\ÕÛ»¨Áî(×Ó).lua												
-2385	Fold Flower Order (Marten)	1	28	30	0		1	9	1	0	2	-1	1		0	0	1	0							477	12					1	1	0					128	96	1	25	100			2	\script\skill\´äÑÌÁéÅ®\ÕÛ»¨Áî(õõ).lua												
-2386	Fold flower order (Marten strokes)	1	28	30	0		1	9	1	0	2	-1	1		0	0	0	0							477	12					1	1	0					128	96	1	25	100			2	\script\skill\´äÑÌÁéÅ®\ÕÛ»¨Áî(õõÕĞ).lua												
-2387	Folding order (stroke)	1	28	30	0		2	8	2	0	0	4096	1		0	1	0	0								1												2	9999	1		100				\script\skill\´äÑÌÁéÅ®\ÕÛ»¨Áî(ÕĞ).lua												
-2388	Yu Linling (child)	1	28	30	0		2	8	2	0	0	4096	1		0	1	0	0								1	2391											2	9999	1		100				\script\skill\´äÑÌÁéÅ®\ÓêÁØÁå(×Ó).lua												
-2389	Yu Linling (Marten)	1	28	30	0		1	0	2	0	2	-1	1		0	0	1	0							475	12					1	1	0					128	96	1	16	100			1	\script\skill\´äÑÌÁéÅ®\ÓêÁØÁå(õõ).lua												
-2390	Yu Linling (Marten move)	1	28	30	0		1	0	2	0	2	-1	1		0	0	0	0							475	12					1	1	0					128	96	1	16	100			1	\script\skill\´äÑÌÁéÅ®\ÓêÁØÁå(õõÕĞ).lua												
-2391	Yu Linling (stroke)	1	28	30	0		2	8	2	0	0	4096	1		0	1	0	0								1												2	9999	1		100				\script\skill\´äÑÌÁéÅ®\ÓêÁØÁå(ÕĞ).lua												
-2392	Four exquisite crimes (child)	1	28	30	0		2	8	2	0	0	4096	1		0	1	0	0								1												2	9999	1		100				\script\skill\´äÑÌÁéÅ®\ÁáççËÄ·¸(×Ó).lua												
-2393	Exquisite Four Offenders (Marten)	1	28	30	0		1	7	2	0	2	-1	1	2	0	0	1	0							606	2					1		2					128	96	1	24	100			1	\script\skill\´äÑÌÁéÅ®\ÁáççËÄ·¸(õõ).lua												
-2394	Exquisite Four Offenders (Marten Stroke)	1	28	30	0		1	7	2	0	2	-1	1	2	0	0	0	0							606	2					1		2					128	96	1	24	100			1	\script\skill\´äÑÌÁéÅ®\ÁáççËÄ·¸(õõÕĞ).lua												
-2395	Four exquisite crimes (recruit)	1	28	30	0		1	2	2	0	1	4096	1		0	1	0	0					2604	1	606	12					2	0	0					128	600	1	27	100			4	\script\skill\´äÑÌÁéÅ®\ÁáççËÄ·¸(ÕĞ).lua												
-2396	Costume Dance	1	28	29	0		1	0	2	0	1	8192	1	30	0	0	1	0							461	1	2399				1		2		17			128	9999	1	90	100			5	\script\skill\´äÑÌÎèÏÉ\ÄŞÉÑÓğÒÂÎè.lua		skill_interrupt_rate	1									
-2397	Chengjiang Xilian	1	28	29	0		1	0	2	0	1	8192	1		0	0	1	0							607	9	2401				3	0	0					128	9999	1	38	100			9	\script\skill\´äÑÌÎèÏÉ\³Î½­ËÆÁ·.lua		skill_interrupt_rate	1	skill_interrupt_rate	-55							
-2398	Picking	1	28	29	0		1	0	2	0	0	8192	1		0	0	1	0							608	9	2402				3	1	0					128	9999	1	38	100			9	\script\skill\´äÑÌÎèÏÉ\±¡ÃÄÕª±é.lua		skill_interrupt_rate	1	skill_interrupt_rate	-55							
-2399	Chou Yu (Dance)	1	28	29	0		1	0	2	0	1	8192	1	30	0	0	0	0							461	1					1		2		17			128	9999	1	90	100			5	\script\skill\´äÑÌÎèÏÉ\ÄŞÉÑÓğÒÂÎè(ÕĞ).lua												
-2400	Chengjiang Silian (recruitment)	1	28	29	0		2	8	0	0	0	8192	1		0	0	0	0																				2	9999	1	1	100				\script\skill\´äÑÌÎèÏÉ\³Î½­ËÆÁ·(ÕĞ×Ó).lua												
-2401	Chengjiang Silian (stroke)	1	28	29	0		1	0	2	0	1	8192	1		0	0	0	0					2400	1	607	9					3	0	0					128	9999	1	38	100			9	\script\skill\´äÑÌÎèÏÉ\³Î½­ËÆÁ·(ÕĞ).lua												
-2402	Picking all over (stroke)	1	28	29	0		1	0	2	0	0	8192	1		0	0	0	0							608	9					3	1	0					128	9999	1	38	100			9	\script\skill\´äÑÌÎèÏÉ\±¡ÃÄÕª±é(ÕĞ).lua												
-2403	A cut plum	1	7	9	7		1	0	2	1	2	1024	1		0	0	1	0							622	20	2406				2		3		2			128	9999	1	69	100			36	\script\skill\¶ëáÒË×¼Ò\Ò»¼ôÃ·.lua		skill_interrupt_rate	10	skill_cast_interval	1							
-2404	Ying Xiangqu	1	7	9	0		1	9	2	1	2	1024	1		0	0	1	1							623	16	2407				1	1	2					128	9999	1	17	100			1	\script\skill\¶ëáÒË×¼Ò\Ó­ÏãÇú.lua		skill_interrupt_rate	-55	skill_cast_interval	3							
-2405	Subtle fragrance	1	7	9	0		1	9	2	1	2	1024	1		0	0	1	1							621	18	2408				1	0	2		18			128	9999	1	270	100			14	\script\skill\¶ëáÒË×¼Ò\°µÏãÊèÓ°.lua		skill_interrupt_rate	10	skill_cast_interval	3							
-2406	Cut a plum (stroke)	1	7	9	7		1	0	2	1	1	1024	1		0	0	0	0							622	20					2		3		2			128	9999	1	69	100			36	\script\skill\¶ëáÒË×¼Ò\Ò»¼ôÃ·(ÕĞ).lua												
-2407	Ying Xiangqu (recruitment)	1	7	9	0		1	9	2	1	2	1024	1		0	0	0	1					2409	3	623	16					1	1	2					128	9999	1	17	100			1	\script\skill\¶ëáÒË×¼Ò\Ó­ÏãÇú(ÕĞ).lua												
-2408	Subtle Incense (Recruit)	1	7	9	0		1	9	2	1	1	1024	1		0	0	0	1							621	18					1	0	2		18			128	9999	1	270	100			14	\script\skill\¶ëáÒË×¼Ò\°µÏãÊèÓ°(ÕĞ).lua												
-2409	Ying Xiangqu (recruitment)	1	7	9	0		2	9	2		0	1024	1		0	0	0	0								3												2	9999	1	1	100			1	\script\skill\¶ëáÒË×¼Ò\Ó­ÏãÇú(ÕĞ×Ó).lua												
-2410	Xiang	1	7	8	0		1	4	2	1	2	4	1		0	1	1	0							609	8	2412				1		2		7			128	600	1	18	100			1	\script\skill\¶ëáÒ³ö¼Ò\±ÈÇğ½£·¨.lua		skill_interrupt_rate	-55	skill_cast_interval	1							
-2411	XiangYa	1	7	8	0		1	4	2	1	2	4	1		0	1	1	0							610	8	2414				1		2		7			128	600	1	18	100			1	\script\skill\¶ëáÒ³ö¼Ò\ÆĞÌáÖ¤¹û½£.lua		skill_interrupt_rate	-55	skill_cast_interval	72							
-2412	Picchu Swordsmanship (strokes)	1	7	8	0		1	4	2	1	2	4	1		0	1	0	0					2413	3	609	8					1		2		7			128	600	1	19	100			1	\script\skill\¶ëáÒ³ö¼Ò\±ÈÇğ½£·¨(ÕĞ).lua		skill_interrupt_rate	-55	skill_cast_interval	3							
-2413	Picchu swordsmanship (recruitment)	1	7	8	0		2	8	1		0	-1	1		0	0	0	0								3												2	9999	1	3	100				\script\skill\¶ëáÒ³ö¼Ò\±ÈÇğ½£·¨(ÕĞ×Ó).lua		skill_interrupt_rate	-55	skill_cast_interval	3							
-2414	Bodhi Fruit Sword (Recruit)	1	7	8	0		1	4	2	1	2	4	1		0	1	0	0							610	8					1		2		7			128	600	1	19	100			1	\script\skill\¶ëáÒ³ö¼Ò\ÆĞÌáÖ¤¹û½£(ÕĞ).lua		skill_interrupt_rate	-55	skill_cast_interval	90							
-2415	Yang Jiaxun	1	16	18	0		1	0	2	0	2	16	2		0	1	1	0					2419	3	611	8	2420				1		2		6			128	600	1	27	100			3	\script\skill\ÑîÃÅ¹­Æï\Ñî¼ÒÑ¸·¢Ê¸.lua		skill_cast_interval	1	cost_goods_id	983050	cost_goods_num	1	skill_interrupt_rate	-55			
-2416	Yang Family Sunset Arrow	1	16	18	0		1	0	2	0	2	16	2		0	1	1	0							612	19	2421				1		0					128	600	1	36	50			1	\script\skill\ÑîÃÅ¹­Æï\Ñî¼ÒÂäÈÕ¼ı.lua		skill_cast_interval	72	cost_goods_id	983050	cost_goods_num	1	skill_interrupt_rate	10			
-2417	Moonwolf	1	16	18	0		2	8	1		0	-1	2		0	0	0	0								3												2	9999	1	27	100				\script\skill\ÑîÃÅ¹­Æï\ÍìÔÂÌìÀÇÕó.lua		skill_cast_interval	720	skill_interrupt_rate	-55							
-2418	Sirius Scatter Arrow	1	16	18	0		1	0	2	0	1	16	2		0	1	1	0					2419	3	611	8					2		3		2			128	600	1	54	100			36	\script\skill\ÑîÃÅ¹­Æï\ÌìÀÇÉ¢Éä¼ı.lua		skill_cast_interval	1	cost_goods_id	983050	cost_goods_num	1	skill_interrupt_rate	-55			
-2419	Yang Jiaxun Fa Ya (child)	1	16	18	0		2	8	1		0	-1	2		0	0	0	0								3												2	9999	1	3	100				\script\skill\ÑîÃÅ¹­Æï\Ñî¼ÒÑ¸·¢Ê¸(×Ó).lua												
-2420	Yang Jiaxun made a move (recruit)	1	16	18	0		1	0	2	0	2	16	2		0	1	0	0							611	8					1		2		6			128	600	1	27	100			3	\script\skill\ÑîÃÅ¹­Æï\Ñî¼ÒÑ¸·¢Ê¸(ÕĞ).lua												
-2421	Yang Family Sunset Arrow (Stroke)	1	16	18	0		1	0	2	0	2	16	2		0	1	0	0							612	19					1		0					128	600	1	36	10			1	\script\skill\ÑîÃÅ¹­Æï\Ñî¼ÒÂäÈÕ¼ı(ÕĞ).lua												
-2422	Octagon Bursting Gun	1	16	17	0		1	0	2	0	2	64	0		0	1	1	1							400	3	2426				1	1	2		3			128	300	1	30	100			4	\script\skill\ÑîÃÅÇ¹Æï\°Ë·½ÆÆÃğÇ¹.lua		skill_cast_interval	1	skill_interrupt_rate	-55							
-2423	Yang Family Crazy Thunder Gun	1	16	17	0		1	0	2	0	2	64	0		0	1	1	1							400	6	2427				1	1	2		3			128	300	1	20	100			1	\script\skill\ÑîÃÅÇ¹Æï\Ñî¼Ò¿ñÀ×Ç¹.lua		skill_cast_interval	72	skill_interrupt_rate	-55							
-2424	Resolute	1	16	17	0		2	0	2	0	0	64	0		0	1	0	1								3												2	300	1	18	100			1	\script\skill\ÑîÃÅÇ¹Æï\µ¤ĞÄ¾ö.lua		skill_cast_interval	720	skill_interrupt_rate	-55							
-2425	Octagon Destruction Gun (Trick)	1	16	17	0		2	0	2	0	0	64	0		0	1	0	1								3												2	300	1	18	100			1	\script\skill\ÑîÃÅÇ¹Æï\°Ë·½ÆÆÃğÇ¹(ÕĞ×Ó).lua		skill_cast_interval	18	skill_interrupt_rate	-55							
-2426	Octagon Destruction Gun (Stroke)	1	16	17	0		1	0	2	0	2	64	0		0	1	0	1					2425	2	400	3					1	1	2		3			128	300	1	45	100			4	\script\skill\ÑîÃÅÇ¹Æï\°Ë·½ÆÆÃğÇ¹(ÕĞ).lua		skill_cast_interval	18	skill_interrupt_rate	-55							
-2427	Yang Family Crazy Thunder Gun (Recruit)	1	16	17	0		1	0	2	0	2	64	0		0	1	0	1							400	3					1	1	2		3			128	300	1	45	100			2	\script\skill\ÑîÃÅÇ¹Æï\Ñî¼Ò¿ñÀ×Ç¹(ÕĞ).lua		skill_cast_interval	18	skill_interrupt_rate	-55							
-2428	Five Poison Sacrifice	1	19	20	0		2	8	2		0	128	1		0	1	0	0								1					1		2		2			2	9999	1	3	100				\script\skill\Îå¶¾Ğ°ÏÀ\Îå¶¾¼À.lua		skill_cast_interval	216	skill_interrupt_rate	-55							
-2429	Corpse poison blade	1	19	20	0		1	1	2	0	2	128	1		0	1	1	1							628	3	2432				1		2		2			128	144	1	27	100			1	\script\skill\Îå¶¾Ğ°ÏÀ\Ê¬¶¾ÈĞ.lua		skill_cast_interval	1	skill_interrupt_rate	-55							
-2430	Corpse	1	19	20	0		2	8	2	0	0	128	1		0	0	0	0								3					1		2		2			2	9999	1	27	100				\script\skill\Îå¶¾Ğ°ÏÀ\»ıÊ¬Æø.lua		skill_cast_interval	720	skill_interrupt_rate	-55							
-2431	Corpse gas	1	19	20	0		1	1	2	0	1	128	1		0	1	1	1								3					1		2		2			128	400	1	27	100				\script\skill\Îå¶¾Ğ°ÏÀ\»ıÊ¬Æø.lua				skill_interrupt_rate	-55							
-2432	Corpse poison blade (stroke)	1	19	20	0		1	1	2	0	2	128	1		0	1	0	1							628	3					1		2		2			128	144	1	27	100			1	\script\skill\Îå¶¾Ğ°ÏÀ\Ê¬¶¾ÈĞ(ÕĞ).lua												
-2433	Five Poison Sacrifice Toad	1	19	20	0		2	10	0		0	128	1		1	0	0	0								3												2	9999	1	27	100				\script\skill\Îå¶¾Ğ°ÏÀ\Îå¶¾¼À¸òó¡.lua				skill_interrupt_rate	-55							
-2434	Five Poison Offerings	1	19	20	0		2	10	0		0	128	1		1	0	0	0								3												2	9999	1	27	100				\script\skill\Îå¶¾Ğ°ÏÀ\Îå¶¾¼ÀòÚò¼.lua				skill_interrupt_rate	-55							
-2435	Five Poison Scorpions	1	19	20	0		2	10	0		0	128	1		1	0	0	0								3												2	9999	1	27	100				\script\skill\Îå¶¾Ğ°ÏÀ\Îå¶¾¼ÀĞ«×Ó.lua				skill_interrupt_rate	-55							
-2436	Five Poison Sacrifice Spider	1	19	20	0		2	10	0		0	128	1		1	0	0	0								3												2	9999	1	27	100				\script\skill\Îå¶¾Ğ°ÏÀ\Îå¶¾¼ÀÖ©Öë.lua				skill_interrupt_rate	-55							
-2437	Five Poison Sacrifice Venom	1	19	20	0		2	10	0		0	128	1		1	0	0	0								3												2	9999	1	27	100				\script\skill\Îå¶¾Ğ°ÏÀ\Îå¶¾¼À¶¾Éß.lua				skill_interrupt_rate	-55							
-2438	Nightmare insanity	1	19	21	0		1	16	2	1	2	2048	1		0	1	1	0							626	18					1		2					128	600	1	36	100			1	\script\skill\Îå¶¾¹ÆÊ¦\÷Ê¹Æ.lua		skill_interrupt_rate	25	skill_cast_interval	1							
-2439	Unicorn	1	19	21	0		1	16	2	1	2	2048	1		0	1	1	0							626	18					1		2					128	600	1	20	100			1	\script\skill\Îå¶¾¹ÆÊ¦\÷è÷ë¹Æ.lua		skill_interrupt_rate	25	skill_cast_interval	1							
-2440	Step shadow	1	19	21	0		1	16	2	1	2	2048	1		0	1	1	0							626	18					1		2					128	600	1	25	100			1	\script\skill\Îå¶¾¹ÆÊ¦\Ì¤Ó°¹Æ.lua		skill_interrupt_rate	25	skill_cast_interval	144							
-2441	ÕĞ (stroke) abandoned	1	19	21	0		2	17	2		0	2048	1		1	0	0	0								18			2	1								128	400	1	23	100				\script\skill\Îå¶¾¹ÆÊ¦\÷Ê¹Æ(ÕĞ).lua		skill_interrupt_rate	25									
-2442	Obsolete (Recruit) Abandoned	1	19	21	0		2	17	2		0	2048	1		1	0	0	0								18			2	1								128	400	1	23	100				\script\skill\Îå¶¾¹ÆÊ¦\Ì¤Ó°¹Æ(ÕĞ).lua		skill_interrupt_rate	25									
-2443	Unicorn (stroke) abandoned	1	19	21	0		2	17	2		0	2048	1		1	0	0	0								18			2	1								128	400	1	23	100				\script\skill\Îå¶¾¹ÆÊ¦\÷è÷ë¹Æ(ÕĞ).lua		skill_interrupt_rate	25									
-2444	Array	1	24	26	0		28	2	2	0	2	512	1		0	0	0	0							453	24					1	3	2					128	150	1	36	100			1	\script\skill\Ã÷½ÌÕó±ø\²¼Õó.lua		skill_cast_interval	216	skill_interrupt_rate	25	skill_param1	1264	skill_param2	1116			
-2445	Fire snake	1	24	26	0		1	0	1		1	512	1		0	1	1	1							616	18	2449				2	0	1					128	600	1	27	100			3	\script\skill\Ã÷½ÌÕó±ø\»ğÉß.lua		skill_cast_interval	1	skill_interrupt_rate	-55							
-2446	Holy fire	1	24	26	0		1	0	1		2	512	1		0	1	1	1							617	18	2447				1	1	0		3			128	600	1	30	100			1	\script\skill\Ã÷½ÌÕó±ø\Ê¥»ğ±Ê·¨.lua		skill_cast_interval	1	skill_interrupt_rate	25							
-2447	Holy flame strokes (strokes)	1	24	26	0		1	0	1		2	512	1		0	1	0	1					2448	3	617	18					1	1	0		3			128	600	1	30	100			1	\script\skill\Ã÷½ÌÕó±ø\Ê¥»ğ±Ê·¨(ÕĞ).lua												
-2448	Holy fire strokes (recruitment)	1	24	26	0		2	8	2		0	-1	1		1	0	0	0																				2	9999	1		100				\script\skill\Ã÷½ÌÕó±ø\Ê¥»ğ±Ê·¨(ÕĞ×Ó).lua												
-2449	Fire Snake (stroke)	1	24	26	0		1	8	1		1	512	1		0	1	0	1							616	18					2	0	1					128	600	1	27	100			9	\script\skill\Ã÷½ÌÕó±ø\»ğÉß(ÕĞ).lua												
-2450	Blood Claw	1	24	27	0		1	4	2	1	2	2048	1		0	1	1	0							625	9	2453				1	0	2					128	144	1	18	100			1	\script\skill\Ã÷½ÌÑªÈË\ÒçÑª×¦.lua		skill_cast_interval	144	skill_interrupt_rate	-55							
-2451	Soul Seal	1	24	27	0		1	4	2	1	2	2048	1		0	1	1	0							624	9	2455				1	0	2					128	144	1	18	100			1	\script\skill\Ã÷½ÌÑªÈË\Ãğ»êÓ¡.lua		skill_cast_interval	1	skill_interrupt_rate	-55							
-2452	Bloodthirsty	1	24	27	0		1	4	2	1	2	2048	1		0	1	1	0							624	9	2456				1	0	2					128	9999	1	18	100			1	\script\skill\Ã÷½ÌÑªÈË\ÊÈÑª.lua		skill_cast_interval	72	skill_interrupt_rate	-55							
-2453	Blood Claw (stroke)	1	24	27	0		1	4	2	1	2	2048	1		0	1	0	0							624	3					1	0	2					128	144	1	18	100			1	\script\skill\Ã÷½ÌÑªÈË\ÒçÑª×¦(ÕĞ).lua												
-2454	Soul Seal (Trick)	1	24	27	0		2	4	2	1	2	2048	1		0	1	0	0								3												2	9999	1	12	100				\script\skill\Ã÷½ÌÑªÈË\Ãğ»êÓ¡(ÕĞ×Ó).lua												
-2455	Soul Seal	1	24	27	0		1	4	2	1	2	2048	1		0	1	0	0					2454	2	624	3					1	0	2					128	144	1	18	100			1	\script\skill\Ã÷½ÌÑªÈË\Ãğ»êÓ¡(ÕĞ).lua												
-2456	Bloodthirsty (stroke)	1	24	27	0		1	4	2	1	2	2048	1		0	1	0	0							624	3					1	1	2					128	9999	1	18	100			1	\script\skill\Ã÷½ÌÑªÈË\ÊÈÑª(ÕĞ).lua						cost_state_stack	160628739					
-2457	Blaze	1	24	25	0		1	1	2	0	2	8	1	30	0	1	1	1					2460	18		1					1	0	2					128	9999	1	110	100			1	\script\skill\Ã÷½ÌÊ¥Õ½\Ñ×·ç.lua		cost_gas_point	10	skill_cast_interval	1	skill_interrupt_rate	-55					
-2458	Yang Yan Dao	1	24	25	0		1	1	2	0	2	8	1		0	1	1	1					2481	1	585	8	2465				1	0	2					128	144	1	18	100			1	\script\skill\Ã÷½ÌÊ¥Õ½\ÑôÑ×µ¶.lua		skill_cast_interval	1	skill_interrupt_rate	-55							
-2459	Burn down	1	24	25	0		1	1	2	0	1	8	1		0	1	1	1							591	20					1	0	2					128	9999	1	27	100			1	\script\skill\Ã÷½ÌÊ¥Õ½\·ÙÉí¾ö.lua		skill_cast_interval	180	skill_interrupt_rate	-55							
-2460	Hot wind (child 1)	1	24	25	0		1	1	2	0	1	8	1	30	0	1	1	1					2461	18	586	1					1	0	2					128	9999	1	90	100			1	\script\skill\Ã÷½ÌÊ¥Õ½\Ñ×·ç(×Ó1).lua												
-2461	Fire Wind (Sub 2)	1	24	25	0		1	1	2	0	1	8	1	30	0	1	1	1					2462	18	587	1					1	0	2					128	9999	1	72	100			1	\script\skill\Ã÷½ÌÊ¥Õ½\Ñ×·ç(×Ó2).lua												
-2462	Fire Wind (Sub 3)	1	24	25	0		1	1	2	0	1	8	1	30	0	1	1	1					2463	18	588	1					1	0	2					128	9999	1	54	100			1	\script\skill\Ã÷½ÌÊ¥Õ½\Ñ×·ç(×Ó3).lua												
-2463	The wind (child 4)	1	24	25	0		1	1	2	0	1	8	1	30	0	1	1	1					2464	18	589	1					1	0	2					128	9999	1	36	100			1	\script\skill\Ã÷½ÌÊ¥Õ½\Ñ×·ç(×Ó4).lua												
-2464	Hot wind (child 5)	1	24	25	0		1	1	2	0	1	8	1	30	0	1	1	1							590	1					1	0	2					128	9999	1	17	100			1	\script\skill\Ã÷½ÌÊ¥Õ½\Ñ×·ç(×Ó5).lua												
-2465	Sunfire Knife (stroke)	1	24	25	0		1	1	2	0	1	8	1		0	1	0	1							585	1					1	0	2					128	144	1	18	100			1	\script\skill\Ã÷½ÌÊ¥Õ½\ÑôÑ×µ¶(ÕĞ).lua												
-50000	V« Väng ThÇn C«ng	10	0	0	0		3	14	1		0	-1	0		1	0	0	0																				2								\script\meo\skill\skill_vovongthancong.lua												
-50001	HuyÕt §ao Kinh	10	0	0	0		3	14	1		0	-1	0		1	0	0	0																				2								\script\meo\skill\skill_huyetdaokinh.lua												
-50002	Hçn Nguyªn C«ng	10	0	0	0		3	14	1		0	-1	0		1	0	0	0																				2								\script\meo\skill\skill_honnguyencong.lua												
-50003	Tö Hµ C«ng	10	0	0	0		3	14	1		0	-1	0		1	0	0	0																				2								\script\meo\skill\skill_tuhacong.lua												
-50004	§éc ThiÒm C«ng	10	0	0	0		3	14	1		0	-1	0		1	0	0	0																				2								\script\meo\skill\skill_docthiemcong.lua												
-50005	NghŞch Thiªn Tµ C«ng	10	0	0	0		3	14	1		0	-1	0		1	0	0	0																				2								\script\meo\skill\skill_nghichthientacong.lua												
-50006	B¨ng T©m QuyÕt	10	0	0	0		3	14	1		0	-1	0		1	0	0	0																				2								\script\meo\skill\skill_bangtamquyet.lua												
-50007	Quú Hoa B¶o §iÓn	10	0	0	0		3	14	1		0	-1	0		1	0	0	0																				2								\script\meo\skill\skill_quyhoabaodien.lua												
-50008	HÊp Tinh §¹i Ph¸p	10	0	0	0		3	14	1		0	-1	0		1	0	0	0																				2								\script\meo\skill\skill_haptinhdaiphap.lua												
-2200	Quú Hoa Ch©n Khİ (Chiªu)	10	0	0	0		2	10	2	 	0	-1	1		1	0	0	0								1												2	9999	1	2	100				\script\meo\skill\skill_quyhoabaodien_chieu_1.lua												
-2201	X¶o TiÖp V¹n §oan (Chiªu)	10	0	0	0		2	10	2	 	0	-1	1		1	0	0	0								1												2	9999	1	2	100				\script\meo\skill\skill_quyhoabaodien_chieu_2.lua												
-2202	NhËt NguyÖt BÊt Minh (Chiªu)	10	0	0	0		2	10	2	 	0	-1	1		1	0	0	0								1												2	9999	1	2	100				\script\meo\skill\skill_haptinhdaiphap_chieu_1.lua												
-2203	HÊp Tinh Tµ Ph¸p (Chiªu)	10	0	0	0		2	10	2	 	0	-1	1		1	0	0	0								1												2	9999	1	2	100				\script\meo\skill\skill_haptinhdaiphap_chieu_2.lua												
-2204	V« Väng ThÇn C«ng (Chiªu 1)	10	0	0	0		2	10	2	 	0	-1	1		1	0	0	0								1												2	9999	1	2	100				\script\meo\skill\skill_vovongthancong_chieu1.lua												
-2205	V« Väng ThÇn C«ng (Chiªu 2)	10	0	0	0		2	10	2	 	0	-1	1		1	0	0	0								1												2	9999	1	2	100				\script\meo\skill\skill_vovongthancong_chieu2.lua												
-2206	HuyÕt §ao Kinh (Chiªu 1)	10	0	0	0		2	10	2	 	0	-1	1		1	0	0	0								1												2	9999	1	2	100				\script\meo\skill\skill_huyetdaokinh_chieu1.lua												
-2207	HuyÕt §ao Kinh (Chiªu 2)	10	0	0	0		2	10	2	 	0	-1	1		1	0	0	0								1												2	9999	1	2	100				\script\meo\skill\skill_huyetdaokinh_chieu2.lua												
-2208	Hçn Nguyªn C«ng (Chiªu 1)	10	0	0	0		2	10	2	 	0	-1	1		1	0	0	0								1												2	9999	1	2	100				\script\meo\skill\skill_honnguyencong_chieu1.lua												
-2209	Hçn Nguyªn C«ng (Chiªu 2)	10	0	0	0		2	10	2	 	0	-1	1		1	0	0	0								1												2	9999	1	2	100				\script\meo\skill\skill_honnguyencong_chieu2.lua												
-2210	Tö Hµ C«ng (Chiªu 1)	10	0	0	0		2	10	2	 	0	-1	1		1	0	0	0								1												2	9999	1	2	100				\script\meo\skill\skill_tuhacong_chieu1.lua												
-2211	Tö Hµ C«ng (Chiªu 2)	10	0	0	0		2	10	2	 	0	-1	1		1	0	0	0								1												2	9999	1	2	100				\script\meo\skill\skill_tuhacong_chieu2.lua												
-2212	§éc ThiÒm C«ng (Chiªu 1)	10	0	0	0		2	10	2	 	0	-1	1		1	0	0	0								1												2	9999	1	2	100				\script\meo\skill\skill_docthiemcong_chieu1.lua												
-2213	§éc ThiÒm C«ng (Chiªu 2)	10	0	0	0		2	10	2	 	0	-1	1		1	0	0	0								1												2	9999	1	2	100				\script\meo\skill\skill_docthiemcong_chieu2.lua												
-2214	NghŞch Thiªn Tµ C«ng (Chiªu 1)	10	0	0	0		2	10	2	 	0	-1	1		1	0	0	0								1												2	9999	1	2	100				\script\meo\skill\skill_nghichthientacong_chieu1.lua												
-2215	NghŞch Thiªn Tµ C«ng (Chiªu 2)	10	0	0	0		2	10	2	 	0	-1	1		1	0	0	0								1												2	9999	1	2	100				\script\meo\skill\skill_nghichthientacong_chieu2.lua												
-2216	B¨ng T©m QuyÕt (Chiªu 1)	10	0	0	0		2	10	2	 	0	-1	1		1	0	0	0								1												2	9999	1	2	100				\script\meo\skill\skill_bangtamquyet_chieu1.lua												
-2217	B¨ng T©m QuyÕt (Chiªu 2)	10	0	0	0		2	10	2	 	0	-1	1		1	0	0	0								1												2	9999	1	2	100				\script\meo\skill\skill_bangtamquyet_chieu2.lua												
-3042	V« ¶nh C­íc	9	1	4	7		1	6	2	1	2	1	1		0	0	1	1	38951				188	12	55	5					1	1	2		1			456	96	1	18	100				\script\skill\ÉÙÁÖÎäÉ®\ÎŞÓ°½Å.lua		cost_gas_point	3	skill_cast_effect_time	2	skill_interrupt_rate	-55					

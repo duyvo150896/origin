@@ -684,7 +684,16 @@ function Addxinan()
     SetNpcScript(npcIndexxinan51, "\\script\\Î÷ÄÏÇø\\´óÀí¸®\\npc\\Ò©µêÀÏ°å.lua");
 
     local npcIndexxinan52 = CreateNpc("Vâ L©m Minh Chñ1", "Sø gi¶ m«n ph¸i", 400,1548,2981);
-    SetNpcScript(npcIndexxinan52, "\\script\\Î÷ÄÏÇø\\´óÀí¸®\\npc\\ÃÅÅÉ½ÓÒıÈË.lua");
+    SetNpcScript(npcIndexxinan52, "\\script\\xaphu.lua");
+
+    local npcIndexxinan52_1 = CreateNpc("Vâ L©m Minh Chñ1", "Sø gi¶ m«n ph¸i Free", 300,1798,3536);
+    SetNpcScript(npcIndexxinan52_1, "\\script\\xaphu.lua");
+
+    local npcIndexxinan52_2 = CreateNpc("Vâ L©m Minh Chñ1", "Sø gi¶ m«n ph¸i Free", 200,1404,2835);
+    SetNpcScript(npcIndexxinan52_2, "\\script\\xaphu.lua");
+
+    local npcIndexxinan52_3 = CreateNpc("HiÖp n÷", "MÌo Xinh", 100,1456,2960);
+    SetNpcScript(npcIndexxinan52_3, "\\script\\xaphu.lua");
 
     local npcIndexxinan53 = CreateNpc("Chñ tiÖm vò khİ T©y Nam", "Chñ TiÖm Nam phôc", 400,1471,2956);
     SetNpcScript(npcIndexxinan53, "\\script\\Î÷ÄÏÇø\\´óÀí¸®\\npc\\ÄĞ×°µêÀÏ°å.lua");
