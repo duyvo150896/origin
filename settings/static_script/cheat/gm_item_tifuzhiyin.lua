@@ -1190,7 +1190,7 @@ function JoinRoute_UpdateLevel()
 		"Ngò §éc/join_wdu",
 		-- "C«n L«n/join_kl",
 		-- "Thóy Yªn/join_cy",
--- --		"Minh Giao/join_mg",
+		"Minh Giao/join_mg",
 --		"VMP/VMP",
 --		"VMP2/VMP2",
 		"Ra khái/nothing",
@@ -2737,7 +2737,18 @@ function Get_Book_ZhenJuan()
 	if nRoute == 21 then
 		AddItem(0,107,30031,10)
 	end
-	
+	if nRoute == 25 then--ÎèÏÉ
+		AddItem(0,107,30038,5,1,-1,-1,-1,-1,-1,-1,-1,0)
+	  --AddItem(0, 107, 222-20,5)
+	end
+	if nRoute == 26 then--ÎèÏÉ
+		AddItem(0,107,30039,5,1,-1,-1,-1,-1,-1,-1,-1,0)
+	 -- AddItem(0, 107, 222-20,5)
+	end
+	if nRoute == 27 then--ÎèÏÉ
+		AddItem(0,107,30040,5,1,-1,-1,-1,-1,-1,-1,-1,0)
+	  --AddItem(0, 107, 222-20,5)
+	end
 	if nRoute == 23 then--À¥¢ØÌìÊ¦
 		AddItem(0,107,30032,10)
 	end
