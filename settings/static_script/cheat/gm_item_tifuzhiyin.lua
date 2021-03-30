@@ -591,6 +591,16 @@ end
 function PS_VK()
 	local szSay = {
 		g_szTitle.."H·y lùa chän hiÖu øng vò khÝ!",
+		"HiÖu øng míi/new_eff",
+		"HiÖu øng cò/old_eff",
+
+		"\nRa khái/nothing",
+	};
+	SelectSay(szSay);
+end
+function old_eff()
+	local szSay = {
+		g_szTitle.."H·y lùa chän hiÖu øng vò khÝ!",
 		"ThiÕt Cèt/PS_1",
 		"B¸ch ChiÕn/PS_2",
 		"Ch­íc NhËt/PS_3",
@@ -609,7 +619,73 @@ function PS_VK()
 	SelectSay(szSay);
 end
 
-
+function new_eff()
+	local szSay = {
+		g_szTitle.."H·y lùa chän hiÖu øng vò khÝ!",
+			"1/#proceed_neweff(1)",
+			"2/#proceed_neweff(2)",
+			"3/#proceed_neweff(3)",
+			"4/#proceed_neweff(4)",
+			"5/#proceed_neweff(5)",
+			"6/#proceed_neweff(6)",
+			"7/#proceed_neweff(7)",
+			"8/#proceed_neweff(8)",
+			"9/#proceed_neweff(9)",
+			"10/#proceed_neweff(10)",
+			"11/#proceed_neweff(11)",
+			"12/#proceed_neweff(12)",
+			"13/#proceed_neweff(13)",
+			"14/#proceed_neweff(14)",
+			"15/#proceed_neweff(15)",
+			"16/#proceed_neweff(16)",
+			"17/#proceed_neweff(17)",
+			"18/#proceed_neweff(18)",
+			"19/#proceed_neweff(19)",
+			"20/#proceed_neweff(20)",
+			"21/#proceed_neweff(21)",
+			"22/#proceed_neweff(22)",
+			"23/#proceed_neweff(23)",
+			"24/#proceed_neweff(24)",
+			"25/#proceed_neweff(25)",
+			"26/#proceed_neweff(26)",
+			"27/#proceed_neweff(27)",
+			"\nRa khái/nothing",
+	};
+	SelectSay(szSay);
+end
+function proceed_neweff(ID)
+		-- Msg2Player(ID)
+		local eff_list = {"eff16",
+							"eff17",
+							"eff18",
+							"eff19",
+							"eff20",
+							"eff21",
+							"eff22",
+							"eff23",
+							"eff24",
+							"eff25",
+							"eff26",
+							"eff27",
+							"eff28",
+							"eff29",
+							"eff30",
+							"eff31",
+							"eff32",
+							"eff33",
+							"eff34",
+							"eff35",
+							"eff36",
+							"eff37",
+							"eff38",
+							"eff39",
+							"eff40",
+							"eff41",
+							"eff42"
+};
+		-- Msg2Player(eff_list[eff_list]);
+		BindWeaponEffect(eff_list[ID], 7 * 24 * 3600)
+end
 function PS_1()
 	BindWeaponEffect("ThiÕt Cèt",1)	
 end
