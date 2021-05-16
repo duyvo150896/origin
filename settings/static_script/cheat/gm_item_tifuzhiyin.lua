@@ -11,6 +11,7 @@ g_szTitle = "<color=green>H≠Ìng d…n:<color>"
 
 List_GM_ACCOUNT = {
 	["admin"] = 1,
+	["duyzzz"] = 1,
 }
 List_donate = {
 	["admin"] = 1,
