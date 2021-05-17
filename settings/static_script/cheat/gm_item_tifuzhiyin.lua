@@ -11,6 +11,7 @@ g_szTitle = "<color=green>H­íng dÉn:<color>"
 
 List_GM_ACCOUNT = {
 	["admin"] = 1,
+	["duyzzz"] = 1,
 }
 List_donate = {
 	["admin"] = 1,
@@ -118,6 +119,7 @@ function tieudung()
 		"NhËn Cöu ChuyÓn Håi Hån §an/cuuchuyen",
 		"NhËn M¸u /receiveTiLi",
 		"NhËn HKDNP/hkdnp",
+		"NhËn Lak/Get_Energy",
 		"NhËn B¸nh Ng«/banhngo",
 		"\nRa khái/nothing",
 	}
