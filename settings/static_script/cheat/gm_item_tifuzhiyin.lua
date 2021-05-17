@@ -119,6 +119,7 @@ function tieudung()
 		"NhËn Cöu ChuyÓn Håi Hån §an/cuuchuyen",
 		"NhËn M¸u /receiveTiLi",
 		"NhËn HKDNP/hkdnp",
+		"NhËn Lak/Get_Energy",
 		"NhËn B¸nh Ng«/banhngo",
 		"\nRa khái/nothing",
 	}
