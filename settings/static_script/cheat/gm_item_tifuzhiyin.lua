@@ -3283,7 +3283,7 @@ function Get_Mored()
 
 		-- "NhËn Thiªn Chi Viªm §Õ/thienchiviemde",
 		-- "NhËn Viªm §Õ/viemde",
-		-- "NhËn ®å buff/dobuffhttc",
+		"NhËn ®å buff/dobuffhttc",
 		-- "NhËn tö quang hiªn viªn thÇn binh/hienvienbinh",
 		-- "NhËn Cöu Thiªn Ngäc/cuuthienngoc",
     	-- "NhËn B¹ch Kim Viªm §Õ/bkvd",
