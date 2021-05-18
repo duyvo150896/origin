@@ -142,6 +142,7 @@ function tieudung_orther()
 		"Kü n¨ng sèng/Life_Skill",
 		"NhËn Thó Míi/nhanthucuoimoi",
 		"NhËn Thó C­ìi/thucuoipro",
+		"NhËn C¸nh/nguafake",
 		"\nRa khái/nothing",
 	}
 	SelectSay(tSay);
@@ -174,8 +175,8 @@ function admin_2()
 		"NhËn Ngua fake/nguafake",
 		"Nhan Ngua moi/nhanthucuoimoi",
 		-- "Nhan Ngua/tmkl",
-		"Nhan item test/nhanmbk",
-		"Nhan Kim Phieu x10/nhansen_x10",
+		-- "Nhan item test/nhanmbk",
+		-- "Nhan Kim Phieu x10/nhansen_x10",
 		-- "Nhan Rac/NhanBua",
 		-- "NhËn admin Item_1/mtc",
 		-- "Kim Xa 3/Get_JinShe_admin",
