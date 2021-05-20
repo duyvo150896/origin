@@ -128,6 +128,7 @@ end
 function tieudung_orther()
 	local tSay = {
 		g_szTitle.."Lùa chän",
+		"Nhan Bua Cuong Hoa/NhanBua",
           "N©ng cao ®¼ng cÊp chuyÓn sinh nh©n vËt/player_reborn",
 			"Thay ®æi h­íng Phôc Sinh/change_PhucSinh",
             "NhËn danh hiÖu/Get_Danh_Hieu2",
@@ -5984,9 +5985,9 @@ function tmkl()
 end
 
 function NhanBua()
-	AddItem(2,1,30424,1);
-	AddItem(2,1,30425,1);
-	AddItem(2,1,30426,1);
+	AddItem(2,1,30424,100);
+	AddItem(2,1,30425,100);
+	AddItem(2,1,30426,100);
 end
 
 function hieudothong()
