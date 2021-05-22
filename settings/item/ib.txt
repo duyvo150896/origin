@@ -13,7 +13,7 @@ Sort	Page	X	Y	Description	Information	GiveItem1Type	GiveItem1Genre	GiveItem1Deta
 1	1	3	4	ThÎ Th¸ng	<color=Gray>400 Xu<enter><color=Gold>10000000 Xu	6	2	1	30740	1	10				10000000	7	
 1	2	1	1	ThiÕt Tinh CÊp 3	<color=Gray>30 Xu<enter><color=Gold>10 Xu	6	2	1	30535	1	10				10	15	
 1	2	1	2	N÷ Oa B¶o H¹p	<color=Gray>2 Xu<enter><color=Gold>2 Xu	6	2	1	30154	1	10				2	30	
-1	2	1	3	Ng«i Sao May M¾n	<color=Gray>50 Xu<enter><color=Gold>33 Xu	6	2	1	30191	1	10				33	30	
+1	2	1	3	Ng«i Sao May M¾n	<color=Gray>50 Xu<enter><color=Gold>10000000 Xu	6	2	1	30191	1	10				10000000	30	
 1	2	1	4	BÝ Ng©n To¶n	<color=Gray>120 Xu<enter><color=Gold>10000000 Xu	6	2	1	30538	1	10				10000000	15	
 1	2	2	1	BÝ Ng©n Chïy	<color=Gray>180 Xu<enter><color=Gold>10000000 Xu	6	2	1	30539	1	10				10000000	15	
 1	2	2	2	Tinh Lùc Hoµn	<color=Gray>100 Xu<enter><color=Gold>10000000 Xu	6	2	1	30555	1	10				10000000	15	
@@ -86,7 +86,7 @@ Sort	Page	X	Y	Description	Information	GiveItem1Type	GiveItem1Genre	GiveItem1Deta
 5	1	2	2	N«ng Tang Phæ	<color=White>2400 Xu<enter><color=Gold>2400 Xu	6	2	1	1056	1	10				2400	30	
 5	1	2	3	Lôc L©m Lang Yªn	<color=White>900 Xu<enter><color=Gold>10000000 Xu	6	2	1	1014	1	10				10000000	30	
 5	1	2	4	Thñy Hoµng BÝ ChiÕu	<color=White>1200 Xu<enter><color=Gold>10000000 Xu	6	2	1	1047	1	10				10000000	30	
-5	1	3	1	Uyªn ¦¬ng Kim Ti B¹c	<color=White>1500 Xu<enter><color=Gold>10000000 Xu	6	2	1	1048	1	10				10000000	30	
+5	1	3	1	Uyªn ¦¬ng Kim Ti B¹c	<color=White>1500 Xu<enter><color=Gold>100 Xu	6	2	1	1048	1	10				100	30	
 5	1	3	2	Ngù  Dông B¹ch Ngäc Th¹ch	<color=White>1200 Xu<enter><color=Gold>10000000 Xu	6	2	1	1024	1	10				200000	30	
 5	1	3	3	Th¸i DÞch §å (hép)	<color=White>68 Xu<enter><color=Gold>68 Xu	6	2	0	1093	1	10				68	7	
 5	1	3	4	Th¸i DÞch §å (r­¬ng)	<color=White>680 Xu<enter><color=Gold>680 Xu	6	2	0	1094	1	10				680	7	
