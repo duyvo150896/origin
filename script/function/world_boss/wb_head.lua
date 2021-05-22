@@ -140,7 +140,7 @@ function wb_SmallBoxAward()
 		return 0;
 	end
 	--奖励
-	gf_Modify("Exp", 4000000);
+	gf_Modify("Exp", 14000000);
 	local tAward = {
 		-- {1, 50000, "M?nh thian m?n", {2, 1, 30410, 100, 4}, 0},
 		-- --{1, 0, "高级师门秘籍包裹", {2, 1, 30627, 1, 4}, 0},

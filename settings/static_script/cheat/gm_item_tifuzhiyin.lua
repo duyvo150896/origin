@@ -78,7 +78,7 @@ function OnUse(nItem)
 		end
 		if 8 == nRoute then
 			tinsert(tSay, "NhËn X¸ Lîi Kim §¬n/Give_Dandan")
-			-- tinsert(tSay, "Nhan §å Buff NMK/DoBuffNMK")
+			tinsert(tSay, "Nhan §å Buff NMK/DoBuffNMK")
 			-- tinsert(tSay, "Nhan §å Buff NMK_test (Kh«ng cã khi Open)/DoBuffNMK_test")
 		end		
 		if 17 == nRoute then
