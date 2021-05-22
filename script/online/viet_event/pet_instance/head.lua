@@ -271,8 +271,8 @@ function TodayCanEnter(nType)
 	end
 	local nFreeTime = floor(mod(GetTask(TSK_PET_TAIXU_DATE), 100) / 10)
 	local nPaidTime = floor(mod(GetTask(TSK_PET_TAIXU_DATE), 1000) / 100)
-	if (nType == 1 and nFreeTime >= 3) or (nType == 2 and nPaidTime >= 2) then
-	 -- if (nType == 1 and nFreeTime >= 1) then
+	-- if (nType == 1 and nFreeTime >= 3) or (nType == 2 and nPaidTime >= 2) then
+	 if (nType == 1 and nFreeTime >= 1) then
 		return 0
 	else
 		return 1
