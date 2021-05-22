@@ -3145,7 +3145,7 @@ function Get_Book_ZhenJuan()
 		AddItem(0,107,30034,10)
 	end
 	
-	-- gf_AddItemEx({0, 112, 158,	1, 4}, "L¨ng Ba Vi Bé toµn tËp");
+	gf_AddItemEx({0, 112, 158,	1, 4}, "L¨ng Ba Vi Bé toµn tËp");
 end
 
 function langbavibott()
