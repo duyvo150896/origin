@@ -119,17 +119,17 @@ function wb_KillAward()
 	if GetWorldPos() == 202 then
 		AddItem(2,1,30072,1);
 	else
-		gf_Modify("Exp", 30000000);
+		gf_Modify("Exp", 5000000);
 		-- gf_AddItemEx2({2,1,30370, 5}, "TMKL", "BOSS Th? gi¨ªi", "Tiau di?t BOSS", 0, 1)
 		-- gf_AddItemEx2({2,95,204, 5}, "TCL", "BOSS Th? gi¨ªi", "Tiau di?t  BOSS", 0, 1)
 		-- gf_AddItemEx2({2,1,30458, 2}, "Tô Linh Hoµn", "BOSS ThÕ gíi", "Tiªu diÖt BOSS ThÕ giíi", 0, 1)
 		 -- gf_AddItemEx2({2,1,30668, 5}, "THUL 6", "BOSS ThÕ gíi", "Tiªu diÖt BOSS ThÕ giíi", 0, 1)
-		gf_AddItemEx2({2,1,30424, 10}, "Bïa C­êng Hãa 12", "BOSS ThÕ gíi", "Tiªu diÖt BOSS ThÕ giíi", 0, 1)
-		gf_AddItemEx2({2,1,30425, 10}, "Bïa C­êng Hãa 13", "BOSS ThÕ gíi", "Tiªu diÖt BOSS ThÕ giíi", 0, 1)
+		gf_AddItemEx2({2,1,30424, 5}, "Bïa C­êng Hãa 12", "BOSS ThÕ gíi", "Tiªu diÖt BOSS ThÕ giíi", 0, 1)
+		-- gf_AddItemEx2({2,1,30425, 10}, "Bïa C­êng Hãa 13", "BOSS ThÕ gíi", "Tiªu diÖt BOSS ThÕ giíi", 0, 1)
 		-- gf_AddItemEx2({2,1,30426, 20}, "Bïa C­êng Hãa 14", "BOSS ThÕ gíi", "Tiªu diÖt BOSS ThÕ giíi", 0, 1)
 		-- gf_AddItemEx2({2,1,30499, 20}, "HCAH", "BOSS ThÕ gíi", "Tiªu diÖt BOSS ThÕ giíi", 0, 1)
 		-- gf_AddItemEx2({2,1,30402, 30}, "Ngò Th¸i Th¸nh Háa", "BOSS ThÕ gíi", "Tiªu diÖt BOSS ThÕ giíi", 0, 1)
-		local msg = format("Chóc mõng [%s] ®· hoµn thµnh ®ßn kÕt liÔu %s, nhËn ®­îc %d kinh nghiÖm, %s*%d ", GetName(), wb_GetBossName() or "BOSS", 30000000, "Bïa C­êng Hãa", 10);
+		local msg = format("Chóc mõng [%s] ®· hoµn thµnh ®ßn kÕt liÔu %s, nhËn ®­îc %d kinh nghiÖm, %s*%d ", GetName(), wb_GetBossName() or "BOSS", 10000000, "Bïa C­êng Hãa", 10);
 		Msg2Global(msg);
 		AddLocalNews(msg);
 	end
@@ -150,21 +150,21 @@ function wb_SmallBoxAward()
 		-- {1, 15000, "TiÓu Nh©n s©m qu?", {2, 0, 552, 1, 4}, 0},
 		-- {1, 25000, "m?ng thian cang", {2, 1, 30390, 500, 4}, 0},
 		-- {1, 1, "MËt TÞch Tiªu Dao", {2, 1, 30410, 100}, 0, 0, 0, 1},
-			{1, 25000, "S¸ch pet 4", {2, 150, 4, 1, 4}, 0},
-			{1, 25000, "S¸ch pet 4", {2, 150, 8, 1, 4}, 0},
-			{1, 3000, "S¸ch pet 4", {2, 150, 12, 1, 4}, 0},
-			{1, 25000, "S¸ch pet 4", {2, 150, 16, 1, 4}, 0},
-			{1, 3000, "S¸ch pet 4", {2, 150, 20, 1, 4}, 0},
-			{1, 25000, "S¸ch pet 4", {2, 150, 24, 1, 4}, 0},
-			{1, 25000, "S¸ch pet 4", {2, 150, 28, 1, 4}, 0},
-			{1, 25000, "S¸ch pet 4", {2, 150, 32, 1, 4}, 0},
-			{1, 25000, "S¸ch pet 4", {2, 150, 36, 1, 4}, 0},
-			{1, 25000, "S¸ch pet 4", {2, 150, 40, 1, 4}, 0},
-			{1, 25000, "S¸ch pet 4", {2, 150, 44, 1, 4}, 0},
-			{1, 3000, "S¸ch pet 4", {2, 150, 48, 1, 4}, 0},
-			{1, 25000, "S¸ch pet 4", {2, 150, 52, 1, 4}, 0},
-			{1, 3000, "S¸ch pet 4", {2, 150, 56, 1, 4}, 0},
-			{1, 25000, "S¸ch pet 4", {2, 150, 60, 1, 4}, 0},
+			-- {1, 25000, "S¸ch pet 4", {2, 150, 4, 1, 4}, 0},
+			-- {1, 25000, "S¸ch pet 4", {2, 150, 8, 1, 4}, 0},
+			-- {1, 3000, "S¸ch pet 4", {2, 150, 12, 1, 4}, 0},
+			-- {1, 25000, "S¸ch pet 4", {2, 150, 16, 1, 4}, 0},
+			-- {1, 3000, "S¸ch pet 4", {2, 150, 20, 1, 4}, 0},
+			-- {1, 25000, "S¸ch pet 4", {2, 150, 24, 1, 4}, 0},
+			-- {1, 25000, "S¸ch pet 4", {2, 150, 28, 1, 4}, 0},
+			-- {1, 25000, "S¸ch pet 4", {2, 150, 32, 1, 4}, 0},
+			-- {1, 25000, "S¸ch pet 4", {2, 150, 36, 1, 4}, 0},
+			-- {1, 25000, "S¸ch pet 4", {2, 150, 40, 1, 4}, 0},
+			-- {1, 25000, "S¸ch pet 4", {2, 150, 44, 1, 4}, 0},
+			-- {1, 3000, "S¸ch pet 4", {2, 150, 48, 1, 4}, 0},
+			-- {1, 25000, "S¸ch pet 4", {2, 150, 52, 1, 4}, 0},
+			-- {1, 3000, "S¸ch pet 4", {2, 150, 56, 1, 4}, 0},
+			-- {1, 25000, "S¸ch pet 4", {2, 150, 60, 1, 4}, 0},
 			
 	}
 	gf_EventGiveRandAward(tAward, gf_SumRandBase(tAward), 1, "BOSS ThÕ giíi", "§¹i ChiÕn B¶o H¹p")
@@ -202,7 +202,7 @@ function wb_BigBoxAward()
 	SetNpcLifeTime(npcIndex, 0);
 	wb_SetBigBoxFlag();
 	--½±Àø
-	gf_Modify("Exp", 10000000);
+	gf_Modify("Exp", 5000000);
 --	gf_AddItemEx2({2, 1, 30669, 40}, "M¶nh MËt TÞch", "BOSS ThÕ gíi", "R­¬ng Vµng §¹i ChiÕn", 0, 1);
 	-- local tAward = {
 		-- -- {1, 14, "L¨ng Ba Vi B?", {0, 112, 78, 1}, 0},
@@ -215,9 +215,9 @@ function wb_BigBoxAward()
 	-- }
 	-- gf_EventGiveRandAward(tAward, gf_SumRandBase(tAward), 1, "BOSS Th? gi¨ªi", "R-?ng V¦Ìng ¡ì1i Chi?n");	
 	 -- gf_AddItemEx2({2,1,30668, 5}, "THUL 6", "BOSS ThÕ giíi", "Tiªu diÖt  BOSS", 0, 1);
-	 gf_AddItemEx2({2,1,30425, 20}, "Bïa C­êng Hãa 13", "BOSS ThÕ giíi", "Tiªu diÖt  BOSS", 0, 1);
+	 gf_AddItemEx2({2,1,30424, 10}, "Bïa C­êng Hãa 12", "BOSS ThÕ giíi", "Tiªu diÖt  BOSS", 0, 1);
 	 Earn(5000000);
-	 local msg = format("Chóc mõng [%s] ®· giµnh ®­îc r­¬ng Vµng §¹i ChiÕn thu ®­îc  %d Bïa c­êng hãa 13", GetName(), 30);
+	 local msg = format("Chóc mõng [%s] ®· giµnh ®­îc r­¬ng Vµng §¹i ChiÕn thu ®­îc  %d Bïa c­êng hãa 12", GetName(), 10);
 	Msg2Global(msg);
 	AddLocalNews(msg);
 	--»î¶¯

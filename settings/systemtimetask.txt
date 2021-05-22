@@ -65,7 +65,6 @@ HOUR	MIN	SCRIPT	d	DESC
 19	58	\script\online\tong_feast\tf_sysmsg.lua
 19	59	\script\gongcheng\conf_res_protect_msg.lua
 20	0	\script\task\weekend\weekend_timer.lua
-20	1	\script\newbattles\systemtimemessage\main_battle_signup.lua
 20	2	\script\藏剑山庄\task_script\ontimer_notify.lua
 20	3	\script\function\lucky_box\lb_head.lua
 20	10	\script\missions\bw\siege\jingtoutiaozhanling.lua
@@ -74,9 +73,9 @@ HOUR	MIN	SCRIPT	d	DESC
 20	55	\script\missions\nvn\3v3msg.lua
 20	58	\script\task\weekend\weekend_timer.lua
 21	1	\script\结婚\mission\init_fields.lua
+21	2	\script\task\weekend\weekend_timer.lua
 21	3	\script\missions\bw\siege\siege_arena_mission_start.lua
 21	4	\script\online\春节活动\snowwar\open_snowwar_mission.lua
-21	15	\script\task\weekend\weekend_timer.lua
 21	29	\settings\static_script\kf_newbattles\systemtimemessage\sub_battle_signup.lua
 21	30	\script\online_activites\2010_12\activity_05\head.lua
 21	31	\script\missions\nvn\3v3\3v3_original_gs.lua

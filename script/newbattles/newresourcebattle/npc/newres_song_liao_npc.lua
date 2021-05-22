@@ -124,12 +124,12 @@ function finish_newres_task()
 		Talk(1,"",szNpcName.."Mau ®i thu thËp tµi nguyªn råi h·y l·nh th­ëng!")
 		return
 	end
-	local nQuest = 1
+	local nQuest = 3
 	local nPetLevel = mod(GetTask(TASK_VNG_PET), 100)
 --	local nIsPS = mod(floor(GetTask(TSK_PET_PS_GIAIDOAN_B)/10),10)
-	if nPetLevel >= 1 then
-		nQuest = 2
-	end
+	-- if nPetLevel >= 1 then
+		-- nQuest = 2
+	-- end
 	-- if nPetLevel >= 1 then
 		-- nQuest = 5
 	-- end
