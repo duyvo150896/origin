@@ -11,10 +11,10 @@ g_szTitle = "<color=green>H­íng dÉn:<color>"
 
 List_GM_ACCOUNT = {
 	["admin"] = 1,
-	["duyzzz"] = 1,
+
 }
 List_donate = {
-	["admin"] = 1,
+
 }
 function CheckName(nName)
 	if not List_GM_ACCOUNT[nName] or List_GM_ACCOUNT[nName] == 0 then return 0 end
@@ -37,8 +37,8 @@ function OnUse(nItem)
 	if nRoute <= 0 then
 		tSay = {
 			"Gia nhËp m«n ph¸i/JoinRoute_UpdateLevel",
-			-- "L¨ng ba vi bé cho VMP/langbavibott",
-			-- "Th¨ng cÊp mËt tÞch ®· trang bÞ/Get_Book_Update",
+			"L¨ng ba vi bé cho VMP/langbavibott",
+			"Th¨ng cÊp mËt tÞch ®· trang bÞ/Get_Book_Update",
 		}
 	else
 		tSay = {
@@ -49,10 +49,9 @@ function OnUse(nItem)
 			"Cßn l¹i/tieudung_orther",
             -- "Thiªn kiªu lÖnh (Kh«ng cã khi Open)/nhantkl",
             -- "M¶nh b¹ch kim (Kh«ng cã khi Open)/nhanmbk",
-			-- "HiÖu øng nh©n vËt/#char_eff(10)",
-			-- "Hç trî ®¼ng cÊp cho t©n thñ Level 87/hotrogmer1st",
-            -- "NhËn Bé DiÖu D­¬ng +10/Get_YaoYang_15",
-			-- "NgÉu nhiªn nhËn ®­îc Trang BÞ Kim Xµ Lv3 +10/getkx3",
+			"HiÖu øng nh©n vËt/#char_eff(10)",
+			-- "Hç trî ®¼ng cÊp cho t©n thñ Level 85/hotrogmer1st",
+            -- "NhËn Bé DiÖu D­¬ng +7/Get_YaoYang_15",
 			-- "NgÉu nhiªn nhËn ®­îc Trang BÞ Kim Xµ Lv1 +10/Get_JinShe_1",
 --			format("%s/Process_Equip_LingTu", "NhËn Linh §å +10"),
 			-- format("%s/Process_SanJianTao", "NhËn trang søc ®eo h«ng 6 sao"),
@@ -78,8 +77,8 @@ function OnUse(nItem)
 			tinsert(tSay, "NhËn ¸m KhÝ vµ C¬ Quan/Give_JiguanAnqi")
 		end
 		if 8 == nRoute then
-			-- tinsert(tSay, "NhËn X¸ Lîi Kim §¬n/Give_Dandan")
-			tinsert(tSay, "Nhan §å Buff NMK/DoBuffNMK")
+			tinsert(tSay, "NhËn X¸ Lîi Kim §¬n/Give_Dandan")
+			-- tinsert(tSay, "Nhan §å Buff NMK/DoBuffNMK")
 			-- tinsert(tSay, "Nhan §å Buff NMK_test (Kh«ng cã khi Open)/DoBuffNMK_test")
 		end		
 		if 17 == nRoute then
@@ -112,14 +111,14 @@ function tieudung()
 	local tSay = {
 		g_szTitle.."Lùa chän",
 			"NhËn L­u Ph¸i Ch©n QuyÓn vµ YÕu QuyÕt/Get_Book",
-		"NhËn ®¸ quý/Get_Gem",
-			"NhËn 4000 vµng (Kh«ng cã khi Open)/Get_Money",
- 		"NhËn Ên chuyÓn sinh/Get_An",
-		"Ma Dao thach 3/madao",
+		-- "NhËn ®¸ quý/Get_Gem",
+			"NhËn 4000 vµng/Get_Money",
+ 		-- "NhËn Ên chuyÓn sinh/Get_An",
+		"Ma Dao thach 1/madao1",
 		"NhËn Cöu ChuyÓn Håi Hån §an/cuuchuyen",
 		"NhËn M¸u /receiveTiLi",
 		"NhËn HKDNP/hkdnp",
-		"NhËn Lak/Get_Energy",
+		"NhËn Lak/Get_Energy_5x",
 		"NhËn B¸nh Ng«/banhngo",
 		"\nRa khái/nothing",
 	}
@@ -128,18 +127,18 @@ end
 function tieudung_orther()
 	local tSay = {
 		g_szTitle.."Lùa chän",
-		"Nhan Bua Cuong Hoa/NhanBua",
-          "N©ng cao ®¼ng cÊp chuyÓn sinh nh©n vËt/player_reborn",
-			"Thay ®æi h­íng Phôc Sinh/change_PhucSinh",
+		-- "Nhan Bua Cuong Hoa/NhanBua",
+          -- "N©ng cao ®¼ng cÊp chuyÓn sinh nh©n vËt/player_reborn",
+			-- "Thay ®æi h­íng Phôc Sinh/change_PhucSinh",
             "NhËn danh hiÖu/Get_Danh_Hieu2",
             "T¨ng ®iÓm nh©n vËt/Get_Diem_Char",
             "NhËn C¸c Lo¹i Nguyªn LiÖu/Get_Nguyen_Lieu",
 			"Thao t¸c bang héi/TongOperation",
 			"Thao t¸c Vò KhÝ/PS_VK",
-			"Thao t¸c kinh m¹ch (Kh«ng cã khi Open)/GetJingMai",
+			"Thao t¸c kinh m¹ch /GetJingMai",
 			"Ngo¹i Trang C«ng Thµnh/ngoaitrang",			
 			"Phôc sinh thó c­ng/Pet_OP",
-		"NhËn ChiÕn T­îng/chientuong",
+		-- "NhËn ChiÕn T­îng/chientuong",
 		"Kü n¨ng sèng/Life_Skill",
 		"NhËn Thó Míi/nhanthucuoimoi",
 		"NhËn Thó C­ìi/thucuoipro",
@@ -266,45 +265,90 @@ function tk_8x()
 		AddItem(0,102,30012,1,1,-1,-1,-1,-1,-1,-1,-1,0);
 	end
 end
-function thienghia()
+
+function thienghia_mod2()
 	local nBody 	= GetBody();
+	local level = 7;
 	if nBody==1 then
-		AddItem(0,100,3034,1,1,-1,-1,-1,-1,-1,-1,-1,10);
-		AddItem(0,101, 3034,1,1,5,639,3,483,2,613,-1,10);
-		AddItem(0,103, 3034,1,1,4,276,-1,-1,-1,-1,-1,10);
+		AddItem(0,100,3034,1,1,-1,-1,-1,-1,-1,-1,-1,level);
+		AddItem(0,101, 3034,1,1,5,639,3,483,2,613,-1,level);
+		AddItem(0,103, 3034,1,1,-1,-1,-1,-1,-1,-1,-1,level);
 		
-		AddItem(0,100,3037,1,1,-1,-1,-1,-1,-1,-1,-1,10);
-		AddItem(0,101, 3037,1,1,-1,-1,3,483,2,613,-1,10);
-		AddItem(0,103, 3037,1,1,4,276,4,408,-1,-1,-1,10);
+		AddItem(0,100,3037,1,1,-1,-1,-1,-1,-1,-1,-1,level);
+		AddItem(0,101, 3037,1,1,-1,-1,3,483,2,613,-1,level);
+		AddItem(0,103, 3037,1,1,-1,-1,4,408,-1,-1,-1,level);
 	end 
 	if nBody==2 then
-		AddItem(0,100,3040,1,1,-1,-1,-1,-1,-1,-1,-1,10);
-		AddItem(0,101, 3040,1,1,5,639,3,483,2,613,-1,10);
-		AddItem(0,103, 3040,1,1,4,276,-1,-1,-1,-1,-1,10);
+		AddItem(0,100,3040,1,1,-1,-1,-1,-1,-1,-1,-1,level);
+		AddItem(0,101, 3040,1,1,5,639,3,483,2,613,-1,level);
+		AddItem(0,103, 3040,1,1,-1,-1,-1,-1,-1,-1,-1,level);
 		
-		AddItem(0,100,3043,1,1,-1,-1,-1,-1,-1,-1,-1,10);
-		AddItem(0,101, 3043,1,1,-1,-1,3,483,2,613,-1,10);
-		AddItem(0,103, 3043,1,1,4,276,4,408,-1,-1,-1,10);
+		AddItem(0,100,3043,1,1,-1,-1,-1,-1,-1,-1,-1,level);
+		AddItem(0,101, 3043,1,1,-1,-1,3,483,2,613,-1,level);
+		AddItem(0,103, 3043,1,1,-1,-1,4,408,-1,-1,-1,level);
 		
 	end
 	if nBody==3 then
-		AddItem(0,100, 3046,1,1,-1,-1,-1,-1,-1,-1,-1,10);
-		AddItem(0,101, 3046,1,1,5,639,3,483,2,613,-1,10);
-		AddItem(0,103, 3046,1,1,4,276,-1,-1,-1,-1,-1,10);
+		AddItem(0,100, 3046,1,1,-1,-1,-1,-1,-1,-1,-1,level);
+		AddItem(0,101, 3046,1,1,5,639,3,483,2,613,-1,level);
+		AddItem(0,103, 3046,1,1,-1,-1,-1,-1,-1,-1,-1,level);
 		
-		AddItem(0,100,3049,1,1,-1,-1,-1,-1,-1,-1,-1,10);
-		AddItem(0,101, 3049,1,1,-1,-1,3,483,2,613,-1,10);
-		AddItem(0,103, 3049,1,1,4,276,4,408,-1,-1,-1,10);
+		AddItem(0,100,3049,1,1,-1,-1,-1,-1,-1,-1,-1,level);
+		AddItem(0,101, 3049,1,1,-1,-1,3,483,2,613,-1,level);
+		AddItem(0,103, 3049,1,1,-1,-1,4,408,-1,-1,-1,level);
 		
 	end
 	if nBody==4 then
-		AddItem(0,100,3042,1,1,-1,-1,-1,-1,-1,-1,-1,10);
-		AddItem(0,101, 3042,1,1,5,639,3,483,2,613,-1,10);
-		AddItem(0,103, 3042,1,1,4,276,-1,-1,-1,-1,-1,10);
+		AddItem(0,100,3042,1,1,-1,-1,-1,-1,-1,-1,-1,level);
+		AddItem(0,101, 3042,1,1,5,639,3,483,2,613,-1,level);
+		AddItem(0,103, 3042,1,1,-1,-1,-1,-1,-1,-1,-1,level);
 		
-		AddItem(0,100,3055,1,1,-1,-1,-1,-1,-1,-1,-1,10);
-		AddItem(0,101, 3055,1,1,-1,-1,3,483,2,613,-1,10);
-		AddItem(0,103, 3055,1,1,4,276,4,408,-1,-1,-1,10);
+		AddItem(0,100,3055,1,1,-1,-1,-1,-1,-1,-1,-1,level);
+		AddItem(0,101, 3055,1,1,-1,-1,3,483,2,613,-1,level);
+		AddItem(0,103, 3055,1,1,-1,-1,4,408,-1,-1,-1,level);
+		
+	end
+end
+function thienghia_mod()
+	local nBody 	= GetBody();
+	local level = 7;
+	if nBody==1 then
+		AddItem(0,100,3034,1,1,-1,-1,-1,-1,-1,-1,-1,level);
+		AddItem(0,101, 3034,1,1,5,639,3,483,2,613,-1,level);
+		AddItem(0,103, 3034,1,1,4,276,-1,-1,-1,-1,-1,level);
+		
+		AddItem(0,100,3037,1,1,-1,-1,-1,-1,-1,-1,-1,level);
+		AddItem(0,101, 3037,1,1,-1,-1,3,483,2,613,-1,level);
+		AddItem(0,103, 3037,1,1,4,276,4,408,-1,-1,-1,level);
+	end 
+	if nBody==2 then
+		AddItem(0,100,3040,1,1,-1,-1,-1,-1,-1,-1,-1,level);
+		AddItem(0,101, 3040,1,1,5,639,3,483,2,613,-1,level);
+		AddItem(0,103, 3040,1,1,4,276,-1,-1,-1,-1,-1,level);
+		
+		AddItem(0,100,3043,1,1,-1,-1,-1,-1,-1,-1,-1,level);
+		AddItem(0,101, 3043,1,1,-1,-1,3,483,2,613,-1,level);
+		AddItem(0,103, 3043,1,1,4,276,4,408,-1,-1,-1,level);
+		
+	end
+	if nBody==3 then
+		AddItem(0,100, 3046,1,1,-1,-1,-1,-1,-1,-1,-1,level);
+		AddItem(0,101, 3046,1,1,5,639,3,483,2,613,-1,level);
+		AddItem(0,103, 3046,1,1,4,276,-1,-1,-1,-1,-1,level);
+		
+		AddItem(0,100,3049,1,1,-1,-1,-1,-1,-1,-1,-1,level);
+		AddItem(0,101, 3049,1,1,-1,-1,3,483,2,613,-1,level);
+		AddItem(0,103, 3049,1,1,4,276,4,408,-1,-1,-1,level);
+		
+	end
+	if nBody==4 then
+		AddItem(0,100,3042,1,1,-1,-1,-1,-1,-1,-1,-1,level);
+		AddItem(0,101, 3042,1,1,5,639,3,483,2,613,-1,level);
+		AddItem(0,103, 3042,1,1,4,276,-1,-1,-1,-1,-1,level);
+		
+		AddItem(0,100,3055,1,1,-1,-1,-1,-1,-1,-1,-1,level);
+		AddItem(0,101, 3055,1,1,-1,-1,3,483,2,613,-1,level);
+		AddItem(0,103, 3055,1,1,4,276,4,408,-1,-1,-1,level);
 		
 	end
 end
@@ -801,28 +845,45 @@ function HBVS()
 	AddItem(0,103,20022,1,1,-1,-1,-1,-1,4,564,1,0);
 end
 
-function do3lo()
+function do3lo_8x()
 	local nBody 	= GetBody();
-	iLK = random(110,120)
+	iLK = random(103,107)
+	local level = 7;
 	if nBody==1 then
-		AddItem(0,100,81,1,1,0,0,0,0,1,-1,1,0,iLK);
-		AddItem(0,101,81,1,1,0,0,0,0,1,-1,1,0,iLK);
-		AddItem(0,103,81,1,1,0,0,0,0,1,-1,1,0,iLK);
+		AddItem(0,100,77,1,1,0,0,0,0,1,-1,1,level,iLK);
+		AddItem(0,101,77,1,1,0,0,0,0,1,-1,1,level,iLK);
+		AddItem(0,103,77,1,1,0,0,0,0,1,-1,1,level,iLK);
+		
+		AddItem(0,100,73,1,1,0,0,0,0,1,-1,1,level,iLK);
+		AddItem(0,101,73,1,1,0,0,0,0,1,-1,1,level,iLK);
+		AddItem(0,103,73,1,1,0,0,0,0,1,-1,1,level,iLK);
 	end
 	if nBody==2 then
-		AddItem(0,100,82,1,1,0,0,0,0,1,-1,1,0,iLK);
-		AddItem(0,101,82,1,1,0,0,0,0,1,-1,1,0,iLK);
-		AddItem(0,103,82,1,1,0,0,0,0,1,-1,1,0,iLK);
+		AddItem(0,100,78,1,1,0,0,0,0,1,-1,1,level,iLK);
+		AddItem(0,101,78,1,1,0,0,0,0,1,-1,1,level,iLK);
+		AddItem(0,103,78,1,1,0,0,0,0,1,-1,1,level,iLK);
+		
+		AddItem(0,100,74,1,1,0,0,0,0,1,-1,1,level,iLK);
+		AddItem(0,101,74,1,1,0,0,0,0,1,-1,1,level,iLK);
+		AddItem(0,103,74,1,1,0,0,0,0,1,-1,1,level,iLK);
 	end
 		if nBody==3 then
-		AddItem(0,100,83,1,1,0,0,0,0,1,-1,1,0,iLK);
-		AddItem(0,101,83,1,1,0,0,0,0,1,-1,1,0,iLK);
-		AddItem(0,103,83,1,1,0,0,0,0,1,-1,1,0,iLK);
+		AddItem(0,100,79,1,1,0,0,0,0,1,-1,1,level,iLK);
+		AddItem(0,101,79,1,1,0,0,0,0,1,-1,1,level,iLK);
+		AddItem(0,103,79,1,1,0,0,0,0,1,-1,1,level,iLK);
+		
+		AddItem(0,100,75,1,1,0,0,0,0,1,-1,1,level,iLK);
+		AddItem(0,101,75,1,1,0,0,0,0,1,-1,1,level,iLK);
+		AddItem(0,103,75,1,1,0,0,0,0,1,-1,1,level,iLK);
 	end
 		if nBody==4 then
-		AddItem(0,100,84,1,1,0,0,0,0,1,-1,1,0,iLK);
-		AddItem(0,101,84,1,1,0,0,0,0,1,-1,1,0,iLK);
-		AddItem(0,103,84,1,1,0,0,0,0,1,-1,1,0,iLK);
+		AddItem(0,100,80,1,1,0,0,0,0,1,-1,1,level,iLK);
+		AddItem(0,101,80,1,1,0,0,0,0,1,-1,1,level,iLK);
+		AddItem(0,103,80,1,1,0,0,0,0,1,-1,1,level,iLK);
+		
+		AddItem(0,100,76,1,1,0,0,0,0,1,-1,1,level,iLK);
+		AddItem(0,101,76,1,1,0,0,0,0,1,-1,1,level,iLK);
+		AddItem(0,103,76,1,1,0,0,0,0,1,-1,1,level,iLK);
 	end
 
 end
@@ -844,53 +905,78 @@ function vukhi()
 	}
 	Say(g_szTitle.."------------------", getn(tSay), tSay);
 end
+
+function vukhi_8x()
+	local tSay = {
+		"Bao Tay/#vukhi_8x_select(0, 15)",
+		"KiÕm/#vukhi_8x_select(2,37)",
+		"bæng/#vukhi_8x_select(5,41)",
+		"Ch©m/#vukhi_8x_select(1,54)",
+		"§ao/#vukhi_8x_select(3,65)",
+		"§µn/#vukhi_8x_select(10, 76)",
+		"Bót/#vukhi_8x_select(9, 87)",
+		"Tr­îng/#vukhi_8x_select(8,98)",
+		"Th­¬ng/#vukhi_8x_select(6,109)",
+		"Cung/#vukhi_8x_select(4,120)",
+		"Tr¶o/#vukhi_8x_select(11,13)",
+		"Quat/#vukhi_8x_select(13, 14)",
+		"T¹i h¹ chØ xem qua th«i/nothing",
+	}
+	Say(g_szTitle.."------------------", getn(tSay), tSay);
+end
+
+function vukhi_8x_select(id1, id2)
+	iLK = random(103,107)
+	local level = 0; 
+	AddItem(0,id1,id2,1,1,0,0,0,0,1,-1,1,level,iLK);
+end
 function vk1()
 iLK = random(110,120)
-AddItem(0,0,16,1,1,0,0,0,0,1,-1,1,10,iLK);
+AddItem(0,0,16,1,1,0,0,0,0,1,-1,1,7,iLK);
 end
 function vk2()
 iLK = random(110,120)
-AddItem(0,2,38,1,1,0,0,0,0,1,-1,1,10,iLK);
+AddItem(0,2,38,1,1,0,0,0,0,1,-1,1,7,iLK);
 end
 function vk3()
 iLK = random(110,120)
-AddItem(0,5,42,1,1,0,0,0,0,1,-1,1,10,iLK);
+AddItem(0,5,42,1,1,0,0,0,0,1,-1,1,7,iLK);
 end
 function vk4()
 iLK = random(110,120)
-AddItem(0,1,54,1,1,0,0,0,0,1,-1,1,10,iLK);
+AddItem(0,1,54,1,1,0,0,0,0,1,-1,1,7,iLK);
 end
 function vk5()
 iLK = random(110,120)
-AddItem(0,3,66,1,1,0,0,0,0,1,-1,1,10,iLK);
+AddItem(0,3,66,1,1,0,0,0,0,1,-1,1,7,iLK);
 end
 function vk6()
 iLK = random(110,120)
-AddItem(0,10,77,1,1,0,0,0,0,1,-1,1,10,iLK);
+AddItem(0,10,77,1,1,0,0,0,0,1,-1,1,7,iLK);
 end
 function vk7()
 iLK = random(110,120)
-AddItem(0,9,88,1,1,0,0,0,0,1,-1,1,10,iLK);
+AddItem(0,9,88,1,1,0,0,0,0,1,-1,1,7,iLK);
 end
 function vk8()
 iLK = random(110,120)
-AddItem(0,8,99,1,1,0,0,0,0,1,-1,1,10,iLK);
+AddItem(0,8,99,1,1,0,0,0,0,1,-1,1,7,iLK);
 end
 function vk9()
 iLK = random(110,120)
-AddItem(0,6,109,1,1,0,0,0,0,1,-1,1,10,iLK);
+AddItem(0,6,109,1,1,0,0,0,0,1,-1,1,7,iLK);
 end
 function vk10()
 iLK = random(110,120)
-AddItem(0,4,121,1,1,0,0,0,0,1,-1,1,10,iLK);
+AddItem(0,4,121,1,1,0,0,0,0,1,-1,1,7,iLK);
 end
 function vk11()
 iLK = random(110,120)
-AddItem(0,11,14,1,1,0,0,0,0,1,-1,1,10,iLK);
+AddItem(0,11,14,1,1,0,0,0,0,1,-1,1,7,iLK);
 end
 function vk12()
 iLK = random(110,120)
-AddItem(0,13,14,1,1,0,0,0,0,1,-1,1,10,iLK);
+AddItem(0,13,14,1,1,0,0,0,0,1,-1,1,7,iLK);
 end
 function ngoctoc()
 	AddItem(0,102,9,2,1,3,24,4,14,5,39,-1,0);
@@ -1269,8 +1355,8 @@ function JoinRoute_UpdateLevel()
 		"D­¬ng M«n/join_ym",
 		"Ngò §éc/join_wdu",
 		-- "C«n L«n/join_kl",
-		-- "Thóy Yªn/join_cy",
-		"Minh Giao/join_mg",
+		"Thóy Yªn/join_cy",
+		-- "Minh Giao/join_mg",
 --		"VMP/VMP",
 --		"VMP2/VMP2",
 		"Ra khái/nothing",
@@ -1449,7 +1535,7 @@ function join_cy()
 	local szSay = {
 		g_szTitle.."Ng­¬i muèn gia nhËp l­u ph¸i g×?",
 		"Thóy Yªn Vò Tiªn (Qu¹t)/#enter_mp(29)",
-		"Thóy Yªn Linh N÷ (Tiªu)/#enter_mp(30)",
+		-- "Thóy Yªn Linh N÷ (Tiªu)/#enter_mp(30)",
 		"Ra khái/nothing",
 	};
 	SelectSay(szSay);
@@ -1581,9 +1667,9 @@ function enter_mp(nRoute)
 	-- ----------------------------ÉèÖÃÊýÖµ------------
 	SetTask(336, 20000);				--ÉèÖÃÊ¦ÃÅ¹±Ï×¶È
 	ModifyReputation(20000, 0);			--ÉèÖÃÉùÍû
-	PlayerReborn(2, 4);			--6×ª
-	gf_SetTaskByte(1538, 1, 5) 			--5×ª
-	SetLevel(99, 0);								--ÉèÖÃµÈ¼¶
+	-- PlayerReborn(2, 4);			--6×ª
+	-- gf_SetTaskByte(1538, 1, 5) 			--5×ª
+	SetLevel(85, 0);								--ÉèÖÃµÈ¼¶
 	PlaySound("\\sound\\sound_i016.wav");
 	-- -- SetCurrentNpcSFX(PIdx2NpcIdx(),913,0,0)
 	Msg2Player("Thao t¸c thµnh c«ng, h·y ®¨ng nhËp l¹i")
@@ -1593,6 +1679,7 @@ function enter_mp(nRoute)
 	AddItem(2, 1, 1003, 1);
 	AddItem(2, 1, 1004, 1);
 	AddItem(2, 1, 2, 10);
+	-- Get_JinShe_admin();
 	-- hienvienbinh();
 	-- hienvienngoc();
 	-- viemde();
@@ -1611,7 +1698,7 @@ function Get_YaoYang_15()
 		end
 		local nRoute	= GetPlayerRoute();
 		local nBody 	= GetBody();
-		local nLevel  = 10;
+		local nLevel  = 7;
 		if nRoute == 2 and nBody ==1 then 
 				AddItem(0,100,3128,1,1,-1,-1,-1,-1,-1,-1,1,nLevel)
 				AddItem(0,101,3128,1,1,-1,-1,-1,-1,-1,-1,1,nLevel)
@@ -1959,8 +2046,8 @@ end
 
 function getkx3()
 	local tSay = {
-		"¢m ChÕ Max Ping 3 Opt/Get_JinShe_3",
-		"Option ngÉu Nhiªn/Get_JinShe_2",
+		"¢m ChÕ Max Ping 5 Opt/Get_JinShe_3_Max5",
+		-- "Option ngÉu Nhiªn/Get_JinShe_2",
 		"T¹i h¹ chØ xem qua th«i/nothing",
 	}
 	Say(g_szTitle.."------------------", getn(tSay), tSay);
@@ -2661,6 +2748,223 @@ function Get_JinShe_admin()
 		end
 	
 end
+
+function Get_JinShe_3_Max5()
+
+		if 1 ~= gf_Judge_Room_Weight(10, 1, g_szTitle) then
+				return 0;
+		end
+		local nRoute	= GetPlayerRoute();
+		local nBody 	= GetBody();
+		local nLevel  = 7;
+		if nRoute == 2 then 
+				local pifeng,pIndex	=AddItem(0,152,9,1,1,-1,-1,-1,-1,-1,-1,0,nLevel)
+				SetItemFeedUpAttrs(pIndex,186,-1,182,759,-1,825)
+				FeedItem(pIndex,1000000)
+				local huizhang,hIndex	=AddItem(0,153,9,1,1,-1,-1,-1,-1,-1,-1,0,nLevel)
+				SetItemFeedUpAttrs(hIndex,186,-1,182,759,-1,630)
+				FeedItem(hIndex,1000000)
+				local xie,xIndex	=AddItem(0,154,9,1,1,-1,-1,-1,-1,-1,-1,0,nLevel)
+				SetItemFeedUpAttrs(xIndex,186,-1,182,759,-1,1004)
+				FeedItem(xIndex,1000000)
+		end
+		
+		if nRoute == 3 then 
+				local pifeng,pIndex	=AddItem(0,152,9,1,1,-1,-1,-1,-1,-1,-1,0,nLevel)
+				SetItemFeedUpAttrs(pIndex,188,-1,182,759,-1,825)
+				FeedItem(pIndex,1000000)
+				local huizhang,hIndex	=AddItem(0,153,9,1,1,-1,-1,-1,-1,-1,-1,0,nLevel)
+				SetItemFeedUpAttrs(hIndex,188,-1,182,759,-1,630)
+				FeedItem(hIndex,1000000)
+				local xie,xIndex	=AddItem(0,154,9,1,1,-1,-1,-1,-1,-1,-1,0,nLevel)
+				SetItemFeedUpAttrs(xIndex,188,-1,182,759,-1,1004)
+				FeedItem(xIndex,1000000)
+		end
+		
+		if nRoute == 4 then 
+				local pifeng,pIndex	=AddItem(0,152,9,1,1,-1,-1,-1,-1,-1,-1,0,nLevel)
+				SetItemFeedUpAttrs(pIndex,188,-1,182,759,-1,771)
+				FeedItem(pIndex,1000000)
+				local huizhang,hIndex	=AddItem(0,153,9,1,1,-1,-1,-1,-1,-1,-1,0,nLevel)
+				SetItemFeedUpAttrs(hIndex,188,-1,182,759,-1,771)
+				FeedItem(hIndex,1000000)
+				local xie,xIndex	=AddItem(0,154,9,1,1,-1,-1,-1,-1,-1,-1,0,nLevel)
+				SetItemFeedUpAttrs(xIndex,188,-1,182,-1,771,759)
+				FeedItem(xIndex,1000000)
+		end
+		
+		
+		if nRoute == 6 then 
+				local pifeng,pIndex	=AddItem(0,152,9,1,1,-1,-1,-1,-1,-1,-1,0,nLevel)
+				SetItemFeedUpAttrs(pIndex,188,-1,178,757,-1,825)
+				FeedItem(pIndex,1000000)
+				local huizhang,hIndex	=AddItem(0,153,9,1,1,-1,-1,-1,-1,-1,-1,0,nLevel)
+				SetItemFeedUpAttrs(hIndex,188,-1,178,757,-1,630)
+				FeedItem(hIndex,1000000)
+				local xie,xIndex	=AddItem(0,154,9,1,1,-1,-1,-1,-1,-1,-1,0,nLevel)
+				SetItemFeedUpAttrs(xIndex,188,-1,178,757,-1,1004)
+				FeedItem(xIndex,1000000)
+		end
+		
+		if nRoute == 8 then 
+				local pifeng,pIndex	=AddItem(0,152,9,1,1,-1,-1,-1,-1,-1,-1,0,nLevel)
+				SetItemFeedUpAttrs(pIndex,188,-1,182,759,-1,825)
+				FeedItem(pIndex,1000000)
+				local huizhang,hIndex	=AddItem(0,153,9,1,1,-1,-1,-1,-1,-1,-1,0,nLevel)
+				SetItemFeedUpAttrs(hIndex,188,-1,182,759,-1,630)
+				FeedItem(hIndex,1000000)
+				local xie,xIndex	=AddItem(0,154,9,1,1,-1,-1,-1,-1,-1,-1,0,nLevel)
+				SetItemFeedUpAttrs(xIndex,188,-1,182,759,-1,1004)
+				FeedItem(xIndex,1000000)
+		end
+		
+
+		if nRoute == 9 then 
+				local pifeng,pIndex	=AddItem(0,152,9,1,1,-1,-1,-1,-1,-1,-1,0,nLevel)
+				SetItemFeedUpAttrs(pIndex,188,-1,182,759,-1,825)
+				FeedItem(pIndex,1000000)
+				local huizhang,hIndex	=AddItem(0,153,9,1,1,-1,-1,-1,-1,-1,-1,0,nLevel)
+				SetItemFeedUpAttrs(hIndex,188,-1,182,759,-1,630)
+				FeedItem(hIndex,1000000)
+				local xie,xIndex	=AddItem(0,154,9,1,1,-1,-1,-1,-1,-1,-1,0,nLevel)
+				SetItemFeedUpAttrs(xIndex,188,-1,182,759,-1,1004)
+				FeedItem(xIndex,1000000)
+		end
+
+		if nRoute == 11 then 
+				local pifeng,pIndex	=AddItem(0,152,9,1,1,-1,-1,-1,-1,-1,-1,0,nLevel)
+				SetItemFeedUpAttrs(pIndex,188,-1,181,757,-1,825)
+				FeedItem(pIndex,1000000)
+				local huizhang,hIndex	=AddItem(0,153,9,1,1,-1,-1,-1,-1,-1,-1,0,nLevel)
+				SetItemFeedUpAttrs(hIndex,188,-1,181,757,-1,630)
+				FeedItem(hIndex,1000000)
+				local xie,xIndex	=AddItem(0,154,9,1,1,-1,-1,-1,-1,-1,-1,0,nLevel)
+				SetItemFeedUpAttrs(xIndex,188,-1,181,757,-1,1004)
+				FeedItem(xIndex,1000000)
+		end
+
+		if nRoute == 12 then 
+				local pifeng,pIndex	=AddItem(0,152,9,1,1,-1,-1,-1,-1,-1,-1,0,nLevel)
+				SetItemFeedUpAttrs(pIndex,188,-1,178,758,-1,825)
+				FeedItem(pIndex,1000000)
+				local huizhang,hIndex	=AddItem(0,153,9,1,1,-1,-1,-1,-1,-1,-1,0,nLevel)
+				SetItemFeedUpAttrs(hIndex,188,-1,178,758,-1,630)
+				FeedItem(hIndex,1000000)
+				local xie,xIndex	=AddItem(0,154,9,1,1,-1,-1,-1,-1,-1,-1,0,nLevel)
+				SetItemFeedUpAttrs(xIndex,188,-1,178,758,-1,1004)
+				FeedItem(xIndex,1000000)
+		end
+		
+		if nRoute == 14 then 
+				local pifeng,pIndex	=AddItem(0,152,9,1,1,-1,-1,-1,-1,-1,-1,0,nLevel)
+				SetItemFeedUpAttrs(pIndex,188,-1,182,759,-1,825)
+				FeedItem(pIndex,1000000)
+				local huizhang,hIndex	=AddItem(0,153,9,1,1,-1,-1,-1,-1,-1,-1,0,nLevel)
+				SetItemFeedUpAttrs(hIndex,188,-1,182,759,-1,630)
+				FeedItem(hIndex,1000000)
+				local xie,xIndex	=AddItem(0,154,9,1,1,-1,-1,-1,-1,-1,-1,0,nLevel)
+				SetItemFeedUpAttrs(xIndex,188,-1,182,759,-1,1004)
+				FeedItem(xIndex,1000000)
+		end
+		
+		if nRoute == 15 then 
+				local pifeng,pIndex	=AddItem(0,152,9,1,1,-1,-1,-1,-1,-1,-1,0,nLevel)
+				SetItemFeedUpAttrs(pIndex,188,-1,178,760,-1,825)
+				FeedItem(pIndex,1000000)
+				local huizhang,hIndex	=AddItem(0,153,9,1,1,-1,-1,-1,-1,-1,-1,0,nLevel)
+				SetItemFeedUpAttrs(hIndex,188,-1,178,760,-1,630)
+				FeedItem(hIndex,1000000)
+				local xie,xIndex	=AddItem(0,154,9,1,1,-1,-1,-1,-1,-1,-1,0,nLevel)
+				SetItemFeedUpAttrs(xIndex,188,-1,178,760,-1,1004)
+				FeedItem(xIndex,1000000)
+		end
+		
+		if nRoute == 17 then 
+				local pifeng,pIndex	=AddItem(0,152,9,1,1,-1,-1,-1,-1,-1,-1,0,nLevel)
+				SetItemFeedUpAttrs(pIndex,188,-1,181,757,-1,825)
+				FeedItem(pIndex,1000000)
+				local huizhang,hIndex	=AddItem(0,153,9,1,1,-1,-1,-1,-1,-1,-1,0,nLevel)
+				SetItemFeedUpAttrs(hIndex,188,-1,181,757,-1,630)
+				FeedItem(hIndex,1000000)
+				local xie,xIndex	=AddItem(0,154,9,1,1,-1,-1,-1,-1,-1,-1,0,nLevel)
+				SetItemFeedUpAttrs(xIndex,188,-1,181,757,-1,1004)
+				FeedItem(xIndex,1000000)
+		end
+
+		if nRoute == 18 then 
+				local pifeng,pIndex	=AddItem(0,152,9,1,1,-1,-1,-1,-1,-1,-1,0,nLevel)
+				SetItemFeedUpAttrs(pIndex,188,-1,178,757,-1,825)
+				FeedItem(pIndex,1000000)
+				local huizhang,hIndex	=AddItem(0,153,9,1,1,-1,-1,-1,-1,-1,-1,0,nLevel)
+				SetItemFeedUpAttrs(hIndex,188,-1,178,757,-1,630)
+				FeedItem(hIndex,1000000)
+				local xie,xIndex	=AddItem(0,154,9,1,1,-1,-1,-1,-1,-1,-1,0,nLevel)
+				SetItemFeedUpAttrs(xIndex,188,-1,178,757,-1,1004)
+				FeedItem(xIndex,1000000)
+		end
+
+		if nRoute == 20 then 
+				local pifeng,pIndex	=AddItem(0,152,9,1,1,-1,-1,-1,-1,-1,-1,0,nLevel)
+				SetItemFeedUpAttrs(pIndex,188,-1,179,758,-1,825)
+				FeedItem(pIndex,1000000)
+				local huizhang,hIndex	=AddItem(0,153,9,1,1,-1,-1,-1,-1,-1,-1,0,nLevel)
+				SetItemFeedUpAttrs(hIndex,188,-1,179,758,-1,630)
+				FeedItem(hIndex,1000000)
+				local xie,xIndex	=AddItem(0,154,9,1,1,-1,-1,-1,-1,-1,-1,0,nLevel)
+				SetItemFeedUpAttrs(xIndex,188,-1,179,758,-1,1004)
+				FeedItem(xIndex,1000000)
+		end
+		
+		if nRoute == 21 then 
+				local pifeng,pIndex	=AddItem(0,152,9,1,1,-1,-1,-1,-1,-1,-1,0,nLevel)
+				SetItemFeedUpAttrs(pIndex,188,-1,180,760,-1,825)
+				FeedItem(pIndex,1000000)
+				local huizhang,hIndex	=AddItem(0,153,9,1,1,-1,-1,-1,-1,-1,-1,0,nLevel)
+				SetItemFeedUpAttrs(hIndex,188,-1,180,760,-1,630)
+				FeedItem(hIndex,1000000)
+				local xie,xIndex	=AddItem(0,154,9,1,1,-1,-1,-1,-1,-1,-1,0,nLevel)
+				SetItemFeedUpAttrs(xIndex,188,-1,180,760,-1,1004)
+				FeedItem(xIndex,1000000)
+		end
+		
+		if nRoute == 23 then 
+				local pifeng,pIndex	=AddItem(0,152,9,1,1,-1,-1,-1,-1,-1,-1,0,nLevel)
+				SetItemFeedUpAttrs(pIndex,188,-1,182,759,-1,825)
+				FeedItem(pIndex,1000000)
+				local huizhang,hIndex	=AddItem(0,153,9,1,1,-1,-1,-1,-1,-1,-1,0,nLevel)
+				SetItemFeedUpAttrs(hIndex,188,-1,182,759,-1,630)
+				FeedItem(hIndex,1000000)
+				local xie,xIndex	=AddItem(0,154,9,1,1,-1,-1,-1,-1,-1,-1,0,nLevel)
+				SetItemFeedUpAttrs(xIndex,188,-1,182,759,-1,1004)
+				FeedItem(xIndex,1000000)
+		end
+		
+		if nRoute == 29 then 
+				local pifeng,pIndex	=AddItem(0,152,9,1,1,-1,-1,-1,-1,-1,-1,0,nLevel)
+				SetItemFeedUpAttrs(pIndex,188,-1,178,757,-1,825)
+				FeedItem(pIndex,1000000)
+				local huizhang,hIndex	=AddItem(0,153,9,1,1,-1,-1,-1,-1,-1,-1,0,nLevel)
+				SetItemFeedUpAttrs(hIndex,188,-1,178,757,-1,630)
+				FeedItem(hIndex,1000000)
+				local xie,xIndex	=AddItem(0,154,9,1,1,-1,-1,-1,-1,-1,-1,0,nLevel)
+				SetItemFeedUpAttrs(xIndex,188,-1,178,757,-1,1004)
+				FeedItem(xIndex,1000000)
+		end
+
+		if nRoute == 30	then 
+				local pifeng,pIndex	=AddItem(0,152,9,1,1,-1,-1,-1,-1,-1,-1,0,nLevel)
+				SetItemFeedUpAttrs(pIndex,188,-1,178,760,-1,825)
+				FeedItem(pIndex,1000000)
+				local huizhang,hIndex	=AddItem(0,153,9,1,1,-1,-1,-1,-1,-1,-1,0,nLevel)
+				SetItemFeedUpAttrs(hIndex,188,-1,178,760,-1,630)
+				FeedItem(hIndex,1000000)
+				local xie,xIndex	=AddItem(0,154,9,1,1,-1,-1,-1,-1,-1,-1,0,nLevel)
+				SetItemFeedUpAttrs(xIndex,188,-1,178,760,-1,1004)
+				FeedItem(xIndex,1000000)
+		end
+
+end
+
 function mtphu()
 	AddItem(0,107,64,1)
 	AddItem(0,107,65,1)
@@ -2692,7 +2996,7 @@ function Get_Nguyen_Lieu()
 		"NhËn linh th¹ch 3 /lt3",
 		"NhËn linh th¹ch 4 /lt4",
 		"NhËn linh th¹ch 5 /lt5",
-		-- "NhËn linh th¹ch 6 /lt6",
+		"NhËn linh th¹ch 6 /lt6",
 		-- "NhËn lt7 /lt7",
 		"Ra khái/nothing",
 	};
@@ -2841,7 +3145,7 @@ function Get_Book_ZhenJuan()
 		AddItem(0,107,30034,10)
 	end
 	
-	gf_AddItemEx({0, 112, 158,	1, 4}, "L¨ng Ba Vi Bé toµn tËp");
+	-- gf_AddItemEx({0, 112, 158,	1, 4}, "L¨ng Ba Vi Bé toµn tËp");
 end
 
 function langbavibott()
@@ -3086,11 +3390,11 @@ function GetJingMai()
 	local szSay = {
 		g_szTitle.."Thao th¸c kinh m¹ch",
 		"TÈy ®iÓm kinh m¹ch/GetJingMai_Reset",
-		format("%s/getZhenqi", "NhËn ch©n khÝ"),
-		format("%s/getJingMaiTongRen", "NhËn Kinh M¹ch §ång Nh©n"),
+		-- format("%s/getZhenqi", "NhËn ch©n khÝ"),
+		-- format("%s/getJingMaiTongRen", "NhËn Kinh M¹ch §ång Nh©n"),
 		"Ra khái/nothing",
 	};
-	if MeridianGetLevel() < 4 then
+	if MeridianGetLevel() < 2 then
 		tinsert(szSay, 2, "Th¨ng cÊp c¶nh giíi/GetJingMai_Update")
 	end
 	-- if GetLevel() >=90 then 
@@ -3113,11 +3417,13 @@ end
 function GetJingMai_Update()
 	local nLevel = MeridianGetLevel()
 	-- for i = nLevel + 1, 1 do
-	for i = nLevel + 1, 4 do
+	-- for i = nLevel + 1, 4 do -- max
+	for i = nLevel + 1, 2 do
 		MeridianUpdateLevel()
 	end
 
-	local nNum = 600000 - (MeridianGetDanTian() + MeridianGetQiHai());
+	-- local nNum = 600000 - (MeridianGetDanTian() + MeridianGetQiHai());
+	local nNum = 300000 - (MeridianGetDanTian() + MeridianGetQiHai());
 	-- local nNum = 150000 - (MeridianGetDanTian() + MeridianGetQiHai());
 	if nNum > 0 then
 		AwardGenuineQi(nNum);
@@ -3267,15 +3573,15 @@ end
 
 function Get_Mored()
 	local tSay = {
-		"NhËn Thiªn H¹ V« Song/thvs",	
+		-- "NhËn Thiªn H¹ V« Song/thvs",	
 	-- "NhËn HiÖu ChiÕn Tr­êng/hieudothong",
 		-- "NhËn TT3 LL3 TT4 LL4/ttll3",
 		 -- "NhËn TT1 LL/ttll1",
-		-- "NhËn Thiªn NghÜa/thienghia",
+		"NhËn Thiªn NghÜa/thienghia_mod2",
+		"NhËn ®­îc Trang BÞ Kim Xµ Lv3 +7/getkx3",
 		-- "NhËn Thiªn Chi tµng KiÕm/tctk",
-		-- "HHVD/huyhoang5",
-		-- "HHVD/huyhoang5",
-		-- "uÈn Linh cÊp 2/nhanul",
+		"HHVD/huyhoang5",
+		"uÈn Linh cÊp 2/nhanul_2",
 		-- "Vâ L©m b¸ Chñ/vlbc",
 
 		-- "NhËn Vò KhÝ Nguyªn Tö/vknt",
@@ -3287,7 +3593,7 @@ function Get_Mored()
 		-- "NhËn Viªm §Õ/viemde",
 		"NhËn ®å buff/dobuffhttc",
 		-- "NhËn tö quang hiªn viªn thÇn binh/hienvienbinh",
-		-- "NhËn Cöu Thiªn Ngäc/cuuthienngoc",
+		"NhËn Cöu Thiªn Ngäc/cuuthienngoc",
     	-- "NhËn B¹ch Kim Viªm §Õ/bkvd",
 --		"LuyÖn max skill trÊn ph¸i/maxtranphai",
 --		"NhËn Th«ng Thiªn/getTiLi",
@@ -3296,12 +3602,12 @@ function Get_Mored()
 --		"C¸c Lo¹i Ngäc/ngoctoc",
 --      "C¸c Lo¹i Ngäc/ngocdame",
 
-		"§å 3 Lç/do3lo",
-		"Vu khi 3 Lç/vukhi",
+		"§å 3 Lç/do3lo_8x",
+		"Vu khi 3 Lç/vukhi_8x",
 --		"QuÎ 8 qu¸i/que8w", 
 --		"Ngo¹i Trang/ngoaitrangnew", 
-		"Hµo HiÖp V« H¹/gethhvhlb", 
-		"NhËn trang søc ®eo h«ng 4 vs 5 sao/showKX",
+		-- "Hµo HiÖp V« H¹/gethhvhlb", 
+		-- "NhËn trang søc ®eo h«ng 4 vs 5 sao/showKX",
 		"T¹i h¹ chØ xem qua th«i/nothing",
 	}
 	Say(g_szTitle.."------------------", getn(tSay), tSay);
@@ -3398,12 +3704,22 @@ function thuongung()
 	end
 	
 end
-function madao()
+function madao3()
 	-- AddItem(2,1,30428,100);
 	-- AddItem(2,1,30429,100);
 	AddItem(2,1,30430,100);
 end
-function nhanul()
+function madao1()
+	AddItem(2,1,30428,100);
+	-- AddItem(2,1,30429,100);
+	-- AddItem(2,1,30430,100);
+end
+function madao2()
+	-- AddItem(2,1,30428,100);
+	AddItem(2,1,30429,100);
+	-- AddItem(2,1,30430,100);
+end
+function nhanul_2()
 	local tSay = {
 		g_szTitle.."Lùa chän",
 		"NgÉu nhiªn nãn/UL2_non",
@@ -6391,9 +6707,9 @@ function GetJingMai_Update_votuong()
 end
 
 function hotrogmer1st()
-	if  GetLevel() < 87 then
+	if  GetLevel() < 85 then
 		local szSay = {
-		g_szTitle.."N©ng lªn ®¼ng cÊp 87 vµ 0 ®iÓm kinh nghiÖm (Xãa tÊt c¶ ®iÓm kinh nghiÖm hiÖn t¹i?",
+		g_szTitle.."N©ng lªn ®¼ng cÊp 85 vµ 0 ®iÓm kinh nghiÖm (Xãa tÊt c¶ ®iÓm kinh nghiÖm hiÖn t¹i?",
 		"Ta muèn n©ng cao ®¼ng cÊp vµ chÊp nhËn xãa tÊt c¶ kinh nghiÖm hiÖn cã /really_hotrogmer1st",
 		"Ra khái/nothing",
 	};
@@ -6406,7 +6722,7 @@ end
 function  really_hotrogmer1st()
 		local curExp = GetExp();
 		gf_Modify("Exp",-curExp);
-		SetLevel(87, 1);
+		SetLevel(85, 1);
 		AddItem(2,1,30668,10);
 		Talk(1,"","Vui lßng tho¸t game vµ ®¨ng nhËp l¹i!")
 end
