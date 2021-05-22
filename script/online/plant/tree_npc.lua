@@ -234,11 +234,11 @@ function getfruit()
 		-- if rand < 3 then
 			-- gf_AddItemEx2({2,1,30668,1,1}, "Tinh Hoa UÈn Linh CÊp(NgÉu Nhiªn)", "nhËn th­ëng thµnh c«ng", "hoµn thµnh nhiÖm vô trång c©y B¸t Nh· Lín", 30 * 24 * 3600, 1)
 		-- end
-		if rand < 10 then
-			AddItem(1,1,14,10);
-			AddItem(1,1,16,10);
-			AddItem(1,1,18,10);
-		end
+		-- if rand < 10 then
+			-- AddItem(1,1,14,10);
+			-- AddItem(1,1,16,10);
+			-- AddItem(1,1,18,10);
+		-- end
 		nRandomNum = random(1,100);
 		if nRandomNum <= 20 and  nRandomNum >= 10 then
 			AddItem(2,1,30346,1);
@@ -250,12 +250,12 @@ function getfruit()
 			end;		
 		end;
 		local ranmt = random(1,32);
-		if nRandomNum <= 40 and  nRandomNum >= 20 then
-			AddItem(0,107,ranmt,1)
-		end
-		if nRandomNum <= 50 and  nRandomNum >= 40 then
-			gf_AddItemEx({0, 112, 78,1, 4}, "L¨ng Ba Vi Bé")
-		end
+		-- if nRandomNum <= 40 and  nRandomNum >= 20 then
+			-- AddItem(0,107,ranmt,1)
+		-- end
+		-- if nRandomNum <= 50 and  nRandomNum >= 40 then
+			-- gf_AddItemEx({0, 112, 78,1, 4}, "L¨ng Ba Vi Bé")
+		-- end
 		nRandomNum = random(1,100);
 		if nRandomNum <= 20 then
 			if AddItem(2,2,8,3) == 1 then
@@ -432,14 +432,23 @@ function fruitcheckserver()
 end
 
 function UL3_non()
+	local ratio = random(1,100)
 	local non = random(35,51)
-	AddItem(0, 148, non, 1, 1);
+	if ratio < 10 then
+		AddItem(0, 148, non, 1, 1);
+	end
 end
 function UL3_ao()
+	local ratio = random(1,100)
 	local non = random(35,51)
-	AddItem(0, 149, non, 1, 1);
+	if ratio < 10 then
+		AddItem(0, 149, non, 1, 1);
+	end
 end
 function UL3_quan()
+	local ratio = random(1,100)
 	local non = random(35,51)
-	AddItem(0, 150, non, 1, 1);
+	if ratio < 10 then
+		AddItem(0, 150, non, 1, 1);
+	end
 end

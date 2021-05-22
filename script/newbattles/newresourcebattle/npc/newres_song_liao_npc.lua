@@ -170,9 +170,9 @@ function finish_newres_task_more()
 	local nPetLevel = mod(GetTask(TASK_VNG_PET), 100)
 --	local nIsPS = mod(floor(GetTask(TSK_PET_PS_GIAIDOAN_B)/10),10)
 	
-	if nPetLevel >= 1 then
-		nQuest = 5
-	end
+	-- if nPetLevel >= 1 then
+		-- nQuest = 5
+	-- end
 --	if nIsPS >= 1 then
 --		nQuest = 6
 --	end
