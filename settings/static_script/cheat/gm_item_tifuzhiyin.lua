@@ -70,9 +70,9 @@ function OnUse(nItem)
 		if 3 == nRoute then
 			tinsert(tSay, "NhËn Thiªn PhËt Ch©u vµ Ph¸ Ma Chó/Give_ZhuzhuZhouzhou")
 		end
-		if 4 == nRoute then
-			tinsert(tSay, "QuÇn ¸o TLQ/aosm")
-		end
+		-- if 4 == nRoute then
+			-- tinsert(tSay, "QuÇn ¸o TLQ/aosm")
+		-- end
 		if 6 == nRoute then
 			tinsert(tSay, "NhËn ¸m Khİ vµ C¬ Quan/Give_JiguanAnqi")
 		end
