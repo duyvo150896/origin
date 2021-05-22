@@ -156,11 +156,11 @@ function getfruit()
 			 return 0;
 		end;
 		
-		local nGroup = fruitcheckserver()
-		if nGroup ==  0 then
-			nGroup = mod(random(0,1000),20) + 1
-		end
-		gf_AddItemEx2({tFruitAwardJune2010[nGroup][6][1], tFruitAwardJune2010[nGroup][6][2], tFruitAwardJune2010[nGroup][6][3], 2}, tFruitAwardJune2010[nGroup][7], "Bat Nha Lon", "nhËn")
+		-- local nGroup = fruitcheckserver()
+		-- if nGroup ==  0 then
+			-- nGroup = mod(random(0,1000),20) + 1
+		-- end
+		-- gf_AddItemEx2({tFruitAwardJune2010[nGroup][6][1], tFruitAwardJune2010[nGroup][6][2], tFruitAwardJune2010[nGroup][6][3], 2}, tFruitAwardJune2010[nGroup][7], "Bat Nha Lon", "nhËn")
 
 		
 		--VBonus
