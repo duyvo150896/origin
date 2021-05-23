@@ -174,6 +174,8 @@ function admin_2()
 		"NhËn ChiÕn T­îng/chientuong",
 		"NhËn Ngua fake/nguafake",
 		"Nhan Ngua moi/nhanthucuoimoi",
+		"NhËn Qu©n hµm nguyªn so¸i/Get_NguyenSoai",
+		"NhËn NhËn 250.000 ®iÓm c«ng tr¹ng/Get_CongTrang",
 		-- "Nhan Ngua/tmkl",
 		-- "Nhan item test/nhanmbk",
 		-- "Nhan Kim Phieu x10/nhansen_x10",
