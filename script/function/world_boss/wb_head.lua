@@ -183,7 +183,7 @@ function wb_SmallBoxAward()
 	if rand == 3 then
 		UL3_quan();
 	end
-	¯
+	
 	vaf_get_prize_item_30709(5, 1);
 	AddRuntimeStat(23, 2, 0, 1);
 	return 1;
