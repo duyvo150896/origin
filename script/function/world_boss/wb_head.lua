@@ -172,7 +172,18 @@ function wb_SmallBoxAward()
 	-- gf_AddItemEx2({2,1,30499, 30}, "HCAH", "BOSS Th’ gÌi", "ßπi Chi’n B∂o Hπp", 0, 1);
 	-- gf_AddItemEx2({2,1,30458, 1}, "TÙ Linh Hoµn", "BOSS Th’ gÌi", "ßπi Chi’n B∂o Hπp", 0, 1);
 	-- gf_AddItemEx2({2,1,30402, 30}, "Ng˜ Th∏i Th∏nh H·a", "BOSS Th’ gÌi", "ßπi Chi’n B∂o Hπp", 0, 1);
-	--ªÓ∂Ø
+	--ªÓ∂
+	local rand =random(1,3)
+	if rand == 1 then
+		UL3_non();
+	end
+	if rand == 2 then
+		UL3_ao();
+	end
+	if rand == 3 then
+		UL3_quan();
+	end
+	Ø
 	vaf_get_prize_item_30709(5, 1);
 	AddRuntimeStat(23, 2, 0, 1);
 	return 1;
@@ -224,4 +235,17 @@ function wb_BigBoxAward()
 	vaf_get_prize_item_30709(10, 1);
 	AddRuntimeStat(23, 3, 0, 1);
 	return 1;
+end
+
+function UL3_non()
+	local non = random(35,51)
+	AddItem(0, 148, non, 1, 1);
+end
+function UL3_ao()
+	local non = random(35,51)
+	AddItem(0, 149, non, 1, 1);
+end
+function UL3_quan()
+	local non = random(35,51)
+	AddItem(0, 150, non, 1, 1);
 end
