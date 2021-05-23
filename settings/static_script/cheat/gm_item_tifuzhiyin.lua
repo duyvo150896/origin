@@ -921,6 +921,7 @@ function vukhi_8x()
 		"Th­¬ng/#vukhi_8x_select(6,109)",
 		"Cung/#vukhi_8x_select(4,120)",
 		"Tr¶o/#vukhi_8x_select(11,13)",
+		"Song §ao/#vukhi_8x_select(7,13)",
 		"Quat/#vukhi_8x_select(13, 14)",
 		"T¹i h¹ chØ xem qua th«i/nothing",
 	}
