@@ -1898,10 +1898,10 @@ function check_battle_rank(nGeren, nDetail)
 	if nCurRank < nEverRank then
 		nCurRank = nEverRank
 	end
-	if nCurRank < nNeedRank then
-		Msg2Player("Qu﹏ h祄 c馻 b筺 qu?th蕄 kh玭g th?s?d鬾g danh hi謚 n祔.")
-		return 0
-	end
+	-- if nCurRank < nNeedRank then
+		-- Msg2Player("Qu﹏ h祄 c馻 b筺 qu?th蕄 kh玭g th?s?d鬾g danh hi謚 n祔.")
+		-- return 0
+	-- end
 	return 1
 end;
 --第二批战场称号检查
