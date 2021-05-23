@@ -2048,7 +2048,7 @@ end
 
 function getkx3()
 	local tSay = {
-		"¢m ChÕ Max Ping 5 Opt/Get_JinShe_3_Max5",
+		"¢m ChÕ Max Ping 5 Opt/Get_JinShe",
 		-- "Option ngÉu Nhiªn/Get_JinShe_2",
 		"T¹i h¹ chØ xem qua th«i/nothing",
 	}
@@ -2112,7 +2112,7 @@ function Get_JinShe()
 		end
 		local nRoute	= GetPlayerRoute();
 		local nBody 	= GetBody();
-		local nLevel  = 14;
+		local nLevel  = 7;
 		if nRoute == 2 then 
 				local pifeng,pIndex	=AddItem(0,152,9,1,1,-1,-1,-1,-1,-1,-1,0,nLevel)
 				SetItemFeedUpAttrs(pIndex,186,164,182,759,771,825)
@@ -3580,7 +3580,7 @@ function Get_Mored()
 		-- "NhËn TT3 LL3 TT4 LL4/ttll3",
 		 -- "NhËn TT1 LL/ttll1",
 		"NhËn Thiªn NghÜa/thienghia_mod2",
-		-- "NhËn ®­îc Trang BÞ Kim Xµ Lv3 +7/getkx3",
+		"NhËn ®­îc Trang BÞ Kim Xµ Lv3 +7/getkx3",
 		-- "NhËn Thiªn Chi tµng KiÕm/tctk",
 		"HHVD/huyhoang5",
 		"uÈn Linh cÊp 2/nhanul_2",
