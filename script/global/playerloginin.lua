@@ -1175,6 +1175,10 @@ BigDelItem(0,105,138,BigGetItemCount(0,105,138));
 -- BigDelItem(2,1,474,BigGetItemCount(2,1,474));
 -- BigDelItem(2,1,475,BigGetItemCount(2,1,475));
 -- BigDelItem(2,1,476,BigGetItemCount(2,1,476));
+BigDelItem(0,152,9,BigGetItemCount(0,152,9));
+BigDelItem(0,153,9,BigGetItemCount(0,153,9));
+BigDelItem(0,154,9,BigGetItemCount(0,154,9));
+
 -- tmkl tcl
 ------
 end

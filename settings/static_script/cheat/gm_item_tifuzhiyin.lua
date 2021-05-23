@@ -3580,7 +3580,7 @@ function Get_Mored()
 		-- "NhËn TT3 LL3 TT4 LL4/ttll3",
 		 -- "NhËn TT1 LL/ttll1",
 		"NhËn Thiªn NghÜa/thienghia_mod2",
-		"NhËn ®­îc Trang BÞ Kim Xµ Lv3 +7/getkx3",
+		-- "NhËn ®­îc Trang BÞ Kim Xµ Lv3 +7/getkx3",
 		-- "NhËn Thiªn Chi tµng KiÕm/tctk",
 		"HHVD/huyhoang5",
 		"uÈn Linh cÊp 2/nhanul_2",
@@ -6583,17 +6583,7 @@ function GetCTEnd(ID1, ID2, ID3, nQH)
 end
 ----
 
----
--- SetPKFlag(0, 0)
 
--- Tr? l?i công tr?ng tru?c nhe b?n
--- - Add 25 tri?u di?m công tr?ng phe Liêu : ?gm ds SetTask(701, GetTask(701) - 25000000)
-
--- - Add Quân hàm soái Liêu : ?gm ds SetTask(704,-6)
-
--- - Add 50 nghìn di?m tích luy chi?n tru?ng ?gm ds SetTask(707, GetTask(707) + 50000)
-
--- ?gm ds SetTask(704,6)
 function teleportToPlayer()
 	local tSay = {}
 	local oldPlayerIndex = PlayerIndex;
@@ -6744,3 +6734,15 @@ function nhanmbk()
 	AddItem(2,1,30346,100);
 	AddItem(2,1,1001,10);
 end
+
+---
+-- SetPKFlag(0, 0)
+
+-- Tr? l?i công tr?ng tru?c nhe b?n
+-- - Add 25 tri?u di?m công tr?ng phe Liêu : ?gm ds SetTask(701, GetTask(701) - 25000000)
+
+-- - Add Quân hàm soái Liêu : ?gm ds SetTask(704,-6)
+
+-- - Add 50 nghìn di?m tích luy chi?n tru?ng ?gm ds SetTask(707, GetTask(707) + 50000)
+
+-- ?gm ds SetTask(704,6)
