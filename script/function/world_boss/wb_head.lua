@@ -167,7 +167,7 @@ function wb_SmallBoxAward()
 			-- {1, 25000, "S∏ch pet 4", {2, 150, 60, 1, 4}, 0},
 			
 	}
-	gf_EventGiveRandAward(tAward, gf_SumRandBase(tAward), 1, "BOSS Th’ giÌi", "ßπi Chi’n B∂o Hπp")
+	-- gf_EventGiveRandAward(tAward, gf_SumRandBase(tAward), 1, "BOSS Th’ giÌi", "ßπi Chi’n B∂o Hπp")
 	-- gf_AddItemEx2({2,1,30668, 2}, "THUL 6", "BOSS Th’ gÌi", "ßπi Chi’n B∂o Hπp", 0, 1);
 	-- gf_AddItemEx2({2,1,30499, 30}, "HCAH", "BOSS Th’ gÌi", "ßπi Chi’n B∂o Hπp", 0, 1);
 	-- gf_AddItemEx2({2,1,30458, 1}, "TÙ Linh Hoµn", "BOSS Th’ gÌi", "ßπi Chi’n B∂o Hπp", 0, 1);
