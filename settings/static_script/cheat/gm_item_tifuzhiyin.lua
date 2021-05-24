@@ -120,6 +120,7 @@ function tieudung()
 		"NhËn HKDNP/hkdnp",
 		"NhËn Lak/Get_Energy_5x",
 		"NhËn B¸nh Ng«/banhngo",
+		"NhËn Ph¸o Hoa ChiÕn Th¾ng/nhanphaohoa",
 		"\nRa khái/nothing",
 	}
 	SelectSay(tSay);
@@ -6748,6 +6749,9 @@ function nhanmbk()
 	AddItem(2,1,1001,10);
 end
 
+function nhanphaohoa()
+	AddItem(2,1,30297,60);
+end
 ---
 -- SetPKFlag(0, 0)
 
