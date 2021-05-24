@@ -1180,6 +1180,10 @@ BigDelItem(0,105,138,BigGetItemCount(0,105,138));
 -- BigDelItem(0,153,9,BigGetItemCount(0,153,9));
 -- BigDelItem(0,154,9,BigGetItemCount(0,154,9));
 
+-- tt4 ll4 
+BigDelItem(2, 1, 30524,BigGetItemCount(2, 1, 30524));
+BigDelItem(2, 1, 30530,BigGetItemCount(2, 1, 30530));
+
 -- tmkl tcl
 ------
 end

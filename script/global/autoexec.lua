@@ -145,7 +145,7 @@ function main()
 	biwu_3v3_init(); --3v3
 	tf_CreateChef(); --帮派盛宴
 	wuwang_task_createnpc(); --武王任务npc创建
-	-- sp_CreateDecorate();--2014春节活动
+	sp_CreateDecorate();--2014春节活动
 	--tong_melee_npc_create(); --帮会大使
 	--kuafu_lingjiang_npc_create(); --跨服功能领奖人创建
 	Plus123Pay();

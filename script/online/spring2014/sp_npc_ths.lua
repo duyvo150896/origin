@@ -7,8 +7,8 @@ function main()
 			return 0;
 	end
 	local nTimes = SP_TASK_GROUP:GetTask(SP_TASK_GROUP.ThsDrop);
-	if nTimes >= 15 then
-		Talk(1,"",format("N¨m míi vui vÎ! §¹i hiÖp h«m nay ®· nhËn hÕt %d phÇn th­ëng, h·y ®Õn ng¾m hoa ®µo vµ nhËn th­ëng vµo ngµy mai nhÐ !", 15));
+	if nTimes >= 30 then
+		Talk(1,"",format("N¨m míi vui vÎ! §¹i hiÖp h«m nay ®· nhËn hÕt %d phÇn th­ëng, h·y ®Õn ng¾m hoa ®µo vµ nhËn th­ëng vµo ngµy mai nhÐ !", 30));
 		return 0;
 	end
 	--µã»÷¼ä¸ô60s
@@ -33,13 +33,14 @@ end
 
 function spths_Exp()
 	local tAward = {
-		{2, 25, 5000000, 1},
-		{2, 25, 5000000, 1},
-		{2, 25, 5000000, 1},
-		{2, 20, 5000000, 1},
-		{2, 5,10000000, 1},
+		{2, 25, 200000, 1},
+		{2, 25, 200000, 1},
+		{2, 25, 200000, 1},
+		{2, 20, 200000, 1},
+		{2, 5,400000, 1},
 	}
 	gf_EventGiveRandAward(tAward, gf_SumRandBase(tAward), 1, "Event TÕt Kingsoft", "§µo Hoa thô");
+	StartTimeGuage ("Ng¾m Hoa", 60,0,1 )
 end
 
 function spths_ZhenQi()

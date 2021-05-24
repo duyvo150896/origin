@@ -3583,6 +3583,7 @@ function Get_Mored()
 	-- "NhËn HiÖu ChiÕn Tr­êng/hieudothong",
 		-- "NhËn TT3 LL3 TT4 LL4/ttll3",
 		 -- "NhËn TT1 LL/ttll1",
+		"Vò Khİ Chİnh (3 lç)/vukhi_8x",
 		"NhËn Thiªn NghÜa/thienghia_mod2",
 		"NhËn ®­îc Trang BŞ Kim Xµ Lv3 +7/getkx3",
 		-- "NhËn Thiªn Chi tµng KiÕm/tctk",
@@ -3609,7 +3610,6 @@ function Get_Mored()
 --      "C¸c Lo¹i Ngäc/ngocdame",
 
 		"§å 3 Lç/do3lo_8x",
-		"Vu khi 3 Lç/vukhi_8x",
 --		"QuÎ 8 qu¸i/que8w", 
 --		"Ngo¹i Trang/ngoaitrangnew", 
 		-- "Hµo HiÖp V« H¹/gethhvhlb", 

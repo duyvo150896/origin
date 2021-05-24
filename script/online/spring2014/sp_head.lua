@@ -253,41 +253,46 @@ function sp_CreateDecorate()
 			local npcIndex = CreateNpc("§µo Hoa thô"," ", 350, 1427-i*4, 2770+i*4);
 			SetNpcScript(npcIndex, "\\script\\online\\spring2014\\sp_npc_ths.lua");
 		end
-		--34
+		
+		-- --34
 		for i = 0, 3 do
 			local npcIndex = CreateNpc("§µo Hoa thô"," ", 350, 1432-i*4, 2780+i*4);
 			SetNpcScript(npcIndex, "\\script\\online\\spring2014\\sp_npc_ths.lua");
 		end
-		--56
-		for i = 0, 2 do
-			local npcIndex = CreateNpc("§µo Hoa thô"," ", 350, 1404-i*4, 2815+i*4);
-			SetNpcScript(npcIndex, "\\script\\online\\spring2014\\sp_npc_ths.lua");
-		end
-		--78
-		for i = 0, 5 do
-			local npcIndex = CreateNpc("§µo Hoa thô"," ", 350, 1379-i*4, 2841+i*4);
-			SetNpcScript(npcIndex, "\\script\\online\\spring2014\\sp_npc_ths.lua");
-		end
-		--49
+		-- --56
+		-- for i = 0, 2 do
+			-- local npcIndex = CreateNpc("§µo Hoa thô"," ", 350, 1404-i*4, 2815+i*4);
+			-- SetNpcScript(npcIndex, "\\script\\online\\spring2014\\sp_npc_ths.lua");
+		-- end
+		-- --78
+		-- for i = 0, 5 do
+			-- local npcIndex = CreateNpc("§µo Hoa thô"," ", 350, 1379-i*4, 2841+i*4);
+			-- SetNpcScript(npcIndex, "\\script\\online\\spring2014\\sp_npc_ths.lua");
+		-- end
+		-- --49
 		for i = 1, 2 do
 			local npcIndex = CreateNpc("§µo Hoa thô"," ", 350, 1416+i*4, 2796+i*4);
 			SetNpcScript(npcIndex, "\\script\\online\\spring2014\\sp_npc_ths.lua");
 		end
-		--10 11
-		for i = 0, 4 do
-			local npcIndex = CreateNpc("§µo Hoa thô"," ", 350, 1436+i*4, 2822+i*4);
+		for i = 1, 2 do
+			local npcIndex = CreateNpc("§µo Hoa thô"," ", 350, 180*8+i*4, 176*16+i*4);
 			SetNpcScript(npcIndex, "\\script\\online\\spring2014\\sp_npc_ths.lua");
 		end
-		--12 13
-		for i = 0, 5 do
-			local npcIndex = CreateNpc("§µo Hoa thô"," ", 350, 1463+i*4, 2849+i*4);
-			SetNpcScript(npcIndex, "\\script\\online\\spring2014\\sp_npc_ths.lua");
-		end
-		--5 14
-		for i = 1, 19 do
-			local npcIndex = CreateNpc("§µo Hoa thô"," ", 350, 1404+i*4, 2815+i*4);
-			SetNpcScript(npcIndex, "\\script\\online\\spring2014\\sp_npc_ths.lua");
-		end
+		-- --10 11
+		-- for i = 0, 4 do
+			-- local npcIndex = CreateNpc("§µo Hoa thô"," ", 350, 1436+i*4, 2822+i*4);
+			-- SetNpcScript(npcIndex, "\\script\\online\\spring2014\\sp_npc_ths.lua");
+		-- end
+		-- --12 13
+		-- for i = 0, 5 do
+			-- local npcIndex = CreateNpc("§µo Hoa thô"," ", 350, 1463+i*4, 2849+i*4);
+			-- SetNpcScript(npcIndex, "\\script\\online\\spring2014\\sp_npc_ths.lua");
+		-- end
+		-- --5 14
+		-- for i = 1, 19 do
+			-- local npcIndex = CreateNpc("§µo Hoa thô"," ", 350, 1404+i*4, 2815+i*4);
+			-- SetNpcScript(npcIndex, "\\script\\online\\spring2014\\sp_npc_ths.lua");
+		-- end
 		local tPos = {
 			{350,1437,3022},	{350,1402,2995},
 			{350,1490,2971},	{350,1422,3015},

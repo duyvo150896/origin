@@ -25,8 +25,8 @@ function OnUse(nItem)
 		{1, 100, "Tö Quang kim ThiÒn Ti", {2, 0, 737, 10, 1}, 0},
 		{1, 100, "Tö Quang TiÖt Hoµnh Thã", {2, 0, 738, 10, 1}, 0},
 		{1, 100, "Tö Quang Kó L©n HuyÕt", {2, 0, 739, 10, 1}, 0},
-		{1, 200, "CÊp 4 TÈy T©m Th¹ch", {2, 1, 30524, 10, 1}, 0},
-		{1, 200, "CÊp 4 LuyÖn L« ThiÕt", {2, 1, 30530, 10, 1}, 0},
+		-- {1, 200, "CÊp 4 TÈy T©m Th¹ch", {2, 1, 30524, 10, 1}, 0},
+		-- {1, 200, "CÊp 4 LuyÖn L« ThiÕt", {2, 1, 30530, 10, 1}, 0},
 		{1, 100, "Tö Quang LÖnh", {2, 0, 763, 10, 1}, 0},
 	};
 	gf_EventGiveRandAward(tAward, gf_SumRandBase(tAward), 1, "Event TÕt Kingsoft", "Ho¹t ®éng §¸nh Niªn Thó")
