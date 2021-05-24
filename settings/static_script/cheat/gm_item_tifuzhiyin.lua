@@ -11,7 +11,7 @@ g_szTitle = "<color=green>H­íng dÉn:<color>"
 
 List_GM_ACCOUNT = {
 	["admin"] = 1,
-
+	["admin2"] = 1,
 }
 List_donate = {
 
@@ -174,8 +174,10 @@ function admin_2()
 		"NhËn ChiÕn T­îng/chientuong",
 		"NhËn Ngua fake/nguafake",
 		"Nhan Ngua moi/nhanthucuoimoi",
-		"NhËn Qu©n hµm nguyªn so¸i/Get_NguyenSoai",
-		"NhËn NhËn 250.000 ®iÓm c«ng tr¹ng/Get_CongTrang",
+		"NhËn Qu©n hµm nguyªn so¸i Tong/Get_NguyenSoai",
+		"NhËn Qu©n hµm nguyªn so¸i Lieu/Get_NguyenSoai_Lieu",
+		"NhËn NhËn 50.000 ®iÓm c«ng tr¹ng/Get_CongTrang",
+		"NhËn NhËn 50.000 ®iÓm c«ng tr¹ng_Lieu/Get_CongTrang_Lieu",
 		-- "Nhan Ngua/tmkl",
 		-- "Nhan item test/nhanmbk",
 		-- "Nhan Kim Phieu x10/nhansen_x10",
@@ -4272,14 +4274,24 @@ function Get_NguyenSoai()
 	PlaySound("\\sound\\sound_i016.wav");
 	SetCurrentNpcSFX(PIdx2NpcIdx(),904,0,0)
 end
-
+function Get_NguyenSoai_Lieu()
+	SetTask(704,-6)
+        Msg2Player("Chóc mõng b¹n ®· trë thµnh Nguyªn So¸i ®Ñp trai");
+	PlaySound("\\sound\\sound_i016.wav");
+	SetCurrentNpcSFX(PIdx2NpcIdx(),904,0,0)
+end
 function Get_CongTrang()
-	SetTask(701, GetTask(701) + 250000)
+	SetTask(701, GetTask(701) + 50000)
         Msg2Player("Chóc mõng b¹n ®· nhËn ®­îc 250.000 ®iÓm c«ng tr¹ng");
 	PlaySound("\\sound\\sound_i016.wav");
 	SetCurrentNpcSFX(PIdx2NpcIdx(),905,0,0)
 end
-
+function Get_CongTrang_Lieu()
+	SetTask(701, GetTask(701) - 50000)
+        Msg2Player("Chóc mõng b¹n ®· nhËn ®­îc 250.000 ®iÓm c«ng tr¹ng");
+	PlaySound("\\sound\\sound_i016.wav");
+	SetCurrentNpcSFX(PIdx2NpcIdx(),905,0,0)
+end
 function Get_DanhVong()
 	ModifyReputation(10000,0)
         Msg2Player("Chóc mõng b¹n ®· nhËn ®­îc 10.000 ®iÓm danh väng");
