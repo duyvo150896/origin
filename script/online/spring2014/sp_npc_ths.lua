@@ -24,9 +24,9 @@ function main()
 	SP_TASK_GROUP:SetTask(SP_TASK_GROUP.ThsDrop, nTimes + 1);
 	SP_TASK_GROUP:SetTask(SP_TASK_GROUP.ThsChickTime, GetTime());
 	local tAward = {
-		-- {31, 40, "spths_Exp()", 1},
+		{31, 40, "spths_Exp()", 1},
 		-- {31, 40, "spths_ZhenQi()", 1},
-		{31, 20, "spths_YinJuan()", 1},
+		-- {31, 20, "spths_YinJuan()", 1},
 	}
 	gf_EventGiveRandAward(tAward, gf_SumRandBase(tAward), 1);
 end
