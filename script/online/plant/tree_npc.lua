@@ -284,14 +284,14 @@ function getfruit()
 				WriteLog("[Ho¹t ®éng trång c©y Th¸i H­]:"..GetName().."Thu ®­îc 1 ".."Ngò Hµnh MËt tÞch");
 			end;		
 		end;
-		nRandomNum = random ( 1,3);
-		if nRandomNum == 1 then
-			UL3_non();
-		elseif nRandomNum == 2 then
-			UL3_ao();
-		else
-			UL3_quan();
-		end
+		-- nRandomNum = random ( 1,3);
+		-- if nRandomNum == 1 then
+			-- UL3_non();
+		-- elseif nRandomNum == 2 then
+			-- UL3_ao();
+		-- else
+			-- UL3_quan();
+		-- end
 		-- NhiÖm vô ChuyÓn Sinh 3
 		 if GetTask(TRANSLIFE_MISSION_ID) == 19 and gf_GetTaskByte(TRANSLIFE_TASK_34,TRANSLIFE_BYTE_TASK4) < 64 then
 			gf_SetTaskByte(TRANSLIFE_TASK_34, TRANSLIFE_BYTE_TASK4, gf_GetTaskByte(TRANSLIFE_TASK_34,TRANSLIFE_BYTE_TASK4) +1)
