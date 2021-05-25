@@ -42,7 +42,7 @@ function OnUse(nItem)
 	local tSay = {};
 	tSay.msg = strMsg;
 	tSay.sel = {
-		{"NhËn bao l× x× h«m nay", "sp_GetDailyAward"},
+		{"NhËn bao l× x× h«m nay - Hoµn Thµnh 5/7 nhiÖm vô lµ OK", "sp_GetDailyAward"},
 		{"KÕt thóc ®èi tho¹i", "nothing"},
 	};
 	temp_Talk(tSay);
