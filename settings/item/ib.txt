@@ -133,7 +133,7 @@ Sort	Page	X	Y	Description	Information	GiveItem1Type	GiveItem1Genre	GiveItem1Deta
 8	1	2	2	Ph¸o hoa	<color=Gray>50 Xu<enter><color=Gold>30 Xu	6	2	1	554	1	10				30	7	
 8	1	2	3	Bao ph¸o	<color=White>50 Xu<enter><color=Gold>30 Xu	6	2	1	558	1	10				30	7	
 8	1	2	4	XuÊt hån qu¶	<color=White>15 Xu<enter><color=Gold>10000000 Xu	6	2	1	555	1	10				10000000	7	
-8	1	3	1	Bao SÝnh LÔ KÕt H«n	<color=White>500 Xu<enter><color=Gold>10000000 Xu	6	2	1	585	1	10				10000000	30	
+8	1	3	1	Bao SÝnh LÔ KÕt H«n	<color=White>500 Xu<enter><color=Gold>100 Xu	6	2	1	585	1	10				100	30	
 8	1	3	2	§¬n Ly DÞ	<color=White>600 Xu<enter><color=Gold>300 Xu	6	2	1	535	1	10				300	30	
 12	1	1	1	NhÊt §¹i §¹i HiÖp	<color=White>700 Xu<enter><color=Gold>350 Xu	6	2	1	1041	1	10				350	30	
 12	1	1	2	Hoµng Kim Hång Bao	<color=Gray>299 Xu<enter><color=Gold>70 Xu	6	2	1	538	1	10				70	30	
