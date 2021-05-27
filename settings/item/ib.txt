@@ -6,7 +6,7 @@ Sort	Page	X	Y	Description	Information	GiveItem1Type	GiveItem1Genre	GiveItem1Deta
 1	1	2	1	Hoµng Kim §¹i Ng©n PhiÕu	<color=Gray>1000 Xu<enter><color=Gold>1000 Xu	6	2	1	30490	1	10				1000	30	
 1	1	2	2	§¹i ng©n phiÕu	<color=Gray>100 Xu<enter><color=Gold>100 Xu	6	2	1	199	1	10				100	30	
 1	1	2	3	C©y B¸t Nh· lín	<color=White>30 Xu<enter><color=Gold>15 Xu	6	2	0	398	1	10				15	30	
-1	1	2	4	Bµn Long BÝch	<color=Gray>32 Xu<enter><color=Gold>10000000 Xu	6	2	1	1000	1	10				10000000	7	
+1	1	2	4	Bµn Long BÝch	<color=Gray>32 Xu<enter><color=Gold>1 Xu	6	2	1	1000	1	10				1	7	
 1	1	3	1	Bao Thiªn Kiªu LÖnh Lín	<color=Gray>3000 Xu<enter><color=Gold>10000000 Xu	6	2	95	2087	1	10				10000000	30	
 1	1	3	2	Bao Thiªn Kiªu LÖnh Nhá	<color=Gray>600 Xu<enter><color=Gold>10000000 Xu	6	2	95	2086	1	10				10000000	30	
 1	1	3	3	C©y B¸t Nh· nhá	<color=White>10 Xu<enter><color=Gold>5 Xu	6	2	0	504	1	10				5	30	
