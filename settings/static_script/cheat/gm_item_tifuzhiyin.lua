@@ -551,8 +551,8 @@ function Boss_HuongLang()
 
 	local nMap,nX,nY = GetWorldPos();
 	local npcIndex = 0
-	npcIndex = CreateNpc("NghiÖt Hån","L·nh H­¬ng L¨ng", nMap, nX + 2, nY + 2,-1,1,1,30)
-	--Msg2Global("Nghe nãi L·nh H­¬ng L¨ng  ®ang ë t©y TuyÒn Ch©u 186/194, mau ®Õn ®ã xem thö dung nhan kiÒu diÔm cña nµng!")
+	npcIndex = CreateNpc("NghiÖt Hån","L·nh H­¬ng L¨ng", 202, 1514, 2946,-1,1,1,30)
+	Msg2Global("Nghe nãi L·nh H­¬ng L¨ng  ®ang ë H¹nh Hoa Th«n, mau ®Õn ®ã xem thö dung nhan kiÒu diÔm cña nµng!")
 	SetNpcLifeTime(npcIndex, 7200)
 	SetNpcScript(npcIndex, "\\script\\task\\boss\\boss_ondeath.lua")
 
