@@ -22,8 +22,8 @@ g_szFileName = "lanhua_bag.lua"					--ÎÄ¼þÃû
 g_tbItem = 
 {
 	--		ÀàÐÍ	   ¸ÅÂÊ	ÊýÁ¿ Ãû×Ö	ID1,ID2,ID3
-	[1] = {TYPE_EQUIP,	10,	1,	"§«ng Ph­¬ng Long Ch©u",	0,	102,	24,	},
-	[2] = {TYPE_EQUIP,	45,	1,	"Nh­ ý",		0,	102,	23,	},
+	[1] = {TYPE_EQUIP,	5,	1,	"§«ng Ph­¬ng Long Ch©u",	0,	102,	24,	},
+	[2] = {TYPE_EQUIP,	50,	1,	"Nh­ ý",		0,	102,	23,	},
 	[3] = {TYPE_EQUIP,	45,	1,	"C¸t T­êng",		0,	102,	22,	},
 }
 
@@ -31,8 +31,13 @@ g_tbItem =
 
 --=========================================================================================
 function OnUse(nItemIdx)
+	local tmp=1;
 	if gf_JudgeRoomWeight(g_nNeedRoom,g_nNeedWeight) == 0 then
 		Talk(1,"","Kho¶ng trèng hµnh trang hoÆc søc lùc kh«ng ®ñ, xin kiÓm tra l¹i!")
+		return
+	end
+	if tmp == 1 then
+		Talk(1,"","T¹m thêi kh«ng thÓ sö dông, H·y tÝch lòy, Admin sÏ th«ng b¸o sau!")
 		return
 	end
 	if DelItemByIndex(nItemIdx,1) == 1 then

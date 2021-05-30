@@ -1186,6 +1186,8 @@ BigDelItem(2, 1, 30530,BigGetItemCount(2, 1, 30530));
 -- hhdd
 BigDelItem(0,102,8846,BigGetItemCount(0,102,8846));
 BigDelItem(0,102,8847,BigGetItemCount(0,102,8847));
+-- - DPLC
+BigDelItem(0,	102,	24,BigGetItemCount(0,	102,	24));
 -- tmkl tcl
 ------
 end

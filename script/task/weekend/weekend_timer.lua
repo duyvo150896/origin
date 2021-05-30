@@ -45,7 +45,7 @@ function main()
 	if  GetLocalHour() == 21 then
 		if GetLocalMin() >= 45 then
 			Boss_LanHoa();
-			Boss_AnhTu();
+			-- Boss_AnhTu();
 		else
 	-- 	Msg2SubWorld("OKKK")
 			Boss_W5();
@@ -53,7 +53,7 @@ function main()
 	end
 	if  GetLocalHour() == 15 then
 	-- Msg2SubWorld("OKKK")
-		 Boss_LanHoa();
+		 -- Boss_LanHoa();
 		 Boss_AnhTu();
 	end
 	if  GetLocalHour() == 22 then
