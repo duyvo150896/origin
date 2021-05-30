@@ -16,7 +16,7 @@ function OnUse()
 	local tSay = {}
 	tinsert(tSay,"LuyÖn B¾c §Èu Tô khİ thuËt - TruyÒn Ch©n Khİ/OnTalkZhenqiTransmission")
 	tinsert(tSay,"LuyÖn 10 HuyÒn Hoµng B¶o §¬n/get_clear_pk_item")
-	tinsert(tSay,"LuyÖn B¾c §Èu TruyÒn C«ng ThuËt/transfer_neili")
+	-- tinsert(tSay,"LuyÖn B¾c §Èu TruyÒn C«ng ThuËt/transfer_neili")
 	tinsert(tSay,"LuyÖn B¾c §Èu D­ìng Sinh ThuËt/pratice_neili")
 	tinsert(tSay,"TÈy hÕt néi, ngo¹i th­¬ng/clear_pain")
 	if tbMasterSkill[GetPlayerRoute()]  then
