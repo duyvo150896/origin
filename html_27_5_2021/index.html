@@ -81,7 +81,32 @@
 <script async defer crossorigin="anonymous" src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v10.0" nonce="Z96YjUcD"></script>
 
     
+<!-- Messenger Plugin chat Code -->
+    <div id="fb-root"></div>
 
+    <!-- Your Plugin chat code -->
+    <div id="fb-customer-chat" class="fb-customerchat">
+    </div>
+
+    <script>
+      var chatbox = document.getElementById('fb-customer-chat');
+      chatbox.setAttribute("page_id", "104131528359832");
+      chatbox.setAttribute("attribution", "biz_inbox");
+      window.fbAsyncInit = function() {
+        FB.init({
+          xfbml            : true,
+          version          : 'v10.0'
+        });
+      };
+
+      (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = 'https://connect.facebook.net/vi_VN/sdk/xfbml.customerchat.js';
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
+    </script>
 
     <div id="page" class="site">
         <a class="skip-link screen-reader-text" href="#content">Skip to content</a>
@@ -131,7 +156,7 @@
                                         <ul class="sub-menu">
                                             <li id="menu-item-134" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-134"><a href="profile.php">Thông Tin Tài Khoản</a></li>
                                             <li id="menu-item-136" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-136"><a href="register.php">Đăng Kí</a></li>
-                                            <li id="menu-item-135" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-135"><a href="login.ph">Đăng Nhập</a></li>
+                                            <li id="menu-item-135" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-135"><a href="login.php">Đăng Nhập</a></li>
                                             <li id="menu-item-140" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-140"><a href="changepwd.php">Đổi Mật Khẩu</a></li>
                                             <li id="menu-item-137" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-137"><a href="forgotpwd.php">Quên Mật Khẩu?</a></li>
                                         </ul>
@@ -691,5 +716,6 @@
     <div style="position:fixed; top:150px; z-index:9999;">
         <a href="index3f7b.html?cat=2" target="_blank" class="tanthu"></a>
     </div>
+    
 </body>
 </html>

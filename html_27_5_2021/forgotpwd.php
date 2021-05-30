@@ -1,56 +1,65 @@
 <?php 
-    include "./connect.php";
-    session_start(); 
-    //chuyen qua trang loi 
-    header('location: error.html');  
-    if (isset($_POST['forgot_password'])){
-        $username = mysqli_real_escape_string($db, $_POST['username']);
-        $email = mysqli_real_escape_string($db, $_POST['email']);
-        if (empty($username)) { 
-    $errors['username'] = 'Chưa nhập tài khoản'; 
+    include('./connect.php'); 
+   
+    if (isset($_POST['forgotpwd'])) {
+  // receive all input values from the form
+  $username = mysqli_real_escape_string($db, $_POST['username']);
+  $rowpass = mysqli_real_escape_string($db, $_POST['rowpass']);
+  $newpwd = mysqli_real_escape_string($db, $_POST['newpwd']);
+  $newpwd_2 = mysqli_real_escape_string($db, $_POST['newpwd_2']);
+  
+  if (empty($username)) { 
+    $errors['username'] = 'Chưa nhập tên tài khoản'; 
     }
-        if (empty($email)) { 
-    $errors['email'] = 'Chưa nhập email'; 
+  if (empty($rowpass)) { 
+    $errors['rowpass'] = 'Chưa nhập mật khẩu cấp 2'; 
     }
-    $user_check = "SELECT * FROM account WHERE username = '$username' ";
-    $result = mysqli_query($db, $user_check);
-    $user = mysqli_fetch_assoc($result);
-    
-        if(empty($user)){
-            $errors['_null'] = "Tài khoản không tồn tại";
-         }
-    $user_check_query = "SELECT *  FROM account WHERE username = '$username' AND email='$email' ";
-    $result_1 = mysqli_query($db, $user_check_query);
-    $forgot = mysqli_fetch_assoc($result);
-    
-        if(empty($forgot)){
-            $errors['_null_2'] = "Địa chỉ email không tồn tại";
-        }
-        $chars = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ!@#$%^&*()';
-        $randompwd = (substr(str_shuffle($chars), 0, 6));
-        
-        $title = 'Cập nhật mật khẩu Jx2 Animal';
-        $content ="<h3>Dear ".$forgot['username']. '</h3>';
-        $content .="<p>Chúng tôi đã nhận được yêu cầu cấp lại mật khẩu của bạn gần đây.</p>";
-        $content .= "<p>Chúng tôi có cập nhật và gửi cho bạn một mật khẩu mới</p>";
-        $content .= "<p>Mật khẩu mới của bạn là:</p><b>$randompwd</b>";
-        $sendMail = SendMail::send($title, $content, $forgot['username'], $forgot['email']);
-        if($sendMail){
-            $newpwd = md5($randompwd);
-            $update_pwd = " UPDATE account SET password = '$newpwd' WHERE username = '$username' ";
-            $result_2 = mysqli_query($db, $update_pwd);
-            $update['forgot'] = "Chúng tôi đã gửi cho bạn một email xin vui lòng kiểm tra hộp thư của bạn";
-        }
+  if (empty($newpwd)) { 
+    $errors['newpwd'] = 'Chưa nhập mật khẩu'; 
+    }    
+  if (empty($newpwd_2)) { 
+    $errors['newpwd_2'] = 'Chưa nhập mật khẩu xác nhận'; 
+    }   
+  // Pass 2 khong duoc trung pass 1
+  if ($newpwd == $rowpass) {
+    $errors['pwd_2'] = 'Mật mới không được trùng khẩu cấp 2<br>';  
+    }
+    // Pass khac nhau
+  if ($newpwd != $newpwd_2) {
+    $errors['pwd'] = 'Mật khẩu xác nhận không đúng<br>';  
     }     
-?>
+  $rowpass = md5($_POST['rowpass']);
+  $user_check_query = "SELECT * FROM account WHERE username = '$username' LIMIT 1";
+  $result = mysqli_query($db, $user_check_query);
+  $count = mysqli_num_rows($result);
+  $user = mysqli_fetch_assoc($result);           
 
+    if (count($errors) == 0) {
+       if($count == 0){ 
+        $errors['used'] = 'Tài khoản không tồn tại<br>';  
+         }
+         if($count > 0){ 
+        if($rowpass != $user['rowpass']){
+            $errors['pwd_4'] = 'Mật khẩu cấp 2 không chính xác';
+        }
+    $newpwd = md5($newpwd);
+    $sql_update = "UPDATE account SET password = '$newpwd' WHERE username ='$username'";
+    $result = mysqli_query($db, $sql_update);
+    $update['pwd_3'] = 'Mật khẩu đã được thay đổi';  
+  
+     }
+  
+}
+}
+
+?>
 
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Quên Mật Khẩu - Jx2 Animal</title>
-	<link rel="stylesheet" type="text/css" href="style.css">
-	<style type="text/css">
+    <title>Quên mật khẩu - Jx2 Animal</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <style type="text/css">
         img.wp-smiley,
         img.emoji {
             display: inline !important;
@@ -63,11 +72,6 @@
             background: none !important;
             padding: 0 !important;
         }
-    </style>
-    <style>
-    .has-error{
-        color:  red;
-    }
     </style>
     <link rel="stylesheet" id="ayecode-ui-css" href="Content/wp-content/plugins/userswp/vendor/ayecode/wp-ayecode-ui/assets/css/ayecode-ui-compatibility62d0.css?ver=4.5.3" type="text/css" media="all" />
     <style id="ayecode-ui-inline-css" type="text/css">
@@ -89,11 +93,16 @@
             font-family: Montserrat, Helvetica, Arial, sans-serif;
             font-weight: 400;
         }
-		form
+        form
 {
 width: 100% !important;
 }
     </style>
+<style>
+    .has-error{
+        color: red;
+    }
+</style>
     <script type="text/javascript" src="/Content/wp-includes/js/jquery/jquery4a5f.js?ver=1.12.4-wp"></script>
     <script type="text/javascript" src="/Content/wp-includes/js/jquery/jquery-migrate.min330a.js?ver=1.4.1"></script>
     <script type="text/javascript" src="/Content/wp-content/plugins/userswp/vendor/ayecode/wp-ayecode-ui/assets/js/select2.min1cf2.js?ver=4.0.11"></script>
@@ -101,10 +110,34 @@ width: 100% !important;
     <script type="text/javascript" src="/Content/wp-content/plugins/userswp/assets/js/users-wp.minafb9.js?ver=1.2.2.16"></script>
 </head>
 <body class="page-template-default page page-id-93 everest-forms-no-js uwp_page uwp_register_page non-transparent left-logo-right-menu right-sidebar">
-    
+    <!-- Messenger Plugin chat Code -->
+    <div id="fb-root"></div>
+
+    <!-- Your Plugin chat code -->
+    <div id="fb-customer-chat" class="fb-customerchat">
+    </div>
+
+    <script>
+      var chatbox = document.getElementById('fb-customer-chat');
+      chatbox.setAttribute("page_id", "104131528359832");
+      chatbox.setAttribute("attribution", "biz_inbox");
+      window.fbAsyncInit = function() {
+        FB.init({
+          xfbml            : true,
+          version          : 'v10.0'
+        });
+      };
+
+      (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = 'https://connect.facebook.net/vi_VN/sdk/xfbml.customerchat.js';
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
+    </script>
 <div id="fb-root"></div>
-<script async defer crossorigin="anonymous" src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v10.0" nonce="Z96YjUcD"></script>
-	
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v10.0" nonce="Z96YjUcD"></script>    
 
 
     <div id="page" class="site">
@@ -151,13 +184,13 @@ width: 100% !important;
                                     </li>
                                     <li id="menu-item-52" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-52"><a href="https://www.facebook.com/jx2.animal">FanPage</a></li>
                                     <li id="menu-item-133" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-ancestor current-menu-parent menu-item-has-children menu-item-133">
-                                        <a href="index0594.html?page_id=95">Tài Khoản</a>
+                                        <a href="profile.php">Tài Khoản</a>
                                         <ul class="sub-menu">
-                                            <li id="menu-item-134" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-134"><a href="index0594.html?page_id=95">Thông Tin Tài Khoản</a></li>
+                                            <li id="menu-item-134" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-134"><a href="profile.php">Thông Tin Tài Khoản</a></li>
                                             <li id="menu-item-136" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-93 current_page_item menu-item-136"><a href="register.php" aria-current="page">Đăng Kí</a></li>
-                                            <li id="menu-item-135" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-135"><a href="indexfd26.html?page_id=94">Đăng Nhập</a></li>
-                                            <li id="menu-item-140" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-140"><a href="index1956.html?page_id=98">Đổi Mật Khẩu</a></li>
-                                            <li id="menu-item-137" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-137"><a href="index31e8.html?page_id=96">Quên Mật Khẩu?</a></li>
+                                            <li id="menu-item-135" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-135"><a href="login.php">Đăng Nhập</a></li>
+                                            <li id="menu-item-140" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-140"><a href="changepwd.php">Đổi Mật Khẩu</a></li>
+                                            <li id="menu-item-137" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-137"><a href="forgotpwd.php">Quên Mật Khẩu?</a></li>
                                         </ul>
                                     </li>
                                 </ul>
@@ -174,7 +207,7 @@ width: 100% !important;
                             </div>
                             <div class="search-box">
 
-                                <form role="search" method="get" class="searchform" action="http://127.0.0.1/">
+                                <form role="search" method="get" class="searchform" action="jx2.xyz/">
                                     <label>
                                         <input type="search" class="search-field" placeholder="Search &hellip;" value="" name="s" />
                                     </label>
@@ -208,51 +241,82 @@ width: 100% !important;
                                             <div class="row">
                                                 <div class="card mx-auto container-fluid p-0 border-0">
                                                     <div class="card-body">
-                                                        <h3 class="card-title text-center mb-4">Lấy Lại Mật Khẩu</h3>
+                                                    <h3 class="card-title text-center mb-4">Quên mật khẩu<br>
+                                                        <div class="has-error">
+                                                        <?php echo (isset($update['pwd_3']))?$update['pwd_3']:'' ?>
+                                                    
+                                                         </div>
+                                                    </h3>
                                                         
-                                                        <form method="post" action="" class="uwp-registration-form uwp_form">
-
-            <div class="has-error">
-            <?php echo (isset($errors['_null']))?$errors['_null']:'' ?>            
+                                                     <form method="post" action="" class="uwp-registration-form uwp_form">
+                                                    
+            <div class="form-group">
+                <div class="has-error">
+                    <?php echo (isset($errors['pwd_3']))?$errors['pwd_3']:'' ?>
+                    <?php echo (isset($errors['used']))?$errors['used']:'' ?>
+                    <?php echo (isset($errors['pwd_2']))?$errors['pwd_2']:'' ?>
+                    <?php echo (isset($errors['pwd']))?$errors['pwd']:'' ?>
+                    <?php echo (isset($errors['pwd_4']))?$errors['pwd_4']:'' ?>
+                </div>
+            <label>Tên tài khoản</label><div class="has-error"><?php echo (isset($errors['username']))?$errors['username']:'' ?></div>
+            <input type="text" name="username" class="form-control" placeholder="Tên đăng nhập" value="">
             </div>
-        <div class="form-group">
-            <label>Tài khoản</label><span> <div class="has-error"><?php echo (isset($errors['username']))?$errors['username']:'' ?> </span></div>
-            <input type="text" name="username" class="form-control" placeholder="Tên tài khoản" >
+            <div class="form-group" >
+            <label>Mật khẩu cấp 2</label><div class="has-error"><?php echo (isset($errors['rowpass']))?$errors['rowpass']:'' ?></div>
+            <div class="input-group">            
+            <input type="password" name="rowpass" placeholder="Nhập mật khẩu cấp 2" class="form-control">
+            <div class="input-group-append "><span class="input-group-text c-pointer px-3" 
+                                    onclick="var $el = jQuery(this).find('i');$el.toggleClass('fa-eye fa-eye-slash');
+                                    var $eli = jQuery(this).parent().parent().find('input');
+                                    if($el.hasClass('fa-eye'))
+                                    {$eli.attr('type','text');}
+                                    else{$eli.attr('type','password');}"
+                                    >
+                                    <i class="far fa-fw fa-eye-slash"></i></span></div></div>
         </div>
         <div class="form-group">
-            <label>Email đăng ký</label><span> <div class="has-error"><?php echo (isset($errors['email']))?$errors['email']:'' ?> </span></div>
-            <input type="email" name="email" class="form-control" placeholder="Nhập Email">
-        </div>        
+            <label>Mật khẩu mới</label><div class="has-error"><?php echo (isset($errors['newpwd']))?$errors['newpwd']:'' ?></div><div class = "input-group">
+            <input type="password" name="newpwd" placeholder="Mật khẩu mới" class="form-control"><div class="input-group-append "><span class="input-group-text c-pointer px-3" 
+                                    onclick="var $el = jQuery(this).find('i');$el.toggleClass('fa-eye fa-eye-slash');
+                                    var $eli = jQuery(this).parent().parent().find('input');
+                                    if($el.hasClass('fa-eye'))
+                                    {$eli.attr('type','text');}
+                                    else{$eli.attr('type','password');}"
+                                    >
+                                    <i class="far fa-fw fa-eye-slash"></i></span></div></div>
+        
         <div class="form-group">
-            <button type="submit" class="btn btn-primary btn-block text-uppercase uwp_register_submit" name="forgot_password">Gửi mật khẩu</button>
+            <label>Nhập lại mật khẩu</label><div class="has-error"> <?php echo (isset($errors['newpwd_2']))?$errors['newpwd_2']:'' ?></div>
+            <div class="input-group">
+            <input type="password" name="newpwd_2" placeholder="Nhập lại mật khẩu" class="form-control"><div class="input-group-append "><span class="input-group-text c-pointer px-3" 
+                                    onclick="var $el = jQuery(this).find('i');$el.toggleClass('fa-eye fa-eye-slash');
+                                    var $eli = jQuery(this).parent().parent().find('input');
+                                    if($el.hasClass('fa-eye'))
+                                    {$eli.attr('type','text');}
+                                    else{$eli.attr('type','password');}"
+                                    >
+                                    <i class="far fa-fw fa-eye-slash"></i></span></div></div>
         </div>
-        <p>
-            Bạn chưa có tài khoản? <a href="register.php">Đăng Ký</a>
-        </p>
-    </form>
-    </div>
+        <div class="form-group">
+            <button type="submit" class="btn btn-primary btn-block text-uppercase uwp_register_submit" name="forgotpwd">Lấy lại mật khẩu</button>
+        </div>
     
+        
+        
+                                                        <div class="uwp-footer-links">
+                                                            <div class="uwp-footer-link">
+                                                                <a href="login.php" class="btn btn-primary btn-block text-uppercase uwp_register_submit" rel="nofollow">Đăng nhập</a>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="form-group text-center mb-0 p-0">
+                                                        </div>
+
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
-                                   
-                                    <script>
-                                        jQuery(document).ready(function ($) {
-                                            // Binding to trigger uwp_checkPasswordStrength
-                                            $("body").on("keyup", "input[name=password], input[name=confirm_password]",
-                                                function (event) {
-                                                    uwp_checkPasswordStrength(
-                                                        $("input[name=password]"),         // First password field
-                                                        $("input[name=confirm_password]"), // Second password field
-                                                        $("#uwp-password-strength"),           // Strength meter
-                                                        $("input[type=submit]"),           // Submit button
-                                                        ["black", "listed", "word"]        // Blacklisted words
-                                                    );
-                                                }
-                                            );
-                                        });
-                                    </script> 
+                                    </div>                                    
                                 </div>
                             </div><!-- .entry-content -->
 
@@ -268,7 +332,7 @@ width: 100% !important;
 
 
                     <section id="recent-posts-2" class="widget widget_recent_entries">
-                        <h3 class="widget-title">Bài viết mới</h3>		<ul>
+                        <h3 class="widget-title">Bài viết mới</h3>      <ul>
                             <li>
                                 <a href="indexe4c6.html?p=210">Lưu ý về tài khoản trên Jx2 Animal</a>
                             </li>
@@ -286,7 +350,7 @@ width: 100% !important;
                             </li>
                         </ul>
                     </section><div class="end"></div><section id="categories-2" class="widget widget_categories">
-                        <h3 class="widget-title">Chuyên mục</h3>		<ul>
+                        <h3 class="widget-title">Chuyên mục</h3>        <ul>
                             <li class="cat-item cat-item-2">
                                 <a href="index3f7b.html?cat=2">Cẩm Nang</a>
                             </li>
@@ -352,8 +416,8 @@ width: 100% !important;
             font-size: 16px;
         }
     </style>
-	
-	</form>
+    
+    </form>
     <script type="text/javascript" src="/Content/wp-content/themes/VLTK2/js/jquery.nav.minc225.js?ver=5.4.1"></script>
     <script type="text/javascript" src="/Content/wp-content/themes/VLTK2/js/flashc225.js?ver=5.4.1"></script>
     <script type="text/javascript" src="/Content/wp-content/themes/VLTK2/js/navigation.minc225.js?ver=5.4.1"></script>
