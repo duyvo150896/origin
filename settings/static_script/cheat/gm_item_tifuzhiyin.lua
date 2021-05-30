@@ -271,6 +271,15 @@ function tk_8x()
 	end
 end
 
+function thienghia_ngoc()
+local id=3122;
+	AddItem(0,102,id,1,1,-1,-1,-1,-1,-1,-1,-1);
+	AddItem(0,102,id +3 ,1,1,-1,-1,-1,-1,-1,-1,-1);
+	AddItem(0,102,id +6 ,1,1,-1,-1,-1,-1,-1,-1,-1);
+	AddItem(0,102,id + 9,1,1,-1,-1,-1,-1,-1,-1,-1);
+	AddItem(0,102,id +12,1,1,-1,-1,-1,-1,-1,-1,-1);
+end
+
 function thienghia_mod2()
 	local nBody 	= GetBody();
 	local level = 7;
@@ -3588,7 +3597,8 @@ function Get_Mored()
 		"NhËn Thiªn NghÜa/thienghia_mod2",
 		"NhËn ®­îc Trang BÞ Kim Xµ Lv3 +7/getkx3",
 		-- "NhËn Thiªn Chi tµng KiÕm/tctk",
-		"HHVD/huyhoang5",
+		-- "HHVD/huyhoang5",
+		"Ngäc Thiªn NghÜa/thienghia_ngoc",
 		"uÈn Linh cÊp 2/nhanul_2",
 		-- "Vâ L©m b¸ Chñ/vlbc",
 

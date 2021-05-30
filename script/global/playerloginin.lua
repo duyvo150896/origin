@@ -1183,7 +1183,9 @@ BigDelItem(0,105,138,BigGetItemCount(0,105,138));
 -- tt4 ll4 
 BigDelItem(2, 1, 30524,BigGetItemCount(2, 1, 30524));
 BigDelItem(2, 1, 30530,BigGetItemCount(2, 1, 30530));
-
+-- hhdd
+BigDelItem(0,102,8846,BigGetItemCount(0,102,8846));
+BigDelItem(0,102,8847,BigGetItemCount(0,102,8847));
 -- tmkl tcl
 ------
 end
