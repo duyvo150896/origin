@@ -36,10 +36,10 @@ function OnUse(nItemIdx)
 		Talk(1,"","Kho¶ng trèng hµnh trang hoÆc søc lùc kh«ng ®ñ, xin kiÓm tra l¹i!")
 		return
 	end
-	if tmp == 1 then
-		Talk(1,"","T¹m thêi kh«ng thÓ sö dông, H·y tÝch lòy, Admin sÏ th«ng b¸o sau!")
-		return
-	end
+	-- if tmp == 1 then
+		-- Talk(1,"","T¹m thêi kh«ng thÓ sö dông, H·y tÝch lòy, Admin sÏ th«ng b¸o sau!")
+		-- return
+	-- end
 	if DelItemByIndex(nItemIdx,1) == 1 then
 		use_it()
 	end
@@ -48,6 +48,15 @@ end
 function use_it()
 	--ÎïÆ·½±Àø²¿·Ö
 	local nRandIdx = get_random_item(g_tbItem)
+	local lv_rand = random(1,2)
+	local lv = 1
+	
+	if lv_rand == 1 then
+		lv = 13030
+	elseif lv_rand == 2 then
+		lv = 794
+	end
+	
 	if nRandIdx == 0 then
 		return
 	end
@@ -57,8 +66,11 @@ function use_it()
 	local szInfoDescribe = format("(%d,%d,%d)", g_tbItem[nRandIdx][5], g_tbItem[nRandIdx][6], g_tbItem[nRandIdx][7])
 
 	local nRetCode = 0
-	nRetCode = AddItem(g_tbItem[nRandIdx][5],g_tbItem[nRandIdx][6],g_tbItem[nRandIdx][7],g_tbItem[nRandIdx][3],1,-1,-1,-1,-1,-1,-1)
-
+	if nRandIdx > 1 then
+		nRetCode = AddItem(g_tbItem[nRandIdx][5],g_tbItem[nRandIdx][6],g_tbItem[nRandIdx][7],g_tbItem[nRandIdx][3],1,-1,-1,-1,-1,-1,-1)
+	else
+		nRetCode = AddItem(g_tbItem[nRandIdx][5],g_tbItem[nRandIdx][6],g_tbItem[nRandIdx][7],g_tbItem[nRandIdx][3],1,1,lv,-1,-1,-1,-1)
+	end
 	if nRetCode == 1 then
 		Msg2Player("B¹n nhËn ®­îc  "..nItemNum.." "..szItemName)
 		WriteLogEx("Hoat dong thang 6", "NhËn ®­îc", nItemNum, szItemName, szInfoDescribe, GetTongName() )
