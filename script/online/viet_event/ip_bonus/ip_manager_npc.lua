@@ -58,8 +58,8 @@ function npc_talk()
 	local nDate = tonumber(date("%Y%m%d"))
 	local nDate1 =  tonumber(date("%y%m%d%H"))
 	local tSay = {
-			"NhËn th­ëng tİch lòy online/IpBonus",
-			"NhËn th­ëng Vinh Danh T­íng SÜ/get_solider_glory",
+			-- "NhËn th­ëng tİch lòy online/IpBonus",
+			-- "NhËn th­ëng Vinh Danh T­íng SÜ/get_solider_glory",
 			"Nguyªn So¸i tuyªn bè chiÕm ®ãng thµnh thŞ nµy, ta muèn lµm nhiÖm vô qu©n ®éi/do_military_job",
 			"Thu håi CÈm Nang §¹i Sù KiÖn/get_camnang",
 			"Ta chØ ghĞ qua/nothing",
