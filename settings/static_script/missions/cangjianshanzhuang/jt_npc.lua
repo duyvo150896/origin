@@ -132,12 +132,27 @@ end
 
 function nothing()
 end
+function GetWeekDay()
+	return tonumber(date("%w"))
+end;
 
+function GetLocalHour()
+	nHour = date("%H");
+	return tonumber(nHour)
+end;
+function GetLocalMin()
+	nMin = date("%M");
+	return tonumber(nMin)
+end;
 function jt_talk_1(bTianJiaolingMode)
-	if GetTeamMember(0) ~= PlayerIndex then
-		Talk(1, "",g_NpcName.."H·y mêi ®éi tr­ëng ®Õn. Muèn vµo ¶i cÇn <color=yellow>sè thµnh viªn cã hÖ ph¸i ph¶i tõ 5 trë lªn.<color>")
+	if GetLocalHour() ~= 10 or GetLocalHour() ~= 20 then
+		Talk(1, "",g_NpcName.."V¹n KiÕm Tròng chØ ho¹t ®éng vµo 10h vµ 20h h»ng ngµy. Xin h·y quay l¹i sau")
 		return
 	end
+	-- if GetTeamMember(0) ~= PlayerIndex then
+		-- Talk(1, "",g_NpcName.."H·y mêi ®éi tr­ëng ®Õn. Muèn vµo ¶i cÇn <color=yellow>sè thµnh viªn cã hÖ ph¸i ph¶i tõ 5 trë lªn.<color>")
+		-- return
+	-- end
 	if 1 ~= gf_team_check_gs(GetTeamID()) then
 		Talk(1,"",g_NpcName.."H·y triÖu tËp h¶o h÷u cïng v­ît ¶i ®i!");
 		return 0;
