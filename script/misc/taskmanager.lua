@@ -471,9 +471,9 @@ function TaskGroup:SetTaskBit(nIndex, nBitPos, nValue)
 end
 
 function TaskGroup:GetTaskId(nIndex)
-	-- if self.TaskManager:GetCurrentVersion(self.nGroupId) ~= self.nVersion then
-		-- return error(format("not permission to access TaskGroupId %d by Version %d", self.nGroupId, self.nVersion))
-	-- end
+	if self.TaskManager:GetCurrentVersion(self.nGroupId) ~= self.nVersion then
+		return error(format("not permission to access TaskGroupId %d by Version %d", self.nGroupId, self.nVersion))
+	end
 	return self.TaskManager:GetTaskId(self.nGroupId, nIndex);
 end
 
