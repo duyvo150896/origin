@@ -1189,6 +1189,15 @@ BigDelItem(0,102,8847,BigGetItemCount(0,102,8847));
 -- - DPLC
 -- BigDelItem(0,	102,	24,BigGetItemCount(0,	102,	24));
 -- tmkl tcl
+--do buff nmk
+BigDelItem(0,110,516,BigGetItemCount(0,110,516));
+BigDelItem(0,109,516,BigGetItemCount(0,109,516));
+BigDelItem(0,108,516,BigGetItemCount(0,108,516));
+
+BigDelItem(0,110,517,BigGetItemCount(0,110,517));
+BigDelItem(0,109,517,BigGetItemCount(0,109,517));
+BigDelItem(0,108,517,BigGetItemCount(0,108,517));
+-- 
 ------
 end
 
