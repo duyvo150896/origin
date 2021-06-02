@@ -2178,13 +2178,13 @@ function Get_JinShe()
 		
 		if nRoute == 8 then 
 				local pifeng,pIndex	=AddItem(0,152,9,1,1,-1,-1,-1,-1,-1,-1,0,nLevel)
-				SetItemFeedUpAttrs(pIndex,188,165,182,759,771,825)
+				SetItemFeedUpAttrs(pIndex,188,187,184,761,765,825)
 				FeedItem(pIndex,1000000)
 				local huizhang,hIndex	=AddItem(0,153,9,1,1,-1,-1,-1,-1,-1,-1,0,nLevel)
-				SetItemFeedUpAttrs(hIndex,188,165,182,759,771,630)
+				SetItemFeedUpAttrs(hIndex,188,187,184,761,765,630)
 				FeedItem(hIndex,1000000)
 				local xie,xIndex	=AddItem(0,154,9,1,1,-1,-1,-1,-1,-1,-1,0,nLevel)
-				SetItemFeedUpAttrs(xIndex,188,165,182,759,771,1004)
+				SetItemFeedUpAttrs(xIndex,188,187,184,761,765,1004)
 				FeedItem(xIndex,1000000)
 		end
 		
