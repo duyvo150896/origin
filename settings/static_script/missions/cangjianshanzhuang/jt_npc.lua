@@ -147,7 +147,7 @@ end;
 function jt_talk_1(bTianJiaolingMode)
 	if GetLocalHour() ~= 10 and GetLocalHour() ~= 20 then
 		Talk(1, "",g_NpcName.."V¹n KiÕm Tròng chØ ho¹t ®éng vµo 10h vµ 20h h»ng ngµy. Xin h·y quay l¹i sau")
-		Msg2Player(GetLocalHour())
+		-- Msg2Player(GetLocalHour())
 		return
 	end
 	if GetTeamMember(0) ~= PlayerIndex then
