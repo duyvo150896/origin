@@ -167,7 +167,7 @@ function KichHoatCayTuLinh()
 	Msg2Player("Bπn nhÀn Æ≠Óc 10 Æi”m c´ng trπng")
 	SetTask(707, GetTask(707)+ 10)
 	Msg2Player("Bπn nhÀn Æ≠Óc 10 Æi”m t›ch lÚy")
-    	local nBonusExp = 3600000
+    	local nBonusExp = 360000
 	ModifyExp(nBonusExp)
 	Msg2Player("Bπn nhÀn Æ≠Óc "..nBonusExp.." Æi”m kinh nghi÷m!")
 	ModifyReputation(2,0)
