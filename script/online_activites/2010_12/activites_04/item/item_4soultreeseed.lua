@@ -21,11 +21,11 @@ function OnUse(nItemIdx)
 	end    
     local nMax4SouldTree = VET_4_SOUL_MAX_PLANT_TIMES
     local nPetLevel = mod(GetTask(TASK_VNG_PET), 100)
---    if nPetLevel == 2 then
---    		nMax4SouldTree = 5
---    elseif nPetLevel >= 3 then
---    		nMax4SouldTree = 6
---    end
+   if nPetLevel == 2 then
+   		nMax4SouldTree = 5
+   elseif nPetLevel >= 3 then
+   		nMax4SouldTree = 6
+   end
     local nDate = tonumber(date("%y%m%d"))
     local nUsedDay = floor(GetTask(VET_201012_04_PLANT_4_SOUL_TREE_COUNT) / 100)
     if nDate ~= nUsedDay then
