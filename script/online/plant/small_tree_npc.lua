@@ -67,7 +67,7 @@ function main()
 	else
 		tinsert(selTab,"T­íi n­íc (cÇn "..SMALLTREETYPE[nTreeGrow+1][4].." phÇn Lé Thñy)/givewater");
 		tinsert(selTab,"Sau nµy h·y t­íi./nothing");
-		sSaySth = SMALLTREETYPE[nTreeGrow][2].." ®ang cÇn t­íi Lé Thñy, cã muèn t­íi kh«ng? NÕu sau <color=yellow>"..Get_Time_String(TREELIFETIME-GetTime()+GetTask(TASK_PLANTTIME_SMALL)).."<color> kh«ng t­íi th× c©y thiÕu n­íc mµ chÕt.";
+		-- sSaySth = SMALLTREETYPE[nTreeGrow][2].." ®ang cÇn t­íi Lé Thñy, cã muèn t­íi kh«ng? NÕu sau <color=yellow>"..Get_Time_String(TREELIFETIME-GetTime()+GetTask(TASK_PLANTTIME_SMALL)).."<color> kh«ng t­íi th× c©y thiÕu n­íc mµ chÕt.";
 	end;
 	
 	Say(sSaySth,getn(selTab),selTab);
