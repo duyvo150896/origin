@@ -87,7 +87,7 @@ function give_4_soul_award(nNum)
     end
     local nReceivedExp = GetTask(VET_201012_04_AWRAD_4_SOUL_FRUIT_COUNT)
     if nReceivedExp >= VET_4_SOUL_MAX_EXCHANGE_EXP then
-    		Talk(1, "", "§¹i hiÖp ®· nhËn ®ñ ®iÓm kinh nghiÖm h«m nay råi, kh«ng thÓ ®æi thªm!")
+    		Talk(1, "", "§¹i hiÖp ®· nhËn ®ñ ®iÓm kinh nghiÖm h«m nay råi (50.000.000), kh«ng thÓ ®æi thªm!")
     		return 0
     end
     SetTask(TSK_AWARD_4SOUL, GetTask(TSK_AWARD_4SOUL) + tbLineExchange[nNum])
