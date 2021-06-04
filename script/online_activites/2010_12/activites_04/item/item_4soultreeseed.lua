@@ -8,6 +8,9 @@ Include("\\script\\vng\\award\\feature_award.lua");
 Include("\\script\\vng\\config\\vng_feature.lua")
 Include("\\script\\online_activites\\head\\activity_normal_head.lua")
 
+Include("\\script\\online\\plant\\tree_head.lua");
+Include("\\script\\lib\\writelog.lua");
+Include("\\script\\function\\vip_card\\vc_head.lua")
 function OnUse(nItemIdx)
     if gf_CheckEventDateEx2(VET_4_SOUL_TREE_BEGIN_TIME, VET_4_SOUL_TREE_END_TIME) ~= 1 then
         return 0;
@@ -19,6 +22,26 @@ function OnUse(nItemIdx)
 		Talk(1,"","Kh«ng gian hµnh trang kh«ng ®ñ");
 		return
 	end    
+-- duyvo
+	local nstate, npkcamp = GetPKFlag()
+	if GetWorldPos() ~= 301 then
+		Talk(1,"","C©y b¸t nh· chØ sinh tr­ëng tèt ë T©y Thµnh §« mµ th«i");
+		return 0;
+	end
+	local nDate = tonumber(date("%H"));
+	if nDate >=3 and nDate <= 12  then
+		Msg2Player("Thêi ®iÓm nhiÒu sinh khİ, cã thÓ trång h¹t gièng");
+	elseif nDate >=17 and nDate <= 18  then
+		Msg2Player("Thêi ®iÓm nhiÒu sinh khİ, cã thÓ trång h¹t gièng");
+	else
+		Talk(1,"","ChØ trång ®­îc thêi kh¾c nhiÒu d­ìng khİ :11h00-12h59 vµ 17h00-18h59 mµ th«i !");
+		return 0;
+	end
+	if nstate ~= 2 and nstate ~= 3 then
+		Talk(1,"","Yªu cÇu tr¹ng th¸i ®å s¸t c¸ nh©n hoÆc ®å sat bang héi ®Ó trång c©y");
+		return 0;
+	end
+--
     local nMax4SouldTree = VET_4_SOUL_MAX_PLANT_TIMES
     local nPetLevel = mod(GetTask(TASK_VNG_PET), 100)
    if nPetLevel == 2 then
