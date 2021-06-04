@@ -20,7 +20,7 @@ L­u Thñy HiÖu	Tr¹ng th¸i (1 më 0 ®ãng)	Script ban ®Çu cña ho¹t ®éng	Server run f
 19	1	\script\online_activites\2010_12\activites_01\init.lua	ServerStartUp	PlayerLogin	2010121000	2011011000	Ho¹t ®éng gi¸ng sinh th¸ng 12
 20	0	\script\online_activites\2010_12\activites_02\init.lua	ServerStartUp	PlayerLogin	2010121000	2011011000	Ho¹t ®éng ngo¹i trang gi¸ng sinh th¸ng 12
 21	0	\script\online_activites\2010_12\activites_03\init.lua	ServerStartUp	PlayerLogin	2010121000	2011011000	Ho¹t ®éng s­ëi Êm ®ªm ®«ng
-22	1	\script\online_activites\2010_12\activites_04\init.lua	ServerStartUp	PlayerLogin	0	0	Ho¹t ®éng c©y tø linh, thêi gian ®­îc ghi nhËn t¹i head
+22	1	\script\online_activites\2010_12\activites_04\init.lua	ServerStartUp	PlayerLogin	2010121000	2033121000	Ho¹t ®éng c©y tø linh, thêi gian ®­îc ghi nhËn t¹i head
 23	1	\script\online_activites\2010_12\activity_05\init.lua	ServerStartUp	PlayerLogin	2013012500	2013022900	Ho¹t ®éng khiªu chiÕn nÐm tuyÕt BOSS
 24	1	\script\online_activites\2010_12\activity_06\init.lua	ServerStartUp	PlayerLogin	0	0	Ho¹t ®éng H¸i Qu¶ Bèn Mïa, thêi gian event ®· ®­îc ghi nhËn t¹i head
 25	1	\script\online_activites\2011_01\activity_01\init.lua	ServerStartUp	PlayerLogin	2011011400	2011022024	Ho¹t ®éng tÕt 2011
