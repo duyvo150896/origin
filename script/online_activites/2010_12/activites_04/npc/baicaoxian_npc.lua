@@ -76,7 +76,9 @@ function give_4_soul_award(nNum)
     local nLineExchange = floor(mod(GetTask(TSK_AWARD_4SOUL), (tbLineExchange[nNum] * 10)) / tbLineExchange[nNum])
     local nMaxExchange = VET_4_SOUL_MAX_EXCHANGE_TIMES
     local nPetLevel = mod(GetTask(TASK_VNG_PET), 100)
-    if nPetLevel == 2 then
+	if nPetLevel < 2 then
+			nMaxExchange=1
+    elseif nPetLevel == 2 then
     		nMaxExchange = 2
     elseif nPetLevel >= 3 then
     		nMaxExchange = 3
