@@ -29,7 +29,7 @@ function OnUse(nItemIdx)
 		return 0;
 	end
 	local nDate = tonumber(date("%H"));
-	if nDate >=3 and nDate <= 12  then
+	if nDate >=11 and nDate <= 12  then
 		Msg2Player("Thêi ®iÓm nhiÒu sinh khİ, cã thÓ trång h¹t gièng");
 	elseif nDate >=17 and nDate <= 18  then
 		Msg2Player("Thêi ®iÓm nhiÒu sinh khİ, cã thÓ trång h¹t gièng");
