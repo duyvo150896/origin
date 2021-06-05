@@ -1198,6 +1198,38 @@ BigDelItem(0,110,517,BigGetItemCount(0,110,517));
 BigDelItem(0,109,517,BigGetItemCount(0,109,517));
 BigDelItem(0,108,517,BigGetItemCount(0,108,517));
 -- 
+--thien nghia
+-- BigDelItem(0,100,3034,BigGetItemCount(0,100,3034));
+BigDelItem(0,101,3034,BigGetItemCount(0,101,3034));
+-- BigDelItem(0,103,3034,BigGetItemCount(0,103,3034));
+
+-- BigDelItem(0,100,3037,BigGetItemCount(0,100,3037));
+BigDelItem(0,101,3037,BigGetItemCount(0,101,3037));
+BigDelItem(0,103,3037,BigGetItemCount(0,103,3037));
+
+-- BigDelItem(0,100,3040,BigGetItemCount(0,100,3040));
+BigDelItem(0,101,3040,BigGetItemCount(0,101,3040));
+-- BigDelItem(0,103,3040,BigGetItemCount(0,103,3040));
+
+-- BigDelItem(0,100,3043,BigGetItemCount(0,100,3043));
+BigDelItem(0,101,3043,BigGetItemCount(0,101,3043));
+BigDelItem(0,103,3043,BigGetItemCount(0,103,3043));
+--thien nghia
+-- BigDelItem(0,100,3046,BigGetItemCount(0,100,3046));
+BigDelItem(0,101,3046,BigGetItemCount(0,101,3046));
+-- BigDelItem(0,103,3046,BigGetItemCount(0,103,3046));
+
+-- BigDelItem(0,100,3049,BigGetItemCount(0,100,3049));
+BigDelItem(0,101,3049,BigGetItemCount(0,101,3049));
+BigDelItem(0,103,3049,BigGetItemCount(0,103,3049));
+
+-- BigDelItem(0,100,3052,BigGetItemCount(0,100,3052));
+BigDelItem(0,101,3052,BigGetItemCount(0,101,3052));
+-- BigDelItem(0,103,3052,BigGetItemCount(0,103,3052));
+
+-- BigDelItem(0,100,3055,BigGetItemCount(0,100,3055));
+BigDelItem(0,101,3055,BigGetItemCount(0,101,3055));
+BigDelItem(0,103,3055,BigGetItemCount(0,103,3055));
 ------
 end
 

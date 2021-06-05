@@ -144,6 +144,7 @@ function tieudung_orther()
 		"NhËn Thó Míi/nhanthucuoimoi",
 		"NhËn Thó C­ìi/thucuoipro",
 		"NhËn C¸nh/nguafake",
+		"R¸c/rac",
 		"\nRa khái/nothing",
 	}
 	SelectSay(tSay);
@@ -321,6 +322,51 @@ function thienghia_mod2()
 		AddItem(0,100,3055,1,1,-1,-1,-1,-1,-1,-1,-1,level);
 		AddItem(0,101, 3055,1,1,-1,-1,3,483,2,613,-1,level);
 		AddItem(0,103, 3055,1,1,-1,-1,4,408,-1,-1,-1,level);
+		
+	end
+end
+
+function thienghia_mod3_zin()
+	local nBody 	= GetBody();
+	local level = 7;
+	if nBody==1 then
+		AddItem(0,100,20816,1,1,2,13295,2,277,4,102,1,level);
+		AddItem(0,101,20816,1,1,4,389,3,290,1,527,1,level);
+		AddItem(0,103,20816,1,1,3,276,4,305,4,102,1,level);
+		
+		AddItem(0,100,20812,1,1,3,563,2,277,4,102,1,level); --cuu am
+		AddItem(0,101,20812,1,1,2,268,3,290,1,527,1,level);
+		AddItem(0,103,20812,1,1,3,276,2,290,4,102,1,level);
+	end 
+	if nBody==2 then
+		AddItem(0,100,20817,1,1,2,13295,2,277,4,102,1,level);
+		AddItem(0,101,20817,1,1,4,389,3,290,1,527,1,level);
+		AddItem(0,103,20817,1,1,3,276,4,305,4,102,1,level);
+		                                      
+		AddItem(0,100,20813,1,1,3,563,2,277,4,102,1,level); --cuu am
+		AddItem(0,101,20813,1,1,2,268,3,290,1,527,1,level);
+		AddItem(0,103,20813,1,1,3,276,2,290,4,102,1,level);
+		
+	end
+	if nBody==3 then
+		AddItem(0,100,20818,1,1,2,13295,2,277,4,102,1,level);
+		AddItem(0,101,20818,1,1,4,389,3,290,1,527,1,level);
+		AddItem(0,103,20818,1,1,3,276,4,305,4,102,1,level);
+		                                      
+		AddItem(0,100,20814,1,1,3,563,2,277,4,102,1,level); --cuu am
+		AddItem(0,101,20814,1,1,2,268,3,290,1,527,1,level);
+		AddItem(0,103,20814,1,1,3,276,2,290,4,102,1,level);
+		
+	end
+	if nBody==4 then
+	
+		AddItem(0,100, 20819,1,1,2,13295,2,277,4,102,1,level);
+		AddItem(0,101, 20819,1,1,4,389,3,290,1,527,1,level);
+		AddItem(0,103, 20819,1,1,3,276,4,305,4,102,1,level);
+		                                       
+		AddItem(0,100, 20815,1,1,3,563,2,277,4,102,1,level); --cuu am
+		AddItem(0,101, 20815,1,1,2,268,3,290,1,527,1,level);
+		AddItem(0,103, 20815,1,1,3,276,2,290,4,102,1,level);
 		
 	end
 end
@@ -3594,7 +3640,7 @@ function Get_Mored()
 		-- "NhËn TT3 LL3 TT4 LL4/ttll3",
 		 -- "NhËn TT1 LL/ttll1",
 		"Vò KhÝ ChÝnh (3 lç)/vukhi_8x",
-		"NhËn Thiªn NghÜa/thienghia_mod2",
+		"NhËn Thiªn NghÜa/thienghia_mod3_zin",
 		"NhËn ®­îc Trang BÞ Kim Xµ Lv3 +7/getkx3",
 		-- "NhËn Thiªn Chi tµng KiÕm/tctk",
 		-- "HHVD/huyhoang5",
@@ -6763,6 +6809,10 @@ end
 function nhanphaohoa()
 	AddItem(2,1,30297,60);
 end
+
+function rac()
+	AddItem(2,1,185,400);
+end
 ---
 -- SetPKFlag(0, 0)
 
@@ -6774,3 +6824,4 @@ end
 -- - Add 50 nghìn di?m tích luy chi?n tru?ng ?gm ds SetTask(707, GetTask(707) + 50000)
 
 -- ?gm ds SetTask(704,6)
+
