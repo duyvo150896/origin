@@ -643,7 +643,7 @@ function ACT5_Killer()
 		GS_CreateMessenger()
 		MU_Msg2Team("Giang s¬n l¾m ng­êi tµi giái! LÏ nµo ta l¹i bã gèi n¬i nµy! ThËt ta ®· giµ råi sao?", 2)
 		MU_Msg2Team("§· ®¸nh b¹i Tr­ëng l·o Tµng KiÕm C¸c!")
-		--AddGlobalNews("Giang hå ®ån ®¹i: §¸m giang hå hµo kiÖt d­íi tr­íng cña ®éi tr­ëng <"..GetCaptainName().."> dÉn d¾t ®· ®¸nh b¹i Tr­ëng l·o Tµng KiÕm C¸c, thuËn lîi v­ît qua ¶i thø 5 trong Tµng KiÕm")	
+		AddGlobalNews("Giang hå ®ån ®¹i: §¸m giang hå hµo kiÖt d­íi tr­íng cña ®éi tr­ëng <"..GetCaptainName().."> dÉn d¾t ®· ®¸nh b¹i Tr­ëng l·o Tµng KiÕm C¸c, thuËn lîi v­ît qua ¶i thø 5 trong Tµng KiÕm")	
 	end
 end
 
@@ -825,7 +825,7 @@ function ACT9_Killer()
 	GS_CreateMessenger()	--ÕÙ»½²Ø½£Ê¹Õß
 	MU_Msg2Team("Sao...sao...cã thÓ...thÕ nµy ®­îc?")
 	MU_Msg2Team("§éi ngò v­ît ¶i thµnh c«ng!")
-	--AddGlobalNews("Tin ®ån kinh ®éng: §¸m giang hå hµo kiÖt d­íi tr­íng cña ®éi tr­ëng <"..GetCaptainName().."> dÉn d¾t, ®· ®¸nh b¹i Cöu TuyÖt KiÕm Ma, thuËn lîi v­ît ¶i thø 7 cña Tµng KiÕm! Qu¶ lµ chuyÖn x­a nay hiÕm cã!")
+	AddGlobalNews("Tin ®ån kinh ®éng: §¸m giang hå hµo kiÖt d­íi tr­íng cña ®éi tr­ëng <"..GetCaptainName().."> dÉn d¾t, ®· ®¸nh b¹i Cöu TuyÖt KiÕm Ma, thuËn lîi v­ît ¶i thø 7 cña Tµng KiÕm! Qu¶ lµ chuyÖn x­a nay hiÕm cã!")
 	WriteLog("[Tµng KiÕm] v­ît ¶i! §éi tr­ëng : "..GetCaptainName()..",  thêi gian  : "..date("%H").." : "..date("%M"))
 	for i=1,nMemCount do
 		PlayerIndex = GetTeamMember(i);	
