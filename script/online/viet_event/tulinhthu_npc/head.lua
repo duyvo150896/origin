@@ -323,7 +323,7 @@ function confirm_get_award(nType)
 		DelItem(2,0,398,tbCheck[nType][2]) 
 		DelItem(2,1,30269,tbCheck[nType][3]) 
 		local nAwardRand = mod(random(1,1000),20)
-		gf_AddItemEx2({2,1,(30164+nAwardRand),10}, "Item Tr¸i c©y", "BINH THIEN HA", "nhËn thµnh c«ng")    
+		-- gf_AddItemEx2({2,1,(30164+nAwardRand),10}, "Item Tr¸i c©y", "BINH THIEN HA", "nhËn thµnh c«ng")    
 		gf_WriteLogEx("BINH THIEN HA", "nhËn thµnh c«ng", 1, "Thñy Lîi")					
 	end		
 	if nType == 4 then
