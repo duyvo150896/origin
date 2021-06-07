@@ -67,6 +67,7 @@ end
 
 function confirm_get_award(nType)
 	local nLimit = 3
+	local ratio = 1;
 	local tbAward = { --cÈt 1 exp, cÈt 2 ch©n kh›, ....
 			[1] = {2000000, 10, 1, 10, 10, 10	},
 			[2] = {18000000, 100, 600},
@@ -341,7 +342,10 @@ function confirm_get_award(nType)
 		gf_WriteLogEx("BINH THIEN HA", "nhÀn thµnh c´ng", 1, "Luy÷n ß¨n")		
 	end
 	AwardGenuineQi(tbAward[nType][2])
-	ModifyExp(tbAward[nType][1])	
+	if GetLevel() > 88 then
+		ratio = 2
+	end
+	ModifyExp(tbAward[nType][1]/ratio)	
 	Msg2Player("Bπn nhÀn Æ≠Óc " ..tbAward[nType][1].." ßi”m kinh nghi÷m")
 	--- ßi”m VÀn May
 --	local nPointVM = gf_GetTaskByte(TSK_LUCKY_DAOHUU_NEW_THANG4, BYTE_POINT_LUCKY)	
