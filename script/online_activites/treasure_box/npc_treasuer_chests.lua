@@ -177,8 +177,8 @@ function get_haonguyet()
 	tinsert(tbSayDialog, "- Ta cÇn ®æi Nãn H¹o NguyÖt (8 M¶nh B¹ch Kim + 1 N?Oa Tinh Th¹ch + 1 B¹ch Kim §¹i Hång Bao( c?chøa 4000 vµng)/#get_haonguyet_confirm(1,0)")
 	tinsert(tbSayDialog, "- Ta cÇn ®æi ¸o H¹o NguyÖt (6 M¶nh B¹ch Kim + 1 N?Oa Tinh Th¹ch + 1 B¹ch Kim §¹i Hång Bao( c?chøa 4000 vµng)/#get_haonguyet_confirm(2,0)")
 	tinsert(tbSayDialog, "- Ta cÇn ®æi QuÇn H¹o NguyÖt (6 M¶nh B¹ch Kim + 1 N?Oa Tinh Th¹ch + 1 B¹ch Kim §¹i Hång Bao( c?chøa 4000 vµng)/#get_haonguyet_confirm(3,0)")
-	tinsert(tbSayDialog, "- Ta cÇn ®æi Trang Søc H¹o NguyÖt (12 M¶nh B¹ch Kim + 2 N?Oa Tinh Th¹ch + 2 B¹ch Kim §¹i Hång Bao( c?chøa 4000 vµng)/get_haonguyet_trangsuc")
-	tinsert(tbSayDialog, "- Ta cÇn ®æi V?Kh?H¹o NguyÖt (16 M¶nh B¹ch Kim + 4 N?Oa Tinh Th¹ch + 4 B¹ch Kim §¹i Hång Bao( c?chøa 4000 vµng)/#get_haonguyet_confirm(5,0)")
+	-- tinsert(tbSayDialog, "- Ta cÇn ®æi Trang Søc H¹o NguyÖt (12 M¶nh B¹ch Kim + 2 N?Oa Tinh Th¹ch + 2 B¹ch Kim §¹i Hång Bao( c?chøa 4000 vµng)/get_haonguyet_trangsuc")
+	-- tinsert(tbSayDialog, "- Ta cÇn ®æi V?Kh?H¹o NguyÖt (16 M¶nh B¹ch Kim + 4 N?Oa Tinh Th¹ch + 4 B¹ch Kim §¹i Hång Bao( c?chøa 4000 vµng)/#get_haonguyet_confirm(5,0)")
 	tinsert(tbSayDialog, "Tr?l¹i/main")
 	
 	nSaySize = getn(tbSayDialog);
