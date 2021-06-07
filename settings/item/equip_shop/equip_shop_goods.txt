@@ -14095,3 +14095,4 @@ ID	Title	AwrdItem	NeedSex	NeedBody	NeedRoute	AwardTimes	GlobalMsg	ExchangeMode	T
 60182	Bao §¸ Ngò S¾c nhá	2;1;30404;1						60182	720
 60183	Bao §¸ Ngò S¾c lín	2;1;30405;1						60183	720
 60184	Bao Thiªn Th¹ch Tinh Th¹ch	2;1;1051;1						60184	720
+60185	Bao Thiªn Kiªu LÖnh Lín	2;95;2087;1						60185	720
