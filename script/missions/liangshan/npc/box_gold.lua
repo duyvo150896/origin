@@ -246,7 +246,7 @@ _t_ib_award_no_stage8 =
                 { {"Hu©n ch­¬ng anh hïng", {2,1,30499,2,4}, nil,nil, {1, 100}},600},
                 { {"Hu©n ch­¬ng anh hïng", {2,1,30499,4,4}, nil,nil, {1, 100}},400},
                 { {"Hu©n ch­¬ng anh hïng", {2,1,30499,10,4}, nil,nil, {1, 100}},590},
-                { {"M¶nh Thiªn Cang", {2,1,30390,10}, nil,nil, {1, 100}},1200},
+                { {"M¶nh Thiªn Cang", {2,1,30390,5}, nil,nil, {1, 100}},1200},
                 { {"M¶nh Thiªn Cang", {2,1,30390,20}, nil,nil, {1, 100}},301},
                 { {"Ng«i sao mai m¾n", {2,1,30191,1}, nil,nil, {1, 100}},1050},
                 { {"Thiªn Cang LÖnh", {2,95,204,1}, nil,1, {1, 100}},100},
