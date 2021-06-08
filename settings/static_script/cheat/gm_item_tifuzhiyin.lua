@@ -6820,7 +6820,8 @@ end
 -- - Add 25 tri?u di?m công tr?ng phe Liêu : ?gm ds SetTask(701, GetTask(701) - 25000000)
 
 -- - Add Quân hàm soái Liêu : ?gm ds SetTask(704,-6)
-
+-- ire, item = Add
+--SetItemExpireTime (item, time)
 -- - Add 50 nghìn di?m tích luy chi?n tru?ng ?gm ds SetTask(707, GetTask(707) + 50000)
 
 -- ?gm ds SetTask(704,6)
