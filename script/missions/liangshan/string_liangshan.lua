@@ -668,7 +668,7 @@ T.sel =
 	-- {". Bèi c¶nh L­¬ng S¬n QuÇn Hïng Héi", T1, },
 	-- {". §iÒu kiÖn tham gia", T2, },
 	-- {". Giíi thiÖu v­ît ¶i", T3, },
-	-- {". V­ît ¶i th­êng", "entry_jingli", },
+	{". V­ît ¶i th­êng", "entry_jingli", },
 	{". V­ît ¶i Thiªn Kiªu", "entry_tianjiaoling", },
 	-- {". Ta muèn ®æi th­ëng", "exchange", },
 	-- {". Ta ®Õn nhËn nhiÖm vô h»ng ngµy", "DailyTasksMenu", },

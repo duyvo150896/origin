@@ -282,8 +282,8 @@ function check(bTianJiaolingMode)
 	local msg = LSLoginQuanli[1]
 	local color = "";
 	local ret = 1;
-	if GetLocalHour() ~= 13 and GetLocalHour() ~= 22 then
-		Talk(1, "","<color=green>Th¸i B¶o §íi T«ng<color>:".."LSB chØ ho¹t ®éng vµo 13h vµ 22h h»ng ngµy. Xin h·y quay l¹i sau")
+	if GetLocalHour() <8 or  GetLocalHour() > 22 then
+		Talk(1, "","<color=green>Th¸i B¶o §íi T«ng<color>:".."LSB chØ ho¹t ®éng tõ  8h ®Õn 22h h»ng ngµy. Xin h·y quay l¹i sau")
 		ret = 0;
 	end
 	if GetTeamSize() < NTeamMemberMin then
@@ -342,7 +342,12 @@ function entry(bTianJiaolingMode, bSure)
 		end
 	end
 	local nTimes = GetTask(VET_MS_LS_TASKID_LIANGSHAN_ITEM_DAILY);
+	if GS_EnterTaskTalk_LSB(nTimes) == 0 then
+		-- Msg2Player("ko di dc")
+		return
+	end
 	SetTask(VET_MS_LS_TASKID_LIANGSHAN_ITEM_DAILY, nTimes + 1);
+	-- Msg2Player(nTimes)
 	local bRet, msg = check(bTianJiaolingMode);
 	if bRet ~= 1 then
 		Talk(1, "", _name()..msg);
@@ -356,6 +361,31 @@ function entry(bTianJiaolingMode, bSure)
 	createMission(g_RealMapId,bTianJiaolingMode)
 end
 
+GS_RECORD_DATE_LSB = 609
+GS_RECORD_CHANCE_LSB=0
+
+function GS_EnterTaskTalk_LSB(nTimes)
+		local nCurDate = tonumber(date("%m%d"))	
+		local nOldIndex = PlayerIndex
+		local allw_enter = 20
+		for i = 1, GetTeamSize() do
+			PlayerIndex = GetTeamMember(i)
+			
+			if GetTask(GS_RECORD_DATE_LSB) ~= nCurDate then
+				SetTask(GS_RECORD_CHANCE_LSB, 0)
+				SetTask(GS_RECORD_DATE_LSB, nCurDate)
+			end
+			
+			if GetTask(GS_RECORD_CHANCE_LSB) >= allw_enter - 1  then
+				gf_Msg2Team("H«m nay "..GetName().." ®· ®i "..allw_enter.." lÇn.")
+				return 0
+			else
+				SetTask(GS_RECORD_CHANCE_LSB, nTimes)
+			end
+		end
+		PlayerIndex = nOldIndex
+		return 1
+end
 function createMission(nOrgMapId,bTianJiaolingMode)
 	local nOldIndex = PlayerIndex;
 	local nMapID,nMapIdx = DynamicLoadMap(nOrgMapId);
