@@ -282,8 +282,8 @@ function check(bTianJiaolingMode)
 	local msg = LSLoginQuanli[1]
 	local color = "";
 	local ret = 1;
-	if GetLocalHour() ~= 13 or GetLocalHour() ~= 00 then
-		Talk(1, "","<color=green>Th¸i B¶o §íi T«ng<color>:".."V¹n KiÕm Tròng chØ ho¹t ®éng vµo 10h vµ 20h h»ng ngµy. Xin h·y quay l¹i sau")
+	if GetLocalHour() ~= 13 and GetLocalHour() ~= 22 then
+		Talk(1, "","<color=green>Th¸i B¶o §íi T«ng<color>:".."LSB chØ ho¹t ®éng vµo 13h vµ 22h h»ng ngµy. Xin h·y quay l¹i sau")
 		ret = 0;
 	end
 	if GetTeamSize() < NTeamMemberMin then
