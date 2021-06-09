@@ -29,20 +29,20 @@ function OnUse(nItemIdx)
 		return 0;
 	end
 	local nDate = tonumber(date("%H"));
-	if nDate >=11 and nDate <= 12  then
-		Msg2Player("Thêi ®iÓm nhiÒu sinh khİ, cã thÓ trång h¹t gièng");
-	elseif nDate >=17 and nDate <= 18  then
-		Msg2Player("Thêi ®iÓm nhiÒu sinh khİ, cã thÓ trång h¹t gièng");
-	else
-		Talk(1,"","ChØ trång ®­îc thêi kh¾c nhiÒu d­ìng khİ :11h00-12h59 vµ 17h00-18h59 mµ th«i !");
-		return 0;
-	end
+	-- if nDate >=11 and nDate <= 12  then
+		-- Msg2Player("Thêi ®iÓm nhiÒu sinh khİ, cã thÓ trång h¹t gièng");
+	-- elseif nDate >=17 and nDate <= 18  then
+		-- Msg2Player("Thêi ®iÓm nhiÒu sinh khİ, cã thÓ trång h¹t gièng");
+	-- else
+		-- Talk(1,"","ChØ trång ®­îc thêi kh¾c nhiÒu d­ìng khİ :11h00-12h59 vµ 17h00-18h59 mµ th«i !");
+		-- return 0;
+	-- end
 	if nstate ~= 2 and nstate ~= 3 then
 		Talk(1,"","Yªu cÇu tr¹ng th¸i ®å s¸t c¸ nh©n hoÆc ®å sat bang héi ®Ó trång c©y");
 		return 0;
 	end
 --
-    local nMax4SouldTree = VET_4_SOUL_MAX_PLANT_TIMES
+    local nMax4SouldTree = 4
     local nPetLevel = mod(GetTask(TASK_VNG_PET), 100)
    if nPetLevel == 2 then
    		nMax4SouldTree = 5
