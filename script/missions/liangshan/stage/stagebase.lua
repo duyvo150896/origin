@@ -200,7 +200,7 @@ function tStageBase:giveAward(nStage)
 			nExp = nExp * 0.7
 		end
 --		nExp = nExp * nExp * nExp;
-		-- local nTimes = GetTask(VET_MS_LS_TASKID_LIANGSHAN_ITEM_DAILY);
+		local nTimes = GetTask(VET_MS_LS_TASKID_LIANGSHAN_ITEM_DAILY);
 --		if nTimes >= 13 then
 --			nExp = nExp * 4 / 6 * 1.5;
 --		elseif nTimes >= 9 then
@@ -208,7 +208,7 @@ function tStageBase:giveAward(nStage)
 --		else
 --			nExp = nExp * 1.8
 --		end
-		-- SetTask(VET_MS_LS_TASKID_LIANGSHAN_ITEM_DAILY, nTimes + 1);
+		SetTask(VET_MS_LS_TASKID_LIANGSHAN_ITEM_DAILY, nTimes + 1);
 		gf_Modify("Exp", floor(nExp));
 	end
 	mf_OperateAllPlayer(MISSION_ID,fawrd,nStage,1)
