@@ -43,21 +43,21 @@ function main()
 	-- end;
 	-- Msg2SubWorld(GetLocalHour());
 	if  GetLocalHour() == 21 then
-		if GetLocalMin() >= 45 then
-			Boss_LanHoa();
-			-- Boss_AnhTu();
-		else
+		-- if GetLocalMin() >= 45 then
+			-- Boss_LanHoa();
+			-- -- Boss_AnhTu();
+		-- else
 	-- 	Msg2SubWorld("OKKK")
 			Boss_W5();
-		end
+		-- end
 	end
 	if  GetLocalHour() == 15 then
 	-- Msg2SubWorld("OKKK")
 		 -- Boss_LanHoa();
 		 Boss_AnhTu();
 	end
-	if  GetLocalHour() == 22 then
-	-- Msg2SubWorld("OKKK")
-		Boss_HuongLang();
-	end
+	-- if  GetLocalHour() == 22 then
+	-- -- Msg2SubWorld("OKKK")
+		-- Boss_HuongLang();
+	-- end
 end;

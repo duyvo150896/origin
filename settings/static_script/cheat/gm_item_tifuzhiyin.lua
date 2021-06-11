@@ -607,7 +607,11 @@ function Boss_HuongLang()
 
 	local nMap,nX,nY = GetWorldPos();
 	local npcIndex = 0
-	npcIndex = CreateNpc("NghiÖt Hån","L·nh H­¬ng L¨ng", 202, 1514, 2946,-1,1,1,30)
+	local xX = random(171, 194)
+	local yY = random(170,195)
+	-- Msg2Player(xX)
+	-- Msg2Player(yY)
+	npcIndex = CreateNpc("NghiÖt Hån","L·nh H­¬ng L¨ng", 202,  xX*8, yY*16,-1,1,1,30)
 	Msg2Global("Nghe nãi L·nh H­¬ng L¨ng  ®ang ë H¹nh Hoa Th«n, mau ®Õn ®ã xem thö dung nhan kiÒu diÔm cña nµng!")
 	SetNpcLifeTime(npcIndex, 7200)
 	SetNpcScript(npcIndex, "\\script\\task\\boss\\boss_ondeath.lua")
@@ -618,7 +622,11 @@ function Boss_LanHoa()
 
 	local nMap,nX,nY = GetWorldPos();
 	local npcIndex = 0
-	npcIndex = CreateNpc("lanhua_viet","Lan Hoa", 202, 1514, 2946,-1,1,1,30)
+	local xX = random(171, 194)
+	local yY = random(170,195)
+	-- Msg2Player(xX)
+	-- Msg2Player(yY)
+	npcIndex = CreateNpc("lanhua_viet","Lan Hoa", 202, xX*8, yY*16,-1,1,1,30)
 	--Msg2Global("Cã ng­êi nh×n thÊy Lan Hoa ®ang ë t©y TuyÒn Ch©u 181/190, mau ®Õn ®ã xem!")
 	-- SetNpcLifeTime(npcIndex, 7200)
 	-- SetNpcScript(npcIndex, "\\script\\online\\viet_event\\lanhua_boss\\lanhua_boss.lua")
@@ -637,7 +645,11 @@ function Boss_AnhTu()
 
 	local nMap,nX,nY = GetWorldPos();
 	local npcIndex = 0
-	npcIndex = CreateNpc("yingzi_viet","Anh Tö", 202, 1514, 2946,-1,1,1,30)
+	local xX = random(171, 194)
+	local yY = random(170,195)
+	-- Msg2Player(xX)
+	-- Msg2Player(yY)
+	npcIndex = CreateNpc("yingzi_viet","Anh Tö", 202, xX*8, yY*16,-1,1,1,30)
 	--Msg2Global("Cã ng­êi nh×n thÊy Lan Hoa ®ang ë t©y TuyÒn Ch©u 181/190, mau ®Õn ®ã xem!")
 	-- SetNpcLifeTime(npcIndex, 7200)
 	-- SetNpcScript(npcIndex, "\\script\\online\\viet_event\\lanhua_boss\\lanhua_boss.lua")
