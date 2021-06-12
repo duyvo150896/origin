@@ -70,7 +70,21 @@ tItem =
 	{0,102,8846, "Huy Hoµng"},
 	{0,102,8847, "Vinh Dù"},
 	{0, 105, 30038, "NguyÖt L­îng Thè"},
+	{0, 102, 38, "Tµng KiÕm B¶o ch©u"},
+	{0, 102, 39, "Tµng KiÕm K× th¹ch"},
 	{0, 102, 40, "Tµng KiÕm Kim Ên"},
+	{0, 103, 95, "Tµng KiÕm Tö Kim M·o"},
+	{0, 103, 96, "Tµng KiÕm Tö Kim M·o"},
+	{0, 103, 97, "Tµng KiÕm Tö Kim M·o"},
+	{0, 103, 98, "Tµng KiÕm Tö Kim M·o"},
+	{0, 100, 95, "Kim Lò Th­êng"},
+	{0, 100, 96, "Kim Lò Th­êng"},
+	{0, 100, 97, "Kim Lò Th­êng"},
+	{0, 100, 98, "Kim Lò Th­êng"},
+	{0, 101, 95, "Tµng KiÕm ¤ Kim Phôc"},
+	{0, 101, 96, "Tµng KiÕm ¤ Kim Phôc"},
+	{0, 101, 97, "Tµng KiÕm ¤ Kim Phôc"},
+	{0, 101, 98, "Tµng KiÕm ¤ Kim Phôc"},
 }
 
 function OnUse()
