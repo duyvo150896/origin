@@ -3468,12 +3468,13 @@ function GetJingMai()
 		-- format("%s/getJingMaiTongRen", "NhËn Kinh M¹ch §ång Nh©n"),
 		"Ra khái/nothing",
 	};
-	if MeridianGetLevel() < 2 then
+	if MeridianGetLevel() < 1 then
 		tinsert(szSay, 2, "Th¨ng cÊp c¶nh giíi/GetJingMai_Update")
 	end
-	-- if GetLevel() >=90 then 
+	if GetLevel() >=90  and MeridianGetLevel() < 2 then 
 		-- tinsert(szSay, 2, "§i ®Õn NPC th¨ng cÊp c¶nh giíi Vâ T­íng/GetJingMai_Update_votuong")
-	-- end
+		tinsert(szSay, 2, "Th¨ng cÊp c¶nh giíi Vâ T­íng/GetJingMai_Update_votuong_only")
+	end
 	SelectSay(szSay);
 end
 
@@ -3488,17 +3489,26 @@ function getJingMaiTongRen()
 	SetCurrentNpcSFX(PIdx2NpcIdx(),905,0,0)
 end
 
+function GetJingMai_Update_votuong_only()
+	local nLevel = MeridianGetLevel()
+	for i = nLevel + 1, 2 do
+		MeridianUpdateLevel()
+	end
+	PlaySound("\\sound\\sound_i016.wav");
+	SetCurrentNpcSFX(PIdx2NpcIdx(),905,0,0)
+end
+
 function GetJingMai_Update()
 	local nLevel = MeridianGetLevel()
 	-- for i = nLevel + 1, 1 do
 	-- for i = nLevel + 1, 4 do -- max
-	for i = nLevel + 1, 2 do
+	for i = nLevel + 1, 1 do
 		MeridianUpdateLevel()
 	end
 
 	-- local nNum = 600000 - (MeridianGetDanTian() + MeridianGetQiHai());
-	local nNum = 300000 - (MeridianGetDanTian() + MeridianGetQiHai());
-	-- local nNum = 150000 - (MeridianGetDanTian() + MeridianGetQiHai());
+	-- local nNum = 300000 - (MeridianGetDanTian() + MeridianGetQiHai());
+	local nNum = 150000 - (MeridianGetDanTian() + MeridianGetQiHai());
 	if nNum > 0 then
 		AwardGenuineQi(nNum);
 	end
