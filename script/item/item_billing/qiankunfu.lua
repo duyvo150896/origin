@@ -70,6 +70,7 @@ tItem =
 	{0,102,8846, "Huy Hoµng"},
 	{0,102,8847, "Vinh Dù"},
 	{0, 105, 30038, "NguyÖt L­îng Thè"},
+	{0, 102, 40, "Tµng KiÕm Kim Ên"},
 }
 
 function OnUse()
