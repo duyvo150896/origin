@@ -79,7 +79,6 @@ HOUR	MIN	SCRIPT	d	DESC
 21	29	\settings\static_script\kf_newbattles\systemtimemessage\sub_battle_signup.lua
 21	30	\script\online_activites\2010_12\activity_05\head.lua
 21	31	\script\missions\nvn\3v3\3v3_original_gs.lua
-21	46	\script\task\weekend\weekend_timer.lua
 21	50	\script\online\qianhe_tower\qht_system_task.lua
 21	58	\script\online\viet_event\200912\3\init_wushi.lua
 21	59	\script\online\viet_event\200909\3\init_wenzi.lua
