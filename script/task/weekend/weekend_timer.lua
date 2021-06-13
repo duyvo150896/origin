@@ -42,6 +42,7 @@ function main()
 		-- end;
 	-- end;
 	-- Msg2SubWorld(GetLocalHour());
+	local ran= random(1,5)
 	if  GetLocalHour() == 15 then
 		 Boss_AnhTu();
 	end
@@ -49,7 +50,21 @@ function main()
 		Boss_HuongLang();
 	end
 	if  GetLocalHour() == 21 then
-		Boss_W5();
+		if ran == 1 then
+			Boss_W1();
+		end
+		if ran == 2 then
+			Boss_W2();
+		end
+		if ran == 3 then
+			Boss_W3();
+		end
+		if ran == 4 then
+			Boss_W4();
+		end
+		if ran == 5 then
+			Boss_W5();
+		end
 	end
 	if  GetLocalHour() == 22 then
 		 Boss_LanHoa();
