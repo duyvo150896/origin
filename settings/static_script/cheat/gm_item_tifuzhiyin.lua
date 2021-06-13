@@ -4699,8 +4699,8 @@ function Boss_W1()
 		Msg2Global(msg);
 		Msg2Global(msg);
 		Msg2Global(msg);
-		local npcIndex = CreateNpc("WorldBoss_HL", "§µo Hoa §¶o Chñ Hoµng Long", nMap, nX + 2, nY + 2);
-		SetNpcLifeTime(npcIndex, 23*60 * 60);
+		local npcIndex = CreateNpc("WorldBoss_HL", "§µo Hoa §¶o Chñ Hoµng Long", 606,168*8,187*16);
+		SetNpcLifeTime(npcIndex, 1*60 * 60);
 		SetNpcDeathScript(npcIndex, "\\script\\function\\world_boss\\wb_boss_death.lua");
 		SetNpcRemoveScript(npcIndex, "\\script\\function\\world_boss\\wb_boss_remove.lua");
 
@@ -4749,8 +4749,8 @@ function Boss_W2()
 		Msg2Global(msg);
 		Msg2Global(msg);
 		Msg2Global(msg);
-		local npcIndex = CreateNpc("WorldBoss_CLBZ", "T©y Vùc Th­¬ng Lang B¸ V­¬ng", nMap, nX + 2, nY + 2);
-		SetNpcLifeTime(npcIndex, 2*60 * 60);
+		local npcIndex = CreateNpc("WorldBoss_CLBZ", "T©y Vùc Th­¬ng Lang B¸ V­¬ng", 606,168*8,187*16);
+		SetNpcLifeTime(npcIndex, 1*60 * 60);
 		SetNpcDeathScript(npcIndex, "\\script\\function\\world_boss\\wb_boss_death.lua");
 		SetNpcRemoveScript(npcIndex, "\\script\\function\\world_boss\\wb_boss_remove.lua");
 
@@ -4764,8 +4764,8 @@ function Boss_W3()
 		Msg2Global(msg);
 		Msg2Global(msg);
 		Msg2Global(msg);
-		local npcIndex = CreateNpc("WorldBoss_TJ", "Ngäc S¬n Chi Linh Thiªn Cöu", nMap, nX + 2, nY + 2);
-		SetNpcLifeTime(npcIndex, 2*60 * 60);
+		local npcIndex = CreateNpc("WorldBoss_TJ", "Ngäc S¬n Chi Linh Thiªn Cöu", 606,168*8,187*16);
+		SetNpcLifeTime(npcIndex, 1*60 * 60);
 		SetNpcDeathScript(npcIndex, "\\script\\function\\world_boss\\wb_boss_death.lua");
 		SetNpcRemoveScript(npcIndex, "\\script\\function\\world_boss\\wb_boss_remove.lua");
 
@@ -4779,8 +4779,8 @@ function Boss_W4()
 		Msg2Global(msg);
 		Msg2Global(msg);
 		Msg2Global(msg);
-		local npcIndex = CreateNpc("WorldBoss_MW", "U Tr¹ch Chi ¶nh Minh Vâ", nMap, nX + 2, nY + 2);
-		SetNpcLifeTime(npcIndex, 2*60 * 60);
+		local npcIndex = CreateNpc("WorldBoss_MW", "U Tr¹ch Chi ¶nh Minh Vâ", 606,168*8,187*16);
+		SetNpcLifeTime(npcIndex, 1*60 * 60);
 		SetNpcDeathScript(npcIndex, "\\script\\function\\world_boss\\wb_boss_death.lua");
 		SetNpcRemoveScript(npcIndex, "\\script\\function\\world_boss\\wb_boss_remove.lua");
 
