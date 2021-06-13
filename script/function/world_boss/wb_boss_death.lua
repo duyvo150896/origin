@@ -18,7 +18,7 @@ function OnDeath(id, f, x)
 	if nMap == 202 then
 		Msg2Global(msg);
 	else
-		Boss_LanHoa();
+		-- Boss_LanHoa();
 		local bigBox = CreateNpc("WorldBoss_Box", "R­¬ng Vµng §¹i ChiÕn", nMap, nX, nY);
 		if bigBox > 0 then
 			SetNpcScript(bigBox, "\\script\\function\\world_boss\\wb_big_box.lua");

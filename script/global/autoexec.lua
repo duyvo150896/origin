@@ -161,6 +161,8 @@ end;
 function  NPCLuyenCong()
 	local npcindex  = CreateNpc("Phi YÕn Tiªn Tö","LuyÖn C«ng Tiªn N÷",  219, 1520, 2988)
 	SetNpcScript(npcindex, "\\script\\global\\npc_luyencong.lua")
+	local npcindex  = CreateNpc("Phi YÕn Tiªn Tö","LuyÖn C«ng Tiªn N÷",  350, 197*8, 176*16)
+	SetNpcScript(npcindex, "\\script\\global\\npc_luyencong.lua")
 end
 
 function ApplyRelayInitData()

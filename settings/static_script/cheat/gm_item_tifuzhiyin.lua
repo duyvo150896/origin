@@ -4717,7 +4717,7 @@ function Boss_W5()
 		Msg2Global(msg);
 		Msg2Global(msg);
 		AddLocalNews(msg);
-		SetNpcLifeTime(npcIndex, 2*60 * 60);
+		SetNpcLifeTime(npcIndex, 1*60 * 60);
 		SetNpcDeathScript(npcIndex, "\\script\\function\\world_boss\\wb_boss_death.lua");
 		SetNpcRemoveScript(npcIndex, "\\script\\function\\world_boss\\wb_boss_remove.lua");
 
