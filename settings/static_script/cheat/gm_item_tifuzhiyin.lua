@@ -144,7 +144,7 @@ function tieudung_orther()
 		"NhËn Thó Míi/nhanthucuoimoi",
 		"NhËn Thó C­ìi/thucuoipro",
 		"NhËn C¸nh/nguafake",
-		"R¸c/rac",
+		-- "R¸c/rac",
 		"\nRa khái/nothing",
 	}
 	SelectSay(tSay);

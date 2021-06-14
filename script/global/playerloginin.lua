@@ -940,8 +940,11 @@ function main(ExchangeComing)
 	ibc_PlayerLogin(); --黑道具补偿活动
 	DelNguyenTu96();
 	effchar();
+	if GetWorldPos() == 202 then
+		SetPKFlag(2, 0)
+	end
 --	ForgetPetSkillMain();
-	revert_chankhi();
+	-- revert_chankhi();
 	-- removelevel99();
 	-- if GetWorldPos() == 300 or  GetWorldPos() == 302 or  GetWorldPos() == 303 then
 		-- if date("%H") == 21 or date("%H") == 22 then

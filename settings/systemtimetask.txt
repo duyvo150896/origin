@@ -71,7 +71,6 @@ HOUR	MIN	SCRIPT	d	DESC
 20	13	\script\missions\bw\siege\siege_arena_mission_start.lua
 20	45	\script\missions\nvn\3v3msg.lua
 20	55	\script\missions\nvn\3v3msg.lua
-20	58	\script\task\weekend\weekend_timer.lua
 21	1	\script\½á»é\mission\init_fields.lua
 21	2	\script\task\weekend\weekend_timer.lua
 21	3	\script\missions\bw\siege\siege_arena_mission_start.lua
