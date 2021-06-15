@@ -64,12 +64,16 @@ function use_it()
 	local szItemName = g_tbItem[nRandIdx][4]
 	local nItemNum = g_tbItem[nRandIdx][3]
 	local szInfoDescribe = format("(%d,%d,%d)", g_tbItem[nRandIdx][5], g_tbItem[nRandIdx][6], g_tbItem[nRandIdx][7])
-
+	local Name = GetName()
+	local msg = format("Ng­êi ch¬i "..Name.." sö dông tói hµnh trang nhËn ®­îc §«ng Ph­¬ng Long Ch©u, thËt may m¾n  !!");
+		
 	local nRetCode = 0
 	if nRandIdx > 1 then
 		nRetCode = AddItem(g_tbItem[nRandIdx][5],g_tbItem[nRandIdx][6],g_tbItem[nRandIdx][7],g_tbItem[nRandIdx][3],1,-1,-1,-1,-1,-1,-1)
 	else
 		nRetCode = AddItem(g_tbItem[nRandIdx][5],g_tbItem[nRandIdx][6],g_tbItem[nRandIdx][7],g_tbItem[nRandIdx][3],1,1,lv,-1,-1,-1,-1)
+		Msg2Global(msg);
+		AddLocalNews(msg);
 	end
 	if nRetCode == 1 then
 		Msg2Player("B¹n nhËn ®­îc  "..nItemNum.." "..szItemName)

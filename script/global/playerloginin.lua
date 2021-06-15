@@ -83,6 +83,7 @@ Include("\\script\\biwudahui\\tournament\\tournament_head.lua")
 Include("\\script\\missions\\northwest_mission\\mission\\mission_head.lua")
 
 Include("\\script\\pet\\forget_pet_skill.lua")
+Include("\\script\\mappk.lua")
 
 g_szThisFile = "\\script\\global\\playerloginin.lua"
 
@@ -164,6 +165,7 @@ function main(ExchangeComing)
 		-- CastState("state_physical_parmor_poi_add", 25, 7760000);
 		-- CastState("state_magic_parmor_poi_add", 25, 7760000);
 	-- end
+	tao_map_pk();
 	LearnSkill(11)	--杨门技能11
 	LearnSkill(12)	--杨门技能12
 	local nDate = tonumber(date("%Y%m%d"))
@@ -940,9 +942,10 @@ function main(ExchangeComing)
 	ibc_PlayerLogin(); --黑道具补偿活动
 	DelNguyenTu96();
 	effchar();
-	if GetWorldPos() == 202 then
-		SetPKFlag(2, 0)
-	end
+	-- if GetWorldPos() == 202 then
+		-- SetPKFlag(2, 0)
+	-- end
+	
 --	ForgetPetSkillMain();
 	-- revert_chankhi();
 	-- removelevel99();
