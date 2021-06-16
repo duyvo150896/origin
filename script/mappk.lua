@@ -6,7 +6,7 @@ function EnterMap()
 		return
 	end
 	tao_map_pk();
-	if check_time() == 1 and check_place() == 1 then
+	if  check_place() == 1 then
 		SetDeathPunish(0);
 		SetPKFlag(2,1);    --B?t d? sát
         ForbidChangePK(1);       ---không cho thay d?i tr?ng thái pk
