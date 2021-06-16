@@ -14,6 +14,14 @@ else
 	g_nItemID = 504;
 end;
 
+if IB_VERSION == 1 then
+	g_szNeedItemName_Soai = "Thiªn Cang LÖnh";
+	g_nItemID_Soai = 204;
+else
+	g_szNeedItemName_Soai = "Thiªn Cang LÖnh";
+	g_nItemID_Soai = 204;
+end;
+
 tEquipInfo = 
 {
 	[1] = 	{	--¶¼Í³×°			
@@ -61,19 +69,19 @@ tEquipInfo =
 					{{"Tèng nguyªn so¸i ®Çu kh«i",0,103,2251},6,100000,4000,{g_szNeedItemName,2,1,g_nItemID,20}},
 					{{"Tèng nguyªn so¸i chiÕn bµo",0,100,2251},6,100000,4000,{g_szNeedItemName,2,1,g_nItemID,20}},
 					{{"Tèng nguyªn so¸i chiÕn phôc",0,101,2251},6,100000,4000,{g_szNeedItemName,2,1,g_nItemID,20}},
-					{{"Tèng nguyªn so¸i hæ phï",0,102,2301},6,100000,4000,{g_szNeedItemName,2,1,g_nItemID,20}},
-					{{"Tèng nguyªn so¸i lÖnh kú",0,102,2305},6,100000,4000,{g_szNeedItemName,2,1,g_nItemID,20}},
-					{{"Tèng so¸i phï",0,102,2501},6,100000,4000,{g_szNeedItemName,2,1,g_nItemID,20}},
-					{{"Tèng so¸i kú",0,102,2505},6,100000,4000,{g_szNeedItemName,2,1,g_nItemID,20}},
+					{{"Tèng nguyªn so¸i hæ phï",0,102,2301},6,100000,4000,{g_szNeedItemName_Soai,2,95,g_nItemID_Soai,5}},
+					{{"Tèng nguyªn so¸i lÖnh kú",0,102,2305},6,100000,4000,{g_szNeedItemName_Soai,2,95,g_nItemID_Soai,5}},
+					{{"Tèng so¸i phï",0,102,2501},6,100000,4000,{g_szNeedItemName_Soai,2,95,g_nItemID_Soai,5}},
+					{{"Tèng so¸i kú",0,102,2505},6,100000,4000,{g_szNeedItemName_Soai,2,95,g_nItemID_Soai,5}},
 					},
 		[LIAO_ID] = {
 					{{"Liªu nguyªn so¸i ®Çu kh«i",0,103,2255},6,100000,4000,{g_szNeedItemName,2,1,g_nItemID,20}},
 					{{"Liªu nguyªn so¸i chiÕn bµo",0,100,2255},6,100000,4000,{g_szNeedItemName,2,1,g_nItemID,20}},
 					{{"Liªu nguyªn so¸i chiÕn phôc",0,101,2255},6,100000,4000,{g_szNeedItemName,2,1,g_nItemID,20}},
-					{{"Liªu nguyªn so¸i hæ phï",0,102,2311},6,100000,4000,{g_szNeedItemName,2,1,g_nItemID,20}},
-					{{"Liªu nguyªn so¸i lÖnh kú",0,102,2315},6,100000,4000,{g_szNeedItemName,2,1,g_nItemID,20}},
-					{{"Liªu so¸i phï",0,102,2511},6,100000,4000,{g_szNeedItemName,2,1,g_nItemID,20}},
-					{{"Liªu so¸i kú",0,102,2515},6,100000,4000,{g_szNeedItemName,2,1,g_nItemID,20}},
+					{{"Liªu nguyªn so¸i hæ phï",0,102,2311},6,100000,4000,{g_szNeedItemName_Soai,2,95,g_nItemID_Soai,5}},
+					{{"Liªu nguyªn so¸i lÖnh kú",0,102,2315},6,100000,4000,{g_szNeedItemName_Soai,2,95,g_nItemID_Soai,5}},
+					{{"Liªu so¸i phï",0,102,2511},6,100000,4000,{g_szNeedItemName_Soai,2,95,g_nItemID_Soai,5}},
+					{{"Liªu so¸i kú",0,102,2515},6,100000,4000,{g_szNeedItemName_Soai,2,95,g_nItemID_Soai,5}},
 					}	
 			}
 }
@@ -110,7 +118,7 @@ function BTA_KnowRule()
 end;
 
 function BTA_KnowRule2()
-	Talk(1,"BTA_Main","<color=green>"..g_sNpcName.."<color>: <enter>§æi <color=yellow>Trang bÞ T­íng qu©n<color> qu©n hµm ph¶i tõ <color=yellow>Tèng T­íng Qu©n<color> trë lªn. Mçi trang bÞ cÇn <color=yellow>2500 vµng<color>, <color=yellow>60000 ®iÓm tÝch lòy<color> vµ <color=yellow>"..g_szNeedItemName.."<color> 10!<enter> §æi <color=yellow>Trang bÞ Nguyªn so¸i <color> qu©n hµm ph¶i tõ <color=yellow>Tèng Nguyªn So¸i<color> trë lªn. Mçi trang bÞ cÇn <color=yellow>4000 vµng<color>, <color=yellow>100000 ®iÓm tÝch lòy<color> vµ <color=yellow>"..g_szNeedItemName.."<color> 20!");
+	Talk(1,"BTA_Main","<color=green>"..g_sNpcName.."<color>: <enter>§æi <color=yellow>Trang bÞ T­íng qu©n<color> qu©n hµm ph¶i tõ <color=yellow>Tèng T­íng Qu©n<color> trë lªn. Mçi trang bÞ cÇn <color=yellow>2500 vµng<color>, <color=yellow>60000 ®iÓm tÝch lòy<color> vµ <color=yellow>"..g_szNeedItemName.."<color> 10!<enter> §æi <color=yellow>Trang bÞ Nguyªn so¸i <color> qu©n hµm ph¶i tõ <color=yellow>Tèng Nguyªn So¸i<color> trë lªn. Mçi trang bÞ cÇn <color=yellow>4000 vµng<color>, <color=yellow>100000 ®iÓm tÝch lòy<color> vµ <color=yellow>"..g_szNeedItemName_Soai.."<color> 5!");
 end;
 
 function BTA_WantEquip(nType)
