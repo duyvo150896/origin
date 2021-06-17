@@ -265,7 +265,7 @@ local strTalk = {
 	TaskTip("NghÜ kü muèn häc chÕ t¹o mãn vò khİ nµo råi h·y quay l¹i ®©y"..WEAPON_NPC_DATA[nType][1])
 	if GetTask(TASK_76WEAPON) ~= 4 then
 		SetTask(TASK_76WEAPON,4);
-		-- AddItem(2,2,66,5,1);--ºÚÎÙ¾«Ê¯      
+		-- AddItem(2,2,66,1,1);--ºÚÎÙ¾«Ê¯      
 		-- AddItem(2,2,67,5,1);--ÌúÏß¾«Ä¾
 		-- AddItem(2,2,68,5,1);--É½Ê¨¾«Æ¤
 		-- AddItem(2,2,69,5,1);--³àÎÙÁé·û
