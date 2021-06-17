@@ -1410,8 +1410,8 @@ C¨ quan 2 ∂i 5	0	0	0	500000	0	17	10	10	64800	πÿø®5ª˙πÿ2	ø’ ÷	1218	100				0	0	0	0
 B∂o R≠¨ng Tˆ Quang C∏c	2	0	0	10000	0	17	10	10	64800	◊œπ‚∏Û±¶œ‰	ø’ ÷																																1								
 Ti”u qu∏i Î khu v˘c bÊ sung	0	0	0	42096	8	17	10	10	90	ÃÊ≤π«¯–°π÷	ø’ ÷	558	100	80	800;880	800;880	0	0	0	0	0	300	5	9	701	2	90	612	1	10									70			18	1								
 cattle_viet	0	0	0	80000000	10	17	10	10	64400	æ≠—ÈÍÛ≈£	ø’ ÷	3000	100	80	3000;3172	3000;3172	0	30	20	30	27	400	5	18	701	2	40	602	3	20	601	3	20	604	3	20	\settings\droprate\boss\npcdropratecattle_viet.ini	61	80	1	1	18	1								
-lanhua_viet	0	0	0	20000000	100	17	10	10	64400	 ¶√≈√ÿ “—Ó√≈π≠∆Ô ÿŒ¿9	ø’ ÷	3200	100	80	3200;3500	3200;3500	0	0	36	99000	36	300	5	9	710	2	50	638	1	50							\settings\droprate\boss\npcdropratelanhua_viet.ini	10	95	8000		27	1	0		\settings\npc\boss_setting\lanhua_viet.ini					
-yingzi_viet	0	0	0	20000000	100	17	10	10	64400	—Ó—”µ¬	ø’ ÷	3200	100	80	3200;3500	3200;3500	0	0	36	99000	36	300	5	9	649	2	50	638	1	50							\settings\droprate\boss\npcdropratelanhua_viet.ini	10	95	2000		27	1	0		\settings\npc\boss_setting\yingzi_viet.ini					
+lanhua_viet	0	0	0	40000000	100	17	10	10	64400	 ¶√≈√ÿ “—Ó√≈π≠∆Ô ÿŒ¿9	ø’ ÷	3200	100	80	3200;3500	3200;3500	0	0	36	99000	36	300	5	9	710	2	50	638	1	50							\settings\droprate\boss\npcdropratelanhua_viet.ini	10	95	8000		27	1	0		\settings\npc\boss_setting\lanhua_viet.ini					
+yingzi_viet	0	0	0	30000000	100	17	10	10	64400	—Ó—”µ¬	ø’ ÷	3200	100	80	3200;3500	3200;3500	0	0	36	99000	36	300	5	9	649	2	50	638	1	50							\settings\droprate\boss\npcdropratelanhua_viet.ini	10	95	2000		27	1	0		\settings\npc\boss_setting\yingzi_viet.ini					
 Chi’m Æ≠Óc HÂng k˙	0	0	0	300000	0				129600	π•’º∆Ï÷ƒ∫Ï					0;0	0;0	0	200	40	100	70				635	20																	1								
 Chi’m Æ≠Óc Lam k˙	0	0	0	300000	0				129600	π•’º∆Ï÷ƒ¿∂					0;0	0;0	0	200	40	100	70				635	20																	1								
 ßπi k˙ thµnh m´n	0	0	0	2000000	0				129600	≥«√≈¥Û∆Ï					0;0	0;0	0	200	40	100	70				635	20																	1		0						
