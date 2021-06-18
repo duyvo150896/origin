@@ -90,7 +90,7 @@ function TuongQuanMenu()
 		"N©ng cÊp trang bÞ T­íng Qu©n thµnh Thiªn Chi T­íng Qu©n/upgrade_gen",
 --		"N©ng cÊp trang bÞ T­íng Qu©n thµnh Thiªn Chi T­íng Qu©n (100%)/upgrade_gen_100",
 --		"N©ng cÊp trang bÞ T­íng Qu©n thµnh Thiªn Chi T­íng Qu©n (100%)/ThienChiTuongQuan100Upgrade_Form",
-		-- "N©ng cÊp trang bÞ Thiªn Chi T­íng Qu©n thµnh Ngù Long T­íng Qu©n/upgrade_gen1",
+		"N©ng cÊp trang bÞ Thiªn Chi T­íng Qu©n thµnh Ngù Long T­íng Qu©n/upgrade_gen1",
 		-- "N©ng cÊp trang bÞ Thiªn Chi T­íng Qu©n thµnh Ngù Long T­íng Qu©n (100%)/upgrade_gen2",
 		-- "N©ng cÊp trang bÞ Thiªn Chi T­íng Qu©n thµnh Ngù Long T­íng Qu©n tû lÖ (100%)/upgrade_gen2_100",
 		-- "N©ng cÊp trang bÞ Thiªn Chi T­íng Qu©n thµnh Ngù Long T­íng Qu©n tû lÖ (100%)/NguLongTuongQuan100Upgrade_Form",
