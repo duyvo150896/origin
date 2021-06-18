@@ -74,10 +74,10 @@ end
 function ViemDeMenu()
 	local tbSay = {
 		"N©ng cÊp trang bÞ Tö Quang Viªm §Õ thµnh Viªm §Õ/upgrade_tq_emperor",
-		"N©ng cÊp trang bÞ Tö Quang Viªm §Õ thµnh Viªm §Õ (thµnh c«ng 100%)/upgrade_tq_emperor_100",
-		-- "N©ng cÊp trang bÞ Viªm §Õ thµnh Thiªn Chi Viªm §Õ/upgrade_emperor",
-		"N©ng cÊp trang bÞ Viªm §Õ thµnh Thiªn Chi Viªm §Õ (100%)/upgrade_thienchiviemde",
---		"N©ng cÊp Thiªn Chi Viªm §Õ thµnh B¹ch Kim Viªm §Õ/upgrade_bachkimviemde",
+		-- "N©ng cÊp trang bÞ Tö Quang Viªm §Õ thµnh Viªm §Õ (thµnh c«ng 100%)/upgrade_tq_emperor_100",
+		"N©ng cÊp trang bÞ Viªm §Õ thµnh Thiªn Chi Viªm §Õ/upgrade_emperor",
+		-- "N©ng cÊp trang bÞ Viªm §Õ thµnh Thiªn Chi Viªm §Õ (100%)/upgrade_thienchiviemde",
+		-- "N©ng cÊp Thiªn Chi Viªm §Õ thµnh B¹ch Kim Viªm §Õ/upgrade_bachkimviemde",
 		-- "N©ng cÊp Thiªn Chi Viªm §Õ thµnh B¹ch Kim Viªm §Õ (100%)/upgrade_bachkimviemde_100_Form",
 		"C¶i t¹o trang bÞ Tö Quang Viªm §Õ/upgrade_tqvd",
 		"T¹i h¹ chØ tiÖn ghÐ ngang!/gf_DoNothing"
@@ -426,12 +426,12 @@ end
 -- N©ng cÊp trang bÞ Ngù Long T­íng Qu©n
 function upgrade_gen1()
 	local tSay = {
-		"* N©ng cÊp Ngù Long T­íng Qu©n ChiÕn Kh«i (cÇn 3 Thiªn Qu¸i Th¹ch + 1 N÷ Oa Tinh Th¹ch + 1 Tèng/Liªu T­íng Qu©n ChiÕn Kh«i c­êng hãa 7 trë lªn + 300 vµng)/#do_upgrade(51,0)",
-		"* N©ng cÊp Ngù Long T­íng Qu©n ChiÕn Bµo (cÇn 3 Thiªn Qu¸i Th¹ch + 1 N÷ Oa Tinh Th¹ch + 1 Tèng/Liªu T­íng Qu©n ChiÕn Bµo c­êng hãa 7 trë lªn + 300 vµng)/#do_upgrade(52,0)",
-		"* N©ng cÊp Ngù Long T­íng Qu©n ChiÕn Trang (cÇn 3 Thiªn Qu¸i Th¹ch + 1 N÷ Oa Tinh Th¹ch + 1 Tèng/Liªu T­íng Qu©n ChiÕn Trang c­êng hãa 7 trë lªn + 300 vµng)/#do_upgrade(53,0)",
-		"* N©ng cÊp T­íng Qu©n LÖnh Bµi (cÇn 3 Thiªn Qu¸i Th¹ch + 1 N÷ Oa Tinh Th¹ch + 1 Tèng/Liªu T­íng Qu©n LÖnh Bµi  + 300 vµng)/#do_upgrade(56,0)",
-		"* N©ng cÊp T­íng Qu©n Cê LÖnh (cÇn 3 Thiªn Qu¸i Th¹ch + 1 N÷ Oa Tinh Th¹ch + 1 Tèng/Liªu T­íng Qu©n LÖnh Kú  + 300 vµng)/#do_upgrade(54,0)",
-		"* N©ng cÊp T­íng Qu©n LÖnh Phï (cÇn 3 Thiªn Qu¸i Th¹ch + 1 N÷ Oa Tinh Th¹ch + 1 Tèng/Liªu T­íng Qu©n LÖnh Phï  + 300 vµng)/#do_upgrade(55,0)",
+		"* N©ng cÊp Ngù Long T­íng Qu©n ChiÕn Kh«i (cÇn 3 Phi Yªn Th¹ch + 1 N÷ Oa Tinh Th¹ch + 1 Tèng/Liªu T­íng Qu©n ChiÕn Kh«i c­êng hãa 7 trë lªn + 300 vµng)/#do_upgrade(51,0)",
+		"* N©ng cÊp Ngù Long T­íng Qu©n ChiÕn Bµo (cÇn 3 Phi Yªn Th¹ch + 1 N÷ Oa Tinh Th¹ch + 1 Tèng/Liªu T­íng Qu©n ChiÕn Bµo c­êng hãa 7 trë lªn + 300 vµng)/#do_upgrade(52,0)",
+		"* N©ng cÊp Ngù Long T­íng Qu©n ChiÕn Trang (cÇn 3 Phi Yªn Th¹ch + 1 N÷ Oa Tinh Th¹ch + 1 Tèng/Liªu T­íng Qu©n ChiÕn Trang c­êng hãa 7 trë lªn + 300 vµng)/#do_upgrade(53,0)",
+		"* N©ng cÊp T­íng Qu©n LÖnh Bµi (cÇn 3 Phi Yªn Th¹ch + 1 N÷ Oa Tinh Th¹ch + 1 Tèng/Liªu T­íng Qu©n LÖnh Bµi  + 300 vµng)/#do_upgrade(56,0)",
+		"* N©ng cÊp T­íng Qu©n Cê LÖnh (cÇn 3 Phi Yªn Th¹ch + 1 N÷ Oa Tinh Th¹ch + 1 Tèng/Liªu T­íng Qu©n LÖnh Kú  + 300 vµng)/#do_upgrade(54,0)",
+		"* N©ng cÊp T­íng Qu©n LÖnh Phï (cÇn 3 Phi Yªn Th¹ch + 1 N÷ Oa Tinh Th¹ch + 1 Tèng/Liªu T­íng Qu©n LÖnh Phï  + 300 vµng)/#do_upgrade(55,0)",
 		"T¹i h¹ chØ tiÖn ghÐ ngang/gf_DoNothing"
 	}
 	Say(g_szNpcName.."C¸c h¹ muèn ta n©ng cÊp lo¹i trang bÞ nµo? <color=red>L­u ý: thÊt b¹i tiªu hao 3 N÷ Oa Tinh Th¹ch hoÆc 1 Thiªn Qu¸i Th¹ch vµ 300 vµng. Tû lÖ thµnh c«ng phô thuéc vµo møc c­êng hãa cña vËt phÈm.<color>",getn(tSay),tSay)
