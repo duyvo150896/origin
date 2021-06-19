@@ -569,7 +569,7 @@ function GT_GoodDrop(name, level)
 	local MAX_RANDOM = 867
 	local nArea = random(0, MAX_RANDOM)
 	local nItemIndex = 0
-	
+	Msg2Player(nArea)
 	for index, value in tBOSS_GOOD_DROP[name][level] do
 		if nArea < value[1] then
 			nItemIndex = value[2]
