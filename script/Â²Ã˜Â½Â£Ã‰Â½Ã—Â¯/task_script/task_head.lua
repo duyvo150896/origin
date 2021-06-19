@@ -71,7 +71,7 @@ tBOSS_GOOD_DROP =
 		
 		[90] = {
 			{160, 5}, -- 18%
-			{210, 11}, -- 24% 
+			{170, 11}, -- 24% 
 			{260, 7}, --30%
 		},
 	},
@@ -81,14 +81,14 @@ tBOSS_GOOD_DROP =
 			{60	, 8},
 			{160, 9},   -- 18% 
 			{220, 10}, -- 25% 
-			{235, 6},   -- 27% 
+			{250, 6},   -- 47% 
 		},
 		
 		[90] = {
 			{60 , 8},
 			{160, 9},      -- 18%
 			{220, 10},    -- 25%
-			{235, 6},      -- 27%
+			{250, 6},      -- 47%
 		},
 	},
 }
@@ -569,7 +569,7 @@ function GT_GoodDrop(name, level)
 	local MAX_RANDOM = 867
 	local nArea = random(0, MAX_RANDOM)
 	local nItemIndex = 0
-	
+	Msg2Player(nArea)
 	for index, value in tBOSS_GOOD_DROP[name][level] do
 		if nArea < value[1] then
 			nItemIndex = value[2]
