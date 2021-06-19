@@ -53,6 +53,7 @@ function main()
 	tinsert(tSay,"NhËn l¹i Ên vµ ngo¹i trang chuyÓn sinh/get_translife_item")
 	tinsert(tSay,"NhiÖm vô thu thËp ThŞt N­íng/accept_task_thonuong")	
 	tinsert(tSay,"§æi Long linh hoµn/tracelonglinhhoan")	
+	-- tinsert(tSay,"§æi thiªn kiªu lÖnh b»ng Huy Ch­¬ng Anh Hïng/doitkl")	
 	tinsert(tSay,"T¹i h¹ chØ ghĞ qua!/nothing")
 	
 	local szSay = szNpcName.."L·o nghe nãi cã mãn <color=yellow>ThŞt N­íng<color> rÊt ngon. L·o nay ®· giµ, kh«ng tiÖn ®Õn nh÷ng n¬i xa x«i ®Ó t×m thŞt n­íng. Ng­¬i cã thÓ gióp ta t×m <color=yellow>20 phÇn ThŞt N­íng<color> ®­îc hay kh«ng?"
@@ -725,6 +726,14 @@ function check_material(nType)
 		return 0
 	end		
 	return 1
+end
+
+function doitkl()
+	if GetItemCount(2,1,30499) < 10 then
+	Talk(1, "", "B¹n kh«ng mang theo ®ñ sè l­îng Hu©n Ch­¬ng Anh Hïng - 10 c¸i ®æi 1 c¸i thiªn kiªu lÖnh.")
+		return 0
+	end
+	gf_AddItemEx2({2,97,236, 1}, "Thiªn Kiªu LÖnh", "B¹ch Tiªn Sinh", "§æi Huy Ch­¬ng Anh Hïng", 0, 1)
 end
 
 function tracelonglinhhoan()
