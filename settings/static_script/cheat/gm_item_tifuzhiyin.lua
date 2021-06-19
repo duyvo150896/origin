@@ -3677,6 +3677,7 @@ function Get_Mored()
 
 		-- "NhËn Thiªn Chi Viªm §Õ/thienchiviemde",
 		-- "NhËn Viªm §Õ/viemde",
+		"NhËn Tö Quang Viªm §Õ/tuquangviemde",
 		"NhËn ®å buff/dobuffhttc",
 		-- "NhËn tö quang hiªn viªn thÇn binh/hienvienbinh",
 		"NhËn Cöu Thiªn Ngäc/cuuthienngoc",
@@ -6834,6 +6835,35 @@ end
 
 function rac()
 	AddItem(2,1,185,400);
+end
+
+function tuquangviemde()
+	if gf_Judge_Room_Weight(3, 100) ~= 1 then
+		Talk(1,"",format("Tói kh«ng ®ñ %d « trèng", 3));
+		return 0;
+	
+	end
+	local nBody 	= GetBody();
+	if nBody==1 then
+		AddItem(0,100,8051,1,1,-1,-1,-1,-1,-1,-1,-1,0);
+		AddItem(0,101,8051,1,1,-1,-1,-1,-1,-1,-1,-1,0);
+		AddItem(0,103,8051,1,1,-1,-1,-1,-1,-1,-1,-1,0);
+	end 
+	if nBody==2 then
+		AddItem(0,100,8052,1,1,-1,-1,-1,-1,-1,-1,-1,0);
+		AddItem(0,101,8052,1,1,-1,-1,-1,-1,-1,-1,-1,0);
+		AddItem(0,103,8052,1,1,-1,-1,-1,-1,-1,-1,-1,0);
+	end
+	 if nBody==3 then
+		AddItem(0,100,8053,1,1,-1,-1,-1,-1,-1,-1,-1,0);
+		AddItem(0,101,8053,1,1,-1,-1,-1,-1,-1,-1,-1,0);
+		AddItem(0,103,8053,1,1,-1,-1,-1,-1,-1,-1,-1,0);
+	 end
+	 if nBody==4 then
+		AddItem(0,100,8054,1,1,-1,-1,-1,-1,-1,-1,-1,0);
+		AddItem(0,101,8054,1,1,-1,-1,-1,-1,-1,-1,-1,0);
+		AddItem(0,103,8054,1,1,-1,-1,-1,-1,-1,-1,-1,0);
+	 end
 end
 ---
 -- SetPKFlag(0, 0)
