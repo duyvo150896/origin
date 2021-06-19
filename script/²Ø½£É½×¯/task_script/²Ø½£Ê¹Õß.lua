@@ -762,7 +762,9 @@ function ACT9_Timer()
 	end
 	
 	-- 增加一个保底的时间，10分钟一定刷9绝
-	if SWORD_BOSSSPWANED[nZone] == 0 and TC_TIMER_Count[nZone] == 2 then	-- 42 tick
+	-- if SWORD_BOSSSPWANED[nZone] == 0 and TC_TIMER_Count[nZone] == 2 then	-- 42 tick
+	if SWORD_BOSSSPWANED[nZone] == 0  then	-- 42 tick
+		Msg2Player("Ki誱 ma xu蕋 hi謓")
 		local nBossIndex = MC_CreateBoss(9)
 		MC_Del4Group(SWORD_SleepOne[nZone],0)
 		SWORD_BOSSSPWANED[nZone] = 1
