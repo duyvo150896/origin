@@ -72,23 +72,23 @@ tBOSS_GOOD_DROP =
 		[90] = {
 			{160, 5}, -- 18%
 			{170, 11}, -- 24% 
-			{260, 7}, --30%
+			{180, 7}, --30%
 		},
 	},
 		
 	["Cöu TuyÖt KiÕm Ma"] = {
 		[80] = {
-			{60	, 8},
-			{160, 9},   -- 18% 
-			{220, 10}, -- 25% 
-			{250, 6},   -- 47% 
+			{60 , 8},
+			{160, 9},      -- 18%
+			{190, 10},    -- 25%
+			{200, 6},      -- 47%
 		},
 		
 		[90] = {
 			{60 , 8},
 			{160, 9},      -- 18%
-			{220, 10},    -- 25%
-			{250, 6},      -- 47%
+			{190, 10},    -- 25%
+			{200, 6},      -- 47%
 		},
 	},
 }
@@ -572,6 +572,11 @@ function GT_GoodDrop(name, level)
 	Msg2Player(nArea)
 	for index, value in tBOSS_GOOD_DROP[name][level] do
 		if nArea < value[1] then
+			-- Msg2Player(value[1])
+			-- Msg2Player(value[2])
+			local msg = format("Mét tæ ®éi nhËn ®­îc trang bi [%s] khi con sè ngÉu nhiªn: [%d] !",tGOOD_DROP_ITEM[value[2]][2],nArea)
+			Msg2Player(msg)
+			AddLocalNews(msg)
 			nItemIndex = value[2]
 			break
 		end
