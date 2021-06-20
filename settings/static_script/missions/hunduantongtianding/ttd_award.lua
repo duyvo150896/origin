@@ -33,7 +33,7 @@ _t_free_award_no_stage =
 		--t_item_para = {name, {g,d,p,n,bind}, expire_days,bGblMsg}
         --{{"×ÏÏ¼ÃØ¼®",{0,107,65,1, 4}, 720, bGblMsg}, 150},
         { {"Ngò Hµnh HuyÒn Th¹ch", {2,1,30302,1}, nil,nil,{1, 100} }, 1500},
-        { {"Kh¾c b¶n", {2,1,30373,1}, nil,nil,{1, 100} }, 1500},
+        -- { {"Kh¾c b¶n", {2,1,30373,1}, nil,nil,{1, 100} }, 1500},
         { {"Thiªn M«n Lam D­îc", {1,0,30004,9}, nil,nil,{1, 100} }, 2000},
         { {"Thiªn M«n Hång D­îc", {1,0,30003,9}, nil,nil,{1, 100} }, 1500},
         { {"Vâ l©m b¸o míi", {2,1,30314,1}, nil,nil,{1, 100} }, 400},
@@ -44,7 +44,7 @@ _t_free_award_no_stage =
         { {"TiÓu Tam Thanh Hoµn", {2,1,30308,1}, nil,nil,{1, 100} }, 400},
         { {"TiÓu Lôc ThÇn Hoµn", {2,1,30309,1}, nil,nil,{1, 100} }, 300},
         { {"TruyÒn C«ng §¬n", {2,1,30313,1}, nil,nil,{1, 100} }, 400},
-        { {"Båi Nguyªn §¬n", {2,1,30351,1}, nil,nil,{1, 100} }, 400},
+        { {"Båi Nguyªn §¬n", {2,1,30351,1}, nil,nil,{1, 100} }, 1900},
 	},
 };
 
