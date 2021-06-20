@@ -130,9 +130,9 @@ function qrs_check()
 			nRouteCount = nRouteCount + 1;
 		end
 	end
-	if nRouteCount < 5 then
+	if nRouteCount < 4 then
 		nResult = 0;
-		msg = msg .. "\n<color=red> hÖ ph¸i trong tæ ®éi kh«ng ®ñ 5<color>\n";
+		msg = msg .. "\n<color=red> hÖ ph¸i trong tæ ®éi kh«ng ®ñ 4<color>\n";
 	end
 	if tState.count < 5 then
 		nResult = 0;
