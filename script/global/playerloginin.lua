@@ -942,6 +942,10 @@ function main(ExchangeComing)
 	ibc_PlayerLogin(); --黑道具补偿活动
 	DelNguyenTu96();
 	effchar();
+	if checkhieuboss() >= 1 then
+		CastState("state_life_max_point_add", 15000, -1, 1, 0);
+		Msg2Player("Nh薾 頲 th猰 15000 m竨")
+	end
 	-- if GetWorldPos() == 202 then
 		-- SetPKFlag(2, 0)
 	-- end
@@ -2508,4 +2512,11 @@ function GetJingMai_Reset(bTag)
 	MeridianRestore(-1);
 	PlaySound("\\sound\\sound_i016.wav");
 	SetCurrentNpcSFX(PIdx2NpcIdx(),905,0,0)
+end
+
+function checkhieuboss()
+	if GetItemCount(2,1,50008) == 1 then
+		return 1
+	end
+	return 0
 end
