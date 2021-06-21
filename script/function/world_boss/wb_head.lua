@@ -129,7 +129,11 @@ function wb_KillAward()
 		-- gf_AddItemEx2({2,1,30426, 20}, "BÔa C≠Íng H„a 14", "BOSS Th’ gÌi", "Ti™u di÷t BOSS Th’ giÌi", 0, 1)
 		-- gf_AddItemEx2({2,1,30499, 20}, "HCAH", "BOSS Th’ gÌi", "Ti™u di÷t BOSS Th’ giÌi", 0, 1)
 		-- gf_AddItemEx2({2,1,30402, 30}, "NgÚ Th∏i Th∏nh H·a", "BOSS Th’ gÌi", "Ti™u di÷t BOSS Th’ giÌi", 0, 1)
-		local msg = format("ChÛc mıng [%s] Æ∑ hoµn thµnh Æﬂn k’t li‘u %s, nhÀn Æ≠Óc %d kinh nghi÷m, %s*%d ", GetName(), wb_GetBossName() or "BOSS", 10000000, "BÔa C≠Íng H„a", 10);
+		local nRetCode, nIndex = gf_AddItemEx2({2,1,50008, 1}, "TrÔm di÷t Boss hi÷u", "BOSS Th’ gÌi", "Ti™u di÷t BOSS Th’ giÌi", 0, 1)
+		if nRetCode == 1 then
+				SetItemExpireTime(nIndex,24 * 3600);
+		end
+		local msg = format("ChÛc mıng [%s] Æ∑ hoµn thµnh Æﬂn k’t li‘u %s, nhÀn Æ≠Óc %d kinh nghi÷m, %s*%d, %s", GetName(), wb_GetBossName() or "BOSS", 10000000, "BÔa C≠Íng H„a", 10, "TrÔm di÷t Boss hi÷u");
 		Msg2Global(msg);
 		AddLocalNews(msg);
 	end
