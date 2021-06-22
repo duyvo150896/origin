@@ -10,7 +10,7 @@ Exp_Max = 3000000000
 function OnUse(nItem)
 	local tbSay = {
 	"§æi kinh nghiÖm (1 m¶nh Thiªn Cang=400,000 kinh nghiÖm)/exchange_exp",
---	"§æi Thiªn Cang LÖnh (999 m¶nh Thiªn Cang=1 Thiªn Cang LÖnh)/exchange_tgl",
+	"§æi Thiªn Cang LÖnh (999 m¶nh Thiªn Cang=1 Thiªn Cang LÖnh)/exchange_tgl",
 	"Tho¸t/nothing",
 	};
 	Say("C¸c h¹ muèn lµm g× ®ã?",getn(tbSay),tbSay);
