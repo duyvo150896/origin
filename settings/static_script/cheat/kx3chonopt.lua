@@ -95,9 +95,10 @@ function SetKX3SL_2(nType,nguhanh)
 		[162] = {"Søc m¹nh"},
 		[163] = {"Th©n ph¸p"},
 		[164] = {"Néi c«ng" },
-		[165] = {"Linh ho¹"},
+		[165] = {"Linh ho¹t"},
 		[166] = {"G©n cèt"},
 		[168]= {"Néi lùc"},
+		[170] = {"Sinh lùc"},
 	};
 
 	local tSay = {};
@@ -112,6 +113,8 @@ function SetKX3SL_2(nType,nguhanh)
 		elseif nguhanh == 7 and k == 165 then
 				i=2
 		elseif nguhanh == 8 and k == 166 then
+				i=2
+		elseif nguhanh == 9 and k == 727 then
 				i=2
 		else
 			tinsert(tSay,""..v[1].."/#SetKX3SL_3("..nType..","..defaultval..", "..k..","..nguhanh..")");
