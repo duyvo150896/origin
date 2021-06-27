@@ -114,7 +114,7 @@ function SetKX3SL_2(nType,nguhanh)
 				i=2
 		elseif nguhanh == 8 and k == 166 then
 				i=2
-		elseif nguhanh == 9 and k == 727 then
+		elseif nguhanh == 9 and k == 170 then
 				i=2
 		else
 			tinsert(tSay,""..v[1].."/#SetKX3SL_3("..nType..","..defaultval..", "..k..","..nguhanh..")");
