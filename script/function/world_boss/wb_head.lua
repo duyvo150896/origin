@@ -119,7 +119,7 @@ function wb_KillAward()
 	if GetWorldPos() == 202 then
 		AddItem(2,1,30072,1);
 	else
-		gf_Modify("Exp", 5000000);
+		gf_Modify("Exp", 50000000);
 		-- gf_AddItemEx2({2,1,30370, 5}, "TMKL", "BOSS Th? gi¨ªi", "Tiau di?t BOSS", 0, 1)
 		-- gf_AddItemEx2({2,95,204, 5}, "TCL", "BOSS Th? gi¨ªi", "Tiau di?t  BOSS", 0, 1)
 		-- gf_AddItemEx2({2,1,30458, 2}, "Tô Linh Hoµn", "BOSS ThÕ gíi", "Tiªu diÖt BOSS ThÕ giíi", 0, 1)
