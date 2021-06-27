@@ -90,6 +90,7 @@ end
 
 function SetKX3SL_2(nType,nguhanh)
 	local defaultval = 186 -- 188 -2
+	local i =1
 	local List = {
 		[162] = {"Søc m¹nh"},
 		[163] = {"Th©n ph¸p"},
@@ -102,7 +103,19 @@ function SetKX3SL_2(nType,nguhanh)
 	local tSay = {};
 	defaultval = defaultval - (nguhanh  + 1)
 	for k, v in pairs(List) do
-		tinsert(tSay,""..v[1].."/#SetKX3SL_3("..nType..","..defaultval..", "..k..","..nguhanh..")");
+		if nguhanh == 4 and k == 162 then
+				i=2
+		elseif nguhanh == 5 and k == 163 then
+				i=2
+		elseif nguhanh == 6 and k == 164 then
+				i=2
+		elseif nguhanh == 7 and k == 165 then
+				i=2
+		elseif nguhanh == 8 and k == 166 then
+				i=2
+		else
+			tinsert(tSay,""..v[1].."/#SetKX3SL_3("..nType..","..defaultval..", "..k..","..nguhanh..")");
+		end
 	end
 	
 	tinsert(tSay,"Hñy/nothing");
