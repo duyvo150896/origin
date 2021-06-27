@@ -1141,7 +1141,7 @@ BigDelItem(1,0,270,BigGetItemCount(1,0,270))
 -- BigDelItem(0,107,30033,BigGetItemCount(0,107,30033))
 -- BigDelItem(0,107,30034,BigGetItemCount(0,107,30034))
 BigDelItem(2,1,1157,BigGetItemCount(2,1,1157))
-BigDelItem(1,6,150,BigGetItemCount(1,6,150)) --bua lhl
+-- BigDelItem(1,6,150,BigGetItemCount(1,6,150)) --bua lhl
 
 -- thvs 
 -- BigDelItem(0,100,30207,BigGetItemCount(0,100,30207))
