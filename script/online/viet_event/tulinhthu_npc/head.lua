@@ -66,7 +66,7 @@ function do_something()
 end
 
 function confirm_get_award(nType)
-	local nLimit = 1
+	local nLimit = 3
 	local ratio = 1;
 	local tbAward = { --cét 1 exp, cét 2 ch©n khİ, ....
 			[1] = {2000000, 10, 1, 10, 10, 10	},
@@ -82,15 +82,16 @@ function confirm_get_award(nType)
 		}
 	local nDate = tonumber(date("%y%m%d"))
 	local nCurdate = GetTask(TSK_RESET_DATE)
-		
-	if nDate >= 130405 and nDate <= 130428 then
-		nLimit = 10
+	if GetLevel() >= 90 then
+		nLimit = 1
 	end
+	-- if nDate >= 130405 and nDate <= 130428 then
+		-- nLimit = 10
+	-- end
 	-- New server Tuy Ho
 --	if GetGlbValue(1023) == 79 then -- and nDate <= 130210
 --		nLimit = 1
 --	end
-	
 	if nDate ~= nCurdate then
 		SetTask(TSK_RESET_DATE , nDate)
 		SetTask(TSK_BTH_EXCHANGE , 0)
