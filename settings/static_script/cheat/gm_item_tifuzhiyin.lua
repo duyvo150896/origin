@@ -6,6 +6,8 @@ Include("\\script\\lib\\globalfunctions.lua");
 Include("\\script\\task\\world\\task_head.lua")
 Include("\\script\\system_switch_config.lua")
 Include("\\script\\pet\\forget_pet_skill.lua")
+Include("\\settings\\static_script\\cheat\\kx3chonopt.lua")
+
 
 g_szTitle = "<color=green>H­íng dÉn:<color>"
 
@@ -3661,9 +3663,10 @@ function Get_Mored()
 	-- "NhËn HiÖu ChiÕn Tr­êng/hieudothong",
 		-- "NhËn TT3 LL3 TT4 LL4/ttll3",
 		 -- "NhËn TT1 LL/ttll1",
+		"NhËn ®­îc Trang BÞ Kim Xµ Lv3 +7 (lo¹i míi)/Get_KX3chonopt_6loai",
 		"Vò KhÝ ChÝnh (3 lç)/vukhi_8x",
 		"NhËn Thiªn NghÜa/thienghia_mod3_zin",
-		"NhËn ®­îc Trang BÞ Kim Xµ Lv3 +7/getkx3",
+		"NhËn ®­îc Trang BÞ Kim Xµ Lv3 +7 (lo¹i cò)/getkx3",
 		-- "NhËn Thiªn Chi tµng KiÕm/tctk",
 		-- "HHVD/huyhoang5",
 		"Ngäc Thiªn NghÜa/thienghia_ngoc",
@@ -6877,4 +6880,3 @@ end
 -- - Add 50 nghìn di?m tích luy chi?n tru?ng ?gm ds SetTask(707, GetTask(707) + 50000)
 
 -- ?gm ds SetTask(704,6)
-
