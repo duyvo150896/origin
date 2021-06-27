@@ -188,6 +188,7 @@ function admin_2()
 		-- "Nhan Rac/NhanBua",
 		-- "NhËn admin Item_1/mtc",
 		-- "Kim Xa 3/Get_JinShe_admin",
+		"Bïa ®Òn bï/budenbu",
 		"NhËn Cöu ChuyÓn Håi Hån §an/cuuchuyen",
 		"\nRa khái/nothing",
 	}
@@ -6880,3 +6881,8 @@ end
 -- - Add 50 nghìn di?m tích luy chi?n tru?ng ?gm ds SetTask(707, GetTask(707) + 50000)
 
 -- ?gm ds SetTask(704,6)
+
+function budenbu()
+
+AddItem(1,6,150,1)
+end
