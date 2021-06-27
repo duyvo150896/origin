@@ -66,7 +66,7 @@ function do_something()
 end
 
 function confirm_get_award(nType)
-	local nLimit = 3
+	local nLimit = 1
 	local ratio = 1;
 	local tbAward = { --cét 1 exp, cét 2 ch©n khÝ, ....
 			[1] = {2000000, 10, 1, 10, 10, 10	},
