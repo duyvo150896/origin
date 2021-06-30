@@ -50,7 +50,6 @@ function OnUse(nItem)
             "Tiªu dïng/tieudung",
 			"Cßn l¹i/tieudung_orther",
             -- "Thiªn kiªu lÖnh (Kh«ng cã khi Open)/nhantkl",
-            -- "M¶nh b¹ch kim (Kh«ng cã khi Open)/nhanmbk",
 			"HiÖu øng nh©n vËt/#char_eff(10)",
 			-- "Hç trî ®¼ng cÊp cho t©n thñ Level 85/hotrogmer1st",
             -- "NhËn Bé DiÖu D­¬ng +7/Get_YaoYang_15",
@@ -133,6 +132,7 @@ function tieudung_orther()
 		-- "Nhan Bua Cuong Hoa/NhanBua",
           -- "N©ng cao ®¼ng cÊp chuyÓn sinh nh©n vËt/player_reborn",
 			-- "Thay ®æi h­íng Phôc Sinh/change_PhucSinh",
+            "M¶nh b¹ch kim/nhanmbk",
             "NhËn danh hiÖu/Get_Danh_Hieu2",
             "T¨ng ®iÓm nh©n vËt/Get_Diem_Char",
             "NhËn C¸c Lo¹i Nguyªn LiÖu/Get_Nguyen_Lieu",
@@ -3680,7 +3680,7 @@ function Get_Mored()
 		-- "NhËn §å Long §»ng Phông Vò/longdang",
 
 		-- "NhËn Thiªn Chi Viªm §Õ/thienchiviemde",
-		-- "NhËn Viªm §Õ/viemde",
+		"NhËn Viªm §Õ/viemde",
 		"NhËn Tö Quang Viªm §Õ/tuquangviemde",
 		"NhËn ®å buff/dobuffhttc",
 		-- "NhËn tö quang hiªn viªn thÇn binh/hienvienbinh",
@@ -4150,25 +4150,26 @@ function viemde()
 	
 	end
 	local nBody 	= GetBody();
+	local lv = 11
 	if nBody==1 then
-		AddItem(0,100,8001,1,1,-1,-1,-1,-1,-1,-1,-1,10);
-		AddItem(0,101,8001,1,1,-1,-1,-1,-1,-1,-1,-1,10);
-		AddItem(0,103,8001,1,1,3,276,-1,-1,-1,-1,-1,10);
+		AddItem(0,100,8001,1,1,-1,-1,-1,-1,-1,-1,-1,lv);
+		AddItem(0,101,8001,1,1,-1,-1,-1,-1,-1,-1,-1,lv);
+		AddItem(0,103,8001,1,1,-1,-1,-1,-1,-1,-1,-1,lv);
 	end 
 	if nBody==2 then
-		AddItem(0,100,8002,1,1,-1,-1,-1,-1,-1,-1,-1,10);
-		AddItem(0,101,8002,1,1,-1,-1,-1,-1,-1,-1,-1,10);
-		AddItem(0,103,8002,1,1,3,276,-1,-1,-1,-1,-1,10);
+		AddItem(0,100,8002,1,1,-1,-1,-1,-1,-1,-1,-1,lv);
+		AddItem(0,101,8002,1,1,-1,-1,-1,-1,-1,-1,-1,lv);
+		AddItem(0,103,8002,1,1,-1,-1,-1,-1,-1,-1,-1,lv);
 	end
 	 if nBody==3 then
-		AddItem(0,100,8003,1,1,-1,-1,-1,-1,-1,-1,-1,10);
-		AddItem(0,101,8003,1,1,-1,-1,-1,-1,-1,-1,-1,10);
-		AddItem(0,103,8003,1,1,3,276,-1,-1,-1,-1,-1,10);
+		AddItem(0,100,8003,1,1,-1,-1,-1,-1,-1,-1,-1,lv);
+		AddItem(0,101,8003,1,1,-1,-1,-1,-1,-1,-1,-1,lv);
+		AddItem(0,103,8003,1,1,-1,-1,-1,-1,-1,-1,-1,lv);
 	 end
 	 if nBody==4 then
-		AddItem(0,100,8004,1,1,-1,-1,-1,-1,-1,-1,-1,10);
-		AddItem(0,101,8004,1,1,-1,-1,-1,-1,-1,-1,-1,10);
-		AddItem(0,103,8004,1,1,3,276,-1,-1,-1,-1,-1,10);
+		AddItem(0,100,8004,1,1,-1,-1,-1,-1,-1,-1,-1,lv);
+		AddItem(0,101,8004,1,1,-1,-1,-1,-1,-1,-1,-1,lv);
+		AddItem(0,103,8004,1,1,-1,-1,-1,-1,-1,-1,-1,lv);
 	 end
 end
 
