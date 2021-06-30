@@ -51,8 +51,8 @@ function OnUse(nItem)
 			"Cßn l¹i/tieudung_orther",
             -- "Thiªn kiªu lÖnh (Kh«ng cã khi Open)/nhantkl",
 			"HiÖu øng nh©n vËt/#char_eff(10)",
-			-- "Hç trî ®¼ng cÊp cho t©n thñ Level 85/hotrogmer1st",
-            -- "NhËn Bé DiÖu D­¬ng +7/Get_YaoYang_15",
+			"Hç trî ®¼ng cÊp cho t©n thñ Level 99/hotrogmer1st",
+            "NhËn Bé DiÖu D­¬ng +7/Get_YaoYang_15",
 			-- "NgÉu nhiªn nhËn ®­îc Trang BÞ Kim Xµ Lv1 +10/Get_JinShe_1",
 --			format("%s/Process_Equip_LingTu", "NhËn Linh §å +10"),
 			-- format("%s/Process_SanJianTao", "NhËn trang søc ®eo h«ng 6 sao"),
@@ -1776,349 +1776,349 @@ function Get_YaoYang_15()
 		local nRoute	= GetPlayerRoute();
 		local nBody 	= GetBody();
 		local nLevel  = 7;
-		if nRoute == 2 and nBody ==1 then 
-				AddItem(0,100,3128,1,1,-1,-1,-1,-1,-1,-1,1,nLevel)
-				AddItem(0,101,3128,1,1,-1,-1,-1,-1,-1,-1,1,nLevel)
-				AddItem(0,103,3128,1,1,-1,-1,-1,-1,-1,-1,1,nLevel)
-				AddItem(0,3,8992,1,1,-1,-1,-1,-1,-1,-1,1,nLevel)
-		end
+		-- if nRoute == 2 and nBody ==1 then 
+				-- AddItem(0,100,3128,1,1,-1,-1,-1,-1,-1,-1,1,nLevel)
+				-- AddItem(0,101,3128,1,1,-1,-1,-1,-1,-1,-1,1,nLevel)
+				-- AddItem(0,103,3128,1,1,-1,-1,-1,-1,-1,-1,1,nLevel)
+				-- AddItem(0,3,8992,1,1,-1,-1,-1,-1,-1,-1,1,nLevel)
+		-- end
 		
-		if nRoute == 2 and nBody ==2 then 
-				AddItem(0,100,3129,1,1,-1,-1,-1,-1,-1,-1,1,nLevel)
-				AddItem(0,101,3129,1,1,-1,-1,-1,-1,-1,-1,1,nLevel)
-				AddItem(0,103,3129,1,1,-1,-1,-1,-1,-1,-1,1,nLevel)
-				AddItem(0,3,8992,1,1,-1,-1,-1,-1,-1,-1,1,nLevel)
-		end
+		-- if nRoute == 2 and nBody ==2 then 
+				-- AddItem(0,100,3129,1,1,-1,-1,-1,-1,-1,-1,1,nLevel)
+				-- AddItem(0,101,3129,1,1,-1,-1,-1,-1,-1,-1,1,nLevel)
+				-- AddItem(0,103,3129,1,1,-1,-1,-1,-1,-1,-1,1,nLevel)
+				-- AddItem(0,3,8992,1,1,-1,-1,-1,-1,-1,-1,1,nLevel)
+		-- end
 		
-		if nRoute == 3 and nBody ==1 then 
-				AddItem(0,100,3132,1,1,-1,-1,-1,-1,-1,-1,1,nLevel)
-				AddItem(0,101,3132,1,1,-1,-1,-1,-1,-1,-1,1,nLevel)
-				AddItem(0,103,3132,1,1,-1,-1,-1,-1,-1,-1,1,nLevel)
-				AddItem(0,8,8994,1,1,-1,-1,-1,-1,-1,-1,1,nLevel)
-		end
+		-- if nRoute == 3 and nBody ==1 then 
+				-- AddItem(0,100,3132,1,1,-1,-1,-1,-1,-1,-1,1,nLevel)
+				-- AddItem(0,101,3132,1,1,-1,-1,-1,-1,-1,-1,1,nLevel)
+				-- AddItem(0,103,3132,1,1,-1,-1,-1,-1,-1,-1,1,nLevel)
+				-- AddItem(0,8,8994,1,1,-1,-1,-1,-1,-1,-1,1,nLevel)
+		-- end
 		
-		if nRoute == 3 and nBody ==2 then 
-				AddItem(0,100,3133,1,1,-1,-1,-1,-1,-1,-1,1,nLevel)
-				AddItem(0,101,3133,1,1,-1,-1,-1,-1,-1,-1,1,nLevel)
-				AddItem(0,103,3133,1,1,-1,-1,-1,-1,-1,-1,1,nLevel)
-				AddItem(0,8,8994,1,1,-1,-1,-1,-1,-1,-1,1,nLevel)
-		end
+		-- if nRoute == 3 and nBody ==2 then 
+				-- AddItem(0,100,3133,1,1,-1,-1,-1,-1,-1,-1,1,nLevel)
+				-- AddItem(0,101,3133,1,1,-1,-1,-1,-1,-1,-1,1,nLevel)
+				-- AddItem(0,103,3133,1,1,-1,-1,-1,-1,-1,-1,1,nLevel)
+				-- AddItem(0,8,8994,1,1,-1,-1,-1,-1,-1,-1,1,nLevel)
+		-- end
 		
-		if nRoute == 4 and nBody ==1 then 
-				AddItem(0,100,3130,1,1,-1,-1,-1,-1,-1,-1,1,nLevel)
-				AddItem(0,101,3130,1,1,-1,-1,-1,-1,-1,-1,1,nLevel)
-				AddItem(0,103,3130,1,1,-1,-1,-1,-1,-1,-1,1,nLevel)
-				AddItem(0,0,8993,1,1,-1,-1,-1,-1,-1,-1,1,nLevel)
-		end
+		-- if nRoute == 4 and nBody ==1 then 
+				-- AddItem(0,100,3130,1,1,-1,-1,-1,-1,-1,-1,1,nLevel)
+				-- AddItem(0,101,3130,1,1,-1,-1,-1,-1,-1,-1,1,nLevel)
+				-- AddItem(0,103,3130,1,1,-1,-1,-1,-1,-1,-1,1,nLevel)
+				-- AddItem(0,0,8993,1,1,-1,-1,-1,-1,-1,-1,1,nLevel)
+		-- end
 		
-		if nRoute == 4 and nBody ==2 then 
-				AddItem(0,100,3131,1,1,-1,-1,-1,-1,-1,-1,1,nLevel)
-				AddItem(0,101,3131,1,1,-1,-1,-1,-1,-1,-1,1,nLevel)
-				AddItem(0,103,3131,1,1,-1,-1,-1,-1,-1,-1,1,nLevel)
-				AddItem(0,0,8993,1,1,-1,-1,-1,-1,-1,-1,1,nLevel)
-		end
+		-- if nRoute == 4 and nBody ==2 then 
+				-- AddItem(0,100,3131,1,1,-1,-1,-1,-1,-1,-1,1,nLevel)
+				-- AddItem(0,101,3131,1,1,-1,-1,-1,-1,-1,-1,1,nLevel)
+				-- AddItem(0,103,3131,1,1,-1,-1,-1,-1,-1,-1,1,nLevel)
+				-- AddItem(0,0,8993,1,1,-1,-1,-1,-1,-1,-1,1,nLevel)
+		-- end
 		
-		if nRoute == 6 and nBody ==1 then 
-				AddItem(0,100,3134,1,1,-1,-1,-1,-1,-1,-1,1,nLevel)
-				AddItem(0,101,3134,1,1,-1,-1,-1,-1,-1,-1,1,nLevel)
-				AddItem(0,103,3134,1,1,-1,-1,-1,-1,-1,-1,1,nLevel)
-				AddItem(0,1,8995,1,1,-1,-1,-1,-1,-1,-1,1,nLevel)
-		end
+		-- if nRoute == 6 and nBody ==1 then 
+				-- AddItem(0,100,3134,1,1,-1,-1,-1,-1,-1,-1,1,nLevel)
+				-- AddItem(0,101,3134,1,1,-1,-1,-1,-1,-1,-1,1,nLevel)
+				-- AddItem(0,103,3134,1,1,-1,-1,-1,-1,-1,-1,1,nLevel)
+				-- AddItem(0,1,8995,1,1,-1,-1,-1,-1,-1,-1,1,nLevel)
+		-- end
 		
-		if nRoute == 6 and nBody ==2 then 
-				AddItem(0,100,3135,1,1,-1,-1,-1,-1,-1,-1,1,nLevel)
-				AddItem(0,101,3135,1,1,-1,-1,-1,-1,-1,-1,1,nLevel)
-				AddItem(0,103,3135,1,1,-1,-1,-1,-1,-1,-1,1,nLevel)
-				AddItem(0,1,8995,1,1,-1,-1,-1,-1,-1,-1,1,nLevel)
-		end
+		-- if nRoute == 6 and nBody ==2 then 
+				-- AddItem(0,100,3135,1,1,-1,-1,-1,-1,-1,-1,1,nLevel)
+				-- AddItem(0,101,3135,1,1,-1,-1,-1,-1,-1,-1,1,nLevel)
+				-- AddItem(0,103,3135,1,1,-1,-1,-1,-1,-1,-1,1,nLevel)
+				-- AddItem(0,1,8995,1,1,-1,-1,-1,-1,-1,-1,1,nLevel)
+		-- end
 		
-		if nRoute == 6 and nBody ==3 then 
-				AddItem(0,100,3136,1,1,-1,-1,-1,-1,-1,-1,1,nLevel)
-				AddItem(0,101,3136,1,1,-1,-1,-1,-1,-1,-1,1,nLevel)
-				AddItem(0,103,3136,1,1,-1,-1,-1,-1,-1,-1,1,nLevel)
-				AddItem(0,1,8995,1,1,-1,-1,-1,-1,-1,-1,1,nLevel)
-		end
+		-- if nRoute == 6 and nBody ==3 then 
+				-- AddItem(0,100,3136,1,1,-1,-1,-1,-1,-1,-1,1,nLevel)
+				-- AddItem(0,101,3136,1,1,-1,-1,-1,-1,-1,-1,1,nLevel)
+				-- AddItem(0,103,3136,1,1,-1,-1,-1,-1,-1,-1,1,nLevel)
+				-- AddItem(0,1,8995,1,1,-1,-1,-1,-1,-1,-1,1,nLevel)
+		-- end
 		
-		if nRoute == 6 and nBody ==4 then 
-				AddItem(0,100,3137,1,1,-1,-1,-1,-1,-1,-1,1,nLevel)
-				AddItem(0,101,3137,1,1,-1,-1,-1,-1,-1,-1,1,nLevel)
-				AddItem(0,103,3137,1,1,-1,-1,-1,-1,-1,-1,1,nLevel)
-				AddItem(0,1,8995,1,1,-1,-1,-1,-1,-1,-1,1,nLevel)
-		end
+		-- if nRoute == 6 and nBody ==4 then 
+				-- AddItem(0,100,3137,1,1,-1,-1,-1,-1,-1,-1,1,nLevel)
+				-- AddItem(0,101,3137,1,1,-1,-1,-1,-1,-1,-1,1,nLevel)
+				-- AddItem(0,103,3137,1,1,-1,-1,-1,-1,-1,-1,1,nLevel)
+				-- AddItem(0,1,8995,1,1,-1,-1,-1,-1,-1,-1,1,nLevel)
+		-- end
 		
-		if nRoute == 8 and nBody ==3 then 
-				AddItem(0,100,3138,1,1,-1,-1,-1,-1,-1,-1,1,nLevel)
-				AddItem(0,101,3138,1,1,-1,-1,-1,-1,-1,-1,1,nLevel)
-				AddItem(0,103,3138,1,1,-1,-1,-1,-1,-1,-1,1,nLevel)
-				AddItem(0,2,8996,1,1,-1,-1,-1,-1,-1,-1,1,nLevel)
-		end
+		-- if nRoute == 8 and nBody ==3 then 
+				-- AddItem(0,100,3138,1,1,-1,-1,-1,-1,-1,-1,1,nLevel)
+				-- AddItem(0,101,3138,1,1,-1,-1,-1,-1,-1,-1,1,nLevel)
+				-- AddItem(0,103,3138,1,1,-1,-1,-1,-1,-1,-1,1,nLevel)
+				-- AddItem(0,2,8996,1,1,-1,-1,-1,-1,-1,-1,1,nLevel)
+		-- end
 		
-		if nRoute == 8 and nBody ==4 then 
-				AddItem(0,100,3139,1,1,-1,-1,-1,-1,-1,-1,1,nLevel)
-				AddItem(0,101,3139,1,1,-1,-1,-1,-1,-1,-1,1,nLevel)
-				AddItem(0,103,3139,1,1,-1,-1,-1,-1,-1,-1,1,nLevel)
-				AddItem(0,2,8996,1,1,-1,-1,-1,-1,-1,-1,1,nLevel)
-		end
+		-- if nRoute == 8 and nBody ==4 then 
+				-- AddItem(0,100,3139,1,1,-1,-1,-1,-1,-1,-1,1,nLevel)
+				-- AddItem(0,101,3139,1,1,-1,-1,-1,-1,-1,-1,1,nLevel)
+				-- AddItem(0,103,3139,1,1,-1,-1,-1,-1,-1,-1,1,nLevel)
+				-- AddItem(0,2,8996,1,1,-1,-1,-1,-1,-1,-1,1,nLevel)
+		-- end
 
-		if nRoute == 9 and nBody ==3 then 
-				AddItem(0,100,3140,1,1,-1,-1,-1,-1,-1,-1,1,nLevel)
-				AddItem(0,101,3140,1,1,-1,-1,-1,-1,-1,-1,1,nLevel)
-				AddItem(0,103,3140,1,1,-1,-1,-1,-1,-1,-1,1,nLevel)
-				AddItem(0,10,8997,1,1,-1,-1,-1,-1,-1,-1,1,nLevel)
-		end
+		-- if nRoute == 9 and nBody ==3 then 
+				-- AddItem(0,100,3140,1,1,-1,-1,-1,-1,-1,-1,1,nLevel)
+				-- AddItem(0,101,3140,1,1,-1,-1,-1,-1,-1,-1,1,nLevel)
+				-- AddItem(0,103,3140,1,1,-1,-1,-1,-1,-1,-1,1,nLevel)
+				-- AddItem(0,10,8997,1,1,-1,-1,-1,-1,-1,-1,1,nLevel)
+		-- end
 		
-		if nRoute == 9 and nBody ==4 then 
-				AddItem(0,100,3141,1,1,-1,-1,-1,-1,-1,-1,1,nLevel)
-				AddItem(0,101,3141,1,1,-1,-1,-1,-1,-1,-1,1,nLevel)
-				AddItem(0,103,3141,1,1,-1,-1,-1,-1,-1,-1,1,nLevel)
-				AddItem(0,10,8997,1,1,-1,-1,-1,-1,-1,-1,1,nLevel)
-		end
+		-- if nRoute == 9 and nBody ==4 then 
+				-- AddItem(0,100,3141,1,1,-1,-1,-1,-1,-1,-1,1,nLevel)
+				-- AddItem(0,101,3141,1,1,-1,-1,-1,-1,-1,-1,1,nLevel)
+				-- AddItem(0,103,3141,1,1,-1,-1,-1,-1,-1,-1,1,nLevel)
+				-- AddItem(0,10,8997,1,1,-1,-1,-1,-1,-1,-1,1,nLevel)
+		-- end
 		
-		if nRoute == 11 and nBody ==1 then 
-				AddItem(0,100,3142,1,1,-1,-1,-1,-1,-1,-1,1,nLevel)
-				AddItem(0,101,3142,1,1,-1,-1,-1,-1,-1,-1,1,nLevel)
-				AddItem(0,103,3142,1,1,-1,-1,-1,-1,-1,-1,1,nLevel)
-				AddItem(0,0,8998,1,1,-1,-1,-1,-1,-1,-1,1,nLevel)
-		end
-		if nRoute == 11 and nBody ==2 then 
-				AddItem(0,100,3143,1,1,-1,-1,-1,-1,-1,-1,1,nLevel)
-				AddItem(0,101,3143,1,1,-1,-1,-1,-1,-1,-1,1,nLevel)
-				AddItem(0,103,3143,1,1,-1,-1,-1,-1,-1,-1,1,nLevel)
-				AddItem(0,0,8998,1,1,-1,-1,-1,-1,-1,-1,1,nLevel)
-		end
+		-- if nRoute == 11 and nBody ==1 then 
+				-- AddItem(0,100,3142,1,1,-1,-1,-1,-1,-1,-1,1,nLevel)
+				-- AddItem(0,101,3142,1,1,-1,-1,-1,-1,-1,-1,1,nLevel)
+				-- AddItem(0,103,3142,1,1,-1,-1,-1,-1,-1,-1,1,nLevel)
+				-- AddItem(0,0,8998,1,1,-1,-1,-1,-1,-1,-1,1,nLevel)
+		-- end
+		-- if nRoute == 11 and nBody ==2 then 
+				-- AddItem(0,100,3143,1,1,-1,-1,-1,-1,-1,-1,1,nLevel)
+				-- AddItem(0,101,3143,1,1,-1,-1,-1,-1,-1,-1,1,nLevel)
+				-- AddItem(0,103,3143,1,1,-1,-1,-1,-1,-1,-1,1,nLevel)
+				-- AddItem(0,0,8998,1,1,-1,-1,-1,-1,-1,-1,1,nLevel)
+		-- end
 		
-		if nRoute == 11 and nBody ==3 then 
-				AddItem(0,100,3144,1,1,-1,-1,-1,-1,-1,-1,1,nLevel)
-				AddItem(0,101,3144,1,1,-1,-1,-1,-1,-1,-1,1,nLevel)
-				AddItem(0,103,3144,1,1,-1,-1,-1,-1,-1,-1,1,nLevel)
-				AddItem(0,0,8998,1,1,-1,-1,-1,-1,-1,-1,1,nLevel)
-		end
-		if nRoute == 11 and nBody ==4 then 
-				AddItem(0,100,3145,1,1,-1,-1,-1,-1,-1,-1,1,nLevel)
-				AddItem(0,101,3145,1,1,-1,-1,-1,-1,-1,-1,1,nLevel)
-				AddItem(0,103,3145,1,1,-1,-1,-1,-1,-1,-1,1,nLevel)
-				AddItem(0,0,8998,1,1,-1,-1,-1,-1,-1,-1,1,nLevel)
-		end
+		-- if nRoute == 11 and nBody ==3 then 
+				-- AddItem(0,100,3144,1,1,-1,-1,-1,-1,-1,-1,1,nLevel)
+				-- AddItem(0,101,3144,1,1,-1,-1,-1,-1,-1,-1,1,nLevel)
+				-- AddItem(0,103,3144,1,1,-1,-1,-1,-1,-1,-1,1,nLevel)
+				-- AddItem(0,0,8998,1,1,-1,-1,-1,-1,-1,-1,1,nLevel)
+		-- end
+		-- if nRoute == 11 and nBody ==4 then 
+				-- AddItem(0,100,3145,1,1,-1,-1,-1,-1,-1,-1,1,nLevel)
+				-- AddItem(0,101,3145,1,1,-1,-1,-1,-1,-1,-1,1,nLevel)
+				-- AddItem(0,103,3145,1,1,-1,-1,-1,-1,-1,-1,1,nLevel)
+				-- AddItem(0,0,8998,1,1,-1,-1,-1,-1,-1,-1,1,nLevel)
+		-- end
 
-		if nRoute == 12 and nBody ==1 then 
-				AddItem(0,100,3146,1,1,-1,-1,-1,-1,-1,-1,1,nLevel)
-				AddItem(0,101,3146,1,1,-1,-1,-1,-1,-1,-1,1,nLevel)
-				AddItem(0,103,3146,1,1,-1,-1,-1,-1,-1,-1,1,nLevel)
-				AddItem(0,5,8999,1,1,-1,-1,-1,-1,-1,-1,1,nLevel)
-		end
-		if nRoute == 12 and nBody ==2 then 
-				AddItem(0,100,3147,1,1,-1,-1,-1,-1,-1,-1,1,nLevel)
-				AddItem(0,101,3147,1,1,-1,-1,-1,-1,-1,-1,1,nLevel)
-				AddItem(0,103,3147,1,1,-1,-1,-1,-1,-1,-1,1,nLevel)
-				AddItem(0,5,8999,1,1,-1,-1,-1,-1,-1,-1,1,nLevel)
-		end
+		-- if nRoute == 12 and nBody ==1 then 
+				-- AddItem(0,100,3146,1,1,-1,-1,-1,-1,-1,-1,1,nLevel)
+				-- AddItem(0,101,3146,1,1,-1,-1,-1,-1,-1,-1,1,nLevel)
+				-- AddItem(0,103,3146,1,1,-1,-1,-1,-1,-1,-1,1,nLevel)
+				-- AddItem(0,5,8999,1,1,-1,-1,-1,-1,-1,-1,1,nLevel)
+		-- end
+		-- if nRoute == 12 and nBody ==2 then 
+				-- AddItem(0,100,3147,1,1,-1,-1,-1,-1,-1,-1,1,nLevel)
+				-- AddItem(0,101,3147,1,1,-1,-1,-1,-1,-1,-1,1,nLevel)
+				-- AddItem(0,103,3147,1,1,-1,-1,-1,-1,-1,-1,1,nLevel)
+				-- AddItem(0,5,8999,1,1,-1,-1,-1,-1,-1,-1,1,nLevel)
+		-- end
 		
-		if nRoute == 12 and nBody ==3 then 
-				AddItem(0,100,3148,1,1,-1,-1,-1,-1,-1,-1,1,nLevel)
-				AddItem(0,101,3148,1,1,-1,-1,-1,-1,-1,-1,1,nLevel)
-				AddItem(0,103,3148,1,1,-1,-1,-1,-1,-1,-1,1,nLevel)
-				AddItem(0,5,8999,1,1,-1,-1,-1,-1,-1,-1,1,nLevel)
-		end
-		if nRoute == 12 and nBody ==4 then 
-				AddItem(0,100,3149,1,1,-1,-1,-1,-1,-1,-1,1,nLevel)
-				AddItem(0,101,3149,1,1,-1,-1,-1,-1,-1,-1,1,nLevel)
-				AddItem(0,103,3149,1,1,-1,-1,-1,-1,-1,-1,1,nLevel)
-				AddItem(0,5,8999,1,1,-1,-1,-1,-1,-1,-1,1,nLevel)
-		end
+		-- if nRoute == 12 and nBody ==3 then 
+				-- AddItem(0,100,3148,1,1,-1,-1,-1,-1,-1,-1,1,nLevel)
+				-- AddItem(0,101,3148,1,1,-1,-1,-1,-1,-1,-1,1,nLevel)
+				-- AddItem(0,103,3148,1,1,-1,-1,-1,-1,-1,-1,1,nLevel)
+				-- AddItem(0,5,8999,1,1,-1,-1,-1,-1,-1,-1,1,nLevel)
+		-- end
+		-- if nRoute == 12 and nBody ==4 then 
+				-- AddItem(0,100,3149,1,1,-1,-1,-1,-1,-1,-1,1,nLevel)
+				-- AddItem(0,101,3149,1,1,-1,-1,-1,-1,-1,-1,1,nLevel)
+				-- AddItem(0,103,3149,1,1,-1,-1,-1,-1,-1,-1,1,nLevel)
+				-- AddItem(0,5,8999,1,1,-1,-1,-1,-1,-1,-1,1,nLevel)
+		-- end
 		
-		if nRoute == 14 and nBody ==1 then 
-				AddItem(0,100,3150,1,1,-1,-1,-1,-1,-1,-1,1,nLevel)
-				AddItem(0,101,3150,1,1,-1,-1,-1,-1,-1,-1,1,nLevel)
-				AddItem(0,103,3150,1,1,-1,-1,-1,-1,-1,-1,1,nLevel)
-				AddItem(0,2,9000,1,1,-1,-1,-1,-1,-1,-1,1,nLevel)
-		end
-		if nRoute == 14 and nBody ==2 then 
-				AddItem(0,100,3151,1,1,-1,-1,-1,-1,-1,-1,1,nLevel)
-				AddItem(0,101,3151,1,1,-1,-1,-1,-1,-1,-1,1,nLevel)
-				AddItem(0,103,3151,1,1,-1,-1,-1,-1,-1,-1,1,nLevel)
-				AddItem(0,2,9000,1,1,-1,-1,-1,-1,-1,-1,1,nLevel)
-		end
+		-- if nRoute == 14 and nBody ==1 then 
+				-- AddItem(0,100,3150,1,1,-1,-1,-1,-1,-1,-1,1,nLevel)
+				-- AddItem(0,101,3150,1,1,-1,-1,-1,-1,-1,-1,1,nLevel)
+				-- AddItem(0,103,3150,1,1,-1,-1,-1,-1,-1,-1,1,nLevel)
+				-- AddItem(0,2,9000,1,1,-1,-1,-1,-1,-1,-1,1,nLevel)
+		-- end
+		-- if nRoute == 14 and nBody ==2 then 
+				-- AddItem(0,100,3151,1,1,-1,-1,-1,-1,-1,-1,1,nLevel)
+				-- AddItem(0,101,3151,1,1,-1,-1,-1,-1,-1,-1,1,nLevel)
+				-- AddItem(0,103,3151,1,1,-1,-1,-1,-1,-1,-1,1,nLevel)
+				-- AddItem(0,2,9000,1,1,-1,-1,-1,-1,-1,-1,1,nLevel)
+		-- end
 		
-		if nRoute == 14 and nBody ==3 then 
-				AddItem(0,100,3152,1,1,-1,-1,-1,-1,-1,-1,1,nLevel)
-				AddItem(0,101,3152,1,1,-1,-1,-1,-1,-1,-1,1,nLevel)
-				AddItem(0,103,3152,1,1,-1,-1,-1,-1,-1,-1,1,nLevel)
-				AddItem(0,2,9000,1,1,-1,-1,-1,-1,-1,-1,1,nLevel)
-		end
-		if nRoute == 14 and nBody ==4 then 
-				AddItem(0,100,3153,1,1,-1,-1,-1,-1,-1,-1,1,nLevel)
-				AddItem(0,101,3153,1,1,-1,-1,-1,-1,-1,-1,1,nLevel)
-				AddItem(0,103,3153,1,1,-1,-1,-1,-1,-1,-1,1,nLevel)
-				AddItem(0,2,9000,1,1,-1,-1,-1,-1,-1,-1,1,nLevel)
-		end
+		-- if nRoute == 14 and nBody ==3 then 
+				-- AddItem(0,100,3152,1,1,-1,-1,-1,-1,-1,-1,1,nLevel)
+				-- AddItem(0,101,3152,1,1,-1,-1,-1,-1,-1,-1,1,nLevel)
+				-- AddItem(0,103,3152,1,1,-1,-1,-1,-1,-1,-1,1,nLevel)
+				-- AddItem(0,2,9000,1,1,-1,-1,-1,-1,-1,-1,1,nLevel)
+		-- end
+		-- if nRoute == 14 and nBody ==4 then 
+				-- AddItem(0,100,3153,1,1,-1,-1,-1,-1,-1,-1,1,nLevel)
+				-- AddItem(0,101,3153,1,1,-1,-1,-1,-1,-1,-1,1,nLevel)
+				-- AddItem(0,103,3153,1,1,-1,-1,-1,-1,-1,-1,1,nLevel)
+				-- AddItem(0,2,9000,1,1,-1,-1,-1,-1,-1,-1,1,nLevel)
+		-- end
 		
-		if nRoute == 15 and nBody ==1 then 
-				AddItem(0,100,3154,1,1,-1,-1,-1,-1,-1,-1,1,nLevel)
-				AddItem(0,101,3154,1,1,-1,-1,-1,-1,-1,-1,1,nLevel)
-				AddItem(0,103,3154,1,1,-1,-1,-1,-1,-1,-1,1,nLevel)
-				AddItem(0,9,9001,1,1,-1,-1,-1,-1,-1,-1,1,nLevel)
-		end
-		if nRoute == 15 and nBody ==2 then 
-				AddItem(0,100,3155,1,1,-1,-1,-1,-1,-1,-1,1,nLevel)
-				AddItem(0,101,3155,1,1,-1,-1,-1,-1,-1,-1,1,nLevel)
-				AddItem(0,103,3155,1,1,-1,-1,-1,-1,-1,-1,1,nLevel)
-				AddItem(0,9,9001,1,1,-1,-1,-1,-1,-1,-1,1,nLevel)
-		end
+		-- if nRoute == 15 and nBody ==1 then 
+				-- AddItem(0,100,3154,1,1,-1,-1,-1,-1,-1,-1,1,nLevel)
+				-- AddItem(0,101,3154,1,1,-1,-1,-1,-1,-1,-1,1,nLevel)
+				-- AddItem(0,103,3154,1,1,-1,-1,-1,-1,-1,-1,1,nLevel)
+				-- AddItem(0,9,9001,1,1,-1,-1,-1,-1,-1,-1,1,nLevel)
+		-- end
+		-- if nRoute == 15 and nBody ==2 then 
+				-- AddItem(0,100,3155,1,1,-1,-1,-1,-1,-1,-1,1,nLevel)
+				-- AddItem(0,101,3155,1,1,-1,-1,-1,-1,-1,-1,1,nLevel)
+				-- AddItem(0,103,3155,1,1,-1,-1,-1,-1,-1,-1,1,nLevel)
+				-- AddItem(0,9,9001,1,1,-1,-1,-1,-1,-1,-1,1,nLevel)
+		-- end
 		
-		if nRoute == 15 and nBody ==3 then 
-				AddItem(0,100,3156,1,1,-1,-1,-1,-1,-1,-1,1,nLevel)
-				AddItem(0,101,3156,1,1,-1,-1,-1,-1,-1,-1,1,nLevel)
-				AddItem(0,103,3156,1,1,-1,-1,-1,-1,-1,-1,1,nLevel)
-				AddItem(0,9,9001,1,1,-1,-1,-1,-1,-1,-1,1,nLevel)
-		end
-		if nRoute == 15 and nBody ==4 then 
-				AddItem(0,100,3157,1,1,-1,-1,-1,-1,-1,-1,1,nLevel)
-				AddItem(0,101,3157,1,1,-1,-1,-1,-1,-1,-1,1,nLevel)
-				AddItem(0,103,3157,1,1,-1,-1,-1,-1,-1,-1,1,nLevel)
-				AddItem(0,9,9001,1,1,-1,-1,-1,-1,-1,-1,1,nLevel)
-		end
+		-- if nRoute == 15 and nBody ==3 then 
+				-- AddItem(0,100,3156,1,1,-1,-1,-1,-1,-1,-1,1,nLevel)
+				-- AddItem(0,101,3156,1,1,-1,-1,-1,-1,-1,-1,1,nLevel)
+				-- AddItem(0,103,3156,1,1,-1,-1,-1,-1,-1,-1,1,nLevel)
+				-- AddItem(0,9,9001,1,1,-1,-1,-1,-1,-1,-1,1,nLevel)
+		-- end
+		-- if nRoute == 15 and nBody ==4 then 
+				-- AddItem(0,100,3157,1,1,-1,-1,-1,-1,-1,-1,1,nLevel)
+				-- AddItem(0,101,3157,1,1,-1,-1,-1,-1,-1,-1,1,nLevel)
+				-- AddItem(0,103,3157,1,1,-1,-1,-1,-1,-1,-1,1,nLevel)
+				-- AddItem(0,9,9001,1,1,-1,-1,-1,-1,-1,-1,1,nLevel)
+		-- end
 		
-		if nRoute == 17 and nBody ==1 then 
-				AddItem(0,100,3158,1,1,-1,-1,-1,-1,-1,-1,1,nLevel)
-				AddItem(0,101,3158,1,1,-1,-1,-1,-1,-1,-1,1,nLevel)
-				AddItem(0,103,3158,1,1,-1,-1,-1,-1,-1,-1,1,nLevel)
-				AddItem(0,6,9002,1,1,-1,-1,-1,-1,-1,-1,1,nLevel)
-		end
-		if nRoute == 17 and nBody ==2 then 
-				AddItem(0,100,3159,1,1,-1,-1,-1,-1,-1,-1,1,nLevel)
-				AddItem(0,101,3159,1,1,-1,-1,-1,-1,-1,-1,1,nLevel)
-				AddItem(0,103,3159,1,1,-1,-1,-1,-1,-1,-1,1,nLevel)
-				AddItem(0,6,9002,1,1,-1,-1,-1,-1,-1,-1,1,nLevel)
-		end
+		-- if nRoute == 17 and nBody ==1 then 
+				-- AddItem(0,100,3158,1,1,-1,-1,-1,-1,-1,-1,1,nLevel)
+				-- AddItem(0,101,3158,1,1,-1,-1,-1,-1,-1,-1,1,nLevel)
+				-- AddItem(0,103,3158,1,1,-1,-1,-1,-1,-1,-1,1,nLevel)
+				-- AddItem(0,6,9002,1,1,-1,-1,-1,-1,-1,-1,1,nLevel)
+		-- end
+		-- if nRoute == 17 and nBody ==2 then 
+				-- AddItem(0,100,3159,1,1,-1,-1,-1,-1,-1,-1,1,nLevel)
+				-- AddItem(0,101,3159,1,1,-1,-1,-1,-1,-1,-1,1,nLevel)
+				-- AddItem(0,103,3159,1,1,-1,-1,-1,-1,-1,-1,1,nLevel)
+				-- AddItem(0,6,9002,1,1,-1,-1,-1,-1,-1,-1,1,nLevel)
+		-- end
 		
-		if nRoute == 17 and nBody ==3 then 
-				AddItem(0,100,3160,1,1,-1,-1,-1,-1,-1,-1,1,nLevel)
-				AddItem(0,101,3160,1,1,-1,-1,-1,-1,-1,-1,1,nLevel)
-				AddItem(0,103,3160,1,1,-1,-1,-1,-1,-1,-1,1,nLevel)
-				AddItem(0,6,9002,1,1,-1,-1,-1,-1,-1,-1,1,nLevel)
-		end
-		if nRoute == 17 and nBody ==4 then 
-				AddItem(0,100,3161,1,1,-1,-1,-1,-1,-1,-1,1,nLevel)
-				AddItem(0,101,3161,1,1,-1,-1,-1,-1,-1,-1,1,nLevel)
-				AddItem(0,103,3161,1,1,-1,-1,-1,-1,-1,-1,1,nLevel)
-				AddItem(0,6,9002,1,1,-1,-1,-1,-1,-1,-1,1,nLevel)
-		end
+		-- if nRoute == 17 and nBody ==3 then 
+				-- AddItem(0,100,3160,1,1,-1,-1,-1,-1,-1,-1,1,nLevel)
+				-- AddItem(0,101,3160,1,1,-1,-1,-1,-1,-1,-1,1,nLevel)
+				-- AddItem(0,103,3160,1,1,-1,-1,-1,-1,-1,-1,1,nLevel)
+				-- AddItem(0,6,9002,1,1,-1,-1,-1,-1,-1,-1,1,nLevel)
+		-- end
+		-- if nRoute == 17 and nBody ==4 then 
+				-- AddItem(0,100,3161,1,1,-1,-1,-1,-1,-1,-1,1,nLevel)
+				-- AddItem(0,101,3161,1,1,-1,-1,-1,-1,-1,-1,1,nLevel)
+				-- AddItem(0,103,3161,1,1,-1,-1,-1,-1,-1,-1,1,nLevel)
+				-- AddItem(0,6,9002,1,1,-1,-1,-1,-1,-1,-1,1,nLevel)
+		-- end
 
-		if nRoute == 18 and nBody ==1 then 
-				AddItem(0,100,3162,1,1,-1,-1,-1,-1,-1,-1,1,nLevel)
-				AddItem(0,101,3162,1,1,-1,-1,-1,-1,-1,-1,1,nLevel)
-				AddItem(0,103,3162,1,1,-1,-1,-1,-1,-1,-1,1,nLevel)
-				AddItem(0,4,9003,1,1,-1,-1,-1,-1,-1,-1,1,nLevel)
-		end
-		if nRoute == 18 and nBody ==2 then 
-				AddItem(0,100,3163,1,1,-1,-1,-1,-1,-1,-1,1,nLevel)
-				AddItem(0,101,3163,1,1,-1,-1,-1,-1,-1,-1,1,nLevel)
-				AddItem(0,103,3163,1,1,-1,-1,-1,-1,-1,-1,1,nLevel)
-				AddItem(0,4,9003,1,1,-1,-1,-1,-1,-1,-1,1,nLevel)
-		end
+		-- if nRoute == 18 and nBody ==1 then 
+				-- AddItem(0,100,3162,1,1,-1,-1,-1,-1,-1,-1,1,nLevel)
+				-- AddItem(0,101,3162,1,1,-1,-1,-1,-1,-1,-1,1,nLevel)
+				-- AddItem(0,103,3162,1,1,-1,-1,-1,-1,-1,-1,1,nLevel)
+				-- AddItem(0,4,9003,1,1,-1,-1,-1,-1,-1,-1,1,nLevel)
+		-- end
+		-- if nRoute == 18 and nBody ==2 then 
+				-- AddItem(0,100,3163,1,1,-1,-1,-1,-1,-1,-1,1,nLevel)
+				-- AddItem(0,101,3163,1,1,-1,-1,-1,-1,-1,-1,1,nLevel)
+				-- AddItem(0,103,3163,1,1,-1,-1,-1,-1,-1,-1,1,nLevel)
+				-- AddItem(0,4,9003,1,1,-1,-1,-1,-1,-1,-1,1,nLevel)
+		-- end
 		
-		if nRoute == 18 and nBody ==3 then 
-				AddItem(0,100,3164,1,1,-1,-1,-1,-1,-1,-1,1,nLevel)
-				AddItem(0,101,3164,1,1,-1,-1,-1,-1,-1,-1,1,nLevel)
-				AddItem(0,103,3164,1,1,-1,-1,-1,-1,-1,-1,1,nLevel)
-				AddItem(0,4,9003,1,1,-1,-1,-1,-1,-1,-1,1,nLevel)
-		end
-		if nRoute == 18 and nBody ==4 then 
-				AddItem(0,100,3165,1,1,-1,-1,-1,-1,-1,-1,1,nLevel)
-				AddItem(0,101,3165,1,1,-1,-1,-1,-1,-1,-1,1,nLevel)
-				AddItem(0,103,3165,1,1,-1,-1,-1,-1,-1,-1,1,nLevel)
-				AddItem(0,4,9003,1,1,-1,-1,-1,-1,-1,-1,1,nLevel)
-		end
+		-- if nRoute == 18 and nBody ==3 then 
+				-- AddItem(0,100,3164,1,1,-1,-1,-1,-1,-1,-1,1,nLevel)
+				-- AddItem(0,101,3164,1,1,-1,-1,-1,-1,-1,-1,1,nLevel)
+				-- AddItem(0,103,3164,1,1,-1,-1,-1,-1,-1,-1,1,nLevel)
+				-- AddItem(0,4,9003,1,1,-1,-1,-1,-1,-1,-1,1,nLevel)
+		-- end
+		-- if nRoute == 18 and nBody ==4 then 
+				-- AddItem(0,100,3165,1,1,-1,-1,-1,-1,-1,-1,1,nLevel)
+				-- AddItem(0,101,3165,1,1,-1,-1,-1,-1,-1,-1,1,nLevel)
+				-- AddItem(0,103,3165,1,1,-1,-1,-1,-1,-1,-1,1,nLevel)
+				-- AddItem(0,4,9003,1,1,-1,-1,-1,-1,-1,-1,1,nLevel)
+		-- end
 
-		if nRoute == 20 and nBody ==1 then 
-				AddItem(0,100,3166,1,1,-1,-1,-1,-1,-1,-1,1,nLevel)
-				AddItem(0,101,3166,1,1,-1,-1,-1,-1,-1,-1,1,nLevel)
-				AddItem(0,103,3166,1,1,-1,-1,-1,-1,-1,-1,1,nLevel)
-				AddItem(0,7,9004,1,1,-1,-1,-1,-1,-1,-1,1,nLevel)
-		end
-		if nRoute == 20 and nBody ==2 then 
-				AddItem(0,100,3167,1,1,-1,-1,-1,-1,-1,-1,1,nLevel)
-				AddItem(0,101,3167,1,1,-1,-1,-1,-1,-1,-1,1,nLevel)
-				AddItem(0,103,3167,1,1,-1,-1,-1,-1,-1,-1,1,nLevel)
-				AddItem(0,7,9004,1,1,-1,-1,-1,-1,-1,-1,1,nLevel)
-		end
+		-- if nRoute == 20 and nBody ==1 then 
+				-- AddItem(0,100,3166,1,1,-1,-1,-1,-1,-1,-1,1,nLevel)
+				-- AddItem(0,101,3166,1,1,-1,-1,-1,-1,-1,-1,1,nLevel)
+				-- AddItem(0,103,3166,1,1,-1,-1,-1,-1,-1,-1,1,nLevel)
+				-- AddItem(0,7,9004,1,1,-1,-1,-1,-1,-1,-1,1,nLevel)
+		-- end
+		-- if nRoute == 20 and nBody ==2 then 
+				-- AddItem(0,100,3167,1,1,-1,-1,-1,-1,-1,-1,1,nLevel)
+				-- AddItem(0,101,3167,1,1,-1,-1,-1,-1,-1,-1,1,nLevel)
+				-- AddItem(0,103,3167,1,1,-1,-1,-1,-1,-1,-1,1,nLevel)
+				-- AddItem(0,7,9004,1,1,-1,-1,-1,-1,-1,-1,1,nLevel)
+		-- end
 		
-		if nRoute == 20 and nBody ==3 then 
-				AddItem(0,100,3168,1,1,-1,-1,-1,-1,-1,-1,1,nLevel)
-				AddItem(0,101,3168,1,1,-1,-1,-1,-1,-1,-1,1,nLevel)
-				AddItem(0,103,3168,1,1,-1,-1,-1,-1,-1,-1,1,nLevel)
-				AddItem(0,7,9004,1,1,-1,-1,-1,-1,-1,-1,1,nLevel)
-		end
-		if nRoute == 20 and nBody ==4 then 
-				AddItem(0,100,3169,1,1,-1,-1,-1,-1,-1,-1,1,nLevel)
-				AddItem(0,101,3169,1,1,-1,-1,-1,-1,-1,-1,1,nLevel)
-				AddItem(0,103,3169,1,1,-1,-1,-1,-1,-1,-1,1,nLevel)
-				AddItem(0,7,9004,1,1,-1,-1,-1,-1,-1,-1,1,nLevel)
-		end
+		-- if nRoute == 20 and nBody ==3 then 
+				-- AddItem(0,100,3168,1,1,-1,-1,-1,-1,-1,-1,1,nLevel)
+				-- AddItem(0,101,3168,1,1,-1,-1,-1,-1,-1,-1,1,nLevel)
+				-- AddItem(0,103,3168,1,1,-1,-1,-1,-1,-1,-1,1,nLevel)
+				-- AddItem(0,7,9004,1,1,-1,-1,-1,-1,-1,-1,1,nLevel)
+		-- end
+		-- if nRoute == 20 and nBody ==4 then 
+				-- AddItem(0,100,3169,1,1,-1,-1,-1,-1,-1,-1,1,nLevel)
+				-- AddItem(0,101,3169,1,1,-1,-1,-1,-1,-1,-1,1,nLevel)
+				-- AddItem(0,103,3169,1,1,-1,-1,-1,-1,-1,-1,1,nLevel)
+				-- AddItem(0,7,9004,1,1,-1,-1,-1,-1,-1,-1,1,nLevel)
+		-- end
 		
-		if nRoute == 21 and nBody ==1 then 
-				AddItem(0,100,3170,1,1,-1,-1,-1,-1,-1,-1,1,nLevel)
-				AddItem(0,101,3170,1,1,-1,-1,-1,-1,-1,-1,1,nLevel)
-				AddItem(0,103,3170,1,1,-1,-1,-1,-1,-1,-1,1,nLevel)
-				AddItem(0,11,9005,1,1,4,304,-1,-1,-1,-1,1,nLevel)
-		end
-		if nRoute == 21 and nBody ==2 then 
-				AddItem(0,100,3171,1,1,-1,-1,-1,-1,-1,-1,1,nLevel)
-				AddItem(0,101,3171,1,1,-1,-1,-1,-1,-1,-1,1,nLevel)
-				AddItem(0,103,3171,1,1,-1,-1,-1,-1,-1,-1,1,nLevel)
-				AddItem(0,11,9005,1,1,4,304,-1,-1,-1,-1,1,nLevel)
-		end
+		-- if nRoute == 21 and nBody ==1 then 
+				-- AddItem(0,100,3170,1,1,-1,-1,-1,-1,-1,-1,1,nLevel)
+				-- AddItem(0,101,3170,1,1,-1,-1,-1,-1,-1,-1,1,nLevel)
+				-- AddItem(0,103,3170,1,1,-1,-1,-1,-1,-1,-1,1,nLevel)
+				-- AddItem(0,11,9005,1,1,4,304,-1,-1,-1,-1,1,nLevel)
+		-- end
+		-- if nRoute == 21 and nBody ==2 then 
+				-- AddItem(0,100,3171,1,1,-1,-1,-1,-1,-1,-1,1,nLevel)
+				-- AddItem(0,101,3171,1,1,-1,-1,-1,-1,-1,-1,1,nLevel)
+				-- AddItem(0,103,3171,1,1,-1,-1,-1,-1,-1,-1,1,nLevel)
+				-- AddItem(0,11,9005,1,1,4,304,-1,-1,-1,-1,1,nLevel)
+		-- end
 		
-		if nRoute == 21 and nBody ==3 then 
-				AddItem(0,100,3172,1,1,-1,-1,-1,-1,-1,-1,1,nLevel)
-				AddItem(0,101,3172,1,1,-1,-1,-1,-1,-1,-1,1,nLevel)
-				AddItem(0,103,3172,1,1,-1,-1,-1,-1,-1,-1,1,nLevel)
-				AddItem(0,11,9005,1,1,4,304,-1,-1,-1,-1,1,nLevel)
-		end
-		if nRoute == 21 and nBody ==4 then 
-				AddItem(0,100,3173,1,1,-1,-1,-1,-1,-1,-1,1,nLevel)
-				AddItem(0,101,3173,1,1,-1,-1,-1,-1,-1,-1,1,nLevel)
-				AddItem(0,103,3173,1,1,-1,-1,-1,-1,-1,-1,1,nLevel)
-				AddItem(0,11,9005,1,1,4,304,-1,-1,-1,-1,1,nLevel)
-		end
+		-- if nRoute == 21 and nBody ==3 then 
+				-- AddItem(0,100,3172,1,1,-1,-1,-1,-1,-1,-1,1,nLevel)
+				-- AddItem(0,101,3172,1,1,-1,-1,-1,-1,-1,-1,1,nLevel)
+				-- AddItem(0,103,3172,1,1,-1,-1,-1,-1,-1,-1,1,nLevel)
+				-- AddItem(0,11,9005,1,1,4,304,-1,-1,-1,-1,1,nLevel)
+		-- end
+		-- if nRoute == 21 and nBody ==4 then 
+				-- AddItem(0,100,3173,1,1,-1,-1,-1,-1,-1,-1,1,nLevel)
+				-- AddItem(0,101,3173,1,1,-1,-1,-1,-1,-1,-1,1,nLevel)
+				-- AddItem(0,103,3173,1,1,-1,-1,-1,-1,-1,-1,1,nLevel)
+				-- AddItem(0,11,9005,1,1,4,304,-1,-1,-1,-1,1,nLevel)
+		-- end
 		
-		if nRoute == 23 and nBody ==1 then 
-				AddItem(0,100,3174,1,1,-1,-1,-1,-1,-1,-1,0,nLevel)
-				AddItem(0,101,3174,1,1,-1,-1,-1,-1,-1,-1,0,nLevel)
-				AddItem(0,103,3174,1,1,-1,-1,-1,-1,-1,-1,0,nLevel)
-				AddItem(0,2,9006,1,1,-1,-1,-1,-1,-1,-1,0,nLevel)
-		end
-		if nRoute == 23 and nBody ==2 then 
-				AddItem(0,100,3175,1,1,-1,-1,-1,-1,-1,-1,0,nLevel)
-				AddItem(0,101,3175,1,1,-1,-1,-1,-1,-1,-1,0,nLevel)
-				AddItem(0,103,3175,1,1,-1,-1,-1,-1,-1,-1,0,nLevel)
-				AddItem(0,2,9006,1,1,-1,-1,-1,-1,-1,-1,0,nLevel)
-		end
+		-- if nRoute == 23 and nBody ==1 then 
+				-- AddItem(0,100,3174,1,1,-1,-1,-1,-1,-1,-1,0,nLevel)
+				-- AddItem(0,101,3174,1,1,-1,-1,-1,-1,-1,-1,0,nLevel)
+				-- AddItem(0,103,3174,1,1,-1,-1,-1,-1,-1,-1,0,nLevel)
+				-- AddItem(0,2,9006,1,1,-1,-1,-1,-1,-1,-1,0,nLevel)
+		-- end
+		-- if nRoute == 23 and nBody ==2 then 
+				-- AddItem(0,100,3175,1,1,-1,-1,-1,-1,-1,-1,0,nLevel)
+				-- AddItem(0,101,3175,1,1,-1,-1,-1,-1,-1,-1,0,nLevel)
+				-- AddItem(0,103,3175,1,1,-1,-1,-1,-1,-1,-1,0,nLevel)
+				-- AddItem(0,2,9006,1,1,-1,-1,-1,-1,-1,-1,0,nLevel)
+		-- end
 		
-		if nRoute == 29 and nBody ==3 then 
-				AddItem(0,100,3188,1,1,-1,-1,-1,-1,-1,-1,0,nLevel)
-				AddItem(0,101,3188,1,1,-1,-1,-1,-1,-1,-1,0,nLevel)
-				AddItem(0,103,3188,1,1,-1,-1,-1,-1,-1,-1,0,nLevel)
-				AddItem(0,13,9010,1,1,-1,-1,-1,-1,-1,-1,0,nLevel)
-		end
-		if nRoute == 29 and nBody ==4 then 
-				AddItem(0,100,3189,1,1,-1,-1,-1,-1,-1,-1,0,nLevel)
-				AddItem(0,101,3189,1,1,-1,-1,-1,-1,-1,-1,0,nLevel)
-				AddItem(0,103,3189,1,1,-1,-1,-1,-1,-1,-1,0,nLevel)
-				AddItem(0,13,9010,1,1,-1,-1,-1,-1,-1,-1,0,nLevel)
-		end
-		if nRoute == 30 and nBody ==3 then 
-				AddItem(0,100,3190,1,1,-1,-1,-1,-1,-1,-1,0,nLevel)
-				AddItem(0,101,3190,1,1,-1,-1,-1,-1,-1,-1,0,nLevel)
-				AddItem(0,103,3190,1,1,-1,-1,-1,-1,-1,-1,0,nLevel)
-				AddItem(0,12,9011,1,1,-1,-1,-1,-1,-1,-1,0,nLevel)
-		end
-		if nRoute == 30 and nBody ==4 then 
-				AddItem(0,100,3191,1,1,-1,-1,-1,-1,-1,-1,0,nLevel)
-				AddItem(0,101,3191,1,1,-1,-1,-1,-1,-1,-1,0,nLevel)
-				AddItem(0,103,3191,1,1,-1,-1,-1,-1,-1,-1,0,nLevel)
-				AddItem(0,12,9011,1,1,-1,-1,-1,-1,-1,-1,0,nLevel)
-		end
+		-- if nRoute == 29 and nBody ==3 then 
+				-- AddItem(0,100,3188,1,1,-1,-1,-1,-1,-1,-1,0,nLevel)
+				-- AddItem(0,101,3188,1,1,-1,-1,-1,-1,-1,-1,0,nLevel)
+				-- AddItem(0,103,3188,1,1,-1,-1,-1,-1,-1,-1,0,nLevel)
+				-- AddItem(0,13,9010,1,1,-1,-1,-1,-1,-1,-1,0,nLevel)
+		-- end
+		-- if nRoute == 29 and nBody ==4 then 
+				-- AddItem(0,100,3189,1,1,-1,-1,-1,-1,-1,-1,0,nLevel)
+				-- AddItem(0,101,3189,1,1,-1,-1,-1,-1,-1,-1,0,nLevel)
+				-- AddItem(0,103,3189,1,1,-1,-1,-1,-1,-1,-1,0,nLevel)
+				-- AddItem(0,13,9010,1,1,-1,-1,-1,-1,-1,-1,0,nLevel)
+		-- end
+		-- if nRoute == 30 and nBody ==3 then 
+				-- AddItem(0,100,3190,1,1,-1,-1,-1,-1,-1,-1,0,nLevel)
+				-- AddItem(0,101,3190,1,1,-1,-1,-1,-1,-1,-1,0,nLevel)
+				-- AddItem(0,103,3190,1,1,-1,-1,-1,-1,-1,-1,0,nLevel)
+				-- AddItem(0,12,9011,1,1,-1,-1,-1,-1,-1,-1,0,nLevel)
+		-- end
+		-- if nRoute == 30 and nBody ==4 then 
+				-- AddItem(0,100,3191,1,1,-1,-1,-1,-1,-1,-1,0,nLevel)
+				-- AddItem(0,101,3191,1,1,-1,-1,-1,-1,-1,-1,0,nLevel)
+				-- AddItem(0,103,3191,1,1,-1,-1,-1,-1,-1,-1,0,nLevel)
+				-- AddItem(0,12,9011,1,1,-1,-1,-1,-1,-1,-1,0,nLevel)
+		-- end
 end
 
 function getkx3()
@@ -3672,11 +3672,11 @@ function Get_Mored()
 		-- "HHVD/huyhoang5",
 		"Ngäc Thiªn NghÜa/thienghia_ngoc",
 		"uÈn Linh cÊp 2/nhanul_2",
-		-- "Vâ L©m b¸ Chñ/vlbc",
+		"Vâ L©m b¸ Chñ/vlbc",
 
 		-- "NhËn Vò KhÝ Nguyªn Tö/vknt",
 		-- "NhËn Vò Kh¶m /vkkham",
-		-- "NhËn Vò Opt zin /vkopt",
+		"NhËn Vò Opt zin /vkopt",
 		-- "NhËn §å Long §»ng Phông Vò/longdang",
 
 		-- "NhËn Thiªn Chi Viªm §Õ/thienchiviemde",
@@ -4001,22 +4001,22 @@ function vkopt()
 	end
 	local nRoute	= GetPlayerRoute();
 	if nRoute == 4 then
-		AddItem(0,0,16,3,1,3,86,7,64,-1, -1, 0,14)
+		AddItem(0,0,14,1,1,3,86,7,64,-1, -1, 0,10)
 	end
-	-- if nRoute > 4  or nRoute < 3then
-		-- AddItem(0,0,14,1,1,7,658,7,85,7,63,-1,10);
-		-- AddItem(0,2,36,1,1,7,658,7,86,7,63,-1,10);
-		-- AddItem(0,5,40,1,1,7,658,7,85,7,63,-1,10);
-		-- AddItem(0,1,53,1,1,7,658,7,85,7,63,-1,10);
-		-- AddItem(0,3,64,1,1,7,658,7,85,7,63,-1,10);
-		-- AddItem(0,10,75,1,1,7,658,7,86,7,63,-1,10);
-		-- AddItem(0,9,86,1,1,7,658,7,86,7,63,-1,10);
-		-- AddItem(0,8,97,1,1,7,658,7,86,7,63,-1,10);
-		-- AddItem(0,6,108,1,1,7,658,7,85,7,63,-1,10);
-		-- AddItem(0,4,119,1,1,7,658,7,85,7,63,-1,10);
-		-- AddItem(0,11,12,1,1,7,658,7,86,7,63,-1,10);
-		-- AddItem(0,7,12,1,1,7,658,7,85,7,63,-1,10);
-	-- end
+	if nRoute > 4  or nRoute < 3then
+		AddItem(0,0,14,1,1,7,658,7,85,7,63,-1,10);
+		AddItem(0,2,36,1,1,7,658,7,86,7,63,-1,10);
+		AddItem(0,5,40,1,1,7,658,7,85,7,63,-1,10);
+		AddItem(0,1,53,1,1,7,658,7,85,7,63,-1,10);
+		AddItem(0,3,64,1,1,7,658,7,85,7,63,-1,10);
+		AddItem(0,10,75,1,1,7,658,7,86,7,63,-1,10);
+		AddItem(0,9,86,1,1,7,658,7,86,7,63,-1,10);
+		AddItem(0,8,97,1,1,7,658,7,86,7,63,-1,10);
+		AddItem(0,6,108,1,1,7,658,7,85,7,63,-1,10);
+		AddItem(0,4,119,1,1,7,658,7,85,7,63,-1,10);
+		AddItem(0,11,12,1,1,7,658,7,86,7,63,-1,10);
+		AddItem(0,7,12,1,1,7,658,7,85,7,63,-1,10);
+	end
 end
 
 function vknt()
@@ -6798,9 +6798,9 @@ function GetJingMai_Update_votuong()
 end
 
 function hotrogmer1st()
-	if  GetLevel() < 85 then
+	if  GetLevel() < 99 then
 		local szSay = {
-		g_szTitle.."N©ng lªn ®¼ng cÊp 85 vµ 0 ®iÓm kinh nghiÖm (Xãa tÊt c¶ ®iÓm kinh nghiÖm hiÖn t¹i?",
+		g_szTitle.."N©ng lªn ®¼ng cÊp 99 vµ 0 ®iÓm kinh nghiÖm (Xãa tÊt c¶ ®iÓm kinh nghiÖm hiÖn t¹i?",
 		"Ta muèn n©ng cao ®¼ng cÊp vµ chÊp nhËn xãa tÊt c¶ kinh nghiÖm hiÖn cã /really_hotrogmer1st",
 		"Ra khái/nothing",
 	};
@@ -6813,7 +6813,7 @@ end
 function  really_hotrogmer1st()
 		local curExp = GetExp();
 		gf_Modify("Exp",-curExp);
-		SetLevel(85, 1);
+		SetLevel(99, 1);
 		AddItem(2,1,30668,10);
 		Talk(1,"","Vui lßng tho¸t game vµ ®¨ng nhËp l¹i!")
 end
