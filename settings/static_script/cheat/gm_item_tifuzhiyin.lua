@@ -4346,8 +4346,8 @@ end
 function Get_Diem_Char()
 	local szSay = {
 		g_szTitle.."T¨ng ®iÓm cho nh©n vËt!",
-		-- "NhËn Qu©n hµm nguyªn so¸i/Get_NguyenSoai",
-		-- "NhËn NhËn 250.000 ®iÓm c«ng tr¹ng/Get_CongTrang",
+		"NhËn Qu©n hµm nguyªn so¸i/Get_NguyenSoai",
+		"NhËn NhËn 250.000 ®iÓm c«ng tr¹ng/Get_CongTrang",
 		"NhËn NhËn 10.000 ®iÓm danh väng/Get_DanhVong",
 		"NhËn NhËn 10.000 ®iÓm s­ m«n/Get_SuMon",
 		"Ra khái/nothing",
