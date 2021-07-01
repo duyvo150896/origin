@@ -122,6 +122,7 @@ function tieudung()
 		"NhËn Lak/Get_Energy_5x",
 		"NhËn B¸nh Ng«/banhngo",
 		"NhËn Ph¸o Hoa ChiÕn Th¾ng/nhanphaohoa",
+		
 		"\nRa khái/nothing",
 	}
 	SelectSay(tSay);
@@ -3064,7 +3065,7 @@ function Get_Nguyen_Lieu()
 	local szSay = {
 		g_szTitle.."NhËn C¸c Lo¹i VËt LiÖu!",
 		-- "NhËn 100 Thiªn M«n Kim LÖnh/Get_NL_TMKL",
-		-- "NhËn 100 Thiªn Cang LÖnh/Get_NL_TCL",
+		"NhËn 100 Thiªn Cang LÖnh/Get_NL_TCL",
 --		"Nguyen Lieu Kich Bao Tay/kichbaotay",
 		"NhËn B¨ng Th¹ch vµ m¶nh b¨ng th¹ch/bangthach",
 		-- "NhËn 1000 Ma Tinh/Get_NL_MT",
