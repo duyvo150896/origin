@@ -133,6 +133,7 @@ function tieudung_orther()
 		-- "Nhan Bua Cuong Hoa/NhanBua",
           -- "N©ng cao ®¼ng cÊp chuyÓn sinh nh©n vËt/player_reborn",
 			-- "Thay ®æi h­íng Phôc Sinh/change_PhucSinh",
+			-- "Sinh ThÇn Cang gäi Boss bang héi/sinhthancang",
             "M¶nh b¹ch kim/nhanmbk",
             "NhËn danh hiÖu/Get_Danh_Hieu2",
             "T¨ng ®iÓm nh©n vËt/Get_Diem_Char",
@@ -147,7 +148,7 @@ function tieudung_orther()
 		"NhËn Thó Míi/nhanthucuoimoi",
 		"NhËn Thó C­ìi/thucuoipro",
 		"NhËn C¸nh/nguafake",
-		-- "R¸c/rac",
+		"R¸c/rac",
 		"\nRa khái/nothing",
 	}
 	SelectSay(tSay);
@@ -6886,5 +6887,9 @@ end
 
 function budenbu()
 
+AddItem(1,6,150,1)
+end
+
+function sinhthancang()
 AddItem(1,6,150,1)
 end
