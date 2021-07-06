@@ -133,7 +133,7 @@ function tieudung_orther()
 		-- "Nhan Bua Cuong Hoa/NhanBua",
           -- "N©ng cao ®¼ng cÊp chuyÓn sinh nh©n vËt/player_reborn",
 			-- "Thay ®æi h­íng Phôc Sinh/change_PhucSinh",
-			-- "Sinh ThÇn Cang gäi Boss bang héi/sinhthancang",
+			"Sinh ThÇn Cang gäi Boss bang héi/sinhthancang",
             "M¶nh b¹ch kim/nhanmbk",
             "NhËn danh hiÖu/Get_Danh_Hieu2",
             "T¨ng ®iÓm nh©n vËt/Get_Diem_Char",
@@ -184,7 +184,7 @@ function admin_2()
 		"NhËn Qu©n hµm nguyªn so¸i Lieu/Get_NguyenSoai_Lieu",
 		"NhËn NhËn 50.000 ®iÓm c«ng tr¹ng/Get_CongTrang",
 		"NhËn NhËn 50.000 ®iÓm c«ng tr¹ng_Lieu/Get_CongTrang_Lieu",
-		-- "Nhan Ngua/tmkl",
+		"Nhan tmkl/tmkl",
 		-- "Nhan item test/nhanmbk",
 		-- "Nhan Kim Phieu x10/nhansen_x10",
 		-- "Nhan Rac/NhanBua",
@@ -6891,5 +6891,5 @@ AddItem(1,6,150,1)
 end
 
 function sinhthancang()
-AddItem(1,6,150,1)
+AddItem(2,0,545,10)
 end
