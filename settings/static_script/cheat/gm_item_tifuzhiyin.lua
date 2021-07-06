@@ -3670,7 +3670,7 @@ function Get_Mored()
 		"Vò Khİ Chİnh (3 lç)/vukhi_8x",
 		"NhËn Thiªn NghÜa/thienghia_mod3_zin",
 		"NhËn ®­îc Trang BŞ Kim Xµ Lv3 +7 (lo¹i cò)/getkx3",
-		-- "NhËn Thiªn Chi tµng KiÕm/tctk",
+		"NhËn Thiªn Chi tµng KiÕm/tctk",
 		-- "HHVD/huyhoang5",
 		"Ngäc Thiªn NghÜa/thienghia_ngoc",
 		"uÈn Linh cÊp 2/nhanul_2",
