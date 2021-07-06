@@ -49,7 +49,7 @@ function OnUse(nItem)
             "Trang BŞ/Get_Mored",
             "Tiªu dïng/tieudung",
 			"Cßn l¹i/tieudung_orther",
-            -- "Thiªn kiªu lÖnh (Kh«ng cã khi Open)/nhantkl",
+            "Thiªn kiªu lÖnh /nhantkl",
 			"HiÖu øng nh©n vËt/#char_eff(10)",
 			"Hç trî ®¼ng cÊp cho t©n thñ Level 99/hotrogmer1st",
             "NhËn Bé DiÖu D­¬ng +7/Get_YaoYang_15",
