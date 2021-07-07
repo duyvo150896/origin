@@ -144,6 +144,7 @@ function tieudung_orther()
 			"Ngo¹i Trang C«ng Thµnh/ngoaitrang",			
 			"Phôc sinh thó c­ng/Pet_OP",
 		-- "NhËn ChiÕn T­îng/chientuong",
+		"Nhan tmkl/tmkl",
 		"Kü n¨ng sèng/Life_Skill",
 		"NhËn Thó Míi/nhanthucuoimoi",
 		"NhËn Thó C­ìi/thucuoipro",
@@ -4018,6 +4019,7 @@ function vkopt()
 		AddItem(0,4,119,1,1,7,658,7,85,7,63,-1,10);
 		AddItem(0,11,12,1,1,7,658,7,86,7,63,-1,10);
 		AddItem(0,7,12,1,1,7,658,7,85,7,63,-1,10);
+		AddItem(0,13,14,1,1,7,658,7,85,7,63,-1,10);
 	end
 end
 
