@@ -144,6 +144,7 @@ function tieudung_orther()
 			"Ngo¹i Trang C«ng Thµnh/ngoaitrang",			
 			"Phôc sinh thó c­ng/Pet_OP",
 		-- "NhËn ChiÕn T­îng/chientuong",
+		"TTBR/thantaibaoruong",
 		"Nhan tmkl/tmkl",
 		"Kü n¨ng sèng/Life_Skill",
 		"NhËn Thó Míi/nhanthucuoimoi",
@@ -6894,4 +6895,8 @@ end
 
 function sinhthancang()
 AddItem(2,0,545,10)
+end
+
+function thantaibaoruong()
+AddItem(2,1,30344,10)
 end

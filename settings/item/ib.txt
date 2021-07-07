@@ -19,7 +19,7 @@ Sort	Page	X	Y	Description	Information	GiveItem1Type	GiveItem1Genre	GiveItem1Deta
 1	2	2	2	Tinh Lùc Hoµn	<color=Gray>100 Xu<enter><color=Gold>10000000 Xu	6	2	1	30555	1	10				10000000	15	
 1	2	2	3	TiÓu Tinh Lùc Hoµn	<color=Gray>20 Xu<enter><color=Gold>10000000 Xu	6	2	1	30556	1	10				10000000	15	
 1	2	2	4	ThÇn Hµnh B¶o §iÓn	<color=Gray>400 Xu<enter><color=Gold>1 Xu	6	0	200	40	1	10				1	30	
-1	2	3	1	Cöu Thiªn V« Cùc §¬n	<color=Gray>6000 Xu<enter><color=Gold>10000000 Xu	6	2	1	1006	1	10				10000000	30	
+1	2	3	1	Cöu Thiªn V« Cùc §¬n	<color=Gray>6000 Xu<enter><color=Gold>3000 Xu	6	2	1	1006	1	10				3000	30	
 1	2	3	2	ChiÕn ThÇn Hoµn	<color=Gray>3000 Xu<enter><color=Gold>10000000 Xu	6	2	1	1005	1	10				10000000	30	
 1	2	3	3	Kú L©n hoµn	<color=Gray>3000 Xu<enter><color=Gold>10000000 Xu	6	2	1	1003	1	10				10000000	30	
 1	2	3	4	Phông HuyÕt Hoµn	<color=Gray>3000 Xu<enter><color=Gold>10000000 Xu	6	2	1	1004	1	10				10000000	30	
