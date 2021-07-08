@@ -131,8 +131,8 @@ function tieudung_orther()
 	local tSay = {
 		g_szTitle.."L鵤 ch鋘",
 		-- "Nhan Bua Cuong Hoa/NhanBua",
-          -- "N﹏g cao ng c蕄 chuy觧 sinh nh﹏ v藅/player_reborn",
-			-- "Thay i hng Ph鬰 Sinh/change_PhucSinh",
+          "N﹏g cao ng c蕄 chuy觧 sinh nh﹏ v藅/player_reborn",
+			"Thay i hng Ph鬰 Sinh/change_PhucSinh",
 			"Sinh Th莕 Cang g鋓 Boss bang h閕/sinhthancang",
             "M秐h b筩h kim/nhanmbk",
             "Nh薾 danh hi謚/Get_Danh_Hieu2",
@@ -1748,7 +1748,7 @@ function enter_mp(nRoute)
 	-- ----------------------------设置数值------------
 	SetTask(336, 20000);				--设置师门贡献度
 	ModifyReputation(20000, 0);			--设置声望
-	-- PlayerReborn(2, 4);			--6转
+	-- PlayerReborn(2, 1);			--6转
 	-- gf_SetTaskByte(1538, 1, 5) 			--5转
 	SetLevel(85, 0);								--设置等级
 	PlaySound("\\sound\\sound_i016.wav");
@@ -3540,7 +3540,7 @@ function GetJingMai_Reset(bTag)
 end
 
 function player_reborn()
-	PlayerReborn(2, random(4));			--6转
+	PlayerReborn(1, 1);			--6转
 	gf_SetTaskByte(1538, 1, 5) 			--5转
 	SetLevel(99, 1);								--设置等级
 	ModifyReputation(10000,0)
