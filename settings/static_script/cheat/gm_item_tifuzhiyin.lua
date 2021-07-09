@@ -5177,9 +5177,9 @@ function banhngo()
 end
 
 function ttll3()
-	-- AddItem(2,1,30523,999);
+	AddItem(2,1,30523,999);
 	AddItem(2,1,30524,999);
-	-- AddItem(2,1,30529,999);
+	AddItem(2,1,30529,999);
 	AddItem(2,1,30530,999);
 end
 
