@@ -3475,7 +3475,7 @@ function GetJingMai()
 		-- format("%s/getJingMaiTongRen", "NhËn Kinh M¹ch §ång Nh©n"),
 		"Ra khái/nothing",
 	};
-	if MeridianGetLevel() < 1 then
+	if MeridianGetLevel() < 3 then
 		tinsert(szSay, 2, "Th¨ng cÊp c¶nh giíi/GetJingMai_Update")
 	end
 	if GetLevel() >=90  and MeridianGetLevel() < 2 then 
