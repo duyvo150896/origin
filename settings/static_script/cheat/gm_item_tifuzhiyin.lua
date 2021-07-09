@@ -54,7 +54,7 @@ function OnUse(nItem)
 			"Hç trî ®¼ng cÊp cho t©n thñ Level 99/hotrogmer1st",
             "NhËn Bé DiÖu D­¬ng +7/Get_YaoYang_15",
 			-- "NgÉu nhiªn nhËn ®­îc Trang BÞ Kim Xµ Lv1 +10/Get_JinShe_1",
---			format("%s/Process_Equip_LingTu", "NhËn Linh §å +10"),
+			format("%s/Process_Equip_LingTu", "NhËn Linh §å +10"),
 			-- format("%s/Process_SanJianTao", "NhËn trang søc ®eo h«ng 6 sao"),
 			-- format("%s/Get_kx7", "NhËn trang søc ®eo h«ng 7 sao"),
 --			format("%s/test", "Test Nhan Event"),
@@ -3540,7 +3540,7 @@ function GetJingMai_Reset(bTag)
 end
 
 function player_reborn()
-	PlayerReborn(1, 1);			--6×ª
+	PlayerReborn(2, 1);			--6×ª
 	gf_SetTaskByte(1538, 1, 5) 			--5×ª
 	SetLevel(99, 1);								--ÉèÖÃµÈ¼¶
 	ModifyReputation(10000,0)
@@ -3666,7 +3666,7 @@ function Get_Mored()
 	local tSay = {
 		-- "NhËn Thiªn H¹ V« Song/thvs",	
 	-- "NhËn HiÖu ChiÕn Tr­êng/hieudothong",
-		-- "NhËn TT3 LL3 TT4 LL4/ttll3",
+		"NhËn TT3 LL3 TT4 LL4/ttll3",
 		 -- "NhËn TT1 LL/ttll1",
 		"NhËn ®­îc Trang BÞ Kim Xµ Lv3 +7 (lo¹i míi)/Get_KX3chonopt_6loai",
 		"Vò KhÝ ChÝnh (3 lç)/vukhi_8x",
@@ -5177,10 +5177,10 @@ function banhngo()
 end
 
 function ttll3()
-	AddItem(2,1,30523,999);
-	-- AddItem(2,1,30524,999);
-	AddItem(2,1,30529,999);
-	-- AddItem(2,1,30530,999);
+	-- AddItem(2,1,30523,999);
+	AddItem(2,1,30524,999);
+	-- AddItem(2,1,30529,999);
+	AddItem(2,1,30530,999);
 end
 
 function ttll1()
