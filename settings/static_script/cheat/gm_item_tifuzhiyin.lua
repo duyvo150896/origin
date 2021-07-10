@@ -3698,7 +3698,7 @@ function Get_Mored()
 --      "C¸c Lo¹i Ngäc/ngocdame",
 
 		"§å 3 Lç/do3lo_8x",
---		"QuÎ 8 qu¸i/que8w", 
+		"QuÎ 8 qu¸i/que8w", 
 --		"Ngo¹i Trang/ngoaitrangnew", 
 		-- "Hµo HiÖp V« H¹/gethhvhlb", 
 		-- "NhËn trang søc ®eo h«ng 4 vs 5 sao/showKX",
