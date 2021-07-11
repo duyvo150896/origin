@@ -249,13 +249,13 @@ width: 100% !important;
                                             <div class="row">
                                                 <div class="card mx-auto container-fluid p-0 border-0">
                                                     <div class="card-body">
-                                                        <h3 class="card-title text-center mb-4">Đăng Ký</h3><div class="alert alert-danger " role="alert" ><i class="fas fa-exclamation-circle"></i> <strong>Lỗi</strong>: Tên người dùng phải là 6 ký tự trở lên.</div>
+                                                        <h3 class="card-title text-center mb-4">Đăng Ký</h3>
                                                         
                                                         <form method="post" action="" class="uwp-registration-form uwp_form">
     
 	   <div class="form-group">
 			<label>Tên tài khoản</label><div class="has-error"><?php echo (isset($errors['username']))?$errors['username']:'' ?><?php echo (isset($errors['used']))?$errors['used']:'' ?></div>
-			<input type="text" name="username" class="form-control" placeholder="Tên đăng nhập" value="">
+			<input type="text" name="username" class="form-control" placeholder="Tên đăng nhập" value=" "minlength="6">
 		</div>
 		<div class="form-group">
 			<label>Email</label><div class="has-error"><?php echo (isset($errors['email']))?$errors['email']:'' ?></div>
@@ -264,7 +264,7 @@ width: 100% !important;
 		<div class="form-group" >
 			<label>Mật khẩu</label><div class="has-error"><?php echo (isset($errors['password_1']))?$errors['password_1']:'' ?></div>
             <div class="input-group">            
-			<input type="password" name="password_1" placeholder="Nhập mật khẩu" class="form-control">
+			<input type="password" name="password_1" placeholder="Nhập mật khẩu" class="form-control" minlength="6">
             <div class="input-group-append "><span class="input-group-text c-pointer px-3" 
                                     onclick="var $el = jQuery(this).find('i');$el.toggleClass('fa-eye fa-eye-slash');
                                     var $eli = jQuery(this).parent().parent().find('input');
@@ -288,7 +288,7 @@ width: 100% !important;
         <div class="form-group">
             <label>Mật khẩu cấp 2</label><div class="has-error"><?php echo (isset($errors['rowpass']))?$errors['rowpass']:'' ?><?php echo (isset($errors['rowpass_3']))?$errors['rowpass_3']:'' ?></div>
             <div class ="input-group">
-            <input type="password" name="rowpass" placeholder="Nhập mật khẩu cấp 2" class="form-control"><div class="input-group-append "><span class="input-group-text c-pointer px-3" 
+            <input type="password" name="rowpass" placeholder="Nhập mật khẩu cấp 2" class="form-control" minlength="8"><div class="input-group-append "><span class="input-group-text c-pointer px-3" 
                                     onclick="var $el = jQuery(this).find('i');$el.toggleClass('fa-eye fa-eye-slash');
                                     var $eli = jQuery(this).parent().parent().find('input');
                                     if($el.hasClass('fa-eye'))
