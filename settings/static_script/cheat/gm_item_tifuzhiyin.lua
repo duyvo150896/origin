@@ -3475,7 +3475,7 @@ function GetJingMai()
 		-- format("%s/getJingMaiTongRen", "NhËn Kinh M¹ch §ång Nh©n"),
 		"Ra khái/nothing",
 	};
-	if MeridianGetLevel() < 3 then
+	if MeridianGetLevel() < 6 then
 		tinsert(szSay, 2, "Th¨ng cÊp c¶nh giíi/GetJingMai_Update")
 	end
 	if GetLevel() >=90  and MeridianGetLevel() < 2 then 
@@ -3508,14 +3508,14 @@ end
 function GetJingMai_Update()
 	local nLevel = MeridianGetLevel()
 	-- for i = nLevel + 1, 1 do
-	-- for i = nLevel + 1, 4 do -- max
-	for i = nLevel + 1, 1 do
+	for i = nLevel + 1, 4 do -- max
+	-- for i = nLevel + 1, 1 do
 		MeridianUpdateLevel()
 	end
 
-	-- local nNum = 600000 - (MeridianGetDanTian() + MeridianGetQiHai());
+	local nNum = 600000 - (MeridianGetDanTian() + MeridianGetQiHai());
 	-- local nNum = 300000 - (MeridianGetDanTian() + MeridianGetQiHai());
-	local nNum = 150000 - (MeridianGetDanTian() + MeridianGetQiHai());
+	-- local nNum = 150000 - (MeridianGetDanTian() + MeridianGetQiHai());
 	if nNum > 0 then
 		AwardGenuineQi(nNum);
 	end
@@ -6409,7 +6409,8 @@ end
 function NhanBua()
 	AddItem(2,1,30424,100);
 	AddItem(2,1,30425,100);
-	-- AddItem(2,1,30426,100);
+	AddItem(2,1,30426,100);
+	AddItem(2,1,30427,100);
 end
 
 function hieudothong()
