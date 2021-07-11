@@ -4671,3 +4671,7 @@ function adm_buff1()
 	}
 	Say(g_szTitle.."Chøc N¨ng ADMON", getn(tSay), tSay);
 end
+
+function abc()
+
+end
