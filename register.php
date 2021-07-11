@@ -288,7 +288,7 @@ width: 100% !important;
         <div class="form-group">
             <label>Mật khẩu cấp 2</label><div class="has-error"><?php echo (isset($errors['rowpass']))?$errors['rowpass']:'' ?><?php echo (isset($errors['rowpass_3']))?$errors['rowpass_3']:'' ?></div>
             <div class ="input-group">
-            <input type="password" name="rowpass" placeholder="Nhập mật khẩu cấp 2" class="form-control" minlength="8"><div class="input-group-append "><span class="input-group-text c-pointer px-3" 
+            <input type="password" name="rowpass" placeholder="Nhập mật khẩu cấp 2" class="form-control" minlength="6"><div class="input-group-append "><span class="input-group-text c-pointer px-3" 
                                     onclick="var $el = jQuery(this).find('i');$el.toggleClass('fa-eye fa-eye-slash');
                                     var $eli = jQuery(this).parent().parent().find('input');
                                     if($el.hasClass('fa-eye'))
