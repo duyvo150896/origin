@@ -26,7 +26,7 @@ function OnUse(nItem)
 	else
 		tSay = {
 	--		"NhËp Code/GiftCodeNhap",
-			"HOT.NhËn Item Tr¶i NghiÖm Game/ItemTraiNghiem",
+	--		"HOT.NhËn Item Tr¶i NghiÖm Game/ItemTraiNghiem",
 			"0.NhËp Gift Code/lolicode",
 			"1.Rót Kim PhiÕu Vµo Game/RutKimPhieu",
 			format("%s/getTiLi", "2.Håi phôc thÓ lùc"),
@@ -34,8 +34,8 @@ function OnUse(nItem)
             "4.NhËn Quµ Admin/Get_Mored",
 			"5.LuyÖn max skill trÊn ph¸i/maxtranphai",
             "6.Thao t¸c chuyÓn sinh/chuyensinh",
-             "7.NhËn VËt PhÈm Hç Trî Thªm/Get_Nguyen_Lieu",
-           -- "8.NhËn danh hiÖu/Get_Danh_Hieu",
+            "7.NhËn VËt PhÈm Hç Trî Thªm/Get_Nguyen_Lieu",
+            "8.NhËn danh hiÖu/Get_Danh_Hieu",
             "8.T¨ng ®iÓm nh©n vËt/Get_Diem_Char",
 			"9.NhËn trang bŞ (Míi)/MenuEquipments",
 			"10.NhËn L­u Ph¸i Ch©n QuyÓn vµ YÕu QuyÕt/Get_Book",
@@ -46,9 +46,11 @@ function OnUse(nItem)
 			"15.Thao t¸c kinh m¹ch/GetJingMai",
 			"16.Bæ sung tinh lùc/Get_Energy",
 			"17.Kü n¨ng sèng/Life_Skill",
+			"18.NhËn Qu©n hµm nguyªn so¸i/Get_NguyenSoai",
+			"19.NhËn Qu©n hµm nguyªn so¸i/Get_Lieu",
 	--		"Thö nghiÖm FIX ©m mana/fix_mana",
 		--	"NhËn tµi liÖu c­êng hãa/Get_Enhance",
-			"18.Reset l¹i giíi h¹n giê ch¬i/Reset_Time_Playy",
+	--		"20.Reset l¹i giíi h¹n giê ch¬i/Reset_Time_Playy",
 			format("%s/Pet_OP", "19.Thao t¸c thó cøng"),
 	--		format("%s/getTiLi", "Håi phôc thÓ lùc"),
 		--	format("%s/getTianJiaoLing", "NhËn Thiªn Kiªu LÖnh"),
@@ -2724,6 +2726,7 @@ function thucuoipro()
 	AddItem(0,105,10110,1,1,7,403,7,-1,7,-1,7,0);
 	AddItem(0,105,10111,1,1,7,403,7,-1,7,-1,7,0);
 	AddItem(0,105,10112,1,1,7,403,7,-1,7,-1,7,0);
+	AddItem(0,105,30200,1,1,7,403,7,-1,7,-1,7,0); -- Voi Hang Hieu
 
 end
 
