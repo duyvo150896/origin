@@ -37,7 +37,7 @@ end
 ------------------------------------------------------------------------------------------
 function dang_ky()
 
-	if Pay(2000) == 1 then
+	if ModifyJinJuan(-2000,1) == 1 then
 		SetTask(3460,1);
 		Msg2Global("Chóc mõng "..GetName().. "®· trë thµnh héi viªn.")
 	else	
@@ -116,7 +116,7 @@ function mothuong_baucua()
 	return choibaucua();
 	end
 --Thanh to¸n
-Pay(Tongtiencuoc);
+ModifyJinJuan(Tongtiencuoc);
 
 mRandom = random(1,6);
 nRandom = random(1,6);
