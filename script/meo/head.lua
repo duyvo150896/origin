@@ -8,7 +8,7 @@ ADMIN_COUNT = 4
 ADMIN_LIST=
 {
 	[1] = "tinykidpro",
-	[2] = "thuong",
+	[2] = "",
 	[3] = "admin",
-	[4] = "admin1",
+	[4] = "",
 }
