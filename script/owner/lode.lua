@@ -5,7 +5,7 @@ Include("\\script\\vng\\lib\\vnglib_textdata.lua")
 function main()
 
 	if kiem_tra() == 0 then
-	Say("C¸c h¹ ch­a ph¶i lµ Héi Viªn.",2,"Ta muèn ®¨ng ký tham gia/dang_ky","§Ó ta suy nghØ l¹i/nothing")
+	Say("C¸c h¹ ch­a ph¶i lµ Héi Viªn.",2,"Ta muèn ®¨ng ký tham gia/dang_ky","§Ó ta suy nghÜ l¹i/nothing")
 	return
 	end
 
@@ -17,7 +17,7 @@ function main()
 	tinsert(tbSayDialog, "Ch¬i BÇu Cua/choibaucua")
 	tinsert(tbSayDialog, "Ch¬i O¼n Tï T×/ChoiOanTuTi")
 	tinsert(tbSayDialog, "Ch¬i Ch½n LÎ/ChoiChanLe")
---	tinsert(tbSayDialog, "§æi Vµng Bao/DoiVangBao")
+--	tinsert(tbSayDialog, "§æi Kim PhiÕu Bao/DoiVangBao")
 
 	tinsert(tbSayDialog, "Ta chØ ghÐ ngang/nothing")
 	Say(szHeader, getn(tbSayDialog), tbSayDialog)
@@ -92,12 +92,12 @@ function choibaucua()
 
 		local tbSayDialog = {};
 
-		tinsert(tbSayDialog,1,"§Æt " .. tbXucXac[1][1] .. " (" ..SoBau  .. " vµng)/LuaChonBau")
-		tinsert(tbSayDialog,1,"§Æt " .. tbXucXac[2][1] .. " (" ..SoCua  .. " vµng)/LuaChonCua")
-		tinsert(tbSayDialog,1,"§Æt " .. tbXucXac[3][1] .. " (" ..SoTom  .. " vµng)/LuaChonTom")
-		tinsert(tbSayDialog,1,"§Æt " .. tbXucXac[4][1] .. " (" ..SoCa  .. " vµng)/LuaChonCa")
-		tinsert(tbSayDialog,1,"§Æt " .. tbXucXac[5][1] .. " (" ..SoNai  .. " vµng)/LuaChonNai")
-		tinsert(tbSayDialog,1,"§Æt " .. tbXucXac[6][1] .. " (" ..SoGa  .. " vµng)/LuaChonGa")
+		tinsert(tbSayDialog,1,"§Æt " .. tbXucXac[1][1] .. " (" ..SoBau  .. " Kim PhiÕu)/LuaChonBau")
+		tinsert(tbSayDialog,1,"§Æt " .. tbXucXac[2][1] .. " (" ..SoCua  .. " Kim PhiÕu)/LuaChonCua")
+		tinsert(tbSayDialog,1,"§Æt " .. tbXucXac[3][1] .. " (" ..SoTom  .. " Kim PhiÕu)/LuaChonTom")
+		tinsert(tbSayDialog,1,"§Æt " .. tbXucXac[4][1] .. " (" ..SoCa  .. " Kim PhiÕu)/LuaChonCa")
+		tinsert(tbSayDialog,1,"§Æt " .. tbXucXac[5][1] .. " (" ..SoNai  .. " Kim PhiÕu)/LuaChonNai")
+		tinsert(tbSayDialog,1,"§Æt " .. tbXucXac[6][1] .. " (" ..SoGa  .. " Kim PhiÕu)/LuaChonGa")
 
 		tinsert(tbSayDialog, "Më Th­ëng/mothuong_baucua")
 		tinsert(tbSayDialog, "Lµm míi gi¸ trÞ/reset_baucua")
@@ -206,7 +206,7 @@ elseif szTongthang < Tongtiencuoc then
 end
 
 local sLine1 = "KÕt qu¶ më th­ëng:   <color=green>"..yy1.."<color>      <color=green>"..yy2.."<color>      <color=green>"..yy3.."<color>\n"
-local sLine2 = "Sè vµng thô h­ëng:   <color=gold>"..xx1.."<color>   +   <color=gold>"..xx2.."<color>   +    <color=gold>"..xx3.."<color>   <color=gold> = "..szTongthang.."<color>\n"
+local sLine2 = "Sè Kim PhiÕu thô h­ëng:   <color=gold>"..xx1.."<color>   +   <color=gold>"..xx2.."<color>   +    <color=gold>"..xx3.."<color>   <color=gold> = "..szTongthang.."<color>\n"
 local sLine3 = "§· c­îc: <color=green>BÇu:"..GetTask(3461).."<color> + <color=green>Cua:"..GetTask(3462).."<color> + <color=green>T«m:"..GetTask(3463).."<color> + <color=green>C¸:"..GetTask(3464).."<color> + <color=green>Nai:"..GetTask(3465).."<color> + <color=green>Gµ:"..GetTask(3466).."<color> = <color=gold>"..Tongtiencuoc.."<color>\n"
 local sLine4 = "Chung cuéc:   <color=green>"..szMat.."<color>\n"
 
@@ -300,12 +300,12 @@ function ChoiChanLe()
 end
 ---------------------------------------------------------------------------------
 function ChonChan()
-	AskClientForNumber("ChonChan1", 10, 10000, "NhËp sè vµng")
+	AskClientForNumber("ChonChan1", 10, 10000, "NhËp sè Kim PhiÕu")
 
 end
 ---------------------------------------------------------------------------------
 function ChonChan1(nCount)
-if ModifyJinJuan(-nCount) == 0 then	
+if ModifyJinJuan(-nCount) >= 0 then	
  nRandom = random(1,6)
 	 if ( nRandom == 1 or nRandom == 3 or nRandom == 5  ) then
 Talk(1,"","KÕt qu¶ cña chóng t«i: <color=green>LÎ<color> - B¹n ®· thua!")
@@ -324,12 +324,12 @@ end
 end
 ---------------------------------------------------------------------------------
 function ChonLe()
-	AskClientForNumber("ChonLe1", 10, 10000, "NhËp sè vµng")
+	AskClientForNumber("ChonLe1", 10, 10000, "NhËp sè Kim PhiÕu")
 
 end
 ---------------------------------------------------------------------------------
 function ChonLe1(nCount)
-if ModifyJinJuan(-nCount) == 0 then	
+if ModifyJinJuan(-nCount) >= 0 then	
  nRandom = random(1,6)
 	 if ( nRandom == 2 or nRandom == 4 or nRandom == 6  ) then
 Talk(1,"","KÕt qu¶ cña chóng t«i: <color=green>Ch½n<color> - B¹n ®· thua!")
@@ -359,12 +359,12 @@ function ChoiOanTuTi()
 end
 ---------------------------------------------------------------------------------
 function ChonKeo()
-	AskClientForNumber("ChonKeo1", 10, 10000, "NhËp sè vµng")
+	AskClientForNumber("ChonKeo1", 10, 10000, "NhËp sè Kim PhiÕu")
 
 end
 ---------------------------------------------------------------------------------
 function ChonKeo1(nCount)
-if ModifyJinJuan(-nCount) == 0 then	
+if ModifyJinJuan(-nCount) >= 0 then	
  nRandom = random(1,3) --1 KÐo 3 Bóa 2 Bao
 	 if ( nRandom == 1  ) then
 Talk(1,"","KÕt qu¶ cña chóng t«i: <color=green>KÐo<color> - KÕt qu¶ hßa!")
@@ -386,12 +386,12 @@ end
 end
 ---------------------------------------------------------------------------------
 function ChonBua()
-	AskClientForNumber("ChonBua1", 10, 10000, "NhËp sè vµng")
+	AskClientForNumber("ChonBua1", 10, 10000, "NhËp sè Kim PhiÕu")
 
 end
 ---------------------------------------------------------------------------------
 function ChonBua1(nCount)
-if ModifyJinJuan(-nCount) == 0 then	
+if ModifyJinJuan(-nCount) >= 0 then	
  nRandom = random(1,3) --2 KÐo 1 Bóa 3 Bao
 	 if ( nRandom == 1  ) then
 Talk(1,"","KÕt qu¶ cña chóng t«i: <color=green>Bóa<color> - KÕt qu¶ hßa!")
@@ -413,12 +413,12 @@ end
 end
 ---------------------------------------------------------------------------------
 function ChonBao()
-	AskClientForNumber("ChonBao1", 10, 10000, "NhËp sè vµng")
+	AskClientForNumber("ChonBao1", 10, 10000, "NhËp sè Kim PhiÕu")
 
 end
 ---------------------------------------------------------------------------------
 function ChonBao1(nCount)
-if ModifyJinJuan(-nCount) == 0 then	
+if ModifyJinJuan(-nCount) >= 0 then	
  nRandom = random(1,3) --3 KÐo 2 Bóa 1 Bao
 	 if ( nRandom == 1  ) then
 Talk(1,"","KÕt qu¶ cña chóng t«i: <color=green>Bao<color> - KÕt qu¶ hßa!")
@@ -453,14 +453,14 @@ function DoiVangBao()
 		tinsert(tbSay, "§æi Tö Kim Hång Bao (tïy chän)/Doi9")
  		tinsert(tbSay, "Ta ch­a muèn ®æi/nothing")
 
-	Say("<color=green>Chñ Sßng Bµi: <color>Ng­¬i muèn ®æi bao vµng lo¹i nµo?",getn(tbSay),tbSay);
+	Say("<color=green>Chñ Sßng Bµi: <color>Ng­¬i muèn ®æi bao Kim PhiÕu lo¹i nµo?",getn(tbSay),tbSay);
 end
 ---------------------------------------------------------------------------------
 function Doi1()
 if ModifyJinJuan(-1200) == 1 then
 AddItem(2,1,539,1)
 else
-Talk(1,"","Sè l­îng vµng trong hµnh trang kh«ng ®ñ 1200")
+Talk(1,"","Sè l­îng Kim PhiÕu trong hµnh trang kh«ng ®ñ 1200")
 end
 end
 ---------------------------------------------------------------------------------
@@ -468,7 +468,7 @@ function Doi2()
 if ModifyJinJuan(-6000) == 1 then
 AddItem(2,1,539,5)
 else
-Talk(1,"","Sè l­îng vµng trong hµnh trang kh«ng ®ñ 6000")
+Talk(1,"","Sè l­îng Kim PhiÕu trong hµnh trang kh«ng ®ñ 6000")
 end
 end
 ---------------------------------------------------------------------------------
@@ -476,7 +476,7 @@ function Doi3()
 if ModifyJinJuan(-12000) == 1 then
 AddItem(2,1,539,10)
 else
-Talk(1,"","Sè l­îng vµng trong hµnh trang kh«ng ®ñ 12000")
+Talk(1,"","Sè l­îng Kim PhiÕu trong hµnh trang kh«ng ®ñ 12000")
 end
 end
 ---------------------------------------------------------------------------------
@@ -484,7 +484,7 @@ function Doi4()
 if ModifyJinJuan(-4800) == 1 then
 AddItem(2,1,30229,1)
 else
-Talk(1,"","Sè l­îng vµng trong hµnh trang kh«ng ®ñ 4800")
+Talk(1,"","Sè l­îng Kim PhiÕu trong hµnh trang kh«ng ®ñ 4800")
 end
 end
 ---------------------------------------------------------------------------------
@@ -492,7 +492,7 @@ function Doi5()
 if ModifyJinJuan(-24000) == 1 then
 AddItem(2,1,30229,5)
 else
-Talk(1,"","Sè l­îng vµng trong hµnh trang kh«ng ®ñ 24000")
+Talk(1,"","Sè l­îng Kim PhiÕu trong hµnh trang kh«ng ®ñ 24000")
 end
 end
 ---------------------------------------------------------------------------------
@@ -500,7 +500,7 @@ function Doi6()
 if ModifyJinJuan(-48000) == 1 then
 AddItem(2,1,30229,10)
 else
-Talk(1,"","Sè l­îng vµng trong hµnh trang kh«ng ®ñ 48000")
+Talk(1,"","Sè l­îng Kim PhiÕu trong hµnh trang kh«ng ®ñ 48000")
 end
 end
 ---------------------------------------------------------------------------------
@@ -513,7 +513,7 @@ function Doi71(nCount)
 if ModifyJinJuan(-1200*nCount) == 1 then
 AddItem(2,1,539,nCount)
 else
-local strTemp1 = format("Sè l­îng vµng trong hµnh trang kh«ng ®ñ %s",1200*nCount);
+local strTemp1 = format("Sè l­îng Kim PhiÕu trong hµnh trang kh«ng ®ñ %s",1200*nCount);
 Talk(1,"",strTemp1)
 end
 end
@@ -527,7 +527,7 @@ function Doi81(nCount)
 if ModifyJinJuan(-4800*nCount) == 1 then
 AddItem(2,1,30229,nCount)
 else
-local strTemp1 = format("Sè l­îng vµng trong hµnh trang kh«ng ®ñ %s",4800*nCount);
+local strTemp1 = format("Sè l­îng Kim PhiÕu trong hµnh trang kh«ng ®ñ %s",4800*nCount);
 Talk(1,"",strTemp1)
 end
 end
@@ -541,7 +541,7 @@ function Doi91(nCount)
 if ModifyJinJuan(-400*nCount) == 1 then
 AddItem(2,1,537,nCount)
 else
-local strTemp1 = format("Sè l­îng vµng trong hµnh trang kh«ng ®ñ %s",400*nCount);
+local strTemp1 = format("Sè l­îng Kim PhiÕu trong hµnh trang kh«ng ®ñ %s",400*nCount);
 Talk(1,"",strTemp1)
 end
 end
