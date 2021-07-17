@@ -106,7 +106,7 @@ function GMADP()
 				"NhËn Ngùa Míi 3/ngumoi3",
 				"LÊy Item b»ng ID/AddItemToGamer",
 	--			"NhËn NhËn 250.000 ®iÓm c«ng tr¹ng/Get_CongTrang",
-	--			"Gäi Boss Tæng Hîp /BossTongHop",
+				"Gäi Boss Tæng Hîp /BossTongHop",
 				"NhËn Qu©n hµm nguyªn so¸i/Get_NguyenSoai",
 				"NhËn Qu©n hµm nguyªn so¸i/Get_Lieu",
 	--			"NhËn Qu©n hµm nguyªn quan/Tuong_quan",
@@ -343,93 +343,25 @@ end
 function BossTongHop()
 	local tSay = {}
 
-	tinsert(tSay, format("%s/Boss_LucLam", "Boss Lôc L©m"))
-	tinsert(tSay, format("%s/Boss_ThuongThan", "Boss Th­¬ng ThÇn"))
+	tinsert(tSay, format("%s/Boss_LucLam", "B¾c Lôc L©m Minh Chñ"))
+	tinsert(tSay, format("%s/Boss_ThuongThan", "Th­¬ng ThÇn Doanh Thiªn"))
 	tinsert(tSay, format("%s/Boss_HuongLang", "L·nh H­¬ng L¨ng"))
 	tinsert(tSay, format("%s/Boss_LanHoa", "Lan Hoa"))
 	tinsert(tSay, format("%s/Boss_AnhTu", "Anh Tö"))
-	tinsert(tSay, format("%s/Boss_PhuThuy", "Phu Thuy"))
-	tinsert(tSay, format("%s/Boss_ThitNuong", "Xin lçi con mÑ b¹n"))
+	tinsert(tSay, format("%s/Boss_PhuThuy", "Phï thñy b¨ng gi¸"))
+	tinsert(tSay, format("%s/Boss_LuongSon", "H¶o h¸n L­¬ng S¬n"))
+	tinsert(tSay, format("%s/Boss_W1", "§µo Hoa §¶o Chñ Hoµng Long"))
+	tinsert(tSay, format("%s/Boss_W2", "T©y Vùc Th­¬ng Lang B¸ V­¬ng"))
+	tinsert(tSay, format("%s/Boss_W3", "Ngäc S¬n Chi Linh Thiªn Cöu"))
+	tinsert(tSay, format("%s/Boss_W4", "U Tr¹ch Chi ¶nh Minh Vâ"))
+	tinsert(tSay, format("%s/Boss_W5", "§«ng Ph­¬ng BÊt B¹i"))
+	tinsert(tSay, format("%s/Boss_TuLinh", "Tø Linh"))
+	tinsert(tSay, format("%s/Boss_NienThu", "§¹i Niªn Thó"))
+	tinsert(tSay, format("%s/Boss_ThitNuong", "YÕn tiÖc ThÞt N­íng"))
 	tinsert(tSay, "T¹i h¹ chØ xem qua th«i/nothing");
 	Say(g_szTitle.."Ng­¬i cÇn gäi boss g×?", getn(tSay), tSay);
 end
 
-function Boss_LucLam()
-
-	local npcIndex = 0
-	--npcIndex = CreateNpc("S¬n TÆc §Çu Môc","B¾c Lôc L©m Minh Chñ",105,1520,3089,-1,1,1,30)
-	Msg2Global("Minh T©y Xin Chµo c¸c b¹n nhÐ , c¶m ¬n c¸c b¹n ®· ch¬i jx2 loliteam ¹ xin ch©n thµnh c¶m ¬n!")
-	SetNpcLifeTime(npcIndex, 7200)
-	SetNpcScript(npcIndex, "\\script\\task\\boss\\boss_ondeath.lua")
-	
-end
-
-function Boss_ThuongThan()
-
-	local npcIndex = 0
-	--npcIndex = CreateNpc("HuyÒn Vâ Th­ong","Th­¬ng ThÇn Doanh Thiªn",105,1520,3088,-1,1,1,30)
-	Msg2Global("ChiÕn Tr­êng ®· më Nhanh Nhanh lÑ lÑ vµo chiÕn tr­êng nhËn NhËn h¸c tinh!")
-	SetNpcLifeTime(npcIndex, 7200)
-	SetNpcScript(npcIndex, "\\script\\task\\boss\\boss_ondeath.lua")
-
-end
-
-function Boss_HuongLang()
-
-	local npcIndex = 0
-	--npcIndex = CreateNpc("NghiÖt Hån","L·nh H­¬ng L¨ng",105,1488,3120,-1,1,1,30)
-	Msg2Global("TOP 1 ChiÕn tr­êng 20 Viªn h¾c tinh, TOP 2 ChiÒn Tr­êng 15 Viªn h¾c tinh, TOP 3 ChiÕn Tr­êng 10 Viªn H¸c tinh,!")
-	SetNpcLifeTime(npcIndex, 7200)
-	SetNpcScript(npcIndex, "\\script\\task\\boss\\boss_ondeath.lua")
-	
-end
-
-function Boss_LanHoa()
-
-	local npcIndex = 0
-	--npcIndex = CreateNpc("lanhua_viet","Lan Hoa",105,1456,3056,-1,1,1,30)
-	Msg2Global("Admin Minh t©y ®Ñp trai ®a tµi nªn anh em h¶y Göi 1 lêi chµo víi admin Minh t©y nµo!")
-	SetNpcLifeTime(npcIndex, 7200)
-	SetNpcScript(npcIndex, "\\script\\online\\viet_event\\lanhua_boss\\lanhua_boss.lua")
-
-end
-
-function Boss_AnhTu()
-
-	local npcIndex = 0
-	--npcIndex = CreateNpc("yingzi_viet","Anh Tö",105,1432,3088,-1,1,1,30)
-	Msg2Global("C¸c b¹n nhanh Nhanh tham gia Thiªn M«n TrËn ®Ó nhËn viªn h¾c tinh nhÐ!")
-	SetNpcLifeTime(npcIndex, 7200)
-	SetNpcScript(npcIndex, "\\script\\online\\viet_event\\lanhua_boss\\lanhua_boss.lua")
-	
-end
-
-function Boss_ThitNuong()
-	
-	Msg2Global("X×n ®õng chöi admin v× admin lµ 1 t­îng ®µi vÜ ®¹i nªn chöi nã tøc nã khãc nã nghØ lµm sever ®ã c¹c b¹n ko cã sever choi ®©u, Xin lçi anh em nhÐ!")
-	local nAddX = 0
-	local nAddY = 0
-	local nTargetNpc = 0
-	
-	for i = 1, 20 do
-		nAddX = random(-70, 70)
-		nAddY = random(-70, 70)		
-		--nTargetNpc = CreateNpc("M©m cç", "ThÞt N­íng",105, 1440 + nAddX, 2992 + nAddY)
-		SetNpcLifeTime(nTargetNpc, 130)
-		SetNpcScript(nTargetNpc, "\\script\\online\\viet_event\\200909\\2\\pangtuzi_baoguo.lua")
-end
-
-end
-
-function Boss_PhuThuy()
-
-	local nNpcIndex = 0
-	--local nNpcIndex = CreateNpc("C¶m ¬n anh em ®· g¾ng bã víi jx2 loliteam nhÐ", 105,1536,3008);
-	SetNpcLifeTime(nNpcIndex, 7200);
-	SetNpcDeathScript(nNpcIndex, "\\script\\online\\viet_event\\200912\\3\\death_binglengwushi.lua");
-	Msg2Global("C¶m ¬n ®· g¾ng bã víi chóng t«i c¶m ¬n ¹!")
-
-end
 
 
 function adm_buff()
@@ -4673,4 +4605,299 @@ function adm_buff1()
 		"T¹i h¹ chØ xem qua th«i/nothing",
 	}
 	Say(g_szTitle.."Chøc N¨ng ADMON", getn(tSay), tSay);
+end
+
+LSB_NPC_GOLD_BOSS = {
+	{"yangxiong", 165, "BÖnh Quan S¸c D­¬ng Hïng", 30 * 60},
+	{"linchong", 167, "B¸o Tö §Çu L©m Xung", 30 * 60},
+	{"luzhishen", 167, "Hoa Hßa Th­îng Lç TrÝ Th©m", 30 * 60},
+	{"likui", 167, "H¾c Toµn Phong Lý Quú", 30 * 60},
+	{"husanliang", 167, "NhÊt Tr­îng Thanh Hæ Tam N­¬ng", 30 * 60},
+	{"shixiu", 167, "Phanh MÖnh Tam Lang Th¹ch Tó", 30 * 60},
+	{"CËp Thêi Vò Tèng Giang", 167, "CËp Thêi Vò Tèng Giang", 30 * 60},
+	{"Tri §a Tinh Ng« Dông", 167, "Tri §a Tinh Ng« Dông", 30 * 60},
+	{"Cöu V¨n Long Sö TiÕn", 167, "Cöu V¨n Long Sö TiÕn", 30 * 60},
+	{"TiÓu TuyÒn Phong Sµi TiÕn", 167, "TiÓu TuyÒn Phong Sµi TiÕn", 30 * 60},
+	{"§¹i §ao Quan Th¾ng", 167, "§¹i §ao Quan Th¾ng", 30 * 60},
+	{"NhËp V©n Long C«ng T«n Th¾ng", 167, "NhËp V©n Long C«ng T«n Th¾ng", 30 * 60},
+	{"B¸o Tö §Çu L©m Xung", 167, "B¸o Tö §Çu L©m Xung", 30 * 60},
+	{"Hoa Hßa Th­îng Lç TrÝ Th©m", 167, "Hoa Hßa Th­îng Lç TrÝ Th©m", 30 * 60},
+	{"Hµnh Gi¶ Vâ Tßng", 167, "Hµnh Gi¶ Vâ Tßng", 30 * 60},
+	{"Tóy B¸n Tiªn Phong NhÊt Phµm", 167, "Tóy B¸n Tiªn Phong NhÊt Phµm", 30 * 60},
+	{"BÖnh Quan S¸c D­¬ng Hïng", 167, "BÖnh Quan S¸c D­¬ng Hïng", 30 * 60},
+	{"Phanh MÖnh Tam Lang Th¹ch Tó", 167, "Phanh MÖnh Tam Lang Th¹ch Tó", 30 * 60},
+	{"NhÊt Tr­îng Thanh Hæ Tam N­¬ng", 167, "NhÊt Tr­îng Thanh Hæ Tam N­¬ng", 30 * 60},
+	{"Song Th­¬ng T­íng §æng B×nh", 167, "Song Th­¬ng T­íng §æng B×nh", 30 * 60},
+	{"Thanh DiÖn Thó D­¬ng TrÝ", 167, "Thanh DiÖn Thó D­¬ng TrÝ", 30 * 60},
+	{"TÝch LÞch Háa TÇn Minh", 167, "TÝch LÞch Háa TÇn Minh", 30 * 60},
+	{"Song Tiªn H« Diªn Ch­íc", 167, "Song Tiªn H« Diªn Ch­íc", 30 * 60},
+	{"H¾c Toµn Phong Lý Quú", 167, "H¾c Toµn Phong Lý Quú", 30 * 60},
+};
+
+function Boss_W1()
+
+	local nMap,nX,nY = GetWorldPos();
+	local nNpcIdx = 0
+	local msg = format("Theo t×nh b¸o, 1 qu¸i nh©n víi vâ c«ng v« ®Þch thiªn h¹ ®· xuÊt hiÖn t¹i Tµi Nguyªn ChiÕn, mau ®Õn thu phôc h¾n !!!");
+			Msg2Global(msg);
+		Msg2Global(msg);
+		Msg2Global(msg);
+		Msg2Global(msg);
+		local npcIndex = CreateNpc("WorldBoss_HL", "§µo Hoa §¶o Chñ Hoµng Long", 606,168*8,187*16);
+		SetNpcLifeTime(npcIndex, 1*60 * 60);
+		SetNpcDeathScript(npcIndex, "\\script\\function\\world_boss\\wb_boss_death.lua");
+		SetNpcRemoveScript(npcIndex, "\\script\\function\\world_boss\\wb_boss_remove.lua");
+
+end
+
+function Boss_W5()
+
+	local nMap,nX,nY = GetWorldPos();
+	local nNpcIdx = 0
+		local npcIndex = CreateNpc("WorldBoss_dfbb", "§«ng Ph­¬ng BÊt B¹i", 606,168*8,187*16);
+		local msg = format("Theo t×nh b¸o, 1 qu¸i nh©n víi vâ c«ng v« ®Þch thiªn h¹ ®· xuÊt hiÖn t¹i Tµi Nguyªn ChiÕn, mau ®Õn thu phôc h¾n !!!");
+		Msg2Global(msg);
+		Msg2Global(msg);
+		Msg2Global(msg);
+		Msg2Global(msg);
+		AddLocalNews(msg);
+		SetNpcLifeTime(npcIndex, 1*60 * 60);
+		SetNpcDeathScript(npcIndex, "\\script\\function\\world_boss\\wb_boss_death.lua");
+		SetNpcRemoveScript(npcIndex, "\\script\\function\\world_boss\\wb_boss_remove.lua");
+
+end
+
+function Boss_W6()
+
+	local nMap,nX,nY = GetWorldPos();
+	local nNpcIdx = 0
+		local npcIndex = CreateNpc("TYT_HyehuoTYS", "Gi¸c §éc Thó", 606,168*8,187*16);
+		local msg = format("Theo t×nh b¸o, 1 qu¸i nh©n víi vâ c«ng v« ®Þch thiªn h¹ ®· xuÊt hiÖn t¹i Tµi Nguyªn ChiÕn, mau ®Õn thu phôc h¾n !!!");
+		Msg2Global(msg);
+		Msg2Global(msg);
+		Msg2Global(msg);
+		Msg2Global(msg);
+		AddLocalNews(msg);
+		SetNpcLifeTime(npcIndex, 2*60 * 60);
+		SetNpcDeathScript(npcIndex, "\\script\\function\\world_boss\\wb_boss_death.lua");
+		SetNpcRemoveScript(npcIndex, "\\script\\function\\world_boss\\wb_boss_remove.lua");
+
+end
+
+function Boss_W2()
+
+	local nMap,nX,nY = GetWorldPos();
+	local nNpcIdx = 0
+	local msg = format("Theo t×nh b¸o, 1 qu¸i nh©n víi vâ c«ng v« ®Þch thiªn h¹ ®· xuÊt hiÖn t¹i Tµi Nguyªn ChiÕn, mau ®Õn thu phôc h¾n !!!");
+			Msg2Global(msg);
+		Msg2Global(msg);
+		Msg2Global(msg);
+		Msg2Global(msg);
+		local npcIndex = CreateNpc("WorldBoss_CLBZ", "T©y Vùc Th­¬ng Lang B¸ V­¬ng", 606,168*8,187*16);
+		SetNpcLifeTime(npcIndex, 1*60 * 60);
+		SetNpcDeathScript(npcIndex, "\\script\\function\\world_boss\\wb_boss_death.lua");
+		SetNpcRemoveScript(npcIndex, "\\script\\function\\world_boss\\wb_boss_remove.lua");
+
+end
+function Boss_W3()
+
+	local nMap,nX,nY = GetWorldPos();
+	local nNpcIdx = 0
+	local msg = format("Theo t×nh b¸o, 1 qu¸i nh©n víi vâ c«ng v« ®Þch thiªn h¹ ®· xuÊt hiÖn t¹i Tµi Nguyªn ChiÕn, mau ®Õn thu phôc h¾n !!!");
+			Msg2Global(msg);
+		Msg2Global(msg);
+		Msg2Global(msg);
+		Msg2Global(msg);
+		local npcIndex = CreateNpc("WorldBoss_TJ", "Ngäc S¬n Chi Linh Thiªn Cöu", 606,168*8,187*16);
+		SetNpcLifeTime(npcIndex, 1*60 * 60);
+		SetNpcDeathScript(npcIndex, "\\script\\function\\world_boss\\wb_boss_death.lua");
+		SetNpcRemoveScript(npcIndex, "\\script\\function\\world_boss\\wb_boss_remove.lua");
+
+end
+function Boss_W4()
+
+	local nMap,nX,nY = GetWorldPos();
+	local msg = format("Theo t×nh b¸o, 1 qu¸i nh©n víi vâ c«ng v« ®Þch thiªn h¹ ®· xuÊt hiÖn t¹i Tµi Nguyªn ChiÕn, mau ®Õn thu phôc h¾n !!!");
+	local nNpcIdx = 0
+			Msg2Global(msg);
+		Msg2Global(msg);
+		Msg2Global(msg);
+		Msg2Global(msg);
+		local npcIndex = CreateNpc("WorldBoss_MW", "U Tr¹ch Chi ¶nh Minh Vâ", 606,168*8,187*16);
+		SetNpcLifeTime(npcIndex, 1*60 * 60);
+		SetNpcDeathScript(npcIndex, "\\script\\function\\world_boss\\wb_boss_death.lua");
+		SetNpcRemoveScript(npcIndex, "\\script\\function\\world_boss\\wb_boss_remove.lua");
+
+end
+
+function Thuong_LuongSon()
+
+	local nMap,nX,nY = GetWorldPos();
+	local nNpcIdx = 0
+			Msg2Global(msg);
+		Msg2Global(msg);
+		Msg2Global(msg);
+		Msg2Global(msg);
+			local nNpcIdx = CreateNpc(IBbaoxiang, "R­¬ng H¶o H¸n", nMap, nX + 2, nY + 2);
+			SetNpcLifeTime(nNpcIdx, 2*60 * 60);
+			SetNpcScript(nNpcIdx,"\\script\\online\\liangshanboss\\npc\\box\\box_e.lua");
+
+end
+
+function Boss_TuLinh()
+
+	local nNpcIndex = 0
+	local nMap,nX,nY = GetWorldPos();
+	local n = gf_GetRandItemByTable(TuLinh_BOSS_LIST, 1000, 1) or 1;
+	local nNpcIndex = CreateNpc(TuLinh_BOSS_LIST[n][1],TuLinh_BOSS_LIST[n][3],  nMap, nX + 2, nY + 2);
+		SetNpcLifeTime(nNpcIndex,7200);
+		SetNpcDeathScript(nNpcIndex,"\\script\\online_activites\\tiaozhansilingboss\\boss\\boss_death.lua");
+		Msg2Global(msg);
+		Msg2Global(msg);
+		Msg2Global(msg);
+		Msg2Global(msg);
+end
+
+TuLinh_BOSS_LIST = {
+	{"Long Tö", 165, "Long ThÇn Hãa Th©n", 30 * 60},
+	{"Phông Tö", 167, "Phông ThÇn Hãa Th©n", 30 * 60},
+	{"Hæ Tö", 165, "Hæ ThÇn Hãa Th©n", 30 * 60},
+	{"¦ng Tö", 167, "¦ng ThÇn Hãa Th©n", 30 * 60},
+}
+
+function Boss_NienThu()
+
+	local nNpcIndex = 0
+	local nMap,nX,nY = GetWorldPos();
+	local nNpcIndex = CreateNpc("§¹i Niªn Thó","ThÇn thó ngh×n n¨m",  nMap, nX + 2, nY + 2);
+		SetNpcLifeTime(nNpcIndex,7200);
+		SetNpcScript(nNpcIndex,"\\script\\online_activites\\2011_03\\boss\\npc\\bigboss.lua");
+
+end
+
+function Boss_LucLam()
+
+	local nMap,nX,nY = GetWorldPos();
+	local npcIndex = 0
+	npcIndex = CreateNpc("S¬n TÆc §Çu Môc","B¾c Lôc L©m Minh Chñ", nMap, nX + 2, nY + 2,-1,1,1,30)
+	--Msg2Global("Nghe nãi minh chñ lôc l©m ®ang ë t©y TuyÒn Ch©u 191/192, ch¾c ®ang cã ©m m­u!")
+	SetNpcLifeTime(npcIndex, 7200)
+	SetNpcScript(npcIndex, "\\script\\task\\boss\\boss_ondeath.lua")
+
+end
+
+function Boss_ThuongThan()
+
+	local nMap,nX,nY = GetWorldPos();
+	local npcIndex = 0
+	npcIndex = CreateNpc("HuyÒn Vâ Th­ong","Th­¬ng ThÇn Doanh Thiªn", nMap, nX + 2, nY + 2,-1,1,1,30)
+	--Msg2Global("Nghe nãi thÞ vÖ th©n tÝn cña TÇn Thñy Hoµng ®ang ë t©y TuyÒn Ch©u 189/192, vâ l©m s¾p cã mét trËn hµo kiÕp!")
+	SetNpcLifeTime(npcIndex, 7200)
+	SetNpcScript(npcIndex, "\\script\\task\\boss\\boss_ondeath.lua")
+
+end
+
+function Boss_HuongLang()
+
+	local nMap,nX,nY = GetWorldPos();
+	local npcIndex = 0
+	local xX = random(171, 194)
+	local yY = random(170,195)
+	-- Msg2Player(xX)
+	-- Msg2Player(yY)
+	npcIndex = CreateNpc("NghiÖt Hån","L·nh H­¬ng L¨ng", 202,  xX*8, yY*16,-1,1,1,30)
+	Msg2Global("Nghe nãi L·nh H­¬ng L¨ng  ®ang ë H¹nh Hoa Th«n, mau ®Õn ®ã xem thö dung nhan kiÒu diÔm cña nµng!")
+	SetNpcLifeTime(npcIndex, 7200)
+	SetNpcScript(npcIndex, "\\script\\task\\boss\\boss_ondeath.lua")
+
+end
+
+function Boss_LanHoa()
+
+	local nMap,nX,nY = GetWorldPos();
+	local npcIndex = 0
+	local xX = random(171, 194)
+	local yY = random(170,195)
+	-- Msg2Player(xX)
+	-- Msg2Player(yY)
+	npcIndex = CreateNpc("lanhua_viet","Lan Hoa", 202, xX*8, yY*16,-1,1,1,30)
+	--Msg2Global("Cã ng­êi nh×n thÊy Lan Hoa ®ang ë t©y TuyÒn Ch©u 181/190, mau ®Õn ®ã xem!")
+	-- SetNpcLifeTime(npcIndex, 7200)
+	-- SetNpcScript(npcIndex, "\\script\\online\\viet_event\\lanhua_boss\\lanhua_boss.lua")
+		local msg = format("Cã ng­êi nh×n thÊy Lan Hoa ®ang ë H¹nh Hoa Th«n, mau ®Õn ®ã xem! !!!");
+		Msg2Global(msg);
+		Msg2Global(msg);
+		Msg2Global(msg);
+		Msg2Global(msg);
+		AddLocalNews(msg);
+		SetNpcLifeTime(npcIndex, 1*60 * 60);
+		SetNpcDeathScript(npcIndex, "\\script\\function\\world_boss\\wb_boss_death.lua");
+		SetNpcRemoveScript(npcIndex, "\\script\\function\\world_boss\\wb_boss_remove.lua");
+end
+
+function Boss_AnhTu()
+
+	local nMap,nX,nY = GetWorldPos();
+	local npcIndex = 0
+	local xX = random(171, 194)
+	local yY = random(170,195)
+	-- Msg2Player(xX)
+	-- Msg2Player(yY)
+	npcIndex = CreateNpc("yingzi_viet","Anh Tö", 202, xX*8, yY*16,-1,1,1,30)
+	--Msg2Global("Cã ng­êi nh×n thÊy Lan Hoa ®ang ë t©y TuyÒn Ch©u 181/190, mau ®Õn ®ã xem!")
+	-- SetNpcLifeTime(npcIndex, 7200)
+	-- SetNpcScript(npcIndex, "\\script\\online\\viet_event\\lanhua_boss\\lanhua_boss.lua")
+		local msg = format("Cã ng­êi nh×n thÊy Anh Tö ®ang ë H¹nh Hoa Th«n, mau ®Õn ®ã xem! !!!");
+		Msg2Global(msg);
+		Msg2Global(msg);
+		Msg2Global(msg);
+		Msg2Global(msg);
+		AddLocalNews(msg);
+		SetNpcLifeTime(npcIndex, 1*60 * 60);
+		SetNpcDeathScript(npcIndex, "\\script\\function\\world_boss\\wb_boss_death.lua");
+		SetNpcRemoveScript(npcIndex, "\\script\\function\\world_boss\\wb_boss_remove.lua");
+
+end
+
+
+function Boss_ThitNuong()
+
+	--Msg2Global("Cã ng­êi nh×n thÊy YÕn tiÖc ThÞt N­íng ®ang ë t©y TuyÒn Ch©u 181/188, mau ®Õn tham dù!")
+	local nAddX = 0
+	local nAddY = 0
+	local nTargetNpc = 0
+	local nMap,nX,nY = GetWorldPos();			
+	for i = 1, 20 do
+		nAddX = random(-70, 70)
+		nAddY = random(-70, 70)		
+		nTargetNpc = CreateNpc("M©m cç", "ThÞt N­íng", nMap, nX + nAddX,  nY + nAddY)
+		SetNpcLifeTime(nTargetNpc, 130)
+		SetNpcScript(nTargetNpc, "\\script\\online\\viet_event\\200909\\2\\pangtuzi_baoguo.lua")
+end
+
+end
+
+function Boss_PhuThuy()
+
+	local nMap,nX,nY = GetWorldPos();
+	local nNpcIndex = 0
+	local nNpcIndex = CreateNpc("Phï thñy b¨ng gi¸", "Phï thñy b¨ng gi¸", nMap, nX + 2, nY + 2);
+	SetNpcLifeTime(nNpcIndex, 7200);
+	SetNpcDeathScript(nNpcIndex, "\\script\\online\\viet_event\\200912\\3\\death_binglengwushi.lua");
+	--Msg2Global("Cã ng­êi nh×n thÊy Phï thñy b¨ng gi¸  ®ang ë t©y TuyÒn Ch©u 192/188, mau ®Õn ®ã xem!")
+
+
+end
+
+function Boss_LuongSon()
+
+	local nNpcIndex = 0
+	local nMap,nX,nY = GetWorldPos();
+	local n = gf_GetRandItemByTable(LSB_NPC_GOLD_BOSS, 1000, 1) or 1;
+	local nNpcIndex = CreateNpc(LSB_NPC_GOLD_BOSS[n][1],LSB_NPC_GOLD_BOSS[n][3],  nMap, nX + 2, nY + 2);
+		SetNpcLifeTime(nNpcIndex,7200);
+		SetNpcDeathScript(nNpcIndex,"\\script\\online\\liangshanboss\\npc\\gld_boos_death.lua");
+		SetNpcRemoveScript(nNpcIndex,"\\script\\online\\liangshanboss\\npc\\gld_boss_remove.lua");
+	--Msg2Global("Cã ng­êi ph¸t hiÖn H¶o h¸n L­¬ng S¬n  ®ang ë t©y TuyÒn Ch©u 191/187, mau ®Õn ®ã xem!")
+
 end
