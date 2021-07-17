@@ -5,21 +5,21 @@ Include("\\script\\vng\\lib\\vnglib_textdata.lua")
 function main()
 
 	if kiem_tra() == 0 then
-	Say("CÂ¸c hÂ¹ chÂ­a phÂ¶i lÂµ HÃ©i ViÂªn.",2,"Ta muÃ¨n Â®Â¨ng kÃ½ tham gia/dang_ky","Â§Ã“ ta suy nghÃ˜ lÂ¹i/nothing")
+	Say("C¸c h¹ ch­a ph¶i lµ Héi Viªn.",2,"Ta muèn ®¨ng kı tham gia/dang_ky","§Ó ta suy nghØ l¹i/nothing")
 	return
 	end
 
-	local szName = "ChÃ± SÃŸng BÂµi"
-	local szHeader = "<color=green>"..szName.." :<color>CÂ¸c hÂ¹ muÃ¨n chÂ¬i gÃ—"
+	local szName = "Chñ Sßng Bµi"
+	local szHeader = "<color=green>"..szName.." :<color>C¸c h¹ muèn ch¬i g×"
 	local tbSayDialog = {};
 	local nSaySize = 0;
 
-	tinsert(tbSayDialog, "ChÂ¬i BÃ‡u Cua/choibaucua")
-	tinsert(tbSayDialog, "ChÂ¬i OÂ¼n TÃ¯ TÃ—/ChoiOanTuTi")
-	tinsert(tbSayDialog, "ChÂ¬i ChÂ½n LÃ/ChoiChanLe")
-	tinsert(tbSayDialog, "Â§Ã¦i VÂµng Bao/DoiVangBao")
+	tinsert(tbSayDialog, "Ch¬i BÇu Cua/choibaucua")
+	tinsert(tbSayDialog, "Ch¬i O¼n Tï T×/ChoiOanTuTi")
+	tinsert(tbSayDialog, "Ch¬i Ch½n LÎ/ChoiChanLe")
+	tinsert(tbSayDialog, "§æi Vµng Bao/DoiVangBao")
 
-	tinsert(tbSayDialog, "Ta chÃ˜ ghÃ ngang/nothing")
+	tinsert(tbSayDialog, "Ta chØ ghĞ ngang/nothing")
 	Say(szHeader, getn(tbSayDialog), tbSayDialog)
 	
 
@@ -39,9 +39,9 @@ function dang_ky()
 
 	if Pay(20000000) == 1 then
 		SetTask(3460,1);
-		Msg2Global("ChÃ³c mÃµng "..GetName().. "Â®Â· trÃ« thÂµnh hÃ©i viÂªn.")
+		Msg2Global("Chóc mõng "..GetName().. "®· trë thµnh héi viªn.")
 	else	
-		Talk(1,"","CÃ‡n 2000 vÂµng mÃ­i Â®Â­Ã®c tham gia hÃ©i viÂªn")
+		Talk(1,"","CÇn 2000 vµng míi ®­îc tham gia héi viªn")
 	end
 
 end
@@ -67,19 +67,19 @@ function choibaucua()
 	Tongtiencuoc = GetTask(3461) + GetTask(3462) + GetTask(3463) + GetTask(3464) + GetTask(3465) + GetTask(3466);
 	Tiendangco = GetCash()/10000
 	if GetCash() < Tongtiencuoc*10000 then
-		szTrangthai = "KhÂ«ng thÃ“ mÃ« thÂ­Ã«ng"
+		szTrangthai = "Kh«ng thÓ më th­ëng"
 	else
-		szTrangthai = "CÃ£ thÃ“ mÃ« thÂ­Ã«ng"
+		szTrangthai = "Cã thÓ më th­ëng"
 	end
-	local szName = "ChÃ± SÃŸng BÂµi"
-	local szHeader = "<color=green>"..szName.." :<color>SÃ¨ tiÃ’n vÃ: <color=red>"..Tiendangco.."<color>. SÃ¨ tiÃ’n cÂ­Ã®c: <color=red>"..Tongtiencuoc.."<color>. TrÂ¹ng ThÂ¸i: <color=gold>"..szTrangthai.."<color>"
+	local szName = "Chñ Sßng Bµi"
+	local szHeader = "<color=green>"..szName.." :<color>Sè tiÒn vİ: <color=red>"..Tiendangco.."<color>. Sè tiÒn c­îc: <color=red>"..Tongtiencuoc.."<color>. Tr¹ng Th¸i: <color=gold>"..szTrangthai.."<color>"
 	local tbXucXac = {
-			[1] = {"BÃ‡u"},
+			[1] = {"BÇu"},
 			[2] = {"Cua"},
-			[3] = {"TÂ«m"},
-			[4] = {"CÂ¸"},
+			[3] = {"T«m"},
+			[4] = {"C¸"},
 			[5] = {"Nai"},
-			[6] = {"GÂµ"},
+			[6] = {"Gµ"},
 		}
 		
 		SoBau = GetTask(3461);
@@ -92,18 +92,18 @@ function choibaucua()
 
 		local tbSayDialog = {};
 
-		tinsert(tbSayDialog,1,"Â§Ã†t " .. tbXucXac[1][1] .. " (" ..SoBau  .. " vÂµng)/LuaChonBau")
-		tinsert(tbSayDialog,1,"Â§Ã†t " .. tbXucXac[2][1] .. " (" ..SoCua  .. " vÂµng)/LuaChonCua")
-		tinsert(tbSayDialog,1,"Â§Ã†t " .. tbXucXac[3][1] .. " (" ..SoTom  .. " vÂµng)/LuaChonTom")
-		tinsert(tbSayDialog,1,"Â§Ã†t " .. tbXucXac[4][1] .. " (" ..SoCa  .. " vÂµng)/LuaChonCa")
-		tinsert(tbSayDialog,1,"Â§Ã†t " .. tbXucXac[5][1] .. " (" ..SoNai  .. " vÂµng)/LuaChonNai")
-		tinsert(tbSayDialog,1,"Â§Ã†t " .. tbXucXac[6][1] .. " (" ..SoGa  .. " vÂµng)/LuaChonGa")
+		tinsert(tbSayDialog,1,"§Æt " .. tbXucXac[1][1] .. " (" ..SoBau  .. " vµng)/LuaChonBau")
+		tinsert(tbSayDialog,1,"§Æt " .. tbXucXac[2][1] .. " (" ..SoCua  .. " vµng)/LuaChonCua")
+		tinsert(tbSayDialog,1,"§Æt " .. tbXucXac[3][1] .. " (" ..SoTom  .. " vµng)/LuaChonTom")
+		tinsert(tbSayDialog,1,"§Æt " .. tbXucXac[4][1] .. " (" ..SoCa  .. " vµng)/LuaChonCa")
+		tinsert(tbSayDialog,1,"§Æt " .. tbXucXac[5][1] .. " (" ..SoNai  .. " vµng)/LuaChonNai")
+		tinsert(tbSayDialog,1,"§Æt " .. tbXucXac[6][1] .. " (" ..SoGa  .. " vµng)/LuaChonGa")
 
-		tinsert(tbSayDialog, "MÃ« ThÂ­Ã«ng/mothuong_baucua")
-		tinsert(tbSayDialog, "LÂµm mÃ­i giÂ¸ trÃ/reset_baucua")
+		tinsert(tbSayDialog, "Më Th­ëng/mothuong_baucua")
+		tinsert(tbSayDialog, "Lµm míi gi¸ trŞ/reset_baucua")
 
 
-		tinsert(tbSayDialog, "Ta chÃ˜ ghÃ ngang/nothing")
+		tinsert(tbSayDialog, "Ta chØ ghĞ ngang/nothing")
 		Say(szHeader, getn(tbSayDialog), tbSayDialog)	
 
 end
@@ -115,82 +115,82 @@ function mothuong_baucua()
 	if GetCash() < Tongtiencuoc*10000 then
 	return choibaucua();
 	end
---Thanh toÂ¸n
+--Thanh to¸n
 Pay(Tongtiencuoc*10000);
 
 mRandom = random(1,6);
 nRandom = random(1,6);
 pRandom = random(1,6);
 
---XÃ³c sÂ¾c 1
+--Xóc s¾c 1
 if mRandom == 1 then
 	xx1 = 2*GetTask(3461);
-	yy1 = "BÃ‡u";
+	yy1 = "BÇu";
 elseif mRandom == 2 then
 	xx1 = 2*GetTask(3462);
 	yy1 = "Cua";
 elseif mRandom == 3 then
 	xx1 = 2*GetTask(3463);
-	yy1 = "TÂ«m";
+	yy1 = "T«m";
 elseif mRandom == 4 then
 	xx1 = 2*GetTask(3464);
-	yy1 = "CÂ¸";
+	yy1 = "C¸";
 elseif mRandom == 5 then
 	xx1 = 2*GetTask(3465);
 	yy1 = "Nai";
 elseif mRandom == 6 then
 	xx1 = 2*GetTask(3466);
-	yy1 = "GÂµ";
+	yy1 = "Gµ";
 end
 
 
 
---XÃ³c sÂ¾c 2
+--Xóc s¾c 2
 if nRandom == 1 then
 	xx2 = 2*GetTask(3461);
-	yy2 = "BÃ‡u";
+	yy2 = "BÇu";
 elseif nRandom == 2 then
 	xx2 = 2*GetTask(3462);
 	yy2 = "Cua";
 elseif nRandom == 3 then
 	xx2 = 2*GetTask(3463);
-	yy2 = "TÂ«m";
+	yy2 = "T«m";
 elseif nRandom == 4 then
 	xx2 = 2*GetTask(3464);
-	yy2 = "CÂ¸";
+	yy2 = "C¸";
 elseif nRandom == 5 then
 	xx2 = 2*GetTask(3465);
 	yy2 = "Nai";
 elseif nRandom == 6 then
 	xx2 = 2*GetTask(3466);
-	yy2 = "GÂµ";
+	yy2 = "Gµ";
 end
 
 
 
---XÃ³c sÂ¾c 3
+--Xóc s¾c 3
 if pRandom == 1 then
 	xx3 = 2*GetTask(3461);
-	yy3 = "BÃ‡u";
+	yy3 = "BÇu";
 elseif pRandom == 2 then
 	xx3 = 2*GetTask(3462);
 	yy3 = "Cua";
 elseif pRandom == 3 then
 	xx3 = 2*GetTask(3463);
-	yy3 = "TÂ«m";
+	yy3 = "T«m";
 elseif pRandom == 4 then
 	xx3 = 2*GetTask(3464);
-	yy3 = "CÂ¸";
+	yy3 = "C¸";
 elseif pRandom == 5 then
 	xx3 = 2*GetTask(3465);
 	yy3 = "Nai";
 elseif pRandom == 6 then
 	xx3 = 2*GetTask(3466);
-	yy3 = "GÂµ";
+	yy3 = "Gµ";
 end
 
 
---Trao thÂ­Ã«ng
+--Trao th­ëng
 
 
 
@@ -198,17 +198,17 @@ szTongthang = xx1 + xx2 + xx3;
 Earn(szTongthang*10000)
 
 if szTongthang > Tongtiencuoc then
-	szMat = "ChÃ³c mÃµng bÂ¹n Â®Â· chiÃ•n thÂ¾ng"
+	szMat = "Chóc mõng b¹n ®· chiÕn th¾ng"
 elseif szTongthang == Tongtiencuoc then
-	szMat = "TrÃ‹n nÂµy hÃŸa vÃ¨n"
+	szMat = "TrËn nµy hßa vèn"
 elseif szTongthang < Tongtiencuoc then
-	szMat = "TrÃ‹n nÂµy lÃ§ mÃŠt rÃ¥i...huhu!"
+	szMat = "TrËn nµy lç mÊt råi...huhu!"
 end
 
-local sLine1 = "KÃ•t quÂ¶ mÃ« thÂ­Ã«ng:   <color=green>"..yy1.."<color>      <color=green>"..yy2.."<color>      <color=green>"..yy3.."<color>\n"
-local sLine2 = "SÃ¨ vÂµng thÃ´ hÂ­Ã«ng:   <color=gold>"..xx1.."<color>   +   <color=gold>"..xx2.."<color>   +    <color=gold>"..xx3.."<color>   <color=gold> = "..szTongthang.."<color>\n"
-local sLine3 = "Â§Â· cÂ­Ã®c: <color=green>BÃ‡u:"..GetTask(3461).."<color> + <color=green>Cua:"..GetTask(3462).."<color> + <color=green>TÂ«m:"..GetTask(3463).."<color> + <color=green>CÂ¸:"..GetTask(3464).."<color> + <color=green>Nai:"..GetTask(3465).."<color> + <color=green>GÂµ:"..GetTask(3466).."<color> = <color=gold>"..Tongtiencuoc.."<color>\n"
-local sLine4 = "Chung cuÃ©c:   <color=green>"..szMat.."<color>\n"
+local sLine1 = "KÕt qu¶ më th­ëng:   <color=green>"..yy1.."<color>      <color=green>"..yy2.."<color>      <color=green>"..yy3.."<color>\n"
+local sLine2 = "Sè vµng thô h­ëng:   <color=gold>"..xx1.."<color>   +   <color=gold>"..xx2.."<color>   +    <color=gold>"..xx3.."<color>   <color=gold> = "..szTongthang.."<color>\n"
+local sLine3 = "§· c­îc: <color=green>BÇu:"..GetTask(3461).."<color> + <color=green>Cua:"..GetTask(3462).."<color> + <color=green>T«m:"..GetTask(3463).."<color> + <color=green>C¸:"..GetTask(3464).."<color> + <color=green>Nai:"..GetTask(3465).."<color> + <color=green>Gµ:"..GetTask(3466).."<color> = <color=gold>"..Tongtiencuoc.."<color>\n"
+local sLine4 = "Chung cuéc:   <color=green>"..szMat.."<color>\n"
 
 
 
@@ -216,7 +216,7 @@ Say(sLine3..sLine1..sLine2..sLine4, 0)
 
 
 
---reset lÂ¹i
+--reset l¹i
 SetTask(3461,0);
 SetTask(3462,0);
 SetTask(3463,0);
@@ -228,7 +228,7 @@ end
 ------------------------------------------------------------------------------------------
 function LuaChonBau()
 SetTask(3461,0)
-AskClientForNumber("LuaChonBau_ok",100,10000,"BÃ‡u:");
+AskClientForNumber("LuaChonBau_ok",100,10000,"BÇu:");
 end
 ------------------------------------------------------------------------------------------
 function LuaChonBau_ok(nBau)
@@ -248,7 +248,7 @@ end
 ------------------------------------------------------------------------------------------
 function LuaChonTom()
 SetTask(3463,0)
-AskClientForNumber("LuaChonTom_ok",100,10000,"TÂ«m:");
+AskClientForNumber("LuaChonTom_ok",100,10000,"T«m:");
 end
 ------------------------------------------------------------------------------------------
 function LuaChonTom_ok(nTom)
@@ -258,7 +258,7 @@ end
 ------------------------------------------------------------------------------------------
 function LuaChonCa()
 SetTask(3464,0)
-AskClientForNumber("LuaChonCa_ok",100,10000,"CÂ¸:");
+AskClientForNumber("LuaChonCa_ok",100,10000,"C¸:");
 end
 ------------------------------------------------------------------------------------------
 function LuaChonCa_ok(nCa)
@@ -278,7 +278,7 @@ end
 ------------------------------------------------------------------------------------------
 function LuaChonGa()
 SetTask(3466,0)
-AskClientForNumber("LuaChonGa_ok",100,10000,"GÂµ:");
+AskClientForNumber("LuaChonGa_ok",100,10000,"Gµ:");
 end
 ------------------------------------------------------------------------------------------
 function LuaChonGa_ok(nGa)
@@ -292,15 +292,15 @@ end
 function ChoiChanLe()
 	local tbSay = {};
 	
- 		tinsert(tbSay, "Ta chÃ¤n: ChÂ½n/ChonChan")
- 		tinsert(tbSay, "Ta chÃ¤n: LÃ/ChonLe")
- 		tinsert(tbSay, "Â§Ã“ ta suy nghÃ˜ lÂ¹i/nothing")
+ 		tinsert(tbSay, "Ta chän: Ch½n/ChonChan")
+ 		tinsert(tbSay, "Ta chän: LÎ/ChonLe")
+ 		tinsert(tbSay, "§Ó ta suy nghØ l¹i/nothing")
 
-	Say("<color=green>ChÃ± SÃŸng BÂµi: <color>NgÂ­Â¬i chÃ¤n chÂ½n hay lÃ?",getn(tbSay),tbSay);
+	Say("<color=green>Chñ Sßng Bµi: <color>Ng­¬i chän ch½n hay lÎ?",getn(tbSay),tbSay);
 end
 ---------------------------------------------------------------------------------
 function ChonChan()
-	AskClientForNumber("ChonChan1", 10, 10000, "NhÃ‹p sÃ¨ vÂµng")
+	AskClientForNumber("ChonChan1", 10, 10000, "NhËp sè vµng")
 
 end
 ---------------------------------------------------------------------------------
@@ -308,23 +308,23 @@ function ChonChan1(nCount)
 if Pay(nCount*10000) == 1 then	
  nRandom = random(1,6)
 	 if ( nRandom == 1 or nRandom == 3 or nRandom == 5  ) then
-Talk(1,"","KÃ•t quÂ¶ cÃ±a chÃ³ng tÂ«i: <color=green>LÃ<color> - BÂ¹n Â®Â· thua!")
+Talk(1,"","KÕt qu¶ cña chóng t«i: <color=green>LÎ<color> - B¹n ®· thua!")
 	 elseif ( nRandom == 2 or  nRandom == 4 or  nRandom == 6 ) then
-Talk(1,"","KÃ•t quÂ¶ cÃ±a chÃ³ng tÂ«i: <color=green>ChÂ½n<color> - BÂ¹n Â®Â· thÂ¾ng!")
+Talk(1,"","KÕt qu¶ cña chóng t«i: <color=green>Ch½n<color> - B¹n ®· th¾ng!")
 Earn(nCount*2*10000);
-local strTemp1 = format("%s  Â®Â­Ã®c %s v ChÂ½n LÃ",GetName(),nCount*2);
+local strTemp1 = format("%s  ®­îc %s v Ch½n LÎ",GetName(),nCount*2);
 if nCount >= 2500 then
 AddGlobalNews(strTemp1);
 Msg2Global(strTemp1);
 end
 	 end
 else
-Talk(1,"","<color=green>KhÂ«ng Â®Ã± tiÃ’n thÃ— biÃ•n dÃ¯m!<color>")
+Talk(1,"","<color=green>Kh«ng ®ñ tiÒn th× biÕn dïm!<color>")
 end
 end
 ---------------------------------------------------------------------------------
 function ChonLe()
-	AskClientForNumber("ChonLe1", 10, 10000, "NhÃ‹p sÃ¨ vÂµng")
+	AskClientForNumber("ChonLe1", 10, 10000, "NhËp sè vµng")
 
 end
 ---------------------------------------------------------------------------------
@@ -332,135 +332,135 @@ function ChonLe1(nCount)
 if Pay(nCount*10000) == 1 then	
  nRandom = random(1,6)
 	 if ( nRandom == 2 or nRandom == 4 or nRandom == 6  ) then
-Talk(1,"","KÃ•t quÂ¶ cÃ±a chÃ³ng tÂ«i: <color=green>ChÂ½n<color> - BÂ¹n Â®Â· thua!")
+Talk(1,"","KÕt qu¶ cña chóng t«i: <color=green>Ch½n<color> - B¹n ®· thua!")
 	 elseif ( nRandom == 1 or  nRandom == 3 or  nRandom == 5 ) then
-Talk(1,"","KÃ•t quÂ¶ cÃ±a chÃ³ng tÂ«i: <color=green>LÃ<color> - BÂ¹n Â®Â· thÂ¾ng!")
+Talk(1,"","KÕt qu¶ cña chóng t«i: <color=green>LÎ<color> - B¹n ®· th¾ng!")
 Earn(nCount*2*10000);
-local strTemp1 = format("%s  Â®Â­Ã®c %s v ChÂ½n LÃ",GetName(),nCount*2);
+local strTemp1 = format("%s  ®­îc %s v Ch½n LÎ",GetName(),nCount*2);
 if nCount >= 2500 then
 AddGlobalNews(strTemp1);
 Msg2Global(strTemp1);
 end
 	 end
 else
-Talk(1,"","<color=green>KhÂ«ng Â®Ã± tiÃ’n thÃ— biÃ•n dÃ¯m!<color>")
+Talk(1,"","<color=green>Kh«ng ®ñ tiÒn th× biÕn dïm!<color>")
 end
 end
 ---------------------------------------------------------------------------------xxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 function ChoiOanTuTi()
 	local tbSay = {};
 	
- 		tinsert(tbSay, "Ta chÃ¤n: KÃo/ChonKeo")
- 		tinsert(tbSay, "Ta chÃ¤n: BÃ³a/ChonBua")
-		tinsert(tbSay, "Ta chÃ¤n: Bao/ChonBao")
- 		tinsert(tbSay, "Â§Ã“ ta suy nghÃ˜ lÂ¹i/nothing")
+ 		tinsert(tbSay, "Ta chän: KĞo/ChonKeo")
+ 		tinsert(tbSay, "Ta chän: Bóa/ChonBua")
+		tinsert(tbSay, "Ta chän: Bao/ChonBao")
+ 		tinsert(tbSay, "§Ó ta suy nghØ l¹i/nothing")
 
-	Say("<color=green>ChÃ± SÃŸng BÂµi: <color>NgÂ­Â¬i muÃ¨n chÃ¤n gÃ—?",getn(tbSay),tbSay);
+	Say("<color=green>Chñ Sßng Bµi: <color>Ng­¬i muèn chän g×?",getn(tbSay),tbSay);
 end
 ---------------------------------------------------------------------------------
 function ChonKeo()
-	AskClientForNumber("ChonKeo1", 10, 10000, "NhÃ‹p sÃ¨ vÂµng")
+	AskClientForNumber("ChonKeo1", 10, 10000, "NhËp sè vµng")
 
 end
 ---------------------------------------------------------------------------------
 function ChonKeo1(nCount)
 if Pay(nCount*10000) == 1 then	
- nRandom = random(1,3) --1 KÃo 3 BÃ³a 2 Bao
+ nRandom = random(1,3) --1 KĞo 3 Bóa 2 Bao
 	 if ( nRandom == 1  ) then
-Talk(1,"","KÃ•t quÂ¶ cÃ±a chÃ³ng tÂ«i: <color=green>KÃo<color> - KÃ•t quÂ¶ hÃŸa!")
+Talk(1,"","KÕt qu¶ cña chóng t«i: <color=green>KĞo<color> - KÕt qu¶ hßa!")
 Earn(nCount*10000);
 	 elseif ( nRandom == 2 ) then
-Talk(1,"","KÃ•t quÂ¶ cÃ±a chÃ³ng tÂ«i: <color=green>Bao<color> - BÂ¹n Â®Â· thÂ¾ng!")
+Talk(1,"","KÕt qu¶ cña chóng t«i: <color=green>Bao<color> - B¹n ®· th¾ng!")
 Earn(nCount*2*10000);
-local strTemp1 = format("%s  Â®Â­Ã®c %s v OÂ¼n TÃ¯ TÃ—",GetName(),nCount*2);
+local strTemp1 = format("%s  ®­îc %s v O¼n Tï T×",GetName(),nCount*2);
 if nCount >= 2500 then
 AddGlobalNews(strTemp1);
 Msg2Global(strTemp1);
 end
 	 elseif ( nRandom == 3 ) then
-Talk(1,"","KÃ•t quÂ¶ cÃ±a chÃ³ng tÂ«i: <color=green>BÃ³a<color> - BÂ¹n Â®Â· thua!")
+Talk(1,"","KÕt qu¶ cña chóng t«i: <color=green>Bóa<color> - B¹n ®· thua!")
 	 end
 else
-Talk(1,"","<color=green>KhÂ«ng Â®Ã± tiÃ’n thÃ— biÃ•n dÃ¯m!<color>")
+Talk(1,"","<color=green>Kh«ng ®ñ tiÒn th× biÕn dïm!<color>")
 end
 end
 ---------------------------------------------------------------------------------
 function ChonBua()
-	AskClientForNumber("ChonBua1", 10, 10000, "NhÃ‹p sÃ¨ vÂµng")
+	AskClientForNumber("ChonBua1", 10, 10000, "NhËp sè vµng")
 
 end
 ---------------------------------------------------------------------------------
 function ChonBua1(nCount)
 if Pay(nCount*10000) == 1 then	
- nRandom = random(1,3) --2 KÃo 1 BÃ³a 3 Bao
+ nRandom = random(1,3) --2 KĞo 1 Bóa 3 Bao
 	 if ( nRandom == 1  ) then
-Talk(1,"","KÃ•t quÂ¶ cÃ±a chÃ³ng tÂ«i: <color=green>BÃ³a<color> - KÃ•t quÂ¶ hÃŸa!")
+Talk(1,"","KÕt qu¶ cña chóng t«i: <color=green>Bóa<color> - KÕt qu¶ hßa!")
 Earn(nCount*10000);
 	 elseif ( nRandom == 2 ) then
-Talk(1,"","KÃ•t quÂ¶ cÃ±a chÃ³ng tÂ«i: <color=green>KÃo<color> - BÂ¹n Â®Â· thÂ¾ng!")
+Talk(1,"","KÕt qu¶ cña chóng t«i: <color=green>KĞo<color> - B¹n ®· th¾ng!")
 Earn(nCount*2*10000);
-local strTemp1 = format("%s  Â®Â­Ã®c %s v OÂ¼n TÃ¯ TÃ—",GetName(),nCount*2);
+local strTemp1 = format("%s  ®­îc %s v O¼n Tï T×",GetName(),nCount*2);
 if nCount >= 2500 then
 AddGlobalNews(strTemp1);
 Msg2Global(strTemp1);
 end
 	 elseif ( nRandom == 3 ) then
-Talk(1,"","KÃ•t quÂ¶ cÃ±a chÃ³ng tÂ«i: <color=green>Bao<color> - BÂ¹n Â®Â· thua!")
+Talk(1,"","KÕt qu¶ cña chóng t«i: <color=green>Bao<color> - B¹n ®· thua!")
 	 end
 else
-Talk(1,"","<color=green>KhÂ«ng Â®Ã± tiÃ’n thÃ— biÃ•n dÃ¯m!<color>")
+Talk(1,"","<color=green>Kh«ng ®ñ tiÒn th× biÕn dïm!<color>")
 end
 end
 ---------------------------------------------------------------------------------
 function ChonBao()
-	AskClientForNumber("ChonBao1", 10, 10000, "NhÃ‹p sÃ¨ vÂµng")
+	AskClientForNumber("ChonBao1", 10, 10000, "NhËp sè vµng")
 
 end
 ---------------------------------------------------------------------------------
 function ChonBao1(nCount)
 if Pay(nCount*10000) == 1 then	
- nRandom = random(1,3) --3 KÃo 2 BÃ³a 1 Bao
+ nRandom = random(1,3) --3 KĞo 2 Bóa 1 Bao
 	 if ( nRandom == 1  ) then
-Talk(1,"","KÃ•t quÂ¶ cÃ±a chÃ³ng tÂ«i: <color=green>Bao<color> - KÃ•t quÂ¶ hÃŸa!")
+Talk(1,"","KÕt qu¶ cña chóng t«i: <color=green>Bao<color> - KÕt qu¶ hßa!")
 Earn(nCount*10000);
 	 elseif ( nRandom == 2 ) then
-Talk(1,"","KÃ•t quÂ¶ cÃ±a chÃ³ng tÂ«i: <color=green>BÃ³a<color> - BÂ¹n Â®Â· thÂ¾ng!")
+Talk(1,"","KÕt qu¶ cña chóng t«i: <color=green>Bóa<color> - B¹n ®· th¾ng!")
 Earn(nCount*2*10000);
-local strTemp1 = format("%s  Â®Â­Ã®c %s v OÂ¼n TÃ¯ TÃ—",GetName(),nCount*2);
+local strTemp1 = format("%s  ®­îc %s v O¼n Tï T×",GetName(),nCount*2);
 if nCount >= 2500 then
 AddGlobalNews(strTemp1);
 Msg2Global(strTemp1);
 end
 	 elseif ( nRandom == 3 ) then
-Talk(1,"","KÃ•t quÂ¶ cÃ±a chÃ³ng tÂ«i: <color=green>KÃo<color> - BÂ¹n Â®Â· thua!")
+Talk(1,"","KÕt qu¶ cña chóng t«i: <color=green>KĞo<color> - B¹n ®· thua!")
 	 end
 else
-Talk(1,"","<color=green>KhÂ«ng Â®Ã± tiÃ’n thÃ— biÃ•n dÃ¯m!<color>")
+Talk(1,"","<color=green>Kh«ng ®ñ tiÒn th× biÕn dïm!<color>")
 end
 end
 ---------------------------------------------------------------------------------
 function DoiVangBao()
 	local tbSay = {};
 	
- 		tinsert(tbSay, "Â§Ã¦i HoÂµng Kim Â§Â¹i HÃ¥ng Bao x1/Doi1")
-		tinsert(tbSay, "Â§Ã¦i HoÂµng Kim Â§Â¹i HÃ¥ng Bao x5/Doi2")
-		tinsert(tbSay, "Â§Ã¦i HoÂµng Kim Â§Â¹i HÃ¥ng Bao x10/Doi3")
-		tinsert(tbSay, "Â§Ã¦i HoÂµng Kim Â§Â¹i HÃ¥ng Bao (tÃ¯y chÃ¤n)/Doi7")
-		tinsert(tbSay, "Â§Ã¦i BÂ¹ch Kim Â§Â¹i HÃ¥ng Bao x1/Doi4")
-		tinsert(tbSay, "Â§Ã¦i BÂ¹ch Kim Â§Â¹i HÃ¥ng Bao x5/Doi5")
-		tinsert(tbSay, "Â§Ã¦i BÂ¹ch Kim Â§Â¹i HÃ¥ng Bao x10/Doi6")
-		tinsert(tbSay, "Â§Ã¦i BÂ¹ch Kim Â§Â¹i HÃ¥ng Bao (tÃ¯y chÃ¤n)/Doi8")
-		tinsert(tbSay, "Â§Ã¦i TÃ¶ Kim HÃ¥ng Bao (tÃ¯y chÃ¤n)/Doi9")
- 		tinsert(tbSay, "Ta chÂ­a muÃ¨n Â®Ã¦i/nothing")
+ 		tinsert(tbSay, "§æi Hoµng Kim §¹i Hång Bao x1/Doi1")
+		tinsert(tbSay, "§æi Hoµng Kim §¹i Hång Bao x5/Doi2")
+		tinsert(tbSay, "§æi Hoµng Kim §¹i Hång Bao x10/Doi3")
+		tinsert(tbSay, "§æi Hoµng Kim §¹i Hång Bao (tïy chän)/Doi7")
+		tinsert(tbSay, "§æi B¹ch Kim §¹i Hång Bao x1/Doi4")
+		tinsert(tbSay, "§æi B¹ch Kim §¹i Hång Bao x5/Doi5")
+		tinsert(tbSay, "§æi B¹ch Kim §¹i Hång Bao x10/Doi6")
+		tinsert(tbSay, "§æi B¹ch Kim §¹i Hång Bao (tïy chän)/Doi8")
+		tinsert(tbSay, "§æi Tö Kim Hång Bao (tïy chän)/Doi9")
+ 		tinsert(tbSay, "Ta ch­a muèn ®æi/nothing")
 
-	Say("<color=green>ChÃ± SÃŸng BÂµi: <color>NgÂ­Â¬i muÃ¨n Â®Ã¦i bao vÂµng loÂ¹i nÂµo?",getn(tbSay),tbSay);
+	Say("<color=green>Chñ Sßng Bµi: <color>Ng­¬i muèn ®æi bao vµng lo¹i nµo?",getn(tbSay),tbSay);
 end
 ---------------------------------------------------------------------------------
 function Doi1()
 if Pay(1200*10000) == 1 then
 AddItem(2,1,539,1)
 else
-Talk(1,"","SÃ¨ lÂ­Ã®ng vÂµng trong hÂµnh trang khÂ«ng Â®Ã± 1200")
+Talk(1,"","Sè l­îng vµng trong hµnh trang kh«ng ®ñ 1200")
 end
 end
 ---------------------------------------------------------------------------------
@@ -468,7 +468,7 @@ function Doi2()
 if Pay(6000*10000) == 1 then
 AddItem(2,1,539,5)
 else
-Talk(1,"","SÃ¨ lÂ­Ã®ng vÂµng trong hÂµnh trang khÂ«ng Â®Ã± 6000")
+Talk(1,"","Sè l­îng vµng trong hµnh trang kh«ng ®ñ 6000")
 end
 end
 ---------------------------------------------------------------------------------
@@ -476,7 +476,7 @@ function Doi3()
 if Pay(12000*10000) == 1 then
 AddItem(2,1,539,10)
 else
-Talk(1,"","SÃ¨ lÂ­Ã®ng vÂµng trong hÂµnh trang khÂ«ng Â®Ã± 12000")
+Talk(1,"","Sè l­îng vµng trong hµnh trang kh«ng ®ñ 12000")
 end
 end
 ---------------------------------------------------------------------------------
@@ -484,7 +484,7 @@ function Doi4()
 if Pay(4800*10000) == 1 then
 AddItem(2,1,30229,1)
 else
-Talk(1,"","SÃ¨ lÂ­Ã®ng vÂµng trong hÂµnh trang khÂ«ng Â®Ã± 4800")
+Talk(1,"","Sè l­îng vµng trong hµnh trang kh«ng ®ñ 4800")
 end
 end
 ---------------------------------------------------------------------------------
@@ -492,7 +492,7 @@ function Doi5()
 if Pay(24000*10000) == 1 then
 AddItem(2,1,30229,5)
 else
-Talk(1,"","SÃ¨ lÂ­Ã®ng vÂµng trong hÂµnh trang khÂ«ng Â®Ã± 24000")
+Talk(1,"","Sè l­îng vµng trong hµnh trang kh«ng ®ñ 24000")
 end
 end
 ---------------------------------------------------------------------------------
@@ -500,12 +500,12 @@ function Doi6()
 if Pay(48000*10000) == 1 then
 AddItem(2,1,30229,10)
 else
-Talk(1,"","SÃ¨ lÂ­Ã®ng vÂµng trong hÂµnh trang khÂ«ng Â®Ã± 48000")
+Talk(1,"","Sè l­îng vµng trong hµnh trang kh«ng ®ñ 48000")
 end
 end
 ---------------------------------------------------------------------------------
 function Doi7()
-	AskClientForNumber("Doi71", 1, 50, "NhÃ‹p sÃ¨ lÂ­Ã®ng")
+	AskClientForNumber("Doi71", 1, 50, "NhËp sè l­îng")
 
 end
 ---------------------------------------------------------------------------------
@@ -513,13 +513,13 @@ function Doi71(nCount)
 if Pay(1200*nCount*10000) == 1 then
 AddItem(2,1,539,nCount)
 else
-local strTemp1 = format("SÃ¨ lÂ­Ã®ng vÂµng trong hÂµnh trang khÂ«ng Â®Ã± %s",1200*nCount);
+local strTemp1 = format("Sè l­îng vµng trong hµnh trang kh«ng ®ñ %s",1200*nCount);
 Talk(1,"",strTemp1)
 end
 end
 ---------------------------------------------------------------------------------
 function Doi8()
-	AskClientForNumber("Doi81", 1, 20, "NhÃ‹p sÃ¨ lÂ­Ã®ng")
+	AskClientForNumber("Doi81", 1, 20, "NhËp sè l­îng")
 
 end
 ---------------------------------------------------------------------------------
@@ -527,13 +527,13 @@ function Doi81(nCount)
 if Pay(4800*nCount*10000) == 1 then
 AddItem(2,1,30229,nCount)
 else
-local strTemp1 = format("SÃ¨ lÂ­Ã®ng vÂµng trong hÂµnh trang khÂ«ng Â®Ã± %s",4800*nCount);
+local strTemp1 = format("Sè l­îng vµng trong hµnh trang kh«ng ®ñ %s",4800*nCount);
 Talk(1,"",strTemp1)
 end
 end
 ---------------------------------------------------------------------------------
 function Doi9()
-	AskClientForNumber("Doi91", 1, 100, "NhÃ‹p sÃ¨ lÂ­Ã®ng")
+	AskClientForNumber("Doi91", 1, 100, "NhËp sè l­îng")
 
 end
 ---------------------------------------------------------------------------------
@@ -541,8 +541,8 @@ function Doi91(nCount)
 if Pay(400*nCount*10000) == 1 then
 AddItem(2,1,537,nCount)
 else
-local strTemp1 = format("SÃ¨ lÂ­Ã®ng vÂµng trong hÂµnh trang khÂ«ng Â®Ã± %s",400*nCount);
+local strTemp1 = format("Sè l­îng vµng trong hµnh trang kh«ng ®ñ %s",400*nCount);
 Talk(1,"",strTemp1)
 end
 end
------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
