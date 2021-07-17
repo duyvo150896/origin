@@ -191,10 +191,26 @@ end
 
 
 --Trao th­ëng
+if (xx1 != xx2 && xx2 != xx3 && xx3 != xx1) {
+    s=xx1+xx2+xx3;
+    };
+    if (xx1 == xx2 == xx3) {
+        s= xx1;
+    };
+    if(xx1!=xx2&&xx1==xx3){
+        s=xx1+xx2;
+    };
+    if(xx1==xx2&&xx1!=xx3){
+        s=xx1+xx3;
+    };
+    if (xx2!=xx3){
+        s=xx2+xx3;
+    }else{
+        s=xx3+xx1;
+    };
 
 
-
-szTongthang = xx1 + xx2 + xx3;
+szTongthang = xx1 + xx2 + xx3 +s;
 ModifyJinJuan(szTongthang)
 
 if szTongthang > Tongtiencuoc then
