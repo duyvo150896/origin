@@ -26,7 +26,7 @@ function OnUse(nItem)
 	else
 		tSay = {
 	--		"NhËp Code/GiftCodeNhap",
-	--		"HOT.NhËn Item Tr¶i NghiÖm Game/ItemTraiNghiem",
+			"HOT.NhËn Item Tr¶i NghiÖm Game/ItemTraiNghiem",
 			"0.NhËp Gift Code/lolicode",
 			"1.Rót Kim PhiÕu Vµo Game/RutKimPhieu",
 			format("%s/getTiLi", "2.Håi phôc thÓ lùc"),
@@ -48,12 +48,13 @@ function OnUse(nItem)
 			"17.Kü n¨ng sèng/Life_Skill",
 			"18.NhËn Qu©n hµm nguyªn so¸i/Get_NguyenSoai",
 			"19.NhËn Qu©n hµm nguyªn so¸i/Get_Lieu",
+			"20.NhËn NhËn 50.000 ®iÓm c«ng tr¹ng/Get_CongTrang",
 	--		"Thö nghiÖm FIX ©m mana/fix_mana",
-		--	"NhËn tµi liÖu c­êng hãa/Get_Enhance",
+			"21.NhËn tµi liÖu c­êng hãa/Get_Enhance",
 	--		"20.Reset l¹i giíi h¹n giê ch¬i/Reset_Time_Playy",
-			format("%s/Pet_OP", "19.Thao t¸c thó cøng"),
+			format("%s/Pet_OP", "22.Thao t¸c thó cøng"),
 	--		format("%s/getTiLi", "Håi phôc thÓ lùc"),
-		--	format("%s/getTianJiaoLing", "NhËn Thiªn Kiªu LÖnh"),
+			format("%s/getTianJiaoLing", "23.NhËn Thiªn Kiªu LÖnh"),
 		}
 		if 3 == nRoute then
 			tinsert(tSay, "NhËn Thiªn PhËt Ch©u vµ Ph¸ Ma Chó/Give_ZhuzhuZhouzhou")
