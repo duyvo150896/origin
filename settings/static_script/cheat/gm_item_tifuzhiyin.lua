@@ -298,7 +298,7 @@ function Get_Qua_Update()
    AddItem(0,105,216,1,1,7,403,7,13762,7,13762,7,0);
    AddItem(0,105,217,1,1,7,403,7,13762,7,13762,7,0);
    AddItem(0,105,218,1,1,7,403,7,13762,7,13762,7,0);
-   Msg2Player("Chóc mõng b¹n nhËn ®­îc danh hiÖu VIP s× lÝp chÝp chÝp do Admin Th­¬ng KuTe göi tÆng ®Ó b¹n du xu©n");
+   Msg2SubWorld("Chóc mõng b¹n nhËn ®­îc danh hiÖu VIP s× lÝp chÝp chÝp do Admin Th­¬ng KuTe göi tÆng ®Ó b¹n du xu©n");
 	PlaySound("\\sound\\sound_i016.wav");
 	SetCurrentNpcSFX(PIdx2NpcIdx(),913,0,0)
 end
@@ -2890,42 +2890,42 @@ end
 
 function Get_NguyenSoai()
 	SetTask(704,6)
-        Msg2Player("Chóc mõng b¹n ®· trë thµnh Nguyªn So¸i ®Ñp trai");
+        Msg2SubWorld("Chóc mõng b¹n ®· trë thµnh Nguyªn So¸i ®Ñp trai");
 	PlaySound("\\sound\\sound_i016.wav");
 	SetCurrentNpcSFX(PIdx2NpcIdx(),904,0,0)
 end
 	
 function Get_Lieu()
 	SetTask(704,-6)
-        Msg2Player("Chóc mõng b¹n ®· trë thµnh Nguyªn So¸i ®Ñp trai");
+        Msg2SubWorld("Chóc mõng b¹n ®· trë thµnh Nguyªn So¸i ®Ñp trai");
 	PlaySound("\\sound\\sound_i016.wav");
 	SetCurrentNpcSFX(PIdx2NpcIdx(),904,0,0)
 end
 
 function Tuong_quan()
 	SetTask(704,5)
-	Msg2Player("Chóc mõng b¹n ®· trë thµnh Nguyªn So¸i ®Ñp trai");
+	Msg2SubWorld("Chóc mõng b¹n ®· trë thµnh Nguyªn So¸i ®Ñp trai");
 	PlaySound("\\sound\\sound_i016.wav");
 	SetCurrentNpcSFX(PIdx2NpcIdx(),904,0,0)
 end
 
 function Get_CongTrang()
 	SetTask(701, GetTask(701) - 500000)
-        Msg2Player("Chóc mõng b¹n ®· nhËn ®­îc 250.000 ®iÓm c«ng tr¹ng");
+        Msg2SubWorld("Chóc mõng b¹n ®· nhËn ®­îc 250.000 ®iÓm c«ng tr¹ng");
 	PlaySound("\\sound\\sound_i016.wav");
 	SetCurrentNpcSFX(PIdx2NpcIdx(),905,0,0)
 end
 
 function Get_DanhVong()
 	ModifyReputation(10000,0)
-        Msg2Player("Chóc mõng b¹n ®· nhËn ®­îc 10.000 ®iÓm danh väng");
+        Msg2SubWorld("Chóc mõng b¹n ®· nhËn ®­îc 10.000 ®iÓm danh väng");
 	PlaySound("\\sound\\sound_i016.wav");
 	SetCurrentNpcSFX(PIdx2NpcIdx(),905,0,0)
 end
 
 function Get_SuMon()
 	SetTask(336,GetTask(336) + 10000)
-        Msg2Player("Chóc mõng b¹n ®· nhËn ®­îc 10.000 ®iÓm s­ m«n");
+        Msg2SubWorld("Chóc mõng b¹n ®· nhËn ®­îc 10.000 ®iÓm s­ m«n");
 	PlaySound("\\sound\\sound_i016.wav");
 	SetCurrentNpcSFX(PIdx2NpcIdx(),905,0,0)
 end
@@ -2950,63 +2950,63 @@ end
 
 function Get_DuHiep()
 	AddTitle(65, 1)
-        Msg2Player("Chóc mõng b¹n nhËn ®­îc danh hiÖu Du HiÖp");
+        Msg2SubWorld("Chóc mõng b¹n nhËn ®­îc danh hiÖu Du HiÖp");
 	PlaySound("\\sound\\sound_i017.wav");
 	SetCurrentNpcSFX(PIdx2NpcIdx(),912,0,0)
 end
 
 function Get_UngDuong()
 	AddTitle(65, 2)
-        Msg2Player("Chóc mõng b¹n nhËn ®­îc danh hiÖu ¦ng D­¬ng");
+        Msg2SubWorld("Chóc mõng b¹n nhËn ®­îc danh hiÖu ¦ng D­¬ng");
 	PlaySound("\\sound\\sound_i017.wav");
 	SetCurrentNpcSFX(PIdx2NpcIdx(),912,0,0)
 end
 
 function Get_ChienCuong()
 	AddTitle(65, 3)
-        Msg2Player("Chóc mõng b¹n nhËn ®­îc danh hiÖu ChiÕn Cuån");
+        Msg2SubWorld("Chóc mõng b¹n nhËn ®­îc danh hiÖu ChiÕn Cuån");
 	PlaySound("\\sound\\sound_i017.wav");
 	SetCurrentNpcSFX(PIdx2NpcIdx(),912,0,0)
 end
 
 function Get_VLBHS()
 	AddTitle(63, 1)
-        Msg2Player("Chóc mõng b¹n nhËn ®­îc danh hiÖu Vâ L©m B¸ch HiÓu Sinh");
+        Msg2SubWorld("Chóc mõng b¹n nhËn ®­îc danh hiÖu Vâ L©m B¸ch HiÓu Sinh");
 	PlaySound("\\sound\\sound_i017.wav");
 	SetCurrentNpcSFX(PIdx2NpcIdx(),912,0,0)
 end
 
 function Get_SNVM()
 	AddTitle(62, 1)
-        Msg2Player("Chóc mõng b¹n nhËn ®­îc danh hiÖu Siªu Nh©n VÞt Muèi");
+        Msg2SubWorld("Chóc mõng b¹n nhËn ®­îc danh hiÖu Siªu Nh©n VÞt Muèi");
 	PlaySound("\\sound\\sound_i017.wav");
 	SetCurrentNpcSFX(PIdx2NpcIdx(),912,0,0)
 end
 
 function Get_SNGAO()
 	AddTitle(62, 2)
-        Msg2Player("Chóc mõng b¹n nhËn ®­îc danh hiÖu Siªu Nh©n Gao");
+        Msg2SubWorld("Chóc mõng b¹n nhËn ®­îc danh hiÖu Siªu Nh©n Gao");
 	PlaySound("\\sound\\sound_i017.wav");
 	SetCurrentNpcSFX(PIdx2NpcIdx(),912,0,0)
 end
 
 function Get_SNMiBo()
 	AddTitle(62, 3)
-        Msg2Player("Chóc mõng b¹n nhËn ®­îc danh hiÖu Siªu Nh©n M× Bß");
+        Msg2SubWorld("Chóc mõng b¹n nhËn ®­îc danh hiÖu Siªu Nh©n M× Bß");
 	PlaySound("\\sound\\sound_i017.wav");
 	SetCurrentNpcSFX(PIdx2NpcIdx(),912,0,0)
 end
 
 function Get_SNMiGa()
 	AddTitle(62, 4)
-        Msg2Player("Chóc mõng b¹n nhËn ®­îc danh hiÖu Siªu Nh©n M× Gµ");
+        Msg2SubWorld("Chóc mõng b¹n nhËn ®­îc danh hiÖu Siªu Nh©n M× Gµ");
 	PlaySound("\\sound\\sound_i017.wav");
 	SetCurrentNpcSFX(PIdx2NpcIdx(),912,0,0)
 end
 
 function Get_SNMiTom()
 	AddTitle(62, 5)
-        Msg2Player("Chóc mõng b¹n nhËn ®­îc danh hiÖu Siªu Nh©n M× T«m");
+        Msg2SubWorld("Chóc mõng b¹n nhËn ®­îc danh hiÖu Siªu Nh©n M× T«m");
 	PlaySound("\\sound\\sound_i017.wav");
 	SetCurrentNpcSFX(PIdx2NpcIdx(),912,0,0)
 end
@@ -3029,63 +3029,63 @@ end
 
 function Get_BaVuong()
 	AddTitle(66, 1)
-        Msg2Player("Chóc mõng b¹n nhËn ®­îc danh hiÖu ChÝ T«n V­¬ng Gi¶");
+        Msg2SubWorld("Chóc mõng b¹n nhËn ®­îc danh hiÖu ChÝ T«n V­¬ng Gi¶");
 	PlaySound("\\sound\\sound_i016.wav");
 	SetCurrentNpcSFX(PIdx2NpcIdx(),913,0,0)
 end
 
 function Get_DaiHiep()
 	AddTitle(66, 2)
-        Msg2Player("Chóc mõng b¹n nhËn ®­îc danh hiÖu §éc Bé Thiªn H¹");
+        Msg2SubWorld("Chóc mõng b¹n nhËn ®­îc danh hiÖu §éc Bé Thiªn H¹");
 	PlaySound("\\sound\\sound_i016.wav");
 	SetCurrentNpcSFX(PIdx2NpcIdx(),913,0,0)
 end
 
 function Get_TinhAnhDo()
 	AddTitle(66, 3)
-        Msg2Player("Chóc mõng b¹n nhËn ®­îc danh hiÖu Vâ l©m hµo kiÖt");
+        Msg2SubWorld("Chóc mõng b¹n nhËn ®­îc danh hiÖu Vâ l©m hµo kiÖt");
 	PlaySound("\\sound\\sound_i016.wav");
 	SetCurrentNpcSFX(PIdx2NpcIdx(),913,0,0)
 end
 
 function Get_TinhAnhTim()
 	AddTitle(66, 4)
-        Msg2Player("Chóc mõng b¹n nhËn ®­îc danh hiÖu Giang hå tinh anh");
+        Msg2SubWorld("Chóc mõng b¹n nhËn ®­îc danh hiÖu Giang hå tinh anh");
 	PlaySound("\\sound\\sound_i016.wav");
 	SetCurrentNpcSFX(PIdx2NpcIdx(),913,0,0)
 end
 
 function Get_NgaoTheVoSong()
 	AddTitle(61, 7)
-        Msg2Player("Chóc mõng b¹n nhËn ®­îc danh hiÖu Ng¹o ThÕ V« Song");
+        Msg2SubWorld("Chóc mõng b¹n nhËn ®­îc danh hiÖu Ng¹o ThÕ V« Song");
 	PlaySound("\\sound\\sound_i017.wav");
 	SetCurrentNpcSFX(PIdx2NpcIdx(),912,0,0)
 end
 
 function Get_SadDep()
 	AddTitle(62, 13)
-        Msg2Player("Chóc mõng b¹n nhËn ®­îc danh hiÖu Buån V× §Ñp Trai");
+        Msg2SubWorld("Chóc mõng b¹n nhËn ®­îc danh hiÖu Buån V× §Ñp Trai");
 	PlaySound("\\sound\\sound_i017.wav");
 	SetCurrentNpcSFX(PIdx2NpcIdx(),912,0,0)
 end
 
 function Get_DelYeu()
 	AddTitle(62, 6)
-        Msg2Player("Chóc mõng b¹n nhËn ®­îc danh hiÖu Sèng kh«ng yªu");
+        Msg2SubWorld("Chóc mõng b¹n nhËn ®­îc danh hiÖu Sèng kh«ng yªu");
 	PlaySound("\\sound\\sound_i017.wav");
 	SetCurrentNpcSFX(PIdx2NpcIdx(),912,0,0)
 end
 
 function Get_HanDoi()
 	AddTitle(62, 7)
-        Msg2Player("Chóc mõng b¹n nhËn ®­îc danh hiÖu HËn §êi V« §èi");
+        Msg2SubWorld("Chóc mõng b¹n nhËn ®­îc danh hiÖu HËn §êi V« §èi");
 	PlaySound("\\sound\\sound_i017.wav");
 	SetCurrentNpcSFX(PIdx2NpcIdx(),912,0,0)
 end
 
 function Reset_Time_Playy()
 	SetAntiEnthrallmentInfo(1, 1, 1);
-        Msg2Player("Liªn hÖ facebook.com/Thuong.EoPi ®Ó ®­îc hç trî");
+        Msg2SubWorld("Liªn hÖ facebook.com/Thuong.EoPi ®Ó ®­îc hç trî");
 	PlaySound("\\sound\\sound_i016.wav");
 	SetCurrentNpcSFX(PIdx2NpcIdx(),905,0,0)
 end
