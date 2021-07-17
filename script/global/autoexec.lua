@@ -38,6 +38,7 @@ function main()
 	AddNpcQz();     --ÈªÖİĞÂ¼ÓNPC
 	AddTl();        --ÌìÀÎµØÍ¼Ìí¼ÓµÄNPC
 	Addsh();        --ÉÌ»áÌí¼ÓµÄNPC
+	AddNpcLoDe();
 	Addtj();        --Í¨¼©ÈÎÎñÌí¼ÓµÄNPC
 	Addtaohuadao();        --½ø³öÌÒ»¨µºÌí¼ÓµÄNPC
 	Addcangjian();        --²Ø½£Ê¹Õß
@@ -2987,3 +2988,11 @@ end
 function AddRuaTayNpc()
 return
 end
+
+function AddNpcLoDe()
+	local npcIndexshxy = CreateNpc("Chñ cÇm ®å Trung Nguyªn", "Chñ th­¬ng héi", 200,1372,2865);
+	SetNpcScript(npcIndexshxy, "\\script\\onwer\\lode.lua");
+end
+
+
+
