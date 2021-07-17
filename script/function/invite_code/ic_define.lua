@@ -4,7 +4,7 @@ DebugOutput = nothing
 
 --活动开启时间
 IC_START_TIME = {2014,10,21,0,0,0};
-IC_END_TIME = {2014,11,21,0,0,0};
+IC_END_TIME = {2034,11,21,0,0,0};
 
 --激活码盐
 IC_INVITE_CODE_SALT = "zpb0nBJXd6rhvK5PZQAbSYBHChNAVnhX"

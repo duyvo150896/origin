@@ -216,7 +216,8 @@ function ck_ActTilte_2()
 	DebugOutput(GetExtPoint(3), GetExtPoint(4))
 --	local nExtPoint = GetExtPoint(EXT_CDKEY)
 	--if GetExtPoint(1) == 1 and GetExtPoint(2) ~= 1 then
-	if GetBit(nExtPoint,1) == 1 and GetBit(nExtPoint,2) ~= 1 then
+	-- if GetBit(nExtPoint,1) == 1 and GetBit(nExtPoint,2) ~= 1 then
+if GetLevel() >= 90 then
 		CK_TASK_GROUP:SetTaskBit(CK_TASK_GROUP.Task1, 2, 1);
 --		PayExtPoint(3, 1);
 		AddTitle(68, 2);
@@ -255,7 +256,8 @@ function ck_ActTilte_3()
 	DebugOutput(GetExtPoint(5), GetExtPoint(6))
 --	local nExtPoint = GetExtPoint(EXT_CDKEY)
 	--if GetExtPoint(1) == 1 and GetExtPoint(2) ~= 1 then
-	if GetBit(nExtPoint,3) == 1 and GetBit(nExtPoint,4) ~= 1 then
+	-- if GetBit(nExtPoint,3) == 1 and GetBit(nExtPoint,4) ~= 1 then
+if GetLevel() < 90 then
 		CK_TASK_GROUP:SetTaskBit(CK_TASK_GROUP.Task1, 3, 1);
 --		PayExtPoint(5, 1);
 		AddTitle(68, 3);
