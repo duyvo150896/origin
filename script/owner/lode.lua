@@ -9,7 +9,7 @@ function main()
 	return
 	end
 
-	local szName = "Lôc Tróc ¤ng"
+	local szName = "Chñ Sßng Bµi"
 	local szHeader = "<color=green>"..szName.." :<color>C¸c h¹ muèn ch¬i g×"
 	local tbSayDialog = {};
 	local nSaySize = 0;
@@ -71,7 +71,7 @@ function choibaucua()
 	else
 		szTrangthai = "Cã thÓ më th­ëng"
 	end
-	local szName = "Lôc Tróc ¤ng"
+	local szName = "Chñ Sßng Bµi"
 	local szHeader = "<color=green>"..szName.." :<color>Sè tiÒn vÝ: <color=red>"..Tiendangco.."<color>. Sè tiÒn c­îc: <color=red>"..Tongtiencuoc.."<color>. Tr¹ng Th¸i: <color=gold>"..szTrangthai.."<color>"
 	local tbXucXac = {
 			[1] = {"BÇu"},
@@ -296,7 +296,7 @@ function ChoiChanLe()
  		tinsert(tbSay, "Ta chän: LÎ/ChonLe")
  		tinsert(tbSay, "§Ó ta suy nghØ l¹i/nothing")
 
-	Say("<color=green>Lôc Tróc ¤ng: <color>Ng­¬i chän ch½n hay lÎ?",getn(tbSay),tbSay);
+	Say("<color=green>Chñ Sßng Bµi: <color>Ng­¬i chän ch½n hay lÎ?",getn(tbSay),tbSay);
 end
 ---------------------------------------------------------------------------------
 function ChonChan()
@@ -355,7 +355,7 @@ function ChoiOanTuTi()
 		tinsert(tbSay, "Ta chän: Bao/ChonBao")
  		tinsert(tbSay, "§Ó ta suy nghØ l¹i/nothing")
 
-	Say("<color=green>Lôc Tróc ¤ng: <color>Ng­¬i muèn chän g×?",getn(tbSay),tbSay);
+	Say("<color=green>Chñ Sßng Bµi: <color>Ng­¬i muèn chän g×?",getn(tbSay),tbSay);
 end
 ---------------------------------------------------------------------------------
 function ChonKeo()
@@ -453,7 +453,7 @@ function DoiVangBao()
 		tinsert(tbSay, "§æi Tö Kim Hång Bao (tïy chän)/Doi9")
  		tinsert(tbSay, "Ta ch­a muèn ®æi/nothing")
 
-	Say("<color=green>Lôc Tróc ¤ng: <color>Ng­¬i muèn ®æi bao vµng lo¹i nµo?",getn(tbSay),tbSay);
+	Say("<color=green>Chñ Sßng Bµi: <color>Ng­¬i muèn ®æi bao vµng lo¹i nµo?",getn(tbSay),tbSay);
 end
 ---------------------------------------------------------------------------------
 function Doi1()
