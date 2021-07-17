@@ -191,24 +191,27 @@ end
 
 
 --Trao th­ëng
-if (xx1 != xx2 && xx2 != xx3 && xx3 != xx1) {
-    s=xx1+xx2+xx3;
-    };
-    if (xx1 == xx2 == xx3) {
-        s= xx1;
-    };
-    if(xx1!=xx2&&xx1==xx3){
-        s=xx1+xx2;
-    };
-    if(xx1==xx2&&xx1!=xx3){
-        s=xx1+xx3;
-    };
-    if (xx2!=xx3){
-        s=xx2+xx3;
-    }else{
-        s=xx3+xx1;
-    };
-
+	a = mRandom;
+	b = nRandom;
+	c = pRandom;
+	if a ~= b and b ~= c and c ~= a then
+		s=xx1+xx2+xx3;
+    
+    elseif a == b == c then
+        s = xx1;
+    
+	elseif a ~= b and a == c then
+        s = xx1 + xx2;
+    
+    elseif a == b and a ~= c then
+        s = xx2 + xx3;
+    
+	elseif b ~= c then
+        s = xx2 + xx3;
+    else
+        s = xx3 + xx1;
+    end
+-- s = sè tiÒn c­îc ®o¸n tróng
 
 szTongthang = xx1 + xx2 + xx3 +s;
 ModifyJinJuan(szTongthang)
@@ -222,7 +225,7 @@ elseif szTongthang < Tongtiencuoc then
 end
 
 local sLine1 = "KÕt qu¶ më th­ëng:   <color=green>"..yy1.."<color>      <color=green>"..yy2.."<color>      <color=green>"..yy3.."<color>\n"
-local sLine2 = "Sè Kim PhiÕu thô h­ëng:   <color=gold>"..xx1.."<color>   +   <color=gold>"..xx2.."<color>   +    <color=gold>"..xx3.."<color>   <color=gold> = "..szTongthang.."<color>\n"
+local sLine2 = "Sè Kim PhiÕu thô h­ëng:   <color=gold>"..xx1.."<color>   +   <color=gold>"..xx2.."<color>   +    <color=gold>"..xx3.."<color>   +    <color=gold>TiÒn cäc:"..s.."<color>   <color=gold> = "..szTongthang.."<color>\n"
 local sLine3 = "§· c­îc: <color=green>BÇu:"..GetTask(3461).."<color> + <color=green>Cua:"..GetTask(3462).."<color> + <color=green>T«m:"..GetTask(3463).."<color> + <color=green>C¸:"..GetTask(3464).."<color> + <color=green>Nai:"..GetTask(3465).."<color> + <color=green>Gµ:"..GetTask(3466).."<color> = <color=gold>"..Tongtiencuoc.."<color>\n"
 local sLine4 = "Chung cuéc:   <color=green>"..szMat.."<color>\n"
 
