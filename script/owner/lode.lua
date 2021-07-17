@@ -37,7 +37,7 @@ end
 ------------------------------------------------------------------------------------------
 function dang_ky()
 
-	if ModifyJinJuan(-2000,1) == 1 then
+	if ModifyJinJuan(-2000,1) >= 0 then
 		SetTask(3460,1);
 		Msg2Global("Chóc mõng "..GetName().. "®· trë thµnh héi viªn.")
 	else	
