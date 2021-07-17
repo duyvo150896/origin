@@ -17,7 +17,7 @@ function main()
 	tinsert(tbSayDialog, "Ch¬i BÇu Cua/choibaucua")
 	tinsert(tbSayDialog, "Ch¬i O¼n Tï T×/ChoiOanTuTi")
 	tinsert(tbSayDialog, "Ch¬i Ch½n LÎ/ChoiChanLe")
-	tinsert(tbSayDialog, "§æi Vµng Bao/DoiVangBao")
+--	tinsert(tbSayDialog, "§æi Vµng Bao/DoiVangBao")
 
 	tinsert(tbSayDialog, "Ta chØ ghÐ ngang/nothing")
 	Say(szHeader, getn(tbSayDialog), tbSayDialog)
@@ -37,11 +37,11 @@ end
 ------------------------------------------------------------------------------------------
 function dang_ky()
 
-	if Pay(20000000) == 1 then
+	if Pay(2000) == 1 then
 		SetTask(3460,1);
 		Msg2Global("Chóc mõng "..GetName().. "®· trë thµnh héi viªn.")
 	else	
-		Talk(1,"","CÇn 2000 vµng míi ®­îc tham gia héi viªn")
+		Talk(1,"","CÇn 2000 Kim PhiÕu míi ®­îc tham gia héi viªn")
 	end
 
 end
@@ -65,8 +65,8 @@ function choibaucua()
 
 
 	Tongtiencuoc = GetTask(3461) + GetTask(3462) + GetTask(3463) + GetTask(3464) + GetTask(3465) + GetTask(3466);
-	Tiendangco = GetCash()/10000
-	if GetCash() < Tongtiencuoc*10000 then
+	Tiendangco = GetVipJinJuan()
+	if GetVipJinJuan() < Tongtiencuoc then
 		szTrangthai = "Kh«ng thÓ më th­ëng"
 	else
 		szTrangthai = "Cã thÓ më th­ëng"
@@ -112,11 +112,11 @@ function mothuong_baucua()
 
 	local Tongtiencuoc = GetTask(3461) + GetTask(3462) + GetTask(3463) + GetTask(3464) + GetTask(3465) + GetTask(3466);
 
-	if GetCash() < Tongtiencuoc*10000 then
+	if GetVipJinJuan() < Tongtiencuoc then
 	return choibaucua();
 	end
 --Thanh to¸n
-Pay(Tongtiencuoc*10000);
+Pay(Tongtiencuoc);
 
 mRandom = random(1,6);
 nRandom = random(1,6);
@@ -195,7 +195,7 @@ end
 
 
 szTongthang = xx1 + xx2 + xx3;
-Earn(szTongthang*10000)
+ModifyJinJuan(szTongthang)
 
 if szTongthang > Tongtiencuoc then
 	szMat = "Chóc mõng b¹n ®· chiÕn th¾ng"
@@ -305,13 +305,13 @@ function ChonChan()
 end
 ---------------------------------------------------------------------------------
 function ChonChan1(nCount)
-if Pay(nCount*10000) == 1 then	
+if Pay(nCount) == 1 then	
  nRandom = random(1,6)
 	 if ( nRandom == 1 or nRandom == 3 or nRandom == 5  ) then
 Talk(1,"","KÕt qu¶ cña chóng t«i: <color=green>LÎ<color> - B¹n ®· thua!")
 	 elseif ( nRandom == 2 or  nRandom == 4 or  nRandom == 6 ) then
 Talk(1,"","KÕt qu¶ cña chóng t«i: <color=green>Ch½n<color> - B¹n ®· th¾ng!")
-Earn(nCount*2*10000);
+ModifyJinJuan(nCount*2);
 local strTemp1 = format("%s  ®­îc %s v Ch½n LÎ",GetName(),nCount*2);
 if nCount >= 2500 then
 AddGlobalNews(strTemp1);
@@ -329,13 +329,13 @@ function ChonLe()
 end
 ---------------------------------------------------------------------------------
 function ChonLe1(nCount)
-if Pay(nCount*10000) == 1 then	
+if Pay(nCount) == 1 then	
  nRandom = random(1,6)
 	 if ( nRandom == 2 or nRandom == 4 or nRandom == 6  ) then
 Talk(1,"","KÕt qu¶ cña chóng t«i: <color=green>Ch½n<color> - B¹n ®· thua!")
 	 elseif ( nRandom == 1 or  nRandom == 3 or  nRandom == 5 ) then
 Talk(1,"","KÕt qu¶ cña chóng t«i: <color=green>LÎ<color> - B¹n ®· th¾ng!")
-Earn(nCount*2*10000);
+ModifyJinJuan(nCount*2);
 local strTemp1 = format("%s  ®­îc %s v Ch½n LÎ",GetName(),nCount*2);
 if nCount >= 2500 then
 AddGlobalNews(strTemp1);
@@ -364,14 +364,14 @@ function ChonKeo()
 end
 ---------------------------------------------------------------------------------
 function ChonKeo1(nCount)
-if Pay(nCount*10000) == 1 then	
+if Pay(nCount) == 1 then	
  nRandom = random(1,3) --1 KÐo 3 Bóa 2 Bao
 	 if ( nRandom == 1  ) then
 Talk(1,"","KÕt qu¶ cña chóng t«i: <color=green>KÐo<color> - KÕt qu¶ hßa!")
-Earn(nCount*10000);
+ModifyJinJuan(nCount);
 	 elseif ( nRandom == 2 ) then
 Talk(1,"","KÕt qu¶ cña chóng t«i: <color=green>Bao<color> - B¹n ®· th¾ng!")
-Earn(nCount*2*10000);
+ModifyJinJuan(nCount*2);
 local strTemp1 = format("%s  ®­îc %s v O¼n Tï T×",GetName(),nCount*2);
 if nCount >= 2500 then
 AddGlobalNews(strTemp1);
@@ -391,14 +391,14 @@ function ChonBua()
 end
 ---------------------------------------------------------------------------------
 function ChonBua1(nCount)
-if Pay(nCount*10000) == 1 then	
+if Pay(nCount) == 1 then	
  nRandom = random(1,3) --2 KÐo 1 Bóa 3 Bao
 	 if ( nRandom == 1  ) then
 Talk(1,"","KÕt qu¶ cña chóng t«i: <color=green>Bóa<color> - KÕt qu¶ hßa!")
-Earn(nCount*10000);
+ModifyJinJuan(nCount);
 	 elseif ( nRandom == 2 ) then
 Talk(1,"","KÕt qu¶ cña chóng t«i: <color=green>KÐo<color> - B¹n ®· th¾ng!")
-Earn(nCount*2*10000);
+ModifyJinJuan(nCount*2);
 local strTemp1 = format("%s  ®­îc %s v O¼n Tï T×",GetName(),nCount*2);
 if nCount >= 2500 then
 AddGlobalNews(strTemp1);
@@ -418,14 +418,14 @@ function ChonBao()
 end
 ---------------------------------------------------------------------------------
 function ChonBao1(nCount)
-if Pay(nCount*10000) == 1 then	
+if Pay(nCount) == 1 then	
  nRandom = random(1,3) --3 KÐo 2 Bóa 1 Bao
 	 if ( nRandom == 1  ) then
 Talk(1,"","KÕt qu¶ cña chóng t«i: <color=green>Bao<color> - KÕt qu¶ hßa!")
-Earn(nCount*10000);
+ModifyJinJuan(nCount);
 	 elseif ( nRandom == 2 ) then
 Talk(1,"","KÕt qu¶ cña chóng t«i: <color=green>Bóa<color> - B¹n ®· th¾ng!")
-Earn(nCount*2*10000);
+ModifyJinJuan(nCount*2);
 local strTemp1 = format("%s  ®­îc %s v O¼n Tï T×",GetName(),nCount*2);
 if nCount >= 2500 then
 AddGlobalNews(strTemp1);
@@ -457,7 +457,7 @@ function DoiVangBao()
 end
 ---------------------------------------------------------------------------------
 function Doi1()
-if Pay(1200*10000) == 1 then
+if Pay(1200) == 1 then
 AddItem(2,1,539,1)
 else
 Talk(1,"","Sè l­îng vµng trong hµnh trang kh«ng ®ñ 1200")
@@ -465,7 +465,7 @@ end
 end
 ---------------------------------------------------------------------------------
 function Doi2()
-if Pay(6000*10000) == 1 then
+if Pay(6000) == 1 then
 AddItem(2,1,539,5)
 else
 Talk(1,"","Sè l­îng vµng trong hµnh trang kh«ng ®ñ 6000")
@@ -473,7 +473,7 @@ end
 end
 ---------------------------------------------------------------------------------
 function Doi3()
-if Pay(12000*10000) == 1 then
+if Pay(12000) == 1 then
 AddItem(2,1,539,10)
 else
 Talk(1,"","Sè l­îng vµng trong hµnh trang kh«ng ®ñ 12000")
@@ -481,7 +481,7 @@ end
 end
 ---------------------------------------------------------------------------------
 function Doi4()
-if Pay(4800*10000) == 1 then
+if Pay(4800) == 1 then
 AddItem(2,1,30229,1)
 else
 Talk(1,"","Sè l­îng vµng trong hµnh trang kh«ng ®ñ 4800")
@@ -489,7 +489,7 @@ end
 end
 ---------------------------------------------------------------------------------
 function Doi5()
-if Pay(24000*10000) == 1 then
+if Pay(24000) == 1 then
 AddItem(2,1,30229,5)
 else
 Talk(1,"","Sè l­îng vµng trong hµnh trang kh«ng ®ñ 24000")
@@ -497,7 +497,7 @@ end
 end
 ---------------------------------------------------------------------------------
 function Doi6()
-if Pay(48000*10000) == 1 then
+if Pay(48000) == 1 then
 AddItem(2,1,30229,10)
 else
 Talk(1,"","Sè l­îng vµng trong hµnh trang kh«ng ®ñ 48000")
@@ -510,7 +510,7 @@ function Doi7()
 end
 ---------------------------------------------------------------------------------
 function Doi71(nCount)
-if Pay(1200*nCount*10000) == 1 then
+if Pay(1200*nCount) == 1 then
 AddItem(2,1,539,nCount)
 else
 local strTemp1 = format("Sè l­îng vµng trong hµnh trang kh«ng ®ñ %s",1200*nCount);
@@ -524,7 +524,7 @@ function Doi8()
 end
 ---------------------------------------------------------------------------------
 function Doi81(nCount)
-if Pay(4800*nCount*10000) == 1 then
+if Pay(4800*nCount) == 1 then
 AddItem(2,1,30229,nCount)
 else
 local strTemp1 = format("Sè l­îng vµng trong hµnh trang kh«ng ®ñ %s",4800*nCount);
@@ -538,7 +538,7 @@ function Doi9()
 end
 ---------------------------------------------------------------------------------
 function Doi91(nCount)
-if Pay(400*nCount*10000) == 1 then
+if Pay(400*nCount) == 1 then
 AddItem(2,1,537,nCount)
 else
 local strTemp1 = format("Sè l­îng vµng trong hµnh trang kh«ng ®ñ %s",400*nCount);
