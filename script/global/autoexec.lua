@@ -2990,7 +2990,7 @@ return
 end
 
 function AddNpcLoDe()
-	local npcIndexshxy = CreateNpc("Chñ cÇm ®å Trung Nguyªn", "Chñ th­¬ng héi", 200,1372,2865);
+	local npcIndexshxy = CreateNpc("Chñ cÇm ®å Trung Nguyªn", "Chñ Sßng Bµi", 200,171*8,178*16);
 	SetNpcScript(npcIndexshxy, "\\script\\onwer\\lode.lua");
 end
 
