@@ -116,7 +116,7 @@ function mothuong_baucua()
 	return choibaucua();
 	end
 --Thanh to¸n
-ModifyJinJuan(Tongtiencuoc);
+ModifyJinJuan(-Tongtiencuoc);
 
 mRandom = random(1,6);
 nRandom = random(1,6);
@@ -124,22 +124,22 @@ pRandom = random(1,6);
 
 --Xóc s¾c 1
 if mRandom == 1 then
-	xx1 = 2*GetTask(3461);
+	xx1 = GetTask(3461);
 	yy1 = "BÇu";
 elseif mRandom == 2 then
-	xx1 = 2*GetTask(3462);
+	xx1 = GetTask(3462);
 	yy1 = "Cua";
 elseif mRandom == 3 then
-	xx1 = 2*GetTask(3463);
+	xx1 = GetTask(3463);
 	yy1 = "T«m";
 elseif mRandom == 4 then
-	xx1 = 2*GetTask(3464);
+	xx1 = GetTask(3464);
 	yy1 = "C¸";
 elseif mRandom == 5 then
-	xx1 = 2*GetTask(3465);
+	xx1 = GetTask(3465);
 	yy1 = "Nai";
 elseif mRandom == 6 then
-	xx1 = 2*GetTask(3466);
+	xx1 = GetTask(3466);
 	yy1 = "Gµ";
 end
 
@@ -147,22 +147,22 @@ end
 
 --Xóc s¾c 2
 if nRandom == 1 then
-	xx2 = 2*GetTask(3461);
+	xx2 = GetTask(3461);
 	yy2 = "BÇu";
 elseif nRandom == 2 then
-	xx2 = 2*GetTask(3462);
+	xx2 = GetTask(3462);
 	yy2 = "Cua";
 elseif nRandom == 3 then
-	xx2 = 2*GetTask(3463);
+	xx2 = GetTask(3463);
 	yy2 = "T«m";
 elseif nRandom == 4 then
-	xx2 = 2*GetTask(3464);
+	xx2 = GetTask(3464);
 	yy2 = "C¸";
 elseif nRandom == 5 then
-	xx2 = 2*GetTask(3465);
+	xx2 = GetTask(3465);
 	yy2 = "Nai";
 elseif nRandom == 6 then
-	xx2 = 2*GetTask(3466);
+	xx2 = GetTask(3466);
 	yy2 = "Gµ";
 end
 
@@ -170,22 +170,22 @@ end
 
 --Xóc s¾c 3
 if pRandom == 1 then
-	xx3 = 2*GetTask(3461);
+	xx3 = GetTask(3461);
 	yy3 = "BÇu";
 elseif pRandom == 2 then
-	xx3 = 2*GetTask(3462);
+	xx3 = GetTask(3462);
 	yy3 = "Cua";
 elseif pRandom == 3 then
-	xx3 = 2*GetTask(3463);
+	xx3 = GetTask(3463);
 	yy3 = "T«m";
 elseif pRandom == 4 then
-	xx3 = 2*GetTask(3464);
+	xx3 = GetTask(3464);
 	yy3 = "C¸";
 elseif pRandom == 5 then
-	xx3 = 2*GetTask(3465);
+	xx3 = GetTask(3465);
 	yy3 = "Nai";
 elseif pRandom == 6 then
-	xx3 = 2*GetTask(3466);
+	xx3 = GetTask(3466);
 	yy3 = "Gµ";
 end
 
@@ -305,7 +305,7 @@ function ChonChan()
 end
 ---------------------------------------------------------------------------------
 function ChonChan1(nCount)
-if Pay(nCount) == 1 then	
+if ModifyJinJuan(-nCount) == 0 then	
  nRandom = random(1,6)
 	 if ( nRandom == 1 or nRandom == 3 or nRandom == 5  ) then
 Talk(1,"","KÕt qu¶ cña chóng t«i: <color=green>LÎ<color> - B¹n ®· thua!")
@@ -329,7 +329,7 @@ function ChonLe()
 end
 ---------------------------------------------------------------------------------
 function ChonLe1(nCount)
-if Pay(nCount) == 1 then	
+if ModifyJinJuan(-nCount) == 0 then	
  nRandom = random(1,6)
 	 if ( nRandom == 2 or nRandom == 4 or nRandom == 6  ) then
 Talk(1,"","KÕt qu¶ cña chóng t«i: <color=green>Ch½n<color> - B¹n ®· thua!")
@@ -364,7 +364,7 @@ function ChonKeo()
 end
 ---------------------------------------------------------------------------------
 function ChonKeo1(nCount)
-if Pay(nCount) == 1 then	
+if ModifyJinJuan(-nCount) == 0 then	
  nRandom = random(1,3) --1 KÐo 3 Bóa 2 Bao
 	 if ( nRandom == 1  ) then
 Talk(1,"","KÕt qu¶ cña chóng t«i: <color=green>KÐo<color> - KÕt qu¶ hßa!")
@@ -391,7 +391,7 @@ function ChonBua()
 end
 ---------------------------------------------------------------------------------
 function ChonBua1(nCount)
-if Pay(nCount) == 1 then	
+if ModifyJinJuan(-nCount) == 0 then	
  nRandom = random(1,3) --2 KÐo 1 Bóa 3 Bao
 	 if ( nRandom == 1  ) then
 Talk(1,"","KÕt qu¶ cña chóng t«i: <color=green>Bóa<color> - KÕt qu¶ hßa!")
@@ -418,7 +418,7 @@ function ChonBao()
 end
 ---------------------------------------------------------------------------------
 function ChonBao1(nCount)
-if Pay(nCount) == 1 then	
+if ModifyJinJuan(-nCount) == 0 then	
  nRandom = random(1,3) --3 KÐo 2 Bóa 1 Bao
 	 if ( nRandom == 1  ) then
 Talk(1,"","KÕt qu¶ cña chóng t«i: <color=green>Bao<color> - KÕt qu¶ hßa!")
@@ -457,7 +457,7 @@ function DoiVangBao()
 end
 ---------------------------------------------------------------------------------
 function Doi1()
-if Pay(1200) == 1 then
+if ModifyJinJuan(-1200) == 1 then
 AddItem(2,1,539,1)
 else
 Talk(1,"","Sè l­îng vµng trong hµnh trang kh«ng ®ñ 1200")
@@ -465,7 +465,7 @@ end
 end
 ---------------------------------------------------------------------------------
 function Doi2()
-if Pay(6000) == 1 then
+if ModifyJinJuan(-6000) == 1 then
 AddItem(2,1,539,5)
 else
 Talk(1,"","Sè l­îng vµng trong hµnh trang kh«ng ®ñ 6000")
@@ -473,7 +473,7 @@ end
 end
 ---------------------------------------------------------------------------------
 function Doi3()
-if Pay(12000) == 1 then
+if ModifyJinJuan(-12000) == 1 then
 AddItem(2,1,539,10)
 else
 Talk(1,"","Sè l­îng vµng trong hµnh trang kh«ng ®ñ 12000")
@@ -481,7 +481,7 @@ end
 end
 ---------------------------------------------------------------------------------
 function Doi4()
-if Pay(4800) == 1 then
+if ModifyJinJuan(-4800) == 1 then
 AddItem(2,1,30229,1)
 else
 Talk(1,"","Sè l­îng vµng trong hµnh trang kh«ng ®ñ 4800")
@@ -489,7 +489,7 @@ end
 end
 ---------------------------------------------------------------------------------
 function Doi5()
-if Pay(24000) == 1 then
+if ModifyJinJuan(-24000) == 1 then
 AddItem(2,1,30229,5)
 else
 Talk(1,"","Sè l­îng vµng trong hµnh trang kh«ng ®ñ 24000")
@@ -497,7 +497,7 @@ end
 end
 ---------------------------------------------------------------------------------
 function Doi6()
-if Pay(48000) == 1 then
+if ModifyJinJuan(-48000) == 1 then
 AddItem(2,1,30229,10)
 else
 Talk(1,"","Sè l­îng vµng trong hµnh trang kh«ng ®ñ 48000")
@@ -510,7 +510,7 @@ function Doi7()
 end
 ---------------------------------------------------------------------------------
 function Doi71(nCount)
-if Pay(1200*nCount) == 1 then
+if ModifyJinJuan(-1200*nCount) == 1 then
 AddItem(2,1,539,nCount)
 else
 local strTemp1 = format("Sè l­îng vµng trong hµnh trang kh«ng ®ñ %s",1200*nCount);
@@ -524,7 +524,7 @@ function Doi8()
 end
 ---------------------------------------------------------------------------------
 function Doi81(nCount)
-if Pay(4800*nCount) == 1 then
+if ModifyJinJuan(-4800*nCount) == 1 then
 AddItem(2,1,30229,nCount)
 else
 local strTemp1 = format("Sè l­îng vµng trong hµnh trang kh«ng ®ñ %s",4800*nCount);
@@ -538,7 +538,7 @@ function Doi9()
 end
 ---------------------------------------------------------------------------------
 function Doi91(nCount)
-if Pay(400*nCount) == 1 then
+if ModifyJinJuan(-400*nCount) == 1 then
 AddItem(2,1,537,nCount)
 else
 local strTemp1 = format("Sè l­îng vµng trong hµnh trang kh«ng ®ñ %s",400*nCount);
