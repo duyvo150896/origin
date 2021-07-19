@@ -49,7 +49,7 @@ SKILL = {
 	damage_factor_z={{1,477},{10,477}},
 	},
 	{magic="state_lost_stamina_per18",
-	damage_factor_z={{1,8},{10,8}},
+	damage_factor_z={{1,4},{10,4}},
 	},
 	},
 
