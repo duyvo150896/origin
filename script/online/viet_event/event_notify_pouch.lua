@@ -77,12 +77,12 @@ end
 function SelectSay()	
 	local tbSayDialog = {};
 	local nSaySize = 0;
-	local szSayHead = "Th«ng tin chi tiÕt c¸c ho¹t ®éng ®ång ®¹o cã thÓ xem trªn trang chñ <color=green>https://pk.loliteam.net<color>. Liªn hÖ Admin <color=green>https://facebook.com/Thuong.EoPi<color> ®Ó ph¶n håi, gãp ý."
+	local szSayHead = "Th«ng tin chi tiÕt c¸c ho¹t ®éng ®ång ®¹o cã thÓ xem trªn trang chñ <color=green>https://jx2.xyz<color>. Liªn hÖ Admin <color=green>https://facebook.com/jx2animal<color> ®Ó ph¶n håi, gãp ý."
 	local nDate = tonumber(date("%Y%m%d"))
 	local szNationality = get_nationality_name(GetByte(GetTask(TSK_SERVER_ID), TSK_SERVER_ID_CUR))
    	
      --tbSayDialog, szSayHead = get_tbJNDialog_info(tbSayDialog, szSayHead)
-     szSayHead = szSayHead..format(". B¹n ®ang lµ thÇn d©n cña <color=yellow>Server PK LoLi<color>.", szNationality)
+     szSayHead = szSayHead..format(". B¹n ®ang lµ thÇn d©n cña <color=yellow>Server Jx2 Animal<color>.", szNationality)
 
 	if VET_CheckIpBonus() == 1 then
 		szSayHead = szSayHead..". HiÖn ®ang ch¬i t¹i <color=yellow>Phßng M¸y Th©n ThiÖn<color>."
