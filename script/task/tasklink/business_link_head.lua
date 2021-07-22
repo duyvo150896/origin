@@ -41,20 +41,20 @@ function business_entrance()
 		-- »ñÈ¡µ±Ç°×öµÄÈÎÎñµÄÖÖÀà
 		local nTaskCurType = GetTaskType(11)
 		local strTalkTab = {}
-		tinsert(strTalkTab,"Hoµng th­îng võa ban chiÕu: Nh©n s?nµo gióp søc TriÒu ®×nh s?®­îc träng th­ëng! Mçi ngµy c?th?nhËn tèi ®a <color=yellow>60 lÇn<color> nhiÖm v?")
-		tinsert(strTalkTab,"NhiÖm v?lÇn tr­íc ®· hoµn thµnh ch­a? Nh?l?trong ngµy ph¶i hoµn thµnh <color=green>60 nhiÖm v?color> nh? NÕu <color=green> hñy 1 lÇn s?b?tr?®i 1 lÇn<color> trªn tæng s?nhiÖm v?")
+		tinsert(strTalkTab,"Hoµng th­îng võa ban chiÕu: Nh©n sÜ nµo gióp søc TriÒu ®×nh sÏ ®­îc träng th­ëng! Mçi ngµy cã thÓ nhËn tèi ®a <color=yellow>60 lÇn<color> nhiÖm vô!")
+		tinsert(strTalkTab,"NhiÖm vô lÇn tr­íc ®· hoµn thµnh ch­a? Nhí lµ trong ngµy ph¶i hoµn thµnh <color=green>60 nhiÖm vô<color> nhĞ! NÕu <color=green> hñy 1 lÇn sÏ bŞ trõ ®i 1 lÇn<color> trªn tæng sè nhiÖm vô!")
 		--if nDate >= 20110913 and nDate <= 20110922 then
-			tinsert(strTalkTab,"V?triÒu ®×nh cèng hiÕn søc lùc/no_accept_new_task")
+			tinsert(strTalkTab,"V× triÒu ®×nh cèng hiÕn søc lùc/no_accept_new_task")
 		--else
-			tinsert(strTalkTab,"V?triÒu ®×nh cèng hiÕn søc lùc/accept_new_task")
+			tinsert(strTalkTab,"V× triÒu ®×nh cèng hiÕn søc lùc/accept_new_task")
 		--end
-		tinsert(strTalkTab,"Kh«ng c?høng th?lµm nhiÖm v?nµy/exit_dialog")
-		tinsert(strTalkTab,"NhiÖm v?®· hoµn thµnh!/hand_up_task")
-		tinsert(strTalkTab,"NhiÖm v?vÉn ch­a hoµn thµnh/exit_dialog")
-		tinsert(strTalkTab,"Ta muèn hñy b?nhiÖm v?®ang lµm/cancel_cur_task")
-		tinsert(strTalkTab,"Giíi thiÖu t?m?nhiÖm v?th­¬ng héi/intro_new_task")
-		tinsert(strTalkTab,"Xem t×nh h×nh nhiÖm v?th­¬ng héi ®· hoµn thµnh/query_cur_week_info")
-		tinsert(strTalkTab,"§­a ta ®Õn n¬i lµm nhiÖm v?goto_mission_pos")
+		tinsert(strTalkTab,"Kh«ng cã høng thó lµm nhiÖm vô nµy/exit_dialog")
+		tinsert(strTalkTab,"NhiÖm vô ®· hoµn thµnh!/hand_up_task")
+		tinsert(strTalkTab,"NhiÖm vô vÉn ch­a hoµn thµnh/exit_dialog")
+		tinsert(strTalkTab,"Ta muèn hñy bá nhiÖm vô ®ang lµm/cancel_cur_task")
+		tinsert(strTalkTab,"Giíi thiÖu tØ mØ nhiÖm vô th­¬ng héi/intro_new_task")
+		tinsert(strTalkTab,"Xem t×nh h×nh nhiÖm vô th­¬ng héi ®· hoµn thµnh/query_cur_week_info")
+		tinsert(strTalkTab,"§­a ta ®Õn n¬i lµm nhiÖm vô/goto_mission_pos")
 		-- ÕıÔÚÈÎÎñÖĞ
 		if (nTaskState == 1) then
 			if (nTaskCurType == 2) then
@@ -75,20 +75,20 @@ function business_entrance()
 		-- »ñÈ¡µ±Ç°×öµÄÈÎÎñµÄÖÖÀà
 		local nTaskCurType = GetTaskType(11)
 		local strTalkTab = {}
-		tinsert(strTalkTab,"Hoµng th­îng võa ban chiÕu: Nh©n s?nµo gióp søc TriÒu ®×nh s?®­îc träng th­ëng! Mçi ngµy c?th?nhËn tèi ®a <color=yellow>60 lÇn<color> nhiÖm v?")
-		tinsert(strTalkTab,"NhiÖm v?lÇn tr­íc ®· hoµn thµnh ch­a? Nh?l?trong ngµy ph¶i hoµn thµnh <color=green>60 nhiÖm v?color> nh? NÕu <color=green> hñy 1 lÇn s?b?tr?®i 1 lÇn<color> trªn tæng s?nhiÖm v?")
+		tinsert(strTalkTab,"Hoµng th­îng võa ban chiÕu: Nh©n sÜ nµo gióp søc TriÒu ®×nh sÏ ®­îc träng th­ëng! Mçi ngµy cã thÓ nhËn tèi ®a <color=yellow>60 lÇn<color> nhiÖm vô!")
+		tinsert(strTalkTab,"NhiÖm vô lÇn tr­íc ®· hoµn thµnh ch­a? Nhí lµ trong ngµy ph¶i hoµn thµnh <color=green>60 nhiÖm vô<color> nhĞ! NÕu <color=green> hñy 1 lÇn sÏ bŞ trõ ®i 1 lÇn<color> trªn tæng sè nhiÖm vô!")
 		--if nDate >= 20110913 and nDate <= 20110922 then
-			tinsert(strTalkTab,"V?triÒu ®×nh cèng hiÕn søc lùc (kh«ng)/no_accept_new_task") 
+			tinsert(strTalkTab,"V× triÒu ®×nh cèng hiÕn søc lùc (kh«ng)/no_accept_new_task") 
 		--else
-			tinsert(strTalkTab,"V?triÒu ®×nh cèng hiÕn søc lùc (nhËn)/accept_new_task")
+			tinsert(strTalkTab,"V× triÒu ®×nh cèng hiÕn søc lùc (nhËn)/accept_new_task")
 		--end
-		tinsert(strTalkTab,"Ch?dŞp kh¸c/exit_dialog") --5
-		tinsert(strTalkTab,"NhiÖm v?®· hoµn thµnh!/hand_up_task") --6
-		tinsert(strTalkTab,"NhiÖm v?vÉn ch­a hoµn thµnh/exit_dialog") --7
-		tinsert(strTalkTab,"Ta muèn hñy b?nhiÖm v?®ang lµm/cancel_cur_task") --8
-		tinsert(strTalkTab,"Giíi thiÖu t?m?nhiÖm v?th­¬ng héi/intro_new_task") --9
-		tinsert(strTalkTab,"Xem t×nh h×nh nhiÖm v?th­¬ng héi ®· hoµn thµnh/query_cur_week_info")  --10
-		tinsert(strTalkTab,"§­a ta ®Õn n¬i lµm nhiÖm v?goto_mission_pos")
+		tinsert(strTalkTab,"Chê dŞp kh¸c/exit_dialog") --5
+		tinsert(strTalkTab,"NhiÖm vô ®· hoµn thµnh!/hand_up_task") --6
+		tinsert(strTalkTab,"NhiÖm vô vÉn ch­a hoµn thµnh/exit_dialog") --7
+		tinsert(strTalkTab,"Ta muèn hñy bá nhiÖm vô ®ang lµm/cancel_cur_task") --8
+		tinsert(strTalkTab,"Giíi thiÖu tØ mØ nhiÖm vô th­¬ng héi/intro_new_task") --9
+		tinsert(strTalkTab,"Xem t×nh h×nh nhiÖm vô th­¬ng héi ®· hoµn thµnh/query_cur_week_info")  --10
+		tinsert(strTalkTab,"§­a ta ®Õn n¬i lµm nhiÖm vô/goto_mission_pos")
 		-- ÕıÔÚÈÎÎñÖĞ
 		if (nTaskState == 1) then
 			if (nTaskCurType == 2) then
@@ -102,25 +102,25 @@ function business_entrance()
 		end
 
 		--local nTaskCurType = GetTaskType(111)
-		--local szSay = "Ch?cÇn c?mét İt b¶n lÜnh hoµn thµnh c¸c th?th¸ch cña ta, ng­¬i s?nhËn ®­îc v?vµn tµi léc, s?kh«ng kh?®Ó tr?thµnh ph?h? Ng­¬i c?muèn th?kh«ng?"
+		--local szSay = "ChØ cÇn cã mét İt b¶n lÜnh hoµn thµnh c¸c thö th¸ch cña ta, ng­¬i sÏ nhËn ®­îc v« vµn tµi léc, sÏ kh«ng khã ®Ó trë thµnh phó hé. Ng­¬i cã muèn thö kh«ng?"
 		--local tbSay = {}
-		--tinsert(tbSay, "NhËn nhiÖm v?lµm giµu mçi ngµy (tiªu hao 99 xu vËt phÈm)./NhiemVuLamGiau_Nhan")
-		--tinsert(tbSay, "Xem tiÕn ®é thùc hiÖn nhiÖm v?/NhiemVuLamGiau_Xem")
+		--tinsert(tbSay, "NhËn nhiÖm vô lµm giµu mçi ngµy (tiªu hao 99 xu vËt phÈm)./NhiemVuLamGiau_Nhan")
+		--tinsert(tbSay, "Xem tiÕn ®é thùc hiÖn nhiÖm vô./NhiemVuLamGiau_Xem")
 		--tinsert(tbSay, "NhËn tµi léc./NhiemVuLamGiau_Thuong")
-		--tinsert(tbSay, "Ta ch­a muèn giµu c?/gf_DoNothing")
+		--tinsert(tbSay, "Ta ch­a muèn giµu cã./gf_DoNothing")
 		--Say(szSay, getn(tbSay), tbSay)
 	end
 end;
 
 -- ÍË³ö¶Ô»°µÄÄ¬ÈÏ¶Ô»°
 function exit_dialog()
-	Say("Ng­¬i v?n­íc x?th©n, v?d©n cøu n¹n thËt l?®¹i ©n ®¹i ®øc!", 0)
+	Say("Ng­¬i v× n­íc x¶ th©n, v× d©n cøu n¹n thËt lµ ®¹i ©n ®¹i ®øc!", 0)
 end;
 
 -- ½éÉÜĞÂµÄÉÌ»áÈÎÎñµÄ¶Ô»°
 function intro_new_task()
 --	Say("µ±½ñÊ¥ÉÏÓ¢Ã÷£¬ÔçÔÚ¿ªÕ½Ö®Ç°¾ÍÊÕ¼¯ÁË×ã¹»¶àµÄÕ½ÂÔÎï×Ê£¬²ÅÓĞÁË¼¸¸ö´óÊ¤µÄ±£ÕÏ°¡£¡ÎªÁË¸ĞĞ»½­ºşÏÀÊ¿ÃÇµÄ´óÁ¦Ğ­Öú£¬Ê¥ÉÏÌØÃü³¯Í¢ÄÃ³öÕ½ÀûÆ·êûÉÍ´ó¼Ò£¬Ö»ÒªÍê³ÉÒ»Ğ©´«ĞÅºÍÇå³ı¸÷µØÎ£º¦°ÙĞÕµÄÃÍÊŞ»òÕß·Ë°ï£¬¾ÍÄÜµÃµ½·áºñµÄ±¨³¥¡£²»¹ı»ú»áÓĞÏŞ£¬Ã¿ÈËÃ¿ÈÕÖ»ÓĞÒ»°Ù´Î»ú»á£¬´ó¼Ò¿ÉÒª×¥×¡»ú»á°¡¡£ÈôÊÇ½ñÈÕÎŞ·¨Íê³É£¬µÚ¶şÈÕÒ²²»»áÔÙ±£ÁôÇ°ÈÕ¹¦¼¨£¬¶øÊÇÖØĞÂ¿ªÊ¼¼ÆÊı¡£", 0)
-	Say("Hoµng th­îng võa ban chiÕu: Nh©n s?nµo gióp søc TriÒu ®×nh s?®­îc träng th­ëng! Mçi ngµy c?th?nhËn tèi ®a 60 lÇn nhiÖm v? NÕu trong ngµy kh«ng hoµn thµnh th?h«m sau s?®­îc tİnh l¹i t?®Çu!", 0)
+	Say("Hoµng th­îng võa ban chiÕu: Nh©n sÜ nµo gióp søc TriÒu ®×nh sÏ ®­îc träng th­ëng! Mçi ngµy cã thÓ nhËn tèi ®a 60 lÇn nhiÖm vô. NÕu trong ngµy kh«ng hoµn thµnh th× h«m sau sÏ ®­îc tİnh l¹i tõ ®Çu!", 0)
 end;
 --¿ÉÒÔ½ÓÈÎÎñµÄÊ±¼ä¶Î
 --13£º00-14£º30
@@ -145,7 +145,7 @@ function accept_new_task()
 --		return 0;
 --	end;
 	local nReput, nFaction = 0,0
---	if GetCreateTime() < 1306861186 then --chØnh l¹i thêi gian l?done
+--	if GetCreateTime() < 1306861186 then --chØnh l¹i thêi gian lµ done
 --		Say("Nh©n vËt ®­îc t¹o sau ngµy 01/06/2011 míi tham gia ®­îc.", 0)
 --		return
 --	end
@@ -153,7 +153,7 @@ function accept_new_task()
 	nFaction = 4000	
 
 	if GetLevel() < 73 or GetReputation() < nReput or GetTask(336) < nFaction or GetPlayerRoute() == 0 then
-		Say("N¨ng lùc cña ng­¬i cßn kĞm l¾m, ®îi ®Õn <color=yellow>cÊp 73, gia nhËp h?ph¸i, c?®ñ ®iÓm danh väng v?s?m«n <color>h·y quay l¹i cèng hiÕn søc lùc còng ch­a muén.", 0)
+		Say("N¨ng lùc cña ng­¬i cßn kĞm l¾m, ®îi ®Õn <color=yellow>cÊp 73, gia nhËp hÖ ph¸i, cã ®ñ ®iÓm danh väng vµ s­ m«n <color>h·y quay l¹i cèng hiÕn søc lùc còng ch­a muén.", 0)
 		return
 	end
 	local nDate = tonumber(date("%y%m%d"))
@@ -164,7 +164,7 @@ function accept_new_task()
 
 	local nType = check_type()
 	--if GetItemCount(2,1,30154) < tbCheck_Award[nType][1] and mod(GetTask(TSK_CHECK_BAOHAP),100) == 0 then
-	--    Talk(1,"","§¹i hiÖp kh«ng mang theo ®ñ s?l­îng N?Oa B¶o H¹p ®Ó nhËn nhiÖm v?!!!")
+	--    Talk(1,"","§¹i hiÖp kh«ng mang theo ®ñ sè l­îng N÷ Oa B¶o H¹p ®Ó nhËn nhiÖm vô !!!")
 	----    	return
 	--end
     
@@ -188,15 +188,15 @@ function accept_new_task()
 		local nTaskCurType = GetTaskType(11)
 		gf_WriteLogEx("Nhiem vu Thuong Hoi", "tham gia")
 		if (nTaskCurType == 2) then
-			Say("<color=green>Ch?th­¬ng héi<color>:"..myText.."\n C?cÇn ta ®­a ®Õn n¬i lµm nhiÖm v?kh«ng?",
+			Say("<color=green>Chñ th­¬ng héi<color>:"..myText.."\n Cã cÇn ta ®­a ®Õn n¬i lµm nhiÖm vô kh«ng?",
 				2,
 				"PhiÒn ®­a ta ®i mét chuyÕn/goto_mission_pos",
 				"Kh«ng cÇn ®©u/exit_dialog")
 		else
-			Say("<color=green>Ch?th­¬ng héi<color>:"..myText.."\n", 0)
+			Say("<color=green>Chñ th­¬ng héi<color>:"..myText.."\n", 0)
 		end
 	else
-		Say("H«m nay ng­¬i ®· lµm ®ñ nhiÖm v?råi, ngµy mai l¹i ®Õn nh?", 0)
+		Say("H«m nay ng­¬i ®· lµm ®ñ nhiÖm vô råi, ngµy mai l¹i ®Õn nhĞ!", 0)
 	end
 end;
 
@@ -282,16 +282,16 @@ function hand_up_task()
 		if GetTask(CURDAY_DONE_TIMES)  <= 24 then
 			if  GetLevel() >= 73 and GetLevel() <= 79  then
 				--ModifyReputation(- 1, 0)
-				--Msg2Player("B¹n ®· b?tr?1 ®iÓm danh väng")
+				--Msg2Player("B¹n ®· bŞ trõ 1 ®iÓm danh väng")
 			end
 			if GetLevel() >= 80 and GetLevel() <= 89  then
 				--ModifyReputation(- 2, 0)
-				--Msg2Player("B¹n ®· b?tr?2 ®iÓm danh väng")
+				--Msg2Player("B¹n ®· bŞ trõ 2 ®iÓm danh väng")
 			end 
 		end
 		----------------------------------------------- ph¸t th­ëng theo møc lev
 		--ModifyReputation(- 3, 0)		
-		ModifyJinJuan(tbCheck_Award[nType][2])	
+		ModifyJinJuan(5)	
 		-- ¸üĞÂµ±ÌìºÍ±¾ÖÜÒÑ¾­Íê³ÉµÄÈÎÎñ
 		local nCurDayDoneTimes = GetTask(CURDAY_DONE_TIMES)
 		local nCurWeekDoneTimes = GetTask(CURWEEK_DONE_TIMES)
@@ -303,7 +303,7 @@ function hand_up_task()
 		-- »î¶¯call back
 		-- Thªm b¹c IPBonus
 		--AddMoneyForIPBonus()
-		-- Kh«ng s?dông hµm cña Kingsoft  viÕt (Hµm nµy s?dông theo d¹ng event 
+		-- Kh«ng sö dông hµm cña Kingsoft  viÕt (Hµm nµy sö dông theo d¹ng event 
 --		Give_Business_Award();
 		local nLastLoginIp,nCurrentLoginIp = GetLoginIP();	
 		local nLIP1,nCIP1 = floor(nLastLoginIp/2^24),floor(nCurrentLoginIp/2^24);
@@ -314,11 +314,11 @@ function hand_up_task()
 		local szCIP = tostring(nCIP1.."."..nCIP2.."."..nCIP3.."."..nCIP4);
 		
 --		WriteLogEx("Nhiem vu Thuong Hoi", "hoµn thµnh", tBonus[nLevel], "®ång")
-		gf_WriteLogEx("Nhiem Vu Thuong Hoi", "hoµn thµnh 1 nhiÖm v?, 1, "Th­¬ng héi lo¹i "..tbCheck_Award[nType][3])
+		gf_WriteLogEx("Nhiem Vu Thuong Hoi", "hoµn thµnh 1 nhiÖm vô", 1, "Th­¬ng héi lo¹i "..tbCheck_Award[nType][3])
 		if GetTask(CURDAY_DONE_TIMES)  == 60 then
-			gf_WriteLogEx("Nhiem Vu Thuong Hoi", "hoµn thµnh 60 nhiÖm v?, 1, "Hoµn thµnh 60 nhiÖm v?)
+			gf_WriteLogEx("Nhiem Vu Thuong Hoi", "hoµn thµnh 60 nhiÖm vô", 1, "Hoµn thµnh 60 nhiÖm vô")
 		end
-		-----------------------Chuçi nhiÖm v?§ång Hµnh
+		-----------------------Chuçi nhiÖm vô §ång Hµnh
 		if CFG_NhiemVuDongHanh == 1 then
 			if DongHanh_GetStatus() == 0 and (DongHanh_GetMission() == 12 or DongHanh_GetMission() == 13 or DongHanh_GetMission() == 14 or DongHanh_GetMission() == 15) then
 				if DongHanh_GetMissionPart() > 0 then
@@ -336,13 +336,13 @@ function hand_up_task()
 			nChance = nChance + 1
 			if nChance < nMaxChance then
 				CustomDataSave("mp_shanghui", "dd", nChance, nMaxChance)
-				Msg2Player("NhiÖm v?S?®å-T×nh h×nh hoµn thµnh Th­¬ng héi-:"..nChance.."/"..nMaxChance)
+				Msg2Player("NhiÖm vô S­ ®å-T×nh h×nh hoµn thµnh Th­¬ng héi-:"..nChance.."/"..nMaxChance)
 			else
 				PrenticeCompleteTask()
 			end
 		end
 	else
-		Say("Ng­¬i ch­a hoµn thµnh nhiÖm v?ta giao! TiÕp tôc c?g¾ng nh?", 0)
+		Say("Ng­¬i ch­a hoµn thµnh nhiÖm vô ta giao! TiÕp tôc cè g¾ng nhĞ!", 0)
 	end
 end;
 
@@ -368,10 +368,10 @@ end;
 -- È¡ÏûÕıÔÚ×öµÄÈÎÎñ
 function cancel_cur_task()
 --	Say("<color=green>ÉÌ»áÀÏ°å<color>£º<color=yellow>È¡ÏûÈÎÎñ<color>½«ºÄ·ÑÒ»´ÎÁìÈ¡ÈÎÎñ½±ÀøµÄ»ú»á£¬ÄãÈ·¶¨ÒªÈ¡Ïû´Ë´ÎÈÎÎñÂğ£¿",
-	Say("<color=yellow>Hñy nhiÖm v?lÇn nµy<color> s?b?tr?®i <color=yellow>5 ®iÓm danh väng<color>! B»ng h÷u h·y suy ngh?k?nh?",
+	Say("<color=yellow>Hñy nhiÖm vô lÇn nµy<color> sÏ bŞ trõ ®i <color=yellow>5 ®iÓm danh väng<color>! B»ng h÷u h·y suy nghÜ kü nhĞ!",
 		2,
-		"Hñy b?nhiÖm v?confirm_cancel_task",
-		"§Ó ta suy ngh?l¹i/exit_dialog")
+		"Hñy bá nhiÖm vô/confirm_cancel_task",
+		"§Ó ta suy nghÜ l¹i/exit_dialog")
 end;
 
 -- È·ÈÏÈ¡ÏûÕıÔÚ×öµÄÈÎÎñ
@@ -412,13 +412,13 @@ function confirm_cancel_task()
 
 		do_cancel_task();  -- Çå¿ÕÈÎÎñ
 
-		Say("Xong råi! b©y gi?b»ng h÷u c?th?nhËn nhiÖm v?míi!",0);
-		Msg2Player("B¹n b?tr?5 ®iÓm danh väng v?hñy nhiÖm v?");
-		TaskTip("B¹n b?tr?5 ®iÓm danh väng v?hñy nhiÖm v?");
+		Say("Xong råi! b©y giê b»ng h÷u cã thÓ nhËn nhiÖm vô míi!",0);
+		Msg2Player("B¹n bŞ trõ 5 ®iÓm danh väng v× hñy nhiÖm vô!");
+		TaskTip("B¹n bŞ trõ 5 ®iÓm danh väng v× hñy nhiÖm vô!");
 	else
-		Say("<color=yellow>§iÓm danh väng hiÖn t¹i<color> cña ng­¬i qu?thÊp, kh«ng th?hñy nhiÖm v?lÇn nµy!",0);
-		Msg2Player("§iÓm danh väng qu?thÊp, kh«ng th?hñy nhiÖm v?");
-		TaskTip("§iÓm danh väng qu?thÊp, kh«ng th?hñy nhiÖm v?");
+		Say("<color=yellow>§iÓm danh väng hiÖn t¹i<color> cña ng­¬i qu¸ thÊp, kh«ng thÓ hñy nhiÖm vô lÇn nµy!",0);
+		Msg2Player("§iÓm danh väng qu¸ thÊp, kh«ng thÓ hñy nhiÖm vô!");
+		TaskTip("§iÓm danh väng qu¸ thÊp, kh«ng thÓ hñy nhiÖm vô!");
 		return
 	end;
 	return
@@ -466,7 +466,7 @@ function query_cur_week_info()
 	--	nDayCanDoTimes = nWeekCanDoTimes
 	--end
 	
-	Say("H«m nay ®· hoµn thµnh <color=yellow>"..nHaveDoneCurDay.."<color> lÇn nhiÖm v? Cßn c?th?nhËn <color=yellow>"..nDayCanDoTimes.."<color> lÇn! ", 0)
+	Say("H«m nay ®· hoµn thµnh <color=yellow>"..nHaveDoneCurDay.."<color> lÇn nhiÖm vô. Cßn cã thÓ nhËn <color=yellow>"..nDayCanDoTimes.."<color> lÇn! ", 0)
 end;
 
 -- Ë¢ĞÂÈÕÆÚĞÅÏ¢
@@ -531,7 +531,7 @@ function refresh_last_week_end()
 	return nCurDate
 end;
 
--- §iÒu kiÖn thªm b¹c IPBonus ( tr­êng hîp 2 b¹c v?20 b¹c )
+-- §iÒu kiÖn thªm b¹c IPBonus ( tr­êng hîp 2 b¹c vµ 20 b¹c )
 function AddMoneyForIPBonus()
 	if GetPlayerRoute() == 0 or VET_CheckIpBonus() == 0 then
 		return
@@ -543,7 +543,7 @@ function AddMoneyForIPBonus()
 		[2] = {73, 3000, 4000, 200},
 	}
 	
-	-- T×m møc thuëng ph?hîp víi ®iÒu kiÖn cña ng­êi ch¬i
+	-- T×m møc thuëng phï hîp víi ®iÒu kiÖn cña ng­êi ch¬i
 	local nCheck = 0
 	for i = 1, getn(tIpBonusReq) do
 		if GetLevel() >= tIpBonusReq[i][1] and GetReputation() > tIpBonusReq[i][2] and GetTask(336) > tIpBonusReq[i][3] then
@@ -556,9 +556,9 @@ function AddMoneyForIPBonus()
 		return
 	end
 	
-	-- Th­ëng tiÒn v?ghi log trong nhãm IPBonus
+	-- Th­ëng tiÒn vµ ghi log trong nhãm IPBonus
 	local nBonusMoney = tIpBonusReq[nCheck][4]
-	ModifyJinJuan(nBonusMoney)
+	ModifyJinJuan(nBonusMoney/10000)
 	nBonusMoney = nBonusMoney / 100
 	Msg2Player("B¹n nhËn ®­îc "..nBonusMoney.." b¹c")
 	gf_WriteCustomLog(VET_STR_IPBONUS_LOG_TITLE, "nhËn ®­îc "..nBonusMoney.." b¹c")
@@ -566,7 +566,7 @@ end
 
 	-- Kh«ng cho nhËn nv Th­¬ng héi
 function no_accept_new_task()
-	Talk(1,"","B¹n ®· nhËn nhiÖm v?råi, h·y hoµn thµnh ®Ó nhËn phÇn th­ëng!!!")
+	Talk(1,"","B¹n ®· nhËn nhiÖm vô råi, h·y hoµn thµnh ®Ó nhËn phÇn th­ëng!!!")
 	return
 end
 
