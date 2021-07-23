@@ -291,7 +291,7 @@ function hand_up_task()
 		end
 		----------------------------------------------- ph¸t th­ëng theo møc lev
 		--ModifyReputation(- 3, 0)		
-		ModifyJinJuan(5)	
+		ModifyJinJuan(1)	
 		-- ¸üÐÂµ±ÌìºÍ±¾ÖÜÒÑ¾­Íê³ÉµÄÈÎÎñ
 		local nCurDayDoneTimes = GetTask(CURDAY_DONE_TIMES)
 		local nCurWeekDoneTimes = GetTask(CURWEEK_DONE_TIMES)
@@ -558,9 +558,9 @@ function AddMoneyForIPBonus()
 	
 	-- Th­ëng tiÒn vµ ghi log trong nhãm IPBonus
 	local nBonusMoney = tIpBonusReq[nCheck][4]
-	ModifyJinJuan(nBonusMoney/10000)
+	ModifyJinJuan(1)
 	nBonusMoney = nBonusMoney / 100
-	Msg2Player("B¹n nhËn ®­îc "..nBonusMoney.." b¹c")
+	Msg2Player("B¹n nhËn ®­îc 1kim phiÕu")
 	gf_WriteCustomLog(VET_STR_IPBONUS_LOG_TITLE, "nhËn ®­îc "..nBonusMoney.." b¹c")
 end
 
