@@ -1626,7 +1626,7 @@ ID	Thêi gian hiÖu qu¶ cÊp 1	Thêi gian hiÖu qu¶ cÊp 2	Thêi gian hiÖu qu¶ cÊp 3	Th
 13634									0	state_burst_enhance_rate_spec_1	85197300;0		0	state_burst_enhance_rate_spec_2	89129460;0		0	state_burst_enhance_rate_spec_3	93716980;0	Tèc ®é thi triÓn cña LiÖt DiÖm KiÕm Ph¸p, Tİch D­¬ng KiÕm Khİ, Thiªn Thanh ThuÇn D­¬ng KiÕm t¨ng thªm 30%								1;15	1
 13635									0	state_dodge_percent_adjust	25;0									Tû lÖ nĞ tr¸nh t¨ng 25%								1;15	1
 13636									0	state_skill_adjust	160;0									Thêi gian chê cña D­¬ng Gia B«n Lang Th­¬ng,D­¬ng Gia §¶o H¶i Th­¬ng,Bİch NguyÖt Phi Tinh Th­¬ng gi¶m 30%								1;15	1
-13637									0	state_attack_add_spec	2453668140									S¸t th­¬ng cña L­u Quang TuyÖt ¶nh TiÔn t¨ng thªm 30%, thêi gian chê gi¶m 5 gi©y								1;15	1
+13637									0	state_attack_add_spec	487588140;0		0	state_skill_cast_interval_dec_spec_1	487588740;0					S¸t th­¬ng cña L­u Quang TuyÖt ¶nh TiÔn t¨ng thªm 30%, thêi gian chê gi¶m 5 gi©y								1;15	1
 13638									0	imme_evil_spirit	40;0									Sè l­îng Tµ Linh vµ trŞ tèi ®a t¨ng 40%								1;15	1
 13639									0	state_attack_add_spec	230031660;0		0	state_attack_add_spec	231342380;0		0	state_attack_add_spec	236585260;0	S¸t th­¬ng cña Phong Cæ, Cuång Phong Tr¶o, V¹n Cæ Thùc Thiªn t¨ng thªm 30%								1;15	1
 13640									0	state_attack_add_spec	674365740,0		0	state_sub1_rate_add_spec	674365640,0					S¸t th­¬ng cña Ngò L«i Chİnh Ph¸p Phï t¨ng thªm 30%, tû lÖ xuÊt chiªu t¨ng 20%								1;15	1
@@ -2625,6 +2625,12 @@ ID	Thêi gian hiÖu qu¶ cÊp 1	Thêi gian hiÖu qu¶ cÊp 2	Thêi gian hiÖu qu¶ cÊp 3	Th
 14633	180	180	180	180	180	180	180	250	5	state_neili_defence_point_dec	3000;50									TÊn c«ng khiÕn sè ®iÓm néi phßng cña kÎ ®Şch gi¶m /1								1;10	0
 14634	180	180	180	180	180	180	180	250	5	state_physical_def_point_dec	2000;50	250	5	state_neili_defence_point_dec	2000;50					TÊn c«ng khiÕn sè ®iÓm néi ngo¹i phßng cña kÎ ®Şch gi¶m /1								1;10	0
 14635									0	state_medicine_time_increase	380;50									t¨ng thªm hiÖu qu¶ cña th­¬ng d­îc /1%								1;10	0
+30000									0	state_add_allability	350;0		0	state_burst_enhance_rate	240;0		0	state_critical_damage_increase	500;250	Kh¸ng tÊt c¶ t¨ng:/1 <enter>Tèc ®é thi triÓn vâ c«ng t¨ng/2% <enter>S¸t th­¬ng b¹o kİch + /3									1
+40001									0	state_burst_enhance_rate	10;10									T¨ng tèc ®é xuÊt chiªu /1%								1;15	1
+30001									0	state_life_max_point_add	180000;0									T¨ng sinh lùc/1								1;1	1
+30002									0	state_skill_cast_interval_dec_spec_1	262800620;0		0	state_skill_cast_interval_dec_spec_2	934544620;0		0	state_skill_cast_interval_dec_spec_3	934544620;0	Kim Cang Phôc Ma Khuyªn,Kim Cang Bµn Nh­îc C«ng, V« Song Kim Cang Bµn Nh­îc C«ng gi·n c¸ch gi¶m 7 gi©y									1
+30003									0	state_def_critical_point_increase	1000;0									Phßng thñ b¹o kİch /1								1;1	1
+30004									0	state_critical_point_increase	1000;0									T¨ng b¹o kİch /1								1;12	1
 14636									0	state_burst_enhance_rate	250;0		0	state_add_book_attribute_value	100;20		0	state_add_allability	400;50	Tèc ®é xuÊt chiªu /1%<enter>Hç trî mËt tŞch /2%<enter>Kh¸ng tÊt c¶ /3								1;1	1
 14637									0	state_critical_damage_increase	1500;10		0	state_m_attack_percent_add	200;0		0	state_p_attack_percent_add	200;0	B¹o kİch céng thªm /1<enter>C«ng kİch /2%								1;1	1
 14638									0	state_ignore_defence	200;50									Bá qua phßng ngù ®èi ph­¬ng /1% 								1;50	1
@@ -2683,18 +2689,194 @@ ID	Thêi gian hiÖu qu¶ cÊp 1	Thêi gian hiÖu qu¶ cÊp 2	Thêi gian hiÖu qu¶ cÊp 3	Th
 14781									0	state_life_max_point_add	250000;0									<color=Gold>T¨ng sinh lùc/1								1;1	1
 14782									0	state_fast_recovery	280;0									<color=Gold>Gi¶m thêi gian thä th­¬ng/1%								1;1	1
 14785									0	state_immune	120;30									<color=Gold>NĞ tr¸nh tÊt c¶ tr¹ng th¸i phô/1%								1;10	1
-148801									0	state_life_max_point_add	600;600									+60 M¸u	400000	400000	300000	200000	100000	50000	5000		0
-148811									0	state_m_attack_percent_add	1500;1500									+15 Søc m¹nh PhĞp ThuËt 	50000	5000	5000	5000	5000	5000	5000		1
-148821									0	state_neili_percent_per10s_anytime	500;500									50% tèc ®é håi N¨ng l­îng gèc	50000	5000	5000	5000	5000	5000	5000		1
-148831									0	state_medica_neili_effect_add	250;250									25% kh¶ n¨ng håi phôc tõ c¸c lä thuèc								1;15	1
-148841									0	state_neili_max_point_add	1000;0									+100 N¨ng l­îng	400000	400000	300000	300000	300000	300000	300000		0
-148851									0	state_add_allability	500;500		0	state_burst_enhance_rate	300;300					Néi t¹i duy nhÊt - Lµm hay lµ chÕt: NhËn 2 ®iÓm vinh quang khi h¹ gôc t­íng ®Şch (tèi ®a 10 ®iÓm)<enter> MÊt 4 ®iÓm khi bŞ h¹ gôc									1
-30000									0	state_add_allability	350;0		0	state_burst_enhance_rate	240;0		0	state_critical_damage_increase	500;250	Kh¸ng tÊt c¶ t¨ng:/1 <enter>Tèc ®é thi triÓn vâ c«ng t¨ng/2% <enter>S¸t th­¬ng b¹o kİch + /3									1
-40001									0	state_burst_enhance_rate	10;10									T¨ng tèc ®é xuÊt chiªu /1%								1;15	1
-30001									0	state_life_max_point_add	180000;0									T¨ng sinh lùc/1								1;1	1
-30002									0	state_skill_cast_interval_dec_spec_1	262800620;0		0	state_skill_cast_interval_dec_spec_2	934544620;0		0	state_skill_cast_interval_dec_spec_3	934544620;0	Kim Cang Phôc Ma Khuyªn,Kim Cang Bµn Nh­îc C«ng, V« Song Kim Cang Bµn Nh­îc C«ng gi·n c¸ch gi¶m 7 gi©y									1
-30003									0	state_def_critical_point_increase	1000;0									Phßng thñ b¹o kİch /1								1;1	1
-30004									0	state_critical_point_increase	1000;0									T¨ng b¹o kİch /1								1;12	1
+14880									0	state_life_max_point_add	600;600									+60 M¸u	400000	400000	300000	200000	100000	50000	5000		0
+14881									0	state_m_attack_percent_add	1500;1500									+15 Søc m¹nh PhĞp ThuËt 	50000	5000	5000	5000	5000	5000	5000		1
+14882									0	state_neili_percent_per10s_anytime	500;500									50% tèc ®é håi N¨ng l­îng gèc	50000	5000	5000	5000	5000	5000	5000		1
+14883									0	state_medica_neili_effect_add	250;250									25% kh¶ n¨ng håi phôc tõ c¸c lä thuèc								1;15	1
+14884									0	state_neili_max_point_add	1000;0									+100 N¨ng l­îng	400000	400000	300000	300000	300000	300000	300000		0
+14885									0	state_add_allability	500;500		0	state_burst_enhance_rate	300;300					Néi t¹i duy nhÊt - Lµm hay lµ chÕt: NhËn 2 ®iÓm vinh quang khi h¹ gôc t­íng ®Şch (tèi ®a 10 ®iÓm)<enter> MÊt 4 ®iÓm khi bŞ h¹ gôc									1
+
+
+17000									0	state_burst_enhance_rate	150;20									T¨ng xuÊt chiªu /1%								1;15	1
+17001									0	state_add_strength	1000;100									T¨ng søc m¹nh /1								1;15	1
+17002									0	state_def_critical_point_increase	200;10									Phßng thñ b¹o kİch t¨ng /1								1;15	1
+17003									0	state_p_attack_point_add	4000;200									T¨ng ®iÓm sè tæng lùc c«ng kİch ngo¹i c«ng /1								1;15	1
+17004									0	state_receive_half_damage	170;30									Gi¶m thä th­¬ng /1%								1;15	1
+17005									0	state_add_energy	1000;100									Néi c«ng t¨ng /1 								1;15	1
+17006									0	state_def_critical_damage_increase	500;50									Gi¶m s¸t th­¬ng b¹o kİch t¨ng /1								1;15	1
+17007									0	state_m_attack_point_add	4000;200									T¨ng ®iÓm sè tæng lùc c«ng kİch néi c«ng/1								1;15	1
+17008									0	state_life_max_point_add	200000;20000									T¨ng Sinh lùc /1								1;15	1
+17009									0	state_add_dexterity	1000;100									Th©n ph¸p t¨ng /1 								1;15	1
+17010									0	state_critical_damage_increase	500;50									B¹o kİch céng thªm t¨ng /1								1;15	1
+17011									0	state_damage_point	3250;250									S¸t th­¬ng t¨ng /1								1;15	1
+17012									0	state_accuracy_point_increase	10000;3000									§é chİnh x¸c t¨ng /1 								1;15	1
+17013									0	state_add_observe	1000;100									Linh ho¹t t¨ng /1 								1;15	1
+17014									0	state_critical_point_increase	200;10									§iÓm b¹o kİch t¨ng /1								1;15	1
+17015	180	180	180	180	180	180	180	1000	5	state_poison_damage	8000;500									KÌm theo ®éc s¸t /1 								1;15	1
+
+14950									0	state_life_max_point_add	400000;0		0	state_def_critical_point_increase	300;0		0	state_def_critical_damage_increase	1000;0	Sinh lùc tèi ®a/1<enter>Phßng thñ b¹o kİch/2<enter>Gi¶m th­¬ng b¹o kİch +/3								1;1	1
+14951									0	state_p_attack_percent_add	400;0		0	state_critical_damage_increase	1000;0					Ngo¹i c«ng t¨ng/1% <enter>B¹o kİch céng thªm + /2								1;1	1
+14952									0	state_m_attack_percent_add	400;0		0	state_critical_damage_increase	1000;0					Néi c«ng t¨ng/1% <enter>B¹o kİch céng thªm + /2								1;1	1
+14953									0	state_destiny_attack_point_add	3600;0									<color=Gold>Ph¸ ®Şch +/1								1;1	1
+14954									0	state_add_allability	1000;0		0	state_life_max_point_add	500000;0					<color=Gold>Kh¸ng tÊt c¶ +/1<enter>Sinh lùc +/2								1;1	1
+14955									0	state_damage_point	5000;0		0	state_critical_damage_increase	1000;0					<color=Gold>S¸t th­¬ng +/1<enter>S¸t th­¬ng b¹o kİch +/2								1;1	1
+14956									0	state_o_defence_point_add	3000;450		0	state_i_defence_point_add	3000;450		0	state_life_max_point_add	250000;20000	Néi, ngo¹i phßng +/1<enter>Sinh lùc +/3								1;15	1
+14957									0	state_p_attack_percent_add	120;0		0	state_def_critical_point_increase	550;100		0	state_def_critical_damage_increase	1100;100	Ngo¹i c«ng +/1%<enter>Phßng thñ b¹o kİch +/2<enter>Gi¶m th­¬ng b¹o kİch +/3								1;15	1
+14958									0	state_life_max_percent_add	600;50		0	state_burst_enhance_rate	400;0					Sinh lùc tèi ®a +/1%<enter>Tèc ®é xuÊt chiªu +/2%								1;15	1
+14959									0	state_m_attack_percent_add	120;0		0	state_def_critical_point_increase	550;100		0	state_def_critical_damage_increase	1100;100	Néi c«ng +/1%<enter>Phßng thñ b¹o kİch +/2<enter>Gi¶m th­¬ng b¹o kİch +/3								1;15	1
+14960									0	state_life_max_percent_add	600;50		0	state_add_allability	500;50					Sinh lùc tèi ®a +/1%<enter>TÊt c¶ thuéc tİnh +/2								1;15	1
+14961									0	state_life_max_percent_add	600;50		0	state_receive_half_damage	180;0					Giíi h¹n sinh lùc +/1%<enter>Gi¶m thä th­¬ng +/2%								1;15	1
+
+14962									0	state_add_strength	1200;50		0	state_critical_point_increase	400;50		0	state_critical_damage_increase	1200;50	Søc m¹nh +/1<enter>B¹o kİch +/2<enter>B¹o kİch céng thªm +/3								1;15	1
+14963									0	state_add_energy	1200;50		0	state_critical_point_increase	400;50		0	state_critical_damage_increase	1200;50	Néi c«ng +/1<enter>B¹o kİch +/2<enter>B¹o kİch céng thªm +/3								1;15	1
+14964									0	state_add_vitality	1200;50		0	state_critical_point_increase	400;50		0	state_critical_damage_increase	1200;50	G©n cèt +/1<enter>B¹o kİch +/2<enter>B¹o kİch céng thªm +/3								1;15	1
+14965									0	state_add_dexterity	1200;50		0	state_critical_point_increase	400;50		0	state_critical_damage_increase	1200;50	Th©n ph¸p +/1<enter>B¹o kİch +/2<enter>B¹o kİch céng thªm +/3								1;15	1
+14966									0	state_add_observe	1200;50		0	state_critical_point_increase	400;50		0	state_critical_damage_increase	1200;50	Linh ho¹t +/1<enter>B¹o kİch +/2<enter>B¹o kİch céng thªm +/3								1;15	1
+14967									0	state_cast_technique_rate	50;10		0	state_p_attack_percent_add	80;0					Tû lÖ xuÊt chiªu +/1%<enter>Ngo¹i c«ng +/2%								1;15	1
+14968									0	state_confusion_immune	220;50		0	state_sleep_immune	220;50		0	state_knockdown_immune	220;50	MiÔn dŞch hçn lo¹n, ngñ, ®¸nh ng· +/1%									1
+14969									0	state_fetter_immune	220;50		0	state_vertigo_immune	220;50		0	state_knockback_immune	220;50	MiÔn dŞch ®Şnh th©n, cho¸ng, ®¸nh lui +/1%									1
+14970									0	state_cast_technique_rate	50;10		0	state_m_attack_percent_add	80;0					Tû lÖ xuÊt chiªu +/1%<enter>Néi c«ng +/2%								1;15	1
+
+
+
+14971									0	state_p_attack_percent_add	680;60		0	state_add_allability	650;50		0	state_critical_damage_increase	1200;100	Ngo¹i c«ng +/1%<enter>TÊt c¶ thuéc tİnh +/2<enter>B¹o kİch céng thªm +/3								1;15	1
+14972									0	state_m_attack_percent_add	680;60		0	state_add_allability	650;50		0	state_critical_damage_increase	1200;100	Néi kİch +/1%<enter>TÊt c¶ thuéc tİnh +/2<enter>B¹o kİch céng thªm +/3								1;15	1
+14973									0	state_damage_point	5000;500		0	state_add_allability	500;50		0	state_critical_damage_increase	1000;100	S¸t th­¬ng +/1<enter>TÊt c¶ thuéc tİnh +/2<enter>B¹o kİch céng thªm +/3								1;15	1
+
+
+14974									0	state_add_strength	1600;100		0	state_accuracy_point_increase	13300;1500		0	state_critical_point_increase	600;100	Søc m¹nh +/1 <enter>Chİnh x¸c +/2<enter>B¹o kİch +/3								1;15	1
+14975									0	state_add_energy	1600;100		0	state_accuracy_point_increase	13300;1500		0	state_critical_point_increase	600;100	Néi c«ng +/1 <enter>Chİnh x¸c +/2<enter>B¹o kİch +/3								1;15	1
+14976									0	state_add_vitality	1600;100		0	state_accuracy_point_increase	13300;1500		0	state_critical_point_increase	600;100	G©n cèt +/1 <enter>Chİnh x¸c +/2<enter>B¹o kİch +/3								1;15	1
+14977									0	state_add_dexterity	1600;100		0	state_accuracy_point_increase	13300;1500		0	state_critical_point_increase	600;100	Th©n ph¸p+ /1 <enter>Chİnh x¸c +/2<enter>B¹o kİch +/3								1;15	1
+14978									0	state_add_observe	1600;100		0	state_accuracy_point_increase	13300;1500		0	state_critical_point_increase	600;100	Linh ho¹t +/1 <enter>Chİnh x¸c +/2<enter>B¹o kİch +/3								1;15	1
+14979	180	180	180	180	180	180	180	500	5	state_physical_parmor_per_dec	100;100	500	5	state_magic_parmor_per_dec	100;100					TÊn c«ng lµm néi ngo¹i phßng kÎ ®Şch -/1%								1;15	1
+
+
+
+14980									0	state_o_defence_point_add	3500;0		0	state_i_defence_point_add	3500;0		0	state_life_max_point_add	300000;0	Néi, ngo¹i phßng +/1<enter>Sinh lùc +/3								1;15	1
+14981									0	state_life_max_percent_add	700;100		0	state_def_critical_point_increase	600;100		0	state_def_critical_damage_increase	1200;50	Sinh lùc tèi ®a +/1%<enter>Phßng thñ b¹o kİch +/2<enter>Gi¶m th­¬ng b¹o kİch +/3								1;15	1
+
+
+14982									0	state_add_strength	1500;50		0	state_critical_point_increase	400;50		0	state_critical_damage_increase	1200;50	Søc m¹nh +/1<enter>B¹o kİch +/2<enter>B¹o kİch céng thªm +/3								1;15	1
+14983									0	state_add_energy	1500;50		0	state_critical_point_increase	400;50		0	state_critical_damage_increase	1200;50	Néi c«ng +/1<enter>B¹o kİch +/2<enter>B¹o kİch céng thªm +/3								1;15	1
+14984									0	state_add_vitality	1500;50		0	state_critical_point_increase	400;50		0	state_critical_damage_increase	1200;50	G©n cèt +/1<enter>B¹o kİch +/2<enter>B¹o kİch céng thªm +/3								1;15	1
+14985									0	state_add_dexterity	1500;50		0	state_critical_point_increase	400;50		0	state_critical_damage_increase	1200;50	Th©n ph¸p +/1<enter>B¹o kİch +/2<enter>B¹o kİch céng thªm +/3								1;15	1
+14986									0	state_add_observe	1500;50		0	state_critical_point_increase	400;50		0	state_critical_damage_increase	1200;50	Linh ho¹t +/1<enter>B¹o kİch +/2<enter>B¹o kİch céng thªm +/3								1;15	1
+
+
+14987									0	state_p_attack_percent_add	680;50		0	state_add_allability	800;50		0	state_critical_damage_increase	1400;150	Ngo¹i c«ng +/1%<enter>TÊt c¶ thuéc tİnh +/2<enter>B¹o kİch céng thªm +/3								1;15	1
+14988									0	state_m_attack_percent_add	680;50		0	state_add_allability	800;50		0	state_critical_damage_increase	1400;150	Néi kİch +/1%<enter>TÊt c¶ thuéc tİnh +/2<enter>B¹o kİch céng thªm +/3								1;15	1
+14989									0	state_damage_point	5000;500		0	state_add_allability	700;50		0	state_critical_damage_increase	1200;150	S¸t th­¬ng +/1<enter>TÊt c¶ thuéc tİnh +/2<enter>B¹o kİch céng thªm +/3								1;15	1
+
+14990									0	state_add_strength	1600;100		0	state_accuracy_point_increase	14500;1500		0	state_critical_point_increase	650;100	Søc m¹nh +/1 <enter>Chİnh x¸c +/2<enter>B¹o kİch +/3								1;15	1
+14991									0	state_add_energy	1600;100		0	state_accuracy_point_increase	14500;1500		0	state_critical_point_increase	650;100	Néi c«ng +/1 <enter>Chİnh x¸c +/2<enter>B¹o kİch +/3								1;15	1
+14992									0	state_add_vitality	1600;100		0	state_accuracy_point_increase	14500;1500		0	state_critical_point_increase	650;100	G©n cèt +/1 <enter>Chİnh x¸c +/2<enter>B¹o kİch +/3								1;15	1
+14993									0	state_add_dexterity	1600;100		0	state_accuracy_point_increase	14500;1500		0	state_critical_point_increase	650;100	Th©n ph¸p t¨ng: /1 <enter>Chİnh x¸c +/2<enter>B¹o kİch +/3								1;15	1
+14994									0	state_add_observe	1600;100		0	state_accuracy_point_increase	14500;1500		0	state_critical_point_increase	650;100	Linh ho¹t +/1 <enter>Chİnh x¸c +/2<enter>B¹o kİch +/3								1;15	1
+
+
+14995									0	state_burst_enhance_rate	80;0									Tèc ®é xuÊt chiªu +/1%								1;15	1
+14996									0	state_receive_half_damage	80;0									Gi¶m thä th­¬ng +/1%								1;15	1
+14997									0	state_life_max_point_add	150000;0									Sinh lùc +/1								1;15	1
+14998									0	state_accuracy_point_increase	5200;0									Chİnh x¸c +/1 								1;15	1
+14999									0	state_add_strength	680;0									Søc m¹nh +/1								1;15	1
+15000									0	state_add_energy	680;0									Néi c«ng +/1								1;15	1
+15001									0	state_add_dexterity	680;0									Th©n ph¸p +/1								1;15	1
+15002									0	state_add_observe	680;0									Linh ho¹t +/1								1;15	1
+15003									0	state_def_critical_point_increase	120;0									Phßng thñ b¹o kİch +/1								1;15	1
+15004									0	state_def_critical_damage_increase	360;0									Gi¶m th­¬ng b¹o kİch +/1								1;15	1
+15005									0	state_critical_damage_increase	360;0									B¹o kİch céng thªm +/1								1;15	1
+15006									0	state_critical_point_increase	120;0									§iÓm b¹o kİch +/1								1;15	1
+15007									0	state_p_attack_point_add	3500;0									C«ng kİch ngo¹i c«ng +/1								1;15	1
+15008									0	state_m_attack_point_add	3500;0									C«ng kİch néi c«ng +/1								1;15	1
+15009									0	state_damage_point	3500;0									S¸t th­¬ng +/1								1;15	1
+15010	180	180	180	180	180	180	180	1000	5	state_poison_damage	4800;0									KÌm theo ®éc s¸t +/1 								1;15	1
+
+
+
+15011									0	state_burst_enhance_rate	370;50		0	state_life_max_point_add	200000;0		0	state_def_critical_damage_increase	900;300	T¨ng tèc ®é xuÊt chiªu /1%<enter>Sinh lùc +/2<enter>Gi¶m th­¬ng b¹o kİch +/3								1;15	1
+15012									0	state_add_allability	800;200		0	state_life_max_point_add	200000;0		0	state_def_critical_damage_increase	900;300	Kh¸ng tÊt c¶ +/1<enter>Sinh lùc +/2<enter>Gi¶m th­¬ng b¹o kİch +/3								1;15	1
+15013									0	state_receive_half_damage	160;00		0	state_life_max_point_add	200000;0		0	state_def_critical_damage_increase	900;300	Gi¶m thä th­¬ng /1%<enter>Sinh lùc +/2<enter>Gi¶m th­¬ng b¹o kİch +/3	100000	50000	5000	5000	5000	50000	5000	1;15	1
+
+15014	162	162	162	162	162	162	162	1000	5	state_gu_poison_damage	8000;20									§éc s¸t +/1								1;20	1
+15015									0	state_damage_point	8000;50									S¸t th­¬ng +/1								1;20	1
+15016									0	state_p_attack_percent_add	400;10									Ngo¹i c«ng +/1%								1;12	1
+15017									0	state_m_attack_percent_add	400;10									C«ng kİch néi c«ng +/1%								1;12	1
+15018									0	state_add_strength	1100;10									Søc m¹nh +/1								1;15	1
+15019									0	state_add_energy	1100;10									Néi c«ng +/1								1;15	1
+15020									0	state_add_vitality	1100;10									G©n cèt +/1								1;15	1
+15021									0	state_add_dexterity	1100;10									Th©n ph¸p +/1								1;15	1
+15022									0	state_add_observe	1100;10									Linh ho¹t +/1								1;15	1
+15023									0	state_life_max_percent_add	600;0									Sinh lùc +/1%								1;15	1
+15024									0	state_neili_max_percent_add	600;20									Néi lùc +/1%								1;15	0
+15025									0	state_physical_parmor_poi_add	60;10									Tû lÓ phßng ngù ngo¹i c«ng +/1%								1;40	0
+15026									0	state_magic_parmor_poi_add	60;10									Tû lÖ phßng ngù néi c«ng +/1%								1;40	0
+15027									0	state_physical_parmor_poi_add	50;10		0	state_magic_parmor_poi_add	50;10					Tû lÖ phßng ngù néi ngo¹i c«ng +/1%								1;40	0
+15028									0	state_physical_armor_add	1000;0									TrŞ hé gi¸p ngo¹i phßng /1								1;1	1
+15029									0	state_magic_armor_add	1000;0									TrŞ hé gi¸p néi phßng /1								1;1	1
+15030									0	state_armor_add	800;0									TrŞ hé gi¸p néi ngo¹i phßng /1								1;1	1
+15031									0	state_immune	50;30									Tr¸nh mäi tr¹ng th¸i phô /1%								1;10	1
+15032	90	90	90	90	90	90	90	200	3	state_move_speed_percent_add	400;10									Khi bŞ tÊn c«ng cã thÓ t¨ng tèc ®é di chuyÓn b¶n th©n /1%								1;10	0
+15033									0	state_life_max_point_add	200000;200									T¨ng Sinh lùc /1								1;15	1
+15034									0	state_def_critical_point_increase	450;0									Phßng thñ b¹o kİch /1								1;1	1
+
+
+15035									0	state_life_max_point_add	180000;0		0	state_critical_damage_increase	1000;30					Sinh lùc tèi ®a +/1<enter>B¹o kİch céng thªm +/2								1;15	1
+15036									0	state_add_allability	600;50		0	state_burst_enhance_rate	250;50					Kh¸ng tÊt c¶ +/1<enter>Tèc ®é xuÊt chiªu +/2%								1;15	1
+15037	162	162	162	162	162	162	162	1000	5	state_gu_poison_damage	3500;20									§éc s¸t +/1								1;20	1
+15038									0	state_damage_point	3500;50									S¸t th­¬ng +/1								1;20	1
+15039									0	state_p_attack_percent_add	120;10		0	state_m_attack_percent_add	120;10					Néi ngo¹i c«ng +/1%								1;12	1
+15040									0	state_add_strength	900;10									Søc m¹nh +/1								1;15	1
+15041									0	state_add_energy	900;10									Néi c«ng +/1								1;15	1
+15042									0	state_add_vitality	900;10									G©n cèt +/1								1;15	1
+15043									0	state_add_dexterity	900;10									Th©n ph¸p +/1								1;15	1
+15044									0	state_add_observe	900;10									Linh ho¹t +/1								1;15	1
+15045									0	state_life_max_percent_add	450;20									Sinh lùc +/1%								1;15	1
+15046									0	state_neili_max_percent_add	450;20									Néi lùc +/1%								1;15	0
+15047									0	state_physical_parmor_poi_add	70;10									Tû lÓ phßng ngù ngo¹i c«ng +/1%								1;40	0
+15048									0	state_magic_parmor_poi_add	70;10									Tû lÖ phßng ngù néi c«ng +/1%								1;40	0
+15049									0	state_physical_parmor_poi_add	60;10		0	state_magic_parmor_poi_add	50;10					Tû lÖ phßng ngù néi ngo¹i c«ng +/1%								1;40	0
+15050									0	state_physical_armor_add	800;0									TrŞ hé gi¸p ngo¹i phßng /1								1;1	1
+15051									0	state_magic_armor_add	800;0									TrŞ hé gi¸p néi phßng /1								1;1	1
+15052									0	state_armor_add	600;0									TrŞ hé gi¸p néi ngo¹i phßng /1								1;1	1
+15053									0	state_cast_technique_rate	70;10									X¸c suÊt xuÊt chiªu t¨ng: /1% 								1;20	1
+15054									0	state_add_book_attribute_value	80;10									Hç trî mËt tŞch t¨ng thªm /1%									1
+15055									0	state_damage_to_mana	100;10									ChuyÓn hãa s¸t th­¬ng thµnh Néi lùc/1%								1;15	0
+15056									0	state_fast_recovery	180;50									Gi¶m thêi gian thä th­¬ng /1%									1
+15057									0	state_mana_cost_reduce	450;100									Néi lùc tiªu hao: /1% 	5000	5000	5000	5000	5000	5000	5000	1;10	0
+
+15058									0	state_critical_point_increase	300;10									§iÓm b¹o kİch +/1								1;15	1
+15059									0	state_critical_damage_increase	1100;50									B¹o kİch céng thªm +/1									1
+15060									0	state_add_energy	1200;10		0	state_m_attack_percent_add	600;10					Néi c«ng +/1 <enter>Néi c«ng +/2%								1;15	1
+15061									0	state_add_dexterity	1200;10		0	state_m_attack_percent_add	600;10					Th©n Ph¸p +/1 <enter>Néi c«ng +/2%								1;15	1
+15062									0	state_add_observe	1200;10		0	state_m_attack_percent_add	600;10					Linh ho¹t +/1 <enter>Néi c«ng +/2%								1;15	1
+15063									0	state_add_strength	1200;10		0	state_p_attack_percent_add	600;10					Søc m¹nh +/1<enter>Ngo¹i c«ng +/2%								1;15	1
+
+15064									0	state_add_dexterity	1200;10		0	state_damage_point	10000;50					Th©n Ph¸p +/1 <enter>S¸t Th­¬ng +/2								1;15	1
+15065									0	state_add_observe	1200;10		0	state_damage_point	10000;50					Linh Ho¹t +/1 <enter>S¸t Th­¬ng +/2								1;15	1
+
+15066									0	state_add_strength	1200;10									Søc m¹nh +/1								1;15	1
+15067									0	state_add_energy	1200;10									Néi c«ng t¨ng /1								1;15	1
+15068									0	state_add_vitality	1200;10									G©n cèt t¨ng /1								1;15	1
+15069									0	state_add_dexterity	1200;10									Th©n ph¸p t¨ng /1								1;15	1
+15070									0	state_add_observe	1200;10									Linh ho¹t t¨ng /1								1;15	1
+15071									0	state_add_allability	600;50									Kh¸ng tÊt c¶ /1								1;100	1
+15072	162	162	162	162	162	162	162	1000	5	state_gu_poison_damage	10000;20									§éc s¸t t¨ng /1								1;20	1
+15073									0	state_damage_point	8000;50									S¸t th­¬ng t¨ng /1								1;20	1
+15074									0	state_critical_point_increase	500;10									§iÓm b¹o kİch t¨ng /1								1;15	1
+15075	180	180	180	180	180	180	180	500	5	state_physical_parmor_per_dec	200;10									Ngo¹i phßng ®æi ph­¬ng -/1%								1;20	0
+15076	180	180	180	180	180	180	180	500	5	state_magic_parmor_per_dec	200;10									Néi phßng ®èi ph­¬ng -/1%								1;17	0
+15077	180	180	180	180	180	180	180	500	5	state_physical_parmor_per_dec	180;10	500	5	state_magic_parmor_per_dec	180;10					TÊn c«ng lµm néi ngo¹i phßng kÎ ®Şch -/1%								1;15	0
+15078	180	180	180	180	180	180	180	250	5	state_physical_def_point_dec	3000;50									TÊn c«ng khiÕn sè ®iÓm ngo¹i phßng cña kÎ ®Şch gi¶m /1								1;10	0
+15079	180	180	180	180	180	180	180	250	5	state_neili_defence_point_dec	3000;50									TÊn c«ng khiÕn sè ®iÓm néi phßng cña kÎ ®Şch gi¶m /1								1;10	0
+15080	180	180	180	180	180	180	180	250	5	state_physical_def_point_dec	2000;50	250	5	state_neili_defence_point_dec	2000;50					TÊn c«ng khiÕn sè ®iÓm néi ngo¹i phßng cña kÎ ®Şch gi¶m /1								1;10	0
+
+15081									0	state_medicine_time_increase	450;50									HiÖu qu¶ cña th­¬ng d­îc +/1%								1;10	0
+15082									0	state_life_max_percent_add	100;0									Sinh lùc +/1%								1;15	1
+15083									0	state_p_attack_percent_add	50;10		0	state_m_attack_percent_add	50;10					Néi ngo¹i c«ng +/1%								1;12	1
+15084									0	state_p_attack_percent_add	100;10		0	state_m_attack_percent_add	100;10					Néi ngo¹i c«ng +/1%								1;12	1
+
+
 24486									0	state_fast_recovery	650;150		0	state_life_max_point_add	250000;40000					Thêi gian thä th­¬ng -/1%<enter>Sinh lùc tèi ®a +/2								1;15	1
 24487									0	state_add_allability	1600;450		0	state_burst_enhance_rate	250;100					TÊt c¶ thuéc tİnh +/1<enter>Tèc ®é xuÊt chiªu +/2%								1;15	1
 24488									0	state_p_attack_percent_add	700;100									Ngo¹i c«ng +/1%								1;15	1
@@ -2718,4 +2900,4 @@ ID	Thêi gian hiÖu qu¶ cÊp 1	Thêi gian hiÖu qu¶ cÊp 2	Thêi gian hiÖu qu¶ cÊp 3	Th
 24527									0	state_damage_point	14000;1000									S¸t th­¬ng +/1								1;15	1
 24528									0	state_damage_point	16000;1000									S¸t th­¬ng +/1								1;15	1
 
-24529
+24529									0	state_critical_damage_increase	2000;500		0	state_def_critical_damage_increase	1000;500					B¹o kİch céng thªm + /1<enter>Gi¶m th­¬ng b¹o kİch + /2	100000	50000	5000	5000	5000	50000	5000		1
