@@ -78,6 +78,9 @@ t_meridian_level_condition =
 						{
 							{2, 95,  204, 20, "Thiªn Cang LÖnh"	},
 							{2, 1, 30370, 20, "Thiªn M«n Kim LÖnh"	},
+							{2, 1, 30730, 20, "Kinh M¹ch §ång Nh©n"},
+							{2, 1, 30351, 10, "Båi Nguyªn §¬n"},
+							{2, 1, 30458, 10, "T?Linh Hoµn"},
 						},
 				},
 			global_msg = 1,
@@ -95,8 +98,8 @@ t_meridian_level_condition =
 					exp = 0,
 					t_item =
 						{
-							{2, 95,  204, 20, "Thiªn Cang LÖnh"	},
-							{2, 1, 30370, 20, "Thiªn M«n Kim LÖnh"	},
+							{2, 95,  204, 2, "Thiªn Cang LÖnh"	},
+							{2, 1, 30370, 2, "Thiªn M«n Kim LÖnh"	},
 						},
 				},
 			global_msg = 1,
@@ -114,8 +117,8 @@ t_meridian_level_condition =
 					exp = 0,
 					t_item =
 						{
-							{2, 95,  204, 20, "Thiªn Cang LÖnh"	},
-							{2, 1, 30370, 20, "Thiªn M«n Kim LÖnh"	},
+							{2, 95,  204, 4, "Thiªn Cang LÖnh"	},
+							{2, 1, 30370, 4, "Thiªn M«n Kim LÖnh"	},
 						},
 				},
 			global_msg = 1,
@@ -148,6 +151,10 @@ function meridianlevel_check_require(nNewLevel, bNotify)
 	end
 	local tCfg = t_meridian_level_condition[nNewLevel] or {sz_name=""}
 	local tPreCfg = t_meridian_level_condition[nNewLevel - 1] or {sz_name=""}
+	if MeridianGetLevel() >= nNewLevel then
+		Talk(1,"",format("Ng­¬i ®· kİch ho¹t %s c¶nh giíi!", tCfg.sz_name))
+		return 0
+	end
 	if MeridianGetLevel() ~= (nNewLevel - 1) then
 		if 1 == bNotify then
 			if nNewLevel > 1 then
