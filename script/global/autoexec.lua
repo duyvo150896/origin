@@ -2146,7 +2146,7 @@ end
 
 function AddTuLinhNpc()
 local nNation =GetGlbValue(GLB_TSK_SERVER_ID)
-	local szName = "B¹ch Hæ"
+	local szName = "Jx2 Animal"
 	local nDate = tonumber(date("%Y%m%d"))
 	local nGroup = 2
 	for i = 1, getn(tb_server_group) do
