@@ -17,23 +17,23 @@ CK_TASK_GROUP.Task5 = 5 --´ó¸»ÎÌÏû·ÑÈÎÎñ¼ÆÊý
 CK_TASK_GROUP.Score = 6 --»îÔ¾¶È
 CK_TASK_GROUP.Award = 7 --°´Î»±ê¼Ç½±Àø
 
-CK_NPC_NAME = "<color=green> §¹i Sø ho¹t ®éng: <color>";
-CK_NPC_TITLE = "H·y nhanh chãng mêi b¹n bÌ ®Õn cïng ch¬i trß ch¬i nµo! B¹n bÌ cµng nhiÒu th× sÏ cã thªm nhiÒu niÒm vui!";
+CK_NPC_NAME = "<color=green> §¹i S?ho¹t ®éng: <color>";
+CK_NPC_TITLE = "H·y nhanh chãng mêi b¹n b?®Õn cïng ch¬i tr?ch¬i nµo! B¹n b?cµng nhiÒu th?s?c?thªm nhiÒu niÒm vui!";
 
 CK_NPC_DIALOG = {
 	"Giíi thiÖu ho¹t ®éng/ck_ActInfo",
 	"KÝch ho¹t danh hiÖu/ck_ActTilte",
-	"NhiÖm vô Dòng C¶m TiÕn Tíi/ck_TaskForward",
-	"NhiÖm vô Tr¨m TrËn Tr¨m Th¾ng/ck_BaiZhanBuDai",
-	"NhiÖm vô Tèc ChiÕn Tèc Th¾ng/ck_FastTask",
-	"NhiÖm vô §¹i Phó ¤ng/ck_ZiloTask",
+	"NhiÖm v?Dòng C¶m TiÕn Tíi/ck_TaskForward",
+	"NhiÖm v?Tr¨m TrËn Tr¨m Th¾ng/ck_BaiZhanBuDai",
+	"NhiÖm v?Tèc ChiÕn Tèc Th¾ng/ck_FastTask",
+	"NhiÖm v?§¹i Ph?¤ng/ck_ZiloTask",
 	"Xem ®iÓm n¨ng ®éng/ck_QueryScore",
 	"KiÓm tra thiªn kiªu lÖnh/cdk_QueryUseTianJiaoLingNum",
 	"§iÓm n¨ng ®éng ®æi phÇn th­ëng/ck_ScoreAward",
 }
 
 function cdk_QueryUseTianJiaoLingNum()
-	Say(CK_NPC_NAME..format("%s tæng sè thiªn kiªu lÖnh ®· sö dông<color=gold>%d<color>!", gf_GetPlayerSexName(), ck_GetCostIB()), 0);	
+	Say(CK_NPC_NAME..format("%s tæng s?thiªn kiªu lÖnh ®· s?dông<color=gold>%d<color>!", gf_GetPlayerSexName(), ck_GetCostIB()), 0);	
 end
 
 --»î¶¯ÊÇ·ñ¿ªÆô
@@ -44,7 +44,7 @@ end
 function ck_IsStatus()
 		local nExtPoint = GetExtPoint(EXT_CDKEY)
 		if GetBit(nExtPoint,2) == 1 or GetBit(nExtPoint,4) == 1 or GetBit(nExtPoint,6) == 1 then
-			--Talk(1, "", "HiÖn t¹i kh«ng cã ho¹t ®éng nµo")
+			--Talk(1, "", "HiÖn t¹i kh«ng c?ho¹t ®éng nµo")
 			return 0
 		end
 		return 1
@@ -104,15 +104,15 @@ function ck_AddCkScore(nAdd)
 		return 0;
 	end
 	CK_TASK_GROUP:SetTask(CK_TASK_GROUP.Score, CK_TASK_GROUP:GetTask(CK_TASK_GROUP.Score) + nAdd);
-	Msg2Player(format("§iÓm n¨ng ®éng t¨ng %d, tæng ®iÓm lµ %d", nAdd, CK_TASK_GROUP:GetTask(CK_TASK_GROUP.Score)));
+	Msg2Player(format("§iÓm n¨ng ®éng t¨ng %d, tæng ®iÓm l?%d", nAdd, CK_TASK_GROUP:GetTask(CK_TASK_GROUP.Score)));
 end
 
 --»î¶¯½éÉÜ
 function ck_ActInfo(nIndex)
 	local strTitle = 	{
-		"Trong thêi gian ho¹t ®éng, ng­êi ch¬i sÏ nhËn ®­îc danh hiÖu phï hîp víi ®iÒu kiÖn cña b¶n th©n. TÊt c¶ danh hiÖu ®Òu cã hiÖu lùc lµ 2 th¸ng, vµ khi nh©n vËt th¾p s¸ng danh hiÖu th× kh¸ng tÊt c¶ sÏ t¨ng 10 ®iÓm. Ng­êi ch¬i ph¶i kÝch ho¹t danh hiÖu míi cã thÓ nhËn nhiÖm vô. NhiÖm vô Tr¨m TrËn Tr¨m Th¾ng, mçi ngµy chØ ®­îc lµm 1 lÇn. NhiÖm vô Tèc ChiÕn Tèc Th¾ng vµ §¹i Phó ¤ng th× trong thêi gian ho¹t ®éng chØ ®­îc hoµn thµnh 1 lÇn. NhiÖm vô Tr¨m TrËn Tr¨m Th¾ng cã thÓ hoµn thµnh theo c¸ nh©n vµ tæ ®éi, nÕu tæ ®éi th× phÇn th­ëng sÏ cao h¬n. Hoµn thµnh c¸c môc nhiÖm vô sÏ nhËn ®­îc ®iÓm kinh nghiÖm vµ ®é n¨ng ®éng. TÝch lòy ®é n¨ng ®éng cã thÓ ®æi phÇn th­ëng phong phó.",
-		"L·o ChiÕn H÷u vµ Ng­êi N¨ng §éng tæ ®éi tham gia nhiÖm vô Tr¨m TrËn Tr¨m Th¾ng sÏ ®­îc gi¶i cao nhÊt.",
-		"NhiÖm vô Dòng C¶m TiÕn Tíi chØ xuÊt hiÖn t¹i server míi,trong server míi gamer cÊp 10 vµ ®· kÝch ho¹t danh hiÖu Vâ L©m T©n Tó míi ®­îc nhËn nhiÖm vô.Hoµn thµnh xong nhiÖm vô nµy vµ ®¹t ®Õn cÊp 90, gamer Vâ L©m T©n Tó míi ®­îc tiÕp nhËn nhiÖm vô Tr¨m TrËn Tr¨m Th¾ng,Tèc ChiÕn Tèc Th¾ng vµ §¹i Phó ¤ng.",
+		"Trong thêi gian ho¹t ®éng, ng­êi ch¬i s?nhËn ®­îc danh hiÖu ph?hîp víi ®iÒu kiÖn cña b¶n th©n. TÊt c?danh hiÖu ®Òu c?hiÖu lùc l?2 th¸ng, v?khi nh©n vËt th¾p s¸ng danh hiÖu th?kh¸ng tÊt c?s?t¨ng 10 ®iÓm. Ng­êi ch¬i ph¶i kÝch ho¹t danh hiÖu míi c?th?nhËn nhiÖm v? NhiÖm v?Tr¨m TrËn Tr¨m Th¾ng, mçi ngµy ch?®­îc lµm 1 lÇn. NhiÖm v?Tèc ChiÕn Tèc Th¾ng v?§¹i Ph?¤ng th?trong thêi gian ho¹t ®éng ch?®­îc hoµn thµnh 1 lÇn. NhiÖm v?Tr¨m TrËn Tr¨m Th¾ng c?th?hoµn thµnh theo c?nh©n v?t?®éi, nÕu t?®éi th?phÇn th­ëng s?cao h¬n. Hoµn thµnh c¸c môc nhiÖm v?s?nhËn ®­îc ®iÓm kinh nghiÖm v?®é n¨ng ®éng. TÝch lòy ®é n¨ng ®éng c?th?®æi phÇn th­ëng phong ph?",
+		"L·o ChiÕn H÷u v?Ng­êi N¨ng §éng t?®éi tham gia nhiÖm v?Tr¨m TrËn Tr¨m Th¾ng s?®­îc gi¶i cao nhÊt.",
+		"NhiÖm v?Dòng C¶m TiÕn Tíi ch?xuÊt hiÖn t¹i server míi,trong server míi gamer cÊp 10 v?®· kÝch ho¹t danh hiÖu V?L©m T©n T?míi ®­îc nhËn nhiÖm v?Hoµn thµnh xong nhiÖm v?nµy v?®¹t ®Õn cÊp 90, gamer V?L©m T©n T?míi ®­îc tiÕp nhËn nhiÖm v?Tr¨m TrËn Tr¨m Th¾ng,Tèc ChiÕn Tèc Th¾ng v?§¹i Ph?¤ng.",
 	}
 	local tbSay = {};
 	nIndex = nIndex or 1;
@@ -123,7 +123,7 @@ function ck_ActInfo(nIndex)
 			{"\n rót lui", "nothing"},
 		};
 		if strTitle[nIndex + 1] then
-			tinsert(tbSay.sel, 1, {"Trang kÕ", format("#ck_ActInfo(%d)", nIndex + 1)})
+			tinsert(tbSay.sel, 1, {"Trang k?, format("#ck_ActInfo(%d)", nIndex + 1)})
 		end
 		temp_Talk(tbSay);
 	end
@@ -134,13 +134,13 @@ function ck_ActTilte()
 	local tSay = {}
 	local nCheckServer = GetGlbValue(GLB_TSK_SERVER_ID)
 	-- if nCheckServer == 92 then	-- or nCheckServer == 91
-		tinsert(tSay,"Vâ L©m T©n Tó/ck_ActTilte_1");
+		tinsert(tSay,"V?L©m T©n T?ck_ActTilte_1");
 	-- else
 		-- tinsert(tSay,"L·o ChiÕn H÷u/ck_ActTilte_2");
 		-- tinsert(tSay,"Ng­êi N¨ng §éng/ck_ActTilte_3");
 	-- end
-	tinsert(tSay,"T«i chØ xem xem th«i/nothing");
-	local msg = format("Thêi gian kÕt thóc kÝch ho¹t lµ %d/%d/%d", CK_START_ACT[3], CK_START_ACT[2], CK_START_ACT[1]);
+	tinsert(tSay,"T«i ch?xem xem th«i/nothing");
+	local msg = format("Thêi gian kÕt thóc kÝch ho¹t l?%d/%d/%d", CK_START_ACT[3], CK_START_ACT[2], CK_START_ACT[1]);
 	Say(CK_NPC_NAME..format("%s muèn kÝch ho¹t danh hiÖu nµo?<color=red>%s<color>", gf_GetPlayerSexName(), msg), getn(tSay), tSay);
 end
 
@@ -151,15 +151,15 @@ end
 function ck_ActTilte_1()
 	local nExtPoint = GetExtPoint(EXT_CDKEY)
 	if GetBit(nExtPoint,9) == 1 then
-		Talk(1,"",CK_NPC_NAME .."Tµi kho¶n c¸c h¹ ®· ®­îc kÝch ho¹t råi.")
+		Talk(1,"",CK_NPC_NAME .."Tµi kho¶n c¸c h?®· ®­îc kÝch ho¹t råi.")
 		return 0
 	end
 	if ck_CanAct() ~= 1 then
-		Say(CK_NPC_NAME.."Thêi gian kÝch ho¹t ®· kÕt thóc,kh«ng thÓ kÝch ho¹t danh hiÖu n÷a", 0);
+		Say(CK_NPC_NAME.."Thêi gian kÝch ho¹t ®· kÕt thóc,kh«ng th?kÝch ho¹t danh hiÖu n÷a", 0);
 		return 0;
 	end
 	if CK_TASK_GROUP:GetTaskBit(CK_TASK_GROUP.Task1, 1) ~= 0 then
-		Say(CK_NPC_NAME..format("§· nhËn danh hiÖu <color=gold>[%s]<color> råi", "Vâ L©m T©n Tó"), 0)
+		Say(CK_NPC_NAME..format("§· nhËn danh hiÖu <color=gold>[%s]<color> råi", "V?L©m T©n T?), 0)
 		return 0;
 	end
 	if CK_TASK_GROUP:GetTaskBit(CK_TASK_GROUP.Task1, 2) ~= 0 then
@@ -173,36 +173,36 @@ function ck_ActTilte_1()
 	DebugOutput(GetExtPoint(1), GetExtPoint(2))
 --	local nExtPoint = GetExtPoint(EXT_CDKEY)
 	--if GetExtPoint(1) == 1 and GetExtPoint(2) ~= 1 then
-	if GetBit(nExtPoint,5) == 1 and GetBit(nExtPoint,6) ~= 1 then
+--	if GetBit(nExtPoint,5) == 1 and GetBit(nExtPoint,6) ~= 1 then
 		if CK_ES_SWITCH == 0 then
-			Say(CK_NPC_NAME.."M¸y chñ nµy t¹m thêi kh«ng më nhËn danh hiÖu <color=gold>Vâ L©m T©n Tó<color>!", 0);
+			Say(CK_NPC_NAME.."M¸y ch?nµy t¹m thêi kh«ng m?nhËn danh hiÖu <color=gold>V?L©m T©n T?color>!", 0);
 			return 0;
 		end
 		CK_TASK_GROUP:SetTaskBit(CK_TASK_GROUP.Task1, 1, 1);
 --		PayExtPoint(1, 1);
 		AddTitle(68, 1);
 		SetTitleTime(68, 1, GetTime() + (60 * 24 * 3600));
-		Msg2Player(format("NhËn ®­îc danh hiÖu [%s]", "Vâ L©m T©n Tó"))
-		Say(CK_NPC_NAME..format("NhËn ®­îc danh hiÖu <color=gold>[%s]<color>", "Vâ L©m T©n Tó"), 0)
+		Msg2Player(format("NhËn ®­îc danh hiÖu [%s]", "V?L©m T©n T?))
+		Say(CK_NPC_NAME..format("NhËn ®­îc danh hiÖu <color=gold>[%s]<color>", "V?L©m T©n T?), 0)
 		gf_WriteLogEx("CDKEY", "ck_ActTilte", "AddTitle(68, 1)");
 		CDKEY_SetExtBit(EXT_CDKEY,9,1)
 		return 1;
-	end
-	Say(CK_NPC_NAME.."Nh©n vËt nµy kh«ng ®ñ ®iÒu kiÖn, kh«ng thÓ nhËn danh hiÖu!", 0);
+--	end
+	Say(CK_NPC_NAME.."Nh©n vËt nµy kh«ng ®ñ ®iÒu kiÖn, kh«ng th?nhËn danh hiÖu!", 0);
 end
 
 function ck_ActTilte_2()
 	local nExtPoint = GetExtPoint(EXT_CDKEY)
 	if GetBit(nExtPoint,7) == 1 then
-		Talk(1,"",CK_NPC_NAME .."Tµi kho¶n c¸c h¹ ®· ®­îc kÝch ho¹t råi.")
+		Talk(1,"",CK_NPC_NAME .."Tµi kho¶n c¸c h?®· ®­îc kÝch ho¹t råi.")
 		return 0
 	end
 	if ck_CanAct() ~= 1 then
-		Say(CK_NPC_NAME.."Thêi gian kÝch ho¹t ®· kÕt thóc,kh«ng thÓ kÝch ho¹t danh hiÖu n÷a", 0);
+		Say(CK_NPC_NAME.."Thêi gian kÝch ho¹t ®· kÕt thóc,kh«ng th?kÝch ho¹t danh hiÖu n÷a", 0);
 		return 0;
 	end
 	if CK_TASK_GROUP:GetTaskBit(CK_TASK_GROUP.Task1, 1) ~= 0 then
-		Say(CK_NPC_NAME..format("§· nhËn danh hiÖu <color=gold>[%s]<color> råi", "Vâ L©m T©n Tó"), 0)
+		Say(CK_NPC_NAME..format("§· nhËn danh hiÖu <color=gold>[%s]<color> råi", "V?L©m T©n T?), 0)
 		return 0;
 	end
 	if CK_TASK_GROUP:GetTaskBit(CK_TASK_GROUP.Task1, 2) ~= 0 then
@@ -228,21 +228,21 @@ if GetLevel() >= 90 then
 		CDKEY_SetExtBit(EXT_CDKEY,7,1)
 		return 1;
 	end
-	Say(CK_NPC_NAME.."Nh©n vËt nµy kh«ng ®ñ ®iÒu kiÖn, kh«ng thÓ nhËn danh hiÖu!", 0);
+	Say(CK_NPC_NAME.."Nh©n vËt nµy kh«ng ®ñ ®iÒu kiÖn, kh«ng th?nhËn danh hiÖu!", 0);
 end
 
 function ck_ActTilte_3()
 	local nExtPoint = GetExtPoint(EXT_CDKEY)
 	if GetBit(nExtPoint,8) == 1 then
-		Talk(1,"",CK_NPC_NAME .."Tµi kho¶n c¸c h¹ ®· ®­îc kÝch ho¹t råi.")
+		Talk(1,"",CK_NPC_NAME .."Tµi kho¶n c¸c h?®· ®­îc kÝch ho¹t råi.")
 		return 0
 	end
 	if ck_CanAct() ~= 1 then
-		Say(CK_NPC_NAME.."Thêi gian kÝch ho¹t ®· kÕt thóc,kh«ng thÓ kÝch ho¹t danh hiÖu n÷a", 0);
+		Say(CK_NPC_NAME.."Thêi gian kÝch ho¹t ®· kÕt thóc,kh«ng th?kÝch ho¹t danh hiÖu n÷a", 0);
 		return 0;
 	end
 	if CK_TASK_GROUP:GetTaskBit(CK_TASK_GROUP.Task1, 1) ~= 0 then
-		Say(CK_NPC_NAME..format("§· nhËn danh hiÖu <color=gold>[%s]<color> råi", "Vâ L©m T©n Tó"), 0)
+		Say(CK_NPC_NAME..format("§· nhËn danh hiÖu <color=gold>[%s]<color> råi", "V?L©m T©n T?), 0)
 		return 0;
 	end
 	if CK_TASK_GROUP:GetTaskBit(CK_TASK_GROUP.Task1, 2) ~= 0 then
@@ -268,25 +268,25 @@ if GetLevel() < 90 then
 		CDKEY_SetExtBit(EXT_CDKEY,8,1)
 		return 1;
 	end
-	Say(CK_NPC_NAME.."Nh©n vËt nµy kh«ng ®ñ ®iÒu kiÖn, kh«ng thÓ nhËn danh hiÖu!", 0);
+	Say(CK_NPC_NAME.."Nh©n vËt nµy kh«ng ®ñ ®iÒu kiÖn, kh«ng th?nhËn danh hiÖu!", 0);
 end
 
 --Task1:4-11Î»ÓÂÍùÖ±Ç°ÈÎÎñ
 function ck_TaskForward()
 	if CK_ES_SWITCH == 0 then
-		Say(CK_NPC_NAME.."M¸y chñ nµy t¹m thêi kh«ng më chuçi nhiÖm vô <color=red>Dòng C¶m TiÕn Tíi<color>", 0)
+		Say(CK_NPC_NAME.."M¸y ch?nµy t¹m thêi kh«ng m?chuçi nhiÖm v?<color=red>Dòng C¶m TiÕn Tíi<color>", 0)
 		return 0;
 	end
 	if CK_TASK_GROUP:GetTaskBit(CK_TASK_GROUP.Task1, 1) ~= 1 then
-		Say(CK_NPC_NAME..format("ChØ cã <color=gold>[%s]<color> míi ®­îc nhËn nhiÖm vô nµy", "Vâ L©m T©n Tó"), 0)
+		Say(CK_NPC_NAME..format("Ch?c?<color=gold>[%s]<color> míi ®­îc nhËn nhiÖm v?nµy", "V?L©m T©n T?), 0)
 		return 0;
 	end
 	-- if GetLevel() >= 90 or gf_GetPlayerRebornCount() > 0 then
-		-- Say(CK_NPC_NAME.."Gamer 90 cÊp trë lªn hoÆc ®· chuyÓn sinh kh«ng thÓ tham gia nhiÖm vô nµy!",0);
+		-- Say(CK_NPC_NAME.."Gamer 90 cÊp tr?lªn hoÆc ®· chuyÓn sinh kh«ng th?tham gia nhiÖm v?nµy!",0);
 		-- return 0;
 	-- end
 	local tSay = {}
-	local tMsg = {"Ch­a nhËn", "Ch­a hoµn thµnh", "Cã thÓ giao", "§· hoµn thµnh"}
+	local tMsg = {"Ch­a nhËn", "Ch­a hoµn thµnh", "C?th?giao", "§· hoµn thµnh"}
 	for i = 1, getn(CK_TASK_FORWARD) do
 		local nType = 0;
 		if CK_TASK_GROUP:GetTaskBit(CK_TASK_GROUP.Task1, i + 3) == 1 then
@@ -306,17 +306,17 @@ function ck_TaskForward()
 			tinsert(tSay, CK_TASK_FORWARD[i][1]..format("(%s)/#ck_TaskFoward_do(%d, %d)", tMsg[nType], CK_TASK_FORWARD[i][2], i + 3));
 		end
 	end
-	tinsert(tSay, "\nT«i chØ xem xem th«i/nothing");
-	Say(CK_NPC_NAME.."NhiÖm vô Dòng C¶m TiÕn Tíi cã thÓ gióp ng­êi nhanh chãng t¨ng cÊp!",getn(tSay), tSay);
+	tinsert(tSay, "\nT«i ch?xem xem th«i/nothing");
+	Say(CK_NPC_NAME.."NhiÖm v?Dòng C¶m TiÕn Tíi c?th?gióp ng­êi nhanh chãng t¨ng cÊp!",getn(tSay), tSay);
 end
 
 function ck_TaskFoward_do(nTaskID, nTaskIndex)
 	if CK_TASK_GROUP:GetTaskBit(CK_TASK_GROUP.Task1, nTaskIndex) ~= 0 then
-		Say(CK_NPC_NAME.."NhiÖm vô nµy ®· hoµn thµnh!", 0);
+		Say(CK_NPC_NAME.."NhiÖm v?nµy ®· hoµn thµnh!", 0);
 		return 0;
 	end
 	if nTaskIndex > 4 and CK_TASK_GROUP:GetTaskBit(CK_TASK_GROUP.Task1, nTaskIndex - 1) ~= 1 then
-		Say(CK_NPC_NAME.."Ch­a hoµn thµnh nhiÖm vô tr­íc ®ã", 0);
+		Say(CK_NPC_NAME.."Ch­a hoµn thµnh nhiÖm v?tr­íc ®ã", 0);
 		return 0;
 	end
 	if tGtTask:check_cur_task(nTaskID) == 0 then
@@ -325,12 +325,12 @@ function ck_TaskFoward_do(nTaskID, nTaskIndex)
 		if DirectIsTaskFinish(nTaskID) then
 			if 1 == DirectFinishGTask(nTaskID, 2) then
 				CK_TASK_GROUP:SetTaskBit(CK_TASK_GROUP.Task1, nTaskIndex, 1);
-				Msg2Player("§· hoµn thµnh nhiÖm vô!")
+				Msg2Player("§· hoµn thµnh nhiÖm v?")
 			else
-				Msg2Player("NhiÖm vô kh¸c th­êng, kh«ng thÓ hoµn thµnh!");
+				Msg2Player("NhiÖm v?kh¸c th­êng, kh«ng th?hoµn thµnh!");
 			end
 		else
-			Say(CK_NPC_NAME.."NhiÖm vô vÉn ch­a hoµn thµnh!", 0);
+			Say(CK_NPC_NAME.."NhiÖm v?vÉn ch­a hoµn thµnh!", 0);
 		end
 	end
 end
@@ -356,11 +356,11 @@ end
 function ck_CheckCondition()
 	local nKind = ck_GetTitleType();
 	if nKind == 0 then
-		Say(CK_NPC_NAME.."VÉn ch­a nhËn vµ kÝch ho¹t danh hiÖu nµo, kh«ng thÓ tham gia nhiÖm vô!", 0);
+		Say(CK_NPC_NAME.."VÉn ch­a nhËn v?kÝch ho¹t danh hiÖu nµo, kh«ng th?tham gia nhiÖm v?", 0);
 		return 0;
 	end
 	if GetLevel() < 90 and gf_GetPlayerRebornCount() <= 0 then
-		Say(CK_NPC_NAME..format("§»ng cÊp nh©n vËt kh«ng ®ñ %d cÊp, kh«ng thÓ tham gia nhiÖm vô !", 90), 0);
+		Say(CK_NPC_NAME..format("§»ng cÊp nh©n vËt kh«ng ®ñ %d cÊp, kh«ng th?tham gia nhiÖm v?!", 90), 0);
 		return 0;
 	end
 	return 1;
@@ -371,12 +371,12 @@ function ck_BaiZhanBuDai()
 		return 0;
 	end
 	local tSay = {
-		"\nNhiÖm vô ®¸nh qu¸i/ck_BZBD_Kill",
-		"\nNhiÖm vô phã b¶n/ck_BZBD_Raid",
-		"\nNhiÖm vô PVP/ck_BZBD_PVP",
-		"\nT«i chØ xem xem th«i/nothing",	
+		"\nNhiÖm v?®¸nh qu¸i/ck_BZBD_Kill",
+		"\nNhiÖm v?ph?b¶n/ck_BZBD_Raid",
+		"\nNhiÖm v?PVP/ck_BZBD_PVP",
+		"\nT«i ch?xem xem th«i/nothing",	
 	}
-	Say(CK_NPC_NAME.."NhiÖm vô <color=gold>Tr¨m TrËn Tr¨m Th¾ng<color>, nhËn ngÉu nhiªn h»ng ngµy, nhËn ®­îc nhiÒu kinh nghiÖm vµ ®é n¨ng ®éng!", getn(tSay), tSay);	
+	Say(CK_NPC_NAME.."NhiÖm v?<color=gold>Tr¨m TrËn Tr¨m Th¾ng<color>, nhËn ngÉu nhiªn h»ng ngµy, nhËn ®­îc nhiÒu kinh nghiÖm v?®é n¨ng ®éng!", getn(tSay), tSay);	
 end
 
 --Task3£º¼Ó³É
@@ -487,7 +487,7 @@ function ck_BZBD_Kill()
 	DebugOutput("nTaskIndex1, nTaskIndex2 =", nTaskIndex1, nTaskIndex2);
 	--¸ø¶Ô»°
 	local tSay = {}
-	local tMsg = {"Ch­a nhËn", "Ch­a hoµn thµnh", "Cã thÓ giao", "§· hoµn thµnh"}
+	local tMsg = {"Ch­a nhËn", "Ch­a hoµn thµnh", "C?th?giao", "§· hoµn thµnh"}
 	local tTask = {nTaskIndex1, nTaskIndex2};
 	for i = 1, getn(tTask) do
 		local nType = 0;
@@ -510,13 +510,13 @@ function ck_BZBD_Kill()
 			tinsert(tSay, format("\n%s(%s)/#ck_BZBD_Kill_do(%d, %d)", CK_TASK_BZ_KILL[tTask[i]][1], tMsg[nType], CK_TASK_BZ_KILL[tTask[i]][2], 16 + tTask[i]));
 		end
 	end
-	tinsert(tSay, "\nT«i chØ xem xem th«i/nothing");
-	Say(CK_NPC_NAME.."Tr¨m TrËn Tr¨m Th¾ng-NhiÖm vô ®¸nh qu¸i!",getn(tSay), tSay);
+	tinsert(tSay, "\nT«i ch?xem xem th«i/nothing");
+	Say(CK_NPC_NAME.."Tr¨m TrËn Tr¨m Th¾ng-NhiÖm v?®¸nh qu¸i!",getn(tSay), tSay);
 end
 
 function ck_BZBD_Kill_do(nTaskID, nTaskIndex)
 	if CK_TASK_GROUP:GetTaskBit(CK_TASK_GROUP.Task1, nTaskIndex) ~= 0 then
-		Say(CK_NPC_NAME.."NhiÖm vô nµy ®· hoµn thµnh!", 0);
+		Say(CK_NPC_NAME.."NhiÖm v?nµy ®· hoµn thµnh!", 0);
 		return 0;
 	end
 	if tGtTask:check_cur_task(nTaskID) == 0 then
@@ -526,12 +526,12 @@ function ck_BZBD_Kill_do(nTaskID, nTaskIndex)
 		if DirectIsTaskFinish(nTaskID) then
 			if 1 == DirectFinishGTask(nTaskID, 2) then
 				CK_TASK_GROUP:SetTaskBit(CK_TASK_GROUP.Task1, nTaskIndex, 1);
-				Msg2Player("§· hoµn thµnh nhiÖm vô!")
+				Msg2Player("§· hoµn thµnh nhiÖm v?")
 			else
-				Msg2Player("NhiÖm vô kh¸c th­êng, kh«ng thÓ hoµn thµnh!");
+				Msg2Player("NhiÖm v?kh¸c th­êng, kh«ng th?hoµn thµnh!");
 			end
 		else
-			Say(CK_NPC_NAME.."NhiÖm vô vÉn ch­a hoµn thµnh!", 0);
+			Say(CK_NPC_NAME.."NhiÖm v?vÉn ch­a hoµn thµnh!", 0);
 		end
 	end
 end
@@ -604,7 +604,7 @@ function ck_BZBD_Raid()
 --		-----------------------
 		CK_TASK_GROUP:SetTaskBit(CK_TASK_GROUP.Task1, 21 + nTaskIndex, 1);
 	end
-	local tMsg = {"Ch­a nhËn", "Ch­a hoµn thµnh", "Cã thÓ giao", "§· hoµn thµnh"}
+	local tMsg = {"Ch­a nhËn", "Ch­a hoµn thµnh", "C?th?giao", "§· hoµn thµnh"}
 	local nType = 0;
 	if CK_TASK_GROUP:GetTaskBit(CK_TASK_GROUP.Task1, 26 + nTaskIndex) == 0 then
 		nType = 1;
@@ -622,25 +622,25 @@ function ck_BZBD_Raid()
 	DebugOutput(CK_TASK_BZ_RAID[nTaskIndex], tMsg[nType], nTaskIndex)
 	local tSay = {
 		format("%s(%s)/#ck_BZBD_Raid_do(%d)",	CK_TASK_BZ_RAID[nTaskIndex], tMsg[nType], nTaskIndex),
-		"\nT«i chØ xem xem th«i/nothing",
+		"\nT«i ch?xem xem th«i/nothing",
 	}
-	Say(CK_NPC_NAME.."Tr¨m TrËn Tr¨m Th¾ng-NhiÖm vô phã b¶n!", getn(tSay), tSay);
+	Say(CK_NPC_NAME.."Tr¨m TrËn Tr¨m Th¾ng-NhiÖm v?ph?b¶n!", getn(tSay), tSay);
 end
 
 function ck_BZBD_Raid_do(nTaskIndex)
 	if CK_TASK_GROUP:GetTaskBit(CK_TASK_GROUP.Task1, 26 + nTaskIndex) == 0 then
 		CK_TASK_GROUP:SetTaskBit(CK_TASK_GROUP.Task1, 26 + nTaskIndex, 1);
-		Say(CK_NPC_NAME..format("§· nhËn nhiÖm vô <color=gold>%s<color>", CK_TASK_BZ_RAID[nTaskIndex]), 0);
+		Say(CK_NPC_NAME..format("§· nhËn nhiÖm v?<color=gold>%s<color>", CK_TASK_BZ_RAID[nTaskIndex]), 0);
 	else
 		if CK_TASK_GROUP:GetTaskBit(CK_TASK_GROUP.Task2, nTaskIndex) == 0 then
-			Say(CK_NPC_NAME..format("Ch­a hoµn thµnh nhiÖm vô <color=gold>%s<color>", CK_TASK_BZ_RAID[nTaskIndex]), 0);
+			Say(CK_NPC_NAME..format("Ch­a hoµn thµnh nhiÖm v?<color=gold>%s<color>", CK_TASK_BZ_RAID[nTaskIndex]), 0);
 		else
 			if CK_TASK_GROUP:GetTaskBit(CK_TASK_GROUP.Task2, 5 + nTaskIndex) == 0 then
 				CK_TASK_GROUP:SetTaskBit(CK_TASK_GROUP.Task2, 5 + nTaskIndex, 1);
 				--¸ø½±Àø
 				ck_BZBD_Raid_Award();
 			else
-				Say(CK_NPC_NAME..format("§· hoµn thµnh nhiÖm vô <color=gold>%s<color>", CK_TASK_BZ_RAID[nTaskIndex]), 0);
+				Say(CK_NPC_NAME..format("§· hoµn thµnh nhiÖm v?<color=gold>%s<color>", CK_TASK_BZ_RAID[nTaskIndex]), 0);
 			end
 		end
 	end	
@@ -679,7 +679,7 @@ function _ck_BZBD_Raid_Set(nCurIndex)
 		if CK_TASK_GROUP:GetTaskBit(CK_TASK_GROUP.Task2, nTaskIndex) ~= 1 then
 			ck_BZBD_SetType(11, 12, 13);
 			CK_TASK_GROUP:SetTaskBit(CK_TASK_GROUP.Task2, nTaskIndex, 1);
-			Msg2Player(format("§· hoµn thµnh nhiÖm vô %s", CK_TASK_BZ_RAID[nTaskIndex]));
+			Msg2Player(format("§· hoµn thµnh nhiÖm v?%s", CK_TASK_BZ_RAID[nTaskIndex]));
 		end
 	end);
 end
@@ -691,10 +691,10 @@ function ck_BZBD_PVP()
 	
 --	if GetGlbValue(1023) == 92 then
 --		local tSay = {
---			"Ta muèn nhËn th­ëng nhiÖm vô PVP/ck_BZBD_PVP_Award",
---			"\nT«i chØ xem xem th«i/nothing",
+--			"Ta muèn nhËn th­ëng nhiÖm v?PVP/ck_BZBD_PVP_Award",
+--			"\nT«i ch?xem xem th«i/nothing",
 --		}
---		Say(CK_NPC_NAME.."Tr¨m TrËn Tr¨m Th¾ng-NhiÖm vô PVP!", getn(tSay), tSay);
+--		Say(CK_NPC_NAME.."Tr¨m TrËn Tr¨m Th¾ng-NhiÖm v?PVP!", getn(tSay), tSay);
 --		return
 --	end	
 	
@@ -723,7 +723,7 @@ function ck_BZBD_PVP()
 		----------------------
 		CK_TASK_GROUP:SetTaskBit(CK_TASK_GROUP.Task2, 10 + nTaskIndex, 1);
 	end
-	local tMsg = {"Ch­a nhËn", "Ch­a hoµn thµnh", "Cã thÓ giao", "§· hoµn thµnh"}
+	local tMsg = {"Ch­a nhËn", "Ch­a hoµn thµnh", "C?th?giao", "§· hoµn thµnh"}
 	local nType = 0;
 	if CK_TASK_GROUP:GetTaskBit(CK_TASK_GROUP.Task2, 17 + nTaskIndex) == 0 then
 		nType = 1;
@@ -740,9 +740,9 @@ function ck_BZBD_PVP()
 	end
 	local tSay = {
 		format("%s(%s)/#ck_BZBD_PVP_do(%d)",	CK_TASK_BZ_PVP[nTaskIndex], tMsg[nType], nTaskIndex),
-		"\nT«i chØ xem xem th«i/nothing",
+		"\nT«i ch?xem xem th«i/nothing",
 	}
-	Say(CK_NPC_NAME.."Tr¨m TrËn Tr¨m Th¾ng-NhiÖm vô PVP!", getn(tSay), tSay);
+	Say(CK_NPC_NAME.."Tr¨m TrËn Tr¨m Th¾ng-NhiÖm v?PVP!", getn(tSay), tSay);
 end
 
 function ck_BZBD_PVP_do(nTaskIndex)
@@ -780,7 +780,7 @@ function ck_BZBD_PVP_do(nTaskIndex)
 		if CK_TASK_GROUP:GetTaskBit(CK_TASK_GROUP.Task2, 24 + nTaskIndex) ~= 1 then
 			--ck_BZBD_SetType(14, 15, 16);
 			CK_TASK_GROUP:SetTaskBit(CK_TASK_GROUP.Task2, 24 + nTaskIndex, 1);
-			Msg2Player(format("§· hoµn thµnh nhiÖm vô %s", CK_TASK_BZ_PVP[nTaskIndex]));
+			Msg2Player(format("§· hoµn thµnh nhiÖm v?%s", CK_TASK_BZ_PVP[nTaskIndex]));
 		end	
 	end
 	--===========
@@ -789,7 +789,7 @@ end
 function ck_BZBD_PVP_Award()
 	if GetGlbValue(1023) == 92 then
 		if gf_GetTaskByte(TSK_NHIEMVUCDKEY,1) == 1 then
-			Talk(1,"","C¸c h¹ ®· nhËn phÇn th­ëng ngµy h«m nay råi. Xin vui lßng quay l¹i ngµy h«m sau!")
+			Talk(1,"","C¸c h?®· nhËn phÇn th­ëng ngµy h«m nay råi. Xin vui lßng quay l¹i ngµy h«m sau!")
 			return
 		end
 		gf_ModifyExp(14400000);
@@ -831,7 +831,7 @@ function _ck_BZBD_PVP_Set(nCurIndex)
 		if CK_TASK_GROUP:GetTaskBit(CK_TASK_GROUP.Task2, 24 + nTaskIndex) ~= 1 then
 			--ck_BZBD_SetType(14, 15, 16);
 			CK_TASK_GROUP:SetTaskBit(CK_TASK_GROUP.Task2, 24 + nTaskIndex, 1);
-			Msg2Player(format("§· hoµn thµnh nhiÖm vô %s", CK_TASK_BZ_PVP[nTaskIndex]));
+			Msg2Player(format("§· hoµn thµnh nhiÖm v?%s", CK_TASK_BZ_PVP[nTaskIndex]));
 		end
 	end);
 end
@@ -841,70 +841,70 @@ function ck_FastTask()
 		return 0;
 	end
 	local tSay = {
-		"\nNhiÖm vô bang héi/ck_FastTask_Tong",
-		"\nNhiÖm vô h­íng dÉn/ck_FastTask_Guide",
-		"\nT«i chØ xem xem th«i/nothing",	
+		"\nNhiÖm v?bang héi/ck_FastTask_Tong",
+		"\nNhiÖm v?h­íng dÉn/ck_FastTask_Guide",
+		"\nT«i ch?xem xem th«i/nothing",	
 	}
-	Say(CK_NPC_NAME.."NhiÖm vô <color=gold>Tèc ChiÕn Tèc Th¾ng<color>, trong thêi gian ho¹t ®éng chØ ®­îc hoµn thµnh 1 lÇn, nhËn ®­îc nhiÒu kinh nghiÖm vµ ®é n¨ng ®éng!", getn(tSay), tSay);		
+	Say(CK_NPC_NAME.."NhiÖm v?<color=gold>Tèc ChiÕn Tèc Th¾ng<color>, trong thêi gian ho¹t ®éng ch?®­îc hoµn thµnh 1 lÇn, nhËn ®­îc nhiÒu kinh nghiÖm v?®é n¨ng ®éng!", getn(tSay), tSay);		
 end
 
 function ck_FastTask_Tong()
 	local tSay = {
 		"\nGia nhËp bang héi/ck_FastTask_Tong_1",
-		"\nT¸i chiÕn ThÇn Thó/ck_FastTask_Tong_2",
+		"\nT¸i chiÕn ThÇn Th?ck_FastTask_Tong_2",
 		"\nN­íng thÞt bang ph¸i/ck_FastTask_Tong_3",
-		"\nT«i chØ xem xem th«i/nothing",	
+		"\nT«i ch?xem xem th«i/nothing",	
 	}
-	Say(CK_NPC_NAME.."<color=gold>Tèc ChiÕn Tèc Th¾ng<color>-NhiÖm vô bang héi!", getn(tSay), tSay);		
+	Say(CK_NPC_NAME.."<color=gold>Tèc ChiÕn Tèc Th¾ng<color>-NhiÖm v?bang héi!", getn(tSay), tSay);		
 end
 
 --Task3£º17Î»ÊÇ·ñÍê³É
 function ck_FastTask_Tong_1(nFlag)
 	if not nFlag then
 		local tSay = {
-			"\nHoµn thµnh nhiÖm vô/#ck_FastTask_Tong_1(1)",
-			"\nT«i chØ xem xem th«i/nothing",	
+			"\nHoµn thµnh nhiÖm v?#ck_FastTask_Tong_1(1)",
+			"\nT«i ch?xem xem th«i/nothing",	
 		}
-		local Msg = format("Tªn nhiÖm vô: <color=gold>%s<color>\n§iÒu kiÖn nhiÖm vô:\n  %s\nH­íng dÉn nhiÖm vô:\n  %s\nPhÇn th­ëng nhiÖm vô:\n§iÓm kinh nghiÖm: %d, ®é n¨ng ®éng: %d",
-			"Gia nhËp bang héi", "Gia nhËp mét bang héi bÊt kú, trë thµnh mét thµnh viªn trong bang", "Gia nhËp bang héi, cïng víi thµnh viªn kh¸c cè g¾ng ®Ó gióp bang héi ngµy cµng lín m¹nh", 3000000, 100);
+		local Msg = format("Tªn nhiÖm v? <color=gold>%s<color>\n§iÒu kiÖn nhiÖm v?\n  %s\nH­íng dÉn nhiÖm v?\n  %s\nPhÇn th­ëng nhiÖm v?\n§iÓm kinh nghiÖm: %d, ®é n¨ng ®éng: %d",
+			"Gia nhËp bang héi", "Gia nhËp mét bang héi bÊt k? tr?thµnh mét thµnh viªn trong bang", "Gia nhËp bang héi, cïng víi thµnh viªn kh¸c c?g¾ng ®Ó gióp bang héi ngµy cµng lín m¹nh", 3000000, 100);
 		Say(CK_NPC_NAME..Msg, getn(tSay), tSay);
 		return 0;
 	end
 	if CK_TASK_GROUP:GetTaskBit(CK_TASK_GROUP.Task3, 17) ~= 0 then
-		Say(CK_NPC_NAME.."§· hoµn thµnh nhiÖm vô nµy!", 0);
+		Say(CK_NPC_NAME.."§· hoµn thµnh nhiÖm v?nµy!", 0);
 		return 0;
 	end
 	if IsTongMember() <= 0 then
-		Say(CK_NPC_NAME.."Kh«ng tháa ®iÒu kiÖn, kh«ng thÓ hoµn thµnh nhiÖm vô!", 0);
+		Say(CK_NPC_NAME.."Kh«ng tháa ®iÒu kiÖn, kh«ng th?hoµn thµnh nhiÖm v?", 0);
 		return 0;
 	end
 	CK_TASK_GROUP:SetTaskBit(CK_TASK_GROUP.Task3, 17, 1);
 	--½±Àø
 	gf_ModifyExp(3000000);
 	ck_AddCkScore(100);	
-	Msg2Player("NhiÖm vô hoµn thµnh!");
+	Msg2Player("NhiÖm v?hoµn thµnh!");
 end
 
 --Task3£º18Î»ÊÇ·ñÍê³É
 function ck_FastTask_Tong_2(nFlag)
 	if not nFlag then
 		local tSay = {
-			"\nHoµn thµnh nhiÖm vô/#ck_FastTask_Tong_2(1)",
-			"\nT«i chØ xem xem th«i/nothing",	
+			"\nHoµn thµnh nhiÖm v?#ck_FastTask_Tong_2(1)",
+			"\nT«i ch?xem xem th«i/nothing",	
 		}
-		local Msg = format("Tªn nhiÖm vô: <color=gold>%s<color>\n§iÒu kiÖn nhiÖm vô:\n  %s\nH­íng dÉn nhiÖm vô:\n  %s\nPhÇn th­ëng nhiÖm vô:\n§iÓm kinh nghiÖm: %d, ®é n¨ng ®éng: %d",
-			"T¸i chiÕn ThÇn Thó", "Nép 300 ®iÓm tÝch lòy tö quang", "Tham gia Tö Quang C¸c ®¸nh b¹i Tö Quang ThÇn Thó sÏ nhËn ®­îc ®iÓm tÝch lòy tö quang", 5000000, 200);
+		local Msg = format("Tªn nhiÖm v? <color=gold>%s<color>\n§iÒu kiÖn nhiÖm v?\n  %s\nH­íng dÉn nhiÖm v?\n  %s\nPhÇn th­ëng nhiÖm v?\n§iÓm kinh nghiÖm: %d, ®é n¨ng ®éng: %d",
+			"T¸i chiÕn ThÇn Th?, "Nép 300 ®iÓm tÝch lòy t?quang", "Tham gia T?Quang C¸c ®¸nh b¹i T?Quang ThÇn Th?s?nhËn ®­îc ®iÓm tÝch lòy t?quang", 5000000, 200);
 		Say(CK_NPC_NAME..Msg, getn(tSay), tSay);
 		return 0;
 	end
 	if CK_TASK_GROUP:GetTaskBit(CK_TASK_GROUP.Task3, 18) ~= 0 then
-		Say(CK_NPC_NAME.."§· hoµn thµnh nhiÖm vô nµy!", 0);
+		Say(CK_NPC_NAME.."§· hoµn thµnh nhiÖm v?nµy!", 0);
 		return 0;
 	end
 	--¿Û×Ï¹â»ý·Ö
 	local TSK_POINT = 652;			--¼ÇÂ¼Íæ¼Ò¸öÈË¹Ø¿¨»ý·Ö
 	if GetTask(TSK_POINT) < 300 then
-		Say(CK_NPC_NAME..format("§iÓm tÝch lòy tö quang kh«ng ®ñ <color=red>%d<color> ®iÓm", 300), 0);
+		Say(CK_NPC_NAME..format("§iÓm tÝch lòy t?quang kh«ng ®ñ <color=red>%d<color> ®iÓm", 300), 0);
 		return 0;
 	end
 	SetTask(TSK_POINT, GetTask(TSK_POINT) - 300);
@@ -912,23 +912,23 @@ function ck_FastTask_Tong_2(nFlag)
 	--½±Àø
 	gf_ModifyExp(5000000);
 	ck_AddCkScore(200);
-	Msg2Player("NhiÖm vô hoµn thµnh!");
+	Msg2Player("NhiÖm v?hoµn thµnh!");
 end
 
 --Task3£º19Î»ÊÇ·ñÍê³É
 function ck_FastTask_Tong_3(nFlag)
 	if not nFlag then
 		local tSay = {
-			"\nHoµn thµnh nhiÖm vô/#ck_FastTask_Tong_3(1)",
-			"\nT«i chØ xem xem th«i/nothing",	
+			"\nHoµn thµnh nhiÖm v?#ck_FastTask_Tong_3(1)",
+			"\nT«i ch?xem xem th«i/nothing",	
 		}
-		local Msg = format("Tªn nhiÖm vô: <color=gold>%s<color>\n§iÒu kiÖn nhiÖm vô:\n  %s\nH­íng dÉn nhiÖm vô:\n  %s\nPhÇn th­ëng nhiÖm vô:\n§iÓm kinh nghiÖm: %d, ®é n¨ng ®éng: %d",
-			"N­íng thÞt bang ph¸i", "Tham dù tÝnh n¨ng N­íng thÞt bang ph¸i nép 10 M¶nh LÖnh Bµi Bang Ph¸i", "Ho¹t ®éng N­íng thÞt bang ph¸i v« cïng thó vÞ, mau ®i thu thËp M¶nh LÖnh Bµi Bang Ph¸i nµo!", 8000000, 300);
+		local Msg = format("Tªn nhiÖm v? <color=gold>%s<color>\n§iÒu kiÖn nhiÖm v?\n  %s\nH­íng dÉn nhiÖm v?\n  %s\nPhÇn th­ëng nhiÖm v?\n§iÓm kinh nghiÖm: %d, ®é n¨ng ®éng: %d",
+			"N­íng thÞt bang ph¸i", "Tham d?tÝnh n¨ng N­íng thÞt bang ph¸i nép 10 M¶nh LÖnh Bµi Bang Ph¸i", "Ho¹t ®éng N­íng thÞt bang ph¸i v?cïng th?v? mau ®i thu thËp M¶nh LÖnh Bµi Bang Ph¸i nµo!", 8000000, 300);
 		Say(CK_NPC_NAME..Msg, getn(tSay), tSay);
 		return 0;
 	end
 	if CK_TASK_GROUP:GetTaskBit(CK_TASK_GROUP.Task3, 19) ~= 0 then
-		Say(CK_NPC_NAME.."§· hoµn thµnh nhiÖm vô nµy!", 0);
+		Say(CK_NPC_NAME.."§· hoµn thµnh nhiÖm v?nµy!", 0);
 		return 0;
 	end
 	--¿ÛËéÆ¬
@@ -940,80 +940,80 @@ function ck_FastTask_Tong_3(nFlag)
 	--½±Àø
 	gf_ModifyExp(8000000);
 	ck_AddCkScore(300);
-	Msg2Player("NhiÖm vô hoµn thµnh!");
+	Msg2Player("NhiÖm v?hoµn thµnh!");
 end
 
 function ck_FastTask_Guide()
 	local tSay = {
-		"\nThÎ th¸ng/ck_FastTask_Guide_1",
+		"\nTh?th¸ng/ck_FastTask_Guide_1",
 		"\nThuèc viªn/ck_FastTask_Guide_2",
-		"\nC©y B¸t Nh· Nhá/ck_FastTask_Guide_3",
-		"\nN÷ Oa B¶o H¹p vµ Ng«i Sao May M¾n/ck_FastTask_Guide_4",
-		"\nT«i chØ xem xem th«i/nothing",	
+		"\nC©y B¸t Nh?Nh?ck_FastTask_Guide_3",
+		"\nN?Oa B¶o H¹p v?Ng«i Sao May M¾n/ck_FastTask_Guide_4",
+		"\nT«i ch?xem xem th«i/nothing",	
 	}
-	Say(CK_NPC_NAME.."<color=gold>Tèc ChiÕn Tèc Th¾ng<color>-NhiÖm vô h­íng dÉn!", getn(tSay), tSay);	
+	Say(CK_NPC_NAME.."<color=gold>Tèc ChiÕn Tèc Th¾ng<color>-NhiÖm v?h­íng dÉn!", getn(tSay), tSay);	
 end
 
 --Task3£º20Î»ÊÇ·ñÍê³É
 function ck_FastTask_Guide_1(nFlag)
 	if not nFlag then
 		local tSay = {
-			"\nHoµn thµnh nhiÖm vô/#ck_FastTask_Guide_1(1)",
-			"\nT«i chØ xem xem th«i/nothing",	
+			"\nHoµn thµnh nhiÖm v?#ck_FastTask_Guide_1(1)",
+			"\nT«i ch?xem xem th«i/nothing",	
 		}
-		local Msg = format("Tªn nhiÖm vô: <color=gold>%s<color>\n§iÒu kiÖn nhiÖm vô:\n  %s\nH­íng dÉn nhiÖm vô:\n  %s\nPhÇn th­ëng nhiÖm vô:\n§iÓm kinh nghiÖm: %d, ®é n¨ng ®éng: %d",
-			"ThÎ Th¸ng", "KÝch ho¹t thÎ th¸ng VIP vâ l©m", "KÝch ho¹t thÎ th¸ng, ch¬i trß ch¬i nhÑ nhµng h¬n", 8000000, 1200);
+		local Msg = format("Tªn nhiÖm v? <color=gold>%s<color>\n§iÒu kiÖn nhiÖm v?\n  %s\nH­íng dÉn nhiÖm v?\n  %s\nPhÇn th­ëng nhiÖm v?\n§iÓm kinh nghiÖm: %d, ®é n¨ng ®éng: %d",
+			"Th?Th¸ng", "KÝch ho¹t th?th¸ng VIP v?l©m", "KÝch ho¹t th?th¸ng, ch¬i tr?ch¬i nh?nhµng h¬n", 8000000, 1200);
 		Say(CK_NPC_NAME..Msg, getn(tSay), tSay);
 		return 0;
 	end
 	if CK_TASK_GROUP:GetTaskBit(CK_TASK_GROUP.Task3, 20) ~= 0 then
-		Say(CK_NPC_NAME.."§· hoµn thµnh nhiÖm vô nµy!", 0);
+		Say(CK_NPC_NAME.."§· hoµn thµnh nhiÖm v?nµy!", 0);
 		return 0;
 	end
 	if IsActivatedVipCard() ~= 1 then
-		Say(CK_NPC_NAME.."VÉn ch­a kÝch ho¹t thÎ th¸ng, kh«ng thÓ hoµn thµnh nhiÖm vô!", 0);
+		Say(CK_NPC_NAME.."VÉn ch­a kÝch ho¹t th?th¸ng, kh«ng th?hoµn thµnh nhiÖm v?", 0);
 		return 0;
 	end
 	CK_TASK_GROUP:SetTaskBit(CK_TASK_GROUP.Task3, 20, 1);
 	--½±Àø
 	gf_ModifyExp(8000000);
 	ck_AddCkScore(1200);
-	Msg2Player("NhiÖm vô hoµn thµnh!");
+	Msg2Player("NhiÖm v?hoµn thµnh!");
 end
 
 --Task3£º21,22,23,24Î»
 function ck_FastTask_Guide_2(nFlag)
 	if not nFlag then
 		local tSay = {
-			"\nHoµn thµnh nhiÖm vô/#ck_FastTask_Guide_2(1)",
-			"\nT«i chØ xem xem th«i/nothing",	
+			"\nHoµn thµnh nhiÖm v?#ck_FastTask_Guide_2(1)",
+			"\nT«i ch?xem xem th«i/nothing",	
 		}
-		local Msg = format("Tªn nhiÖm vô: <color=gold>%s<color>\n§iÒu kiÖn nhiÖm vô:\n  %s\nH­íng dÉn nhiÖm vô:\n  %s\nPhÇn th­ëng nhiÖm vô:\n§iÓm kinh nghiÖm: %d, ®é n¨ng ®éng: %d",
-			"Thuèc viªn", "Ph©n biÖt sö dông 1 lÇn B¹ch CÇu Hoµn, Tam Thanh Hoµn vµ Lôc ThÇn Hoµn", "Sö dông c¸c lo¹i thuèc sÏ gióp b¹n mét tay", 5000000, 300);
+		local Msg = format("Tªn nhiÖm v? <color=gold>%s<color>\n§iÒu kiÖn nhiÖm v?\n  %s\nH­íng dÉn nhiÖm v?\n  %s\nPhÇn th­ëng nhiÖm v?\n§iÓm kinh nghiÖm: %d, ®é n¨ng ®éng: %d",
+			"Thuèc viªn", "Ph©n biÖt s?dông 1 lÇn B¹ch CÇu Hoµn, Tam Thanh Hoµn v?Lôc ThÇn Hoµn", "S?dông c¸c lo¹i thuèc s?gióp b¹n mét tay", 5000000, 300);
 		Say(CK_NPC_NAME..Msg, getn(tSay), tSay);
 		return 0;
 	end
 	if CK_TASK_GROUP:GetTaskBit(CK_TASK_GROUP.Task3, 24) ~= 0 then
-		Say(CK_NPC_NAME.."§· hoµn thµnh nhiÖm vô nµy!", 0);
+		Say(CK_NPC_NAME.."§· hoµn thµnh nhiÖm v?nµy!", 0);
 		return 0;
 	end
 	if CK_TASK_GROUP:GetTaskBit(CK_TASK_GROUP.Task3, 21) ~= 1 then
-		Say(CK_NPC_NAME..format("VÉn ch­a sö dông bÊt kú <color=red>%s<color>", "B¹ch C©u Hoµn"), 0);
+		Say(CK_NPC_NAME..format("VÉn ch­a s?dông bÊt k?<color=red>%s<color>", "B¹ch C©u Hoµn"), 0);
 		return 0;
 	end
 	if CK_TASK_GROUP:GetTaskBit(CK_TASK_GROUP.Task3, 22) ~= 1 then
-		Say(CK_NPC_NAME..format("VÉn ch­a sö dông bÊt kú <color=red>%s<color>", "Tam Thanh hoµn"), 0);
+		Say(CK_NPC_NAME..format("VÉn ch­a s?dông bÊt k?<color=red>%s<color>", "Tam Thanh hoµn"), 0);
 		return 0;
 	end
 	if CK_TASK_GROUP:GetTaskBit(CK_TASK_GROUP.Task3, 23) ~= 1 then
-		Say(CK_NPC_NAME..format("VÉn ch­a sö dông bÊt kú <color=red>%s<color>", "Lôc ThÇn hoµn"), 0);
+		Say(CK_NPC_NAME..format("VÉn ch­a s?dông bÊt k?<color=red>%s<color>", "Lôc ThÇn hoµn"), 0);
 		return 0;
 	end
 	CK_TASK_GROUP:SetTaskBit(CK_TASK_GROUP.Task3, 24, 1);
 	--½±Àø
 	gf_ModifyExp(5000000);
 	ck_AddCkScore(300);
-	Msg2Player("NhiÖm vô hoµn thµnh!");
+	Msg2Player("NhiÖm v?hoµn thµnh!");
 end
 
 --Ê¹ÓÃ°×¾ÔÍè
@@ -1053,27 +1053,27 @@ end
 function ck_FastTask_Guide_3(nFlag)
 	if not nFlag then
 		local tSay = {
-			"\nHoµn thµnh nhiÖm vô/#ck_FastTask_Guide_3(1)",
-			"\nT«i chØ xem xem th«i/nothing",	
+			"\nHoµn thµnh nhiÖm v?#ck_FastTask_Guide_3(1)",
+			"\nT«i ch?xem xem th«i/nothing",	
 		}
-		local Msg = format("Tªn nhiÖm vô: <color=gold>%s<color>\n§iÒu kiÖn nhiÖm vô:\n  %s\nH­íng dÉn nhiÖm vô:\n  %s\nPhÇn th­ëng nhiÖm vô:\n§iÓm kinh nghiÖm: %d, ®é n¨ng ®éng: %d",
-			"C©y B¸t Nh· nhá", "Trång 1 C©y B¸t Nh· Nhá", "Trång C©y B¸t Nh· Nhá, nhËn ®­îc phÇn th­ëng kinh nghiÖm", 5000000, 600);
+		local Msg = format("Tªn nhiÖm v? <color=gold>%s<color>\n§iÒu kiÖn nhiÖm v?\n  %s\nH­íng dÉn nhiÖm v?\n  %s\nPhÇn th­ëng nhiÖm v?\n§iÓm kinh nghiÖm: %d, ®é n¨ng ®éng: %d",
+			"C©y B¸t Nh?nh?, "Trång 1 C©y B¸t Nh?Nh?, "Trång C©y B¸t Nh?Nh? nhËn ®­îc phÇn th­ëng kinh nghiÖm", 5000000, 600);
 		Say(CK_NPC_NAME..Msg, getn(tSay), tSay);
 		return 0;
 	end
 	if CK_TASK_GROUP:GetTaskBit(CK_TASK_GROUP.Task3, 26) ~= 0 then
-		Say(CK_NPC_NAME.."§· hoµn thµnh nhiÖm vô nµy!", 0);
+		Say(CK_NPC_NAME.."§· hoµn thµnh nhiÖm v?nµy!", 0);
 		return 0;
 	end
 	if CK_TASK_GROUP:GetTaskBit(CK_TASK_GROUP.Task3, 25) ~= 1 then
-		Say(CK_NPC_NAME..format("VÉn ch­a trång <color=red>%s<color>", "C©y B¸t Nh· nhá"), 0);
+		Say(CK_NPC_NAME..format("VÉn ch­a trång <color=red>%s<color>", "C©y B¸t Nh?nh?), 0);
 		return 0;
 	end
 	CK_TASK_GROUP:SetTaskBit(CK_TASK_GROUP.Task3, 26, 1);
 	--½±Àø
 	gf_ModifyExp(5000000);
 	ck_AddCkScore(600);
-	Msg2Player("NhiÖm vô hoµn thµnh!");
+	Msg2Player("NhiÖm v?hoµn thµnh!");
 end
 
 --ÖÖÖ²Ð¡°ãÈôÊ÷ÖÖ
@@ -1091,31 +1091,31 @@ end
 function ck_FastTask_Guide_4(nFlag)
 	if not nFlag then
 		local tSay = {
-			"\nHoµn thµnh nhiÖm vô/#ck_FastTask_Guide_4(1)",
-			"\nT«i chØ xem xem th«i/nothing",	
+			"\nHoµn thµnh nhiÖm v?#ck_FastTask_Guide_4(1)",
+			"\nT«i ch?xem xem th«i/nothing",	
 		}
-		local Msg = format("Tªn nhiÖm vô: <color=gold>%s<color>\n§iÒu kiÖn nhiÖm vô:\n  %s\nH­íng dÉn nhiÖm vô:\n  %s\nPhÇn th­ëng nhiÖm vô:\n§iÓm kinh nghiÖm: %d, ®é n¨ng ®éng: %d",
-			"N÷ Oa B¶o H¹p vµ Ng«i Sao May M¾n", "Sö dông 1 lÇn N÷ Oa B¶o H¹p vµ Ng«i Sao May M¾n", "N÷ Oa B¶o H¹p vµ Ng«i Sao May M¾n lµ b¶o vËt, më ra xem thö bªn trong cã phÇn th­ëng kh«ng", 5000000, 900);
+		local Msg = format("Tªn nhiÖm v? <color=gold>%s<color>\n§iÒu kiÖn nhiÖm v?\n  %s\nH­íng dÉn nhiÖm v?\n  %s\nPhÇn th­ëng nhiÖm v?\n§iÓm kinh nghiÖm: %d, ®é n¨ng ®éng: %d",
+			"N?Oa B¶o H¹p v?Ng«i Sao May M¾n", "S?dông 1 lÇn N?Oa B¶o H¹p v?Ng«i Sao May M¾n", "N?Oa B¶o H¹p v?Ng«i Sao May M¾n l?b¶o vËt, m?ra xem th?bªn trong c?phÇn th­ëng kh«ng", 5000000, 900);
 		Say(CK_NPC_NAME..Msg, getn(tSay), tSay);
 		return 0;
 	end
 	if CK_TASK_GROUP:GetTaskBit(CK_TASK_GROUP.Task3, 29) ~= 0 then
-		Say(CK_NPC_NAME.."§· hoµn thµnh nhiÖm vô nµy!", 0);
+		Say(CK_NPC_NAME.."§· hoµn thµnh nhiÖm v?nµy!", 0);
 		return 0;
 	end
 	if CK_TASK_GROUP:GetTaskBit(CK_TASK_GROUP.Task3, 27) ~= 1 then
-		Say(CK_NPC_NAME..format("VÉn ch­a sö dông bÊt kú <color=red>%s<color>", "N÷ Oa B¶o H¹p"), 0);
+		Say(CK_NPC_NAME..format("VÉn ch­a s?dông bÊt k?<color=red>%s<color>", "N?Oa B¶o H¹p"), 0);
 		return 0;
 	end
 	if CK_TASK_GROUP:GetTaskBit(CK_TASK_GROUP.Task3, 28) ~= 1 then
-		Say(CK_NPC_NAME..format("VÉn ch­a sö dông bÊt kú <color=red>%s<color>", "Ng«i sao may m¾n"), 0);
+		Say(CK_NPC_NAME..format("VÉn ch­a s?dông bÊt k?<color=red>%s<color>", "Ng«i sao may m¾n"), 0);
 		return 0;
 	end
 	CK_TASK_GROUP:SetTaskBit(CK_TASK_GROUP.Task3, 29, 1);
 	--½±Àø
 	gf_ModifyExp(5000000);
 	ck_AddCkScore(900);
-	Msg2Player("NhiÖm vô hoµn thµnh!");
+	Msg2Player("NhiÖm v?hoµn thµnh!");
 end
 
 --Ê¹ÓÃÅ®æ´±¦ºÐ
@@ -1145,11 +1145,11 @@ function ck_ZiloTask()
 		return 0;
 	end
 	local tSay = {
-		"\nNhiÖm vô tÝch lòy thuéc tÝnh/ck_ZiloTask_1",
-		"\nNhiÖm vô tiªu phÝ ¶i/ck_ZiloTask_2",
-		"\nT«i chØ xem xem th«i/nothing",	
+		"\nNhiÖm v?tÝch lòy thuéc tÝnh/ck_ZiloTask_1",
+		"\nNhiÖm v?tiªu ph?¶i/ck_ZiloTask_2",
+		"\nT«i ch?xem xem th«i/nothing",	
 	}
-	Say(CK_NPC_NAME.."NhiÖm vô <color=gold>§¹i Phó ¤ng<color>, trong thêi gian ho¹t ®éng chØ ®­îc hoµn thµnh 1 lÇn, cã thÓ nhËn ®­îc nhiÒu kinh nghiÖm vµ ®é n¨ng ®éng!", getn(tSay), tSay);		
+	Say(CK_NPC_NAME.."NhiÖm v?<color=gold>§¹i Ph?¤ng<color>, trong thêi gian ho¹t ®éng ch?®­îc hoµn thµnh 1 lÇn, c?th?nhËn ®­îc nhiÒu kinh nghiÖm v?®é n¨ng ®éng!", getn(tSay), tSay);		
 end
 
 --Task4£º1-7Íê³ÉÇé¿ö
@@ -1162,7 +1162,7 @@ function ck_ZiloTask_1(bTalk)
 		end
 	end
 	if nTaskIndex == 0 then
-		Say(CK_NPC_NAME..format("Chóc mõng %s ®· hoµn thµnh toµn bé <color=gold>nhiÖm vô tÝch lòy thuéc tÝnh<color>!", gf_GetPlayerSexName()), 0)
+		Say(CK_NPC_NAME..format("Chóc mõng %s ®· hoµn thµnh toµn b?<color=gold>nhiÖm v?tÝch lòy thuéc tÝnh<color>!", gf_GetPlayerSexName()), 0)
 		return 0;
 	end
 	local tCell = CK_TASK_ZILON_ATRR[nTaskIndex];
@@ -1170,10 +1170,10 @@ function ck_ZiloTask_1(bTalk)
 	if not bTalk then
 		local tSay = {
 			"\nTa muèn hoµn thµnh/#ck_ZiloTask_1(1)",
-			"\nT«i chØ xem xem th«i/nothing",
+			"\nT«i ch?xem xem th«i/nothing",
 		}
-		local Str = format("Nh©n vËt ®· ®¹t chuyÓn sinh %d cÊp %d, tÝch lòy %d ®iÓm danh väng, %d ®iÓm s­ m«n, %d ®iÓm c«ng tr¹ng", tCell[2][1], tCell[2][2], tCell[2][3], tCell[2][4], tCell[2][5]);
-		local Msg = format("Tªn nhiÖm vô: <color=gold>%s<color>\n§iÒu kiÖn nhiÖm vô:\n  %s\nH­íng dÉn nhiÖm vô:\n  %s\nPhÇn th­ëng nhiÖm vô:\n§iÓm kinh nghiÖm: %d, ®é n¨ng ®éng: %d",	tCell[1], Str, "Nç lùc tÝch lòy sÏ gióp b¶n th©n ngµy cµng lín m¹nh", tCell[3][1], tCell[3][2]);
+		local Str = format("Nh©n vËt ®· ®¹t chuyÓn sinh %d cÊp %d, tÝch lòy %d ®iÓm danh väng, %d ®iÓm s?m«n, %d ®iÓm c«ng tr¹ng", tCell[2][1], tCell[2][2], tCell[2][3], tCell[2][4], tCell[2][5]);
+		local Msg = format("Tªn nhiÖm v? <color=gold>%s<color>\n§iÒu kiÖn nhiÖm v?\n  %s\nH­íng dÉn nhiÖm v?\n  %s\nPhÇn th­ëng nhiÖm v?\n§iÓm kinh nghiÖm: %d, ®é n¨ng ®éng: %d",	tCell[1], Str, "N?lùc tÝch lòy s?gióp b¶n th©n ngµy cµng lín m¹nh", tCell[3][1], tCell[3][2]);
 		Say(CK_NPC_NAME..Msg, getn(tSay), tSay);
 		return 0;
 	end
@@ -1190,7 +1190,7 @@ function ck_ZiloTask_1(bTalk)
 		return 0;
 	end
 	if GetTask(336) < tCell[2][4] then
-		Say(CK_NPC_NAME..format("§iÓm tÝch lòy s­ m«n cña %s kh«ng ®ñ <color=red>%d<color> ®iÓm", gf_GetPlayerSexName(), tCell[2][4]), 0);
+		Say(CK_NPC_NAME..format("§iÓm tÝch lòy s?m«n cña %s kh«ng ®ñ <color=red>%d<color> ®iÓm", gf_GetPlayerSexName(), tCell[2][4]), 0);
 		return 0;
 	end
 	if abs(GetTask(701)) < tCell[2][5] then
@@ -1201,7 +1201,7 @@ function ck_ZiloTask_1(bTalk)
 	--½±Àø
 	gf_ModifyExp(tCell[3][1]);
 	ck_AddCkScore(tCell[3][2]);
-	Msg2Player("NhiÖm vô hoµn thµnh!")
+	Msg2Player("NhiÖm v?hoµn thµnh!")
 	ck_ZiloTask_1();
 end
 
@@ -1215,7 +1215,7 @@ function ck_ZiloTask_2(bTalk)
 		end
 	end
 	if nTaskIndex == 0 then
-		Say(CK_NPC_NAME..format("Chóc mõng %s ®· hoµn thµnh toµn bé <color=gold>nhiÖm vô tiªu phÝ<color>!", gf_GetPlayerSexName()), 0)
+		Say(CK_NPC_NAME..format("Chóc mõng %s ®· hoµn thµnh toµn b?<color=gold>nhiÖm v?tiªu ph?color>!", gf_GetPlayerSexName()), 0)
 		return 0;
 	end
 	local tCell = CK_TASK_IB_COST[nTaskIndex];
@@ -1223,22 +1223,22 @@ function ck_ZiloTask_2(bTalk)
 	if not bTalk then
 		local tSay = {
 			"\nTa muèn hoµn thµnh/#ck_ZiloTask_2(1)",
-			"\nT«i chØ xem xem th«i/nothing",
+			"\nT«i ch?xem xem th«i/nothing",
 		}
-		local Str = format("Trong ¶i bÊt kú cña §Þa HuyÒn Cung, V¹n KiÕm Tròng, L­¬ng S¬n vµ Th¸i NhÊt Th¸p tÝch lòy sö dông %d Thiªn Kiªu LÖnh ®Ó më r­¬ng", tCell[2]);
-		local Msg = format("Tªn nhiÖm vô: <color=gold>%s<color>\n§iÒu kiÖn nhiÖm vô:\n  %s\nH­íng dÉn nhiÖm vô:\n  %s\nPhÇn th­ëng nhiÖm vô:\n§iÓm kinh nghiÖm: %d, ®é n¨ng ®éng: %d", tCell[1], Str, "Dïng Thiªn Kiªu LÖnh ®Ó më r­¬ng sÏ nhËn ®­îc phÇn th­ëng phong phó", tCell[3][1], tCell[3][2]);
+		local Str = format("Trong ¶i bÊt k?cña §Þa HuyÒn Cung, V¹n KiÕm Tròng, L­¬ng S¬n v?Th¸i NhÊt Th¸p tÝch lòy s?dông %d Thiªn Kiªu LÖnh ®Ó m?r­¬ng", tCell[2]);
+		local Msg = format("Tªn nhiÖm v? <color=gold>%s<color>\n§iÒu kiÖn nhiÖm v?\n  %s\nH­íng dÉn nhiÖm v?\n  %s\nPhÇn th­ëng nhiÖm v?\n§iÓm kinh nghiÖm: %d, ®é n¨ng ®éng: %d", tCell[1], Str, "Dïng Thiªn Kiªu LÖnh ®Ó m?r­¬ng s?nhËn ®­îc phÇn th­ëng phong ph?, tCell[3][1], tCell[3][2]);
 		Say(CK_NPC_NAME..Msg, getn(tSay), tSay);
 		return 0;
 	end
 	if ck_GetCostIB() < tCell[2] then
-		Say(CK_NPC_NAME..format("ë ¶i hiÖn t¹i, sè l­îng Thiªn Kiªu LÖnh do %s tiªu phÝ kh«ng ®ñ <color=red>%d<color> c¸i", gf_GetPlayerSexName(), tCell[2]), 0);
+		Say(CK_NPC_NAME..format("?¶i hiÖn t¹i, s?l­îng Thiªn Kiªu LÖnh do %s tiªu ph?kh«ng ®ñ <color=red>%d<color> c¸i", gf_GetPlayerSexName(), tCell[2]), 0);
 		return 0;
 	end
 	CK_TASK_GROUP:SetTaskBit(CK_TASK_GROUP.Task4, CK_TASK_IB_COST_BEGIN + nTaskIndex - 1, 1);
 	--½±Àø
 	gf_ModifyExp(tCell[3][1]);
 	ck_AddCkScore(tCell[3][2]);
-	Msg2Player("NhiÖm vô hoµn thµnh!")
+	Msg2Player("NhiÖm v?hoµn thµnh!")
 	ck_ZiloTask_2();
 end
 
@@ -1263,14 +1263,14 @@ function _ck_SetCostIB(nNum)
 end
 
 function ck_QueryScore()
-	Say(CK_NPC_NAME..format("%s b©y giê ®iÓm n¨ng ®éng lµ <color=gold>%d<color>!", gf_GetPlayerSexName(), ck_GetCkScore()), 0);	
+	Say(CK_NPC_NAME..format("%s b©y gi?®iÓm n¨ng ®éng l?<color=gold>%d<color>!", gf_GetPlayerSexName(), ck_GetCkScore()), 0);	
 end
 
 function ck_ScoreAward()
 	cd_tbRoute = {[2] = 1, [4] = 1, [3] = 1, [6] = 1, [8] = 1, [9] = 1, [11] = 1, [12] = 1, [14] = 1, [15] = 1, [17] = 1, [18] = 1, [20] = 1, [21] = 1, [23] = 1, [29] = 1,[30] = 1,}
 	local nRoute = GetPlayerRoute()
 	if cd_tbRoute [nRoute] ~= 1 then
-		Talk(1, "", CK_NPC_NAME.." Ch­a gia nhËp hÖ ph¸i, kh«ng thÓ nhËn th­ëng.");
+		Talk(1, "", CK_NPC_NAME.." Ch­a gia nhËp h?ph¸i, kh«ng th?nhËn th­ëng.");
 		return 0
 	end
 	local nScore = ck_GetCkScore();
@@ -1283,22 +1283,22 @@ function ck_ScoreAward()
 		local nType = CK_TASK_GROUP:GetTaskBit(CK_TASK_GROUP.Award, i);
 		tinsert(tSay, format("%d gi¶i th­ëng ®iÓm n¨ng ®éng (%s)/#ck_ScoreAward_func_%d(%d, %d)", CK_SCROE_AWARD_TABLE[i], tMsg[nType], i, nScore, CK_SCROE_AWARD_TABLE[i]));
 	end
-	tinsert(tSay, "T¹i h¹ chØ xem qua th«i/nothing");
-	Say(CK_NPC_NAME..format("%s b©y giê ®iÓm n¨ng ®éng lµ <color=gold>%d<color>,h·y nhËn gi¶i th­ëng!", gf_GetPlayerSexName(), nScore), getn(tSay), tSay);
+	tinsert(tSay, "T¹i h?ch?xem qua th«i/nothing");
+	Say(CK_NPC_NAME..format("%s b©y gi?®iÓm n¨ng ®éng l?<color=gold>%d<color>,h·y nhËn gi¶i th­ëng!", gf_GetPlayerSexName(), nScore), getn(tSay), tSay);
 end
 
 function ck_ScoreAward_func_1(nCurScore, nNeedScore, bTalk)
 	if not bTalk then
 		local tSay = {
 			format("\n NhËn phÇn th­ëng/#ck_ScoreAward_func_1(%d,%d,1)", nCurScore, nNeedScore),
-			"\nT«i chØ xem xem th«i/nothing",
+			"\nT«i ch?xem xem th«i/nothing",
 		}
-		local Msg = format("Kinh nghiÖm %s, danh väng %d, ®iÓm s­ m«n %d, ®iÓm c«ng tr¹ng %d, ®iÓm ch©n khÝ %d", 1000000, 100, 100, 1000, 10000)..",".."§¶ th«ng c¶nh giíi Vâ HiÒn"
-		Say(CK_NPC_NAME..format("HiÖn t¹i cã thÓ nhËn phÇn th­ëng:\n   <color=green>%s<color>\n<color=red>Khi kh«ng thÓ cho thªm phÇn th­ëng th× sÏ dïng ®iÓm kinh nghiÖm ®Ó thay thÕ<color>", Msg), getn(tSay), tSay);
+		local Msg = format("Kinh nghiÖm %s, danh väng %d, ®iÓm s?m«n %d, ®iÓm c«ng tr¹ng %d, ®iÓm ch©n kh?%d", 1000000, 100, 100, 1000, 10000)..",".."§¶ th«ng c¶nh giíi V?HiÒn"
+		Say(CK_NPC_NAME..format("HiÖn t¹i c?th?nhËn phÇn th­ëng:\n   <color=green>%s<color>\n<color=red>Khi kh«ng th?cho thªm phÇn th­ëng th?s?dïng ®iÓm kinh nghiÖm ®Ó thay th?color>", Msg), getn(tSay), tSay);
 		return 0;
 	end
 	if tonumber(nCurScore) < tonumber(nNeedScore) then
-		Say(CK_NPC_NAME..format("§iÓm n¨ng ®éng ch­a ®¹t <color=red>%d<color>, kh«ng thÓ nhËn th­ëng!", tonumber(nNeedScore)), 0);
+		Say(CK_NPC_NAME..format("§iÓm n¨ng ®éng ch­a ®¹t <color=red>%d<color>, kh«ng th?nhËn th­ëng!", tonumber(nNeedScore)), 0);
 		return 0;
 	end
 	if CK_TASK_GROUP:GetTaskBit(CK_TASK_GROUP.Award, 1) ~= 0 then
@@ -1331,17 +1331,17 @@ function ck_ScoreAward_func_2(nCurScore, nNeedScore, bTalk)
 	if not bTalk then
 		local tSay = {
 			format("\n NhËn phÇn th­ëng/#ck_ScoreAward_func_2(%d,%d,1)", nCurScore, nNeedScore),
-			"\nT«i chØ xem xem th«i/nothing",
+			"\nT«i ch?xem xem th«i/nothing",
 		}
-		local Msg = format("Kinh nghiÖm %s, danh väng %d, ®iÓm s­ m«n %d, ®iÓm c«ng tr¹ng %d, ®iÓm ch©n khÝ %d", 2000000, 160, 160, 1400, 0)..",".."Nãn DiÖu D­¬ng (Theo kiÓu h×nh, l­u ph¸i)"
-		Say(CK_NPC_NAME..format("HiÖn t¹i cã thÓ nhËn phÇn th­ëng:\n   <color=green>%s<color>\n<color=red>Khi kh«ng thÓ cho thªm phÇn th­ëng th× sÏ dïng ®iÓm kinh nghiÖm ®Ó thay thÕ<color>", Msg), getn(tSay), tSay);
+		local Msg = format("Kinh nghiÖm %s, danh väng %d, ®iÓm s?m«n %d, ®iÓm c«ng tr¹ng %d, ®iÓm ch©n kh?%d", 2000000, 160, 160, 1400, 0)..",".."Nãn DiÖu D­¬ng (Theo kiÓu h×nh, l­u ph¸i)"
+		Say(CK_NPC_NAME..format("HiÖn t¹i c?th?nhËn phÇn th­ëng:\n   <color=green>%s<color>\n<color=red>Khi kh«ng th?cho thªm phÇn th­ëng th?s?dïng ®iÓm kinh nghiÖm ®Ó thay th?color>", Msg), getn(tSay), tSay);
 		return 0;
 	end
 	if gf_Judge_Room_Weight(3, 100, " ") ~= 1 then
 		return 0;
 	end
 	if tonumber(nCurScore) < tonumber(nNeedScore) then
-		Say(CK_NPC_NAME..format("§iÓm n¨ng ®éng ch­a ®¹t <color=red>%d<color>, kh«ng thÓ nhËn th­ëng!", tonumber(nNeedScore)), 0);
+		Say(CK_NPC_NAME..format("§iÓm n¨ng ®éng ch­a ®¹t <color=red>%d<color>, kh«ng th?nhËn th­ëng!", tonumber(nNeedScore)), 0);
 		return 0;
 	end
 	if CK_TASK_GROUP:GetTaskBit(CK_TASK_GROUP.Award, 2) ~= 0 then
@@ -1371,14 +1371,14 @@ function ck_ScoreAward_func_3(nCurScore, nNeedScore, bTalk)
 	if not bTalk then
 		local tSay = {
 			format("\n NhËn phÇn th­ëng/#ck_ScoreAward_func_3(%d,%d,1)", nCurScore, nNeedScore),
-			"\nT«i chØ xem xem th«i/nothing",
+			"\nT«i ch?xem xem th«i/nothing",
 		}
-		local Msg = format("Kinh nghiÖm %s, danh väng %d, ®iÓm s­ m«n %d, ®iÓm c«ng tr¹ng %d, ®iÓm ch©n khÝ %d", 3000000, 220, 220, 1800, 15000)..",".."§¶ th«ng c¶nh giíi Vâ T­íng"
-		Say(CK_NPC_NAME..format("HiÖn t¹i cã thÓ nhËn phÇn th­ëng:\n   <color=green>%s<color>\n<color=red>Khi kh«ng thÓ cho thªm phÇn th­ëng th× sÏ dïng ®iÓm kinh nghiÖm ®Ó thay thÕ<color>", Msg), getn(tSay), tSay);
+		local Msg = format("Kinh nghiÖm %s, danh väng %d, ®iÓm s?m«n %d, ®iÓm c«ng tr¹ng %d, ®iÓm ch©n kh?%d", 3000000, 220, 220, 1800, 15000)..",".."§¶ th«ng c¶nh giíi V?T­íng"
+		Say(CK_NPC_NAME..format("HiÖn t¹i c?th?nhËn phÇn th­ëng:\n   <color=green>%s<color>\n<color=red>Khi kh«ng th?cho thªm phÇn th­ëng th?s?dïng ®iÓm kinh nghiÖm ®Ó thay th?color>", Msg), getn(tSay), tSay);
 		return 0;
 	end
 	if tonumber(nCurScore) < tonumber(nNeedScore) then
-		Say(CK_NPC_NAME..format("§iÓm n¨ng ®éng ch­a ®¹t <color=red>%d<color>, kh«ng thÓ nhËn th­ëng!", tonumber(nNeedScore)), 0);
+		Say(CK_NPC_NAME..format("§iÓm n¨ng ®éng ch­a ®¹t <color=red>%d<color>, kh«ng th?nhËn th­ëng!", tonumber(nNeedScore)), 0);
 		return 0;
 	end
 	if CK_TASK_GROUP:GetTaskBit(CK_TASK_GROUP.Award, 3) ~= 0 then
@@ -1411,17 +1411,17 @@ function ck_ScoreAward_func_4(nCurScore, nNeedScore, bTalk)
 	if not bTalk then
 		local tSay = {
 			format("\n NhËn phÇn th­ëng/#ck_ScoreAward_func_4(%d,%d,1)", nCurScore, nNeedScore),
-			"\nT«i chØ xem xem th«i/nothing",
+			"\nT«i ch?xem xem th«i/nothing",
 		}
-		local Msg = format("Kinh nghiÖm %s, danh väng %d, ®iÓm s­ m«n %d, ®iÓm c«ng tr¹ng %d, ®iÓm ch©n khÝ %d", 4000000, 280, 280, 2200, 0)..",".."¸o DiÖu D­¬ng (Theo kiÓu h×nh, l­u ph¸i)"
-		Say(CK_NPC_NAME..format("HiÖn t¹i cã thÓ nhËn phÇn th­ëng:\n   <color=green>%s<color>\n<color=red>Khi kh«ng thÓ cho thªm phÇn th­ëng th× sÏ dïng ®iÓm kinh nghiÖm ®Ó thay thÕ<color>", Msg), getn(tSay), tSay);
+		local Msg = format("Kinh nghiÖm %s, danh väng %d, ®iÓm s?m«n %d, ®iÓm c«ng tr¹ng %d, ®iÓm ch©n kh?%d", 4000000, 280, 280, 2200, 0)..",".."¸o DiÖu D­¬ng (Theo kiÓu h×nh, l­u ph¸i)"
+		Say(CK_NPC_NAME..format("HiÖn t¹i c?th?nhËn phÇn th­ëng:\n   <color=green>%s<color>\n<color=red>Khi kh«ng th?cho thªm phÇn th­ëng th?s?dïng ®iÓm kinh nghiÖm ®Ó thay th?color>", Msg), getn(tSay), tSay);
 		return 0;
 	end
 	if gf_Judge_Room_Weight(3, 100, " ") ~= 1 then
 		return 0;
 	end
 	if tonumber(nCurScore) < tonumber(nNeedScore) then
-		Say(CK_NPC_NAME..format("§iÓm n¨ng ®éng ch­a ®¹t <color=red>%d<color>, kh«ng thÓ nhËn th­ëng!", tonumber(nNeedScore)), 0);
+		Say(CK_NPC_NAME..format("§iÓm n¨ng ®éng ch­a ®¹t <color=red>%d<color>, kh«ng th?nhËn th­ëng!", tonumber(nNeedScore)), 0);
 		return 0;
 	end
 	if CK_TASK_GROUP:GetTaskBit(CK_TASK_GROUP.Award, 4) ~= 0 then
@@ -1449,14 +1449,14 @@ function ck_ScoreAward_func_5(nCurScore, nNeedScore, bTalk)
 	if not bTalk then
 		local tSay = {
 			format("\n NhËn phÇn th­ëng/#ck_ScoreAward_func_5(%d,%d,1)", nCurScore, nNeedScore),
-			"\nT«i chØ xem xem th«i/nothing",
+			"\nT«i ch?xem xem th«i/nothing",
 		}
-		local Msg = format("Kinh nghiÖm %s, danh väng %d, ®iÓm s­ m«n %d, ®iÓm c«ng tr¹ng %d, ®iÓm ch©n khÝ %d", 5000000, 340, 340, 2600, 25000)..",".."§¶ th«ng c¶nh giíi Vâ V­¬ng"
-		Say(CK_NPC_NAME..format("HiÖn t¹i cã thÓ nhËn phÇn th­ëng:\n   <color=green>%s<color>\n<color=red>Khi kh«ng thÓ cho thªm phÇn th­ëng th× sÏ dïng ®iÓm kinh nghiÖm ®Ó thay thÕ<color>", Msg), getn(tSay), tSay);
+		local Msg = format("Kinh nghiÖm %s, danh väng %d, ®iÓm s?m«n %d, ®iÓm c«ng tr¹ng %d, ®iÓm ch©n kh?%d", 5000000, 340, 340, 2600, 25000)..",".."§¶ th«ng c¶nh giíi V?V­¬ng"
+		Say(CK_NPC_NAME..format("HiÖn t¹i c?th?nhËn phÇn th­ëng:\n   <color=green>%s<color>\n<color=red>Khi kh«ng th?cho thªm phÇn th­ëng th?s?dïng ®iÓm kinh nghiÖm ®Ó thay th?color>", Msg), getn(tSay), tSay);
 		return 0;
 	end
 	if tonumber(nCurScore) < tonumber(nNeedScore) then
-		Say(CK_NPC_NAME..format("§iÓm n¨ng ®éng ch­a ®¹t <color=red>%d<color>, kh«ng thÓ nhËn th­ëng!", tonumber(nNeedScore)), 0);
+		Say(CK_NPC_NAME..format("§iÓm n¨ng ®éng ch­a ®¹t <color=red>%d<color>, kh«ng th?nhËn th­ëng!", tonumber(nNeedScore)), 0);
 		return 0;
 	end
 	if CK_TASK_GROUP:GetTaskBit(CK_TASK_GROUP.Award, 5) ~= 0 then
@@ -1492,17 +1492,17 @@ function ck_ScoreAward_func_6(nCurScore, nNeedScore, bTalk)
 	if not bTalk then
 		local tSay = {
 			format("\n NhËn phÇn th­ëng/#ck_ScoreAward_func_6(%d,%d,1)", nCurScore, nNeedScore),
-			"\nT«i chØ xem xem th«i/nothing",
+			"\nT«i ch?xem xem th«i/nothing",
 		}
-		local Msg = format("Kinh nghiÖm %s, danh väng %d, ®iÓm s­ m«n %d, ®iÓm c«ng tr¹ng %d, ®iÓm ch©n khÝ %d", 6000000, 400, 400, 3000, 0)..",".."QuÇn DiÖu D­¬ng (Theo kiÓu h×nh, l­u ph¸i)"
-		Say(CK_NPC_NAME..format("HiÖn t¹i cã thÓ nhËn phÇn th­ëng:\n   <color=green>%s<color>\n<color=red>Khi kh«ng thÓ cho thªm phÇn th­ëng th× sÏ dïng ®iÓm kinh nghiÖm ®Ó thay thÕ<color>", Msg), getn(tSay), tSay);
+		local Msg = format("Kinh nghiÖm %s, danh väng %d, ®iÓm s?m«n %d, ®iÓm c«ng tr¹ng %d, ®iÓm ch©n kh?%d", 6000000, 400, 400, 3000, 0)..",".."QuÇn DiÖu D­¬ng (Theo kiÓu h×nh, l­u ph¸i)"
+		Say(CK_NPC_NAME..format("HiÖn t¹i c?th?nhËn phÇn th­ëng:\n   <color=green>%s<color>\n<color=red>Khi kh«ng th?cho thªm phÇn th­ëng th?s?dïng ®iÓm kinh nghiÖm ®Ó thay th?color>", Msg), getn(tSay), tSay);
 		return 0;
 	end
 	if gf_Judge_Room_Weight(3, 100, " ") ~= 1 then
 		return 0;
 	end
 	if tonumber(nCurScore) < tonumber(nNeedScore) then
-		Say(CK_NPC_NAME..format("§iÓm n¨ng ®éng ch­a ®¹t <color=red>%d<color>, kh«ng thÓ nhËn th­ëng!", tonumber(nNeedScore)), 0);
+		Say(CK_NPC_NAME..format("§iÓm n¨ng ®éng ch­a ®¹t <color=red>%d<color>, kh«ng th?nhËn th­ëng!", tonumber(nNeedScore)), 0);
 		return 0;
 	end
 	if CK_TASK_GROUP:GetTaskBit(CK_TASK_GROUP.Award, 6) ~= 0 then
@@ -1530,14 +1530,14 @@ function ck_ScoreAward_func_7(nCurScore, nNeedScore, bTalk)
 	if not bTalk then
 		local tSay = {
 			format("\n NhËn phÇn th­ëng/#ck_ScoreAward_func_7(%d,%d,1)", nCurScore, nNeedScore),
-			"\nT«i chØ xem xem th«i/nothing",
+			"\nT«i ch?xem xem th«i/nothing",
 		}
-		local Msg = format("Kinh nghiÖm %s, danh väng %d, ®iÓm s­ m«n %d, ®iÓm c«ng tr¹ng %d, ®iÓm ch©n khÝ %d", 7000000, 460, 460, 3400, 30000)..",".."Huy Ch­¬ng Ngò Hµnh (Tù chän)"
-		Say(CK_NPC_NAME..format("HiÖn t¹i cã thÓ nhËn phÇn th­ëng:\n   <color=green>%s<color>\n<color=red>Khi kh«ng thÓ cho thªm phÇn th­ëng th× sÏ dïng ®iÓm kinh nghiÖm ®Ó thay thÕ<color>", Msg), getn(tSay), tSay);
+		local Msg = format("Kinh nghiÖm %s, danh väng %d, ®iÓm s?m«n %d, ®iÓm c«ng tr¹ng %d, ®iÓm ch©n kh?%d", 7000000, 460, 460, 3400, 30000)..",".."Huy Ch­¬ng Ng?Hµnh (T?chän)"
+		Say(CK_NPC_NAME..format("HiÖn t¹i c?th?nhËn phÇn th­ëng:\n   <color=green>%s<color>\n<color=red>Khi kh«ng th?cho thªm phÇn th­ëng th?s?dïng ®iÓm kinh nghiÖm ®Ó thay th?color>", Msg), getn(tSay), tSay);
 		return 0;
 	end
 	if tonumber(nCurScore) < tonumber(nNeedScore) then
-		Say(CK_NPC_NAME..format("§iÓm n¨ng ®éng ch­a ®¹t <color=red>%d<color>, kh«ng thÓ nhËn th­ëng!", tonumber(nNeedScore)), 0);
+		Say(CK_NPC_NAME..format("§iÓm n¨ng ®éng ch­a ®¹t <color=red>%d<color>, kh«ng th?nhËn th­ëng!", tonumber(nNeedScore)), 0);
 		return 0;
 	end
 	if CK_TASK_GROUP:GetTaskBit(CK_TASK_GROUP.Award, 7) ~= 0 then
@@ -1549,7 +1549,7 @@ function ck_ScoreAward_func_7(nCurScore, nNeedScore, bTalk)
 		DebugOutput(CK_JS_HUIZHANG[i][1], i)
 		tinsert(tDialog, format("%s/#ck_ScoreAward_func_7_Do(%d)", CK_JS_HUIZHANG[i][1], i));
 	end
-	tinsert(tDialog, "\nT«i chØ xem xem th«i/nothing");
+	tinsert(tDialog, "\nT«i ch?xem xem th«i/nothing");
 	Say(CK_NPC_NAME.."H·y chän lo¹i cÇn:", getn(tDialog), tDialog);	
 end
 
@@ -1570,14 +1570,14 @@ function ck_ScoreAward_func_8(nCurScore, nNeedScore, bTalk)
 	if not bTalk then
 		local tSay = {
 			format("\n NhËn phÇn th­ëng/#ck_ScoreAward_func_8(%d,%d,1)", nCurScore, nNeedScore),
-			"\nT«i chØ xem xem th«i/nothing",
+			"\nT«i ch?xem xem th«i/nothing",
 		}
-		local Msg = format("Kinh nghiÖm %s, danh väng %d, ®iÓm s­ m«n %d, ®iÓm c«ng tr¹ng %d, ®iÓm ch©n khÝ %d", 8000000, 520, 520, 3800, 0)..",".."UÈn Linh CÊp 4"
-		Say(CK_NPC_NAME..format("HiÖn t¹i cã thÓ nhËn phÇn th­ëng:\n   <color=green>%s<color>\n<color=red>Khi kh«ng thÓ cho thªm phÇn th­ëng th× sÏ dïng ®iÓm kinh nghiÖm ®Ó thay thÕ<color>", Msg), getn(tSay), tSay);
+		local Msg = format("Kinh nghiÖm %s, danh väng %d, ®iÓm s?m«n %d, ®iÓm c«ng tr¹ng %d, ®iÓm ch©n kh?%d", 8000000, 520, 520, 3800, 0)..",".."UÈn Linh CÊp 4"
+		Say(CK_NPC_NAME..format("HiÖn t¹i c?th?nhËn phÇn th­ëng:\n   <color=green>%s<color>\n<color=red>Khi kh«ng th?cho thªm phÇn th­ëng th?s?dïng ®iÓm kinh nghiÖm ®Ó thay th?color>", Msg), getn(tSay), tSay);
 		return 0;
 	end
 	if tonumber(nCurScore) < tonumber(nNeedScore) then
-		Say(CK_NPC_NAME..format("§iÓm n¨ng ®éng ch­a ®¹t <color=red>%d<color>, kh«ng thÓ nhËn th­ëng!", tonumber(nNeedScore)), 0);
+		Say(CK_NPC_NAME..format("§iÓm n¨ng ®éng ch­a ®¹t <color=red>%d<color>, kh«ng th?nhËn th­ëng!", tonumber(nNeedScore)), 0);
 		return 0;
 	end
 	if CK_TASK_GROUP:GetTaskBit(CK_TASK_GROUP.Award, 8) ~= 0 then
@@ -1611,7 +1611,7 @@ function ck_ScoreAward_func_8_Do(nIndex)
 --	else
 --		gf_Modify("Exp", 10000000);
 --	end
-	gf_AddItemEx2({2, 1, 30614, 1, 1}, "L«i Hæ Tinh Ph¸ch", "CDKEY", "CDKEY", 0, 1);
+	gf_AddItemEx2({2, 1, 30614, 1, 1}, "L«i H?Tinh Ph¸ch", "CDKEY", "CDKEY", 0, 1);
 	--gf_AddItemEx2(CK_YAOYANG_JIEZI_1[nIndex][2], CK_YAOYANG_JIEZI_1[nIndex][1], "CDKEY", "CDKEY", 0, 1);
 	--4¼¶ÔÌÁé
 	local nRandIndex = random(getn(CK_4_LEVEL_YUNLING));
@@ -1622,14 +1622,14 @@ function ck_ScoreAward_func_9(nCurScore, nNeedScore, bTalk)
 	if not bTalk then
 		local tSay = {
 			format("\n NhËn phÇn th­ëng/#ck_ScoreAward_func_9(%d,%d,1)", nCurScore, nNeedScore),
-			"\nT«i chØ xem xem th«i/nothing",
+			"\nT«i ch?xem xem th«i/nothing",
 		}
-		local Msg = format("Kinh nghiÖm %s, danh väng %d, ®iÓm s­ m«n %d, ®iÓm c«ng tr¹ng %d, ®iÓm ch©n khÝ %d", 9000000, 580, 580, 4200, 0)..",".."ChuyÓn sinh 5 cÊp 90"..",".."Vò KhÝ DiÖu D­¬ng (Theo kiÓu h×nh, l­u ph¸i)"..",".."L«i Hæ Tinh Ph¸ch*1"
-		Say(CK_NPC_NAME..format("HiÖn t¹i cã thÓ nhËn phÇn th­ëng:\n   <color=green>%s<color>\n<color=red>Khi kh«ng thÓ cho thªm phÇn th­ëng th× sÏ dïng ®iÓm kinh nghiÖm ®Ó thay thÕ<color>", Msg), getn(tSay), tSay);
+		local Msg = format("Kinh nghiÖm %s, danh väng %d, ®iÓm s?m«n %d, ®iÓm c«ng tr¹ng %d, ®iÓm ch©n kh?%d", 9000000, 580, 580, 4200, 0)..",".."ChuyÓn sinh 5 cÊp 90"..",".."V?Kh?DiÖu D­¬ng (Theo kiÓu h×nh, l­u ph¸i)"..",".."L«i H?Tinh Ph¸ch*1"
+		Say(CK_NPC_NAME..format("HiÖn t¹i c?th?nhËn phÇn th­ëng:\n   <color=green>%s<color>\n<color=red>Khi kh«ng th?cho thªm phÇn th­ëng th?s?dïng ®iÓm kinh nghiÖm ®Ó thay th?color>", Msg), getn(tSay), tSay);
 		return 0;
 	end
 	if tonumber(nCurScore) < tonumber(nNeedScore) then
-		Say(CK_NPC_NAME..format("§iÓm n¨ng ®éng ch­a ®¹t <color=red>%d<color>, kh«ng thÓ nhËn th­ëng!", tonumber(nNeedScore)), 0);
+		Say(CK_NPC_NAME..format("§iÓm n¨ng ®éng ch­a ®¹t <color=red>%d<color>, kh«ng th?nhËn th­ëng!", tonumber(nNeedScore)), 0);
 		return 0;
 	end
 	if CK_TASK_GROUP:GetTaskBit(CK_TASK_GROUP.Award, 9) ~= 0 then
@@ -1640,7 +1640,7 @@ function ck_ScoreAward_func_9(nCurScore, nNeedScore, bTalk)
 		return 0;
 	end
 	if GetPlayerRoute() == 0 then
-		Talk(1, "", CK_NPC_NAME.." Ch­a gia nhËp hÖ ph¸i, kh«ng thÓ nhËn th­ëng.");
+		Talk(1, "", CK_NPC_NAME.." Ch­a gia nhËp h?ph¸i, kh«ng th?nhËn th­ëng.");
 		return 0
 	end
 --	CK_TASK_GROUP:SetTaskBit(CK_TASK_GROUP.Award, 9, 1);
@@ -1663,24 +1663,24 @@ function ck_ScoreAward_func_9(nCurScore, nNeedScore, bTalk)
 		gf_Modify("ShiMen", 580);
 		gf_Modify("JunGong", 4200);		
 		ahf_GetYaoYangWeaponRand(1);
-		gf_AddItemEx2({2, 1, 30614, 1}, "L«i Hæ Tinh Ph¸ch", "CDKEY", "CDKEY", 0, 1);
+		gf_AddItemEx2({2, 1, 30614, 1}, "L«i H?Tinh Ph¸ch", "CDKEY", "CDKEY", 0, 1);
 	end
 --	ahf_GetYaoYangWeaponRand(1);
---	gf_AddItemEx2({2, 1, 30614, 1}, "L«i Hæ Tinh Ph¸ch", "CDKEY", "CDKEY", 0, 1);
+--	gf_AddItemEx2({2, 1, 30614, 1}, "L«i H?Tinh Ph¸ch", "CDKEY", "CDKEY", 0, 1);
 end
 
 function ck_ScoreAward_func_10(nCurScore, nNeedScore, bTalk)
 	if not bTalk then
 		local tSay = {
 			format("\n NhËn phÇn th­ëng/#ck_ScoreAward_func_10(%d,%d,1)", nCurScore, nNeedScore),
-			"\nT«i chØ xem xem th«i/nothing",
+			"\nT«i ch?xem xem th«i/nothing",
 		}
-		local Msg = format("Kinh nghiÖm %s, danh väng %d, ®iÓm s­ m«n %d, ®iÓm c«ng tr¹ng %d, ®iÓm ch©n khÝ %d", 10000000, 580, 580, 4200, 0)..",".."Nãn ChiÕn Cuång (Theo kiÓu h×nh, l­u ph¸i)"
-		Say(CK_NPC_NAME..format("HiÖn t¹i cã thÓ nhËn phÇn th­ëng:\n   <color=green>%s<color>\n<color=red>Khi kh«ng thÓ cho thªm phÇn th­ëng th× sÏ dïng ®iÓm kinh nghiÖm ®Ó thay thÕ<color>", Msg), getn(tSay), tSay);
+		local Msg = format("Kinh nghiÖm %s, danh väng %d, ®iÓm s?m«n %d, ®iÓm c«ng tr¹ng %d, ®iÓm ch©n kh?%d", 10000000, 580, 580, 4200, 0)..",".."Nãn ChiÕn Cuång (Theo kiÓu h×nh, l­u ph¸i)"
+		Say(CK_NPC_NAME..format("HiÖn t¹i c?th?nhËn phÇn th­ëng:\n   <color=green>%s<color>\n<color=red>Khi kh«ng th?cho thªm phÇn th­ëng th?s?dïng ®iÓm kinh nghiÖm ®Ó thay th?color>", Msg), getn(tSay), tSay);
 		return 0;
 	end
 	if tonumber(nCurScore) < tonumber(nNeedScore) then
-		Say(CK_NPC_NAME..format("§iÓm n¨ng ®éng ch­a ®¹t <color=red>%d<color>, kh«ng thÓ nhËn th­ëng!", tonumber(nNeedScore)), 0);
+		Say(CK_NPC_NAME..format("§iÓm n¨ng ®éng ch­a ®¹t <color=red>%d<color>, kh«ng th?nhËn th­ëng!", tonumber(nNeedScore)), 0);
 		return 0;
 	end
 	if CK_TASK_GROUP:GetTaskBit(CK_TASK_GROUP.Award, 10) ~= 0 then
@@ -1703,14 +1703,14 @@ function ck_ScoreAward_func_11(nCurScore, nNeedScore, bTalk)
 	if not bTalk then
 		local tSay = {
 			format("\n NhËn phÇn th­ëng/#ck_ScoreAward_func_11(%d,%d,1)", nCurScore, nNeedScore),
-			"\nT«i chØ xem xem th«i/nothing",
+			"\nT«i ch?xem xem th«i/nothing",
 		}
-		local Msg = format("Kinh nghiÖm %s, danh väng %d, ®iÓm s­ m«n %d, ®iÓm c«ng tr¹ng %d, ®iÓm ch©n khÝ %d", 11000000, 580, 580, 4200, 0)..",".."¸o Kho¸c Ngò Hµnh (Tù chän)"
-		Say(CK_NPC_NAME..format("HiÖn t¹i cã thÓ nhËn phÇn th­ëng:\n   <color=green>%s<color>\n<color=red>Khi kh«ng thÓ cho thªm phÇn th­ëng th× sÏ dïng ®iÓm kinh nghiÖm ®Ó thay thÕ<color>", Msg), getn(tSay), tSay);
+		local Msg = format("Kinh nghiÖm %s, danh väng %d, ®iÓm s?m«n %d, ®iÓm c«ng tr¹ng %d, ®iÓm ch©n kh?%d", 11000000, 580, 580, 4200, 0)..",".."¸o Kho¸c Ng?Hµnh (T?chän)"
+		Say(CK_NPC_NAME..format("HiÖn t¹i c?th?nhËn phÇn th­ëng:\n   <color=green>%s<color>\n<color=red>Khi kh«ng th?cho thªm phÇn th­ëng th?s?dïng ®iÓm kinh nghiÖm ®Ó thay th?color>", Msg), getn(tSay), tSay);
 		return 0;
 	end
 	if tonumber(nCurScore) < tonumber(nNeedScore) then
-		Say(CK_NPC_NAME..format("§iÓm n¨ng ®éng ch­a ®¹t <color=red>%d<color>, kh«ng thÓ nhËn th­ëng!", tonumber(nNeedScore)), 0);
+		Say(CK_NPC_NAME..format("§iÓm n¨ng ®éng ch­a ®¹t <color=red>%d<color>, kh«ng th?nhËn th­ëng!", tonumber(nNeedScore)), 0);
 		return 0;
 	end
 	if CK_TASK_GROUP:GetTaskBit(CK_TASK_GROUP.Award, 11) ~= 0 then
@@ -1721,7 +1721,7 @@ function ck_ScoreAward_func_11(nCurScore, nNeedScore, bTalk)
 	for i = 1, getn(CK_JS_GUAIYI) do
 		tinsert(tDialog, format("%s/#ck_ScoreAward_func_11_Do(%d)", CK_JS_GUAIYI[i][1], i));
 	end
-	tinsert(tDialog, "\nT«i chØ xem xem th«i/nothing");
+	tinsert(tDialog, "\nT«i ch?xem xem th«i/nothing");
 	Say(CK_NPC_NAME.."H·y chän lo¹i cÇn:", getn(tDialog), tDialog);	
 end
 
@@ -1741,14 +1741,14 @@ function ck_ScoreAward_func_12(nCurScore, nNeedScore, bTalk)
 	if not bTalk then
 		local tSay = {
 			format("\n NhËn phÇn th­ëng/#ck_ScoreAward_func_12(%d,%d,1)", nCurScore, nNeedScore),
-			"\nT«i chØ xem xem th«i/nothing",
+			"\nT«i ch?xem xem th«i/nothing",
 		}
-		local Msg = format("Kinh nghiÖm %s, danh väng %d, ®iÓm s­ m«n %d, ®iÓm c«ng tr¹ng %d, ®iÓm ch©n khÝ %d", 12000000, 580, 580, 4200, 0)..",".."ChiÕn Hµi Ngò Hµnh (Tù chän)"..",".."Tù chän ®å trang søc cÊp 2 DiÖu D­¬ng"
-		Say(CK_NPC_NAME..format("HiÖn t¹i cã thÓ nhËn phÇn th­ëng:\n   <color=green>%s<color>\n<color=red>Khi kh«ng thÓ cho thªm phÇn th­ëng th× sÏ dïng ®iÓm kinh nghiÖm ®Ó thay thÕ<color>", Msg), getn(tSay), tSay);
+		local Msg = format("Kinh nghiÖm %s, danh väng %d, ®iÓm s?m«n %d, ®iÓm c«ng tr¹ng %d, ®iÓm ch©n kh?%d", 12000000, 580, 580, 4200, 0)..",".."ChiÕn Hµi Ng?Hµnh (T?chän)"..",".."T?chän ®å trang søc cÊp 2 DiÖu D­¬ng"
+		Say(CK_NPC_NAME..format("HiÖn t¹i c?th?nhËn phÇn th­ëng:\n   <color=green>%s<color>\n<color=red>Khi kh«ng th?cho thªm phÇn th­ëng th?s?dïng ®iÓm kinh nghiÖm ®Ó thay th?color>", Msg), getn(tSay), tSay);
 		return 0;
 	end
 	if tonumber(nCurScore) < tonumber(nNeedScore) then
-		Say(CK_NPC_NAME..format("§iÓm n¨ng ®éng ch­a ®¹t <color=red>%d<color>, kh«ng thÓ nhËn th­ëng!", tonumber(nNeedScore)), 0);
+		Say(CK_NPC_NAME..format("§iÓm n¨ng ®éng ch­a ®¹t <color=red>%d<color>, kh«ng th?nhËn th­ëng!", tonumber(nNeedScore)), 0);
 		return 0;
 	end
 	if CK_TASK_GROUP:GetTaskBit(CK_TASK_GROUP.Award, 12) ~= 0 then
@@ -1759,7 +1759,7 @@ function ck_ScoreAward_func_12(nCurScore, nNeedScore, bTalk)
 	for i = 1, getn(CK_JS_SHOE) do
 		tinsert(tDialog, format("%s/#ck_ScoreAward_func_12_Do(%d)", CK_JS_SHOE[i][1], i));
 	end
-	tinsert(tDialog, "\nT«i chØ xem xem th«i/nothing");
+	tinsert(tDialog, "\nT«i ch?xem xem th«i/nothing");
 	Say(CK_NPC_NAME.."H·y chän lo¹i cÇn:", getn(tDialog), tDialog);	
 end
 
@@ -1768,7 +1768,7 @@ function ck_ScoreAward_func_12_Do(nIndex)
 	for i = 1, getn(CK_YAOYANG_JIEZI_2) do
 		tinsert(tDialog, format("%s/#ck_ScoreAward_func_12_Do2(%d,%d)", CK_YAOYANG_JIEZI_2[i][1], nIndex,i));
 	end
-	tinsert(tDialog, "\nT«i chØ xem xem th«i/nothing");
+	tinsert(tDialog, "\nT«i ch?xem xem th«i/nothing");
 	Say(CK_NPC_NAME.."H·y chän lo¹i cÇn:", getn(tDialog), tDialog);
 end
 
@@ -1789,14 +1789,14 @@ function ck_ScoreAward_func_13(nCurScore, nNeedScore, bTalk)
 	if not bTalk then
 		local tSay = {
 			format("\n NhËn phÇn th­ëng/#ck_ScoreAward_func_13(%d,%d,1)", nCurScore, nNeedScore),
-			"\nT«i chØ xem xem th«i/nothing",
+			"\nT«i ch?xem xem th«i/nothing",
 		}
-		local Msg = format("Kinh nghiÖm %s, danh väng %d, ®iÓm s­ m«n %d, ®iÓm c«ng tr¹ng %d, ®iÓm ch©n khÝ %d", 18000000, 580, 580, 4200, 0)..",".."UÈn Linh CÊp 5"..",".."¸o ChiÕn Cuång (Theo kiÓu h×nh, l­u ph¸i)"
-		Say(CK_NPC_NAME..format("HiÖn t¹i cã thÓ nhËn phÇn th­ëng:\n   <color=green>%s<color>\n<color=red>Khi kh«ng thÓ cho thªm phÇn th­ëng th× sÏ dïng ®iÓm kinh nghiÖm ®Ó thay thÕ<color>", Msg), getn(tSay), tSay);
+		local Msg = format("Kinh nghiÖm %s, danh väng %d, ®iÓm s?m«n %d, ®iÓm c«ng tr¹ng %d, ®iÓm ch©n kh?%d", 18000000, 580, 580, 4200, 0)..",".."UÈn Linh CÊp 5"..",".."¸o ChiÕn Cuång (Theo kiÓu h×nh, l­u ph¸i)"
+		Say(CK_NPC_NAME..format("HiÖn t¹i c?th?nhËn phÇn th­ëng:\n   <color=green>%s<color>\n<color=red>Khi kh«ng th?cho thªm phÇn th­ëng th?s?dïng ®iÓm kinh nghiÖm ®Ó thay th?color>", Msg), getn(tSay), tSay);
 		return 0;
 	end
 	if tonumber(nCurScore) < tonumber(nNeedScore) then
-		Say(CK_NPC_NAME..format("§iÓm n¨ng ®éng ch­a ®¹t <color=red>%d<color>, kh«ng thÓ nhËn th­ëng!", tonumber(nNeedScore)), 0);
+		Say(CK_NPC_NAME..format("§iÓm n¨ng ®éng ch­a ®¹t <color=red>%d<color>, kh«ng th?nhËn th­ëng!", tonumber(nNeedScore)), 0);
 		return 0;
 	end
 	if CK_TASK_GROUP:GetTaskBit(CK_TASK_GROUP.Award, 13) ~= 0 then
@@ -1827,14 +1827,14 @@ function ck_ScoreAward_func_14(nCurScore, nNeedScore, bTalk)
 	if not bTalk then
 		local tSay = {
 			format("\n NhËn phÇn th­ëng/#ck_ScoreAward_func_14(%d,%d,1)", nCurScore, nNeedScore),
-			"\nT«i chØ xem xem th«i/nothing",
+			"\nT«i ch?xem xem th«i/nothing",
 		}
-		local Msg = format("Kinh nghiÖm %s, danh väng %d, ®iÓm s­ m«n %d, ®iÓm c«ng tr¹ng %d, ®iÓm ch©n khÝ %d", 28000000, 580, 580, 4200, 0)..",".."Tù chän ®å trang søc cÊp 2 DiÖu D­¬ng"
-		Say(CK_NPC_NAME..format("HiÖn t¹i cã thÓ nhËn phÇn th­ëng:\n   <color=green>%s<color>\n<color=red>Khi kh«ng thÓ cho thªm phÇn th­ëng th× sÏ dïng ®iÓm kinh nghiÖm ®Ó thay thÕ<color>", Msg), getn(tSay), tSay);
+		local Msg = format("Kinh nghiÖm %s, danh väng %d, ®iÓm s?m«n %d, ®iÓm c«ng tr¹ng %d, ®iÓm ch©n kh?%d", 28000000, 580, 580, 4200, 0)..",".."T?chän ®å trang søc cÊp 2 DiÖu D­¬ng"
+		Say(CK_NPC_NAME..format("HiÖn t¹i c?th?nhËn phÇn th­ëng:\n   <color=green>%s<color>\n<color=red>Khi kh«ng th?cho thªm phÇn th­ëng th?s?dïng ®iÓm kinh nghiÖm ®Ó thay th?color>", Msg), getn(tSay), tSay);
 		return 0;
 	end
 	if tonumber(nCurScore) < tonumber(nNeedScore) then
-		Say(CK_NPC_NAME..format("§iÓm n¨ng ®éng ch­a ®¹t <color=red>%d<color>, kh«ng thÓ nhËn th­ëng!", tonumber(nNeedScore)), 0);
+		Say(CK_NPC_NAME..format("§iÓm n¨ng ®éng ch­a ®¹t <color=red>%d<color>, kh«ng th?nhËn th­ëng!", tonumber(nNeedScore)), 0);
 		return 0;
 	end
 	if CK_TASK_GROUP:GetTaskBit(CK_TASK_GROUP.Award, 14) ~= 0 then
@@ -1845,7 +1845,7 @@ function ck_ScoreAward_func_14(nCurScore, nNeedScore, bTalk)
 	for i = 1, getn(CK_YAOYANG_JIEZI_2) do
 		tinsert(tDialog, format("%s/#ck_ScoreAward_func_14_Do(%d)", CK_YAOYANG_JIEZI_2[i][1], i));
 	end
-	tinsert(tDialog, "\nT«i chØ xem xem th«i/nothing");
+	tinsert(tDialog, "\nT«i ch?xem xem th«i/nothing");
 	Say(CK_NPC_NAME.."H·y chän lo¹i cÇn:", getn(tDialog), tDialog);	
 	
 end
@@ -1868,14 +1868,14 @@ function ck_ScoreAward_func_15(nCurScore, nNeedScore, bTalk)
 	if not bTalk then
 		local tSay = {
 			format("\n NhËn phÇn th­ëng/#ck_ScoreAward_func_15(%d,%d,1)", nCurScore, nNeedScore),
-			"\nT«i chØ xem xem th«i/nothing",
+			"\nT«i ch?xem xem th«i/nothing",
 		}
-		local Msg = format("Kinh nghiÖm %s, danh väng %d, ®iÓm s­ m«n %d, ®iÓm c«ng tr¹ng %d, ®iÓm ch©n khÝ %d", 32000000, 580, 580, 4200, 0)..",".."QuÇn ChiÕn Cuång  (Theo kiÓu h×nh, l­u ph¸i)"
-		Say(CK_NPC_NAME..format("HiÖn t¹i cã thÓ nhËn phÇn th­ëng:\n   <color=green>%s<color>\n<color=red>Khi kh«ng thÓ cho thªm phÇn th­ëng th× sÏ dïng ®iÓm kinh nghiÖm ®Ó thay thÕ<color>", Msg), getn(tSay), tSay);
+		local Msg = format("Kinh nghiÖm %s, danh väng %d, ®iÓm s?m«n %d, ®iÓm c«ng tr¹ng %d, ®iÓm ch©n kh?%d", 32000000, 580, 580, 4200, 0)..",".."QuÇn ChiÕn Cuång  (Theo kiÓu h×nh, l­u ph¸i)"
+		Say(CK_NPC_NAME..format("HiÖn t¹i c?th?nhËn phÇn th­ëng:\n   <color=green>%s<color>\n<color=red>Khi kh«ng th?cho thªm phÇn th­ëng th?s?dïng ®iÓm kinh nghiÖm ®Ó thay th?color>", Msg), getn(tSay), tSay);
 		return 0;
 	end
 	if tonumber(nCurScore) < tonumber(nNeedScore) then
-		Say(CK_NPC_NAME..format("§iÓm n¨ng ®éng ch­a ®¹t <color=red>%d<color>, kh«ng thÓ nhËn th­ëng!", tonumber(nNeedScore)), 0);
+		Say(CK_NPC_NAME..format("§iÓm n¨ng ®éng ch­a ®¹t <color=red>%d<color>, kh«ng th?nhËn th­ëng!", tonumber(nNeedScore)), 0);
 		return 0;
 	end
 	if CK_TASK_GROUP:GetTaskBit(CK_TASK_GROUP.Award, 15) ~= 0 then
@@ -1898,14 +1898,14 @@ function ck_ScoreAward_func_16(nCurScore, nNeedScore, bTalk)
 	if not bTalk then
 		local tSay = {
 			format("\n NhËn phÇn th­ëng/#ck_ScoreAward_func_16(%d,%d,1)", nCurScore, nNeedScore),
-			"\nT«i chØ xem xem th«i/nothing",
+			"\nT«i ch?xem xem th«i/nothing",
 		}
-		local Msg = format("Kinh nghiÖm %s, danh väng %d, ®iÓm s­ m«n %d, ®iÓm c«ng tr¹ng %d, ®iÓm ch©n khÝ %d", 36000000, 580, 580, 4200, 0)..",".."6 chuyÓn 90 cÊp"
-		Say(CK_NPC_NAME..format("HiÖn t¹i cã thÓ nhËn phÇn th­ëng:\n   <color=green>%s<color>\n<color=red>Khi kh«ng thÓ cho thªm phÇn th­ëng th× sÏ dïng ®iÓm kinh nghiÖm ®Ó thay thÕ<color>", Msg), getn(tSay), tSay);
+		local Msg = format("Kinh nghiÖm %s, danh väng %d, ®iÓm s?m«n %d, ®iÓm c«ng tr¹ng %d, ®iÓm ch©n kh?%d", 36000000, 580, 580, 4200, 0)..",".."6 chuyÓn 90 cÊp"
+		Say(CK_NPC_NAME..format("HiÖn t¹i c?th?nhËn phÇn th­ëng:\n   <color=green>%s<color>\n<color=red>Khi kh«ng th?cho thªm phÇn th­ëng th?s?dïng ®iÓm kinh nghiÖm ®Ó thay th?color>", Msg), getn(tSay), tSay);
 		return 0;
 	end
 	if tonumber(nCurScore) < tonumber(nNeedScore) then
-		Say(CK_NPC_NAME..format("§iÓm n¨ng ®éng ch­a ®¹t <color=red>%d<color>, kh«ng thÓ nhËn th­ëng!", tonumber(nNeedScore)), 0);
+		Say(CK_NPC_NAME..format("§iÓm n¨ng ®éng ch­a ®¹t <color=red>%d<color>, kh«ng th?nhËn th­ëng!", tonumber(nNeedScore)), 0);
 		return 0;
 	end
 	if CK_TASK_GROUP:GetTaskBit(CK_TASK_GROUP.Award, 16) ~= 0 then
@@ -1944,14 +1944,14 @@ function ck_ScoreAward_func_17(nCurScore, nNeedScore, bTalk)
 	if not bTalk then
 		local tSay = {
 			format("\n NhËn phÇn th­ëng/#ck_ScoreAward_func_17(%d,%d,1)", nCurScore, nNeedScore),
-			"\nT«i chØ xem xem th«i/nothing",
+			"\nT«i ch?xem xem th«i/nothing",
 		}
-		local Msg = format("Kinh nghiÖm %s, danh väng %d, ®iÓm s­ m«n %d, ®iÓm c«ng tr¹ng %d, ®iÓm ch©n khÝ %d", 40000000, 580, 580, 4200, 0)..",".."Vò khÝ ChiÕn Cuång(theo d¸ng ng­êi l­u ph¸i)"..",".."Trøng Linh Thó-Trung"
-		Say(CK_NPC_NAME..format("HiÖn t¹i cã thÓ nhËn phÇn th­ëng:\n   <color=green>%s<color>\n<color=red>Khi kh«ng thÓ cho thªm phÇn th­ëng th× sÏ dïng ®iÓm kinh nghiÖm ®Ó thay thÕ<color>", Msg), getn(tSay), tSay);
+		local Msg = format("Kinh nghiÖm %s, danh väng %d, ®iÓm s?m«n %d, ®iÓm c«ng tr¹ng %d, ®iÓm ch©n kh?%d", 40000000, 580, 580, 4200, 0)..",".."V?kh?ChiÕn Cuång(theo d¸ng ng­êi l­u ph¸i)"..",".."Trøng Linh Th?Trung"
+		Say(CK_NPC_NAME..format("HiÖn t¹i c?th?nhËn phÇn th­ëng:\n   <color=green>%s<color>\n<color=red>Khi kh«ng th?cho thªm phÇn th­ëng th?s?dïng ®iÓm kinh nghiÖm ®Ó thay th?color>", Msg), getn(tSay), tSay);
 		return 0;
 	end
 	if tonumber(nCurScore) < tonumber(nNeedScore) then
-		Say(CK_NPC_NAME..format("§iÓm n¨ng ®éng ch­a ®¹t <color=red>%d<color>, kh«ng thÓ nhËn th­ëng!", tonumber(nNeedScore)), 0);
+		Say(CK_NPC_NAME..format("§iÓm n¨ng ®éng ch­a ®¹t <color=red>%d<color>, kh«ng th?nhËn th­ëng!", tonumber(nNeedScore)), 0);
 		return 0;
 	end
 	if CK_TASK_GROUP:GetTaskBit(CK_TASK_GROUP.Award, 17) ~= 0 then
@@ -1966,7 +1966,7 @@ function ck_ScoreAward_func_17(nCurScore, nNeedScore, bTalk)
 	gf_Modify("Rep", 580);
 	gf_Modify("ShiMen", 580);
 	gf_Modify("JunGong", 4200);
-	gf_AddItemEx2({2, 1, 30727, 1, 4}, "Trøng Linh Thó-Trung", "CDKEY", "CDKEY", 0, 1)
+	gf_AddItemEx2({2, 1, 30727, 1, 4}, "Trøng Linh Th?Trung", "CDKEY", "CDKEY", 0, 1)
 	ahf_GetEquipByRouteBody(VET_ZHANKUANG_WEAPON)
 end
 
@@ -1974,14 +1974,14 @@ function ck_ScoreAward_func_18(nCurScore, nNeedScore, bTalk)
 	if not bTalk then
 		local tSay = {
 			format("\n NhËn phÇn th­ëng/#ck_ScoreAward_func_18(%d,%d,1)", nCurScore, nNeedScore),
-			"\nT«i chØ xem xem th«i/nothing",
+			"\nT«i ch?xem xem th«i/nothing",
 		}
-		local Msg = format("Kinh nghiÖm %s, danh väng %d, ®iÓm s­ m«n %d, ®iÓm c«ng tr¹ng %d, ®iÓm ch©n khÝ %d", 44000000, 580, 580, 4200, 0)..",".."NgÉu nhiªn ®¸ quý cÊp 4~6"..",".."Trøng Linh Thó-Trung"
-		Say(CK_NPC_NAME..format("HiÖn t¹i cã thÓ nhËn phÇn th­ëng:\n   <color=green>%s<color>\n<color=red>Khi kh«ng thÓ cho thªm phÇn th­ëng th× sÏ dïng ®iÓm kinh nghiÖm ®Ó thay thÕ<color>", Msg), getn(tSay), tSay);
+		local Msg = format("Kinh nghiÖm %s, danh väng %d, ®iÓm s?m«n %d, ®iÓm c«ng tr¹ng %d, ®iÓm ch©n kh?%d", 44000000, 580, 580, 4200, 0)..",".."NgÉu nhiªn ®¸ qu?cÊp 4~6"..",".."Trøng Linh Th?Trung"
+		Say(CK_NPC_NAME..format("HiÖn t¹i c?th?nhËn phÇn th­ëng:\n   <color=green>%s<color>\n<color=red>Khi kh«ng th?cho thªm phÇn th­ëng th?s?dïng ®iÓm kinh nghiÖm ®Ó thay th?color>", Msg), getn(tSay), tSay);
 		return 0;
 	end
 	if tonumber(nCurScore) < tonumber(nNeedScore) then
-		Say(CK_NPC_NAME..format("§iÓm n¨ng ®éng ch­a ®¹t <color=red>%d<color>, kh«ng thÓ nhËn th­ëng!", tonumber(nNeedScore)), 0);
+		Say(CK_NPC_NAME..format("§iÓm n¨ng ®éng ch­a ®¹t <color=red>%d<color>, kh«ng th?nhËn th­ëng!", tonumber(nNeedScore)), 0);
 		return 0;
 	end
 	if CK_TASK_GROUP:GetTaskBit(CK_TASK_GROUP.Award, 18) ~= 0 then
@@ -1996,7 +1996,7 @@ function ck_ScoreAward_func_18(nCurScore, nNeedScore, bTalk)
 	gf_Modify("Rep", 580);
 	gf_Modify("ShiMen", 580);
 	gf_Modify("JunGong", 4200);
-	gf_AddItemEx2({2, 1, 30727, 1, 4}, "Trøng Linh Thó-Trung", "CDKEY", "CDKEY", 0, 1)
+	gf_AddItemEx2({2, 1, 30727, 1, 4}, "Trøng Linh Th?Trung", "CDKEY", "CDKEY", 0, 1)
 	ck_GiveRandGem456()
 end
 
@@ -2004,14 +2004,14 @@ function ck_ScoreAward_func_19(nCurScore, nNeedScore, bTalk)
 	if not bTalk then
 		local tSay = {
 			format("\n NhËn phÇn th­ëng/#ck_ScoreAward_func_19(%d,%d,1)", nCurScore, nNeedScore),
-			"\nT«i chØ xem xem th«i/nothing",
+			"\nT«i ch?xem xem th«i/nothing",
 		}
-		local Msg = format("Kinh nghiÖm %s, danh väng %d, ®iÓm s­ m«n %d, ®iÓm c«ng tr¹ng %d, ®iÓm ch©n khÝ %d", 48000000, 580, 580, 4200, 0)..",".."Danh hiÖu [NhiÖm Vô §¹t Nh©n]"
-		Say(CK_NPC_NAME..format("HiÖn t¹i cã thÓ nhËn phÇn th­ëng:\n   <color=green>%s<color>\n<color=red>Khi kh«ng thÓ cho thªm phÇn th­ëng th× sÏ dïng ®iÓm kinh nghiÖm ®Ó thay thÕ<color>", Msg), getn(tSay), tSay);
+		local Msg = format("Kinh nghiÖm %s, danh väng %d, ®iÓm s?m«n %d, ®iÓm c«ng tr¹ng %d, ®iÓm ch©n kh?%d", 48000000, 580, 580, 4200, 0)..",".."Danh hiÖu [NhiÖm V?§¹t Nh©n]"
+		Say(CK_NPC_NAME..format("HiÖn t¹i c?th?nhËn phÇn th­ëng:\n   <color=green>%s<color>\n<color=red>Khi kh«ng th?cho thªm phÇn th­ëng th?s?dïng ®iÓm kinh nghiÖm ®Ó thay th?color>", Msg), getn(tSay), tSay);
 		return 0;
 	end
 	if tonumber(nCurScore) < tonumber(nNeedScore) then
-		Say(CK_NPC_NAME..format("§iÓm n¨ng ®éng ch­a ®¹t <color=red>%d<color>, kh«ng thÓ nhËn th­ëng!", tonumber(nNeedScore)), 0);
+		Say(CK_NPC_NAME..format("§iÓm n¨ng ®éng ch­a ®¹t <color=red>%d<color>, kh«ng th?nhËn th­ëng!", tonumber(nNeedScore)), 0);
 		return 0;
 	end
 	if CK_TASK_GROUP:GetTaskBit(CK_TASK_GROUP.Award, 19) ~= 0 then
@@ -2025,19 +2025,19 @@ function ck_ScoreAward_func_19(nCurScore, nNeedScore, bTalk)
 	gf_Modify("JunGong", 4200);
 	AddTitle(68, 4);
 	SetTitleTime(68, 4, GetTime() + 60 * 24 * 3600);
-	Msg2Player(format("NhËn ®­îc danh hiÖu [%s]", "NhiÖm Vô §¹t Nh©n"))
+	Msg2Player(format("NhËn ®­îc danh hiÖu [%s]", "NhiÖm V?§¹t Nh©n"))
 end
 
 
 function ck_chuyensinh()
 	local tSay = 	{
-							"Tu luyÖn theo h­íng Long Tö!/#ck_select_translife(1)",
-							"Tu luyÖn theo h­íng Hæ Tö!/#ck_select_translife(2)",
-							"Tu luyÖn theo h­íng Phông Tö!/#ck_select_translife(4)",
-							"Tu luyÖn theo h­íng ¦ng Tö!/#ck_select_translife(3)",
-							"Ta suy nghÜ l¹i ®·/nothing",
+							"Tu luyÖn theo h­íng Long T?/#ck_select_translife(1)",
+							"Tu luyÖn theo h­íng H?T?/#ck_select_translife(2)",
+							"Tu luyÖn theo h­íng Phông T?/#ck_select_translife(4)",
+							"Tu luyÖn theo h­íng ¦ng T?/#ck_select_translife(3)",
+							"Ta suy ngh?l¹i ®·/nothing",
 						}
-	Say("Hçn Nguyªn C«ng thùc chÊt cã 4 h­íng tu luyÖn, ng­¬i muèn theo h­íng nµo?",getn(tSay),tSay)
+	Say("Hçn Nguyªn C«ng thùc chÊt c?4 h­íng tu luyÖn, ng­¬i muèn theo h­íng nµo?",getn(tSay),tSay)
 end
 
 function ck_select_translife(nType)
@@ -2050,7 +2050,7 @@ function ck_select_translife(nType)
 		local nTransCount_1 = GetTranslifeCount()	
 		RemoveTitle(ck_tb_translife_tittle[nTransCount_1][nRoute][2], ck_tb_translife_tittle[nTransCount_1][nRoute][3])
 	end
-	-- Set sè lÇn chuyÓn sinh
+	-- Set s?lÇn chuyÓn sinh
 	gf_SetTaskByte(TRANSLIFE_TASK_ID, TRANSLIFE_BYTE_COUNT, 5) --5 lÇn chuyÓn sinh
 	-- Set h­íng chuyÓn sinh
 	gf_SetTaskByte(TRANSLIFE_TASK_ID, TRANSLIFE_BYTE_FACTION, nType)
@@ -2063,16 +2063,16 @@ function ck_select_translife(nType)
 	SetTask(TRANSLIFE_MISSION_ID,36)
 	ResetProperty()
 	SetLevel(90,0)
-	Msg2Player("§ang tu luyÖn Hçn Nguyªn C«ng chiªu thøc thø nhÊt...")
-	AddGlobalNews("Tin ®ån chÊn ®éng giang hå: nghe nãi Cao Thñ Vâ L©m <color=green>"..GetName().."<color> tu luyÖn theo h­íng <color=yellow>"..tb_translife_seal[nType][3].."<color> ®· lÜnh héi ®­îc 2 thµnh <color=green>Hçn Nguyªn C«ng<color>!")	
+	Msg2Player("§ang tu luyÖn Hçn Nguyªn C«ng chiªu thøc th?nhÊt...")
+	AddGlobalNews("Tin ®ån chÊn ®éng giang h? nghe nãi Cao Th?V?L©m <color=green>"..GetName().."<color> tu luyÖn theo h­íng <color=yellow>"..tb_translife_seal[nType][3].."<color> ®· lÜnh héi ®­îc 2 thµnh <color=green>Hçn Nguyªn C«ng<color>!")	
 	WriteLogEx("Chuyen Sinh","thµnh c«ng lÇn "..nTransCount.." theo h­íng "..tb_translife_seal[nType][3])	
-	--====phÇn th­ëng cña cÊp ®æi th­ëng ë trªn
+	--====phÇn th­ëng cña cÊp ®æi th­ëng ?trªn
 	gf_Modify("Exp", 9000000);
 	gf_Modify("Rep", 580);
 	gf_Modify("ShiMen", 580);
 	gf_Modify("JunGong", 4200);
 	ahf_GetYaoYangWeaponRand(1);
-	gf_AddItemEx2({2, 1, 30614, 1}, "L«i Hæ Tinh Ph¸ch", "CDKEY", "CDKEY", 0, 1);	
+	gf_AddItemEx2({2, 1, 30614, 1}, "L«i H?Tinh Ph¸ch", "CDKEY", "CDKEY", 0, 1);	
 	CK_TASK_GROUP:SetTaskBit(CK_TASK_GROUP.Award, 9, 1);
 	--========
 	DoWait(15,15,10)		
@@ -2098,33 +2098,33 @@ end
 
 function ck_phucsinh1()
 	local tSay = 	{
-							"Tu luyÖn theo h­íng Long Tö!/#ck_select_translife_ps(1)",
-							"Tu luyÖn theo h­íng Hæ Tö!/#ck_select_translife_ps(2)",
-							"Tu luyÖn theo h­íng Phông Tö!/#ck_select_translife_ps(4)",
-							"Tu luyÖn theo h­íng ¦ng Tö!/#ck_select_translife_ps(3)",
-							"Ta suy nghÜ l¹i ®·/nothing",
+							"Tu luyÖn theo h­íng Long T?/#ck_select_translife_ps(1)",
+							"Tu luyÖn theo h­íng H?T?/#ck_select_translife_ps(2)",
+							"Tu luyÖn theo h­íng Phông T?/#ck_select_translife_ps(4)",
+							"Tu luyÖn theo h­íng ¦ng T?/#ck_select_translife_ps(3)",
+							"Ta suy ngh?l¹i ®·/nothing",
 						}
-	Say("Hçn Nguyªn C«ng thùc chÊt cã 4 h­íng tu luyÖn, ng­¬i muèn theo h­íng nµo?",getn(tSay),tSay)
+	Say("Hçn Nguyªn C«ng thùc chÊt c?4 h­íng tu luyÖn, ng­¬i muèn theo h­íng nµo?",getn(tSay),tSay)
 end
 
 function ck_select_translife_ps(nType)
 	local nChuyenSinh = (GetTranslifeCount() + GetPlayerRebornParam(0)) * 100 + GetLevel()
 	local nRoute = GetPlayerRoute()
-	local tbType = {"Long Tö", "Hæ Tö", "¦ng Tö", "Phông Tö"}
+	local tbType = {"Long T?, "H?T?, "¦ng T?, "Phông T?}
 	if IsPlayerDeath() ~= 0 then 
-		Talk(1, "", "HiÖn t¹i kh«ng thÓ nhËn th­ëng!!!")
+		Talk(1, "", "HiÖn t¹i kh«ng th?nhËn th­ëng!!!")
 		return
 	end	
 --	if nChuyenSinh < 599 then -- b¾t chuyÓn sinh 7
---		Talk(1,"","<color=green>Lôc Tróc ¤ng: <color>Kinh nghiÖm chuyÓn sinh cña ®¹i hiÖp kh«ng ®ñ, ta kh«ng thÓ gióp g× ®­îc c¶ !!!!")
+--		Talk(1,"","<color=green>Lôc Tróc ¤ng: <color>Kinh nghiÖm chuyÓn sinh cña ®¹i hiÖp kh«ng ®ñ, ta kh«ng th?gióp g?®­îc c?!!!!")
 --		return 0	
 --	end	
 	if nChuyenSinh >= 690 then -- b¾t chuyÓn sinh 7
-		Talk(1,"","<color=green>Lôc Tróc ¤ng: <color>Kinh nghiÖm chuyÓn sinh cña ®¹i hiÖp qu¸ cao, ta kh«ng thÓ gióp g× ®­îc c¶ !!!!")
+		Talk(1,"","<color=green>Lôc Tróc ¤ng: <color>Kinh nghiÖm chuyÓn sinh cña ®¹i hiÖp qu?cao, ta kh«ng th?gióp g?®­îc c?!!!!")
 		return 0	
 	end
 --	if MeridianGetLevel() < 2 then	
---		Talk(1,"","Kinh m¹ch cña ®¹i hiÖp ch­a ®¹t cÊp ®é Vâ T­íng !!!!")
+--		Talk(1,"","Kinh m¹ch cña ®¹i hiÖp ch­a ®¹t cÊp ®é V?T­íng !!!!")
 --		return 0			
 --	end
 	DelItem(2,0,1083,2)
@@ -2148,12 +2148,12 @@ function ck_select_translife_ps(nType)
 			BigDelItem(G,D,Pnew,BigGetItemCount(G,D,Pnew))
 			BigDelItem(G,D,Pnew1,BigGetItemCount(G,D,Pnew1))			
 			BigDelItem(G,D,Pnew2,BigGetItemCount(G,D,Pnew2))					
---			gf_AddItemEx2({G, D, (30000 + GetBody()), nCount,4, lvatt1, att1, lvatt2, att2, lvatt3, att3},"Tø Linh ViÖt Trang","Chuyen Sinh","nhËn ngo¹i trang",120*24*3600,1)
+--			gf_AddItemEx2({G, D, (30000 + GetBody()), nCount,4, lvatt1, att1, lvatt2, att2, lvatt3, att3},"T?Linh ViÖt Trang","Chuyen Sinh","nhËn ngo¹i trang",120*24*3600,1)
 		end
 
 	RemoveTitle(tb_translife_tittle[nTransCount][nRoute][2], tb_translife_tittle[nTransCount][nRoute][3])	
 
-	local tbVanSu = {"V¨n Sö ngo¹i trang",0,108,570,188}
+	local tbVanSu = {"V¨n S?ngo¹i trang",0,108,570,188}
 	local nPVanSu = tbVanSu[4]  + GetBody() - 1
 	for i = 0, 2 do
 		BigDelItem(0, 108 + i, nPVanSu, BigGetItemCount(0, 108 + i, nPVanSu))	
@@ -2162,7 +2162,7 @@ function ck_select_translife_ps(nType)
 	PlayerReborn(1,nType) -- ChuyÓn Sinh 6 thµnh c«ng		
 	SetLevel(90,0)
 	AddTitle(61,05)
---	SetTask(TSK_CS6_TULINH,5)		--hoµn thµnh nhÖm vô chuyÓn sinh
+--	SetTask(TSK_CS6_TULINH,5)		--hoµn thµnh nhÖm v?chuyÓn sinh
 --	VNG_SetTaskPos(TSK_THANGTIEN_PHUCSINH, 2, 1, 1)
  	gf_WriteLogEx("CD KEY", "chuyÓn sinh thµnh c«ng", 1, "CD KEY phan thuong 16")	
  	local nGetExp = GetExp()
@@ -2173,7 +2173,7 @@ function ck_select_translife_ps(nType)
 		end
 	end
 	ModifyExp(-GetExp())
-	--====phÇn th­ëng cña cÊp ®æi th­ëng ë trªn
+	--====phÇn th­ëng cña cÊp ®æi th­ëng ?trªn
 	gf_Modify("Exp", 36000000);
 	gf_Modify("Rep", 580);
 	gf_Modify("ShiMen", 580);
@@ -2181,5 +2181,5 @@ function ck_select_translife_ps(nType)
 	CK_TASK_GROUP:SetTaskBit(CK_TASK_GROUP.Award, 16, 1);
 	--
 	Msg2Player("Chóc mõng ®¹i hiÖp ®· Phôc Sinh thµnh c«ng theo h­íng "..tbType[nType])
-	Say("Chóc mõng ®¹i hiÖp ®· lÜnh ngé thµnh c«ng bÝ kÝp gia truyÒn Tø Linh Phôc Tinh! H·y ®¨ng nhËp l¹i.",1,"Tho¸t!/nothing")
+	Say("Chóc mõng ®¹i hiÖp ®· lÜnh ng?thµnh c«ng b?kÝp gia truyÒn T?Linh Phôc Tinh! H·y ®¨ng nhËp l¹i.",1,"Tho¸t!/nothing")
 end
