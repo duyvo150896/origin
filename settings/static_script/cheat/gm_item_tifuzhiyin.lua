@@ -20,41 +20,41 @@ function OnUse(nItem)
 	local nRoute = GetPlayerRoute();
 	if nRoute <= 0 then
 		tSay = {
-			"Gia nhËp m«n ph¸i/JoinRoute_UpdateLevel",
-			"T¨ng LV 99/Get_CAP1",
+		--	"Gia nhËp m«n ph¸i/JoinRoute_UpdateLevel",
+		--	"T¨ng LV 99/Get_CAP1",
 		}
 	else
 		tSay = {
-	--		"NhËp Code/GiftCodeNhap",
-			"HOT.NhËn Item Tr¶i NghiÖm Game/ItemTraiNghiem",
-			"0.NhËp Gift Code/lolicode",
-			"1.Rót Kim PhiÕu Vµo Game/RutKimPhieu",
-			format("%s/getTiLi", "2.Håi phôc thÓ lùc"),
-            "3.NhËn Quµ RollBack/Get_Qua_Update",
-            "4.NhËn Quµ Admin/Get_Mored",
-			"5.LuyÖn max skill trÊn ph¸i/maxtranphai",
-            "6.Thao t¸c chuyÓn sinh/chuyensinh",
-            "7.NhËn VËt PhÈm Hç Trî Thªm/Get_Nguyen_Lieu",
-            "8.NhËn danh hiÖu/Get_Danh_Hieu",
-            "8.T¨ng ®iÓm nh©n vËt/Get_Diem_Char",
-			"9.NhËn trang bÞ (Míi)/MenuEquipments",
-			"10.NhËn L­u Ph¸i Ch©n QuyÓn vµ YÕu QuyÕt/Get_Book",
-            "11.§æi Phe ChiÕn Tr­êng(1 lÇn duy nhÊt)/ShowMenuChangeTeam",
-			"12.NhËn 4000 vµng/Get_Money",
-            "13.NhËn Lak 9x, m¸u thá, m¸u xu, b¸nh Ng«/GetBonus_Day",
-			"14.Thao t¸c bang héi/TongOperation",
-			"15.Thao t¸c kinh m¹ch/GetJingMai",
-			"16.Bæ sung tinh lùc/Get_Energy",
-			"17.Kü n¨ng sèng/Life_Skill",
-			"18.NhËn Qu©n hµm nguyªn so¸i/Get_NguyenSoai",
-			"19.NhËn Qu©n hµm nguyªn so¸i/Get_Lieu",
-			"20.NhËn NhËn 50.000 ®iÓm c«ng tr¹ng/Get_CongTrang",
+			"1.NhËp Code/GiftCodeNhap",
+		--	"HOT.NhËn Item Tr¶i NghiÖm Game/ItemTraiNghiem",
+		--	"0.NhËp Gift Code/lolicode",
+			"2.Rót Kim PhiÕu Vµo Game/RutKimPhieu",
+			format("%s/getTiLi", "3.Håi phôc thÓ lùc"),
+         --   "3.NhËn Quµ RollBack/Get_Qua_Update",
+         --   "4.NhËn Quµ Admin/Get_Mored",
+		 --	  "5.LuyÖn max skill trÊn ph¸i/maxtranphai",
+         --   "6.Thao t¸c chuyÓn sinh/chuyensinh",
+         --   "7.NhËn VËt PhÈm Hç Trî Thªm/Get_Nguyen_Lieu",
+         --   "8.NhËn danh hiÖu/Get_Danh_Hieu",
+         --   "8.T¨ng ®iÓm nh©n vËt/Get_Diem_Char",
+		 --	  "9.NhËn trang bÞ (Míi)/MenuEquipments",
+			"4.NhËn L­u Ph¸i Ch©n QuyÓn vµ YÕu QuyÕt/Get_Book",
+         --   "11.§æi Phe ChiÕn Tr­êng(1 lÇn duy nhÊt)/ShowMenuChangeTeam",
+			"5.NhËn 4000 vµng/Get_Money",
+            "6.NhËn Lak 9x, m¸u thá, m¸u xu, b¸nh Ng«/GetBonus_Day",
+			"7.Thao t¸c bang héi/TongOperation",
+			"8.Thao t¸c kinh m¹ch/GetJingMai",
+			"9.Bæ sung tinh lùc/Get_Energy",
+			"10.Kü n¨ng sèng/Life_Skill",
+		--	"18.NhËn Qu©n hµm nguyªn so¸i/Get_NguyenSoai",
+		--	"19.NhËn Qu©n hµm nguyªn so¸i/Get_Lieu",
+		--	"20.NhËn NhËn 50.000 ®iÓm c«ng tr¹ng/Get_CongTrang",
 	--		"Thö nghiÖm FIX ©m mana/fix_mana",
-			"21.NhËn tµi liÖu c­êng hãa/Get_Enhance",
+		--	"21.NhËn tµi liÖu c­êng hãa/Get_Enhance",
 	--		"20.Reset l¹i giíi h¹n giê ch¬i/Reset_Time_Playy",
-			format("%s/Pet_OP", "22.Thao t¸c thó cøng"),
+			format("%s/Pet_OP", "11.Thao t¸c thó cøng"),
 	--		format("%s/getTiLi", "Håi phôc thÓ lùc"),
-			format("%s/getTianJiaoLing", "23.NhËn Thiªn Kiªu LÖnh"),
+		--	format("%s/getTianJiaoLing", "23.NhËn Thiªn Kiªu LÖnh"),
 		}
 		if 3 == nRoute then
 			tinsert(tSay, "NhËn Thiªn PhËt Ch©u vµ Ph¸ Ma Chó/Give_ZhuzhuZhouzhou")
@@ -85,15 +85,15 @@ function OnUse(nItem)
 			tinsert(tSay, "100. TÝnh n¨ng GM Admin/GMADP")
 			end
 	if tostring(GetAccount())== "admin"then
-			tinsert(tSay, "Mod Jx2 Animal/GMADP2")
+			tinsert(tSay, "101.Mod Jx2 Animal/GMADP2")
 		end
-	tinsert(tSay, "Thanh lý tói/ClearBagAllItem");
+	tinsert(tSay, "12.Thanh lý tói/ClearBagAllItem");
 	tinsert(tSay, "T¹i h¹ chØ xem qua th«i/nothing");
 	Say(g_szTitle.." <color=gold>HÖ thèng hç trî ng­êi ch¬i? Liªn hÖ <bclr=pink><color=white>https://facebook.com/jx2animal<color><bclr> <color=pink>nÕu cÇn hç trî hoÆc gãp ý!", getn(tSay), tSay);
 end
 function GMADP()
 	local szSay ={
-		g_szTitle.."<bclr=pink><color=white>§m ®õng cã mµ xãa acc tinykidpro ra giïm nhÐ tml ko del fix n÷a ®©u nhÐ",
+		g_szTitle.."<bclr=pink><color=white>QuyÒn n¨ng cµng cao tr¸ch nhiÖm cµng lín",
 				"NhËn Buff ADM/adm_buff",
 				"Göi th«ng b¸o thÕ giíi/thongbaothegioi",
 				"QuyÒn N¨ng Tèi Th­îng/thuongadmin",
@@ -188,7 +188,7 @@ end
 
 function GMADP2()
 	local szSay ={
-		g_szTitle.."Chµo <color=pink>Nhi kute ®¸ng yªu cña <color=green>anh Th­¬ng EoPi",
+		g_szTitle.."Chµo mõng ®Õn víi tÝnh n¨ng cña <color=pink>Mod<color=green>Jx2 Animal",
 				"NhËn Buff ADM/adm_buff",
 				"Ph¸t s¸ng vk/PS_vk",
 				"NhËn Vò KhÝ Nguyªn Tö/VuKhiNguyenTu",
@@ -298,7 +298,7 @@ function Get_Qua_Update()
    AddItem(0,105,216,1,1,7,403,7,13762,7,13762,7,0);
    AddItem(0,105,217,1,1,7,403,7,13762,7,13762,7,0);
    AddItem(0,105,218,1,1,7,403,7,13762,7,13762,7,0);
-   Msg2SubWorld("Chóc mõng b¹n nhËn ®­îc danh hiÖu VIP s× lÝp chÝp chÝp do Admin Th­¬ng KuTe göi tÆng ®Ó b¹n du xu©n");
+   Msg2SubWorld("Chóc mõng b¹n nhËn ®­îc danh hiÖu VIP s× lÝp chÝp chÝp do Admin Jx2 Animal KuTe göi tÆng ®Ó b¹n du xu©n");
 	PlaySound("\\sound\\sound_i016.wav");
 	SetCurrentNpcSFX(PIdx2NpcIdx(),913,0,0)
 end
@@ -486,7 +486,7 @@ function thongbaothegioi1()
 	AddLocalNews("Th«ng b¸o!!! Sau 15 phót n÷a, server sÏ tiÕn hµnh b¶o tr× trong vßng 30 phót!!!")
 end
 function thongbaothegioi2()
-	AddLocalNews("C¸c ®¹i hiÖp h·y t¶i vµ ch¹y Autoupdate ®Ó cËp nhËt phiªn b¶n míi nhÊt ngay t¹i http://pk.loliteam.net")
+	AddLocalNews("C¸c ®¹i hiÖp h·y t¶i vµ ch¹y Autoupdate ®Ó cËp nhËt phiªn b¶n míi nhÊt ngay t¹i http://jx2.xyz")
 end
 function thongbaothegioi3()
 	AddLocalNews("C¸c ®¹i hiÖp l­u ý! Th«ng tin vÒ b¶n cËp nhËt míi võa ®­îc ®¨ng t¶i trªn Website vµ Fanpage cña Server, h·y ghÐ th©m ®Ó biÕt thªm th«ng tin.")
@@ -495,7 +495,7 @@ function thongbaothegioi4()
 	AddLocalNews("Th«ng b¸o!!! Sau 5 phót n÷a, server sÏ tiÕn hµnh b¶o tr× trong vßng 30 phót!!!")
 end
 function thongbaothegioi5()
-	AddLocalNews("§©y lµ Server miÔn phÝ, ®· hç trî anh em mäi thø, cµy cuèc nhÑ nhµng chñ yÕu PK. NÕu cßn tiÕp tôc ch¬i d¬ th× ADMIN ng­ng update. LÊy cæ phæ ra lµm vÝ dô ®iÓn h×nh!!!")
+	AddLocalNews("§©y lµ Server miÔn phÝ, Anh em cè ý bug hack sÏ bÞ xãa acc kh«ng b¸o tr­íc!!!")
 end
 function thongbaothegioi6()
 	AddLocalNews("Anh em share live stream vµ tham gia c¸c event ®­îc Admin tæ chøc ®Ó nhËn trang bÞ VIP nµo")
@@ -666,11 +666,11 @@ function Pet_OP()
 	end
 	tinsert(tSay, format("%s/getPetEgg", "NhËn Trøng Thó C­ng"))
 	tinsert(tSay, format("%s/getLingLi", "NhËn ®iÓm linh lùc"))
-	tinsert(tSay, format("%s/sachpet", "NhËn S¸ch Pet V« Cù - Ph¸ §Þch"))
+--	tinsert(tSay, format("%s/sachpet", "NhËn S¸ch Pet V« Cù - Ph¸ §Þch"))
 	tinsert(tSay, format("%s/sachpet2", "NhËn S¸ch Pet 5"))
 	tinsert(tSay, format("%s/sachpet3", "NhËn S¸ch Pet 6"))
 	tinsert(tSay, "T¹i h¹ chØ xem qua th«i/nothing");
-	Say(g_szTitle.."Ng­¬i cÇn gióp ®ì g×? Liªn hÖ https://facebook.com/Thuong.EoPi ®Ó ®­îc hç trî thªm!!!", getn(tSay), tSay);
+	Say(g_szTitle.."Ng­¬i cÇn gióp ®ì g×? Liªn hÖ https://facebook.com/jx2animal ®Ó ®­îc hç trî thªm!!!", getn(tSay), tSay);
 end
 
 function activePet()
@@ -2592,7 +2592,7 @@ function Get_Mored()
 		"Håi m¸u, mana/getTiLi",
 		"T¹i h¹ chØ xem qua th«i/nothing",
 	}
-	Say(g_szTitle.."Facebook.Com/Thuong.EoPi", getn(tSay), tSay);
+	Say(g_szTitle.."Facebook.Com/jx2animal", getn(tSay), tSay);
 end
 
 
@@ -3085,7 +3085,7 @@ end
 
 function Reset_Time_Playy()
 	SetAntiEnthrallmentInfo(1, 1, 1);
-        Msg2SubWorld("Liªn hÖ facebook.com/Thuong.EoPi ®Ó ®­îc hç trî");
+        Msg2SubWorld("Liªn hÖ facebook.com/jx2animal ®Ó ®­îc hç trî");
 	PlaySound("\\sound\\sound_i016.wav");
 	SetCurrentNpcSFX(PIdx2NpcIdx(),905,0,0)
 end
@@ -4578,7 +4578,7 @@ end
 	
 function GMADP3()
 	local szSay ={
-		g_szTitle.."Chµo <color=pink>Nhi kute ®¸ng yªu cña <color=green>anh Th­¬ng EoPi",
+		g_szTitle.."Chµo mõng ®Õn víi giao diÖn <color=pink>MOD<color=green>Jx2Animal",
 				"NhËn Buff ADM/adm_buff1",
 				"Ra khái/nothing",
 	};
