@@ -5579,4 +5579,6 @@ ID	Title	AwrdItem	NeedSex	NeedBody	NeedRoute	AwardTimes	GlobalMsg	ExchangeMode	T
 
 50176	Phong Th≠Îng L÷nh: Ph∏ Qu©n	2;1;30560;1						50176	720	
 50177	Phong Th≠Îng L÷nh: Ph∏ Qu©n	2;1;30561;1						50177	720	
-50178	Phong Th≠Îng L÷nh: Ph∏ Qu©n	2;1;30562;1						50178	720		
+50178	Phong Th≠Îng L÷nh: Ph∏ Qu©n	2;1;30562;1						50178	720	
+
+50179	Kim Phi’u 1k	2;1;50022;1						50179	720	

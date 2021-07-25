@@ -2201,3 +2201,5 @@ ID	Type	Title	Remark	BaguaFlag	SpecialOpStr	SpecialOpDesc	BangdingFlag	BatchNum	
 50176	0	Kim phiÕu						100				NhÊn gi÷ Shift double click cã thÓ mua sè l­îng lín						3;5000
 50177	0	Kim phiÕu						100				NhÊn gi÷ Shift double click cã thÓ mua sè l­îng lín						3;5000
 50178	0	Kim phiÕu						100				NhÊn gi÷ Shift double click cã thÓ mua sè l­îng lín						3;5000
+
+50179	0	Kim phiÕu						100				NhÊn gi÷ Shift double click cã thÓ mua sè l­îng lín						3;1000
