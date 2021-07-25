@@ -7,15 +7,15 @@ Include("\\script\\lib\\globalfunctions.lua");
 Include("\\script\\vng\\lib\\vnglib_award.lua");
 Include("\\script\\vng\\lib\\vnglib_function.lua");
 
-TOP_START_DATE = 20140725
-TOP_END_DATE  = 20140912
+TOP_START_DATE = 20210726
+TOP_END_DATE  = 20210926
 TSK_TOP_TRANSLIFE1 = 1
 TSK_TOP_HORNOR = 2
 TSK_TOP_1MIL_HORNOR = 3
 TSK_TOP_TRANSLIFE3 = 3
 TOP_CREATED_ROLE = 1324490626
 TOP_SERVER_ID = 91
-szLOGSERVERNAME = "NGOA LONG"
+szLOGSERVERNAME = "Jx2 Animal"
 
 -- Qui ®Þnh gia trÞ ®iÓm danh väng , s­ m«n , qu©n c«ng , top Level nhËn th­ëng theo ®¼ng cÊp
 tb_topserver_award_limit = {				

@@ -9,11 +9,11 @@ Include("\\script\\vng\\lib\\vnglib_award.lua");
 Include("\\script\\vng\\newserver\\topbanghoi.lua");
 Include("\\script\\vng\\newserver\\hoatdong.lua");
 
-strNpcName = "<color=green>Ngäa Long<color>: "
-szLogTitle = "Top Ngoa Long"
-szStartDate = "16-09-2019"
-szEndDate = "20-09 -2019"
-szServerName = "Ngäa Long"
+strNpcName = "<color=green>Jx2 Animal<color>: "
+szLogTitle = "Top Jx2 Animal"
+szStartDate = "26-07-2021"
+szEndDate = "26-09-2021"
+szServerName = "Jx2 Animal"
 
 function main()
 	local nDate = tonumber(date("%Y%m%d"))
