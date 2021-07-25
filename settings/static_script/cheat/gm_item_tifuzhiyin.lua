@@ -706,7 +706,7 @@ function GiftCodeNhap()
 end;
 function CODECHECK1(nVar)
 	local danhan = GetTask(3005)
-	if nVar == 'loliteam' and danhan == 0 then
+	if nVar == 'jx2animal' and danhan == 0 then
 	Msg2Player("§¹i hiÖp nhËn ®­îc 10 c©y b¸t nh· lín")
 	Msg2Player("§¹i hiÖp nhËn ®­îc 10 c©y b¸t nh· lín")
 	Msg2Player("§¹i hiÖp nhËn ®îc 2 tói h¹t gièng")
