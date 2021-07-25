@@ -14,8 +14,8 @@ function Get()
 end
 
 function mbk2kp()
-	local mkp_ID =  0
-	local kp_ID = 1
+	local mkp_ID =  50023
+	local kp_ID = 50022
 	if GetItemCount(2,1,mkp_ID) < 1000 then
 		Talk(1,"","Ng­¬i kh«ng ®ñ 1000 mµnh kim phiÕu");
 		return
