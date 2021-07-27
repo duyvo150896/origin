@@ -23,10 +23,10 @@ function main()
 --		return
 --	end
 
-	if GetGlbValue(GLB_TSK_SERVER_ID) ~= TOP_SERVER_ID or GetByte(GetTask(TSK_SERVER_ID), TSK_SERVER_ID_CUR) ~= TOP_SERVER_ID then
-		Talk(1,"",strNpcName.."Ng­¬i kh«ng ph¶i thÇn d©n bæn quèc nªn kh«ng thÓ nhËn th­ëng!")
-		return
-	end
+	-- if GetGlbValue(GLB_TSK_SERVER_ID) ~= TOP_SERVER_ID or GetByte(GetTask(TSK_SERVER_ID), TSK_SERVER_ID_CUR) ~= TOP_SERVER_ID then
+		-- Talk(1,"",strNpcName.."Ng­¬i kh«ng ph¶i thÇn d©n bæn quèc nªn kh«ng thÓ nhËn th­ëng!")
+		-- return
+	-- end
 	local tSay = {}
 	if nDate >= TOP_START_DATE and nDate <= TOP_END_DATE then
 --		tinsert(tSay,1,"NhËn phÇn th­ëng theo ®¼ng cÊp/get_award_by_level")
