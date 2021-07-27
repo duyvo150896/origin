@@ -107,9 +107,9 @@ function main()
 	--Init_golden_chest() -- R≠¨ng HKLB
 	Init_pet_fighting() -- Pet vs pet
 	Add_PetNpc() -- Bæc ß»u L∑o Nh©n
---	if GetGlbValue(GLB_TSK_SERVER_ID) == 58 then
+	if GetGlbValue(GLB_TSK_SERVER_ID) == 0 then
 		Add_HoangHuynh()  -- NPC dua top Hoang Ung
---	end
+	end
 	Add_GoldenCard_Manager(); -- B∏n code HKLB ingame
 	Add_XaPhu() -- Thuy“n gia
 	Add_Pet_TaiXu() -- NPC Th∏i H≠ Bπn ßÂng Hµnh
@@ -2208,7 +2208,7 @@ end
 function Add_HoangHuynh()
 	local nDate = tonumber(date("%y%m%d"))
 	local npcIndex = 0
-	if nDate >= 100716 then
+	if nDate >= 210720 then
 		npcIndex = CreateNpc("Tr«n B t Vi", "Jx2 Animal", 200,1407,2857);
 		SetNpcScript(npcIndex, "\\script\\online\\viet_event\\top_server\\npc_top.lua");
 	end

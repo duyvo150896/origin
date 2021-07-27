@@ -133,12 +133,12 @@ end
 function ck_ActTilte()
 	local tSay = {}
 	local nCheckServer = GetGlbValue(GLB_TSK_SERVER_ID)
-	-- if nCheckServer == 92 then	-- or nCheckServer == 91
+	if nCheckServer == 0 then	-- or nCheckServer == 91
 		tinsert(tSay,"Vâ L©m T©n Tó/ck_ActTilte_1");
-	-- else
-		-- tinsert(tSay,"L·o ChiÕn H÷u/ck_ActTilte_2");
-		-- tinsert(tSay,"Ng­êi N¨ng §éng/ck_ActTilte_3");
-	-- end
+	else
+		tinsert(tSay,"L·o ChiÕn H÷u/ck_ActTilte_2");
+		tinsert(tSay,"Ng­êi N¨ng §éng/ck_ActTilte_3");
+	end
 	tinsert(tSay,"T«i chØ xem xem th«i/nothing");
 	local msg = format("Thêi gian kÕt thóc kÝch ho¹t lµ %d/%d/%d", CK_START_ACT[3], CK_START_ACT[2], CK_START_ACT[1]);
 	Say(CK_NPC_NAME..format("%s muèn kÝch ho¹t danh hiÖu nµo?<color=red>%s<color>", gf_GetPlayerSexName(), msg), getn(tSay), tSay);
@@ -173,8 +173,7 @@ function ck_ActTilte_1()
 	DebugOutput(GetExtPoint(1), GetExtPoint(2))
 --	local nExtPoint = GetExtPoint(EXT_CDKEY)
 	--if GetExtPoint(1) == 1 and GetExtPoint(2) ~= 1 then
-	-- if GetBit(nExtPoint,5) == 1 and GetBit(nExtPoint,6) ~= 1 then
-	if GetLevel() < 90 then
+	if GetBit(nExtPoint,5) == 0 and GetBit(nExtPoint,6) ~= 1 then
 		if CK_ES_SWITCH == 0 then
 			Say(CK_NPC_NAME.."M¸y chñ nµy t¹m thêi kh«ng më nhËn danh hiÖu <color=gold>Vâ L©m T©n Tó<color>!", 0);
 			return 0;
@@ -217,8 +216,7 @@ function ck_ActTilte_2()
 	DebugOutput(GetExtPoint(3), GetExtPoint(4))
 --	local nExtPoint = GetExtPoint(EXT_CDKEY)
 	--if GetExtPoint(1) == 1 and GetExtPoint(2) ~= 1 then
-	-- if GetBit(nExtPoint,1) == 1 and GetBit(nExtPoint,2) ~= 1 then
-if GetLevel() >= 90 then
+	if GetBit(nExtPoint,1) == 1 and GetBit(nExtPoint,2) ~= 1 then
 		CK_TASK_GROUP:SetTaskBit(CK_TASK_GROUP.Task1, 2, 1);
 --		PayExtPoint(3, 1);
 		AddTitle(68, 2);
@@ -257,8 +255,7 @@ function ck_ActTilte_3()
 	DebugOutput(GetExtPoint(5), GetExtPoint(6))
 --	local nExtPoint = GetExtPoint(EXT_CDKEY)
 	--if GetExtPoint(1) == 1 and GetExtPoint(2) ~= 1 then
-	-- if GetBit(nExtPoint,3) == 1 and GetBit(nExtPoint,4) ~= 1 then
-if GetLevel() < 90 then
+	if GetBit(nExtPoint,3) == 1 and GetBit(nExtPoint,4) ~= 1 then
 		CK_TASK_GROUP:SetTaskBit(CK_TASK_GROUP.Task1, 3, 1);
 --		PayExtPoint(5, 1);
 		AddTitle(68, 3);
@@ -282,10 +279,10 @@ function ck_TaskForward()
 		Say(CK_NPC_NAME..format("ChØ cã <color=gold>[%s]<color> míi ®­îc nhËn nhiÖm vô nµy", "Vâ L©m T©n Tó"), 0)
 		return 0;
 	end
-	-- if GetLevel() >= 90 or gf_GetPlayerRebornCount() > 0 then
-		-- Say(CK_NPC_NAME.."Gamer 90 cÊp trë lªn hoÆc ®· chuyÓn sinh kh«ng thÓ tham gia nhiÖm vô nµy!",0);
-		-- return 0;
-	-- end
+	if GetLevel() >= 90 or gf_GetPlayerRebornCount() > 0 then
+		Say(CK_NPC_NAME.."Gamer 90 cÊp trë lªn hoÆc ®· chuyÓn sinh kh«ng thÓ tham gia nhiÖm vô nµy!",0);
+		return 0;
+	end
 	local tSay = {}
 	local tMsg = {"Ch­a nhËn", "Ch­a hoµn thµnh", "Cã thÓ giao", "§· hoµn thµnh"}
 	for i = 1, getn(CK_TASK_FORWARD) do

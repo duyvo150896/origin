@@ -14,7 +14,7 @@ TSK_TOP_HORNOR = 2
 TSK_TOP_1MIL_HORNOR = 3
 TSK_TOP_TRANSLIFE3 = 3
 TOP_CREATED_ROLE = 1324490626
-TOP_SERVER_ID = 91
+TOP_SERVER_ID = 0
 szLOGSERVERNAME = "Jx2 Animal"
 
 -- Qui ®Þnh gia trÞ ®iÓm danh väng , s­ m«n , qu©n c«ng , top Level nhËn th­ëng theo ®¼ng cÊp

@@ -11,34 +11,34 @@ Include("\\script\\vng\\newserver\\hoatdong.lua");
 
 strNpcName = "<color=green>Jx2 Animal<color>: "
 szLogTitle = "Top Jx2 Animal"
-szStartDate = "26-07-2021"
-szEndDate = "26-09-2021"
+szStartDate = "20-07-2021"
+szEndDate = "20-09-2019"
 szServerName = "Jx2 Animal"
 
 function main()
 	local nDate = tonumber(date("%Y%m%d"))
 	
---	if GetCreateTime() <= TOP_CREATED_ROLE then
---		Talk(1,"",strNpcName.."Thêi gian t¹o tµi kho¶n kh«ng hîp lÖ nªn kh«ng thÓ nhËn th­ëng!")
---		return
---	end
+	if GetCreateTime() <= TOP_CREATED_ROLE then
+		Talk(1,"",strNpcName.."Thêi gian t¹o tµi kho¶n kh«ng hîp lÖ nªn kh«ng thÓ nhËn th­ëng!")
+		return
+	end
 
-	-- if GetGlbValue(GLB_TSK_SERVER_ID) ~= TOP_SERVER_ID or GetByte(GetTask(TSK_SERVER_ID), TSK_SERVER_ID_CUR) ~= TOP_SERVER_ID then
-		-- Talk(1,"",strNpcName.."Ng­¬i kh«ng ph¶i thÇn d©n bæn quèc nªn kh«ng thÓ nhËn th­ëng!")
-		-- return
-	-- end
+	if GetGlbValue(GLB_TSK_SERVER_ID) ~= TOP_SERVER_ID or GetByte(GetTask(TSK_SERVER_ID), TSK_SERVER_ID_CUR) ~= TOP_SERVER_ID then
+		Talk(1,"",strNpcName.."Ng­¬i kh«ng ph¶i thÇn d©n bæn quèc nªn kh«ng thÓ nhËn th­ëng!")
+		return
+	end
 	local tSay = {}
 	if nDate >= TOP_START_DATE and nDate <= TOP_END_DATE then
---		tinsert(tSay,1,"NhËn phÇn th­ëng theo ®¼ng cÊp/get_award_by_level")
---		tinsert(tSay,"NhËn th­ëng l­u ph¸i Thóy Yªn Linh N÷ cÊp 92-99/get_route_award_by_level_menu")
+		tinsert(tSay,1,"NhËn phÇn th­ëng theo ®¼ng cÊp/get_award_by_level")
+		tinsert(tSay,"NhËn th­ëng l­u ph¸i Thóy Yªn Linh N÷ cÊp 92-99/get_route_award_by_level_menu")
 		tinsert(tSay,"NhËn th­ëng cao thñ ®Çu tiªn ®¹t 1.400.000 ®iÓm c«ng tr¹ng/confirm_get_1mil_Hornor_award")
---		tinsert(tSay,"NhËn phÇn th­ëng ¦u ®·i server " .. szServerName .. "/Say_NhanUuDai")
+		tinsert(tSay,"NhËn phÇn th­ëng ¦u ®·i server " .. szServerName .. "/Say_NhanUuDai")
 		tinsert(tSay,"NhËn phÇn th­ëng cao thñ Top 1 mçi hÖ ph¸i/get_top_faction_award")
 		tinsert(tSay,"NhËn phÇn th­ëng 3 nh©n sÜ ®Çu tiªn mçi phe ®¹t 860.000 c«ng tr¹ng/confirm_get_top_Hornor_award")
---		tinsert(tSay,"§¨ng ký nhËn th­ëng top 100 chuyÓn sinh 1 cÊp 99/#CS_TopAward(1)")
---		tinsert(tSay,"§¨ng ký nhËn th­ëng top 100 chuyÓn sinh 2 cÊp 99/#CS_TopAward(2)")
---		tinsert(tSay,"§¨ng ký nhËn th­ëng top 100 chuyÓn sinh 3 cÊp 99/#CS_TopAward(3)")
---		tinsert(tSay,"Ho¹t ®éng "..szServerName.."/NewServer_HoatDong_Menu")
+		tinsert(tSay,"§¨ng ký nhËn th­ëng top 100 chuyÓn sinh 1 cÊp 99/#CS_TopAward(1)")
+		tinsert(tSay,"§¨ng ký nhËn th­ëng top 100 chuyÓn sinh 2 cÊp 99/#CS_TopAward(2)")
+		tinsert(tSay,"§¨ng ký nhËn th­ëng top 100 chuyÓn sinh 3 cÊp 99/#CS_TopAward(3)")
+		tinsert(tSay,"Ho¹t ®éng "..szServerName.."/NewServer_HoatDong_Menu")
 	end
 	tinsert(tSay,"Bang héi danh gi¸/TopBangHoi_Menu")
 	tinsert(tSay,"Xem t×nh h×nh nhËn th­ëng top hÖ ph¸i/get_top_faction_info")
