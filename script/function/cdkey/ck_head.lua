@@ -174,7 +174,7 @@ function ck_ActTilte_1()
 --	local nExtPoint = GetExtPoint(EXT_CDKEY)
 	--if GetExtPoint(1) == 1 and GetExtPoint(2) ~= 1 then
 	-- if GetBit(nExtPoint,5) == 1 and GetBit(nExtPoint,6) ~= 1 then
-	if GetLevel() >= 90 then
+	if GetLevel() < 90 then
 		if CK_ES_SWITCH == 0 then
 			Say(CK_NPC_NAME.."M¸y chñ nµy t¹m thêi kh«ng më nhËn danh hiÖu <color=gold>Vâ L©m T©n Tó<color>!", 0);
 			return 0;
