@@ -91,16 +91,16 @@ function main()
 	Add_ip_npc() -- IP Bonus
 	VBonus_NPC() -- Add NPC VBonus
 	Add_bachtiensinh() -- B¹ch Tiªn Sinh
-	AddTuLinhNpc() -- NPC T?Linh
+	AddTuLinhNpc() -- NPC Tø Linh
 	if tonumber(date("%y%m%d")) >= 100924 and tonumber(date("%y%m%d")) <= 101028 then
 		AddHangNga()  -- NPC H»ng Nga 2010
 	end
 	if tonumber(date("%y%m%d")) >= 110519 and tonumber(date("%y%m%d")) <= 110602 then
-		AddIdolNpc()  -- ThÇn T­îng V?L©m
+		AddIdolNpc()  -- ThÇn T­îng Vâ L©m
 	end
 	
 	if tonumber(date("%y%m%d")) <= 110102 then
-		AddBirthdayNpc_2010()  -- S?Gi?Häat §éng SN JX2
+		AddBirthdayNpc_2010()  -- Sø Gi¸ Häat §éng SN JX2
 	end
 --	Add_1002_npc() -- Hoa §¨ng TÕt
 	Init_newres() -- Tµi Nguyªn ChiÕn
@@ -112,7 +112,7 @@ function main()
 --	end
 	Add_GoldenCard_Manager(); -- B¸n code HKLB ingame
 	Add_XaPhu() -- ThuyÒn gia
-	Add_Pet_TaiXu() -- NPC Th¸i H?B¹n §ång Hµnh
+	Add_Pet_TaiXu() -- NPC Th¸i H­ B¹n §ång Hµnh
 	if tonumber(date("%y%m%d")) >= 110121 and tonumber(date("%y%m%d")) <= 110220 then
 		add_1101_tet_npc()  -- NPC C©y Nªu TÕt 2011
 	end	
@@ -132,7 +132,7 @@ function main()
 	Qht_Activity_Event();--¼¤Õ½Ç§Ñ°Ëş
 	Bkl_baoruong() --B¹ch Kim LÖnh b¶o r­¬ng
 	if tonumber(date("%y%m%d")) >= 140124 and tonumber(date("%y%m%d")) <= 140203 then
-		tuyetanh_baoruong() --Qu?Ng?T? B¶o R­¬ng
+		tuyetanh_baoruong() --Quı Ngä(Tş) B¶o R­¬ng
 		chieuda_baoruong()
 		xichtho_baoruong()
 	end
@@ -180,8 +180,8 @@ end
 
 function CreatBattleSignNpc( mapid )
 	if( SubWorldID2Idx( mapid ) >= 0 ) then	--³õ¼¶
-		local npcindex1 = CreateNpc("V?binh thµnh m«n", "M?Binh Quan phe Tèng", mapid, 1728, 3083)
-		local npcindex2 = CreateNpc("Nam nh©n ph­¬ng B¾c3", "M?Binh Quan phe Liªu", mapid, 1652,3174)
+		local npcindex1 = CreateNpc("VÖ binh thµnh m«n", "Mé Binh Quan phe Tèng", mapid, 1728, 3083)
+		local npcindex2 = CreateNpc("Nam nh©n ph­¬ng B¾c3", "Mé Binh Quan phe Liªu", mapid, 1652,3174)
 		if mapid == 806 then
 			SetNpcScript(npcindex1, "\\script\\newbattles\\song_primary_npc.lua")
 			SetNpcScript(npcindex2, "\\script\\newbattles\\liao_primary_npc.lua")
@@ -190,7 +190,7 @@ function CreatBattleSignNpc( mapid )
 			SetNpcScript(npcindex2, "\\script\\battles\\battlejoin2.lua")
 		end;
 
-		local npcindex3 = CreateNpc("Quan s?trung niªn1", "Tèng Nhu quan", mapid, 1728,3065)
+		local npcindex3 = CreateNpc("Quan sø-trung niªn1", "Tèng Nhu quan", mapid, 1728,3065)
 		SetNpcScript(npcindex3, "\\script\\global\\ÌØÊâÓÃµØ\\ËÎÁÉ±¨Ãûµã\\npc\\song_shop.lua")
 
 		local npcindex4 = CreateNpc("Nam nh©n ph­¬ng B¾c2", "Liªu Nhu quan", mapid, 1634,3175)
@@ -207,192 +207,192 @@ function CreatBattleSignNpc( mapid )
 end
 
 function AddNpcCd()
-    local npcIndexGbdz = CreateNpc("C¸i Bang m«n nh©n", "§Ö t?C¸i Bang", 209,1701,3111);
+    local npcIndexGbdz = CreateNpc("C¸i Bang m«n nh©n", "§Ö tö C¸i Bang", 209,1701,3111);
     SetNpcScript(npcIndexGbdz, "\\script\\ÖĞÔ­Ò»Çø\\Ø¤°ï\\npc\\Ø¤°ïµÜ×Ó.lua");
 end;
 
 function AddNpcXy()
-    local npcIndexDyx_1 = CreateNpc("R­¬ng c?th?m?, "R­¬ng ®éc d­îc", 309, 1382, 3186);
-    local npcIndexDyx_2 = CreateNpc("R­¬ng c?th?m?, "R­¬ng ®éc d­îc", 309, 1299, 3193);
-    local npcIndexDyx_3 = CreateNpc("R­¬ng c?th?m?, "R­¬ng ®éc d­îc", 309, 1358, 3016);
-    local npcIndexDyx_4 = CreateNpc("R­¬ng c?th?m?, "R­¬ng ®éc d­îc", 309, 1426, 2916);
+    local npcIndexDyx_1 = CreateNpc("R­¬ng cã thÓ më", "R­¬ng ®éc d­îc", 309, 1382, 3186);
+    local npcIndexDyx_2 = CreateNpc("R­¬ng cã thÓ më", "R­¬ng ®éc d­îc", 309, 1299, 3193);
+    local npcIndexDyx_3 = CreateNpc("R­¬ng cã thÓ më", "R­¬ng ®éc d­îc", 309, 1358, 3016);
+    local npcIndexDyx_4 = CreateNpc("R­¬ng cã thÓ më", "R­¬ng ®éc d­îc", 309, 1426, 2916);
 
-    local npcIndexDyx_5 = CreateNpc("R­¬ng c?th?m?, "R­¬ng ®éc d­îc", 309, 1143, 2931);
-    local npcIndexDyx_6 = CreateNpc("R­¬ng c?th?m?, "R­¬ng ®éc d­îc", 309, 1219, 2910);
-    local npcIndexDyx_7 = CreateNpc("R­¬ng c?th?m?, "R­¬ng ®éc d­îc", 309, 1271, 2974);
-    local npcIndexDyx_8 = CreateNpc("R­¬ng c?th?m?, "R­¬ng ®éc d­îc", 309, 1222, 2985);
-    local npcIndexDyx_9 = CreateNpc("R­¬ng c?th?m?, "R­¬ng ®éc d­îc", 309, 1116, 3020);
-    local npcIndexDyx_10 = CreateNpc("R­¬ng c?th?m?, "R­¬ng ®éc d­îc", 309, 1269, 3092);
-    local npcIndexDyx_11 = CreateNpc("R­¬ng c?th?m?, "R­¬ng ®éc d­îc", 309, 1236, 3147);
-    local npcIndexDyx_12 = CreateNpc("R­¬ng c?th?m?, "R­¬ng ®éc d­îc", 309, 1356, 3149);
-    local npcIndexDyx_13 = CreateNpc("R­¬ng c?th?m?, "R­¬ng ®éc d­îc", 309, 1352, 3087);
-    local npcIndexDyx_14 = CreateNpc("R­¬ng c?th?m?, "R­¬ng ®éc d­îc", 309, 1307, 3079);
-    local npcIndexDyx_15 = CreateNpc("R­¬ng c?th?m?, "R­¬ng ®éc d­îc", 309, 1404, 2968);
-    local npcIndexDyx_16 = CreateNpc("R­¬ng c?th?m?, "R­¬ng ®éc d­îc", 309, 1326, 2949);
-    local npcIndexDyx_17 = CreateNpc("R­¬ng c?th?m?, "R­¬ng ®éc d­îc", 309, 1386, 2926);
-    local npcIndexDyx_18 = CreateNpc("R­¬ng c?th?m?, "R­¬ng ®éc d­îc", 309, 1428, 2966);
-    local npcIndexDyx_19 = CreateNpc("R­¬ng c?th?m?, "R­¬ng ®éc d­îc", 309, 1501, 2915);
-    local npcIndexDyx_20 = CreateNpc("R­¬ng c?th?m?, "R­¬ng ®éc d­îc", 309, 1525, 2935);
-    local npcIndexDyx_21 = CreateNpc("R­¬ng c?th?m?, "R­¬ng ®éc d­îc", 309, 1573, 2979);
-    local npcIndexDyx_22 = CreateNpc("R­¬ng c?th?m?, "R­¬ng ®éc d­îc", 309, 1552, 3028);
-    local npcIndexDyx_23 = CreateNpc("R­¬ng c?th?m?, "R­¬ng ®éc d­îc", 309, 1539, 3110);
-    local npcIndexDyx_24 = CreateNpc("R­¬ng c?th?m?, "R­¬ng ®éc d­îc", 309, 1571, 3166);
-    local npcIndexDyx_25 = CreateNpc("R­¬ng c?th?m?, "R­¬ng ®éc d­îc", 309, 1540, 3198);
-    local npcIndexDyx_26 = CreateNpc("R­¬ng c?th?m?, "R­¬ng ®éc d­îc", 309, 1501, 3174);
-	local npcIndexJwyh = CreateNpc("Ng©n H?, "Ng©n H?, 324, 1822, 3005);
+    local npcIndexDyx_5 = CreateNpc("R­¬ng cã thÓ më", "R­¬ng ®éc d­îc", 309, 1143, 2931);
+    local npcIndexDyx_6 = CreateNpc("R­¬ng cã thÓ më", "R­¬ng ®éc d­îc", 309, 1219, 2910);
+    local npcIndexDyx_7 = CreateNpc("R­¬ng cã thÓ më", "R­¬ng ®éc d­îc", 309, 1271, 2974);
+    local npcIndexDyx_8 = CreateNpc("R­¬ng cã thÓ më", "R­¬ng ®éc d­îc", 309, 1222, 2985);
+    local npcIndexDyx_9 = CreateNpc("R­¬ng cã thÓ më", "R­¬ng ®éc d­îc", 309, 1116, 3020);
+    local npcIndexDyx_10 = CreateNpc("R­¬ng cã thÓ më", "R­¬ng ®éc d­îc", 309, 1269, 3092);
+    local npcIndexDyx_11 = CreateNpc("R­¬ng cã thÓ më", "R­¬ng ®éc d­îc", 309, 1236, 3147);
+    local npcIndexDyx_12 = CreateNpc("R­¬ng cã thÓ më", "R­¬ng ®éc d­îc", 309, 1356, 3149);
+    local npcIndexDyx_13 = CreateNpc("R­¬ng cã thÓ më", "R­¬ng ®éc d­îc", 309, 1352, 3087);
+    local npcIndexDyx_14 = CreateNpc("R­¬ng cã thÓ më", "R­¬ng ®éc d­îc", 309, 1307, 3079);
+    local npcIndexDyx_15 = CreateNpc("R­¬ng cã thÓ më", "R­¬ng ®éc d­îc", 309, 1404, 2968);
+    local npcIndexDyx_16 = CreateNpc("R­¬ng cã thÓ më", "R­¬ng ®éc d­îc", 309, 1326, 2949);
+    local npcIndexDyx_17 = CreateNpc("R­¬ng cã thÓ më", "R­¬ng ®éc d­îc", 309, 1386, 2926);
+    local npcIndexDyx_18 = CreateNpc("R­¬ng cã thÓ më", "R­¬ng ®éc d­îc", 309, 1428, 2966);
+    local npcIndexDyx_19 = CreateNpc("R­¬ng cã thÓ më", "R­¬ng ®éc d­îc", 309, 1501, 2915);
+    local npcIndexDyx_20 = CreateNpc("R­¬ng cã thÓ më", "R­¬ng ®éc d­îc", 309, 1525, 2935);
+    local npcIndexDyx_21 = CreateNpc("R­¬ng cã thÓ më", "R­¬ng ®éc d­îc", 309, 1573, 2979);
+    local npcIndexDyx_22 = CreateNpc("R­¬ng cã thÓ më", "R­¬ng ®éc d­îc", 309, 1552, 3028);
+    local npcIndexDyx_23 = CreateNpc("R­¬ng cã thÓ më", "R­¬ng ®éc d­îc", 309, 1539, 3110);
+    local npcIndexDyx_24 = CreateNpc("R­¬ng cã thÓ më", "R­¬ng ®éc d­îc", 309, 1571, 3166);
+    local npcIndexDyx_25 = CreateNpc("R­¬ng cã thÓ më", "R­¬ng ®éc d­îc", 309, 1540, 3198);
+    local npcIndexDyx_26 = CreateNpc("R­¬ng cã thÓ më", "R­¬ng ®éc d­îc", 309, 1501, 3174);
+	local npcIndexJwyh = CreateNpc("Ng©n Hå", "Ng©n Hå", 324, 1822, 3005);
 	SetNpcScript(npcIndexJwyh, "\\script\\ÖĞÔ­¶şÇø\\ÆßĞÇ¶´Ò»²ã\\npc\\¾ÅÎ²Òøºü.lua");
 
 	local npcIndexYlby = CreateNpc("§Çu lÜnh S¬n tÆc", "§Çu lÜnh S¬n tÆc", 322, 1491, 3323);
     SetNpcScript(npcIndexYlby, "\\script\\ÖĞÔ­¶şÇø\\Áú»¢¶´Ò»²ã\\npc\\·üÅ£É½´óÍõ.lua");
-	local npcIndexZh1 = CreateNpc("Ph¸p S?T©y H?, "Ph¸p S?T©y H?, 311, 1352, 3117);
+	local npcIndexZh1 = CreateNpc("Ph¸p S­ T©y H¹", "Ph¸p S­ T©y H¹", 311, 1352, 3117);
     SetNpcScript(npcIndexZh1, "\\script\\ÖĞÔ­¶şÇø\\·üÅ£É½\\npc\\Î÷ÏÄÖäÊ¦.lua");
 
-	local npcIndexZh2 = CreateNpc("Ph¸p S?T©y H?, "Ph¸p S?T©y H?, 311, 1439, 3144);
+	local npcIndexZh2 = CreateNpc("Ph¸p S­ T©y H¹", "Ph¸p S­ T©y H¹", 311, 1439, 3144);
     SetNpcScript(npcIndexZh2, "\\script\\ÖĞÔ­¶şÇø\\·üÅ£É½\\npc\\Î÷ÏÄÖäÊ¦.lua");
 
-	local npcIndexZh3 = CreateNpc("Ph¸p S?T©y H?, "Ph¸p S?T©y H?, 311, 1442, 3033);
+	local npcIndexZh3 = CreateNpc("Ph¸p S­ T©y H¹", "Ph¸p S­ T©y H¹", 311, 1442, 3033);
     SetNpcScript(npcIndexZh3, "\\script\\ÖĞÔ­¶şÇø\\·üÅ£É½\\npc\\Î÷ÏÄÖäÊ¦.lua");
 end;
 
 function AddNpcYz()
-    local npcIndexLs = CreateNpc("x¸c L«i Th¾ng", "Thi th?cña L«i Th¾ng", 111, 1849, 2887);
+    local npcIndexLs = CreateNpc("x¸c L«i Th¾ng", "Thi thÓ cña L«i Th¾ng", 111, 1849, 2887);
     SetNpcScript(npcIndexLs, "\\script\\½­ÄÏÇø\\ÇåÏª¶´\\npc\\À×Ê¤µÄÊ¬Ìå.lua");
 
-    local npcIndexLshw1 = CreateNpc("X¸c h?v?L«i Th¾ng", "Thi th?h?v?cña L«i Th¾ng", 111, 1854, 2887);
-    local npcIndexLshw2 = CreateNpc("X¸c h?v?L«i Th¾ng", "Thi th?h?v?cña L«i Th¾ng", 111, 1847, 2889);
-    local npcIndexLshw3 = CreateNpc("X¸c h?v?L«i Th¾ng", "Thi th?h?v?cña L«i Th¾ng", 111, 1851, 2877);
+    local npcIndexLshw1 = CreateNpc("X¸c hé vÖ L«i Th¾ng", "Thi thÓ hé vÖ cña L«i Th¾ng", 111, 1854, 2887);
+    local npcIndexLshw2 = CreateNpc("X¸c hé vÖ L«i Th¾ng", "Thi thÓ hé vÖ cña L«i Th¾ng", 111, 1847, 2889);
+    local npcIndexLshw3 = CreateNpc("X¸c hé vÖ L«i Th¾ng", "Thi thÓ hé vÖ cña L«i Th¾ng", 111, 1851, 2877);
 
---    local npcIndexZbh = CreateNpc("Du Ph­¬ng ®¹i phu", "Tr­¬ng B?H¸n", 150, 1711, 3115);
+--    local npcIndexZbh = CreateNpc("Du Ph­¬ng ®¹i phu", "Tr­¬ng B¸ H¸n", 150, 1711, 3115);
 --    SetNpcScript(npcIndexZbh, "\\script\\½­ÄÏÇø\\ÑïÖİ\\npc\\ÕÅ²®ºº.lua");
 
     local npcIndexBg = CreateNpc("Tói r¸nh", "Tói tÇm th­êng", 107, 1573, 2939);
 
-    local npcIndexTn = CreateNpc("HiÖp n?, "§­êng Ninh", 107,1417,2946);
+    local npcIndexTn = CreateNpc("HiÖp n÷", "§­êng Ninh", 107,1417,2946);
     SetNpcScript(npcIndexTn, "\\script\\½­ÄÏÇø\\ÎäÒÄÉ½\\npc\\ÌÆÄş.lua");
 
---    local npcIndexLjy = CreateNpc("Du Ph­¬ng T­íng S?,"L?TiÕn Dòng",150,1767,3111);
+--    local npcIndexLjy = CreateNpc("Du Ph­¬ng T­íng SÜ","Lı TiÕn Dòng",150,1767,3111);
 --    SetNpcScript(npcIndexLjy, "\\script\\½­ÄÏÇø\\ÑïÖİ\\npc\\Àî½øÓÂ.lua");
 
 --    local npcIndexLxq = CreateNpc("V©n Du §¹o Nh©n","L­u HuyÒn Thanh",150,1579,3110);
 --    SetNpcScript(npcIndexLxq, "\\script\\½­ÄÏÇø\\ÑïÖİ\\npc\\ÁõĞşÇå.lua");
 
- --   local npcIndexQr = CreateNpc("B?ch?, "Thu Dung", 150,1678,3028);
+ --   local npcIndexQr = CreateNpc("Bµ chñ", "Thu Dung", 150,1678,3028);
  --   SetNpcScript(npcIndexQr, "\\script\\½­ÄÏÇø\\ÑïÖİ\\npc\\ÇïÈØ.lua");
 
-    local npcIndexHql = CreateNpc("Th­îng C?Háa K?L©n", "Th­îng C?Háa K?L©n", 113, 1669, 3225);
+    local npcIndexHql = CreateNpc("Th­îng Cæ Háa Kú L©n", "Th­îng Cæ Háa Kú L©n", 113, 1669, 3225);
     SetNpcScript(npcIndexHql, "\\script\\½­ÄÏÇø\\Á½Ë®¶´¶ş²ã\\npc\\»ğ÷è÷ë.lua");
 
-    local npcIndexThj = CreateNpc("x¸c L«i Th¾ng", "Thi th?Th¸i Hång TuyÖt", 113, 1668, 3230);
-    local npcIndexJt01 = CreateNpc("X¸c h?v?L«i Th¾ng", "Thi th?Xi Háa gi¸o ®å", 113, 1669, 3231);
-    local npcIndexJt02 = CreateNpc("X¸c h?v?L«i Th¾ng", "Thi th?Xi Háa gi¸o ®å", 113, 1664, 3225);
-    local npcIndexJt03 = CreateNpc("X¸c h?v?L«i Th¾ng", "Thi th?Xi Háa gi¸o ®å", 113, 1670, 3224);
-    local npcIndexJt04 = CreateNpc("X¸c h?v?L«i Th¾ng", "Thi th?Xi Háa gi¸o ®å", 113, 1661, 3231);
+    local npcIndexThj = CreateNpc("x¸c L«i Th¾ng", "Thi thÓ Th¸i Hång TuyÖt", 113, 1668, 3230);
+    local npcIndexJt01 = CreateNpc("X¸c hé vÖ L«i Th¾ng", "Thi thÓ Xi Háa gi¸o ®å", 113, 1669, 3231);
+    local npcIndexJt02 = CreateNpc("X¸c hé vÖ L«i Th¾ng", "Thi thÓ Xi Háa gi¸o ®å", 113, 1664, 3225);
+    local npcIndexJt03 = CreateNpc("X¸c hé vÖ L«i Th¾ng", "Thi thÓ Xi Háa gi¸o ®å", 113, 1670, 3224);
+    local npcIndexJt04 = CreateNpc("X¸c hé vÖ L«i Th¾ng", "Thi thÓ Xi Háa gi¸o ®å", 113, 1661, 3231);
 
  --   local npcIndexJw = CreateNpc("ThiÕu niªn nam1", "T­ëng Duy", 150, 1679, 3237);
  --   SetNpcScript(npcIndexJw, "\\script\\½­ÄÏÇø\\ÑïÖİ\\npc\\½¯Î¬.lua");
 
-    local npcIndexWyq = CreateNpc("T?Hoµn Ch©n", "ViÔn Tinh", 108, 1585, 3195);
+    local npcIndexWyq = CreateNpc("Tè Hoµn Ch©n", "ViÔn Tinh", 108, 1585, 3195);
     SetNpcScript(npcIndexWyq, "\\script\\½­ÄÏÇø\\ÈªÖİ¸®±±\\npc\\ÚùÔ¶Çç.lua");
 
-    local npcIndexYg = CreateNpc("Ng?Qu¸i §Çu Môc", "Ng?Qu¸i §Çu Môc", 103, 1673, 3431);
+    local npcIndexYg = CreateNpc("Ng­ Qu¸i §Çu Môc", "Ng­ Qu¸i §Çu Môc", 103, 1673, 3431);
     SetNpcScript(npcIndexYg, "\\script\\½­ÄÏÇø\\¶«º£º£±õÒ»\\npc\\Óã¹ÖÍ·Ä¿.lua");
 end;
 
 function AddNpcWeekEnd()
-    local npcIndexZzd = CreateNpc("Tèng T­íng Qu©n", "§¹i s?ho¹t ®éng cuèi tuÇn", 200, 1380, 2872);
+    local npcIndexZzd = CreateNpc("Tèng T­íng Qu©n", "§¹i sø ho¹t ®éng cuèi tuÇn", 200, 1380, 2872);
     SetNpcScript(npcIndexZzd, "\\script\\task\\WeekEnd\\Õç×Óµ¤.lua");
 
-    local npcXyZzd = CreateNpc("Tèng T­íng Qu©n", "§¹i s?ho¹t ®éng cuèi tuÇn", 350, 1452, 2967);
+    local npcXyZzd = CreateNpc("Tèng T­íng Qu©n", "§¹i sø ho¹t ®éng cuèi tuÇn", 350, 1452, 2967);
     SetNpcScript(npcXyZzd, "\\script\\task\\WeekEnd\\Õç×Óµ¤.lua");
 
-    local npcXyBm1 = CreateNpc("V?binh thµnh m«n", "Ch?huy s?, 350, 1503, 3024);
+    local npcXyBm1 = CreateNpc("VÖ binh thµnh m«n", "ChØ huy sø", 350, 1503, 3024);
     SetNpcScript(npcXyBm1, "\\script\\task\\WeekEnd\\±øÂíÖ¸»ÓÊ¹.lua");
 
-    local npcYzZzd = CreateNpc("Tèng T­íng Qu©n", "§¹i s?ho¹t ®éng cuèi tuÇn", 150, 1714, 3137);
+    local npcYzZzd = CreateNpc("Tèng T­íng Qu©n", "§¹i sø ho¹t ®éng cuèi tuÇn", 150, 1714, 3137);
     SetNpcScript(npcYzZzd, "\\script\\task\\WeekEnd\\Õç×Óµ¤.lua");
 
-   	local npcYzBm1 = CreateNpc("V?binh thµnh m«n", "Ch?huy s?, 150, 1682, 3161);
+   	local npcYzBm1 = CreateNpc("VÖ binh thµnh m«n", "ChØ huy sø", 150, 1682, 3161);
     SetNpcScript(npcYzBm1, "\\script\\task\\WeekEnd\\±øÂíÖ¸»ÓÊ¹.lua");
 
-    local npcIndexBm = CreateNpc("V?binh thµnh m«n", "Ch?huy s?, 100, 1423, 2985);
+    local npcIndexBm = CreateNpc("VÖ binh thµnh m«n", "ChØ huy sø", 100, 1423, 2985);
     SetNpcScript(npcIndexBm, "\\script\\task\\WeekEnd\\±øÂíÖ¸»ÓÊ¹.lua");
 
     --ÙÁ¿ÜµØÍ¼µÄ³õÊ¼»¯NPC
-    local npc1 = CreateNpc("V?binh thµnh m«n", "T­íng lÜnh tiÒn tuyÕn", 951, 1333, 2844);
+    local npc1 = CreateNpc("VÖ binh thµnh m«n", "T­íng lÜnh tiÒn tuyÕn", 951, 1333, 2844);
     SetNpcScript(npc1, "\\script\\task\\WeekEnd\\man_killwk.lua");
-    local npc2 = CreateNpc("V?binh thµnh m«n", "T­íng lÜnh tiÒn tuyÕn", 952, 1333, 2844);
+    local npc2 = CreateNpc("VÖ binh thµnh m«n", "T­íng lÜnh tiÒn tuyÕn", 952, 1333, 2844);
     SetNpcScript(npc2, "\\script\\task\\WeekEnd\\man_killwk.lua");
-	local npc3 = CreateNpc("V?binh thµnh m«n", "T­íng lÜnh tiÒn tuyÕn", 953, 1333, 2844);
+	local npc3 = CreateNpc("VÖ binh thµnh m«n", "T­íng lÜnh tiÒn tuyÕn", 953, 1333, 2844);
     SetNpcScript(npc3, "\\script\\task\\WeekEnd\\man_killwk.lua");
-	local npc4 = CreateNpc("V?binh thµnh m«n", "T­íng lÜnh tiÒn tuyÕn", 954, 1333, 2844);
+	local npc4 = CreateNpc("VÖ binh thµnh m«n", "T­íng lÜnh tiÒn tuyÕn", 954, 1333, 2844);
     SetNpcScript(npc4, "\\script\\task\\WeekEnd\\man_killwk.lua");
-	local npc5 = CreateNpc("V?binh thµnh m«n", "T­íng lÜnh tiÒn tuyÕn", 955, 1333, 2844);
+	local npc5 = CreateNpc("VÖ binh thµnh m«n", "T­íng lÜnh tiÒn tuyÕn", 955, 1333, 2844);
     SetNpcScript(npc5, "\\script\\task\\WeekEnd\\man_killwk.lua");
-	local npc6 = CreateNpc("V?binh thµnh m«n", "T­íng lÜnh tiÒn tuyÕn", 956, 1333, 2844);
+	local npc6 = CreateNpc("VÖ binh thµnh m«n", "T­íng lÜnh tiÒn tuyÕn", 956, 1333, 2844);
     SetNpcScript(npc6, "\\script\\task\\WeekEnd\\man_killwk.lua");
-	local npc7 = CreateNpc("V?binh thµnh m«n", "T­íng lÜnh tiÒn tuyÕn", 957, 1333, 2844);
+	local npc7 = CreateNpc("VÖ binh thµnh m«n", "T­íng lÜnh tiÒn tuyÕn", 957, 1333, 2844);
     SetNpcScript(npc7, "\\script\\task\\WeekEnd\\man_killwk.lua");
-	local npc8 = CreateNpc("V?binh thµnh m«n", "T­íng lÜnh tiÒn tuyÕn", 958, 1333, 2844);
+	local npc8 = CreateNpc("VÖ binh thµnh m«n", "T­íng lÜnh tiÒn tuyÕn", 958, 1333, 2844);
     SetNpcScript(npc8, "\\script\\task\\WeekEnd\\man_killwk.lua");
- 	local npc9 = CreateNpc("V?binh thµnh m«n", "T­íng lÜnh tiÒn tuyÕn", 959, 1333, 2844);
+ 	local npc9 = CreateNpc("VÖ binh thµnh m«n", "T­íng lÜnh tiÒn tuyÕn", 959, 1333, 2844);
     SetNpcScript(npc9, "\\script\\task\\WeekEnd\\man_killwk.lua");
-	local npc10 = CreateNpc("V?binh thµnh m«n", "T­íng lÜnh tiÒn tuyÕn", 960, 1333, 2844);
+	local npc10 = CreateNpc("VÖ binh thµnh m«n", "T­íng lÜnh tiÒn tuyÕn", 960, 1333, 2844);
     SetNpcScript(npc10, "\\script\\task\\WeekEnd\\man_killwk.lua");
 
-	local liguan1 = CreateNpc("T?Thanh Th­îng Nh©n", "L?quan", 100, 1512, 2990);
+	local liguan1 = CreateNpc("Tö Thanh Th­îng Nh©n", "LÔ quan", 100, 1512, 2990);
 	SetNpcScript(liguan1, "\\script\\ÖĞÔ­Ò»Çø\\ãê¾©\\npc\\´óÄÚ×Ü¹Ü.lua");
 
-	local liguan2 = CreateNpc("T?Thanh Th­îng Nh©n", "L?quan", 300, 1787, 3497);
+	local liguan2 = CreateNpc("Tö Thanh Th­îng Nh©n", "LÔ quan", 300, 1787, 3497);
 	SetNpcScript(liguan2, "\\script\\ÖĞÔ­Ò»Çø\\ãê¾©\\npc\\´óÄÚ×Ü¹Ü.lua")
     --AddWk(15, 10);
 end;
 
 function AddNpcXl()
-    local npcIndexSl = CreateNpc("ThiÕu L©m T¨ng Nh©n","Qu?¶i h?tèng nh©n",814,1626,3149);  --ĞŞÁ¶µØÍ¼µÄÉÙÁÖ´«ËÍÈË
+    local npcIndexSl = CreateNpc("ThiÕu L©m T¨ng Nh©n","Qu¸ ¶i hé tèng nh©n",814,1626,3149);  --ĞŞÁ¶µØÍ¼µÄÉÙÁÖ´«ËÍÈË
     SetNpcScript(npcIndexSl, "\\script\\task\\practice\\³ö¹Ø´«ËÍÈË.lua");
 
-    local npcIndexWd = CreateNpc("V?§ang  m«n nh©n","Qu?¶i h?tèng nh©n",812,1622,3093);  --ĞŞÁ¶µØÍ¼µÄÎäµ±´«ËÍÈË
+    local npcIndexWd = CreateNpc("Vâ §ang  m«n nh©n","Qu¸ ¶i hé tèng nh©n",812,1622,3093);  --ĞŞÁ¶µØÍ¼µÄÎäµ±´«ËÍÈË
     SetNpcScript(npcIndexWd, "\\script\\task\\practice\\³ö¹Ø´«ËÍÈË.lua");
 
-    local npcIndexEm = CreateNpc("Nga My m«n nh©n","Qu?¶i h?tèng nh©n",816,1626,3149);  --ĞŞÁ¶µØÍ¼µÄ¶ëáÒ´«ËÍÈË
+    local npcIndexEm = CreateNpc("Nga My m«n nh©n","Qu¸ ¶i hé tèng nh©n",816,1626,3149);  --ĞŞÁ¶µØÍ¼µÄ¶ëáÒ´«ËÍÈË
     SetNpcScript(npcIndexEm, "\\script\\task\\practice\\³ö¹Ø´«ËÍÈË.lua");
 
-    local npcIndexGb = CreateNpc("C¸i Bang m«n nh©n","Qu?¶i h?tèng nh©n",815,1373,3118);  --ĞŞÁ¶µØÍ¼µÄØ¤°ï´«ËÍÈË
+    local npcIndexGb = CreateNpc("C¸i Bang m«n nh©n","Qu¸ ¶i hé tèng nh©n",815,1373,3118);  --ĞŞÁ¶µØÍ¼µÄØ¤°ï´«ËÍÈË
     SetNpcScript(npcIndexGb, "\\script\\task\\practice\\³ö¹Ø´«ËÍÈË.lua");
 
-    local npcIndexTm = CreateNpc("§­êng M«n T©n m«n nh©n","Qu?¶i h?tèng nh©n",813,1677,2983);  --ĞŞÁ¶µØÍ¼µÄÌÆÃÅ´«ËÍÈË
+    local npcIndexTm = CreateNpc("§­êng M«n T©n m«n nh©n","Qu¸ ¶i hé tèng nh©n",813,1677,2983);  --ĞŞÁ¶µØÍ¼µÄÌÆÃÅ´«ËÍÈË
     SetNpcScript(npcIndexTm, "\\script\\task\\practice\\³ö¹Ø´«ËÍÈË.lua");
 
-		local npcIndexYm = CreateNpc("V?binh thµnh m«n", "Qu?¶i h?tèng nh©n", 817,1457,2972);	--ĞŞÁ¶µØÍ¼µÄÑîÃÅ´«ËÍÈË
+		local npcIndexYm = CreateNpc("VÖ binh thµnh m«n", "Qu¸ ¶i hé tèng nh©n", 817,1457,2972);	--ĞŞÁ¶µØÍ¼µÄÑîÃÅ´«ËÍÈË
     SetNpcScript(npcIndexYm, "\\script\\task\\practice\\³ö¹Ø´«ËÍÈË.lua");
 
-    local npcIndexWp = CreateNpc("Ng?§éc h?ph¸p", "Qu?¶i h?tèng nh©n", 422,1628,3508);	--ĞŞÁ¶µØÍ¼Îå¶¾´«ËÍÈË
+    local npcIndexWp = CreateNpc("Ngò §éc hé ph¸p", "Qu¸ ¶i hé tèng nh©n", 422,1628,3508);	--ĞŞÁ¶µØÍ¼Îå¶¾´«ËÍÈË
     SetNpcScript(npcIndexWp, "\\script\\task\\practice\\³ö¹Ø´«ËÍÈË.lua");
 
 end;
 
 function AddNpcQz()
-    local npcIndexLfs = CreateNpc("ThiÕu niªn trong th«n", "L?Phong Thu", 100, 1607, 2970);
+    local npcIndexLfs = CreateNpc("ThiÕu niªn trong th«n", "Lı Phong Thu", 100, 1607, 2970);
     SetNpcScript(npcIndexLfs, "\\script\\ÖĞÔ­¶şÇø\\³É¶¼\\npc\\ÊÕ¸ûÑ§Ï°.lua");
 
-    local npcIndexLys = CreateNpc("Du Ph­¬ng ®¹i phu", "L©m D­îc S?, 100, 1558, 2958);
+    local npcIndexLys = CreateNpc("Du Ph­¬ng ®¹i phu", "L©m D­îc S­", 100, 1558, 2958);
     SetNpcScript(npcIndexLys, "\\script\\ÖĞÔ­Ò»Çø\\ãê¾©\\npc\\²ÉÒ©Ñ§Ï°.lua");
 end;
 function AddXsTg()
-    local npcIndexCd = CreateNpc("B¸n s¸ch", "S?gi?, 300, 1638, 3575);
+    local npcIndexCd = CreateNpc("B¸n s¸ch", "Sø gi¶", 300, 1638, 3575);
     SetNpcScript(npcIndexCd, "\\script\\ÖĞÔ­¶şÇø\\³É¶¼\\npc\\ĞÂÊÖÍÆ¹ãÔ±.lua");
 
-    local npcIndexQz = CreateNpc("B¸n s¸ch", "S?gi?, 100, 1451, 2821);
+    local npcIndexQz = CreateNpc("B¸n s¸ch", "Sø gi¶", 100, 1451, 2821);
     SetNpcScript(npcIndexQz, "\\script\\½­ÄÏÇø\\ÈªÖİ\\npc\\ĞÂÊÖÍÆ¹ãÔ±.lua");
 
-    local npcIndexBj = CreateNpc("B¸n s¸ch", "S?gi?, 200, 1159, 2839);
+    local npcIndexBj = CreateNpc("B¸n s¸ch", "Sø gi¶", 200, 1159, 2839);
     SetNpcScript(npcIndexBj, "\\script\\ÖĞÔ­Ò»Çø\\ãê¾©\\npc\\ĞÂÊÖÍÆ¹ãÔ±.lua");
 
 end;
 function AddTl()
     local npcIndex = CreateNpc("Nha dŞch", " Ngôc tèt", 701, 1376, 3143);
     SetNpcScript(npcIndex, "\\script\\task\\prison\\jailer_npc.lua");
- 	npcIndex = CreateNpc("Nha dŞch", "B?kho¸i", 200, 1397, 2653);
+ 	npcIndex = CreateNpc("Nha dŞch", "Bé kho¸i", 200, 1397, 2653);
     SetNpcScript(npcIndex, "\\script\\task\\prison\\gaoler_npc.lua");
 end;
 
@@ -407,10 +407,10 @@ function AddWk(nDistanceX, nDistanceY)
     };
     local sp = {   --Ã¿µØÍ¼µÄ¿ªÊ¼×ø±ê£¬µØÍ¼ID£¬NPCÄ£°åÃû×Ö
         {1294, 2854, 907, "Oa KhÊu"},
-        {1294, 2854, 908, "Oa KhÊu Binh s?},
+        {1294, 2854, 908, "Oa KhÊu Binh sÜ"},
         {1294, 2854, 909, "Oa KhÊu Thñy Binh"},
         {1294, 2854, 910, "Oa KhÊu Lôc Binh"},
-        {1294, 2854, 911, "Oa KhÊu V?S?}
+        {1294, 2854, 911, "Oa KhÊu Vâ SÜ"}
     };
     for index, v in sp do
         local nCount = getn(rect_table);
@@ -431,27 +431,27 @@ function Addsh()
     local npcIndexshxjyz = CreateNpc("G¸nh hµng", "Hµnh C­íc Th­¬ng Nh©n", 150, 1698, 3203);
     SetNpcScript(npcIndexshxjyz, "\\script\\ÖĞÔ­Ò»Çø\\ãê¾©\\npc\\ĞĞ½ÅÉÌÈË.lua");
 
-    local npcIndexshxy = CreateNpc("Ch?cÇm ®å Trung Nguyªn", "Ch?th­¬ng héi", 350, 1456, 2925);
+    local npcIndexshxy = CreateNpc("Chñ cÇm ®å Trung Nguyªn", "Chñ th­¬ng héi", 350, 1456, 2925);
     SetNpcScript(npcIndexshxy, "\\script\\ÖĞÔ­Ò»Çø\\ãê¾©\\npc\\ÉÌ»áÀÏ°å.lua");
 
-    local npcIndexshyz = CreateNpc("Ch?cÇm ®å Trung Nguyªn", "Ch?th­¬ng héi", 150, 1636, 3139);
+    local npcIndexshyz = CreateNpc("Chñ cÇm ®å Trung Nguyªn", "Chñ th­¬ng héi", 150, 1636, 3139);
     SetNpcScript(npcIndexshyz, "\\script\\ÖĞÔ­Ò»Çø\\ãê¾©\\npc\\ÉÌ»áÀÏ°å.lua");
 
-    local npcIndexsmsr = CreateNpc("L·o ph?h?, "Th­¬ng Nh©n thÇn b?, 200, 1488, 2826);
+    local npcIndexsmsr = CreateNpc("L·o phó hé", "Th­¬ng Nh©n thÇn bİ", 200, 1488, 2826);
     SetNpcScript(npcIndexsmsr, "\\script\\ÖĞÔ­Ò»Çø\\ãê¾©\\npc\\ÉñÃØÉÌÈË.lua");
 end;
 
 function Addtj()
-    local npcIndextjqz = CreateNpc("Nha dŞch", "B?®Çu", 100, 1518, 2988);
+    local npcIndextjqz = CreateNpc("Nha dŞch", "Bé ®Çu", 100, 1518, 2988);
     SetNpcScript(npcIndextjqz, "\\script\\ÖĞÔ­¶şÇø\\³É¶¼\\npc\\²¶Í·.lua");
 
-    local npcIndextjyz = CreateNpc("Nha dŞch", "B?®Çu", 150, 1739, 3158);
+    local npcIndextjyz = CreateNpc("Nha dŞch", "Bé ®Çu", 150, 1739, 3158);
     SetNpcScript(npcIndextjyz, "\\script\\ÖĞÔ­¶şÇø\\³É¶¼\\npc\\²¶Í·.lua");
 
-    local npcIndextjxy = CreateNpc("Nha dŞch", "B?®Çu", 350, 1507, 2997);
+    local npcIndextjxy = CreateNpc("Nha dŞch", "Bé ®Çu", 350, 1507, 2997);
     SetNpcScript(npcIndextjxy, "\\script\\ÖĞÔ­¶şÇø\\³É¶¼\\npc\\²¶Í·.lua");
 
-    local npcIndextjztx = CreateNpc("C?gi?, "Tr¸c Thiªn Hµnh", 350, 1427, 3024);
+    local npcIndextjztx = CreateNpc("Cô giµ", "Tr¸c Thiªn Hµnh", 350, 1427, 3024);
     SetNpcScript(npcIndextjztx, "\\script\\ÖĞÔ­¶şÇø\\ÏåÑô\\npc\\×¿ÌìĞĞ.lua");
 end;
 
@@ -465,19 +465,19 @@ end;
 
 
 function Addcangjian()
-    local npcIndexcangjian1 = CreateNpc("V­¬ng An Th¹ch", "S?gi?Tµng KiÕm", 300,1776,3703);
+    local npcIndexcangjian1 = CreateNpc("V­¬ng An Th¹ch", "Sø gi¶ Tµng KiÕm", 300,1776,3703);
     SetNpcScript(npcIndexcangjian1, "\\script\\²Ø½£É½×¯\\task_script\\³É¶¼\\²Ø½£Ê¹Õß.lua");
 
-    local npcIndexcangjian2 = CreateNpc("V­¬ng An Th¹ch", "S?gi?Tµng KiÕm", 200,1229,2762);
+    local npcIndexcangjian2 = CreateNpc("V­¬ng An Th¹ch", "Sø gi¶ Tµng KiÕm", 200,1229,2762);
     SetNpcScript(npcIndexcangjian2, "\\script\\²Ø½£É½×¯\\task_script\\ãê¾©\\²Ø½£Ê¹Õß.lua");
 
-    local npcIndexcangjian3 = CreateNpc("V­¬ng An Th¹ch", "S?gi?Tµng KiÕm", 100,1510,3106);
+    local npcIndexcangjian3 = CreateNpc("V­¬ng An Th¹ch", "Sø gi¶ Tµng KiÕm", 100,1510,3106);
     SetNpcScript(npcIndexcangjian3, "\\script\\²Ø½£É½×¯\\task_script\\ÈªÖİ\\²Ø½£Ê¹Õß.lua");
 
-    local npcIndexcangjian4 = CreateNpc("V­¬ng An Th¹ch", "S?gi?Tµng KiÕm", 350,1395,2851);
+    local npcIndexcangjian4 = CreateNpc("V­¬ng An Th¹ch", "Sø gi¶ Tµng KiÕm", 350,1395,2851);
     SetNpcScript(npcIndexcangjian4, "\\script\\²Ø½£É½×¯\\task_script\\ÏåÑô\\²Ø½£Ê¹Õß.lua");
 
-    local npcIndexcangjian5 = CreateNpc("V­¬ng An Th¹ch", "S?gi?Tµng KiÕm", 150,1745,3119);
+    local npcIndexcangjian5 = CreateNpc("V­¬ng An Th¹ch", "Sø gi¶ Tµng KiÕm", 150,1745,3119);
     SetNpcScript(npcIndexcangjian5, "\\script\\²Ø½£É½×¯\\task_script\\ÑïÖİ\\²Ø½£Ê¹Õß.lua");
 
 end;
@@ -493,7 +493,7 @@ function Addyangmen()
     local npcIndexyangmen3 = CreateNpc("D­¬ng T«n B¶o", "D­¬ng T«n B¶o", 219,1559,3084);
     SetNpcScript(npcIndexyangmen3, "\\script\\ÖĞÔ­Ò»Çø\\Ìì²¨Ñî¸®\\npc\\Ñî×Ú±£.lua");
 
-    local npcIndexyangmen4 = CreateNpc("Méc Qu?Anh", "Méc Qu?Anh", 219,1481,3184);
+    local npcIndexyangmen4 = CreateNpc("Méc QuÕ Anh", "Méc QuÕ Anh", 219,1481,3184);
     SetNpcScript(npcIndexyangmen4, "\\script\\ÖĞÔ­Ò»Çø\\Ìì²¨Ñî¸®\\npc\\ÄÂ¹ğÓ¢.lua");
 
     local npcIndexyangmen5 = CreateNpc("Qu¶n gia", "D­¬ng Hång", 219,1634,3278);
@@ -502,19 +502,19 @@ function Addyangmen()
     local npcIndexyangmen6 = CreateNpc("Xa Th¸i Qu©n", "Xa Th¸i Qu©n", 219,1529,3137);
     SetNpcScript(npcIndexyangmen6, "\\script\\ÖĞÔ­Ò»Çø\\Ìì²¨Ñî¸®\\npc\\ÙÜÌ«¾ı.lua");
 
-    local npcIndexyangmen7 = CreateNpc("R­¬ng ®å Trung Nguyªn", "Th?kh?, 219,1599,3140);
+    local npcIndexyangmen7 = CreateNpc("R­¬ng ®å Trung Nguyªn", "Thñ khè", 219,1599,3140);
     SetNpcScript(npcIndexyangmen7, "\\script\\ÖĞÔ­Ò»Çø\\Ìì²¨Ñî¸®\\npc\\ÖĞÔ­´¢Îï¹ñ.lua");
 
 end;
 
 function AddChristmas()
-		local npcIndexWilson = CreateNpc("TruyÒn gi¸o s?,"Uy Nh?Tèn",100,1308,2930);	--ÈªÖİ
+		local npcIndexWilson = CreateNpc("TruyÒn gi¸o sÜ","Uy NhÜ Tèn",100,1308,2930);	--ÈªÖİ
 		SetNpcScript(npcIndexWilson,"\\script\\online\\zgc_npc_dialog.lua");
-		local npcIndexchurchman1 = CreateNpc("TruyÒn gi¸o s?,"Gi¸o s?,200,1333,2811);
+		local npcIndexchurchman1 = CreateNpc("TruyÒn gi¸o sÜ","Gi¸o sÜ",200,1333,2811);
 		--SetNpcScript(npcIndexchurchman1,"\\script\\online\\zgc_npc_dialog.lua");
 		--SetNpcScript(npcIndexchurchman1,"\\script\\online_activites\\2011_11\\activity_02\\missionaries_npc.lua")
 		SetNpcScript(npcIndexchurchman1, "\\script\\ÖĞÔ­Ò»Çø\\ãê¾©\\npc\\Î÷Ñó´«½ÌÊ¿.lua");
-		local npcIndexchurchman2 = CreateNpc("TruyÒn gi¸o s?,"Gi¸o s?,300,1707,3546);
+		local npcIndexchurchman2 = CreateNpc("TruyÒn gi¸o sÜ","Gi¸o sÜ",300,1707,3546);
 		SetNpcScript(npcIndexchurchman2, "\\script\\ÖĞÔ­Ò»Çø\\ãê¾©\\npc\\Î÷Ñó´«½ÌÊ¿.lua");
 		local npcIndexRosa = CreateNpc("Phu nh©n T©y D­¬ng","La Sa",100,1526,2948);
 		--SetNpcScript(npcIndexRosa,"\\script\\online\\viet_event\\binhchon_sangtac\\head.lua");
@@ -526,22 +526,22 @@ function AddChristmas()
 end
 
 function Addxinan()
-    local npcIndexxinan1 = CreateNpc("Xi Háa §¹i h?ph¸p", "Xi Háa §¹i h?ph¸p", 417,1642,3382);
+    local npcIndexxinan1 = CreateNpc("Xi Háa §¹i hé ph¸p", "Xi Háa §¹i hé ph¸p", 417,1642,3382);
     SetNpcScript(npcIndexxinan1, "\\script\\Î÷ÄÏÇø\\°×Ë®¶´¶ş²ã\\npc\\ò¿»ğ´ó»¤·¨.lua");
 
-    local npcIndexxinan2 = CreateNpc("D?Xoa Nha", "D?Xoa", 417,1815,3412);
+    local npcIndexxinan2 = CreateNpc("D¹ Xoa Nha", "D¹ Xoa", 417,1815,3412);
     SetNpcScript(npcIndexxinan2, "\\script\\Î÷ÄÏÇø\\°×Ë®¶´¶ş²ã\\npc\\Ò¹²æ.lua");
 
     local npcIndexxinan3 = CreateNpc("T¨ng ¸c", "Xi Háa ¸c t¨ng", 416,1724,2821);
     SetNpcScript(npcIndexxinan3, "\\script\\Î÷ÄÏÇø\\°×Ë®¶´Ò»²ã\\npc\\ò¿»ğÉ®¶ñ.lua");
 
-    local npcIndexxinan4 = CreateNpc("Quan s?trung niªn1", "Cao Th¨ng TuyÒn", 400,1537,3050);
+    local npcIndexxinan4 = CreateNpc("Quan sø-trung niªn1", "Cao Th¨ng TuyÒn", 400,1537,3050);
     SetNpcScript(npcIndexxinan4, "\\script\\Î÷ÄÏÇø\\´óÀí¸®\\npc\\¸ßÉıÈª.lua");
 
-    local npcIndexxinan5 = CreateNpc("B?ch?, "TrŞnh Qu¸n Chi", 400,1593,2928);
+    local npcIndexxinan5 = CreateNpc("Bµ chñ", "TrŞnh Qu¸n Chi", 400,1593,2928);
     SetNpcScript(npcIndexxinan5, "\\script\\Î÷ÄÏÇø\\´óÀí¸®\\npc\\Ö£¹áÖ®.lua");
 
-    local npcIndexxinan6 = CreateNpc("C?gi?, "§æng Gi?La", 400,1522,2848);
+    local npcIndexxinan6 = CreateNpc("Cô giµ", "§æng Giµ La", 400,1522,2848);
     SetNpcScript(npcIndexxinan6, "\\script\\Î÷ÄÏÇø\\´óÀí¸®\\npc\\¶­åÈÂŞ.lua");
 
     local npcIndexxinan7 = CreateNpc("Qu¶n gia", "TrÇn LËp Hµnh", 400,1470,2847);
@@ -553,7 +553,7 @@ function Addxinan()
     local npcIndexxinan9 = CreateNpc("Ngôc Háa Cuång Nh©n", "Ngôc Háa Cuång Nh©n", 401,1568,3085);
     SetNpcScript(npcIndexxinan9, "\\script\\Î÷ÄÏÇø\\µã²ÔÉ½\\npc\\Óü»ğ¿ñÈË.lua");
 
-    local npcIndexxinan10 = CreateNpc("Xi Háa Tæng ®µn ch?, "Xi Háa Tæng ®µn ch?, 413,1697,3192);
+    local npcIndexxinan10 = CreateNpc("Xi Háa Tæng ®µn chñ", "Xi Háa Tæng ®µn chñ", 413,1697,3192);
     SetNpcScript(npcIndexxinan10, "\\script\\Î÷ÄÏÇø\\ÁúÑÛ¶´¶ş²ã\\npc\\ò¿»ğ½Ì×ÜÌ³Ö÷.lua");
 
     local npcIndexxinan11 = CreateNpc("A Tu La", "A Tu La", 413,1701,3474);
@@ -562,28 +562,28 @@ function Addxinan()
     local npcIndexxinan12 = CreateNpc("Xi Háa §¹i tr­ëng l·o", "Xi Háa §¹i tr­ëng l·o", 412,1553,2976);
     SetNpcScript(npcIndexxinan12, "\\script\\Î÷ÄÏÇø\\ÁúÑÛ¶´Ò»²ã\\npc\\ò¿»ğ´ó³¤ÀÏ.lua");
 
-    local npcIndexxinan13 = CreateNpc("Miªu LÜnh Dòng S?, "Miªu LÜnh Dòng S?, 408,1321,3004);
+    local npcIndexxinan13 = CreateNpc("Miªu LÜnh Dòng SÜ", "Miªu LÜnh Dòng SÜ", 408,1321,3004);
     SetNpcScript(npcIndexxinan13, "\\script\\Î÷ÄÏÇø\\ÃçÁë\\npc\\ÃçÁëÓÂÊ¿.lua");
 
     local npcIndexxinan14 = CreateNpc("Nam nh©n T©y Nam", "Téc tr­ëng Miªu LÜnh", 408,1300,3140);
     SetNpcScript(npcIndexxinan14, "\\script\\Î÷ÄÏÇø\\ÃçÁë\\npc\\ÃçÁë×å³¤.lua");
 
-    local npcIndexxinan15 = CreateNpc("§éi tr­ëng h?v?, "§éi tr­ëng h?v?, 409,1820,3518);
+    local npcIndexxinan15 = CreateNpc("§éi tr­ëng hé vÖ", "§éi tr­ëng hé vÖ", 409,1820,3518);
     SetNpcScript(npcIndexxinan15, "\\script\\Î÷ÄÏÇø\\Ç§Ñ°ËşÒ»²ã\\npc\\»¤ÎÀ¶Ó³¤.lua");
 
-    local npcIndexxinan16 = CreateNpc("KiÒn §¹t B?, "KiÒn §¹t B?, 409,1849,3598);
+    local npcIndexxinan16 = CreateNpc("KiÒn §¹t Bµ", "KiÒn §¹t Bµ", 409,1849,3598);
     SetNpcScript(npcIndexxinan16, "\\script\\Î÷ÄÏÇø\\Ç§Ñ°ËşÒ»²ã\\npc\\Ç¬´ïÆÅ.lua");
 
-    local npcIndexxinan17 = CreateNpc("Thiªn TÇm N¹p S?, "Thiªn TÇm N¹p S?, 410,1694,3134);
+    local npcIndexxinan17 = CreateNpc("Thiªn TÇm N¹p S­", "Thiªn TÇm N¹p S­", 410,1694,3134);
     SetNpcScript(npcIndexxinan17, "\\script\\Î÷ÄÏÇø\\Ç§Ñ°Ëş¶ş²ã\\npc\\Ç§Ñ°ñÄÊ¦.lua");
 
     local npcIndexxinan18 = CreateNpc("KhÈn Na La", "KhÈn Na La", 410,1693,3183);
     SetNpcScript(npcIndexxinan18, "\\script\\Î÷ÄÏÇø\\Ç§Ñ°Ëş¶ş²ã\\npc\\½ôÄÇÂŞ.lua");
 
-    local npcIndexxinan19 = CreateNpc("Ng?§éc ¢m C?, "Ng?§éc ¢m C?, 419,1774,3129);
+    local npcIndexxinan19 = CreateNpc("Ngù §éc ¢m C¬", "Ngù §éc ¢m C¬", 419,1774,3129);
     SetNpcScript(npcIndexxinan19, "\\script\\Î÷ÄÏÇø\\ÈëÃÅÃÔ¹¬¶ş\\npc\\Ô¦¶¾Òõ¼§.lua");
 
-    local npcIndexxinan20 = CreateNpc("H?Cèt §éc Nh©n", "H?Cèt §éc Nh©n", 418,1512,2825);
+    local npcIndexxinan20 = CreateNpc("Hò Cèt §éc Nh©n", "Hò Cèt §éc Nh©n", 418,1512,2825);
     SetNpcScript(npcIndexxinan20, "\\script\\Î÷ÄÏÇø\\ÈëÃÅÃÔ¹¬Ò»\\npc\\¸¯¹Ç¶¾ÈË.lua");
 
     local npcIndexxinan21 = CreateNpc("Ngôc Háa Nh©n", "Ngôc Háa Nh©n", 406,1404,2770);
@@ -592,22 +592,22 @@ function Addxinan()
     local npcIndexxinan22 = CreateNpc("B¸n §iÖp Nh©n", "B¸n §iÖp Nh©n", 405,1555,2959);
     SetNpcScript(npcIndexxinan22, "\\script\\Î÷ÄÏÇø\\ÎäÁêÉ½½Å\\npc\\°ëµûÈË.lua");
 
-    local npcIndexxinan23 = CreateNpc("Ma H?La Gi?, "Ma H?La Gi?, 402,1319,2955);
+    local npcIndexxinan23 = CreateNpc("Ma H« La Giµ", "Ma H« La Giµ", 402,1319,2955);
     SetNpcScript(npcIndexxinan23, "\\script\\Î÷ÄÏÇø\\Î÷Ë«°æÄÉ±±²¿\\npc\\Ä¦ºôÂŞåÈ.lua");
 
-    local npcIndexxinan24 = CreateNpc("Nh?Hoµng Tö_§¹i L?, "Nh?hoµng t?§oµn T?ThuËn", 403,1458,2842);
+    local npcIndexxinan24 = CreateNpc("NhŞ Hoµng Tö_§¹i Lı", "NhŞ hoµng tö §oµn Tè ThuËn", 403,1458,2842);
     SetNpcScript(npcIndexxinan24, "\\script\\Î÷ÄÏÇø\\Î÷Ë«°æÄÉÄÏ²¿\\npc\\´óÀí¶ş»Ê×Ó.lua");
 
     local npcIndexxinan25 = CreateNpc("§oµn Thõa ¢n", "§oµn Thõa ¢n", 403,1537,2967);
     SetNpcScript(npcIndexxinan25, "\\script\\Î÷ÄÏÇø\\Î÷Ë«°æÄÉÄÏ²¿\\npc\\¶Î³Ğ¶÷.lua");
 
-    local npcIndexxinan26 = CreateNpc("Miªu LÜnh Th?lÜnh", "Miªu LÜnh Th?lÜnh", 421,1576,3469);
+    local npcIndexxinan26 = CreateNpc("Miªu LÜnh Thñ lÜnh", "Miªu LÜnh Thñ lÜnh", 421,1576,3469);
     SetNpcScript(npcIndexxinan26, "\\script\\Î÷ÄÏÇø\\Ñà×Ó¶´¶ş²ã\\npc\\ÃçÁëÊ×Áì.lua");
 
-    local npcIndexxinan27 = CreateNpc("Ng?§éc T©n Ch­ëng M«n", "B¹ch Doanh Doanh", 407,1615,3182);
+    local npcIndexxinan27 = CreateNpc("Ngò §éc T©n Ch­ëng M«n", "B¹ch Doanh Doanh", 407,1615,3182);
     SetNpcScript(npcIndexxinan27, "\\script\\Î÷ÄÏÇø\\Îå¶¾½Ì\\npc\\°×Ó¨Ó¨.lua");
 
-    local npcIndexxinan28 = CreateNpc("Xi Háa Yªu N?, "Xi Háa Yªu N?, 404,1346,3144);
+    local npcIndexxinan28 = CreateNpc("Xi Háa Yªu N÷", "Xi Háa Yªu N÷", 404,1346,3144);
     SetNpcScript(npcIndexxinan28, "\\script\\Î÷ÄÏÇø\\´äÑÌ\\npc\\ò¿»ğÑı¸¾.lua");
 
     local npcIndexxinan29 = CreateNpc("T©y Nam Miªu Nh©n", "C©u S¸ch", 407,1572,3159);
@@ -616,110 +616,110 @@ function Addxinan()
     local npcIndexxinan30 = CreateNpc("Nam nh©n T©y Nam", "Ph­¬ng Viªn", 407,1549,3184);
     SetNpcScript(npcIndexxinan30, "\\script\\Î÷ÄÏÇø\\Îå¶¾½Ì\\npc\\·½Ô³.lua");
 
-    local npcIndexxinan31 = CreateNpc("Ng?§éc gi¸o ch?, "V­u Dung", 407,1643,3233);
+    local npcIndexxinan31 = CreateNpc("Ngò §éc gi¸o chñ", "V­u Dung", 407,1643,3233);
     SetNpcScript(npcIndexxinan31, "\\script\\Î÷ÄÏÇø\\Îå¶¾½Ì\\npc\\ÓÈéÅ.lua");
 
-    local npcIndexxinan32 = CreateNpc("Ng?§éc gi¸o ®å", "T©y §å", 407,1606,3279);
+    local npcIndexxinan32 = CreateNpc("Ngò §éc gi¸o ®å", "T©y §å", 407,1606,3279);
     SetNpcScript(npcIndexxinan32, "\\script\\Î÷ÄÏÇø\\Îå¶¾½Ì\\npc\\Î÷Í¼.lua");
 
-    local npcIndexxinan33 = CreateNpc("Ch?tiÖm v¶i T©y Nam", "LiÔu T©n Tróc", 407,1606,3220);
+    local npcIndexxinan33 = CreateNpc("Chñ tiÖm v¶i T©y Nam", "LiÔu T©n Tróc", 407,1606,3220);
     SetNpcScript(npcIndexxinan33, "\\script\\Î÷ÄÏÇø\\Îå¶¾½Ì\\npc\\ÁøĞÂÖñ.lua");
 
-    local npcIndexxinan34 = CreateNpc("Ng?§éc Ph?gi¸o ch?, "Ng?Ng«n", 407,1594,3171);
+    local npcIndexxinan34 = CreateNpc("Ngò §éc Phã gi¸o chñ", "Ng« Ng«n", 407,1594,3171);
     SetNpcScript(npcIndexxinan34, "\\script\\Î÷ÄÏÇø\\Îå¶¾½Ì\\npc\\ÎâÑÔ.lua");
 
-    local npcIndexxinan35 = CreateNpc("Ng?§éc Ph?gi¸o ch?, "Hïng LËp", 407,1551,3265);
+    local npcIndexxinan35 = CreateNpc("Ngò §éc Phã gi¸o chñ", "Hïng LËp", 407,1551,3265);
     SetNpcScript(npcIndexxinan35, "\\script\\Î÷ÄÏÇø\\Îå¶¾½Ì\\npc\\ĞÜÁ¢.lua");
 
-    local npcIndexxinan36 = CreateNpc("Ng?§éc gi¸o ®å", "Th¸i Quang", 407,1556,3216);
+    local npcIndexxinan36 = CreateNpc("Ngò §éc gi¸o ®å", "Th¸i Quang", 407,1556,3216);
     SetNpcScript(npcIndexxinan36, "\\script\\Î÷ÄÏÇø\\Îå¶¾½Ì\\npc\\Ì©¹â.lua");
 
 
     local npcIndexxinan37 = CreateNpc("Sµi Hoµng Nhi", "Sµi Hoµng Nhi", 404,1570,2725);
     SetNpcScript(npcIndexxinan37, "\\script\\Î÷ÄÏÇø\\´äÑÌ\\npc\\²ñ»Ë¶ù.lua");
 
-    local npcIndexxinan38 = CreateNpc("Thóy Yªn h?ph¸p", "H?MÉn", 404,1599,2760);
+    local npcIndexxinan38 = CreateNpc("Thóy Yªn hé ph¸p", "Hé MÉn", 404,1599,2760);
     SetNpcScript(npcIndexxinan38, "\\script\\Î÷ÄÏÇø\\´äÑÌ\\npc\\ìèÃô.lua");
 
     local npcIndexxinan39 = CreateNpc("Thóy Yªn ch­ëng m«n", "L­u Thanh Mi", 404,1543,2693);
     SetNpcScript(npcIndexxinan39, "\\script\\Î÷ÄÏÇø\\´äÑÌ\\npc\\ÁõÇàÃ¼.lua");
 
-    local npcIndexxinan40 = CreateNpc("HiÖp n?, "Chu T?V¨n",404,1524,2719);
+    local npcIndexxinan40 = CreateNpc("HiÖp n÷", "Chu Tö V¨n",404,1524,2719);
     SetNpcScript(npcIndexxinan40, "\\script\\Î÷ÄÏÇø\\´äÑÌ\\npc\\ÖÜ×Óö©.lua");
 
-    local npcIndexxinan41 = CreateNpc("T?Hoµn Ch©n", "H?Man Thµnh", 404,1577,2784);
+    local npcIndexxinan41 = CreateNpc("Tè Hoµn Ch©n", "Hå Man Thµnh", 404,1577,2784);
     SetNpcScript(npcIndexxinan41, "\\script\\Î÷ÄÏÇø\\´äÑÌ\\npc\\ºúÂü³É.lua");
 
-    local npcIndexxinan42 = CreateNpc("Thóy Yªn m«n nh©n", "H?Hµi", 404,1493,2746);
+    local npcIndexxinan42 = CreateNpc("Thóy Yªn m«n nh©n", "Hµ Hµi", 404,1493,2746);
     SetNpcScript(npcIndexxinan42, "\\script\\Î÷ÄÏÇø\\´äÑÌ\\npc\\ºÎĞ³.lua");
 
-    local npcIndexxinan43 = CreateNpc("Thóy Yªn h?ph¸p", "X¶o X¶o", 404,1474,2838);
+    local npcIndexxinan43 = CreateNpc("Thóy Yªn hé ph¸p", "X¶o X¶o", 404,1474,2838);
     SetNpcScript(npcIndexxinan43, "\\script\\Î÷ÄÏÇø\\´äÑÌ\\npc\\ÇÉÇÉ.lua");
 
-    local npcIndexxinan44 = CreateNpc("Xa phu T©y Nam", "Xa phu §¹i L?, 400,1549,2882);
+    local npcIndexxinan44 = CreateNpc("Xa phu T©y Nam", "Xa phu §¹i Lı", 400,1549,2882);
     SetNpcScript(npcIndexxinan44, "\\script\\Î÷ÄÏÇø\\´óÀí¸®\\npc\\´óÀí³µ·ò.lua");
 
-    local npcIndexxinan45 = CreateNpc("Ch?tiÖm ®¸ T©y Nam", "Ch?Kim hoµn", 400,1497,2940);
+    local npcIndexxinan45 = CreateNpc("Chñ tiÖm ®¸ T©y Nam", "Chñ Kim hoµn", 400,1497,2940);
     SetNpcScript(npcIndexxinan45, "\\script\\Î÷ÄÏÇø\\´óÀí¸®\\npc\\ÊÎÆ·µêÀÏ°å.lua");
 
-    local npcIndexxinan46 = CreateNpc("R­¬ng ®å Trung Nguyªn", "Th?kh?, 400,1553,2914);
+    local npcIndexxinan46 = CreateNpc("R­¬ng ®å Trung Nguyªn", "Thñ khè", 400,1553,2914);
     SetNpcScript(npcIndexxinan46, "\\script\\Î÷ÄÏÇø\\´óÀí¸®\\npc\\ÎïÆ·±£¹ÜÈË±±.lua");
 
-    local npcIndexxinan47 = CreateNpc("Ch?cÇm ®å T©y Nam", "Ch?töu lÇu", 400,1524,2894);
+    local npcIndexxinan47 = CreateNpc("Chñ cÇm ®å T©y Nam", "Chñ töu lÇu", 400,1524,2894);
     SetNpcScript(npcIndexxinan47, "\\script\\Î÷ÄÏÇø\\´óÀí¸®\\npc\\¾ÆÂ¥ÀÏ°å.lua");
 
-    local npcIndexxinan48 = CreateNpc("T?Thanh Th­îng Nh©n", "L?quan", 400,1506,2847);
+    local npcIndexxinan48 = CreateNpc("Tö Thanh Th­îng Nh©n", "LÔ quan", 400,1506,2847);
     SetNpcScript(npcIndexxinan48, "\\script\\ÖĞÔ­Ò»Çø\\ãê¾©\\npc\\´óÄÚ×Ü¹Ü.lua");
 
-    local npcIndexxinan49 = CreateNpc("Ch­ëng d­îc Th?Phån", "Ch?T¹p hãa", 400,1511,2955);
+    local npcIndexxinan49 = CreateNpc("Ch­ëng d­îc Thæ Phån", "Chñ T¹p hãa", 400,1511,2955);
     SetNpcScript(npcIndexxinan49, "\\script\\Î÷ÄÏÇø\\´óÀí¸®\\npc\\ÔÓ»õµêÀÏ°å.lua");
 
-    local npcIndexxinan50 = CreateNpc("Tr×nh Di", "Ch?th­¬ng héi", 400,1486,2924);
+    local npcIndexxinan50 = CreateNpc("Tr×nh Di", "Chñ th­¬ng héi", 400,1486,2924);
     SetNpcScript(npcIndexxinan50, "\\script\\Î÷ÄÏÇø\\´óÀí¸®\\npc\\ÉÌ»áÀÏ°å.lua");
 
-    local npcIndexxinan51 = CreateNpc("Ch­ëng d­îc T©y Nam", "Ch?D­îc ®iÕm", 400,1522,3007);
+    local npcIndexxinan51 = CreateNpc("Ch­ëng d­îc T©y Nam", "Chñ D­îc ®iÕm", 400,1522,3007);
     SetNpcScript(npcIndexxinan51, "\\script\\Î÷ÄÏÇø\\´óÀí¸®\\npc\\Ò©µêÀÏ°å.lua");
 
-    local npcIndexxinan52 = CreateNpc("V?L©m Minh Ch?", "S?gi?m«n ph¸i", 400,1548,2981);
+    local npcIndexxinan52 = CreateNpc("Vâ L©m Minh Chñ1", "Sø gi¶ m«n ph¸i", 400,1548,2981);
     SetNpcScript(npcIndexxinan52, "\\script\\Î÷ÄÏÇø\\´óÀí¸®\\npc\\ÃÅÅÉ½ÓÒıÈË.lua");
 
-    local npcIndexxinan53 = CreateNpc("Ch?tiÖm v?kh?T©y Nam", "Ch?TiÖm Nam phôc", 400,1471,2956);
+    local npcIndexxinan53 = CreateNpc("Chñ tiÖm vò khİ T©y Nam", "Chñ TiÖm Nam phôc", 400,1471,2956);
     SetNpcScript(npcIndexxinan53, "\\script\\Î÷ÄÏÇø\\´óÀí¸®\\npc\\ÄĞ×°µêÀÏ°å.lua");
 
-    local npcIndexxinan54 = CreateNpc("Ch?tiÖm v¶i T©y Nam", "Ch?TiÖm N?phôc", 400,1498,2969);
+    local npcIndexxinan54 = CreateNpc("Chñ tiÖm v¶i T©y Nam", "Chñ TiÖm N÷ phôc", 400,1498,2969);
     SetNpcScript(npcIndexxinan54, "\\script\\Î÷ÄÏÇø\\´óÀí¸®\\npc\\Å®×°µêÀÏ°å.lua");
 
-    local npcIndexxinan55 = CreateNpc("Xa phu T©y Nam", "Xa phu §¹i L?, 400,1574,3110);
+    local npcIndexxinan55 = CreateNpc("Xa phu T©y Nam", "Xa phu §¹i Lı", 400,1574,3110);
     SetNpcScript(npcIndexxinan55, "\\script\\Î÷ÄÏÇø\\´óÀí¸®\\npc\\´óÀí³µ·ò.lua");
 
-    local npcIndexxinan56 = CreateNpc("R­¬ng ®å Trung Nguyªn", "Th?kh?, 400,1527,3112);
+    local npcIndexxinan56 = CreateNpc("R­¬ng ®å Trung Nguyªn", "Thñ khè", 400,1527,3112);
     SetNpcScript(npcIndexxinan56, "\\script\\Î÷ÄÏÇø\\´óÀí¸®\\npc\\ÎïÆ·±£¹ÜÈË¶«.lua");
 
-    local npcIndexxinan57 = CreateNpc("Xa phu T©y Nam", "Xa phu §¹i L?, 400,1465,3110);
+    local npcIndexxinan57 = CreateNpc("Xa phu T©y Nam", "Xa phu §¹i Lı", 400,1465,3110);
     SetNpcScript(npcIndexxinan57, "\\script\\Î÷ÄÏÇø\\´óÀí¸®\\npc\\´óÀí³µ·ò.lua");
 
-    local npcIndexxinan58 = CreateNpc("R­¬ng ®å Trung Nguyªn", "Th?kh?, 400,1456,3071);
+    local npcIndexxinan58 = CreateNpc("R­¬ng ®å Trung Nguyªn", "Thñ khè", 400,1456,3071);
     SetNpcScript(npcIndexxinan58, "\\script\\Î÷ÄÏÇø\\´óÀí¸®\\npc\\ÎïÆ·±£¹ÜÈËÄÏ.lua");
 
-    local npcIndexxinan59 = CreateNpc("R­¬ng ®å Trung Nguyªn", "Th?kh?, 407,1621,3249);
+    local npcIndexxinan59 = CreateNpc("R­¬ng ®å Trung Nguyªn", "Thñ khè", 407,1621,3249);
     SetNpcScript(npcIndexxinan59, "\\script\\Î÷ÄÏÇø\\Îå¶¾½Ì\\npc\\ÎïÆ·±£¹ÜÈË.lua");
 
-    local npcIndexxinan60 = CreateNpc("Ch?V?kh?Trung Nguyªn", "Ch?TiÖm v?kh?, 400,1566,3005);
+    local npcIndexxinan60 = CreateNpc("Chñ Vò khİ Trung Nguyªn", "Chñ TiÖm vò khİ", 400,1566,3005);
     SetNpcScript(npcIndexxinan60, "\\script\\Î÷ÄÏÇø\\´óÀí¸®\\npc\\ÎäÆ÷µêÀÏ°å.lua");
 
-    local npcIndexxinan61 = CreateNpc("Ch?V?kh?Trung Nguyªn", "Minh S?Ph?, 350,1546,2930);
+    local npcIndexxinan61 = CreateNpc("Chñ Vò khİ Trung Nguyªn", "Minh S­ Phã", 350,1546,2930);
     SetNpcScript(npcIndexxinan61, "\\script\\ÖĞÔ­¶şÇø\\ÏåÑô\\npc\\ÖÆÃ±¼¼ÄÜ.lua");
 
-    local npcIndexxinan62 = CreateNpc("ThiÕu n?Miªu Téc", "T?Quyªn", 400,1409,2980);
+    local npcIndexxinan62 = CreateNpc("ThiÕu n÷ Miªu Téc", "Tö Quyªn", 400,1409,2980);
     SetNpcScript(npcIndexxinan62, "\\script\\Î÷ÄÏÇø\\´óÀí¸®\\npc\\ÖÆ¿ã¼¼ÄÜ.lua");
 
     local npcIndexxinan63 = CreateNpc("V©n Du §¹o Nh©n", "M¹c Qu©n ®¹o tr­ëng", 100,1390,2965);
     SetNpcScript(npcIndexxinan63, "\\script\\½­ÄÏÇø\\ÈªÖİ\\npc\\¼¯Áé¼¼ÄÜ.lua");
 
-    local npcIndexxinan64 = CreateNpc("V?L©m Minh Ch?", "S?gi?m«n ph¸i", 350,1434,2963);
+    local npcIndexxinan64 = CreateNpc("Vâ L©m Minh Chñ1", "Sø gi¶ m«n ph¸i", 350,1434,2963);
     SetNpcScript(npcIndexxinan64, "\\script\\Î÷ÄÏÇø\\´óÀí¸®\\npc\\ÃÅÅÉ½ÓÒıÈË.lua");
 
-    local npcIndexxinan65 = CreateNpc("V?L©m Minh Ch?", "S?gi?m«n ph¸i", 150,1723,3143);
+    local npcIndexxinan65 = CreateNpc("Vâ L©m Minh Chñ1", "Sø gi¶ m«n ph¸i", 150,1723,3143);
     SetNpcScript(npcIndexxinan65, "\\script\\Î÷ÄÏÇø\\´óÀí¸®\\npc\\ÃÅÅÉ½ÓÒıÈË.lua");
 end;
 
@@ -741,33 +741,33 @@ function AddCheFu()		 --²É¼¯µØÍ¼³µ·ò
 end
 
 function AddDragonBoatDay()
-	local npcIndex = CreateNpc("V?L©m Minh Ch?","Long Chu s?gi?,100,1465,2794);
+	local npcIndex = CreateNpc("Vâ L©m Minh Chñ1","Long Chu sø gi¶",100,1465,2794);
 	SetNpcScript(npcIndex,"\\script\\online\\dragonboat06\\room_manager.lua");
-	npcIndex = CreateNpc("V?L©m Minh Ch?","Long Chu s?gi?,200,1170,2828);
+	npcIndex = CreateNpc("Vâ L©m Minh Chñ1","Long Chu sø gi¶",200,1170,2828);
 	SetNpcScript(npcIndex,"\\script\\online\\dragonboat06\\room_manager.lua");
-	npcIndex = CreateNpc("V?L©m Minh Ch?","Long Chu s?gi?,300,1640,3526);
+	npcIndex = CreateNpc("Vâ L©m Minh Chñ1","Long Chu sø gi¶",300,1640,3526);
 	SetNpcScript(npcIndex,"\\script\\online\\dragonboat06\\room_manager.lua");
 
 	for i=0,7 do
-		npcIndex = CreateNpc("V?L©m Minh Ch?","Long Chu s?gi?,1070+i,2051,3249);
+		npcIndex = CreateNpc("Vâ L©m Minh Chñ1","Long Chu sø gi¶",1070+i,2051,3249);
 		SetNpcScript(npcIndex,"\\script\\online\\dragonboat06\\room_worker.lua");
 	end;
 	for i=0,7 do
-		npcIndex = CreateNpc("V?L©m Minh Ch?","Long Chu s?gi?,2070+i,2051,3249);
+		npcIndex = CreateNpc("Vâ L©m Minh Chñ1","Long Chu sø gi¶",2070+i,2051,3249);
 		SetNpcScript(npcIndex,"\\script\\online\\dragonboat06\\room_worker.lua");
 	end;
 	for i=0,7 do
-		npcIndex = CreateNpc("V?L©m Minh Ch?","Long Chu s?gi?,3070+i,2051,3249);
+		npcIndex = CreateNpc("Vâ L©m Minh Chñ1","Long Chu sø gi¶",3070+i,2051,3249);
 		SetNpcScript(npcIndex,"\\script\\online\\dragonboat06\\room_worker.lua");
 	end;
 end;
 
 function AddTxNpc()
-	local npcIndex = CreateNpc("V?§ang  ch­ëng m«n", "ThÇn Du Ch©n Nh©n", 200, 1151, 2850)
+	local npcIndex = CreateNpc("Vâ §ang  ch­ëng m«n", "ThÇn Du Ch©n Nh©n", 200, 1151, 2850)
 	SetNpcScript(npcIndex, "\\script\\Ì«Ğé»Ã¾³\\¿Õ¿ÕºÍÉĞ.lua")
-	npcIndex = CreateNpc("V?§ang  ch­ëng m«n", "ThÇn Du Ch©n Nh©n", 300, 1975, 3552)
+	npcIndex = CreateNpc("Vâ §ang  ch­ëng m«n", "ThÇn Du Ch©n Nh©n", 300, 1975, 3552)
 	SetNpcScript(npcIndex, "\\script\\Ì«Ğé»Ã¾³\\¿Õ¿ÕºÍÉĞ.lua")
-	npcIndex = CreateNpc("V?§ang  ch­ëng m«n", "ThÇn Du Ch©n Nh©n", 100, 1379, 2858)
+	npcIndex = CreateNpc("Vâ §ang  ch­ëng m«n", "ThÇn Du Ch©n Nh©n", 100, 1379, 2858)
 	SetNpcScript(npcIndex, "\\script\\Ì«Ğé»Ã¾³\\¿Õ¿ÕºÍÉĞ.lua")
 end
 
@@ -873,15 +873,15 @@ function Addmenpaibuchong()
 end
 
 function AddXinshou()
-	local npcIndex = CreateNpc("ThiÖu Ung", "V¹n S?Th«ng", 200, 1397, 2849)
+	local npcIndex = CreateNpc("ThiÖu Ung", "V¹n Sù Th«ng", 200, 1397, 2849)
 	SetNpcScript(npcIndex, "\\script\\task\\teach\\ĞÂÊÖÖ¸Òınpc.lua")
-	npcIndex = CreateNpc("ThiÖu Ung", "V¹n S?Th«ng", 300, 1750, 3524)
+	npcIndex = CreateNpc("ThiÖu Ung", "V¹n Sù Th«ng", 300, 1750, 3524)
 	SetNpcScript(npcIndex, "\\script\\task\\teach\\ĞÂÊÖÖ¸Òınpc.lua")
-	npcIndex = CreateNpc("ThiÖu Ung", "V¹n S?Th«ng", 100, 1440, 2964)
+	npcIndex = CreateNpc("ThiÖu Ung", "V¹n Sù Th«ng", 100, 1440, 2964)
 	SetNpcScript(npcIndex, "\\script\\task\\teach\\ĞÂÊÖÖ¸Òınpc.lua")
-	npcIndex = CreateNpc("ThiÖu Ung", "V¹n S?Th«ng", 350, 1452, 2991)
+	npcIndex = CreateNpc("ThiÖu Ung", "V¹n Sù Th«ng", 350, 1452, 2991)
 	SetNpcScript(npcIndex, "\\script\\task\\teach\\ĞÂÊÖÖ¸Òınpc.lua")
-	npcIndex = CreateNpc("ThiÖu Ung", "V¹n S?Th«ng", 150, 1694, 3146)
+	npcIndex = CreateNpc("ThiÖu Ung", "V¹n Sù Th«ng", 150, 1694, 3146)
 	SetNpcScript(npcIndex, "\\script\\task\\teach\\ĞÂÊÖÖ¸Òınpc.lua")
 end
 
@@ -914,22 +914,22 @@ function CreateGatherNpc()
 	nIndex = CreateNpc("ThiÕu niªn trong th«n", "Ng­êi ñy th¸c canh t¸c", 723, 1701, 3456)
 	SetNpcScript(nIndex, "\\script\\tishencaiji\\tishen_npc.lua")
 
-	nIndex = CreateNpc("Ch?V?kh?Trung Nguyªn", "Ng­êi ñy th¸c ®µo khãang", 711, 1721, 3373)
+	nIndex = CreateNpc("Chñ Vò khİ Trung Nguyªn", "Ng­êi ñy th¸c ®µo khãang", 711, 1721, 3373)
 	SetNpcScript(nIndex, "\\script\\tishencaiji\\tishen_npc.lua")
 
-	nIndex = CreateNpc("Ch?V?kh?Trung Nguyªn", "Ng­êi ñy th¸c ®µo khãang", 716, 1707, 3038)
+	nIndex = CreateNpc("Chñ Vò khİ Trung Nguyªn", "Ng­êi ñy th¸c ®µo khãang", 716, 1707, 3038)
 	SetNpcScript(nIndex, "\\script\\tishencaiji\\tishen_npc.lua")
 
-	nIndex = CreateNpc("Ch?V?kh?Trung Nguyªn", "Ng­êi ñy th¸c ®µo khãang", 721, 1682, 3336)
+	nIndex = CreateNpc("Chñ Vò khİ Trung Nguyªn", "Ng­êi ñy th¸c ®µo khãang", 721, 1682, 3336)
 	SetNpcScript(nIndex, "\\script\\tishencaiji\\tishen_npc.lua")
 
-	nIndex = CreateNpc("ThÇy luyÖn th?, "Ng­êi ñy th¸c thu thËp", 712, 1480, 2919)
+	nIndex = CreateNpc("ThÇy luyÖn thó", "Ng­êi ñy th¸c thu thËp", 712, 1480, 2919)
 	SetNpcScript(nIndex, "\\script\\tishencaiji\\tishen_npc.lua")
 
-	nIndex = CreateNpc("Ph?n?", "Ng­êi ñy th¸c thu thËp", 717, 1744, 2957)
+	nIndex = CreateNpc("Phô n÷1", "Ng­êi ñy th¸c thu thËp", 717, 1744, 2957)
 	SetNpcScript(nIndex, "\\script\\tishencaiji\\tishen_npc.lua")
 
-	nIndex = CreateNpc("ThÇy luyÖn th?, "Ng­êi ñy th¸c thu thËp", 722, 1755, 3430)
+	nIndex = CreateNpc("ThÇy luyÖn thó", "Ng­êi ñy th¸c thu thËp", 722, 1755, 3430)
 	SetNpcScript(nIndex, "\\script\\tishencaiji\\tishen_npc.lua")
 end
 --====================================´å³¤µÄ×Ô¶¯º¯Êı================================================
@@ -942,24 +942,24 @@ function ZgcNpcCreate()
 	local npc_index = 0
 	--******************************Ôö¼ÓÕ½³¡±¨Ãûnpc*************************
 	--npc_index = CreateNpc("B¸n s¸ch","TriÖu Diªn Niªn",200,1386,3076);	--ãê¾©£º173,192
-	--npc_index = CreateNpc("T?Hoµn Ch©n","TiÓu Ph­¬ng",350,1446,2941);	
-	npc_index = CreateNpc("T?Hoµn Ch©n","TiÓu Ph­¬ng",200,1347,2863);		
+	--npc_index = CreateNpc("Tè Hoµn Ch©n","TiÓu Ph­¬ng",350,1446,2941);	
+	npc_index = CreateNpc("Tè Hoµn Ch©n","TiÓu Ph­¬ng",200,1347,2863);		
 	SetNpcScript(npc_index, "\\script\\online\\viet_event\\Battle_TieuPhuong\\TieuPhuong.lua")
 	--npc_index = CreateNpc("B¸n s¸ch","TriÖu Diªn Niªn",200,1466,2830);	--ãê¾©£º183,176
 	--SetNpcScript(npc_index, "\\script\\ÖĞÔ­Ò»Çø\\ãê¾©\\npc\\ÕÔÑÓÄê.lua")
-	--npc_index = CreateNpc("Giang h?tuÊn kiÖt","Tiªu ViÔn L©u",200,1409,2772);	--ãê¾©£º176,173
-	--npc_index = CreateNpc("Ch?qu¶n Háa Kh?phßng","TiÓu Ngäc",350,1469,2970);	
-	npc_index = CreateNpc("Ch?qu¶n Háa Kh?phßng","TiÓu Ngäc",200,1377,2895);		
+	--npc_index = CreateNpc("Giang hå tuÊn kiÖt","Tiªu ViÔn L©u",200,1409,2772);	--ãê¾©£º176,173
+	--npc_index = CreateNpc("Chñ qu¶n Háa Khİ phßng","TiÓu Ngäc",350,1469,2970);	
+	npc_index = CreateNpc("Chñ qu¶n Háa Khİ phßng","TiÓu Ngäc",200,1377,2895);		
 	SetNpcScript(npc_index, "\\script\\ÖĞÔ­Ò»Çø\\ãê¾©\\npc\\ÏôÔ¶Â¥.lua")
-	--npc_index = CreateNpc("Giang h?tuÊn kiÖt","Tiªu ViÔn L©u",200,1402,2918);	--ãê¾©£º175,182
+	--npc_index = CreateNpc("Giang hå tuÊn kiÖt","Tiªu ViÔn L©u",200,1402,2918);	--ãê¾©£º175,182
 	--SetNpcScript(npc_index, "\\script\\ÖĞÔ­Ò»Çø\\ãê¾©\\npc\\ÏôÔ¶Â¥.lua")
 	--*****************************NPCĞÅÏ¢±í*********************************
 	local zgc_npc_inf = {
 	--»ªÉ½´«³öNPC
 	--½ÇÉ«É¾³ı¹¦ÄÜNPC
-	{"Trİch ThÇn","V?L©m Èn s?,200,1313,2686,"\\script\\online\\zgc_npc_dialog.lua"},
+	{"Trİch ThÇn","Vâ L©m Èn sÜ",200,1313,2686,"\\script\\online\\zgc_npc_dialog.lua"},
 	--½á»é¶şÆÚ
-	{"L?S?S?,"X¶o n?,150,1588,3143,"\\script\\task\\marriage\\qiao_girl.lua"},
+	{"Lı S­ S­","X¶o n÷",150,1588,3143,"\\script\\task\\marriage\\qiao_girl.lua"},
 	--°ï»á¹¥³ÇÕ½×ÊÔ´±£»¤Ïà¹ØNPC
 	{"B¶o r­¬ng Tµi nguyªn","B¶o r­¬ng Tµi nguyªn",304,1532,2892,"\\script\\gongcheng\\npc\\conf_res_protect.lua"},
 	{"B¶o r­¬ng Tµi nguyªn","B¶o r­¬ng Tµi nguyªn",304,1543,2897,"\\script\\gongcheng\\npc\\conf_res_protect.lua"},
@@ -983,7 +983,7 @@ function ZgcNpcCreate()
 	{"B¶o r­¬ng Tµi nguyªn","B¶o r­¬ng Tµi nguyªn",308,1421,3076,"\\script\\gongcheng\\npc\\conf_res_protect.lua"},
 	{"B¶o r­¬ng Tµi nguyªn","B¶o r­¬ng Tµi nguyªn",308,1421,3058,"\\script\\gongcheng\\npc\\conf_res_protect.lua"},
 	--»áÊÔ
-	{"V?§ang  ph?ch­ëng m«n","Long Quang Ch©n Nh©n",500,1633,3185,"\\script\\online_activites\\reborn\\effect\\npc\\npc_add_effect.lua"},
+	{"Vâ §ang  phã ch­ëng m«n","Long Quang Ch©n Nh©n",500,1633,3185,"\\script\\online_activites\\reborn\\effect\\npc\\npc_add_effect.lua"},
 	{"MËt th¸m §¹i Tèng T©y Vùc","MËt th¸m §¹i Tèng T©y Vùc",500,1759,3142,"\\script\\missions\\northwest_mission\\npc\\npc_log_in.lua"},
 	}
 
@@ -1011,17 +1011,17 @@ function ZgcNpcCreate()
 --			{"·½°Ù»¨","³ö¹Ø´«ËÍÈË",153,1779,3452,"\\script\\task\\practice\\³ö¹Ø´«ËÍÈË.lua"},
 --			{"ÖĞÔ­´¢Îï¹ñ","ÎïÆ·±£¹ÜÈË",152,1508,3074,"\\script\\½­ÄÏÇø\\Ã÷½Ì\\npc\\ÎïÆ·±£¹ÜÈË.lua"},
 			--´äÑÌÏà¹Ø
-			{"§µo Hoa th?,"§µo Hoa th?,404,1462,2835,"\\script\\Î÷ÄÏÇø\\´äÑÌ\\npc\\ÌÒ»¨Ê÷.lua"},
+			{"§µo Hoa thô","§µo Hoa thô",404,1462,2835,"\\script\\Î÷ÄÏÇø\\´äÑÌ\\npc\\ÌÒ»¨Ê÷.lua"},
 			{"Sµi Phong Nhi","Sµi Phong Nhi",404,1552,2815,"\\script\\Î÷ÄÏÇø\\´äÑÌ\\npc\\²ñ·ç¶ù.lua"},
 --			{"ÇÉÇÉ","³ö¹Ø´«ËÍÈË",423,1497,2950,"\\script\\task\\practice\\³ö¹Ø´«ËÍÈË.lua"},
-			{"N?thiÕu niªn1","Th?kh?,404,1537,2758,"\\script\\Î÷ÄÏÇø\\´äÑÌ\\npc\\ÎïÆ·±£¹ÜÈË.lua"},
+			{"N÷ thiÕu niªn1","Thñ khè",404,1537,2758,"\\script\\Î÷ÄÏÇø\\´äÑÌ\\npc\\ÎïÆ·±£¹ÜÈË.lua"},
 			--À¥ÂØÏà¹Ø
-			{"tianyuanshizhu","Thiªn Nguyªn Ph¸p TrËn Th¹ch Tr?,509,1577,3098,"\\script\\Î÷±±Çø\\À¥ÂØ\\npc\\Ê¯Öù.lua"},
-			{"tianyuanshizhu","Thiªn Nguyªn Ph¸p TrËn Th¹ch Tr?,509,1587,3099,"\\script\\Î÷±±Çø\\À¥ÂØ\\npc\\Ê¯Öù.lua"},
-			{"tianyuanshizhu","Thiªn Nguyªn Ph¸p TrËn Th¹ch Tr?,509,1589,3115,"\\script\\Î÷±±Çø\\À¥ÂØ\\npc\\Ê¯Öù.lua"},
-			{"tianyuanshizhu","Thiªn Nguyªn Ph¸p TrËn Th¹ch Tr?,509,1580,3120,"\\script\\Î÷±±Çø\\À¥ÂØ\\npc\\Ê¯Öù.lua"},
-			{"tianyuanshizhu","Thiªn Nguyªn Ph¸p TrËn Th¹ch Tr?,509,1572,3112,"\\script\\Î÷±±Çø\\À¥ÂØ\\npc\\Ê¯Öù.lua"},
-			{"H?Yªu","Yªu H?,509,1581,3109,"\\script\\Î÷±±Çø\\À¥ÂØ\\npc\\Ñıºü.lua"},
+			{"tianyuanshizhu","Thiªn Nguyªn Ph¸p TrËn Th¹ch Trô",509,1577,3098,"\\script\\Î÷±±Çø\\À¥ÂØ\\npc\\Ê¯Öù.lua"},
+			{"tianyuanshizhu","Thiªn Nguyªn Ph¸p TrËn Th¹ch Trô",509,1587,3099,"\\script\\Î÷±±Çø\\À¥ÂØ\\npc\\Ê¯Öù.lua"},
+			{"tianyuanshizhu","Thiªn Nguyªn Ph¸p TrËn Th¹ch Trô",509,1589,3115,"\\script\\Î÷±±Çø\\À¥ÂØ\\npc\\Ê¯Öù.lua"},
+			{"tianyuanshizhu","Thiªn Nguyªn Ph¸p TrËn Th¹ch Trô",509,1580,3120,"\\script\\Î÷±±Çø\\À¥ÂØ\\npc\\Ê¯Öù.lua"},
+			{"tianyuanshizhu","Thiªn Nguyªn Ph¸p TrËn Th¹ch Trô",509,1572,3112,"\\script\\Î÷±±Çø\\À¥ÂØ\\npc\\Ê¯Öù.lua"},
+			{"Hå Yªu","Yªu Hå",509,1581,3109,"\\script\\Î÷±±Çø\\À¥ÂØ\\npc\\Ñıºü.lua"},
 --			{"B¶o r­¬ng Tµi nguyªn","B¶o r­¬ng Tµi nguyªn",108,1514,3073,"\\script\\gongcheng\\npc\\conf_res_protect.lua"},
 --			{"B¶o r­¬ng Tµi nguyªn","B¶o r­¬ng Tµi nguyªn",108,1522,3072,"\\script\\gongcheng\\npc\\conf_res_protect.lua"},
 --			{"B¶o r­¬ng Tµi nguyªn","B¶o r­¬ng Tµi nguyªn",108,1521,3058,"\\script\\gongcheng\\npc\\conf_res_protect.lua"},
@@ -1037,7 +1037,7 @@ end
 --======================================½áÊø================================
 function Addmenpai()
 	local nNpcIndex = 0;
-	nNpcIndex = CreateNpc("V?L©m Minh Ch?","§Æc s?V?L©m",150,1705,3173);	--ÑïÖİ 213, 198
+	nNpcIndex = CreateNpc("Vâ L©m Minh Chñ1","§Æc sø Vâ L©m",150,1705,3173);	--ÑïÖİ 213, 198
 	SetNpcScript(nNpcIndex, "\\script\\task\\faction_boss\\wulinmeng_teshi.lua");
 end;
 
@@ -1068,20 +1068,20 @@ function AddNewBattle()
 end;
 
 function Addjiehun()
-	local nNpcIndex = CreateNpc("B?mai", "B?mai", 150, 1600, 3136)
+	local nNpcIndex = CreateNpc("Bµ mai", "Bµ mai", 150, 1600, 3136)
 	SetNpcScript(nNpcIndex, "\\script\\½á»é\\npc\\Ã½ÆÅ.lua");
-	nNpcIndex = CreateNpc("Th­¬ng nh©n", "S?gi?h«n l?, 150, 1711, 3046)
+	nNpcIndex = CreateNpc("Th­¬ng nh©n", "Sø gi¶ h«n lÔ", 150, 1711, 3046)
 	SetNpcScript(nNpcIndex, "\\script\\½á»é\\npc\\»éÇì´«ËÍÈË.lua");
 	nNpcIndex = CreateNpc("NguyÖt L·o", "NguyÖt L·o", 404, 1642, 2603)
 	SetNpcScript(nNpcIndex, "\\script\\½á»é\\npc\\ÔÂÀÏ.lua");
 	--Ô¤ÀÀ³¡µØÃ½ÆÅ
-	nNpcIndex = CreateNpc("B?mai", "B?mai", 855, 1554, 3232)
+	nNpcIndex = CreateNpc("Bµ mai", "Bµ mai", 855, 1554, 3232)
 	SetNpcScript(nNpcIndex, "\\script\\½á»é\\npc\\Ã½ÆÅ2.lua");
-	nNpcIndex = CreateNpc("B?mai", "B?mai", 856, 1615, 3276)
+	nNpcIndex = CreateNpc("Bµ mai", "Bµ mai", 856, 1615, 3276)
 	SetNpcScript(nNpcIndex, "\\script\\½á»é\\npc\\Ã½ÆÅ2.lua");
-	nNpcIndex = CreateNpc("B?mai", "B?mai", 857, 1550, 3217)
+	nNpcIndex = CreateNpc("Bµ mai", "Bµ mai", 857, 1550, 3217)
 	SetNpcScript(nNpcIndex, "\\script\\½á»é\\npc\\Ã½ÆÅ2.lua");
-	nNpcIndex = CreateNpc("B?mai", "B?mai", 858, 1612, 3324)
+	nNpcIndex = CreateNpc("Bµ mai", "Bµ mai", 858, 1612, 3324)
 	SetNpcScript(nNpcIndex, "\\script\\½á»é\\npc\\Ã½ÆÅ2.lua");
 
 	CreateChannel("Khu vùc kÕt h«n",26);
@@ -1090,94 +1090,94 @@ end
 function AddSnowWarNpc()
     if tonumber(date("%y%m%d")) >= 091218 and tonumber(date("%y%m%d")) < 100117 then
 	--ãê¾©Ñ©ÕÌ´«ËÍÈË
-	local npcIndex = CreateNpc("Giang h?hµo kiÖt","Xa phu_nĞm tuyÕt",200,1413,3056)
+	local npcIndex = CreateNpc("Giang hå hµo kiÖt","Xa phu_nĞm tuyÕt",200,1413,3056)
 	SetNpcScript(npcIndex,"\\script\\online\\´º½Ú»î¶¯\\ãê¾©Ñ©ÕÌ´«ËÍÈËin.lua")
 	--³É¶¼Ñ©ÕÌ´«ËÍÈË
-	npcIndex = CreateNpc("Giang h?hµo kiÖt","Xa phu_nĞm tuyÕt",300,1831,3577)
+	npcIndex = CreateNpc("Giang hå hµo kiÖt","Xa phu_nĞm tuyÕt",300,1831,3577)
 	SetNpcScript(npcIndex,"\\script\\online\\´º½Ú»î¶¯\\³É¶¼Ñ©ÕÌ´«ËÍÈËin.lua")
 	--ÈªÖİÑ©ÕÌ´«ËÍÈË
-	npcIndex = CreateNpc("Giang h?hµo kiÖt","Xa phu_nĞm tuyÕt",100,1364,2928)
+	npcIndex = CreateNpc("Giang hå hµo kiÖt","Xa phu_nĞm tuyÕt",100,1364,2928)
 	SetNpcScript(npcIndex,"\\script\\online\\´º½Ú»î¶¯\\ÈªÖİÑ©ÕÌ´«ËÍÈËin.lua")
     end
 end;
 
 function Addtianshi()
-	local npcIndex = CreateNpc("C«n L«n T©n M«n Nh©n", "§Ö t?C«n L«n thÇn b?, 314,1584,2856)
+	local npcIndex = CreateNpc("C«n L«n T©n M«n Nh©n", "§Ö tö C«n L«n thÇn bİ", 314,1584,2856)
 	SetNpcScript(npcIndex, "\\script\\ÖĞÔ­¶şÇø\\ÌìÊ¦ÃØ¾³\\npc\\ÃØ¾³´«ËÍÈË.lua")
 
 end
 
 function AddKillerHall()
-    local nNpcIdx = CreateNpc("Giang h?tuÊn kiÖt", "Nam nh©n thÇn b?, 318,1567,2753);
+    local nNpcIdx = CreateNpc("Giang hå tuÊn kiÖt", "Nam nh©n thÇn bİ", 318,1567,2753);
     SetNpcScript(nNpcIdx, "\\script\\task\\killer_hall\\entrance_npc.lua");
 end;
 
 function AddCaijiNpc()
-    local nNpcIdx = CreateNpc("R­¬ng ®å Trung Nguyªn", "Th?kh?, 710,1700,3391);
+    local nNpcIdx = CreateNpc("R­¬ng ®å Trung Nguyªn", "Thñ khè", 710,1700,3391);
     SetNpcScript(nNpcIdx, "\\script\\Î÷ÄÏÇø\\Îå¶¾½Ì\\npc\\ÎïÆ·±£¹ÜÈË.lua");
 
-    local nNpcIdx = CreateNpc("R­¬ng ®å Trung Nguyªn", "Th?kh?, 711,1730,3368);
+    local nNpcIdx = CreateNpc("R­¬ng ®å Trung Nguyªn", "Thñ khè", 711,1730,3368);
     SetNpcScript(nNpcIdx, "\\script\\Î÷ÄÏÇø\\Îå¶¾½Ì\\npc\\ÎïÆ·±£¹ÜÈË.lua");
 
-    local nNpcIdx = CreateNpc("R­¬ng ®å Trung Nguyªn", "Th?kh?, 712,1467,2926);
+    local nNpcIdx = CreateNpc("R­¬ng ®å Trung Nguyªn", "Thñ khè", 712,1467,2926);
     SetNpcScript(nNpcIdx, "\\script\\Î÷ÄÏÇø\\Îå¶¾½Ì\\npc\\ÎïÆ·±£¹ÜÈË.lua");
 
-    local nNpcIdx = CreateNpc("R­¬ng ®å Trung Nguyªn", "Th?kh?, 713,1485,2952);
+    local nNpcIdx = CreateNpc("R­¬ng ®å Trung Nguyªn", "Thñ khè", 713,1485,2952);
     SetNpcScript(nNpcIdx, "\\script\\Î÷ÄÏÇø\\Îå¶¾½Ì\\npc\\ÎïÆ·±£¹ÜÈË.lua");
 
-    local nNpcIdx = CreateNpc("R­¬ng ®å Trung Nguyªn", "Th?kh?, 714,1514,3018);
+    local nNpcIdx = CreateNpc("R­¬ng ®å Trung Nguyªn", "Thñ khè", 714,1514,3018);
     SetNpcScript(nNpcIdx, "\\script\\Î÷ÄÏÇø\\Îå¶¾½Ì\\npc\\ÎïÆ·±£¹ÜÈË.lua");
 
-    local nNpcIdx = CreateNpc("R­¬ng ®å Trung Nguyªn", "Th?kh?, 715,1493,2992);
+    local nNpcIdx = CreateNpc("R­¬ng ®å Trung Nguyªn", "Thñ khè", 715,1493,2992);
     SetNpcScript(nNpcIdx, "\\script\\Î÷ÄÏÇø\\Îå¶¾½Ì\\npc\\ÎïÆ·±£¹ÜÈË.lua");
 
-    local nNpcIdx = CreateNpc("R­¬ng ®å Trung Nguyªn", "Th?kh?, 716,1719,3037);
+    local nNpcIdx = CreateNpc("R­¬ng ®å Trung Nguyªn", "Thñ khè", 716,1719,3037);
     SetNpcScript(nNpcIdx, "\\script\\Î÷ÄÏÇø\\Îå¶¾½Ì\\npc\\ÎïÆ·±£¹ÜÈË.lua");
 
-    local nNpcIdx = CreateNpc("R­¬ng ®å Trung Nguyªn", "Th?kh?, 717,1755,2976);
+    local nNpcIdx = CreateNpc("R­¬ng ®å Trung Nguyªn", "Thñ khè", 717,1755,2976);
     SetNpcScript(nNpcIdx, "\\script\\Î÷ÄÏÇø\\Îå¶¾½Ì\\npc\\ÎïÆ·±£¹ÜÈË.lua");
 
-    local nNpcIdx = CreateNpc("R­¬ng ®å Trung Nguyªn", "Th?kh?, 718,1713,3394);
+    local nNpcIdx = CreateNpc("R­¬ng ®å Trung Nguyªn", "Thñ khè", 718,1713,3394);
     SetNpcScript(nNpcIdx, "\\script\\Î÷ÄÏÇø\\Îå¶¾½Ì\\npc\\ÎïÆ·±£¹ÜÈË.lua");
 
-    local nNpcIdx = CreateNpc("R­¬ng ®å Trung Nguyªn", "Th?kh?, 719,1698,3377);
+    local nNpcIdx = CreateNpc("R­¬ng ®å Trung Nguyªn", "Thñ khè", 719,1698,3377);
     SetNpcScript(nNpcIdx, "\\script\\Î÷ÄÏÇø\\Îå¶¾½Ì\\npc\\ÎïÆ·±£¹ÜÈË.lua");
 
-    local nNpcIdx = CreateNpc("R­¬ng ®å Trung Nguyªn", "Th?kh?, 720,1717,3342);
+    local nNpcIdx = CreateNpc("R­¬ng ®å Trung Nguyªn", "Thñ khè", 720,1717,3342);
     SetNpcScript(nNpcIdx, "\\script\\Î÷ÄÏÇø\\Îå¶¾½Ì\\npc\\ÎïÆ·±£¹ÜÈË.lua");
 
-    local nNpcIdx = CreateNpc("R­¬ng ®å Trung Nguyªn", "Th?kh?, 721,1691,3323);
+    local nNpcIdx = CreateNpc("R­¬ng ®å Trung Nguyªn", "Thñ khè", 721,1691,3323);
     SetNpcScript(nNpcIdx, "\\script\\Î÷ÄÏÇø\\Îå¶¾½Ì\\npc\\ÎïÆ·±£¹ÜÈË.lua")
 
-    local nNpcIdx = CreateNpc("R­¬ng ®å Trung Nguyªn", "Th?kh?, 722,1743,3427);
+    local nNpcIdx = CreateNpc("R­¬ng ®å Trung Nguyªn", "Thñ khè", 722,1743,3427);
     SetNpcScript(nNpcIdx, "\\script\\Î÷ÄÏÇø\\Îå¶¾½Ì\\npc\\ÎïÆ·±£¹ÜÈË.lua")
 
-    local nNpcIdx = CreateNpc("R­¬ng ®å Trung Nguyªn", "Th?kh?, 723,1698,3445);
+    local nNpcIdx = CreateNpc("R­¬ng ®å Trung Nguyªn", "Thñ khè", 723,1698,3445);
     SetNpcScript(nNpcIdx, "\\script\\Î÷ÄÏÇø\\Îå¶¾½Ì\\npc\\ÎïÆ·±£¹ÜÈË.lua")
 
-    local nNpcIdx = CreateNpc("R­¬ng ®å Trung Nguyªn", "Th?kh?, 724,1725,3384);
+    local nNpcIdx = CreateNpc("R­¬ng ®å Trung Nguyªn", "Thñ khè", 724,1725,3384);
     SetNpcScript(nNpcIdx, "\\script\\Î÷ÄÏÇø\\Îå¶¾½Ì\\npc\\ÎïÆ·±£¹ÜÈË.lua")
 
-    local nNpcIdx = CreateNpc("R­¬ng ®å Trung Nguyªn", "Th?kh?, 300,1913,3615);
+    local nNpcIdx = CreateNpc("R­¬ng ®å Trung Nguyªn", "Thñ khè", 300,1913,3615);
     SetNpcScript(nNpcIdx, "\\script\\Î÷ÄÏÇø\\Îå¶¾½Ì\\npc\\ÎïÆ·±£¹ÜÈË.lua")
 end;
 
 function AddZGDaShi()
-	local nNpcIdx = CreateNpc("C?gi?,"Tinh Hoa T?Quang s?gi?,200,1498,2781);
+	local nNpcIdx = CreateNpc("Cô giµ","Tinh Hoa Tö Quang sø gi¶",200,1498,2781);
 	SetNpcScript(nNpcIdx,"\\script\\online\\dragon_boat_07\\qinghuaziguangshizhe_npc.lua");
 end;
 
 function AddTongMission()	--°ï»á¹Ø¿¨
-	local nNpcIdx = CreateNpc("C?gi?,"T?Quang C¸c L·o Nh©n",150,1651,3174);
+	local nNpcIdx = CreateNpc("Cô giµ","Tö Quang C¸c L·o Nh©n",150,1651,3174);
 	SetNpcScript(nNpcIdx,"\\script\\missions\\tong_mission\\npc\\npc_mission_entrance.lua");
 end;
 
 function AddBaiHuaNpc()
-	local npcIndex = CreateNpc("L?S?S?, "B¸ch Hoa s?gi?, 200,1378,2854)
+	local npcIndex = CreateNpc("Lı S­ S­", "B¸ch Hoa sø gi¶", 200,1378,2854)
 	SetNpcScript(npcIndex, "\\script\\online\\qixi07\\baihua_npc.lua")
-	local npcIndex = CreateNpc("L?S?S?, "B¸ch Hoa s?gi?, 300,1735,3523)
+	local npcIndex = CreateNpc("Lı S­ S­", "B¸ch Hoa sø gi¶", 300,1735,3523)
 	SetNpcScript(npcIndex, "\\script\\online\\qixi07\\baihua_npc.lua")
-	local npcIndex = CreateNpc("L?S?S?, "B¸ch Hoa s?gi?, 100,1435,2988)
+	local npcIndex = CreateNpc("Lı S­ S­", "B¸ch Hoa sø gi¶", 100,1435,2988)
 	SetNpcScript(npcIndex, "\\script\\online\\qixi07\\baihua_npc.lua")
 end;
 
@@ -1188,50 +1188,50 @@ function AddGongChengNpc()
 		[2] = {"Thµnh §« thµnh ",28},
 		[3] = {"T­¬ng D­¬ng thµnh ",29},
 		[4] = {"Phe c«ng TuyÒn Ch©u",30},
-		[5] = {"Phe th?TuyÒn Ch©u thµnh",31},
+		[5] = {"Phe thñ TuyÒn Ch©u thµnh",31},
 		[6] = {"Phe c«ng Thµnh §« thµnh",32},
-		[7] = {"Phe th?Thµnh §« thµnh",33},
+		[7] = {"Phe thñ Thµnh §« thµnh",33},
 		[8] = {"Phe c«ng T­¬ng D­¬ng thµnh",34},
-		[9] = {"Phe th?T­¬ng D­¬ng thµnh",35},
+		[9] = {"Phe thñ T­¬ng D­¬ng thµnh",35},
 	}
 	for i=1,getn(tChannel) do
 		CreateChannel(tChannel[i][1],tChannel[i][2]);
 	end;
-	local nNpcIdx = CreateNpc("V?L©m Minh Ch?","Thµnh §« §¹i s?c«ng thµnh",300,1742,3548)
+	local nNpcIdx = CreateNpc("Vâ L©m Minh Chñ1","Thµnh §« §¹i sø c«ng thµnh",300,1742,3548)
 	SetNpcScript(nNpcIdx,"\\script\\gongcheng\\npc\\gongchengdashi_npc.lua");
 	-- ¹¥³ÇÕ½³ÇÊĞ¹ÜÀí,ÀÎ·¿Ïà¹ØNPC
 
 	-- ¹¥³ÇÕ½ÀÎ·¿
 	local nNpcIdx = CreateNpc("Nha dŞch", "Bang héi Ngôc tèt", 730, 1376, 3143);
     SetNpcScript(nNpcIdx, "\\script\\gongcheng\\prison\\jailer_npc.lua")
-    nNpcIdx = CreateNpc("R­¬ng ®å Trung Nguyªn", "Th?kh?, 730, 1378, 3139)
+    nNpcIdx = CreateNpc("R­¬ng ®å Trung Nguyªn", "Thñ khè", 730, 1378, 3139)
     SetNpcScript(nNpcIdx, "\\script\\battles\\openbox.lua")
 
    	nNpcIdx = CreateNpc("Nha dŞch", "Bang héi Ngôc tèt", 731, 1376, 3143);
     SetNpcScript(nNpcIdx, "\\script\\gongcheng\\prison\\jailer_npc.lua")
-    nNpcIdx = CreateNpc("R­¬ng ®å Trung Nguyªn", "Th?kh?, 731, 1378, 3139)
+    nNpcIdx = CreateNpc("R­¬ng ®å Trung Nguyªn", "Thñ khè", 731, 1378, 3139)
     SetNpcScript(nNpcIdx, "\\script\\battles\\openbox.lua")
  	nNpcIdx = CreateNpc("Nha dŞch", "Bang héi Ngôc tèt", 300, 1792, 3489)
     SetNpcScript(nNpcIdx, "\\script\\gongcheng\\prison\\gaoler_npc.lua")
 
     nNpcIdx = CreateNpc("Nha dŞch", "Bang héi Ngôc tèt", 732, 1376, 3143);
     SetNpcScript(nNpcIdx, "\\script\\gongcheng\\prison\\jailer_npc.lua")
-    nNpcIdx = CreateNpc("R­¬ng ®å Trung Nguyªn", "Th?kh?, 732, 1378, 3139)
+    nNpcIdx = CreateNpc("R­¬ng ®å Trung Nguyªn", "Thñ khè", 732, 1378, 3139)
     SetNpcScript(nNpcIdx, "\\script\\battles\\openbox.lua")
 
     nNpcIdx = CreateNpc("Nha dŞch", "Bang héi Ngôc tèt", 733, 1376, 3143);
     SetNpcScript(nNpcIdx, "\\script\\gongcheng\\prison\\jailer_npc.lua")
-    nNpcIdx = CreateNpc("R­¬ng ®å Trung Nguyªn", "Th?kh?, 733, 1378, 3139)
+    nNpcIdx = CreateNpc("R­¬ng ®å Trung Nguyªn", "Thñ khè", 733, 1378, 3139)
     SetNpcScript(nNpcIdx, "\\script\\battles\\openbox.lua")
 
     nNpcIdx = CreateNpc("Nha dŞch", "Bang héi Ngôc tèt", 734, 1376, 3143);
     SetNpcScript(nNpcIdx, "\\script\\gongcheng\\prison\\jailer_npc.lua")
-    nNpcIdx = CreateNpc("R­¬ng ®å Trung Nguyªn", "Th?kh?, 734, 1378, 3139)
+    nNpcIdx = CreateNpc("R­¬ng ®å Trung Nguyªn", "Thñ khè", 734, 1378, 3139)
     SetNpcScript(nNpcIdx, "\\script\\battles\\openbox.lua")
 
-	nNpcIdx = CreateNpc("B?ch?, "Thµnh §« Qu¶n thµnh s?, 300, 1729, 3536)
+	nNpcIdx = CreateNpc("Bµ chñ", "Thµnh §« Qu¶n thµnh sø", 300, 1729, 3536)
 	SetNpcScript(nNpcIdx, "\\script\\gongcheng\\city_manage\\manage_npc.lua")
-	nNpcIdx = CreateNpc("V?binh thµnh m«n","S?gi?Håi Phong tr¹i",889,1762,3805)
+	nNpcIdx = CreateNpc("VÖ binh thµnh m«n","Sø gi¶ Håi Phong tr¹i",889,1762,3805)
 	SetNpcScript(nNpcIdx, "\\script\\gongcheng\\personal_task\\task_npc.lua")
 
 	-- ¼Ótrap
@@ -1266,19 +1266,19 @@ function AddXiBei()
 	--·ïÏè¸®¸®
 
 	--Ö÷ÏßÈÎÎñ&ÆäËûNpc
-	local nNpcIdx = CreateNpc("¤ng gi?ph­¬ng B¾c2", "DiÖp L·o", 500,1808,3125);
+	local nNpcIdx = CreateNpc("¤ng giµ ph­¬ng B¾c2", "DiÖp L·o", 500,1808,3125);
   SetNpcScript(nNpcIdx, "\\script\\Î÷±±Çø\\·ïÏè¸®\\npc\\Ò¶ÀÏ.lua");
 
 	local nNpcIdx = CreateNpc("Tr­¬ng Tr¹ch §oan", "¢u D­¬ng Häa ", 500,1727,3262);
 	SetNpcScript(nNpcIdx, "\\script\\Î÷±±Çø\\·ïÏè¸®\\npc\\Å·Ñô»­.lua");
 
-	local nNpcIdx = CreateNpc("Th­¬ng nh©n Ba T?, "Th­¬ng nh©n Ba T?, 500,1686,3252);
+	local nNpcIdx = CreateNpc("Th­¬ng nh©n Ba T­", "Th­¬ng nh©n Ba T­", 500,1686,3252);
 	SetNpcScript(nNpcIdx, "\\script\\Î÷±±Çø\\·ïÏè¸®\\npc\\²¨Ë¹ÉÌÈË.lua");
 
-	local nNpcIdx = CreateNpc("KÑo h?l?, "§­êng H?L?, 500,1675,3168);
+	local nNpcIdx = CreateNpc("KÑo hå l«", "§­êng Hå L«", 500,1675,3168);
 	SetNpcScript(nNpcIdx, "\\script\\Î÷±±Çø\\·ïÏè¸®\\npc\\ÌÆºùÂ«.lua");
 
-	local nNpcIdx = CreateNpc("Gi¸o ch?Minh Gi¸o", "T?M?Minh Phong", 500,1600,3157);
+	local nNpcIdx = CreateNpc("Gi¸o chñ Minh Gi¸o", "T­ M· Minh Phong", 500,1600,3157);
 	SetNpcScript(nNpcIdx, "\\script\\Î÷±±Çø\\·ïÏè¸®\\npc\\Ë¾ÂíÃù·ç.lua");
 
 	local nNpcIdx = CreateNpc("Du Ph­¬ng ®¹i phu", "T«n Ph­¬ng Nh©n ", 500,1807,3045);
@@ -1290,41 +1290,41 @@ function AddXiBei()
 	local nNpcIdx = CreateNpc("Nam nh©n ph­¬ng B¾c3", "Th¸c B¹t Ho»ng ", 500,1808,2994);
 	SetNpcScript(nNpcIdx, "\\script\\Î÷±±Çø\\·ïÏè¸®\\npc\\ÍØ°Îºë.lua");
 
-	local nNpcIdx = CreateNpc("Ch?qu¶n Háa Kh?phßng", "§­êng Thiªn Thiªn", 500,1768,3256);
+	local nNpcIdx = CreateNpc("Chñ qu¶n Háa Khİ phßng", "§­êng Thiªn Thiªn", 500,1768,3256);
 	SetNpcScript(nNpcIdx, "\\script\\Î÷±±Çø\\·ïÏè¸®\\npc\\ÌÆÜ·Ü·.lua");
 
 	--Ö°ÄÜNpc
-	local nNpcIdx = CreateNpc("Th?rÌn Th?Phån", "Ch?TiÖm v?kh?, 500,1747,3092);
+	local nNpcIdx = CreateNpc("Thî rÌn Thæ Phån", "Chñ TiÖm vò khİ", 500,1747,3092);
 	SetNpcScript(nNpcIdx, "\\script\\Î÷±±Çø\\·ïÏè¸®\\npc\\ÎäÆ÷µêÀÏ°å.lua");
 
-	local nNpcIdx = CreateNpc("Ch?tiÖm v?kh?Th?Phån", "Ch?TiÖm Nam phôc", 500,1739,3098);
+	local nNpcIdx = CreateNpc("Chñ tiÖm vò khİ Thæ Phån", "Chñ TiÖm Nam phôc", 500,1739,3098);
 	SetNpcScript(nNpcIdx, "\\script\\Î÷±±Çø\\·ïÏè¸®\\npc\\ÄĞ×°µêÀÏ°å.lua");
 
-	local nNpcIdx = CreateNpc("Ch?tiÖm v¶i", "Ch?TiÖm N?phôc", 500,1701,3114);
+	local nNpcIdx = CreateNpc("Chñ tiÖm v¶i", "Chñ TiÖm N÷ phôc", 500,1701,3114);
 	SetNpcScript(nNpcIdx, "\\script\\Î÷±±Çø\\·ïÏè¸®\\npc\\Å®×°µêÀÏ°å.lua");
 
-	local nNpcIdx = CreateNpc("Ch?cÇm ®å Th?Phån", "Ch?T¹p hãa", 500,1730,3109);
+	local nNpcIdx = CreateNpc("Chñ cÇm ®å Thæ Phån", "Chñ T¹p hãa", 500,1730,3109);
 	SetNpcScript(nNpcIdx, "\\script\\Î÷±±Çø\\·ïÏè¸®\\npc\\ÔÓ»õµêÀÏ°å.lua");
 
-	local nNpcIdx = CreateNpc("Ch?tiÖm ®¸ Th?Phån", "Ch?Kim hoµn", 500,1721,3115);
+	local nNpcIdx = CreateNpc("Chñ tiÖm ®¸ Thæ Phån", "Chñ Kim hoµn", 500,1721,3115);
 	SetNpcScript(nNpcIdx, "\\script\\Î÷±±Çø\\·ïÏè¸®\\npc\\ÊÎÆ·µêÀÏ°å.lua");
 
-	local nNpcIdx = CreateNpc("Ch­ëng d­îc Th?Phån", "Ch?D­îc ®iÕm", 500,1763,3091);
+	local nNpcIdx = CreateNpc("Ch­ëng d­îc Thæ Phån", "Chñ D­îc ®iÕm", 500,1763,3091);
 	SetNpcScript(nNpcIdx, "\\script\\Î÷±±Çø\\·ïÏè¸®\\npc\\Ò©µêÀÏ°å.lua");
 
-	local nNpcIdx = CreateNpc("Ch?cÇm ®å Th?Phån", "Ch?töu lÇu", 500,1700,3176);
+	local nNpcIdx = CreateNpc("Chñ cÇm ®å Thæ Phån", "Chñ töu lÇu", 500,1700,3176);
 	SetNpcScript(nNpcIdx, "\\script\\Î÷±±Çø\\·ïÏè¸®\\npc\\¾ÆÂ¥ÀÏ°å.lua");
 
-	local nNpcIdx = CreateNpc("Tr×nh Di", "Ch?th­¬ng héi", 500,1772,3186);
+	local nNpcIdx = CreateNpc("Tr×nh Di", "Chñ th­¬ng héi", 500,1772,3186);
 	SetNpcScript(nNpcIdx, "\\script\\Î÷±±Çø\\·ïÏè¸®\\npc\\ÉÌ»áÀÏ°å.lua");
 
-	local nNpcIdx = CreateNpc("Quan viªn", "Phông T­êng phñTh¸i th?", 500,1886,3102);
+	local nNpcIdx = CreateNpc("Quan viªn", "Phông T­êng phñTh¸i thó ", 500,1886,3102);
 	SetNpcScript(nNpcIdx, "\\script\\Î÷±±Çø\\·ïÏè¸®\\npc\\·ïÏè¸®Ì«ÊØ.lua");
 
-	local nNpcIdx = CreateNpc("Lôc PhiÕn cao th?", "B?®Çu", 500,1893,3114);
+	local nNpcIdx = CreateNpc("Lôc PhiÕn cao thñ1", "Bé ®Çu", 500,1893,3114);
 	SetNpcScript(nNpcIdx, "\\script\\Î÷±±Çø\\·ïÏè¸®\\npc\\²¶Í·.lua");
 
-	local nNpcIdx = CreateNpc("V?L©m Minh Ch?", "S?gi?m«n ph¸i", 500,1751,3141);
+	local nNpcIdx = CreateNpc("Vâ L©m Minh Chñ1", "Sø gi¶ m«n ph¸i", 500,1751,3141);
 	SetNpcScript(nNpcIdx, "\\script\\Î÷±±Çø\\·ïÏè¸®\\npc\\ÃÅÅÉ½ÓÒıÈË.lua");
 
 	--¸®±±³µ·ò
@@ -1344,29 +1344,29 @@ function AddXiBei()
 	SetNpcScript(nNpcIdx, "\\script\\Î÷±±Çø\\·ïÏè¸®\\npc\\·ïÏè³µ·ò.lua");
 
 	--±±ÃÅÏä×Ó
-	local nNpcIdx = CreateNpc("R­¬ng ®å Tr.Nguyªn", "Th?kh?, 500,1828,3048);
+	local nNpcIdx = CreateNpc("R­¬ng ®å Tr.Nguyªn", "Thñ khè", 500,1828,3048);
 	SetNpcScript(nNpcIdx, "\\script\\Î÷±±Çø\\·ïÏè¸®\\npc\\ÎïÆ·±£¹ÜÈË±±.lua");
 
 	--¶«ÃÅÏä×Ó
-	local nNpcIdx = CreateNpc("R­¬ng ®å Tr.Nguyªn", "Th?kh?, 500,1798,3216);
+	local nNpcIdx = CreateNpc("R­¬ng ®å Tr.Nguyªn", "Thñ khè", 500,1798,3216);
 	SetNpcScript(nNpcIdx, "\\script\\Î÷±±Çø\\·ïÏè¸®\\npc\\ÎïÆ·±£¹ÜÈË¶«.lua");
 
 	--Î÷ÃÅÏä×Ó
-	local nNpcIdx = CreateNpc("R­¬ng ®å Tr.Nguyªn", "Th?kh?, 500,1678,3095);
+	local nNpcIdx = CreateNpc("R­¬ng ®å Tr.Nguyªn", "Thñ khè", 500,1678,3095);
 	SetNpcScript(nNpcIdx, "\\script\\Î÷±±Çø\\·ïÏè¸®\\npc\\ÎïÆ·±£¹ÜÈËÎ÷.lua");
 
 	--ÄÏÃÅÏä×Ó
-	local nNpcIdx = CreateNpc("R­¬ng ®å Tr.Nguyªn", "Th?kh?, 500,1656,3214);
+	local nNpcIdx = CreateNpc("R­¬ng ®å Tr.Nguyªn", "Thñ khè", 500,1656,3214);
 	SetNpcScript(nNpcIdx, "\\script\\Î÷±±Çø\\·ïÏè¸®\\npc\\ÎïÆ·±£¹ÜÈËÄÏ.lua");
 
 	--ÁúÃÅÕò
-	local nNpcIdx = CreateNpc("TiÓu nh?Th?Phån", "TiÓu nh?, 507,1660,3293);
+	local nNpcIdx = CreateNpc("TiÓu nhŞ Thæ Phån", "TiÓu nhŞ", 507,1660,3293);
 	SetNpcScript(nNpcIdx, "\\script\\Î÷±±Çø\\ÁúÃÅÕò\\npc\\µêĞ¡¶ş.lua");
 
-	local nNpcIdx = CreateNpc("ThiÕu niªn nam1", "T«n Nh?Liªn", 507,1649,3293);
+	local nNpcIdx = CreateNpc("ThiÕu niªn nam1", "T«n NhŞ Liªn", 507,1649,3293);
 	SetNpcScript(nNpcIdx, "\\script\\Î÷±±Çø\\ÁúÃÅÕò\\npc\\Ëï¶şçö.lua");
 
-	local nNpcIdx = CreateNpc("Xa Lu©n B?V­¬ng", "Xa Lu©n B?V­¬ng", 507,1791,3173);
+	local nNpcIdx = CreateNpc("Xa Lu©n B¸ V­¬ng", "Xa Lu©n B¸ V­¬ng", 507,1791,3173);
 	SetNpcScript(nNpcIdx, "\\script\\Î÷±±Çø\\ÁúÃÅÕò\\npc\\³µÂÖ°ÔÍõ.lua");
 
 	local nNpcIdx = CreateNpc("Xu©n ThËp Tam n­¬ng", "Xu©n ThËp Tam n­¬ng", 507,1884,3317);
@@ -1382,35 +1382,35 @@ function AddXiBei()
 	local nNpcIdx = CreateNpc("TrÇn BÊt Vi", "TrÇn BÊt Vi", 509,1536,3228);
 	SetNpcScript(nNpcIdx, "\\script\\Î÷±±Çø\\À¥ÂØ\\npc\\³Â²»Îª.lua");
 
-		local nNpcIdx = CreateNpc("M?BÊt TiÒn", "M?BÊt TiÒn", 509,1581,3249);
+		local nNpcIdx = CreateNpc("M· BÊt TiÒn", "M· BÊt TiÒn", 509,1581,3249);
 	SetNpcScript(nNpcIdx, "\\script\\Î÷±±Çø\\À¥ÂØ\\npc\\Âí²»Ç°.lua");
 
 	local nNpcIdx = CreateNpc("V­¬ng BÊt Phµm", "V­¬ng BÊt Phµm", 509,1427,3443);
 	SetNpcScript(nNpcIdx, "\\script\\Î÷±±Çø\\À¥ÂØ\\npc\\Íõ²»·².lua");
 
-	local nNpcIdx = CreateNpc("C«n L«n T©n Ph?Ch­ëng M«n", "Mai BÊt Dung",509,1561,3270);
+	local nNpcIdx = CreateNpc("C«n L«n T©n Phã Ch­ëng M«n", "Mai BÊt Dung",509,1561,3270);
 	SetNpcScript(nNpcIdx, "\\script\\Î÷±±Çø\\À¥ÂØ\\npc\\Ã·²»Èİ.lua");
 
-	local nNpcIdx = CreateNpc("C«n Lu©n Nam ®Ö t?, "DiÖp T?Thu", 509,1551,3214);
+	local nNpcIdx = CreateNpc("C«n Lu©n Nam ®Ö tö", "DiÖp Tö Thu", 509,1551,3214);
 	SetNpcScript(nNpcIdx, "\\script\\Î÷±±Çø\\À¥ÂØ\\npc\\Ò¶×ÓÇï.lua");
 
-	local nNpcIdx = CreateNpc("C«n Lu©n Nam ®Ö t?, "TriÖu T?B×nh", 509,1432,3305);
+	local nNpcIdx = CreateNpc("C«n Lu©n Nam ®Ö tö", "TriÖu Tö B×nh", 509,1432,3305);
 	SetNpcScript(nNpcIdx, "\\script\\Î÷±±Çø\\À¥ÂØ\\npc\\ÕÔ×ÓÆ½.lua");
 	
 	local nNpcIdx = CreateNpc("V©n Hi Hßa", "V©n Hi Hßa", 509,1615,3213);
 	SetNpcScript(nNpcIdx, "\\script\\Î÷±±Çø\\À¥ÂØ\\npc\\ÔÆôËºÍ.lua");	
 	
---	local nNpcIdx = CreateNpc("Väng Th?KiÕm", "Väng Th?KiÕm", 509,1620,3211);
+--	local nNpcIdx = CreateNpc("Väng Th­ KiÕm", "Väng Th­ KiÕm", 509,1620,3211);
 --	SetNpcScript(nNpcIdx, 	
 	
---	local nNpcIdx = CreateNpc("V©n Väng Th?, "V©n Väng Th?, 509,1618,3160);
+--	local nNpcIdx = CreateNpc("V©n Väng Th­", "V©n Väng Th­", 509,1618,3160);
 --	SetNpcScript(nNpcIdx, 
 	
-	local nNpcIdx = CreateNpc("R­¬ng ®å Trung Nguyªn","Th?kh?,509,1600,3229);
+	local nNpcIdx = CreateNpc("R­¬ng ®å Trung Nguyªn","Thñ khè",509,1600,3229);
 	SetNpcScript(nNpcIdx, "\\script\\Î÷±±Çø\\À¥ÂØ\\npc\\ÎïÆ·±£¹ÜÈË.lua");
 
 	--¹âÃ÷¶¥
-	local nNpcIdx = CreateNpc("H?ph¸p Minh Gi¸o", "¢n Minh ", 508,1691,2962);
+	local nNpcIdx = CreateNpc("Hé ph¸p Minh Gi¸o", "¢n Minh ", 508,1691,2962);
 	SetNpcScript(nNpcIdx, "\\script\\Î÷±±Çø\\¹âÃ÷¶¥\\npc\\ÒóÃú.lua");
 
 	local nNpcIdx = CreateNpc("Di Tu kh¸ch", "Di Tu §¹i h¸n", 508,1792,3306);
@@ -1421,32 +1421,32 @@ function AddXiBei()
 	SetNpcScript(nNpcIdx, "\\script\\Î÷±±Çø\\¹ÅÑô¶´Ò»²ã\\npc\\·Ç³£µÀÈË.lua");
 
 	--¹ÅÑô¶´¶ş²ã
-	local nNpcIdx = CreateNpc("C«n Lu©n Nam ®Ö t?, "§Ö T?C«n L«n", 512,2061,3404);
+	local nNpcIdx = CreateNpc("C«n Lu©n Nam ®Ö tö", "§Ö Tö C«n L«n", 512,2061,3404);
 	SetNpcScript(nNpcIdx, "\\script\\missions\\northwest_mission\\npc\\npc_log_in.lua");
 
 	--Ò©Íõ¹È
 	local nNpcIdx = CreateNpc("ThiÕu niªn trong th«n", "L­u Tam ", 505,1482,2996);
 	SetNpcScript(nNpcIdx, "\\script\\Î÷±±Çø\\Ò©Íõ¹È\\npc\\ÁõÈı.lua");
 
-	local nNpcIdx = CreateNpc("T©y H?Ph¸p v­¬ng", "T©y H?Ph¸p v­¬ng", 505,1538,3146);
+	local nNpcIdx = CreateNpc("T©y H¹ Ph¸p v­¬ng", "T©y H¹ Ph¸p v­¬ng", 505,1538,3146);
 	SetNpcScript(nNpcIdx, "\\script\\Î÷±±Çø\\Ò©Íõ¹È\\npc\\Î÷ÏÄ·¨Íõ.lua");
 
 	--Ò©Íõ¶´
-	local nNpcIdx = CreateNpc("D­îc thÊt th?v?, "D­îc thÊt th?v?, 510,1575,2853);
+	local nNpcIdx = CreateNpc("D­îc thÊt thñ vÖ", "D­îc thÊt thñ vÖ", 510,1575,2853);
 	SetNpcScript(nNpcIdx, "\\script\\missions\\northwest_mission\\npc\\npc_log_in.lua");
 
 	--É³Ä®ÃÔ¹¬
-	local nNpcIdx = CreateNpc("Ng?Hµnh TrËn S?, "Ng?Hµnh TrËn S?, 506,1325,2715);
+	local nNpcIdx = CreateNpc("Ngò Hµnh TrËn Sø", "Ngò Hµnh TrËn Sø", 506,1325,2715);
 	SetNpcScript(nNpcIdx, "\\script\\missions\\northwest_mission\\npc\\npc_log_in.lua");
 
-	local nNpcIdx = CreateNpc("§éc Hµnh l·o x?, "§éc Hµnh l·o x?, 506,1545,2958);
+	local nNpcIdx = CreateNpc("§éc Hµnh l·o xµ", "§éc Hµnh l·o xµ", 506,1545,2958);
 	SetNpcScript(nNpcIdx, "\\script\\Î÷±±Çø\\É³Ä®ÃÔ¹¬\\npc\\¶ÀĞĞÀÏÍÓ.lua");
 
 	local nNpcIdx = CreateNpc("Nam nh©n T©y B¾c", "B¹ch Thiªn Thµnh", 506,1554,2658);
 	SetNpcScript(nNpcIdx, "\\script\\missions\\northwest_mission\\npc\\npc_log_in.lua");
 
 	--ÇØÊ¼»ÊÁê
-	local nNpcIdx = CreateNpc("§éc t?, "§o¹n T?, 503,1412,2742);
+	local nNpcIdx = CreateNpc("§éc tı", "§o¹n Tı", 503,1412,2742);
 	SetNpcScript(nNpcIdx, "\\script\\Î÷±±Çø\\ÇØÊ¼»ÊÁê\\npc\\¶Ï±Û.lua");
 
 	local nNpcIdx = CreateNpc("L×a ch©n", "L×a ch©n", 503,1588,2976);
@@ -1456,84 +1456,84 @@ function AddXiBei()
 	local nNpcIdx = CreateNpc("Tr¶o V­¬ng", "Tr¶o V­¬ng", 513,1464,2998);
 	SetNpcScript(nNpcIdx, "\\script\\Î÷±±Çø\\»ÊÁêÄ¹ÊÒÒ»²ã\\npc\\×¦Íõ.lua");
 
-	local nNpcIdx = CreateNpc("Th?m?nh©n", "Th?m?nh©n", 513,1591,3178);
+	local nNpcIdx = CreateNpc("Thñ mé nh©n", "Thñ mé nh©n", 513,1591,3178);
 	SetNpcScript(nNpcIdx, "\\script\\missions\\northwest_mission\\npc\\npc_log_in.lua");
 
 	--»ÊÁê¶ş²ã
-	local nNpcIdx = CreateNpc("Th?M?T­íng Qu©n", "Th?M?T­íng Qu©n", 514,1733,2863);
+	local nNpcIdx = CreateNpc("Thñ Mé T­íng Qu©n", "Thñ Mé T­íng Qu©n", 514,1733,2863);
 	SetNpcScript(nNpcIdx, "\\script\\missions\\northwest_mission\\npc\\npc_log_in.lua");
 
-	local nNpcIdx = CreateNpc("TrÊn m?l·nh qu©n", "T©y TrÊn m?T­íng qu©n", 514,1475,2977);
+	local nNpcIdx = CreateNpc("TrÊn mé l·nh qu©n", "T©y TrÊn mé T­íng qu©n", 514,1475,2977);
 	SetNpcScript(nNpcIdx, "\\script\\Î÷±±Çø\\»ÊÁêÄ¹ÊÒ¶ş²ã\\npc\\ÕòÄ¹½«¾üÎ÷.lua");
 
-	local nNpcIdx = CreateNpc("TrÊn m?l·nh qu©n", "B¾c TrÊn m?T­íng qu©n", 514,1624,2822);
+	local nNpcIdx = CreateNpc("TrÊn mé l·nh qu©n", "B¾c TrÊn mé T­íng qu©n", 514,1624,2822);
 	SetNpcScript(nNpcIdx, "\\script\\Î÷±±Çø\\»ÊÁêÄ¹ÊÒ¶ş²ã\\npc\\ÕòÄ¹½«¾ü±±.lua");
 
-	local nNpcIdx = CreateNpc("TrÊn m?l·nh qu©n", "§«ng TrÊn m?T­íng qu©n", 514,1803,2983);
+	local nNpcIdx = CreateNpc("TrÊn mé l·nh qu©n", "§«ng TrÊn mé T­íng qu©n", 514,1803,2983);
 	SetNpcScript(nNpcIdx, "\\script\\Î÷±±Çø\\»ÊÁêÄ¹ÊÒ¶ş²ã\\npc\\ÕòÄ¹½«¾ü¶«.lua");
 
-	local nNpcIdx = CreateNpc("TrÊn m?l·nh qu©n", "Nam TrÊn m?T­íng qu©n", 514,1629,3169);
+	local nNpcIdx = CreateNpc("TrÊn mé l·nh qu©n", "Nam TrÊn mé T­íng qu©n", 514,1629,3169);
 	SetNpcScript(nNpcIdx, "\\script\\Î÷±±Çø\\»ÊÁêÄ¹ÊÒ¶ş²ã\\npc\\ÕòÄ¹½«¾üÄÏ.lua");
 
 	--¹íÃÅ»ØÀÈ
-	local nNpcIdx = CreateNpc("C«n Lu©n Nam ®Ö t?, "§Ö T?C«n L«n", 328,1711,3258);
+	local nNpcIdx = CreateNpc("C«n Lu©n Nam ®Ö tö", "§Ö Tö C«n L«n", 328,1711,3258);
 	SetNpcScript(nNpcIdx, "\\script\\ÖĞÔ­¶şÇø\\¹íÃÅ»ØÀÈ\\npc\\À¥ÂØµÜ×Ó.lua");
 
 	--ÌìÊ¦ÃØ¾³
-	local nNpcIdx = CreateNpc("C«n Lu©n Nam ®Ö t?, "§Ö T?C«n L«n", 329,1731,3429);
+	local nNpcIdx = CreateNpc("C«n Lu©n Nam ®Ö tö", "§Ö Tö C«n L«n", 329,1731,3429);
 	SetNpcScript(nNpcIdx, "\\script\\ÖĞÔ­¶şÇø\\ÌìÊ¦ÃØ¾³\\npc\\À¥ÂØµÜ×Ó.lua");
 
-	local nNpcIdx = CreateNpc("C?L©u v­¬ng", "C?L©u v­¬ng", 329,1620,3354);
+	local nNpcIdx = CreateNpc("C« L©u v­¬ng", "C« L©u v­¬ng", 329,1620,3354);
 	SetNpcScript(nNpcIdx, "\\script\\ÖĞÔ­¶şÇø\\ÌìÊ¦ÃØ¾³\\npc\\÷¼÷ÃÍõ.lua");
 
 end
 function AddGongYe()
-	local npcIndex = CreateNpc("Ch?V?kh?Trung Nguyªn", "C«ng D?binh ", 350,1399,2997)
+	local npcIndex = CreateNpc("Chñ Vò khİ Trung Nguyªn", "C«ng D· binh ", 350,1399,2997)
 	SetNpcScript(npcIndex, "\\script\\gongyeshijia.lua")
-	local npcIndex = CreateNpc("Ch?V?kh?Trung Nguyªn", "C«ng D?kh?", 150,1647,3149)
+	local npcIndex = CreateNpc("Chñ Vò khİ Trung Nguyªn", "C«ng D· khİ ", 150,1647,3149)
 	SetNpcScript(npcIndex, "\\script\\gongyeshijia.lua")
-	local npcIndex = CreateNpc("Ch?V?kh?Trung Nguyªn", "C«ng D?c?", 400,1493,3053)
+	local npcIndex = CreateNpc("Chñ Vò khİ Trung Nguyªn", "C«ng D· cô ", 400,1493,3053)
 	SetNpcScript(npcIndex, "\\script\\gongyeshijia.lua")
 end
 
 function AddLiuTudi()
-	local npcIndex = CreateNpc("ThiÕu niªn trong th«n", "Häc tr?Th?rÌn L­u", 350,1410,2925)
+	local npcIndex = CreateNpc("ThiÕu niªn trong th«n", "Häc trß Thî rÌn L­u", 350,1410,2925)
 	SetNpcScript(npcIndex, "\\script\\ÖĞÔ­¶şÇø\\ÏåÑô\\npc\\liutiejiangdizi.lua")
 end
 
 
 function Add3Festival()
-	local npcIndex = CreateNpc("Thiªn V­¬ng Bang Ch?, "Chu niªn kh¸nh s?,100,1440,2785)
+	local npcIndex = CreateNpc("Thiªn V­¬ng Bang Chñ", "Chu niªn kh¸nh sø",100,1440,2785)
 	SetNpcScript(npcIndex, "\\script\\online\\3festival\\emissary_npc.lua")
-	npcIndex = CreateNpc("Thiªn V­¬ng Bang Ch?, "Chu niªn kh¸nh s?,200,1179,2845)
+	npcIndex = CreateNpc("Thiªn V­¬ng Bang Chñ", "Chu niªn kh¸nh sø",200,1179,2845)
 	SetNpcScript(npcIndex, "\\script\\online\\3festival\\emissary_npc.lua")
-	npcIndex = CreateNpc("Thiªn V­¬ng Bang Ch?, "Chu niªn kh¸nh s?,300,1649,3537)
+	npcIndex = CreateNpc("Thiªn V­¬ng Bang Chñ", "Chu niªn kh¸nh sø",300,1649,3537)
 	SetNpcScript(npcIndex, "\\script\\online\\3festival\\emissary_npc.lua")
-	npcIndex = CreateNpc("V?L©m Minh Ch?", "§Æc s?V?L©m", 200,1167,2847)
+	npcIndex = CreateNpc("Vâ L©m Minh Chñ1", "§Æc sø Vâ L©m", 200,1167,2847)
 	SetNpcScript(npcIndex, "\\script\\online\\3festival\\wulinmeng_npc.lua")
-	npcIndex = CreateNpc("V?L©m Minh Ch?", "§Æc s?V?L©m", 300,1653,3565)
+	npcIndex = CreateNpc("Vâ L©m Minh Chñ1", "§Æc sø Vâ L©m", 300,1653,3565)
 	SetNpcScript(npcIndex, "\\script\\online\\3festival\\wulinmeng_npc.lua")
-	npcIndex = CreateNpc("V?L©m Minh Ch?", "§Æc s?V?L©m", 100,1439,2807)
+	npcIndex = CreateNpc("Vâ L©m Minh Chñ1", "§Æc sø Vâ L©m", 100,1439,2807)
 	SetNpcScript(npcIndex, "\\script\\online\\3festival\\wulinmeng_npc.lua")
 end;
 
 function AddTyTuzi()
-	local npcIndex = CreateNpc("Th?TiÓu Nha", "Th?TiÓu Nha",117,1663,3083)
+	local npcIndex = CreateNpc("Thè TiÓu Nha", "Thè TiÓu Nha",117,1663,3083)
 	SetNpcScript(npcIndex, "\\script\\online\\abluemoon\\tianya_npc.lua")
 end
 
 function AddNewYearNpc()
-	local npcIndex = CreateNpc("Thiªn V­¬ng Bang Ch?, "S?gi?ho¹t ®éng t©n niªn ",200,1167,2858)
+	local npcIndex = CreateNpc("Thiªn V­¬ng Bang Chñ", "Sø gi¶ ho¹t ®éng t©n niªn ",200,1167,2858)
 	SetNpcScript(npcIndex, "\\script\\online\\newyear08\\newyear08_npc.lua")
-	npcIndex = CreateNpc("Thiªn V­¬ng Bang Ch?, "S?gi?ho¹t ®éng t©n niªn ",100,1440,2808)
+	npcIndex = CreateNpc("Thiªn V­¬ng Bang Chñ", "Sø gi¶ ho¹t ®éng t©n niªn ",100,1440,2808)
   SetNpcScript(npcIndex, "\\script\\online\\newyear08\\newyear08_npc.lua")
-	npcIndex = CreateNpc("Thiªn V­¬ng Bang Ch?, "S?gi?ho¹t ®éng t©n niªn ",300,1649,3560)
+	npcIndex = CreateNpc("Thiªn V­¬ng Bang Chñ", "Sø gi¶ ho¹t ®éng t©n niªn ",300,1649,3560)
   SetNpcScript(npcIndex, "\\script\\online\\newyear08\\newyear08_npc.lua")
-	npcIndex = CreateNpc("Thiªn V­¬ng Bang Ch?, "S?gi?ho¹t ®éng t©n niªn ",350,1462,2974)
+	npcIndex = CreateNpc("Thiªn V­¬ng Bang Chñ", "Sø gi¶ ho¹t ®éng t©n niªn ",350,1462,2974)
   SetNpcScript(npcIndex, "\\script\\online\\newyear08\\newyear08_npc.lua")
-	npcIndex = CreateNpc("Thiªn V­¬ng Bang Ch?, "S?gi?ho¹t ®éng t©n niªn ",150,1679,3143)
+	npcIndex = CreateNpc("Thiªn V­¬ng Bang Chñ", "Sø gi¶ ho¹t ®éng t©n niªn ",150,1679,3143)
   SetNpcScript(npcIndex, "\\script\\online\\newyear08\\newyear08_npc.lua")
-	npcIndex = CreateNpc("Thiªn V­¬ng Bang Ch?, "S?gi?ho¹t ®éng t©n niªn ",400,1560,2963)
+	npcIndex = CreateNpc("Thiªn V­¬ng Bang Chñ", "Sø gi¶ ho¹t ®éng t©n niªn ",400,1560,2963)
   SetNpcScript(npcIndex, "\\script\\online\\newyear08\\newyear08_npc.lua")
 end
 
@@ -1543,41 +1543,41 @@ function add_biwudahui()
 	ClearMapNpc(976)
 	ClearMapNpc(7100)
 	CreateNpcList({
-		{"Ch©n T?§¬n hµo hoa","§Æc s?§¹i Héi T?V?,200,1391,2816,"\\script\\biwudahui\\tournament\\npc\\npc_zhenzidan.lua"},
-		{"V­¬ng An Th¹ch","ThÇn V?ViÖn T?NghiÖp (TuyÒn Ch©u)",974,1620,3180,"\\script\\biwudahui\\tournament\\npc\\npc_field_keeper.lua"},
-		{"V­¬ng An Th¹ch","ThÇn V?ViÖn T?NghiÖp (BiÖn Kinh)",975,1620,3180,"\\script\\biwudahui\\tournament\\npc\\npc_field_keeper.lua"},
-		{"V­¬ng An Th¹ch","ThÇn V?ViÖn T?NghiÖp (Thµnh §«)",976,1620,3180,"\\script\\biwudahui\\tournament\\npc\\npc_field_keeper.lua"},
-		{"V­¬ng An Th¹ch","ThÇn V?ViÖn T?NghiÖp (Toµn quèc)",7100,1404,2858,"\\script\\biwudahui\\tournament\\npc\\npc_field_keeper.lua"},
+		{"Ch©n Tö §¬n hµo hoa","§Æc sø §¹i Héi Tû Vâ",200,1391,2816,"\\script\\biwudahui\\tournament\\npc\\npc_zhenzidan.lua"},
+		{"V­¬ng An Th¹ch","ThÇn Vâ ViÖn T­ NghiÖp (TuyÒn Ch©u)",974,1620,3180,"\\script\\biwudahui\\tournament\\npc\\npc_field_keeper.lua"},
+		{"V­¬ng An Th¹ch","ThÇn Vâ ViÖn T­ NghiÖp (BiÖn Kinh)",975,1620,3180,"\\script\\biwudahui\\tournament\\npc\\npc_field_keeper.lua"},
+		{"V­¬ng An Th¹ch","ThÇn Vâ ViÖn T­ NghiÖp (Thµnh §«)",976,1620,3180,"\\script\\biwudahui\\tournament\\npc\\npc_field_keeper.lua"},
+		{"V­¬ng An Th¹ch","ThÇn Vâ ViÖn T­ NghiÖp (Toµn quèc)",7100,1404,2858,"\\script\\biwudahui\\tournament\\npc\\npc_field_keeper.lua"},
 	});
 end;
 function add_faction_back_room()
 	local nNpcIdx = 0;
-	nNpcIdx = CreateNpc("ThiÕu L©m Th?Täa","HuyÒn Kh«ng",204,1645,3270);	--ÉÙÁÖ
+	nNpcIdx = CreateNpc("ThiÕu L©m Thñ Täa","HuyÒn Kh«ng",204,1645,3270);	--ÉÙÁÖ
 	SetNpcScript(nNpcIdx,"\\script\\task\\faction_back_room\\npc_master.lua");
-	nNpcIdx = CreateNpc("§­êng M«n ®¹i ®å ®Ö","§­êng T?M¹c",305,1674,2936);	--ÌÆÃÅ
+	nNpcIdx = CreateNpc("§­êng M«n ®¹i ®å ®Ö","§­êng T« M¹c",305,1674,2936);	--ÌÆÃÅ
 	SetNpcScript(nNpcIdx,"\\script\\task\\faction_back_room\\npc_master.lua");
-	nNpcIdx = CreateNpc("Nga My ph?ch­ëng m«n","Tu?V©n S?Th¸i",303,1715,3059);	--¶ëáÒ
+	nNpcIdx = CreateNpc("Nga My phã ch­ëng m«n","TuÖ V©n S­ Th¸i",303,1715,3059);	--¶ëáÒ
 	SetNpcScript(nNpcIdx,"\\script\\task\\faction_back_room\\npc_master.lua");
-	nNpcIdx = CreateNpc("C¸i Bang ph?ch­ëng m«n","Bµng L?Väng",209,1530,3209);	--Ø¤°ï
+	nNpcIdx = CreateNpc("C¸i Bang phã ch­ëng m«n","Bµng L· Väng",209,1530,3209);	--Ø¤°ï
 	SetNpcScript(nNpcIdx,"\\script\\task\\faction_back_room\\npc_master.lua");
-	nNpcIdx = CreateNpc("V?§ang  m«n nh©n","TiÕt V©n Tranh",312,1871,3276);	--Îäµ±
+	nNpcIdx = CreateNpc("Vâ §ang  m«n nh©n","TiÕt V©n Tranh",312,1871,3276);	--Îäµ±
 	SetNpcScript(nNpcIdx,"\\script\\task\\faction_back_room\\npc_master.lua");
 end;
 
 function Add_wuyi_npc()
 	local nNpcIdx = 0;
-	nNpcIdx = CreateNpc("Giang h?tuÊn kiÖt","Hiªn Viªn Trung",200,1176,2825);
+	nNpcIdx = CreateNpc("Giang hå tuÊn kiÖt","Hiªn Viªn Trung",200,1176,2825);
 	SetNpcScript(nNpcIdx,"\\script\\online\\laborday08\\mah_jong_npc.lua");
-	nNpcIdx = CreateNpc("Giang h?tuÊn kiÖt","Hiªn Viªn Nh©n",300,1649,3538);
+	nNpcIdx = CreateNpc("Giang hå tuÊn kiÖt","Hiªn Viªn Nh©n",300,1649,3538);
 	SetNpcScript(nNpcIdx,"\\script\\online\\laborday08\\mah_jong_npc.lua");
-	nNpcIdx = CreateNpc("Giang h?tuÊn kiÖt","Hiªn Viªn L?,100,1436,2791);
+	nNpcIdx = CreateNpc("Giang hå tuÊn kiÖt","Hiªn Viªn LÔ",100,1436,2791);
 	SetNpcScript(nNpcIdx,"\\script\\online\\laborday08\\mah_jong_npc.lua");
 end
 
 function add_weizhi_npc()
-	local n = CreateNpc("Quan s?trung niªn1","Quèc T?gi¸m",200,1463,2758)
+	local n = CreateNpc("Quan sø-trung niªn1","Quèc Tö gi¸m",200,1463,2758)
 	SetNpcScript(n, "\\script\\master_prentice\\¹ú×Ó¼àÑ§¹Ù.lua")
-	n = CreateNpc("Ch?qu¶n Háa Kh?phßng","L©m TŞch",106,1557,3069);
+	n = CreateNpc("Chñ qu¶n Háa Khİ phßng","L©m TŞch",106,1557,3069);
 	SetNpcScript(n, "\\script\\½­ÄÏÇø\\ÁúÈª´å\\npc\\linxi_npc.lua");
 end
 
@@ -1586,9 +1586,9 @@ function init_xc_ls_sq()
 	local tXclInfo =
 	{
 		{2, 1, 1012, 7200, 150, "Bång Lai Tiªn Thñy",1},
-		{2, 0, 109, 7200, 200, "Bång Lai Tiªn L?,1.5},
+		{2, 0, 109, 7200, 200, "Bång Lai Tiªn Lé",1.5},
 		{2, 1, 1013, 7200, 300, "Bång Lai Tiªn §¬n",2},
-		{2, 1, 1052, 7200, 120, "Bång Lai L?Thñy",0},
+		{2, 1, 1052, 7200, 120, "Bång Lai Lé Thñy",0},
 	}
 	for index, value in tXclInfo do
 		InitXclSpeed(index, value[5])
@@ -1621,78 +1621,78 @@ end
 
 function Add_aoyun_npc()
 	local nNpcIdx = 0;
-	nNpcIdx = CreateNpc("Trİch ThÇn","Tr­ëng l·o V?L©m",200,1412,2807);
+	nNpcIdx = CreateNpc("Trİch ThÇn","Tr­ëng l·o Vâ L©m",200,1412,2807);
 	SetNpcScript(nNpcIdx,"\\script\\online\\jiuzhuanxuangong\\jiuzhuan_head.lua");
 end
 function Add_AoYunQiXi08()
-	local nNpcIdx = CreateNpc("V­¬ng An Th¹ch","§Æc s?§¹i Héi V?l©m",100,1435,2973);
+	local nNpcIdx = CreateNpc("V­¬ng An Th¹ch","§Æc sø §¹i Héi Vâ l©m",100,1435,2973);
 	SetNpcScript(nNpcIdx,"\\script\\online\\qixi08\\npc.lua");
-	nNpcIdx = CreateNpc("V­¬ng An Th¹ch","§Æc s?§¹i Héi V?l©m",200,1394,2874);
+	nNpcIdx = CreateNpc("V­¬ng An Th¹ch","§Æc sø §¹i Héi Vâ l©m",200,1394,2874);
 	SetNpcScript(nNpcIdx,"\\script\\online\\qixi08\\npc.lua");
-	nNpcIdx = CreateNpc("V­¬ng An Th¹ch","§Æc s?§¹i Héi V?l©m",300,1752,3541);
+	nNpcIdx = CreateNpc("V­¬ng An Th¹ch","§Æc sø §¹i Héi Vâ l©m",300,1752,3541);
 	SetNpcScript(nNpcIdx,"\\script\\online\\qixi08\\npc.lua");
 	for i=0,2 do
-		nNpcIdx = CreateNpc("L?S?S?,"X¶o n?,966+i,1636,3300);
+		nNpcIdx = CreateNpc("Lı S­ S­","X¶o n÷",966+i,1636,3300);
 		SetNpcScript(nNpcIdx,"\\script\\online\\qixi06\\qiaonv_npc.lua");
 	end;
 end;
 
 function AddLaborDay()
-	local npcIndex = CreateNpc("G¸nh hµng","Nh?bu«n T?B¶o Trai",100,1433,2792);	--ÈªÖİ
+	local npcIndex = CreateNpc("G¸nh hµng","Nhµ bu«n Tô B¶o Trai",100,1433,2792);	--ÈªÖİ
 	SetNpcScript(npcIndex,"\\script\\online\\laborday06\\collector_npc_BJ.lua");
-	npcIndex = CreateNpc("G¸nh hµng","Nh?bu«n T?B¶o Trai",200,1176,2827);	--ãê¾©
+	npcIndex = CreateNpc("G¸nh hµng","Nhµ bu«n Tô B¶o Trai",200,1176,2827);	--ãê¾©
 	SetNpcScript(npcIndex,"\\script\\online\\laborday06\\collector_npc_BJ.lua");
-	npcIndex = CreateNpc("G¸nh hµng","Nh?bu«n T?B¶o Trai",300,1652,3540);	--³É¶¼
+	npcIndex = CreateNpc("G¸nh hµng","Nhµ bu«n Tô B¶o Trai",300,1652,3540);	--³É¶¼
 	SetNpcScript(npcIndex,"\\script\\online\\laborday06\\collector_npc_BJ.lua");
 
-	npcIndex = CreateNpc("Ch?cÇm ®å Trung Nguyªn","¤ng ch?T?B¶o Trai", 350,1578,2965);	--ÏåÑô
+	npcIndex = CreateNpc("Chñ cÇm ®å Trung Nguyªn","¤ng chñ Tô B¶o Trai", 350,1578,2965);	--ÏåÑô
 	SetNpcScript(npcIndex,"\\script\\online\\laborday06\\awardprize_npc_XY.lua");
-	npcIndex = CreateNpc("Ch?cÇm ®å Trung Nguyªn","¤ng ch?T?B¶o Trai", 150,1783,3148);	--ÑïÖİ
+	npcIndex = CreateNpc("Chñ cÇm ®å Trung Nguyªn","¤ng chñ Tô B¶o Trai", 150,1783,3148);	--ÑïÖİ
 	SetNpcScript(npcIndex,"\\script\\online\\laborday06\\awardprize_npc_XY.lua");
 end;
 
 function add_mail_carrier()
 	local script_name = "\\script\\misc\\mail_carrier.lua"
-	local nNpcIdx = CreateNpc("R­¬ng ®å Trung Nguyªn", "Ch?B­u côc", 200, 1332, 2792);
+	local nNpcIdx = CreateNpc("R­¬ng ®å Trung Nguyªn", "Chñ B­u côc", 200, 1332, 2792);
 	SetNpcScript(nNpcIdx, script_name);
-	local nNpcIdx = CreateNpc("R­¬ng ®å Trung Nguyªn", "Ch?B­u côc", 300, 1760, 3630);
+	local nNpcIdx = CreateNpc("R­¬ng ®å Trung Nguyªn", "Chñ B­u côc", 300, 1760, 3630);
 	SetNpcScript(nNpcIdx, script_name);
-	local nNpcIdx = CreateNpc("R­¬ng ®å Trung Nguyªn", "Ch?B­u côc", 100, 1476, 2905);
+	local nNpcIdx = CreateNpc("R­¬ng ®å Trung Nguyªn", "Chñ B­u côc", 100, 1476, 2905);
 	SetNpcScript(nNpcIdx, script_name);
-	local nNpcIdx = CreateNpc("R­¬ng ®å Trung Nguyªn", "Ch?B­u côc", 350, 1380, 3015);
+	local nNpcIdx = CreateNpc("R­¬ng ®å Trung Nguyªn", "Chñ B­u côc", 350, 1380, 3015);
 	SetNpcScript(nNpcIdx, script_name);
-	local nNpcIdx = CreateNpc("R­¬ng ®å Trung Nguyªn", "Ch?B­u côc", 400, 1425, 3052);
+	local nNpcIdx = CreateNpc("R­¬ng ®å Trung Nguyªn", "Chñ B­u côc", 400, 1425, 3052);
 	SetNpcScript(nNpcIdx, script_name);
 end
 
 --******************************µÚÒ»°ï»î¶¯*******************************
 function AddFirstTongNpc()
 	local nNpcIndex = 0;
-	nNpcIndex = CreateNpc("V?L©m Minh Ch?","V?L©m §Æc S?,106,1305,2989);	--ÁúÈª´å163/186
+	nNpcIndex = CreateNpc("Vâ L©m Minh Chñ1","Vâ L©m §Æc Sø",106,1305,2989);	--ÁúÈª´å163/186
 	SetNpcScript(nNpcIndex, "\\script\\online\\jpz_event\\first_tong\\wulinteshi_npc.lua");
 
 	nNpcIndex = CreateNpc("R­¬ng tiÒn","B¶o r­¬ng Hoa s¬n",969,1597,2981,-1,1,1,100)			--±¦Ïä
 	SetNpcScript(nNpcIndex,"\\script\\online\\jpz_event\\first_tong\\huashan_box_npc.lua")
 	SetGlbValue(501,nNpcIndex)
 
-	nNpcIndex = CreateNpc("V?L©m Minh Ch?","V?L©m §Æc S?,969,1643,3225)		--»ªÉ½npc
+	nNpcIndex = CreateNpc("Vâ L©m Minh Chñ1","Vâ L©m §Æc Sø",969,1643,3225)		--»ªÉ½npc
 	SetNpcScript(nNpcIndex,"\\script\\online\\jpz_event\\first_tong\\huashan_npc.lua")
 end;
 function AddVuPhuong()
 	if tonumber(date("%y%m%d%H")) >= 09061900 and tonumber(date("%y%m%d%H")) <= 09113024 then
 	--´´½¨Îä·¼½«¾üNPC--NPCÄ£°åÊÇ£¿£¿
 		local npcIndex = 0;
-		npcIndex = CreateNpc("Tèng T­íng Qu©n", "V?Ph­¬ng T­íng Qu©n", 200, 1412, 2864);
+		npcIndex = CreateNpc("Tèng T­íng Qu©n", "Vò Ph­¬ng T­íng Qu©n", 200, 1412, 2864);
 		SetNpcScript(npcIndex, "\\script\\online\\viet_event\\200907\\6\\npc_wufangjiangjun.lua");
-		npcIndex = CreateNpc("Tèng T­íng Qu©n", "V?Ph­¬ng T­íng Qu©n", 300, 1770, 3560);
+		npcIndex = CreateNpc("Tèng T­íng Qu©n", "Vò Ph­¬ng T­íng Qu©n", 300, 1770, 3560);
 		SetNpcScript(npcIndex, "\\script\\online\\viet_event\\200907\\6\\npc_wufangjiangjun.lua");
-		npcIndex = CreateNpc("Tèng T­íng Qu©n", "V?Ph­¬ng T­íng Qu©n", 100, 1455, 2979);
+		npcIndex = CreateNpc("Tèng T­íng Qu©n", "Vò Ph­¬ng T­íng Qu©n", 100, 1455, 2979);
 		SetNpcScript(npcIndex, "\\script\\online\\viet_event\\200907\\6\\npc_wufangjiangjun.lua");
-		npcIndex = CreateNpc("Tèng T­íng Qu©n", "V?Ph­¬ng T­íng Qu©n", 350, 1467, 2987);
+		npcIndex = CreateNpc("Tèng T­íng Qu©n", "Vò Ph­¬ng T­íng Qu©n", 350, 1467, 2987);
 		SetNpcScript(npcIndex, "\\script\\online\\viet_event\\200907\\6\\npc_wufangjiangjun.lua");
-		npcIndex = CreateNpc("Tèng T­íng Qu©n", "V?Ph­¬ng T­íng Qu©n", 150, 1709, 3161);
+		npcIndex = CreateNpc("Tèng T­íng Qu©n", "Vò Ph­¬ng T­íng Qu©n", 150, 1709, 3161);
 		SetNpcScript(npcIndex, "\\script\\online\\viet_event\\200907\\6\\npc_wufangjiangjun.lua");
-		npcIndex = CreateNpc("Tèng T­íng Qu©n", "V?Ph­¬ng T­íng Qu©n", 400, 1479, 3031);
+		npcIndex = CreateNpc("Tèng T­íng Qu©n", "Vò Ph­¬ng T­íng Qu©n", 400, 1479, 3031);
 		SetNpcScript(npcIndex, "\\script\\online\\viet_event\\200907\\6\\npc_wufangjiangjun.lua");
 	end
 end
@@ -1700,25 +1700,25 @@ end
 function Add_0910_npc()
 	if tonumber(date("%y%m%d%H")) >= 09092800 and tonumber(date("%y%m%d%H")) < 09102524 then
 		local npcIndex = 0;
-		npcIndex = CreateNpc("§ång n?","TiÓu Quyªn",350,1424,2973);
+		npcIndex = CreateNpc("§ång n÷1","TiÓu Quyªn",350,1424,2973);
 		SetNpcScript(npcIndex, "\\script\\online\\viet_event\\200909\\8\\npc_xiao_quyen.lua");
-		npcIndex = CreateNpc("§ång n?","TiÓu Ch©u",350,1428,2977);
+		npcIndex = CreateNpc("§ång n÷2","TiÓu Ch©u",350,1428,2977);
 		SetNpcScript(npcIndex, "\\script\\online\\viet_event\\200909\\8\\npc_xiao_chau.lua");
-		npcIndex = CreateNpc("§ång n?","TiÓu Anh",350,1422,2977);
+		npcIndex = CreateNpc("§ång n÷3","TiÓu Anh",350,1422,2977);
 		SetNpcScript(npcIndex, "\\script\\online\\viet_event\\200909\\8\\npc_xiao_anh.lua");
 		
-		npcIndex = CreateNpc("§ång n?","TiÓu Quyªn",400,1493,3013);
+		npcIndex = CreateNpc("§ång n÷1","TiÓu Quyªn",400,1493,3013);
 		SetNpcScript(npcIndex, "\\script\\online\\viet_event\\200909\\8\\npc_xiao_quyen.lua");
-		npcIndex = CreateNpc("§ång n?","TiÓu Ch©u",400,1498,3018);
+		npcIndex = CreateNpc("§ång n÷2","TiÓu Ch©u",400,1498,3018);
 		SetNpcScript(npcIndex, "\\script\\online\\viet_event\\200909\\8\\npc_xiao_chau.lua");
-		npcIndex = CreateNpc("§ång n?","TiÓu Anh",400,1492,3021);
+		npcIndex = CreateNpc("§ång n÷3","TiÓu Anh",400,1492,3021);
 		SetNpcScript(npcIndex, "\\script\\online\\viet_event\\200909\\8\\npc_xiao_anh.lua");
 		
-		npcIndex = CreateNpc("§ång n?","TiÓu Quyªn",100,1447,2990);
+		npcIndex = CreateNpc("§ång n÷1","TiÓu Quyªn",100,1447,2990);
 		SetNpcScript(npcIndex, "\\script\\online\\viet_event\\200909\\8\\npc_xiao_quyen.lua");
-		npcIndex = CreateNpc("§ång n?","TiÓu Ch©u",100,1450,2997);
+		npcIndex = CreateNpc("§ång n÷2","TiÓu Ch©u",100,1450,2997);
 		SetNpcScript(npcIndex, "\\script\\online\\viet_event\\200909\\8\\npc_xiao_chau.lua");
-		npcIndex = CreateNpc("§ång n?","TiÓu Anh",100,1444,2996);
+		npcIndex = CreateNpc("§ång n÷3","TiÓu Anh",100,1444,2996);
 		SetNpcScript(npcIndex, "\\script\\online\\viet_event\\200909\\8\\npc_xiao_anh.lua");
 	end
 end
@@ -1731,109 +1731,109 @@ function Add67EventNpcs()
 	if tonumber(date("%y%m%d%H")) >= 09061900 and tonumber(date("%y%m%d%H")) < 09071924 then
 		local npcIndex = 0;
 	--´´½¨Ò¹²İNPC
-		npcIndex = CreateNpc("Ch?T?lôa Trung Nguyªn", "D?Th¶o", 200, 1392, 2844);
+		npcIndex = CreateNpc("Chñ T¬ lôa Trung Nguyªn", "D¹ Th¶o", 200, 1392, 2844);
 		SetNpcScript(npcIndex, "\\script\\online\\viet_event\\200907\\2\\npc_yecao.lua");
-		npcIndex = CreateNpc("Ch?T?lôa Trung Nguyªn", "D?Th¶o", 300, 1745, 3540);
+		npcIndex = CreateNpc("Chñ T¬ lôa Trung Nguyªn", "D¹ Th¶o", 300, 1745, 3540);
 		SetNpcScript(npcIndex, "\\script\\online\\viet_event\\200907\\2\\npc_yecao.lua");
-		npcIndex = CreateNpc("Ch?T?lôa Trung Nguyªn", "D?Th¶o", 100, 1435, 2959);
+		npcIndex = CreateNpc("Chñ T¬ lôa Trung Nguyªn", "D¹ Th¶o", 100, 1435, 2959);
 		SetNpcScript(npcIndex, "\\script\\online\\viet_event\\200907\\2\\npc_yecao.lua");
-		npcIndex = CreateNpc("Ch?T?lôa Trung Nguyªn", "D?Th¶o", 350, 1447, 2987);
+		npcIndex = CreateNpc("Chñ T¬ lôa Trung Nguyªn", "D¹ Th¶o", 350, 1447, 2987);
 		SetNpcScript(npcIndex, "\\script\\online\\viet_event\\200907\\2\\npc_yecao.lua");
-		npcIndex = CreateNpc("Ch?T?lôa Trung Nguyªn", "D?Th¶o", 150, 1689, 3141);
+		npcIndex = CreateNpc("Chñ T¬ lôa Trung Nguyªn", "D¹ Th¶o", 150, 1689, 3141);
 		SetNpcScript(npcIndex, "\\script\\online\\viet_event\\200907\\2\\npc_yecao.lua");
-		npcIndex = CreateNpc("Ch?T?lôa Trung Nguyªn", "D?Th¶o", 400, 1486, 3011);
+		npcIndex = CreateNpc("Chñ T¬ lôa Trung Nguyªn", "D¹ Th¶o", 400, 1486, 3011);
 		SetNpcScript(npcIndex, "\\script\\online\\viet_event\\200907\\2\\npc_yecao.lua");
 
 	--´´½¨Ò¹²İ½ğ¿âÀÏ°åNPC
-		npcIndex = CreateNpc("Ch?cÇm ®å Trung Nguyªn", "Ch?Ng©n Kh?, 200, 1402, 2854);
+		npcIndex = CreateNpc("Chñ cÇm ®å Trung Nguyªn", "Chñ Ng©n Khè", 200, 1402, 2854);
 		SetNpcScript(npcIndex, "\\script\\online\\viet_event\\200907\\2\\npc_jinkulaoban.lua");
-		npcIndex = CreateNpc("Ch?cÇm ®å Trung Nguyªn", "Ch?Ng©n Kh?, 300, 1760, 3550);
+		npcIndex = CreateNpc("Chñ cÇm ®å Trung Nguyªn", "Chñ Ng©n Khè", 300, 1760, 3550);
 		SetNpcScript(npcIndex, "\\script\\online\\viet_event\\200907\\2\\npc_jinkulaoban.lua");
-		npcIndex = CreateNpc("Ch?cÇm ®å Trung Nguyªn", "Ch?Ng©n Kh?, 100, 1445, 2969);
+		npcIndex = CreateNpc("Chñ cÇm ®å Trung Nguyªn", "Chñ Ng©n Khè", 100, 1445, 2969);
 		SetNpcScript(npcIndex, "\\script\\online\\viet_event\\200907\\2\\npc_jinkulaoban.lua");
-		npcIndex = CreateNpc("Ch?cÇm ®å Trung Nguyªn", "Ch?Ng©n Kh?, 350, 1457, 2997);
+		npcIndex = CreateNpc("Chñ cÇm ®å Trung Nguyªn", "Chñ Ng©n Khè", 350, 1457, 2997);
 		SetNpcScript(npcIndex, "\\script\\online\\viet_event\\200907\\2\\npc_jinkulaoban.lua");
-		npcIndex = CreateNpc("Ch?cÇm ®å Trung Nguyªn", "Ch?Ng©n Kh?, 150, 1699, 3151);
+		npcIndex = CreateNpc("Chñ cÇm ®å Trung Nguyªn", "Chñ Ng©n Khè", 150, 1699, 3151);
 		SetNpcScript(npcIndex, "\\script\\online\\viet_event\\200907\\2\\npc_jinkulaoban.lua");
-		npcIndex = CreateNpc("Ch?cÇm ®å Trung Nguyªn", "Ch?Ng©n Kh?, 400, 1491, 3031);
+		npcIndex = CreateNpc("Chñ cÇm ®å Trung Nguyªn", "Chñ Ng©n Khè", 400, 1491, 3031);
 		SetNpcScript(npcIndex, "\\script\\online\\viet_event\\200907\\2\\npc_jinkulaoban.lua");
 
 	--´´½¨¸´Ô­ÕæÈËNPC
-		npcIndex = CreateNpc("V?§ang  ch­ëng m«n", "Phôc Nguyªn Ch©n Nh©n", 200, 1402, 2864);
+		npcIndex = CreateNpc("Vâ §ang  ch­ëng m«n", "Phôc Nguyªn Ch©n Nh©n", 200, 1402, 2864);
 		SetNpcScript(npcIndex, "\\script\\online\\viet_event\\200907\\1\\npc_fuyuanzheren.lua");
-		npcIndex = CreateNpc("V?§ang  ch­ëng m«n", "Phôc Nguyªn Ch©n Nh©n", 300, 1758, 3529);
+		npcIndex = CreateNpc("Vâ §ang  ch­ëng m«n", "Phôc Nguyªn Ch©n Nh©n", 300, 1758, 3529);
 		SetNpcScript(npcIndex, "\\script\\online\\viet_event\\200907\\1\\npc_fuyuanzheren.lua");
-		npcIndex = CreateNpc("V?§ang  ch­ëng m«n", "Phôc Nguyªn Ch©n Nh©n", 100, 1440, 2976);--
+		npcIndex = CreateNpc("Vâ §ang  ch­ëng m«n", "Phôc Nguyªn Ch©n Nh©n", 100, 1440, 2976);--
 		SetNpcScript(npcIndex, "\\script\\online\\viet_event\\200907\\1\\npc_fuyuanzheren.lua");
-		npcIndex = CreateNpc("V?§ang  ch­ëng m«n", "Phôc Nguyªn Ch©n Nh©n", 350, 1442, 2997);
+		npcIndex = CreateNpc("Vâ §ang  ch­ëng m«n", "Phôc Nguyªn Ch©n Nh©n", 350, 1442, 2997);
 		SetNpcScript(npcIndex, "\\script\\online\\viet_event\\200907\\1\\npc_fuyuanzheren.lua");
-		npcIndex = CreateNpc("V?§ang  ch­ëng m«n", "Phôc Nguyªn Ch©n Nh©n", 150, 1699, 3161);
+		npcIndex = CreateNpc("Vâ §ang  ch­ëng m«n", "Phôc Nguyªn Ch©n Nh©n", 150, 1699, 3161);
 		SetNpcScript(npcIndex, "\\script\\online\\viet_event\\200907\\1\\npc_fuyuanzheren.lua");
-		npcIndex = CreateNpc("V?§ang  ch­ëng m«n", "Phôc Nguyªn Ch©n Nh©n", 400, 1494, 3016);
+		npcIndex = CreateNpc("Vâ §ang  ch­ëng m«n", "Phôc Nguyªn Ch©n Nh©n", 400, 1494, 3016);
 		SetNpcScript(npcIndex, "\\script\\online\\viet_event\\200907\\1\\npc_fuyuanzheren.lua");
 		--´´½¨ÅÖÍÃ×ÓNPC
 				
 		local nSets1 = {{1691, 3081}, {1644, 3124}, {1688, 3194}, {1643, 3282}, {1718, 3263}};
 		for i = 1, 5 do--Ç§Ñ°ËşÒ»²ã Thiªn TÇm Th¸p 
 			local nRand = random(1, getn(nSets1));
-			CreateNpc("Th?MËp", "Th?MËp", 116, nSets1[nRand][1], nSets1[nRand][2]);
+			CreateNpc("Thá MËp", "Thá MËp", 116, nSets1[nRand][1], nSets1[nRand][2]);
 		end
 		
 		local nSets2 = {{1500, 2903}, {1424, 2896}, {1387, 3053}, {1443, 3066}, {1532, 3153}};
 		for i = 1, 5 do--Ç§Ñ°ËşÒ»²ã Thiªn TÇm Th¸p 
 			local nRand = random(1, getn(nSets2));
-			CreateNpc("Th?MËp", "Th?MËp", 403, nSets2[nRand][1], nSets2[nRand][2]);
+			CreateNpc("Thá MËp", "Thá MËp", 403, nSets2[nRand][1], nSets2[nRand][2]);
 		end
 		
 		local nSets3 = {{1528, 3115}, {1584, 2912}, {1488, 2646}, {1390, 2702}, {1392, 2912}};
 		for i = 1, 5 do--Ç§Ñ°ËşÒ»²ã Thiªn TÇm Th¸p 
 			local nRand = random(1, getn(nSets3));
-			CreateNpc("Th?MËp", "Th?MËp", 102, nSets3[nRand][1], nSets3[nRand][2]);
+			CreateNpc("Thá MËp", "Thá MËp", 102, nSets3[nRand][1], nSets3[nRand][2]);
 		end
 		
 		local nSets4 = {{1664, 3424}, {1728, 3504}, {1872, 3264}, {2064, 3456}, {1776, 3696}};
 		for i = 1, 5 do--Ç§Ñ°ËşÒ»²ã Thiªn TÇm Th¸p 
 			local nRand = random(1, getn(nSets4));
-			CreateNpc("Th?MËp", "Th?MËp", 409, nSets4[nRand][1], nSets4[nRand][2]);
+			CreateNpc("Thá MËp", "Thá MËp", 409, nSets4[nRand][1], nSets4[nRand][2]);
 		end
 		
 		local nSets5 = {{1552, 2752}, {1496, 3056}, {1456, 2864}, {1392, 3087}, {1376, 2752}};
 		for i = 1, 5 do--Ç§Ñ°ËşÒ»²ã Thiªn TÇm Th¸p 
 			local nRand = random(1, getn(nSets5));
-			CreateNpc("Th?MËp", "Th?MËp", 151, nSets5[nRand][1], nSets5[nRand][2]);
+			CreateNpc("Thá MËp", "Thá MËp", 151, nSets5[nRand][1], nSets5[nRand][2]);
 		end
 	end
 
 	if tonumber(date("%y%m%d%H")) >= 09061900 and tonumber(date("%y%m%d%H")) < 09080224 then
 	--´´½¨Îä·¼½«¾üNPC--NPCÄ£°åÊÇ£¿£¿
 		local npcIndex = 0;
-		npcIndex = CreateNpc("Tèng T­íng Qu©n", "V?Ph­¬ng T­íng Qu©n", 200, 1412, 2864);
+		npcIndex = CreateNpc("Tèng T­íng Qu©n", "Vò Ph­¬ng T­íng Qu©n", 200, 1412, 2864);
 		SetNpcScript(npcIndex, "\\script\\online\\viet_event\\200907\\6\\npc_wufangjiangjun.lua");
-		npcIndex = CreateNpc("Tèng T­íng Qu©n", "V?Ph­¬ng T­íng Qu©n", 300, 1770, 3560);
+		npcIndex = CreateNpc("Tèng T­íng Qu©n", "Vò Ph­¬ng T­íng Qu©n", 300, 1770, 3560);
 		SetNpcScript(npcIndex, "\\script\\online\\viet_event\\200907\\6\\npc_wufangjiangjun.lua");
-		npcIndex = CreateNpc("Tèng T­íng Qu©n", "V?Ph­¬ng T­íng Qu©n", 100, 1455, 2979);
+		npcIndex = CreateNpc("Tèng T­íng Qu©n", "Vò Ph­¬ng T­íng Qu©n", 100, 1455, 2979);
 		SetNpcScript(npcIndex, "\\script\\online\\viet_event\\200907\\6\\npc_wufangjiangjun.lua");
-		npcIndex = CreateNpc("Tèng T­íng Qu©n", "V?Ph­¬ng T­íng Qu©n", 350, 1467, 2987);
+		npcIndex = CreateNpc("Tèng T­íng Qu©n", "Vò Ph­¬ng T­íng Qu©n", 350, 1467, 2987);
 		SetNpcScript(npcIndex, "\\script\\online\\viet_event\\200907\\6\\npc_wufangjiangjun.lua");
-		npcIndex = CreateNpc("Tèng T­íng Qu©n", "V?Ph­¬ng T­íng Qu©n", 150, 1709, 3161);
+		npcIndex = CreateNpc("Tèng T­íng Qu©n", "Vò Ph­¬ng T­íng Qu©n", 150, 1709, 3161);
 		SetNpcScript(npcIndex, "\\script\\online\\viet_event\\200907\\6\\npc_wufangjiangjun.lua");
-		npcIndex = CreateNpc("Tèng T­íng Qu©n", "V?Ph­¬ng T­íng Qu©n", 400, 1479, 3031);
+		npcIndex = CreateNpc("Tèng T­íng Qu©n", "Vò Ph­¬ng T­íng Qu©n", 400, 1479, 3031);
 		SetNpcScript(npcIndex, "\\script\\online\\viet_event\\200907\\6\\npc_wufangjiangjun.lua");
 	end
 	
 	if tonumber(date("%y%m%d%H")) >= 09061900 and tonumber(date("%y%m%d%H")) < 09080524 then
 	--´´½¨åĞÒ£Ê¹ÕßNPC
-		npcIndex = CreateNpc("V?L©m Minh Ch?", "S?Gi?Tiªu Giao", 200, 1422, 2874);
+		npcIndex = CreateNpc("Vâ L©m Minh Chñ1", "Sø Gi¶ Tiªu Giao", 200, 1422, 2874);
 		SetNpcScript(npcIndex, "\\script\\online\\viet_event\\200907\\7\\npc_xiaoyaoshizhe.lua");
-		npcIndex = CreateNpc("V?L©m Minh Ch?", "S?Gi?Tiªu Giao", 300, 1750, 3570);
+		npcIndex = CreateNpc("Vâ L©m Minh Chñ1", "Sø Gi¶ Tiªu Giao", 300, 1750, 3570);
 		SetNpcScript(npcIndex, "\\script\\online\\viet_event\\200907\\7\\npc_xiaoyaoshizhe.lua");
-		npcIndex = CreateNpc("V?L©m Minh Ch?", "S?Gi?Tiªu Giao", 100, 1465, 2989);
+		npcIndex = CreateNpc("Vâ L©m Minh Chñ1", "Sø Gi¶ Tiªu Giao", 100, 1465, 2989);
 		SetNpcScript(npcIndex, "\\script\\online\\viet_event\\200907\\7\\npc_xiaoyaoshizhe.lua");
-		npcIndex = CreateNpc("V?L©m Minh Ch?", "S?Gi?Tiªu Giao", 350, 1447, 3007);
+		npcIndex = CreateNpc("Vâ L©m Minh Chñ1", "Sø Gi¶ Tiªu Giao", 350, 1447, 3007);
 		SetNpcScript(npcIndex, "\\script\\online\\viet_event\\200907\\7\\npc_xiaoyaoshizhe.lua");
-		npcIndex = CreateNpc("V?L©m Minh Ch?", "S?Gi?Tiªu Giao", 150, 1689, 3171);
+		npcIndex = CreateNpc("Vâ L©m Minh Chñ1", "Sø Gi¶ Tiªu Giao", 150, 1689, 3171);
 		SetNpcScript(npcIndex, "\\script\\online\\viet_event\\200907\\7\\npc_xiaoyaoshizhe.lua");
-		npcIndex = CreateNpc("V?L©m Minh Ch?", "S?Gi?Tiªu Giao", 400, 1501, 3005);
+		npcIndex = CreateNpc("Vâ L©m Minh Chñ1", "Sø Gi¶ Tiªu Giao", 400, 1501, 3005);
 		SetNpcScript(npcIndex, "\\script\\online\\viet_event\\200907\\7\\npc_xiaoyaoshizhe.lua");
 	end
 end
@@ -1841,19 +1841,19 @@ end
 function AddNpcYecao()
 --	if tonumber(date("%y%m%d%H")) >= 09073100 and tonumber(date("%y%m%d%H")) <= 09090624 then
 		local npcIndex = 0;
-		npcIndex = CreateNpc("Ch?T?lôa Trung Nguyªn", "D?Th¶o", 200, 1392, 2844);
+		npcIndex = CreateNpc("Chñ T¬ lôa Trung Nguyªn", "D¹ Th¶o", 200, 1392, 2844);
 		SetNpcScript(npcIndex, "\\script\\online\\viet_event\\200908\\yecao\\npc_yecao.lua");
-		npcIndex = CreateNpc("Ch?T?lôa Trung Nguyªn", "D?Th¶o", 300, 1745, 3540);
+		npcIndex = CreateNpc("Chñ T¬ lôa Trung Nguyªn", "D¹ Th¶o", 300, 1745, 3540);
 		SetNpcScript(npcIndex, "\\script\\online\\viet_event\\200908\\yecao\\npc_yecao.lua");
-		npcIndex = CreateNpc("Ch?T?lôa Trung Nguyªn", "D?Th¶o", 100, 1435, 2959);
+		npcIndex = CreateNpc("Chñ T¬ lôa Trung Nguyªn", "D¹ Th¶o", 100, 1435, 2959);
 		SetNpcScript(npcIndex, "\\script\\online\\viet_event\\200908\\yecao\\npc_yecao.lua");
-		npcIndex = CreateNpc("Ch?T?lôa Trung Nguyªn", "D?Th¶o", 350, 1447, 2987);
+		npcIndex = CreateNpc("Chñ T¬ lôa Trung Nguyªn", "D¹ Th¶o", 350, 1447, 2987);
 		SetNpcScript(npcIndex, "\\script\\online\\viet_event\\200908\\yecao\\npc_yecao.lua");
-		npcIndex = CreateNpc("Ch?T?lôa Trung Nguyªn", "D?Th¶o", 150, 1689, 3141);
+		npcIndex = CreateNpc("Chñ T¬ lôa Trung Nguyªn", "D¹ Th¶o", 150, 1689, 3141);
 		SetNpcScript(npcIndex, "\\script\\online\\viet_event\\200908\\yecao\\npc_yecao.lua");
-		npcIndex = CreateNpc("Ch?T?lôa Trung Nguyªn", "D?Th¶o", 400, 1486, 3011);
+		npcIndex = CreateNpc("Chñ T¬ lôa Trung Nguyªn", "D¹ Th¶o", 400, 1486, 3011);
 		SetNpcScript(npcIndex, "\\script\\online\\viet_event\\200908\\yecao\\npc_yecao.lua");
-		npcIndex = CreateNpc("Ch?T?lôa Trung Nguyªn", "D?Th¶o", 500, 1733, 3142);
+		npcIndex = CreateNpc("Chñ T¬ lôa Trung Nguyªn", "D¹ Th¶o", 500, 1733, 3142);
 		SetNpcScript(npcIndex, "\\script\\online\\viet_event\\200908\\yecao\\npc_yecao.lua");
 --	end
 end
@@ -1862,11 +1862,11 @@ function add_0908_npc()
 	local nDate = tonumber(date("%y%m%d"));
 	local npcIndex = 0;
 	if nDate >= 090807 and nDate < 090907 then
-		npcIndex = CreateNpc("Ch?cÇm ®å Th?Phån", "Nh?S­u TÇm MËt TŞch", 500, 1774, 3124);
+		npcIndex = CreateNpc("Chñ cÇm ®å Thæ Phån", "Nhµ S­u TÇm MËt TŞch", 500, 1774, 3124);
 		SetNpcScript(npcIndex, "\\script\\online\\viet_event\\200908\\6\\npc_mijishoucangjia.lua");
 	end
 	if nDate >= 090830 and nDate < 090907 then
-		npcIndex = CreateNpc("B?mai", "B?x?Th?rÌn L­u", 350, 1412, 2928);
+		npcIndex = CreateNpc("Bµ mai", "Bµ x· Thî rÌn L­u", 350, 1412, 2928);
 		SetNpcScript(npcIndex, "\\script\\online\\viet_event\\200908\\quockhanh\\npc_quockhanh.lua");
 	end
 end
@@ -1874,19 +1874,19 @@ end
 --Ô½ÄÏ09Äê8ÔÂµ÷Õû£¬ÀëÏßÍĞ¹ÜÖÖÊ÷NPCÌí¼Ó
 function add_0908_tuoguan_plant_npc()
 	local nNpcIndex = 0;
-	nNpcIndex = CreateNpc("V?L©m Minh Ch?", "V?L©m S?Gi?, 200, 1433, 2857);
+	nNpcIndex = CreateNpc("Vâ L©m Minh Chñ1", "Vâ L©m Sø Gi¶", 200, 1433, 2857);
 	SetNpcScript(nNpcIndex, "\\script\\task\\plant_tuoguan\\npc_wulinshizhe.lua");
-	nNpcIndex = CreateNpc("V?L©m Minh Ch?", "V?L©m S?Gi?, 300, 1747, 3490);
+	nNpcIndex = CreateNpc("Vâ L©m Minh Chñ1", "Vâ L©m Sø Gi¶", 300, 1747, 3490);
 	SetNpcScript(nNpcIndex, "\\script\\task\\plant_tuoguan\\npc_wulinshizhe.lua");
-	nNpcIndex = CreateNpc("V?L©m Minh Ch?", "V?L©m S?Gi?, 350, 1358, 2907);
+	nNpcIndex = CreateNpc("Vâ L©m Minh Chñ1", "Vâ L©m Sø Gi¶", 350, 1358, 2907);
 	SetNpcScript(nNpcIndex, "\\script\\task\\plant_tuoguan\\npc_wulinshizhe.lua");
-	nNpcIndex = CreateNpc("V?L©m Minh Ch?", "V?L©m S?Gi?, 150, 1668, 3133);
+	nNpcIndex = CreateNpc("Vâ L©m Minh Chñ1", "Vâ L©m Sø Gi¶", 150, 1668, 3133);
 	SetNpcScript(nNpcIndex, "\\script\\task\\plant_tuoguan\\npc_wulinshizhe.lua");
-	nNpcIndex = CreateNpc("V?L©m Minh Ch?", "V?L©m S?Gi?, 100, 1464, 2987);
+	nNpcIndex = CreateNpc("Vâ L©m Minh Chñ1", "Vâ L©m Sø Gi¶", 100, 1464, 2987);
 	SetNpcScript(nNpcIndex, "\\script\\task\\plant_tuoguan\\npc_wulinshizhe.lua");
-	nNpcIndex = CreateNpc("V?L©m Minh Ch?", "V?L©m S?Gi?, 500, 1729, 3161);
+	nNpcIndex = CreateNpc("Vâ L©m Minh Chñ1", "Vâ L©m Sø Gi¶", 500, 1729, 3161);
 	SetNpcScript(nNpcIndex, "\\script\\task\\plant_tuoguan\\npc_wulinshizhe.lua");
-	nNpcIndex = CreateNpc("V?L©m Minh Ch?", "V?L©m S?Gi?, 400, 1523, 2974);
+	nNpcIndex = CreateNpc("Vâ L©m Minh Chñ1", "Vâ L©m Sø Gi¶", 400, 1523, 2974);
 	SetNpcScript(nNpcIndex, "\\script\\task\\plant_tuoguan\\npc_wulinshizhe.lua");
 end
 
@@ -1896,17 +1896,17 @@ function add_0909_npc()
 	local npcIndex = 0;
 	if nDate >= 090918 and nDate < 091026 then
 		--±¦Ïä¹ÜÀí
---		npcIndex = CreateNpc("Ch?cÇm ®å Trung Nguyªn", "Qu¶n L?B¶o R­¬ng", 100, 1443, 2975);
+--		npcIndex = CreateNpc("Chñ cÇm ®å Trung Nguyªn", "Qu¶n Lı B¶o R­¬ng", 100, 1443, 2975);
 --		SetNpcScript(npcIndex, "\\script\\online\\viet_event\\200909\\7\\npc_baoxiangguanli.lua");
---		npcIndex = CreateNpc("Ch?cÇm ®å Trung Nguyªn", "Qu¶n L?B¶o R­¬ng", 200, 1405, 2858);
+--		npcIndex = CreateNpc("Chñ cÇm ®å Trung Nguyªn", "Qu¶n Lı B¶o R­¬ng", 200, 1405, 2858);
 --		SetNpcScript(npcIndex, "\\script\\online\\viet_event\\200909\\7\\npc_baoxiangguanli.lua");
---		npcIndex = CreateNpc("Ch?cÇm ®å Trung Nguyªn", "Qu¶n L?B¶o R­¬ng", 150, 1697, 3159);
+--		npcIndex = CreateNpc("Chñ cÇm ®å Trung Nguyªn", "Qu¶n Lı B¶o R­¬ng", 150, 1697, 3159);
 --		SetNpcScript(npcIndex, "\\script\\online\\viet_event\\200909\\7\\npc_baoxiangguanli.lua");
---		npcIndex = CreateNpc("Ch?cÇm ®å Trung Nguyªn", "Qu¶n L?B¶o R­¬ng", 350, 1462, 2980);
+--		npcIndex = CreateNpc("Chñ cÇm ®å Trung Nguyªn", "Qu¶n Lı B¶o R­¬ng", 350, 1462, 2980);
 --		SetNpcScript(npcIndex, "\\script\\online\\viet_event\\200909\\7\\npc_baoxiangguanli.lua");
---		npcIndex = CreateNpc("Ch?cÇm ®å Trung Nguyªn", "Qu¶n L?B¶o R­¬ng", 300, 1758, 3529);
+--		npcIndex = CreateNpc("Chñ cÇm ®å Trung Nguyªn", "Qu¶n Lı B¶o R­¬ng", 300, 1758, 3529);
 --		SetNpcScript(npcIndex, "\\script\\online\\viet_event\\200909\\7\\npc_baoxiangguanli.lua");
---		npcIndex = CreateNpc("Ch?cÇm ®å Trung Nguyªn", "Qu¶n L?B¶o R­¬ng", 500, 1743, 3122);
+--		npcIndex = CreateNpc("Chñ cÇm ®å Trung Nguyªn", "Qu¶n Lı B¶o R­¬ng", 500, 1743, 3122);
 --		SetNpcScript(npcIndex, "\\script\\online\\viet_event\\200909\\7\\npc_baoxiangguanli.lua");
 		--ÖĞĞÄµÆÁı
 		npcIndex = CreateNpc("§Ìn KĞo Qu©n","§Ìn KĞo Qu©n", 100,1439,2993);
@@ -1930,36 +1930,36 @@ function add_0911_npc()
 	local nDate = tonumber(date("%y%m%d"));
 	local npcIndex = 0;
 	if nDate >= 091113 and nDate < 091130 then
-		npcIndex = CreateNpc("Ch?cÇm ®å Th?Phån", "Nh?S­u TÇm MËt TŞch", 500, 1774, 3124);
+		npcIndex = CreateNpc("Chñ cÇm ®å Thæ Phån", "Nhµ S­u TÇm MËt TŞch", 500, 1774, 3124);
 		SetNpcScript(npcIndex, "\\script\\online\\viet_event\\200911\\4\\npc_mijishoucangjia.lua");
-		npcIndex = CreateNpc("Ch?cÇm ®å Th?Phån", "Nh?S­u TÇm MËt TŞch", 200,1376,2862);
+		npcIndex = CreateNpc("Chñ cÇm ®å Thæ Phån", "Nhµ S­u TÇm MËt TŞch", 200,1376,2862);
 		SetNpcScript(npcIndex, "\\script\\online\\viet_event\\200911\\4\\npc_mijishoucangjia.lua");
-		npcIndex = CreateNpc("Ch?cÇm ®å Th?Phån", "Nh?S­u TÇm MËt TŞch", 300,1731,3511);
+		npcIndex = CreateNpc("Chñ cÇm ®å Thæ Phån", "Nhµ S­u TÇm MËt TŞch", 300,1731,3511);
 		SetNpcScript(npcIndex, "\\script\\online\\viet_event\\200911\\4\\npc_mijishoucangjia.lua");
-		npcIndex = CreateNpc("Ch?cÇm ®å Th?Phån", "Nh?S­u TÇm MËt TŞch", 100,1420,2975);
+		npcIndex = CreateNpc("Chñ cÇm ®å Thæ Phån", "Nhµ S­u TÇm MËt TŞch", 100,1420,2975);
 		SetNpcScript(npcIndex, "\\script\\online\\viet_event\\200911\\4\\npc_mijishoucangjia.lua");
-		npcIndex = CreateNpc("Ch?cÇm ®å Th?Phån", "Nh?S­u TÇm MËt TŞch", 150,1693,3137);
+		npcIndex = CreateNpc("Chñ cÇm ®å Thæ Phån", "Nhµ S­u TÇm MËt TŞch", 150,1693,3137);
 		SetNpcScript(npcIndex, "\\script\\online\\viet_event\\200911\\4\\npc_mijishoucangjia.lua");
-		npcIndex = CreateNpc("Ch?cÇm ®å Th?Phån", "Nh?S­u TÇm MËt TŞch", 350,1441,2959);
+		npcIndex = CreateNpc("Chñ cÇm ®å Thæ Phån", "Nhµ S­u TÇm MËt TŞch", 350,1441,2959);
 		SetNpcScript(npcIndex, "\\script\\online\\viet_event\\200911\\4\\npc_mijishoucangjia.lua");
-		npcIndex = CreateNpc("Ch?cÇm ®å Th?Phån", "Nh?S­u TÇm MËt TŞch", 400,1507,2982);
+		npcIndex = CreateNpc("Chñ cÇm ®å Thæ Phån", "Nhµ S­u TÇm MËt TŞch", 400,1507,2982);
 		SetNpcScript(npcIndex, "\\script\\online\\viet_event\\200911\\4\\npc_mijishoucangjia.lua");
 	end
 end
 
 function Add_ip_npc()
 		local npcIndex = 0;
-		npcIndex = CreateNpc("Phu nh©n-ph?th«ng","Ch?Ch?Phßng M¸y", 200,1372,2865);
+		npcIndex = CreateNpc("Phu nh©n-phæ th«ng","ChŞ Chñ Phßng M¸y", 200,1372,2865);
 		SetNpcScript(npcIndex, "\\script\\online\\viet_event\\ip_bonus\\ip_manager_npc.lua");		
-		npcIndex = CreateNpc("Ch?cÇm ®å Trung Nguyªn","Anh Ch?Phßng M¸y", 300,1732,3517);
+		npcIndex = CreateNpc("Chñ cÇm ®å Trung Nguyªn","Anh Chñ Phßng M¸y", 300,1732,3517);
 		SetNpcScript(npcIndex, "\\script\\online\\viet_event\\ip_bonus\\ip_manager_npc.lua");		
-		npcIndex = CreateNpc("Phu nh©n-ph?th«ng","Ch?Ch?Phßng M¸y", 100,1432,2994);
+		npcIndex = CreateNpc("Phu nh©n-phæ th«ng","ChŞ Chñ Phßng M¸y", 100,1432,2994);
 		SetNpcScript(npcIndex, "\\script\\online\\viet_event\\ip_bonus\\ip_manager_npc.lua");		
-		npcIndex = CreateNpc("Ch?cÇm ®å Trung Nguyªn","Anh Ch?Phßng M¸y", 350,1431,2973);
+		npcIndex = CreateNpc("Chñ cÇm ®å Trung Nguyªn","Anh Chñ Phßng M¸y", 350,1431,2973);
 		SetNpcScript(npcIndex, "\\script\\online\\viet_event\\ip_bonus\\ip_manager_npc.lua");		
-		npcIndex = CreateNpc("Phu nh©n-ph?th«ng","Ch?Ch?Phßng M¸y", 150,1688,3169);
+		npcIndex = CreateNpc("Phu nh©n-phæ th«ng","ChŞ Chñ Phßng M¸y", 150,1688,3169);
 		SetNpcScript(npcIndex, "\\script\\online\\viet_event\\ip_bonus\\ip_manager_npc.lua");		
-		npcIndex = CreateNpc("Ch?cÇm ®å Trung Nguyªn","Anh Ch?Phßng M¸y", 400,1547,2991);
+		npcIndex = CreateNpc("Chñ cÇm ®å Trung Nguyªn","Anh Chñ Phßng M¸y", 400,1547,2991);
 		SetNpcScript(npcIndex, "\\script\\online\\viet_event\\ip_bonus\\ip_manager_npc.lua");		
 end
 
@@ -2005,7 +2005,7 @@ end
 function Add_TianMenZhen()
 	local tNpcInfo = {
 		"D­¬ng V¨n Siªu",
-		"Phiªu k?t­íng qu©n Qu¸ch Qu©n B»ng ",
+		"Phiªu kş t­íng qu©n Qu¸ch Qu©n B»ng ",
 		{
 			{350,1429,2816},
 			{300,1855,3672},
@@ -2017,7 +2017,7 @@ function Add_TianMenZhen()
 		local nNpcIndex = CreateNpc(tNpcInfo[1],tNpcInfo[2],tNpcInfo[3][i][1],tNpcInfo[3][i][2],tNpcInfo[3][i][3])
 		SetNpcScript(nNpcIndex,tNpcInfo[4])
 	end
-	local nNpcIndex = CreateNpc("D?LuËt B¶o §å","Liªu Qu©n Quan",604,1554,3125);
+	local nNpcIndex = CreateNpc("D¹ LuËt B¶o §å","Liªu Qu©n Quan",604,1554,3125);
 	SetNpcDeathScript(nNpcIndex,"\\script\\missions\\tianmenzhen\\tmz_task_npc.lua");
 end
 
@@ -2037,7 +2037,7 @@ function Liangshan_Entrance()
 end
 
 function Add_TuBaoThuongNhan()
-  	local npcIndex111 = CreateNpc("Ch­ëng d­îc Th?Phån", "T?B¶o Th­¬ng Nh©n", 200, 1449, 2911);
+  	local npcIndex111 = CreateNpc("Ch­ëng d­îc Thæ Phån", "Tô B¶o Th­¬ng Nh©n", 200, 1449, 2911);
     	SetNpcScript(npcIndex111, "\\script\\vng\\saleoff\\proday.lua");
 end
 
@@ -2047,7 +2047,7 @@ function LoadNpcList()
 	--------------------------------------------------------------------
 	do
 		--ÔİÊ±°Ñ´ú±ÒÉÌµêNPCÔÚÕâÀï´´½¨°É
-    	local npcIndex111 = CreateNpc("Ch­ëng d­îc Th?Phån", "T?B¶o Th­¬ng Nh©n", 200, 1449, 2911);
+    	local npcIndex111 = CreateNpc("Ch­ëng d­îc Thæ Phån", "Tô B¶o Th­¬ng Nh©n", 200, 1449, 2911);
     	SetNpcScript(npcIndex111, "\\script\\equip_shop\\bianjing_npc.lua");
     	return
 	end
@@ -2108,7 +2108,7 @@ function DragonBoat_2011_npc()
 		}
 	local tPosinfo
 	for _,tPosinfo in tPos do
-		local nNpcIndex = CreateNpc("Thiªn V­¬ng Bang §å","H¶i ChiÕn TiÕp DÉn S?,tPosinfo[1],tPosinfo[2],tPosinfo[3])
+		local nNpcIndex = CreateNpc("Thiªn V­¬ng Bang §å","H¶i ChiÕn TiÕp DÉn Sø",tPosinfo[1],tPosinfo[2],tPosinfo[3])
 		SetNpcScript(nNpcIndex,"\\script\\missions\\dragonboat2011\\npc_entrance.lua")
 	end
 end
@@ -2117,8 +2117,8 @@ function Init_newres()
 --	if SubWorldID2Idx(606) >= 0 then	
 	if mf_GetMissionV(24, 1,606) == 0 then			
     		mf_OpenMission(24, 606)
-    		AddGlobalNews("Thiªn M«n TrËn-Tµi nguyªn chiÕn ®· b¾t ®Çu. Mêi c¸c v?anh hïng mau chãng ®Õn T­¬ng D­¬ng t×m T?M?TÊn Nguyªn ®Ó tham gia!")
-    		Msg2SubWorld("Thiªn M«n TrËn-Tµi nguyªn chiÕn ®· b¾t ®Çu. Mêi c¸c v?anh hïng mau chãng ®Õn T­¬ng D­¬ng t×m T?M?TÊn Nguyªn ®Ó tham gia!")
+    		AddGlobalNews("Thiªn M«n TrËn-Tµi nguyªn chiÕn ®· b¾t ®Çu. Mêi c¸c vŞ anh hïng mau chãng ®Õn T­¬ng D­¬ng t×m T­ M· TÊn Nguyªn ®Ó tham gia!")
+    		Msg2SubWorld("Thiªn M«n TrËn-Tµi nguyªn chiÕn ®· b¾t ®Çu. Mêi c¸c vŞ anh hïng mau chãng ®Õn T­¬ng D­¬ng t×m T­ M· TÊn Nguyªn ®Ó tham gia!")
     	end
 --    	end
 end
@@ -2178,7 +2178,7 @@ end
 
 
 function AddIdolNpc()
-	local nNpcIndex = CreateNpc("C«n L«n T©n Ph?Ch­ëng M«n", "ThÇn T­îng V?L©m", 300, 1789, 3534)
+	local nNpcIndex = CreateNpc("C«n L«n T©n Phã Ch­ëng M«n", "ThÇn T­îng Vâ L©m", 300, 1789, 3534)
 	SetNpcScript(nNpcIndex, "\\script\\online\\viet_event\\karaoke\\head.lua")
 end
 
@@ -2209,7 +2209,7 @@ function Add_HoangHuynh()
 	local nDate = tonumber(date("%y%m%d"))
 	local npcIndex = 0
 	if nDate >= 100716 then
-		npcIndex = CreateNpc("TrÇn BÊt Vi", "Jx2 Animal", 200,1407,2857);
+		npcIndex = CreateNpc("TrÇn BÊt Vi", "Hoµng Huynh", 200,1407,2857);
 		SetNpcScript(npcIndex, "\\script\\online\\viet_event\\top_server\\npc_top.lua");
 	end
 end
@@ -2218,7 +2218,7 @@ function Add_GoldenCard_Manager()
 	local nDate = tonumber(date("%y%m%d"))
 	local npcIndex = 0
 --	if nDate >= 100928 and nDate <= 121231 then
-		npcIndex = CreateNpc("Nh?Hoµng Tö_§¹i L?, "L«i H?Th­¬ng Nh©n", 200,1378,2857);
+		npcIndex = CreateNpc("NhŞ Hoµng Tö_§¹i Lı", "L«i Hæ Th­¬ng Nh©n", 200,1378,2857);
 		SetNpcScript(npcIndex, "\\script\\online\\viet_event\\golden_card\\npc_golden_saleman.lua");
 --	end
 end
@@ -2241,7 +2241,7 @@ function Add_XaPhu()
     }
     
     for i=1,getn(tFighting_pos) do
-    		npcIdx = CreateNpc("Tiªu s?®èi tho¹i", "T?th?k?, tFighting_pos[i][1],tFighting_pos[i][2],tFighting_pos[i][3]);
+    		npcIdx = CreateNpc("Tiªu s­-®èi tho¹i", "Tû thİ kú", tFighting_pos[i][1],tFighting_pos[i][2],tFighting_pos[i][3]);
     		SetNpcScript(npcIdx, "\\script\\online\\viet_event\\pet_fighting\\fighting_npc.lua");
     		SetUnitCurStates(npcIdx,2,i)
     end    
@@ -2268,31 +2268,31 @@ end
 
 function AddHangNga()
 	local npcIndex = 0
-	npcIndex = CreateNpc("Phi YÕn Tiªn T?,"H»ng Nga Tiªn T?,  100, 1428, 2939)
+	npcIndex = CreateNpc("Phi YÕn Tiªn Tö","H»ng Nga Tiªn Tö",  100, 1428, 2939)
 	SetNpcScript(npcIndex, "\\script\\online\\viet_event\\nop_event\\hangnga.lua")
 end
 
 function AddBirthdayNpc_2010()
 	local npcIndex = 0
-	npcIndex = CreateNpc("V?L©m Minh Ch?","S?Gi?Ho¹t §éng",  100, 1426, 3012)
+	npcIndex = CreateNpc("Vâ L©m Minh Chñ1","Sø Gi¶ Ho¹t §éng",  100, 1426, 3012)
 	SetNpcScript(npcIndex, "\\script\\online\\viet_event\\birthday\\sugia.lua")
 end
 
 function Add_Pet_TaiXu()
-	local npcIndex = CreateNpc("V?§ang  ch­ëng m«n", "V©n Du Ch©n Nh©n", 200, 1387, 2879)
+	local npcIndex = CreateNpc("Vâ §ang  ch­ëng m«n", "V©n Du Ch©n Nh©n", 200, 1387, 2879)
 	SetNpcScript(npcIndex, "\\script\\online\\viet_event\\pet_instance\\reg_npc.lua")
-	local npcIndex = CreateNpc("V?§ang  ch­ëng m«n", "V©n Du Ch©n Nh©n", 300, 1749, 3535)
+	local npcIndex = CreateNpc("Vâ §ang  ch­ëng m«n", "V©n Du Ch©n Nh©n", 300, 1749, 3535)
 	SetNpcScript(npcIndex, "\\script\\online\\viet_event\\pet_instance\\reg_npc.lua")
 end
 
 function Add_TianMenZhen()
 	local nNpcIndex = 0;
-	--nNpcIndex = CreateNpc("D­¬ng V¨n Siªu","Phiªu k?t­íng qu©n Qu¸ch Qu©n B»ng ",350,1429,2816);
-	nNpcIndex = CreateNpc("D­¬ng V¨n Siªu","Phiªu k?t­íng qu©n Qu¸ch Qu©n B»ng ",300,1854,3672);
+	--nNpcIndex = CreateNpc("D­¬ng V¨n Siªu","Phiªu kş t­íng qu©n Qu¸ch Qu©n B»ng ",350,1429,2816);
+	nNpcIndex = CreateNpc("D­¬ng V¨n Siªu","Phiªu kş t­íng qu©n Qu¸ch Qu©n B»ng ",300,1854,3672);
 	SetNpcScript(nNpcIndex,"\\script\\missions\\tianmenzhen\\tmz_npc.lua");
-	nNpcIndex = CreateNpc("D­¬ng V¨n Siªu","Phiªu k?t­íng qu©n Qu¸ch Qu©n B»ng ",400,1435,2864);
+	nNpcIndex = CreateNpc("D­¬ng V¨n Siªu","Phiªu kş t­íng qu©n Qu¸ch Qu©n B»ng ",400,1435,2864);
 	SetNpcScript(nNpcIndex,"\\script\\missions\\tianmenzhen\\tmz_npc.lua");
-	nNpcIndex = CreateNpc("D?LuËt B¶o §å","Liªu Qu©n Quan",604,1554,3125);
+	nNpcIndex = CreateNpc("D¹ LuËt B¶o §å","Liªu Qu©n Quan",604,1554,3125);
 	SetNpcDeathScript(nNpcIndex,"\\script\\missions\\tianmenzhen\\tmz_task_npc.lua");
 end
 
@@ -2309,7 +2309,7 @@ function create_treasuer_chests()
 	}
 	local tPosinfo
 	for _,tPosinfo in tPos do
-		local nNpcIndex = CreateNpc("Ch?cÇm ®å T©y Nam","Th­¬ng Nh©n B¶o R­¬ng",tPosinfo[1],tPosinfo[2],tPosinfo[3])
+		local nNpcIndex = CreateNpc("Chñ cÇm ®å T©y Nam","Th­¬ng Nh©n B¶o R­¬ng",tPosinfo[1],tPosinfo[2],tPosinfo[3])
 		SetNpcScript(nNpcIndex,"\\script\\online_activites\\treasure_box\\npc_treasuer_chests.lua")
 	end
 end
@@ -2323,7 +2323,7 @@ function dialog_npc_create()
 	SetNpcScript(nNpcIndex,"\\script\\task\\npc\\ÔÂÁÁ»ú¹Ø.lua");
 	nNpcIndex = CreateNpc("Nh¹c BÊt QuÇn","Nh¹c BÊt QuÇn",502,1682,3102);
 	SetNpcScript(nNpcIndex,"\\script\\Î÷±±Çø\\»ªÉ½\\npc\\ÔÀ²»Èº.lua");
-	nNpcIndex = CreateNpc("D­¬ng M«n ®Ö t?,"D­¬ng M«n ®Ö t?,6012,1588,3207);
+	nNpcIndex = CreateNpc("D­¬ng M«n ®Ö tö","D­¬ng M«n ®Ö tö",6012,1588,3207);
 	SetNpcScript(nNpcIndex,"\\script\\ÊÀ½çµØÍ¼\\ÉÙÁÖÒéÊÂÌü\\ÑîÃÅµÜ×Ó.lua");
 	nNpcIndex = CreateNpc("Nh¹n Kha","Nh¹n Kha",218,1627,3245);
 	SetNpcScript(nNpcIndex,"\\script\\ÖĞÔ­Ò»Çø\\Áé±¦É½\\npc\\ÑÕ¿Â.lua");
@@ -2333,17 +2333,17 @@ function dialog_npc_create()
 	SetNpcScript(nNpcIndex,"\\script\\½­ÄÏÇø\\ÌÒ»¨µº\\ÏòÎÊÌì.lua");
 	nNpcIndex = CreateNpc("H­íng VÊn Thiªn","H­íng VÊn Thiªn",6011,1598,3200);
 	SetNpcScript(nNpcIndex,"\\script\\ÊÀ½çµØÍ¼\\ÌÒ»¨Ğ¡Õ»\\ÏòÎÊÌì.lua");
-	nNpcIndex = CreateNpc("Ng?§éc ®Ö t?,"Ng?§éc ®Ö t?,6012,1591,3204);
+	nNpcIndex = CreateNpc("Ngò §éc ®Ö tö","Ngò §éc ®Ö tö",6012,1591,3204);
 	SetNpcScript(nNpcIndex,"\\script\\ÊÀ½çµØÍ¼\\ÉÙÁÖÒéÊÂÌü\\Îå¶¾µÜ×Ó.lua");
-	nNpcIndex = CreateNpc("V?§ang ®Ö t?,"V?§ang ®Ö t?,6012,1595,3202);
+	nNpcIndex = CreateNpc("Vâ §ang ®Ö tö","Vâ §ang ®Ö tö",6012,1595,3202);
 	SetNpcScript(nNpcIndex,"\\script\\ÊÀ½çµØÍ¼\\ÉÙÁÖÒéÊÂÌü\\Îäµ±µÜ×Ó.lua");
-	nNpcIndex = CreateNpc("V?Danh T¨ng","V?Danh T¨ng",6012,1601,3200);
+	nNpcIndex = CreateNpc("V« Danh T¨ng","V« Danh T¨ng",6012,1601,3200);
 	SetNpcScript(nNpcIndex,"\\script\\ÊÀ½çµØÍ¼\\ÉÙÁÖÒéÊÂÌü\\ÎŞÃûÉ®.lua");
-	nNpcIndex = CreateNpc("C«ng t¾c ?ya","C«ng t¾c ?ya",111,1698,3114);
+	nNpcIndex = CreateNpc("C«ng t¾c « ya","C«ng t¾c « ya",111,1698,3114);
 	SetNpcScript(nNpcIndex,"\\script\\task\\npc\\ÎÚÑ»»ú¹Ø.lua");
-	nNpcIndex = CreateNpc("T?Bót ¤ng","T?Bót ¤ng",6016,1562,2938);
+	nNpcIndex = CreateNpc("Tó Bót ¤ng","Tó Bót ¤ng",6016,1562,2938);
 	SetNpcScript(nNpcIndex,"\\script\\Î÷ÄÏÇø\\Ã·×¯\\Íº±ÊÎÌ.lua");
-	nNpcIndex = CreateNpc("§­êng M«n ®Ö t?,"§­êng M«n ®Ö t?,6012,1598,3211);
+	nNpcIndex = CreateNpc("§­êng M«n ®Ö tö","§­êng M«n ®Ö tö",6012,1598,3211);
 	SetNpcScript(nNpcIndex,"\\script\\ÊÀ½çµØÍ¼\\ÉÙÁÖÒéÊÂÌü\\ÌÆÃÅµÜ×Ó.lua");
 	nNpcIndex = CreateNpc("C«ng t¾c th¸i d­¬ng","C«ng t¾c th¸i d­¬ng",111,1862,3040);
 	SetNpcScript(nNpcIndex,"\\script\\task\\npc\\Ì«Ñô»ú¹Ø.lua");
@@ -2351,77 +2351,77 @@ function dialog_npc_create()
 	SetNpcScript(nNpcIndex,"\\script\\ÊÀ½çµØÍ¼\\Î÷µº\\ÈÎÓ¯Ó¯.lua");
 	nNpcIndex = CreateNpc("NhËm Doanh Doanh","NhËm Doanh Doanh",6011,1602,3204);
 	SetNpcScript(nNpcIndex,"\\script\\ÊÀ½çµØÍ¼\\ÌÒ»¨Ğ¡Õ»\\ÈÎÓ¯Ó¯.lua");
-	nNpcIndex = CreateNpc("NhËm Ng?Hµnh","NhËm Ng?Hµnh",6013,1634,3216);
+	nNpcIndex = CreateNpc("NhËm Ng· Hµnh","NhËm Ng· Hµnh",6013,1634,3216);
 	SetNpcScript(nNpcIndex,"\\script\\ÊÀ½çµØÍ¼\\Ã·×¯µØÀÎ\\ÈÎÎÒĞĞ.lua");
-	nNpcIndex = CreateNpc("NhËm Ng?Hµnh","NhËm Ng?Hµnh",6010,1600,3202);
+	nNpcIndex = CreateNpc("NhËm Ng· Hµnh","NhËm Ng· Hµnh",6010,1600,3202);
 	SetNpcScript(nNpcIndex,"\\script\\½­ÄÏÇø\\ÌÒ»¨µº\\ÈÎÎÒĞĞ.lua");
-	nNpcIndex = CreateNpc("NhËm Ng?Hµnh","NhËm Ng?Hµnh",6011,1600,3201)
+	nNpcIndex = CreateNpc("NhËm Ng· Hµnh","NhËm Ng· Hµnh",6011,1600,3201)
 	SetNpcScript(nNpcIndex,"\\script\\ÊÀ½çµØÍ¼\\ÌÒ»¨Ğ¡Õ»\\ÈÎÎÒĞĞ.lua")
 	nNpcIndex = CreateNpc("Lôc Tróc ¤ng","Lôc Tróc ¤ng",350,1574,2904)
 	SetNpcScript(nNpcIndex,"\\script\\ÖĞÔ­¶şÇø\\ÏåÑô\\npc\\ÂÌÖñÎÌ.lua")
-	nNpcIndex = CreateNpc("L?L·o","L?L·o",507,1686,3322)
+	nNpcIndex = CreateNpc("Lı L·o","Lı L·o",507,1686,3322)
 	SetNpcScript(nNpcIndex,"\\script\\task\\npc\\ÀîÀÏ.lua")
 	nNpcIndex = CreateNpc("Hoµng Chung C«ng","Hoµng Chung C«ng",6016,1488,2938)
 	SetNpcScript(nNpcIndex,"\\script\\Î÷ÄÏÇø\\Ã·×¯\\»ÆÖÓ¹«.lua")
 	nNpcIndex = CreateNpc("H¾c Tæng Qu¶n","H¾c Tæng Qu¶n",6015,1503,3179)
 	SetNpcScript(nNpcIndex,"\\script\\Î÷ÄÏÇø\\ºÚÄ¾ÑÂ\\ºÚ×Ü¹Ü.lua")
-	nNpcIndex = CreateNpc("H¾c B¹ch T?,"H¾c B¹ch T?,6016,1460,2988)
+	nNpcIndex = CreateNpc("H¾c B¹ch Tö","H¾c B¹ch Tö",6016,1460,2988)
 	SetNpcScript(nNpcIndex,"\\script\\Î÷ÄÏÇø\\Ã·×¯\\ºÚ°××Ó.lua")
-	nNpcIndex = CreateNpc("Hµn T?Phi","Hµn T?Phi",400,1587,3081)
+	nNpcIndex = CreateNpc("Hµn Tö Phi","Hµn Tö Phi",400,1587,3081)
 	SetNpcScript(nNpcIndex,"\\script\\Î÷ÄÏÇø\\´óÀí¸®\\npc\\º«·É×Ó.lua")
-	nNpcIndex = CreateNpc("§Ö t?C¸i Bang","§Ö t?C¸i Bang",6012,1596,3214)
+	nNpcIndex = CreateNpc("§Ö tö C¸i Bang","§Ö tö C¸i Bang",6012,1596,3214)
 	SetNpcScript(nNpcIndex,"\\script\\ÊÀ½çµØÍ¼\\ÉÙÁÖÒéÊÂÌü\\Ø¤°ïµÜ×Ó.lua")
-	nNpcIndex = CreateNpc("Nga Mi ®Ö t?,"Nga Mi ®Ö t?,6012,1601,3209)
+	nNpcIndex = CreateNpc("Nga Mi ®Ö tö","Nga Mi ®Ö tö",6012,1601,3209)
 	SetNpcScript(nNpcIndex,"\\script\\ÊÀ½çµØÍ¼\\ÉÙÁÖÒéÊÂÌü\\¶ëÃ¼µÜ×Ó.lua")
 	nNpcIndex = CreateNpc("§an Thanh Sinh","§an Thanh Sinh",6016,1517,3003)
 	SetNpcScript(nNpcIndex,"\\script\\Î÷ÄÏÇø\\Ã·×¯\\µ¤ÇàÉú.lua")
 	nNpcIndex = CreateNpc("Th«n tr­ëng","Th«n tr­ëng",202,1411,2997)
 	SetNpcScript(nNpcIndex,"\\script\\ÖĞÔ­Ò»Çø\\ĞÓ»¨´å\\npc\\´å³¤.lua")
-	nNpcIndex = CreateNpc("B?t¸nh TiÓu Thóy","TiÓu Thóy",507,1706,3384)
+	nNpcIndex = CreateNpc("B¸ t¸nh TiÓu Thóy","TiÓu Thóy",507,1706,3384)
 	SetNpcScript(nNpcIndex,"\\script\\task\\npc\\°ÙĞÕĞ¡´ä.lua")
-	nNpcIndex = CreateNpc("B?t¸nh L?Hoa","L?Hoa",507,1632,3374)
+	nNpcIndex = CreateNpc("B¸ t¸nh Lı Hoa","Lı Hoa",507,1632,3374)
 	SetNpcScript(nNpcIndex,"\\script\\task\\npc\\°ÙĞÕÀî»ª.lua")
 	nNpcIndex = CreateNpc("C«ng t¾c b¹ch v©n","C«ng t¾c b¹ch v©n",111,1830,2849)
 	SetNpcScript(nNpcIndex,"\\script\\task\\npc\\°×ÔÆ»ú¹Ø.lua")
-	nNpcIndex = CreateNpc("NhËm Ng?Hµnh","NhËm Ng?Hµnh",6017,1631,3270);
+	nNpcIndex = CreateNpc("NhËm Ng· Hµnh","NhËm Ng· Hµnh",6017,1631,3270);
 	SetNpcScript(nNpcIndex,"\\script\\Î÷ÄÏÇø\\ºÚÄ¾ÑÂ\\ÈÎÎÒĞĞ.lua");
 	nNpcIndex = CreateNpc("H­íng VÊn Thiªn","H­íng VÊn Thiªn",6017,1628,3274);
 	SetNpcScript(nNpcIndex,"\\script\\Î÷ÄÏÇø\\ºÚÄ¾ÑÂ\\ÏòÎÊÌì.lua");
 	nNpcIndex = CreateNpc("NhËm Doanh Doanh","NhËm Doanh Doanh",6017,1636,3273);
 	SetNpcScript(nNpcIndex,"\\script\\Î÷ÄÏÇø\\ºÚÄ¾ÑÂ\\ÈÎÓ¯Ó¯.lua");
-	nNpcIndex = CreateNpc("NhËm Ng?Hµnh","NhËm Ng?Hµnh",6018,1621,2897);
+	nNpcIndex = CreateNpc("NhËm Ng· Hµnh","NhËm Ng· Hµnh",6018,1621,2897);
 	SetNpcScript(nNpcIndex,"\\script\\Î÷ÄÏÇø\\ºÚÄ¾ÑÂ2\\ÈÎÎÒĞĞ.lua");
 	nNpcIndex = CreateNpc("H­íng VÊn Thiªn","H­íng VÊn Thiªn",6018,1596,3040);
 	SetNpcScript(nNpcIndex,"\\script\\Î÷ÄÏÇø\\ºÚÄ¾ÑÂ2\\ÏòÎÊÌì.lua");
 	nNpcIndex = CreateNpc("NhËm Doanh Doanh","NhËm Doanh Doanh",6018,1581,2889);
 	SetNpcScript(nNpcIndex,"\\script\\Î÷ÄÏÇø\\ºÚÄ¾ÑÂ2\\ÈÎÓ¯Ó¯.lua");
-	nNpcIndex = CreateNpc("§èi tho¹i Thİch Kh¸ch Lam K?,"B?c?NhËm Ng?Hµnh",6017,1623,3285);
+	nNpcIndex = CreateNpc("§èi tho¹i Thİch Kh¸ch Lam Kú","Bé cò NhËm Ng· Hµnh",6017,1623,3285);
 	SetNpcScript(nNpcIndex,"\\script\\Î÷ÄÏÇø\\ºÚÄ¾ÑÂ\\ÈÎÎÒĞĞ¾É²¿.lua");
-	nNpcIndex = CreateNpc("§èi tho¹i Thİch Kh¸ch B¹ch K?,"B?c?NhËm Ng?Hµnh",6017,1619,3281);
+	nNpcIndex = CreateNpc("§èi tho¹i Thİch Kh¸ch B¹ch Kú","Bé cò NhËm Ng· Hµnh",6017,1619,3281);
 	SetNpcScript(nNpcIndex,"\\script\\Î÷ÄÏÇø\\ºÚÄ¾ÑÂ\\ÈÎÎÒĞĞ¾É²¿.lua");
-	nNpcIndex = CreateNpc("§èi tho¹i Thİch Kh¸ch H¾c K?,"B?c?NhËm Ng?Hµnh",6017,1633,3286);
+	nNpcIndex = CreateNpc("§èi tho¹i Thİch Kh¸ch H¾c Kú","Bé cò NhËm Ng· Hµnh",6017,1633,3286);
 	SetNpcScript(nNpcIndex,"\\script\\Î÷ÄÏÇø\\ºÚÄ¾ÑÂ\\ÈÎÎÒĞĞ¾É²¿.lua");
-	nNpcIndex = CreateNpc("§èi tho¹i Thİch Kh¸ch Hång K?,"B?c?NhËm Ng?Hµnh",6017,1639,3277);
+	nNpcIndex = CreateNpc("§èi tho¹i Thİch Kh¸ch Hång Kú","Bé cò NhËm Ng· Hµnh",6017,1639,3277);
 	SetNpcScript(nNpcIndex,"\\script\\Î÷ÄÏÇø\\ºÚÄ¾ÑÂ\\ÈÎÎÒĞĞ¾É²¿.lua");
-	nNpcIndex = CreateNpc("§èi tho¹i Thİch Kh¸ch Lam K?,"Néi øng",6017,1715,2957);
+	nNpcIndex = CreateNpc("§èi tho¹i Thİch Kh¸ch Lam Kú","Néi øng",6017,1715,2957);
 	SetNpcScript(nNpcIndex,"\\script\\task\\npc\\ÄÚÓ¦.lua");
-	nNpcIndex = CreateNpc("§èi tho¹i Thİch Kh¸ch B¹ch K?,"Néi øng",6017,1726,2967);
+	nNpcIndex = CreateNpc("§èi tho¹i Thİch Kh¸ch B¹ch Kú","Néi øng",6017,1726,2967);
 	SetNpcScript(nNpcIndex,"\\script\\task\\npc\\ÄÚÓ¦.lua");
-	nNpcIndex = CreateNpc("§èi tho¹i Thİch Kh¸ch H¾c K?,"Néi øng",6017,1734,2979);
+	nNpcIndex = CreateNpc("§èi tho¹i Thİch Kh¸ch H¾c Kú","Néi øng",6017,1734,2979);
 	SetNpcScript(nNpcIndex,"\\script\\task\\npc\\ÄÚÓ¦.lua");
-	nNpcIndex = CreateNpc("§èi tho¹i Thİch Kh¸ch Hång K?,"Néi øng",6017,1743,2985);
+	nNpcIndex = CreateNpc("§èi tho¹i Thİch Kh¸ch Hång Kú","Néi øng",6017,1743,2985);
 	SetNpcScript(nNpcIndex,"\\script\\task\\npc\\ÄÚÓ¦.lua");
-	nNpcIndex = CreateNpc("§èi tho¹i Thİch Kh¸ch Hoµng K?,"Néi øng",6017,1752,2992);
+	nNpcIndex = CreateNpc("§èi tho¹i Thİch Kh¸ch Hoµng Kú","Néi øng",6017,1752,2992);
 	SetNpcScript(nNpcIndex,"\\script\\task\\npc\\ÄÚÓ¦.lua");
-	nNpcIndex = CreateNpc("§èi tho¹i Thİch Kh¸ch Lam K?,"Néi øng",6017,1764,2996);
+	nNpcIndex = CreateNpc("§èi tho¹i Thİch Kh¸ch Lam Kú","Néi øng",6017,1764,2996);
 	SetNpcScript(nNpcIndex,"\\script\\task\\npc\\ÄÚÓ¦.lua");
-	nNpcIndex = CreateNpc("§èi tho¹i Thİch Kh¸ch B¹ch K?,"Néi øng",6017,1744,3005);
+	nNpcIndex = CreateNpc("§èi tho¹i Thİch Kh¸ch B¹ch Kú","Néi øng",6017,1744,3005);
 	SetNpcScript(nNpcIndex,"\\script\\task\\npc\\ÄÚÓ¦.lua");
-	nNpcIndex = CreateNpc("§èi tho¹i Thİch Kh¸ch H¾c K?,"Néi øng",6017,1731,3011);
+	nNpcIndex = CreateNpc("§èi tho¹i Thİch Kh¸ch H¾c Kú","Néi øng",6017,1731,3011);
 	SetNpcScript(nNpcIndex,"\\script\\task\\npc\\ÄÚÓ¦.lua");
-	nNpcIndex = CreateNpc("§èi tho¹i Thİch Kh¸ch Hång K?,"Néi øng",6017,1716,3017);
+	nNpcIndex = CreateNpc("§èi tho¹i Thİch Kh¸ch Hång Kú","Néi øng",6017,1716,3017);
 	SetNpcScript(nNpcIndex,"\\script\\task\\npc\\ÄÚÓ¦.lua");
-	nNpcIndex = CreateNpc("§èi tho¹i Thİch Kh¸ch Hoµng K?,"Néi øng",6017,1699,3001);
+	nNpcIndex = CreateNpc("§èi tho¹i Thİch Kh¸ch Hoµng Kú","Néi øng",6017,1699,3001);
 	SetNpcScript(nNpcIndex,"\\script\\task\\npc\\ÄÚÓ¦.lua");
 	nNpcIndex = CreateNpc("D­¬ng Liªn §×nh","D­¬ng Liªn §×nh",6017,1622,2897);
 	SetNpcScript(nNpcIndex,"\\script\\Î÷ÄÏÇø\\ºÚÄ¾ÑÂ\\ÑîÁ«Í¤.lua");
@@ -2442,7 +2442,7 @@ function dialog_npc_create()
 		{6017,1716,3171},		{6017,1702,3163},
 	}
 	for _,nMapInfo in tbPos do
-		nNpcIndex = CreateNpc("NhiÖm v?vËt chÊt","Tr?b?vËt t?,nMapInfo[1],nMapInfo[2],nMapInfo[3])
+		nNpcIndex = CreateNpc("NhiÖm vô vËt chÊt","Trï bŞ vËt t­",nMapInfo[1],nMapInfo[2],nMapInfo[3])
 		SetNpcScript(nNpcIndex,"\\script\\task\\npc\\´¢±¸Îï×Ê.lua")
 	end
 end
@@ -2450,7 +2450,7 @@ end
 function fight_npc_create()
 	--Õ½¶·NPC´´½¨
 	local nNpcIndex;
-	nNpcIndex = CreateNpc("NhiÖm v?HuyÕt L©n §éc M·ng","HuyÕt L©n §éc M·ng",6013,1636,3147)
+	nNpcIndex = CreateNpc("NhiÖm vô HuyÕt L©n §éc M·ng","HuyÕt L©n §éc M·ng",6013,1636,3147)
 	--Ğ¡Ò°Öí´´½¨
 	local nMapInfo,nMapInfo1,nMapInfo2;
 	local tbPos = {
@@ -2466,7 +2466,7 @@ function fight_npc_create()
 		{420, 1573, 3573},
 	}
 	for _,nMapInfo in tbPos do
-		CreateNpc("H¾c d?tr?,"TiÓu H¾c tr?,nMapInfo[1],nMapInfo[2],nMapInfo[3],0,3,1,6)
+		CreateNpc("H¾c d· tr­","TiÓu H¾c tr­",nMapInfo[1],nMapInfo[2],nMapInfo[3],0,3,1,6)
 	end
 	--»ğºü´´½¨
 	local tbPos1 = {
@@ -2482,7 +2482,7 @@ function fight_npc_create()
 		{412, 1868, 3064},
 	}
 	for _,nMapInfo1 in tbPos1 do
-		CreateNpc("Háa h?,"Háa h?,nMapInfo1[1],nMapInfo1[2],nMapInfo1[3],0,3,1,6)
+		CreateNpc("Háa hå","Háa hå",nMapInfo1[1],nMapInfo1[2],nMapInfo1[3],0,3,1,6)
 	end
 	--½ÌÍ½
 	local tbPos2 = {
@@ -2503,12 +2503,12 @@ function fight_npc_create()
 	nNpcIndex = CreateNpc("Gi¸o ®å","Gi¸o ®å",105,1557,3027,0,6,1,6);
 	nNpcIndex = CreateNpc("Hoµng Tr­ëng L·o","Hoµng Tr­ëng L·o",6015,1744,3155)
 	nNpcIndex = CreateNpc("§«ng Ph­¬ng BÊt B¹i","§«ng Ph­¬ng BÊt B¹i",6015,1626,2896)
-	nNpcIndex = CreateNpc("Hoµng K?K?Ch?,"Tr­ëng l·o Hoµng H÷u Vi",6017,1509,3218);
-	nNpcIndex = CreateNpc("Hång K?K?Ch?,"Tr­ëng l·o Tiªu Nh?Hång",6017,1601,3048);
-	nNpcIndex = CreateNpc("T?h?ph¸p M?LËp §ao","T?h?ph¸p M?LËp §ao",6017,1624,3056);
-	nNpcIndex = CreateNpc("Lam K?K?Ch?,"Tr­ëng l·o Phi Thiªn Lam Miªu",6017,1709,3161);
-	nNpcIndex = CreateNpc("B¹chK?K?Ch?,"Tr­ëng l·o B¹ch Linh Linh",6017,1720,2980);
-	nNpcIndex = CreateNpc("H¾c K?K?Ch?,"Tr­ëng l·o H¾c V?Th­êng",6017,1487,3029);
+	nNpcIndex = CreateNpc("Hoµng Kú Kú Chñ","Tr­ëng l·o Hoµng H÷u Vi",6017,1509,3218);
+	nNpcIndex = CreateNpc("Hång Kú Kú Chñ","Tr­ëng l·o Tiªu NhÜ Hång",6017,1601,3048);
+	nNpcIndex = CreateNpc("T¶ hé ph¸p M· LËp §ao","T¶ hé ph¸p M· LËp §ao",6017,1624,3056);
+	nNpcIndex = CreateNpc("Lam Kú Kú Chñ","Tr­ëng l·o Phi Thiªn Lam Miªu",6017,1709,3161);
+	nNpcIndex = CreateNpc("B¹chKú Kú Chñ","Tr­ëng l·o B¹ch Linh Linh",6017,1720,2980);
+	nNpcIndex = CreateNpc("H¾c Kú Kú Chñ","Tr­ëng l·o H¾c V« Th­êng",6017,1487,3029);
 	SetNpcDeathScript(nNpcIndex,"\\script\\task\\npc\\ºÚÎŞ³£.lua");
 end
 
@@ -2517,17 +2517,17 @@ function trap_npc_create()
 	local nNpcIndex;
 	nNpcIndex = CreateNpc("Nh¹c Linh San","Nh¹c Linh San",502,1645,3224)
 	SetNpcScript(nNpcIndex,"\\script\\Î÷±±Çø\\»ªÉ½\\npc\\ÔÀÁéÉº.lua")
-	nNpcIndex = CreateNpc("§ång t?3","M«n §ång",102,1456,3066)
+	nNpcIndex = CreateNpc("§ång tö 3","M«n §ång",102,1456,3066)
 	SetNpcScript(nNpcIndex,"\\script\\ÊÀ½çµØÍ¼\\ÌÒ»¨Ğ¡Õ»\\Í¯×Ó3.lua")
-	nNpcIndex = CreateNpc("§ång t?","M«n §ång",6009,1579,3218)
+	nNpcIndex = CreateNpc("§ång tö2","M«n §ång",6009,1579,3218)
 	SetNpcScript(nNpcIndex,"\\script\\ÊÀ½çµØÍ¼\\ÌÒ»¨Ğ¡Õ»\\Í¯Å®2.lua")
-	nNpcIndex = CreateNpc("§ång t?","M«n §ång",6010,1579,3218)
+	nNpcIndex = CreateNpc("§ång tö2","M«n §ång",6010,1579,3218)
 	SetNpcScript(nNpcIndex,"\\script\\ÊÀ½çµØÍ¼\\ÌÒ»¨Ğ¡Õ»\\Í¯Å®2.lua")
-	nNpcIndex = CreateNpc("§ång t?","M«n §ång",6011,1579,3218)
+	nNpcIndex = CreateNpc("§ång tö2","M«n §ång",6011,1579,3218)
 	SetNpcScript(nNpcIndex,"\\script\\ÊÀ½çµØÍ¼\\ÌÒ»¨Ğ¡Õ»\\Í¯Å®2.lua")
-	nNpcIndex = CreateNpc("ThiÕu L©m T¨ng Nh©n","TŞnh T?,6012,1579,3218)
+	nNpcIndex = CreateNpc("ThiÕu L©m T¨ng Nh©n","TŞnh Tõ",6012,1579,3218)
 	SetNpcScript(nNpcIndex,"\\script\\ÊÀ½çµØÍ¼\\ÉÙÁÖÒéÊÂÌü\\¾»´È.lua")
-	nNpcIndex = CreateNpc("Giang h?tuÊn kiÖt","Gi¸o ®å thÇn b?,504,1343,2840)
+	nNpcIndex = CreateNpc("Giang hå tuÊn kiÖt","Gi¸o ®å thÇn bİ",504,1343,2840)
 	SetNpcScript(nNpcIndex,"\\script\\Î÷ÄÏÇø\\ºÚÄ¾ÑÂ\\ÉñÃØ½ÌÍ½.lua")
 	nNpcIndex = CreateNpc("Xa phu","ThÇn gi¸o gi¸o ®å míi",6015,1632,3242)
 	SetNpcScript(nNpcIndex,"\\script\\Î÷ÄÏÇø\\ºÚÄ¾ÑÂ\\ÉñÃØĞÂ½ÌÍ½.lua")
@@ -2535,13 +2535,13 @@ function trap_npc_create()
 	SetNpcScript(nNpcIndex,"\\script\\Î÷ÄÏÇø\\ºÚÄ¾ÑÂ\\ÉñÃØĞÂ½ÌÍ½.lua")
 	nNpcIndex = CreateNpc("Xa phu","ThÇn gi¸o gi¸o ®å míi",6018,1632,3242)
 	SetNpcScript(nNpcIndex,"\\script\\Î÷ÄÏÇø\\ºÚÄ¾ÑÂ\\ÉñÃØĞÂ½ÌÍ½.lua")
-	nNpcIndex = CreateNpc("§ång t?","Mai Trang Th?§ång",106,1300,3110)
+	nNpcIndex = CreateNpc("§ång tö1","Mai Trang Th­ §ång",106,1300,3110)
 	SetNpcScript(nNpcIndex,"\\script\\Î÷ÄÏÇø\\Ã·×¯\\Ã·×¯ÊéÍ¯1.lua")
-	nNpcIndex = CreateNpc("§ång t?","Mai Trang Th?§ång",6016,1490,3094)
+	nNpcIndex = CreateNpc("§ång tö1","Mai Trang Th­ §ång",6016,1490,3094)
 	SetNpcScript(nNpcIndex,"\\script\\Î÷ÄÏÇø\\Ã·×¯\\Ã·×¯ÊéÍ¯2.lua")
-	nNpcIndex = CreateNpc("Thiªn V­¬ng Bang §å","Canh gi?,6016,1586,3140)
+	nNpcIndex = CreateNpc("Thiªn V­¬ng Bang §å","Canh gi÷",6016,1586,3140)
 	SetNpcScript(nNpcIndex,"\\script\\ÊÀ½çµØÍ¼\\Ã·×¯µØÀÎ\\¿´ÊØ1.lua")
-	nNpcIndex = CreateNpc("Thiªn V­¬ng Bang §å","Canh gi?,6013,1606,3206)
+	nNpcIndex = CreateNpc("Thiªn V­¬ng Bang §å","Canh gi÷",6013,1606,3206)
 	SetNpcScript(nNpcIndex,"\\script\\ÊÀ½çµØÍ¼\\Ã·×¯µØÀÎ\\¿´ÊØ2.lua")
 	nNpcIndex = CreateNpc("Xa phu","ThuyÒn phu",6014,1536,3291)
 	SetNpcScript(nNpcIndex,"\\script\\ÊÀ½çµØÍ¼\\Î÷µº\\´¬·ò.lua")
@@ -2566,7 +2566,7 @@ function Ambassador_Acitivity()
 	}
 	local tPosinfo
 	for _,tPosinfo in tPos do
-		local nNpcIndex = CreateNpc("V?L©m Minh Ch?","§¹i S?ho¹t ®éng",tPosinfo[1],tPosinfo[2],tPosinfo[3])
+		local nNpcIndex = CreateNpc("Vâ L©m Minh Chñ1","§¹i Sø ho¹t ®éng",tPosinfo[1],tPosinfo[2],tPosinfo[3])
 		SetNpcScript(nNpcIndex,"\\script\\online\\activity_ambassador.lua")
 	end
 end
@@ -2585,17 +2585,17 @@ end
 
 function new_ttd_npc_create()
 	--ÈÎÓ¯Ó¯
-	local nNpcIndex = CreateNpc("NhËm Doanh Doanh","Th¸nh N?NhËm Doanh Doanh",150,1664,3165);
+	local nNpcIndex = CreateNpc("NhËm Doanh Doanh","Th¸nh N÷ NhËm Doanh Doanh",150,1664,3165);
 	SetNpcScript(nNpcIndex, "\\script\\½­ÄÏÇø\\ÑïÖİ\\npc\\renyingying.lua");
 	--ÈÎÓ¯Ó¯Î»ÖÃÒÆ¶¯
-	nNpcIndex = CreateNpc("NhËm Doanh Doanh","Th¸nh N?NhËm Doanh Doanh",500, 1742, 3039);
+	nNpcIndex = CreateNpc("NhËm Doanh Doanh","Th¸nh N÷ NhËm Doanh Doanh",500, 1742, 3039);
 	SetNpcScript(nNpcIndex,"\\script\\missions\\hunduantongtianding\\ttd_mission_entry_npc.lua");
 end
 
 function new_task_npc_create2()
 	local nNpcIndex = CreateNpc("§èi tho¹i víi Giang BiÖt H¹c","Giang BiÖt H¹c",500,1745,3123);
 	SetNpcScript(nNpcIndex,"\\script\\Î÷±±Çø\\·ïÏè¸®\\npc\\½­±ğº×.lua");
-	nNpcIndex = CreateNpc("L?S?S?,"L­u T?Anh",150,1668,3225);
+	nNpcIndex = CreateNpc("Lı S­ S­","L­u T­ Anh",150,1668,3225);
 	SetNpcScript(nNpcIndex,"\\script\\½­ÄÏÇø\\ÑïÖİ\\npc\\ÁõË¼Ó¢.lua");
 	nNpcIndex = CreateNpc("ThÇn gi¸o H¾c Tæng Qu¶n","ThÇn gi¸o H¾c Tæng Qu¶n",500,1699,3059);
 	--SetNpcScript(nNpcIndex,"\\script\\Î÷±±Çø\\·ïÏè¸®\\npc\\ÈÕÔÂÉñ½ÌºÚ×Ü¹Ü.lua");
@@ -2609,7 +2609,7 @@ function shenghuotai_npc_create()
 	if oly_IsActivityOpen() == 1 then
 		local npcIndex = CreateNpc("aoyunshenghuotai","Th¸nh Háa TuyÒn Ch©u",100,1327,3077);
 		SetNpcScript(npcIndex,"\\script\\online\\olympic\\npc\\red_sh.lua");
-		local npcIndex = CreateNpc("aoyunshenghuotai","Th¸nh Háa §¹i L?,400,1444,2876);
+		local npcIndex = CreateNpc("aoyunshenghuotai","Th¸nh Háa §¹i Lı",400,1444,2876);
 		SetNpcScript(npcIndex,"\\script\\online\\olympic\\npc\\black_sh.lua");
 		local npcIndex = CreateNpc("aoyunshenghuotai","Th¸nh Háa Thµnh §«",300,1853,3553);
 		SetNpcScript(npcIndex,"\\script\\online\\olympic\\npc\\green_sh.lua");
@@ -2677,7 +2677,7 @@ function Bkl_baoruong()
 					{411,1603,3284},					
 					{411,1603,3252},					
 					{411,1603,3269},	
-					{506,1375,2748},	--M?Cung Sa M¹c
+					{506,1375,2748},	--Mª Cung Sa M¹c
 					{506,1367,2732},
 					{506,1382,2763},
 					{506,1357,2721},
@@ -2687,7 +2687,7 @@ function Bkl_baoruong()
 					{510,1514,3025},
 		}
 	for i = 1, getn(tbBKL_BaoRuong_Pos) do
-		local npcIndex = CreateNpc("R­¬ng tiÒn","V?L©m B¹ch Kim R­¬ng",tbBKL_BaoRuong_Pos[i][1],tbBKL_BaoRuong_Pos[i][2],tbBKL_BaoRuong_Pos[i][3]);
+		local npcIndex = CreateNpc("R­¬ng tiÒn","Vâ L©m B¹ch Kim R­¬ng",tbBKL_BaoRuong_Pos[i][1],tbBKL_BaoRuong_Pos[i][2],tbBKL_BaoRuong_Pos[i][3]);
 	--	local npcIndex = CreateNpc("R­¬ng tiÒn","B¶o r­¬ng B¹ch Kim LÖnh",507,1614,3224)
 		SetNpcScript(npcIndex,"\\script\\vng\\bkl_box\\bkl_box_npc.lua");
 	end
@@ -2706,13 +2706,13 @@ function tuyetanh_baoruong()	--QuyTy_baoruong
 					{400, 1400, 2934},
 			}
 	for i = 1, getn(tbQT_BaoRuong_Pos) do
-		local npcIndex = CreateNpc("R­¬ng tiÒn","TuyÖt ¶nh B?B¶o",tbQT_BaoRuong_Pos[i][1],tbQT_BaoRuong_Pos[i][2],tbQT_BaoRuong_Pos[i][3]);
+		local npcIndex = CreateNpc("R­¬ng tiÒn","TuyÖt ¶nh Bİ B¶o",tbQT_BaoRuong_Pos[i][1],tbQT_BaoRuong_Pos[i][2],tbQT_BaoRuong_Pos[i][3]);
 		SetNpcScript(npcIndex,"\\script\\vng\\quyty_box\\quyty2013_box_npc.lua");
 	end
 end
 function chieuda_baoruong()	
 	local tbQT_BaoRuong_Pos = {
-					{300, 1824, 3670},	--ChiÕu D?
+					{300, 1824, 3670},	--ChiÕu D¹
 					{300, 1836, 3666},
 					{300, 1829, 3660},
 					{300, 1829, 3675},
@@ -2723,13 +2723,13 @@ function chieuda_baoruong()
 					{400, 1406, 2925},		
 			}
 	for i = 1, getn(tbQT_BaoRuong_Pos) do
-		local npcIndex = CreateNpc("R­¬ng tiÒn","ChiÕu D?Ph¸p B¶o",tbQT_BaoRuong_Pos[i][1],tbQT_BaoRuong_Pos[i][2],tbQT_BaoRuong_Pos[i][3]);
+		local npcIndex = CreateNpc("R­¬ng tiÒn","ChiÕu D¹ Ph¸p B¶o",tbQT_BaoRuong_Pos[i][1],tbQT_BaoRuong_Pos[i][2],tbQT_BaoRuong_Pos[i][3]);
 		SetNpcScript(npcIndex,"\\script\\vng\\quyty_box\\quyty2013_box_npc.lua");
 	end
 end
 function xichtho_baoruong()	
 	local tbQT_BaoRuong_Pos = {
-					{200, 1439, 2716},	-- Xİch Th?
+					{200, 1439, 2716},	-- Xİch Thè
 					{200, 1445, 2722},
 					{200, 1438, 2728},
 					{200, 1430, 2722},	
@@ -2740,12 +2740,12 @@ function xichtho_baoruong()
 					{400, 1412, 2915},		
 			}
 	for i = 1, getn(tbQT_BaoRuong_Pos) do
-		local npcIndex = CreateNpc("R­¬ng tiÒn","Xİch Th?C?VËt",tbQT_BaoRuong_Pos[i][1],tbQT_BaoRuong_Pos[i][2],tbQT_BaoRuong_Pos[i][3]);
+		local npcIndex = CreateNpc("R­¬ng tiÒn","Xİch Thè Cæ VËt",tbQT_BaoRuong_Pos[i][1],tbQT_BaoRuong_Pos[i][2],tbQT_BaoRuong_Pos[i][3]);
 		SetNpcScript(npcIndex,"\\script\\vng\\quyty_box\\quyty2013_box_npc.lua");
 	end
 end
 function npcVanMay()
-    local npcIndexVanMay = CreateNpc("Du Ph­¬ng T­íng S?, "ThÇy Bãi Siªu H¹ng",100,1274,2962);
+    local npcIndexVanMay = CreateNpc("Du Ph­¬ng T­íng SÜ", "ThÇy Bãi Siªu H¹ng",100,1274,2962);
     SetNpcScript(npcIndexVanMay, "\\script\\vng\\vanmay_daohuu\\vanmay_npc.lua");
 end
 
@@ -2774,33 +2774,33 @@ function wujiang_task_npc_create()
 		{218, 1810, 3523},
 	};
 	for i = 1, getn(tbNpcPos) do
-			CreateNpc("shenmigongjianshou", "ThÇn b?cung tiÔn th?, tbNpcPos[i][1], tbNpcPos[i][2], tbNpcPos[i][3]);
+			CreateNpc("shenmigongjianshou", "ThÇn bİ cung tiÔn thñ", tbNpcPos[i][1], tbNpcPos[i][2], tbNpcPos[i][3]);
 	end
 	CreateNpc("chunyizhang", "ThuÇn NhÊt Ch­ëng", 107, 1453, 3006, 6);
 	CreateNpc("chengfeng", "Tr×nh Phong", 304, 1463, 2844);
 	npcIndex = CreateNpc("Nh¹c BÊt QuÇn", "(Nh¹c BÊt QuÇn)", 6024, 1658, 3094);
 	SetNpcScript(npcIndex, "\\script\\ÊÀ½çµØÍ¼\\ÌúÕÆÉ½×¯\\npc\\yuebuqun.lua");
-	npcIndex = CreateNpc("jiguan1", "C?quan", 6024, 1610, 2984);
+	npcIndex = CreateNpc("jiguan1", "C¬ quan", 6024, 1610, 2984);
 	SetNpcScript(npcIndex, "\\script\\task\\npc\\jiguan1.lua");
-	npcIndex = CreateNpc("jiguan2", "C?quan", 6024, 1503, 3099);
+	npcIndex = CreateNpc("jiguan2", "C¬ quan", 6024, 1503, 3099);
 	SetNpcScript(npcIndex, "\\script\\task\\npc\\jiguan2.lua");
-	npcIndex = CreateNpc("juchihu", "C?X?H?, 6024, 1603, 2982);
+	npcIndex = CreateNpc("juchihu", "Cù Xİ Hæ", 6024, 1603, 2982);
 	SetNpcDeathScript(npcIndex, "\\script\\task\\npc\\juchihu.lua");
-	npcIndex = CreateNpc("shouwei", "Th?V?th?1", 6024, 1528, 3140);
+	npcIndex = CreateNpc("shouwei", "Thñ VÖ thø 1", 6024, 1528, 3140);
 	SetNpcScript(npcIndex, "\\script\\task\\npc\\shouwei.lua");
-	npcIndex = CreateNpc("shouwei", "Th?v?th?2", 6024, 1451, 3065);
+	npcIndex = CreateNpc("shouwei", "Thñ vÖ thø 2", 6024, 1451, 3065);
 	SetNpcScript(npcIndex, "\\script\\task\\npc\\shouwei.lua");
-	npcIndex = CreateNpc("shouwei", "Th?v?th?3", 6024, 1370, 2986);
+	npcIndex = CreateNpc("shouwei", "Thñ vÖ thø 3", 6024, 1370, 2986);
 	SetNpcScript(npcIndex, "\\script\\task\\npc\\shouwei.lua");
-	npcIndex = CreateNpc("shouwei", "Th?v?th?4", 6024, 1441, 2912);
+	npcIndex = CreateNpc("shouwei", "Thñ vÖ thø 4", 6024, 1441, 2912);
 	SetNpcScript(npcIndex, "\\script\\task\\npc\\shouwei.lua");
-	npcIndex = CreateNpc("shouwei", "Th?v?th?5", 6024, 1516, 2837);
+	npcIndex = CreateNpc("shouwei", "Thñ vÖ thø 5", 6024, 1516, 2837);
 	SetNpcScript(npcIndex, "\\script\\task\\npc\\shouwei.lua");
-	npcIndex = CreateNpc("shouwei", "Th?v?th?6", 6024, 1593, 2909);
+	npcIndex = CreateNpc("shouwei", "Thñ vÖ thø 6", 6024, 1593, 2909);
 	SetNpcScript(npcIndex, "\\script\\task\\npc\\shouwei.lua");
-	npcIndex = CreateNpc("shouwei", "Th?v?th?7", 6024, 1681, 2989);
+	npcIndex = CreateNpc("shouwei", "Thñ vÖ thø 7", 6024, 1681, 2989);
 	SetNpcScript(npcIndex, "\\script\\task\\npc\\shouwei.lua");
-	npcIndex = CreateNpc("shouwei", "Th?v?th?8", 6024, 1600, 3070);
+	npcIndex = CreateNpc("shouwei", "Thñ vÖ thø 8", 6024, 1600, 3070);
 	SetNpcScript(npcIndex, "\\script\\task\\npc\\shouwei.lua");
 	npcIndex = CreateNpc("linqinghai", "L©m Thanh H¶i", 502, 1579, 3218);
 	SetNpcScript(npcIndex, "\\script\\Î÷±±Çø\\»ªÉ½\\npc\\linqinghai.lua");
@@ -2829,7 +2829,7 @@ function wujiang_task_npc_create()
 		{6025, 1600, 3206},
 		}
 	for i = 1, getn(tbNpcPos) do
-			CreateNpc("tiezhangyinshi", "ThiÕt Ch­ëng Èn S?, tbNpcPos[i][1], tbNpcPos[i][2], tbNpcPos[i][3]);
+			CreateNpc("tiezhangyinshi", "ThiÕt Ch­ëng Èn SÜ", tbNpcPos[i][1], tbNpcPos[i][2], tbNpcPos[i][3]);
 	end
 end
 
@@ -2838,19 +2838,19 @@ function meihuayingchun_npc_create()
 		return 0;
 	end
 	local npcIdnex;
-	npcIndex = CreateNpc("C©y T?Linh 3_2", "Mai Vµng", 300, 1768, 3536);
+	npcIndex = CreateNpc("C©y Tø Linh 3_2", "Mai Vµng", 300, 1768, 3536);
 	SetNpcScript(npcIndex, "\\script\\online_activites\\201212\\meihuashu.lua");
-	npcIndex = CreateNpc("C©y T?Linh 3_2", "Mai Vµng", 200, 1407, 2832);
+	npcIndex = CreateNpc("C©y Tø Linh 3_2", "Mai Vµng", 200, 1407, 2832);
 	SetNpcScript(npcIndex, "\\script\\online_activites\\201212\\meihuashu.lua");
-	npcIndex = CreateNpc("C©y T?Linh 3_2", "Mai Vµng", 100, 1401, 2992);
+	npcIndex = CreateNpc("C©y Tø Linh 3_2", "Mai Vµng", 100, 1401, 2992);
 	SetNpcScript(npcIndex, "\\script\\online_activites\\201212\\meihuashu.lua");
-	npcIndex = CreateNpc("C©y T?Linh 3_2", "Mai Vµng", 150, 1703, 3136);
+	npcIndex = CreateNpc("C©y Tø Linh 3_2", "Mai Vµng", 150, 1703, 3136);
 	SetNpcScript(npcIndex, "\\script\\online_activites\\201212\\meihuashu.lua");
-	npcIndex = CreateNpc("C©y T?Linh 3_2", "Mai Vµng", 350, 1464, 2960);
+	npcIndex = CreateNpc("C©y Tø Linh 3_2", "Mai Vµng", 350, 1464, 2960);
 	SetNpcScript(npcIndex, "\\script\\online_activites\\201212\\meihuashu.lua");
-	npcIndex = CreateNpc("C©y T?Linh 3_2", "Mai Vµng", 400, 1512, 2977);
+	npcIndex = CreateNpc("C©y Tø Linh 3_2", "Mai Vµng", 400, 1512, 2977);
 	SetNpcScript(npcIndex, "\\script\\online_activites\\201212\\meihuashu.lua");
-	npcIndex = CreateNpc("C©y T?Linh 3_2", "Mai Vµng", 500, 1768, 3136);
+	npcIndex = CreateNpc("C©y Tø Linh 3_2", "Mai Vµng", 500, 1768, 3136);
 	SetNpcScript(npcIndex, "\\script\\online_activites\\201212\\meihuashu.lua");
 end
 
@@ -2877,7 +2877,7 @@ end
 
 function Vip_NPC()
 	if CFG_VipCare == 1 then
-		local npcIndex = CreateNpc("Nh?Hoµng Tö_§¹i L?, "§¹i S?Vip", 300,1776,3552);
+		local npcIndex = CreateNpc("NhŞ Hoµng Tö_§¹i Lı", "§¹i Sø Vip", 300,1776,3552);
 		SetNpcScript(npcIndex, "\\script\\vng\\vipcare\\daisuvip.lua");	
 	end
 end
@@ -2895,7 +2895,7 @@ function biwu_3v3_init()
 	if nCurGs == 1 then
 		ClearMapNpc(8000)
 		P3v3_Enable(1);
-		local npcIndex = CreateNpc("KLyunxihe", "§Æc s?§¹i Héi T?V?, 8000,1404,2858);
+		local npcIndex = CreateNpc("KLyunxihe", "§Æc sø §¹i Héi Tû Vâ", 8000,1404,2858);
 		SetNpcScript(npcIndex, "\\script\\missions\\nvn\\3v3npc.lua");
 	end
 end
@@ -2935,10 +2935,10 @@ function AddTYNpc()
 		{"TYT_XianfengYZB", "Tiªn Phong D­¬ng T«n B¶o", {300, 1807, 3349}, "\\script\\missions\\taiyi\\yangzongbao_npc.lua"},
 		{"TYT_XianfengYZB", "Tiªn Phong D­¬ng T«n B¶o", {200, 1378, 3063}, "\\script\\missions\\taiyi\\yangzongbao_npc.lua"},
 		{"TYT_XianfengYZB", "Tiªn Phong D­¬ng T«n B¶o", {100, 1430, 2791}, "\\script\\missions\\taiyi\\yangzongbao_npc.lua"},
-		{"TYT_XianfengMGY", "Tiªn Phong Méc Qu?Anh", {350, 1413, 2856}, "\\script\\missions\\taiyi\\muguiying_npc.lua"},
-		{"TYT_XianfengMGY", "Tiªn Phong Méc Qu?Anh", {300, 1803, 3353}, "\\script\\missions\\taiyi\\muguiying_npc.lua"},
-		{"TYT_XianfengMGY", "Tiªn Phong Méc Qu?Anh", {200, 1372, 3068}, "\\script\\missions\\taiyi\\muguiying_npc.lua"},
-		{"TYT_XianfengMGY", "Tiªn Phong Méc Qu?Anh", {100, 1436, 2784}, "\\script\\missions\\taiyi\\muguiying_npc.lua"},
+		{"TYT_XianfengMGY", "Tiªn Phong Méc QuÕ Anh", {350, 1413, 2856}, "\\script\\missions\\taiyi\\muguiying_npc.lua"},
+		{"TYT_XianfengMGY", "Tiªn Phong Méc QuÕ Anh", {300, 1803, 3353}, "\\script\\missions\\taiyi\\muguiying_npc.lua"},
+		{"TYT_XianfengMGY", "Tiªn Phong Méc QuÕ Anh", {200, 1372, 3068}, "\\script\\missions\\taiyi\\muguiying_npc.lua"},
+		{"TYT_XianfengMGY", "Tiªn Phong Méc QuÕ Anh", {100, 1436, 2784}, "\\script\\missions\\taiyi\\muguiying_npc.lua"},
 	};
 	for i = 1, getn(tNpcs) do
 		if SubWorldID2Idx(tNpcs[i][3][1]) ~= -1 then
@@ -2949,12 +2949,12 @@ function AddTYNpc()
 end
 
 function AddLifeSkillNpc()
-	local npcIdx = CreateNpc("B?ch?, "§ç T?N­¬ng", 350, 1441, 2914);
+	local npcIdx = CreateNpc("Bµ chñ", "§ç Tø N­¬ng", 350, 1441, 2914);
 	SetNpcScript(npcIdx, "\\script\\ÖĞÔ­¶şÇø\\³É¶¼\\npc\\¶ÅËÄÄï.lua");
 end
 
 function Plus123Pay()
-	local npcIndexZzd = CreateNpc("V?L©m Minh Ch?", "Ng­êi VËn ChuyÓn", 100, 1408, 3008);
+	local npcIndexZzd = CreateNpc("Vâ L©m Minh Chñ1", "Ng­êi VËn ChuyÓn", 100, 1408, 3008);
     SetNpcScript(npcIndexZzd, "\\script\\vng\\plus123pay.lua");
 end
 
@@ -2972,14 +2972,14 @@ function AddHeiYiZhuangShi()
 		{219, 1675, 3219},
 	}
 	for i =1, getn(tPos) do
-		CreateNpc("heiyizhuangshi", "H¾c Y Tr¸ng S?, tPos[i][1], tPos[i][2], tPos[i][3]);
+		CreateNpc("heiyizhuangshi", "H¾c Y Tr¸ng SÜ", tPos[i][1], tPos[i][2], tPos[i][3]);
 	end
 	tPos = {
 		{413,1863,3269},
 		{8010,1601,3222},
 	}
 	for i =1, getn(tPos) do
-		local npcIndex =CreateNpc("Thiªn V­¬ng Bang §å", "Xi Háa Gi¸o Kh¸n Th?, tPos[i][1], tPos[i][2], tPos[i][3])
+		local npcIndex =CreateNpc("Thiªn V­¬ng Bang §å", "Xi Háa Gi¸o Kh¸n Thñ", tPos[i][1], tPos[i][2], tPos[i][3])
 		SetNpcScript(npcIndex, "\\script\\Î÷ÄÏÇø\\ÁúÑÛ¶´¶ş²ã\\npc\\ò¿»ğ½Ì¿´ÊØ.lua");
 	end
 	CreateNpc("Th­¬ng ¦ng", "Th­¬ng ¦ng", 8010, 1599, 3188, 6);
@@ -2990,7 +2990,7 @@ return
 end
 
 function AddNpcLoDe()
-	local npcIndexshxy = CreateNpc("Ch?cÇm ®å Trung Nguyªn", "Ch?Sßng Bµi", 200,171*8,178*16);
+	local npcIndexshxy = CreateNpc("Chñ cÇm ®å Trung Nguyªn", "Chñ Sßng Bµi", 200,171*8,178*16);
 	SetNpcScript(npcIndexshxy, "\\script\\owner\\lode.lua");
 end
 
