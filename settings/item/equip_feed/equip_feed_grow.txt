@@ -148,3 +148,11 @@ ID duy nh t	unuse line(2~10)	Gi∏ trﬁ l≠Óng trang bﬁ mang theo tÊng th”
 142	Nhu÷ Nha Ngoa	6000	442	1	1	443	1	1	444	1	1
 143	MÈng S∏t Ngoa	6000	449	1	1	450	1	1	451	1	1
 144	B∏ch Chi’n Huy’t Phi-Chu	6000	456	0	0	457	0	0	458	0	0
+145	ß«u Ph∏ HÂn	6000	500	0	0	536	0	0
+146	∏o Ph∏ HÂn	6000	501	0	0	536	0	0
+147	Qu«n Ph∏ HÂn	6000	502	0	0	536	0	0
+148	VÚ Kh› Ph∏ HÂn (S∏t th≠¨ng)	6000	531	0	0	532	0	0			
+149	VÚ Kh› Ph∏ HÂn (C«m)	6000	529	0	0	532	0	0			
+150	VÚ Kh› Ph∏ HÂn (NÈi c´ng )	6000	528	0	0	532	0	0			
+151	VÚ Kh› Ph∏ HÂn (Ngoπi c´ng)	6000	530	0	0	532	0	0			
+152	Trang S¯c Ph∏ HÂn	6000	524	0	0	537	0	0

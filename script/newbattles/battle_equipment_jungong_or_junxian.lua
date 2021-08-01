@@ -32,7 +32,7 @@ gSkill = {
 }
 
 function CheckSuit(nSuitID)
-    if nSuitID < 50155 or nSuitID > 50666 then
+    if nSuitID < 50155 or nSuitID > 50666 and nSuitID < 150000 or nSuitID > 150283 then
         return 0
     end
     return 1
@@ -50,11 +50,9 @@ end
 
 function OnEquip(nItemIdx)
 	local nID1,nID2,nID3 = GetItemInfoByIndex(nItemIdx)
-  local nRoute = GetPlayerRoute();
-  print("Full do: "..CheckFullEquip())
+  local nRoute = GetPlayerRoute()
   if CheckFullEquip() == 1 and gSkill[nRoute][1] > 0 then
   	for i=1, getn(gSkill[nRoute])/2 do
-  		print("oldSkill: "..gSkill[nRoute][2*i-1]..", newSkill: "..gSkill[nRoute][2*i])
     	CastState("state_skill_convert_from_"..i,gSkill[nRoute][2*i-1],-1,-1,8042+i)
     	CastState("state_skill_convert_to_"..i,calSkill(gSkill[nRoute][i],gSkill[nRoute][2*i]),-1,-1,9042+i)
   	end
