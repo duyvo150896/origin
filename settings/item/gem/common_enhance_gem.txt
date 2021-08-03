@@ -1606,3 +1606,9 @@ EnhanceID	SuccessRate	Item_Count	Item_G	Item_D	Item_P	Gem_Op	Gem_Socket	NeedMone
 1603	100	1	0	100;101	29000	0	1		1	1	2;22;102	2;22;102	Huy’tTr›chThπch Lv2	1	1	2;22;202	2;22;202	Nguy÷tBπchThπch Lv2	1	1	2;22;302	2;22;302	HÊ Ph∏ch Thπch C p 2	1	1	2;22;402	2;22;402	Hæc Di÷u Thπch C p 2
 1604	100	1	0	100;101	29000	0	2		1	2	2;22;103	2;22;103	Huy’tTr›chThπch Lv3	1	2	2;22;203	2;22;203	Nguy÷tBπchThπch Lv3	1	2	2;22;303	2;22;303	HÊ Ph∏ch Thπch C p 3	1	2	2;22;403	2;22;403	Hæc Di÷u Thπch C p 3
 1605	100	1	0	100;101	29000	0	3		1	3	2;22;104	2;22;104	Huy’tTr›chThπch Lv4	1	3	2;22;204	2;22;204	Nguy÷tBπchThπch Lv4	1	3	2;22;304	2;22;304	HÊ Ph∏ch Thπch C p 4	1	3	2;22;404	2;22;404	Hæc Di÷u Thπch C p 4
+1606	100	1	0	103	25000;25007	0	1		1	1	2;22;102	2;22;102	Huy’tTr›chThπch Lv2	1	1	2;22;202	2;22;202	Nguy÷tBπchThπch Lv2	1	1	2;22;302	2;22;302	HÊ Ph∏ch Thπch C p 2	1	1	2;22;402	2;22;402	Hæc Di÷u Thπch C p 2
+1607	100	1	0	103	25000;25007	0	2		1	2	2;22;103	2;22;103	Huy’tTr›chThπch Lv3	1	2	2;22;203	2;22;203	Nguy÷tBπchThπch Lv3	1	2	2;22;303	2;22;303	HÊ Ph∏ch Thπch C p 3	1	2	2;22;403	2;22;403	Hæc Di÷u Thπch C p 3
+1608	100	1	0	103	25000;25007	0	3		1	3	2;22;104	2;22;104	Huy’tTr›chThπch Lv4	1	3	2;22;204	2;22;204	Nguy÷tBπchThπch Lv4	1	3	2;22;304	2;22;304	HÊ Ph∏ch Thπch C p 4	1	3	2;22;404	2;22;404	Hæc Di÷u Thπch C p 4
+1609	100	1	0	100;101	25000;25007	0	1		1	1	2;22;102	2;22;102	Huy’tTr›chThπch Lv2	1	1	2;22;202	2;22;202	Nguy÷tBπchThπch Lv2	1	1	2;22;302	2;22;302	HÊ Ph∏ch Thπch C p 2	1	1	2;22;402	2;22;402	Hæc Di÷u Thπch C p 2
+1610	100	1	0	100;101	25000;25007	0	2		1	2	2;22;103	2;22;103	Huy’tTr›chThπch Lv3	1	2	2;22;203	2;22;203	Nguy÷tBπchThπch Lv3	1	2	2;22;303	2;22;303	HÊ Ph∏ch Thπch C p 3	1	2	2;22;403	2;22;403	Hæc Di÷u Thπch C p 3
+1611	100	1	0	100;101	25000;25007	0	3		1	3	2;22;104	2;22;104	Huy’tTr›chThπch Lv4	1	3	2;22;204	2;22;204	Nguy÷tBπchThπch Lv4	1	3	2;22;304	2;22;304	HÊ Ph∏ch Thπch C p 4	1	3	2;22;404	2;22;404	Hæc Di÷u Thπch C p 4
