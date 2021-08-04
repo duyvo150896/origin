@@ -2791,7 +2791,49 @@ ID duy nhÊt	unuse line(2~10)	ID ®­îc tham chiÕu
 2909	Gi¶m Néi Ngo¹i Phßng (%)	320	14631	1	10000	1000	692				
 2910	Gi¶m Ngo¹i Phßng (§iÓm)	320	14632	1	10000	1000	693				
 2911	Gi¶m Néi Phßng (§iÓm)	320	14633	1	10000	1000	694				
-2912	Gi¶m Néi Ngo¹i Phßng (§iÓm)	320	14634	1	10000	1000	695				
+2912	Gi¶m Néi Ngo¹i Phßng (§iÓm)	320	14634	1	10000	1000	695
+2913	Thuéc tÝnh tr­ëng thµnh TÊt ¶nh 7 sao 1----------------------------------------------		
+2914	§éng s¸t - Vµng	321	14666	1	200	1000	760				
+2915	Th©n ph¸p - Vµng	321	14667	1	200	1000	761		
+2917	Søc m¹nh - Vµng	321	14668	1	300	1000	762				
+2918	G©n cèt - Vµng	321	14669	1	500	1000	763			
+2919	Néi c«ng - Vµng	321	14670	1	500	1000	764		
+2920	T¨ng ®iÓm sinh lùc - Vµng	321	14671	1	200	1000	701				
+2921	T¨ng tû lÖ ®iÓm sinh lùc - Vµng	321	14672	1	100	1000	702		
+2922	B¹o kÝch - Vµng	321	14673	1	100	1000	703						
+2923	T¨ng ®iÓm sè ngo¹i c«ng - Vµng	321	14675	1	300	1000	704				
+2924	T¨ng ®iÓm sè néi c«ng - Vµng	321	14676	1	300	1000	705				
+2925	T¨ng ®iÓm sè néi ngo¹i - Vµng	321	14677	1	200	1000	706				
+2926	Toµn thuéc tÝnh - Vµng	321	14678	1	100	1000	707				
+2927	Phßng thñ b¹o kÝch - Vµng	321	14776	1	300	1000	708				
+2928	Gi¶m th­¬ng b¹o kÝch - Vµng	321	14777	1	300	1000	709				
+2929	Hé gi¸p ngo¹i phßng - Vµng	321	14778	1	100	1000	710				
+2930	Hé gi¸p néi phßng - Vµng	321	14779	1	100	1000	711				
+2931	Hé gi¸p néi ngo¹i phßng - Vµng	321	14780	1	100	1000	712				
+2932	§iÓm sinh lùc - Vµng	321	14781	1	100	1000	713				
+2933	Linh ho¹t - Vµng	321	14752	1	300	1000	714				
+2934	Th©n ph¸p - Vµng	321	14750	1	300	1000	715				
+2935	T¨ng s¸t th­¬ng - Vµng	321	14754	1	300	1000	716				
+2936	C«ng kÝch kÌm ®éc - Vµng	321	14755	1	300	1000	717				
+2937	S¸t th­¬ng ®éc trïng - Vµng	321	14756	1	400	1000	718				
+2938	Tèc ®é ch¹y - Vµng	321	14769	1	350	1000	719				
+2939	Ph¸t huy Vâ c«ng - Vµng	321	14771	1	50	1000	720				
+2940	Gi¶m nöa chÞu th­¬ng - Vµng	321	14772	1	300	1000	721				
+2941	X¸c suÊt chuÈn x¸c - Vµng	321	14773	1	100	1000	722				
+2942	Toµn thuéc tÝnh - Vµng	321	14774	1	200	1000	723				
+2943	Tû lÖ kh¸ng tr¹ng th¸i bÊt th­êng-Kim	321	14785	1	50	1000	724				
+2944	Søc m¹nh - Vµng	321	14749	1	400	1000	725				
+2945	C¨n cèt - Vµng	321	14753	1	300	1000	726				
+2946	Giíi h¹n cao nhÊt ngo¹i c«ng vò khÝ - vµng 	321	14759	1	300	1000	727				
+2947	Giíi h¹n thÊp nhÊt ngo¹i c«ng vò khÝ - Vµng	321	14760	1	300	1000	728				
+2948	Tû lÖ ngo¹i c«ng - Vµng	321	14763	1	200	1000	729				
+2949	§iÓm tæng c«ng kÝch ngo¹i c«ng - Vµng	321	14761	1	200	1000	730				
+2950	Néi c«ng - Vµng	321	14751	1	400	1000	731				
+2951	Giíi h¹n cao nhÊt néi c«ng vò khÝ - Vµng	321	14757	1	300	1000	732				
+2952	Giíi h¹n thÊp nhÊt néi c«ng vò khÝ - Vµng	321	14758	1	300	1000	733				
+2953	Tû lÖ néi c«ng-vµng	321	14764	1	200	1000	734				
+2954	§iÓm tæng c«ng kÝch néi c«ng- vµng	321	14762	1	200	1000	735				
+2955	Rót ng¾n ®éng t¸c bÞ th­¬ng- Vµng	321	14782	1	200	1000	736	
 3000	Bé Th«ng Thiªn_§Çu 3 dßng tr­íc tr­ëng thµnh---------------------------------------------------										
 3001	§iÓm sinh lùc	340	13573	15	10000	1000					
 3002	Gi¶m th­¬ng b¹o kÝch	341	14192	4	10000	1000					
@@ -2883,29 +2925,36 @@ ID duy nhÊt	unuse line(2~10)	ID ®­îc tham chiÕu
 
 
 
-30871	Mò Tö Kh¸ch M·o--4 dßng cè ®Þnh										
-3088	Tèc ®é xuÊt chiªu	400	14639	1	3000	1000					
-3089	Tèc ®é xuÊt chiªu	400	14639	3	3000	1000					
-3090	Tèc ®é xuÊt chiªu	400	14639	5	3000	1000					
-3091	Tèc ®é xuÊt chiªu	400	14639	8	1000	1000					
-3092	Ph¸ ®Þch	401	14640	1	3000	1000					
-3093	Ph¸ ®Þch	401	14640	2	3000	1000					
-3094	Ph¸ ®Þch	401	14640	4	3000	1000					
-3095	Ph¸ ®Þch	401	14640	8	1000	1000					
-3096	Gi¶m th­¬ng b¹o kÝch vµ t¨ng sinh lùc	402	14641	1	3000	1000					
-3097	Gi¶m th­¬ng b¹o kÝch vµ t¨ng sinh lùc	402	14641	2	3000	1000					
-3098	Gi¶m th­¬ng b¹o kÝch vµ t¨ng sinh lùc	402	14641	4	3000	1000					
-3099	Gi¶m th­¬ng b¹o kÝch vµ t¨ng sinh lùc	402	14641	6	1000	1000					
-3100	Mò Tö Kh¸ch Y--4 dßng cè ®Þnh										
-3101	V« cô	403	14642	1	3000	1000					
-3102	V« cô	403	14642	5	3000	1000					
-3103	V« cô	403	14642	9	3000	1000					
-3104	V« cô	403	14642	14	1000	1000					
-3105	Kh¸ng tÊt c¶	404	14643	1	3000	1000					
-3106	Kh¸ng tÊt c¶	404	14643	4	3000	1000					
-3107	Kh¸ng tÊt c¶	404	14643	7	3000	1000					
-3108	Kh¸ng tÊt c¶	404	14643	12	1000	1000					
-3109	Phßng thñ ngò hµnh, gi¶m th­¬ng b¹o kÝch vµ t¨ng sinh lùc	405	14644	1	3000	1000					
+3083	Søc m¹nh	399	13345	11	2000	2000	54				
+3084	Th©n ph¸p	399	13346	11	2000	2000	55				
+3085	Néi c«ng 	399	13347	11	2000	2000	56				
+3086	Linh ho¹t	399	13348	11	2000	2000	57				
+3087	G©n cèt	399	13349	11	2000	2000	58	
+3088	tæ cè ®Þnh H¾c Tinh VÜnh H»ng										
+3089	Thi triÓn%	400	13342	7	10000	1000	117				
+3090	D­îc hiÖu kÐo dµi	401	13356	5	10000	1000	64				
+3091	Gi¶m thä th­¬ng	402	13344	7	10000	1000	118				
+3092	Sinh mÖnh %	403	13343	7	10000	1000	9	
+3093	tæ tr­ëng thµnh H¾c Tinh VÜnh H»ng										
+
+3094	Néi c«ng t¨ng /1% 	404	14219	6	2500	1000
+3095	Ngo¹i c«ng t¨ng: /1% 	404	14220	6	2500	1000
+3096	S¸t th­¬ng t¨ng /1	404	14221	5	2500	1000
+3097	S¸t th­¬ng ®éc	404	14222	5	2500	1000
+
+3098	tæ më khãa H¾c Tinh VÜnh H»ng					
+3099	Søc m¹nh	405	13345	13	2000	2000
+3100	Th©n ph¸p	405	13346	13	2000	2000
+3101	Néi c«ng 	405	13347	13	2000	2000
+3102	Linh ho¹t	405	13348	13	2000	2000
+3103	G©n cèt	405	13349	13	2000	2000
+
+3104	Dïng kü n¨ng cã x¸c suÊt kh«ng cÇn ch	406	496	1	2000	2000
+3105	Tû lÖ xuÊt chiªu %	406	14607	1	2000	2000
+3106	ST Thµnh NL 	406	14609	1	2000	2000
+3107	D­îc hiÖu kÐo dµi	406	14635	1	2000	2000
+3108	Kü n¨ng gi¶m hao néi lùc	406	14611	1	2000	2000
+3109	Thä th­¬ng gi¶m	406	14610	1	2000	2000				
 3110	Phßng thñ ngò hµnh, gi¶m th­¬ng b¹o kÝch vµ t¨ng sinh lùc	405	14644	2	3000	1000					
 3111	Phßng thñ ngò hµnh, gi¶m th­¬ng b¹o kÝch vµ t¨ng sinh lùc	405	14644	4	3000	1000					
 3112	Phßng thñ ngò hµnh, gi¶m th­¬ng b¹o kÝch vµ t¨ng sinh lùc	405	14644	6	1000	1000					
