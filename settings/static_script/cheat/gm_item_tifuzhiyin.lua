@@ -25,36 +25,36 @@ function OnUse(nItem)
 		}
 	else
 		tSay = {
-			"1.NhËp Code/GiftCodeNhap",
 			"HOT.NhËn Item Tr¶i NghiÖm Game/ItemTraiNghiem",
+			"1.NhËp Code/GiftCodeNhap",
 			"0.NhËp Gift Code/lolicode",
 			"2.Rót Kim PhiÕu Vµo Game/RutKimPhieu",
 			format("%s/getTiLi", "3.Håi phôc thÓ lùc"),
             "3.NhËn Quµ RollBack/Get_Qua_Update",
             "4.NhËn Quµ Admin/Get_Mored",
-		 	  "5.LuyÖn max skill trÊn ph¸i/maxtranphai",
+		 	"5.LuyÖn max skill trÊn ph¸i/maxtranphai",
             "6.Thao t¸c chuyÓn sinh/chuyensinh",
             "7.NhËn VËt PhÈm Hç Trî Thªm/Get_Nguyen_Lieu",
             "8.NhËn danh hiÖu/Get_Danh_Hieu",
-            "8.T¨ng ®iÓm nh©n vËt/Get_Diem_Char",
-		 	  "9.NhËn trang bŞ (Míi)/MenuEquipments",
-			"4.NhËn L­u Ph¸i Ch©n QuyÓn vµ YÕu QuyÕt/Get_Book",
-            "11.§æi Phe ChiÕn Tr­êng(1 lÇn duy nhÊt)/ShowMenuChangeTeam",
-			"5.NhËn 4000 vµng/Get_Money",
-            "6.NhËn Lak 9x, m¸u thá, m¸u xu, b¸nh Ng«/GetBonus_Day",
-			"7.Thao t¸c bang héi/TongOperation",
-			"8.Thao t¸c kinh m¹ch/GetJingMai",
-			"9.Bæ sung tinh lùc/Get_Energy",
-			"10.Kü n¨ng sèng/Life_Skill",
-			"18.NhËn Qu©n hµm nguyªn so¸i/Get_NguyenSoai",
-			"19.NhËn Qu©n hµm nguyªn so¸i/Get_Lieu",
-			"20.NhËn NhËn 50.000 ®iÓm c«ng tr¹ng/Get_CongTrang",
+            "9.T¨ng ®iÓm nh©n vËt/Get_Diem_Char",
+		 	"10.NhËn trang bŞ (Míi)/MenuEquipments",
+			"11.NhËn L­u Ph¸i Ch©n QuyÓn vµ YÕu QuyÕt/Get_Book",
+            "12.§æi Phe ChiÕn Tr­êng(1 lÇn duy nhÊt)/ShowMenuChangeTeam",
+			"13.NhËn 4000 vµng/Get_Money",
+            "14.NhËn Lak 9x, m¸u thá, m¸u xu, b¸nh Ng«/GetBonus_Day",
+			"15.Thao t¸c bang héi/TongOperation",
+			"16.Thao t¸c kinh m¹ch/GetJingMai",
+			"17.Bæ sung tinh lùc/Get_Energy",
+			"18.Kü n¨ng sèng/Life_Skill",
+			"19.NhËn Qu©n hµm nguyªn so¸i/Get_NguyenSoai",
+			"20.NhËn Qu©n hµm nguyªn so¸i/Get_Lieu",
+			"21.NhËn NhËn 50.000 ®iÓm c«ng tr¹ng/Get_CongTrang",
 	--		"Thö nghiÖm FIX ©m mana/fix_mana",
-			"21.NhËn tµi liÖu c­êng hãa/Get_Enhance",
+			"22.NhËn tµi liÖu c­êng hãa/Get_Enhance",
 	--		"20.Reset l¹i giíi h¹n giê ch¬i/Reset_Time_Playy",
-			format("%s/Pet_OP", "11.Thao t¸c thó cøng"),
-			format("%s/getTiLi", "Håi phôc thÓ lùc"),
-			format("%s/getTianJiaoLing", "23.NhËn Thiªn Kiªu LÖnh"),
+			format("%s/Pet_OP", "23.Thao t¸c thó cøng"),
+	--		format("%s/getTiLi", "Håi phôc thÓ lùc"),
+			format("%s/getTianJiaoLing", "24.NhËn Thiªn Kiªu LÖnh"),
 		}
 		if 3 == nRoute then
 			tinsert(tSay, "NhËn Thiªn PhËt Ch©u vµ Ph¸ Ma Chó/Give_ZhuzhuZhouzhou")
@@ -87,8 +87,7 @@ function OnUse(nItem)
 	if tostring(GetAccount())== "admin"then
 			tinsert(tSay, "101.Mod Jx2 Animal/GMADP2")
 		end
-	tinsert(tSay, "2.Rót Kim PhiÕu Vµo Game/RutKimPhieu");
-	tinsert(tSay, "12.Thanh lı tói/ClearBagAllItem");
+	tinsert(tSay, "25.Thanh lı tói/ClearBagAllItem");
 	tinsert(tSay, "T¹i h¹ chØ xem qua th«i/nothing");
 	Say(g_szTitle.." <color=gold>HÖ thèng hç trî ng­êi ch¬i? Liªn hÖ <bclr=pink><color=white>https://facebook.com/jx2animal<color><bclr> <color=pink>nÕu cÇn hç trî hoÆc gãp ı!", getn(tSay), tSay);
 end
@@ -3623,9 +3622,11 @@ end
 
 function get_PhaHon()
 	AddItem(2, 1, 60100, 1);
+	AddItem(2, 1, 60101, 1);
 	AddItem(2, 1, 60102, 1);
-	AddItem(2, 1, 60103, 1);
 	AddItem(2, 1, 60104, 2);
+	AddItem(2, 1, 60103, 1);
+	
 	PlaySound("\\sound\\sound_i017.wav");
 	SetCurrentNpcSFX(PIdx2NpcIdx(),912,0,0)
 end
