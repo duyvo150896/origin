@@ -2901,3 +2901,4 @@ ID	Thêi gian hiÖu qu¶ cÊp 1	Thêi gian hiÖu qu¶ cÊp 2	Thêi gian hiÖu qu¶ cÊp 3	Th
 24528									0	state_damage_point	16000;1000									S¸t th­¬ng +/1								1;15	1
 
 24529									0	state_critical_damage_increase	2000;500		0	state_def_critical_damage_increase	1000;500					B¹o kİch céng thªm + /1<enter>Gi¶m th­¬ng b¹o kİch + /2	100000	50000	5000	5000	5000	50000	5000		1
+24530									0	state_add_allability	600;50		0	state_burst_enhance_rate	250;50					Kh¸ng tÊt c¶ t¨ng/1; tèc ®é xuÊt chiªu t¨ng/2%								1;15	1
