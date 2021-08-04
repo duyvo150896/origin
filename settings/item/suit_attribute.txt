@@ -3848,3 +3848,32 @@ SË trang bﬁ	T™n trang bﬁ	SË hi÷u thuÈc t›nh 1: 	ßºng c p thuÈc t›nh 1: 	SË hi÷u 
 150281	TËng_Chu T≠Ìc Nguy™n So∏i	24523	1	24524	1	24526	1	24529	1	14407	1							<color=Gold>
 150282	Li™u_Chu T≠Ìc Nguy™n So∏i	24523	1	24524	1	24526	1	24529	1	14407	1							<color=Gold>
 150283	Li™u_Chu T≠Ìc Nguy™n So∏i	24523	1	24524	1	24526	1	24529	1	14407	1							<color=Gold>
+
+160000	Ph∏ HÂn Trang Bﬁ																	<color=Fire>	
+160001	Ph∏ HÂn Trang Bﬁ																	<color=Fire>															
+160002	Ph∏ HÂn Trang Bﬁ																	<color=Fire>															
+160003	Ph∏ HÂn Trang Bﬁ																	<color=Fire>															
+160004	Ph∏ HÂn Trang Bﬁ																	<color=Fire>
+160005	Ph∏ HÂn-L≠u Ly GiÌi ßao																	<color=Fire>	
+160006	Ph∏ HÂn-L´i ¢m Nang ThÒ																	<color=Fire>
+160007	Ph∏ HÂn-Kinh L´i Thi“n Tr≠Óng																	<color=Fire>
+160008	Ph∏ HÂn-¢m D≠¨ng Xuy™n Ånh																	<color=Fire>
+160009	Ph∏ HÂn-Tı Hµn ¢m Ki’m																	<color=Fire>
+160010	Ph∏ HÂn-Cˆu Hoµn BËi C«m																	<color=Fire>
+160011	Ph∏ HÂn-Quy L©n HÈ ThÒ																	<color=Fire>
+160012	Ph∏ HÂn-Tr n Ngπo C´n																	<color=Fire>
+160013	Ph∏ HÂn-Thu«n Phong Ki’m																	<color=Fire>
+160014	Ph∏ HÂn-Tinh ß»u Chuy”n BÛt																	<color=Fire>
+160015	Ph∏ HÂn-Ph∏ Qu©n TrÀn Th≠¨ng																	<color=Fire>
+160016	Ph∏ HÂn-Truy M÷nh Cung																	<color=Fire>
+160017	Ph∏ HÂn-Thi÷p CËt Huy’t ßao																	<color=Fire>
+160018	Ph∏ HÂn-Luy÷n HÂn Huy’t Tr∂o																	<color=Fire>
+160019	Ph∏ HÂn-Ng˘ Thi™n Phong Ki’m																	<color=Fire>
+160020	Ph∏ HÂn-Th«n Di÷m Thi™n ßao																	<color=Fire>
+160021	Ph∏ HÂn-Th«n Phong Ph∏n BÛt																	<color=Fire>
+160022	Ph∏ HÂn-Th«n Linh ChÛ Tr∂o																	<color=Fire>
+160023	Ph∏ HÂn-Linh Lung Chi																	<color=Fire>
+160024	Ph∏ HÂn-Cˆu Ti™u S∏o																	<color=Fire>
+160025	Ph∏ HÂn-Ng≠ Tµng																	<color=Fire>
+160026	Ph∏ HÂn-Chÿ Qua																	<color=Fire>
+
