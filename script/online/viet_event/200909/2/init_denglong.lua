@@ -17,19 +17,19 @@ function main()
 	if tonumber(date("%H")) == 0 or tonumber(date("%H")) == 1 or tonumber(date("%H")) == 22 or tonumber(date("%H")) == 23 then
 		return
 	end
---	local nDate = tonumber(date("%y%m%d"));
---	if nDate > 091206 or nDate < 091106 then
---		return 0;
---	end
+	local nDate = tonumber(date("%y%m%d"));
+	if nDate > 501206 or nDate < 091106 then
+		return 0;
+	end
 	local nDay = tonumber(date("%w"));
 	local nHour = tonumber(date("%H"));
---	if nDay == 6 or nDay == 0 then
+	if nDay == 6 or nDay == 0 then
 		create_npcs(nDay);
---	else
---		if nHour ~= 0 and nHour ~= 1 then
---			create_npcs(nDay);
---		end
---	end
+	else
+		if nHour ~= 0 and nHour ~= 1 then
+			create_npcs(nDay);
+		end
+	end
 end
 
 function create_npcs(nDay)
