@@ -9,8 +9,8 @@ Include("\\settings\\static_script\\online\\general_award_group.lua")
 
 
 --»î¶¯Ê±¼ä
-QIANHE_START_TIME = 2014091200;
-QIANHE_END_TIME = 2050092900;
+QIANHE_START_TIME = 2020091200;
+QIANHE_END_TIME = 2021092900;
 
 --»î¶¯¿ªÊ¼Ê¹ÓÃÁÙÊ±ÈÎÎñ±äÁ¿£¬ÔÙ´Î¿ªÆôÒª×¢ÒâÁË
 QHT_TASK_GROUP =  TaskManager:Create(7, 9);
@@ -57,9 +57,9 @@ function qht_add_exp(nExp)
 	if nRemainExp > 0 then
 		QHT_TASK_GROUP:SetTask(QHT_TASK_GROUP.DailyExp,QHT_TASK_GROUP:GetTask(QHT_TASK_GROUP.DailyExp) + min(nExp,nRemainExp));
 		gf_Modify("Exp",min(nExp,nRemainExp));
-		HeadMsg2Player(format("C¸c h?nhËn ®­îc %d ®iÓm kinh nghiÖm",min(nExp, nRemainExp)));
+		HeadMsg2Player(format("C¸c h¹ nhËn ®­îc %d ®iÓm kinh nghiÖm",min(nExp, nRemainExp)));
 	else
-		Msg2Player(format("C¸c h?h«m nay nhËn ®­îc %s ®· ®¹t giíi h¹n %d, kh«ng th?nhËn thªm %s","Kinh nghiÖm",QHT_EXP_MAX,"Kinh nghiÖm"));
+		Msg2Player(format("C¸c h¹ h«m nay nhËn ®­îc %s ®· ®¹t giíi h¹n %d, kh«ng thÓ nhËn thªm %s","Kinh nghiÖm",QHT_EXP_MAX,"Kinh nghiÖm"));
 	end
 end
 
@@ -67,16 +67,16 @@ end
 function qht_add_zhenqi(nZhenQi)
 	qht_DailyTaskReSet();
 	if MeridianGetLevel() < 1 then
-			Msg2Player("C¸c h?ch­a kÝch ho¹t Kinh M¹ch, kh«ng th?nhËn ®­îc Ch©n Kh?")
+			Msg2Player("C¸c h¹ ch­a kÝch ho¹t Kinh M¹ch, kh«ng thÓ nhËn ®­îc Ch©n KhÝ.")
 			return 0;
 	end
 	local nRemainZhenQi = QHT_ZHENQI_MAX - QHT_TASK_GROUP:GetTask(QHT_TASK_GROUP.DailyZhenQi);
 	if nRemainZhenQi > 0 then
 		QHT_TASK_GROUP:SetTask(QHT_TASK_GROUP.DailyZhenQi,QHT_TASK_GROUP:GetTask(QHT_TASK_GROUP.DailyZhenQi) + min(nZhenQi,nRemainZhenQi));
 		AwardGenuineQi(min(nZhenQi,nRemainZhenQi));
-		HeadMsg2Player(format("C¸c h?nhËn ®­îc %d ®iÓm ch©n kh?,min(nZhenQi,nRemainZhenQi)));
+		HeadMsg2Player(format("C¸c h¹ nhËn ®­îc %d ®iÓm ch©n khÝ",min(nZhenQi,nRemainZhenQi)));
 	else
-		Msg2Player(format("C¸c h?h«m nay nhËn ®­îc %s ®· ®¹t giíi h¹n %d, kh«ng th?nhËn thªm %s","Ch©n kh?,QHT_ZHENQI_MAX,"Ch©n kh?));
+		Msg2Player(format("C¸c h¹ h«m nay nhËn ®­îc %s ®· ®¹t giíi h¹n %d, kh«ng thÓ nhËn thªm %s","Ch©n khÝ",QHT_ZHENQI_MAX,"Ch©n khÝ"));
 	end
 end
 
@@ -87,9 +87,9 @@ function qht_add_xiuwei(nXiuWei)
 	if nRemainXiuWei > 0 then
 		QHT_TASK_GROUP:SetTask(QHT_TASK_GROUP.DailyXiuWei,QHT_TASK_GROUP:GetTask(QHT_TASK_GROUP.DailyXiuWei) + min(nXiuWei,nRemainXiuWei));
 		gf_EventGiveCustomAward(26,min(nXiuWei,nRemainXiuWei),1,1);
-		HeadMsg2Player(format("C¸c h?nhËn ®­îc %d ®iÓm tu luyÖn",min(nXiuWei,nRemainXiuWei)));
+		HeadMsg2Player(format("C¸c h¹ nhËn ®­îc %d ®iÓm tu luyÖn",min(nXiuWei,nRemainXiuWei)));
 	else
-		Msg2Player(format("C¸c h?h«m nay nhËn ®­îc %s ®· ®¹t giíi h¹n %d, kh«ng th?nhËn thªm %s","LuyÖn",QHT_XIUWEI_MAX,"LuyÖn"));
+		Msg2Player(format("C¸c h¹ h«m nay nhËn ®­îc %s ®· ®¹t giíi h¹n %d, kh«ng thÓ nhËn thªm %s","LuyÖn",QHT_XIUWEI_MAX,"LuyÖn"));
 	end
 end
 
@@ -100,9 +100,9 @@ function qht_add_shengwang(nShengWang)
 	if nRemainShengWang > 0 then
 		QHT_TASK_GROUP:SetTask(QHT_TASK_GROUP.DailyShengWang,QHT_TASK_GROUP:GetTask(QHT_TASK_GROUP.DailyShengWang) + min(nShengWang,nRemainShengWang));
 		gf_EventGiveCustomAward(3,min(nShengWang,nRemainShengWang),1,1);
-		HeadMsg2Player(format("C¸c h?nhËn ®­îc %d ®iÓm danh väng",min(nShengWang,nRemainShengWang)));
+		HeadMsg2Player(format("C¸c h¹ nhËn ®­îc %d ®iÓm danh väng",min(nShengWang,nRemainShengWang)));
 	else
-		Msg2Player(format("C¸c h?h«m nay nhËn ®­îc %s ®· ®¹t giíi h¹n %d, kh«ng th?nhËn thªm %s","Danh väng",QHT_SHENGWANG_MAX,"Danh väng"));
+		Msg2Player(format("C¸c h¹ h«m nay nhËn ®­îc %s ®· ®¹t giíi h¹n %d, kh«ng thÓ nhËn thªm %s","Danh väng",QHT_SHENGWANG_MAX,"Danh väng"));
 	end
 end
 
@@ -113,9 +113,9 @@ function qht_add_shimen(nShiMen)
 	if nRemainShiMen > 0 then
 		QHT_TASK_GROUP:SetTask(QHT_TASK_GROUP.DailyShiMen,QHT_TASK_GROUP:GetTask(QHT_TASK_GROUP.DailyShiMen) + min(nShiMen,nRemainShiMen));
 		gf_EventGiveCustomAward(4,min(nShiMen,nRemainShiMen),1,1);
-		HeadMsg2Player(format("C¸c h?nhËn ®­îc %d ®iÓm cèng hiÕn s? m«n",min(nShiMen,nRemainShiMen)));
+		HeadMsg2Player(format("C¸c h¹ nhËn ®­îc %d ®iÓm cèng hiÕn s­  m«n",min(nShiMen,nRemainShiMen)));
 	else
-		Msg2Player(format("C¸c h?h«m nay nhËn ®­îc %s ®· ®¹t giíi h¹n %d, kh«ng th?nhËn thªm %s","S?m«n",QHT_SHIMENGXD_MAX,"S?m«n"));
+		Msg2Player(format("C¸c h¹ h«m nay nhËn ®­îc %s ®· ®¹t giíi h¹n %d, kh«ng thÓ nhËn thªm %s","S­ m«n",QHT_SHIMENGXD_MAX,"S­ m«n"));
 	end
 end
 
@@ -131,7 +131,7 @@ function qht_create_npc_ds()
 	}
 	local tPosinfo
 	for _,tPosinfo in tPos do
-		local nNpcIndex = CreateNpc("V?L©m Minh Ch?","§¹i S?ho¹t ®éng",tPosinfo[1],tPosinfo[2],tPosinfo[3]);
+		local nNpcIndex = CreateNpc("Vâ L©m Minh Chñ1","§¹i Sø ho¹t ®éng",tPosinfo[1],tPosinfo[2],tPosinfo[3]);
 		SetNpcScript(nNpcIndex,"\\script\\online\\qianhe_tower\\npc\\activity_ds_jy.lua");
 	end
 end
@@ -293,7 +293,7 @@ function qht_award_one(targetNpcIdx)
 		local nMapID,nX,nY = GetWorldPos();
 		if gf_Judge_Room_Weight(1,1," ") == 1 and qht_map_allow(QHT_MAP_TABLE,nMapID) == 1 then
 			qht_add_exp(100000);
-			gf_AddItemEx2({2,1,30435,1}, "M¶nh H?ph?, "C«ng chiÕn Thiªn TÇm Th¸p", "Nhãm phÇn th­ëng 1 ", 0, 1);
+			gf_AddItemEx2({2,1,30435,1}, "M¶nh Hæ phï", "C«ng chiÕn Thiªn TÇm Th¸p", "Nhãm phÇn th­ëng 1 ", 0, 1);
 		end
 	end)
 	if gf_Judge_Room_Weight(2,10," ") ~= 1 then
@@ -312,7 +312,7 @@ function qht_award_two(targetNpcIdx)
 		local nMapID,nX,nY = GetWorldPos();
 		if gf_Judge_Room_Weight(1,1," ") == 1 and qht_map_allow(QHT_MAP_TABLE,nMapID) == 1 then
 			qht_add_exp(200000);
-			gf_AddItemEx2({2,1,30435,2}, "M¶nh H?ph?, "C«ng chiÕn Thiªn TÇm Th¸p", "Nhãm phÇn th­ëng 2 ", 0, 1);
+			gf_AddItemEx2({2,1,30435,2}, "M¶nh Hæ phï", "C«ng chiÕn Thiªn TÇm Th¸p", "Nhãm phÇn th­ëng 2 ", 0, 1);
 		end
 	end)
 	if gf_Judge_Room_Weight(2,10," ") ~= 1 then
@@ -331,7 +331,7 @@ function qht_award_three(targetNpcIdx)
 		local nMapID,nX,nY = GetWorldPos();
 		if gf_Judge_Room_Weight(1,1," ") == 1 and qht_map_allow(QHT_MAP_TABLE,nMapID) == 1 then
 			qht_add_exp(600000);
-			gf_AddItemEx2({2,1,30435,3}, "M¶nh H?ph?, "C«ng chiÕn Thiªn TÇm Th¸p", "Nhãm phÇn th­ëng 3 ", 0, 1);
+			gf_AddItemEx2({2,1,30435,3}, "M¶nh Hæ phï", "C«ng chiÕn Thiªn TÇm Th¸p", "Nhãm phÇn th­ëng 3 ", 0, 1);
 		end
 	end)
 	if gf_Judge_Room_Weight(2,10," ") ~= 1 then
@@ -350,7 +350,7 @@ function qht_award_four(targetNpcIdx)
 		local nMapID,nX,nY = GetWorldPos();
 		if gf_Judge_Room_Weight(2,1," ") == 1 and qht_map_allow(QHT_MAP_TABLE,nMapID) == 1 then
 			qht_add_exp(2000000);
-			gf_AddItemEx2({2,1,30435,4}, "M¶nh H?ph?, "C«ng chiÕn Thiªn TÇm Th¸p", "Nhãm phÇn th­ëng 3 ", 0, 1);
+			gf_AddItemEx2({2,1,30435,4}, "M¶nh Hæ phï", "C«ng chiÕn Thiªn TÇm Th¸p", "Nhãm phÇn th­ëng 3 ", 0, 1);
 			--¸ø½ðÎÆ»¢·û
 			qht_award_jinwenhufu(1,100,100);
 		end
@@ -406,7 +406,7 @@ function qht_award_six(targetNpcIdx)
 		local nMapID,nX,nY = GetWorldPos();
 		if gf_Judge_Room_Weight(2,1," ") == 1 and qht_map_allow(QHT_MAP_TABLE,nMapID) == 1 then
 			qht_add_exp(6000000);
-			gf_AddItemEx2({2,1,30435,5}, "M¶nh H?ph?, "C«ng chiÕn Thiªn TÇm Th¸p", "Nhãm phÇn th­ëng 3 ", 0, 1);
+			gf_AddItemEx2({2,1,30435,5}, "M¶nh Hæ phï", "C«ng chiÕn Thiªn TÇm Th¸p", "Nhãm phÇn th­ëng 3 ", 0, 1);
 			qht_add_zhenqi(200);
 			qht_add_xiuwei(100);
 			qht_add_shengwang(50);
@@ -430,7 +430,7 @@ function qht_award_six(targetNpcIdx)
 	--¹«¸æ
 	local strMsg = ""
 	if gf_GetTeamSize() > 2 then
-		strMsg = format("Chóc mõng %s dÉn d¾t ®éi ng?t¹i Thiªn TÇm Th¸p ®¸nh b¹i Hoµng Kim boss %s", GetCaptainName(), szNpcName);
+		strMsg = format("Chóc mõng %s dÉn d¾t ®éi ngò t¹i Thiªn TÇm Th¸p ®¸nh b¹i Hoµng Kim boss %s", GetCaptainName(), szNpcName);
 	else
 		strMsg = format("Chóc mõng %s t¹i Thiªn TÇm Th¸p ®¸nh b¹i Hoµng Kim boss %s", GetName(), szNpcName);
 	end
@@ -446,7 +446,7 @@ function qht_award_seven(targetNpcIdx)
 		local nMapID,nX,nY = GetWorldPos();
 		if gf_Judge_Room_Weight(2,1," ") == 1 and qht_map_allow(QHT_MAP_TABLE,nMapID) == 1 then
 			qht_add_exp(9000000);
-			gf_AddItemEx2({2,1,30435,5}, "M¶nh H?ph?, "C«ng chiÕn Thiªn TÇm Th¸p", "Nhãm phÇn th­ëng 3 ", 0, 1);
+			gf_AddItemEx2({2,1,30435,5}, "M¶nh Hæ phï", "C«ng chiÕn Thiªn TÇm Th¸p", "Nhãm phÇn th­ëng 3 ", 0, 1);
 			qht_add_zhenqi(400);
 			qht_add_xiuwei(100);
 			qht_add_shengwang(50);
@@ -470,7 +470,7 @@ function qht_award_seven(targetNpcIdx)
 	--¹«¸æ
 	local strMsg = ""
 	if gf_GetTeamSize() > 2 then
-		strMsg = format("Chóc mõng %s dÉn d¾t ®éi ng?t¹i Thiªn TÇm Th¸p ®¸nh b¹i Hoµng Kim boss %s", GetCaptainName(), szNpcName);
+		strMsg = format("Chóc mõng %s dÉn d¾t ®éi ngò t¹i Thiªn TÇm Th¸p ®¸nh b¹i Hoµng Kim boss %s", GetCaptainName(), szNpcName);
 	else
 		strMsg = format("Chóc mõng %s t¹i Thiªn TÇm Th¸p ®¸nh b¹i Hoµng Kim boss %s", GetName(), szNpcName);
 	end
@@ -486,7 +486,7 @@ function qht_award_eight(targetNpcIdx)
 		local nMapID,nX,nY = GetWorldPos();
 		if gf_Judge_Room_Weight(2,1," ") == 1 and qht_map_allow(QHT_MAP_TABLE,nMapID) == 1 then
 			qht_add_exp(12000000);
-			gf_AddItemEx2({2,1,30435,5}, "M¶nh H?ph?, "C«ng chiÕn Thiªn TÇm Th¸p", "Nhãm phÇn th­ëng 3 ", 0, 1);
+			gf_AddItemEx2({2,1,30435,5}, "M¶nh Hæ phï", "C«ng chiÕn Thiªn TÇm Th¸p", "Nhãm phÇn th­ëng 3 ", 0, 1);
 			qht_add_zhenqi(1000);
 			qht_add_xiuwei(100);
 			qht_add_shengwang(50);
@@ -510,7 +510,7 @@ function qht_award_eight(targetNpcIdx)
 	--¹«¸æ
 	local strMsg = ""
 	if gf_GetTeamSize() > 2 then
-		strMsg = format("Chóc mõng %s dÉn d¾t ®éi ng?t¹i Thiªn TÇm Th¸p ®¸nh b¹i Hoµng Kim boss %s", GetCaptainName(), szNpcName);
+		strMsg = format("Chóc mõng %s dÉn d¾t ®éi ngò t¹i Thiªn TÇm Th¸p ®¸nh b¹i Hoµng Kim boss %s", GetCaptainName(), szNpcName);
 	else
 		strMsg = format("Chóc mõng %s t¹i Thiªn TÇm Th¸p ®¸nh b¹i Hoµng Kim boss %s", GetName(), szNpcName);
 	end
@@ -720,7 +720,7 @@ function qht_award_jinwenhufu(nNum, nProbability, nBaseMax, bBind)
 		return 0;
 	end
 	if random(nBaseMax) <= nProbability then
-		gf_AddItemEx2({2,1,30438,nNum,(bBind or 4)}, "Kim H?ph?, "C«ng chiÕn Thiªn TÇm Th¸p", "Kim H?ph?, 0, 1);
+		gf_AddItemEx2({2,1,30438,nNum,(bBind or 4)}, "Kim Hæ phï", "C«ng chiÕn Thiªn TÇm Th¸p", "Kim Hæ phï", 0, 1);
 		QHT_TASK_GROUP:SetTask(QHT_TASK_GROUP.NumJW,QHT_TASK_GROUP:GetTask(QHT_TASK_GROUP.NumJW) + nNum);
 		AddRuntimeStat(22, 1, 0, nNum or 1);
 	end 
@@ -807,9 +807,9 @@ function qht_throwdice_callback(dwID)
 		end
 	end
 	if bAllGiveUp == 1 then
-		Msg2Player("TÊt c?ng­êi ch¬i ®· b?cuéc")
+		Msg2Player("TÊt c¶ ng­êi ch¬i ®· bá cuéc")
 	elseif nSize ~= getn(t) then
-		Msg2Player("Nh÷ng ng­êi ch¬i kh¸c ®· v­ît qu?thêi gian, xem nh?b?cuéc")
+		Msg2Player("Nh÷ng ng­êi ch¬i kh¸c ®· v­ît qu¸ thêi gian, xem nh­ bá cuéc")
 	end
 end
 
@@ -825,26 +825,26 @@ function qht_award_isnotice(sItemName)
 		"B¸o Tr¾ng B¶o B¶o",
 		"B¸o §en B¶o B¶o",
 		"B¸o Vµng B¶o B¶o",
-		"T?NghÜa LÖnh",
+		"Tô NghÜa LÖnh",
 		"Th«ng Thiªn LÖnh",
-		"ChiÕn Hµi Kim Ch?ng?hµnh",
-		"ChiÕn Hµi Méc Ch?ng?hµnh",
-		"ChiÕn Hµi Thñy Ch?ng?hµnh",
-		"ChiÕn Hµi Háa Ch?ng?hµnh",
-		"ChiÕn Hµi Th?Ch?ng?hµnh",
-		"ChiÕn Hµi ¢m Ch?ng?hµnh",
-		"Huy Ch­¬ng Kim Ch?ng?hµnh",
-		"Huy Ch­¬ng Méc Ch?ng?hµnh",
-		"Huy Ch­¬ng Thñy Ch?ng?hµnh",
-		"Huy Ch­¬ng Háa Ch?ng?hµnh",
-		"Huy Ch­¬ng Th?Ch?ng?hµnh",
-		"Huy Ch­¬ng ¢m Ch?ng?hµnh", 
+		"ChiÕn Hµi Kim ChÕ ngò hµnh",
+		"ChiÕn Hµi Méc ChÕ ngò hµnh",
+		"ChiÕn Hµi Thñy ChÕ ngò hµnh",
+		"ChiÕn Hµi Háa ChÕ ngò hµnh",
+		"ChiÕn Hµi Thæ ChÕ ngò hµnh",
+		"ChiÕn Hµi ¢m ChÕ ngò hµnh",
+		"Huy Ch­¬ng Kim ChÕ ngò hµnh",
+		"Huy Ch­¬ng Méc ChÕ ngò hµnh",
+		"Huy Ch­¬ng Thñy ChÕ ngò hµnh",
+		"Huy Ch­¬ng Háa ChÕ ngò hµnh",
+		"Huy Ch­¬ng Thæ ChÕ ngò hµnh",
+		"Huy Ch­¬ng ¢m ChÕ ngò hµnh", 
 		"HuyÕtTrÝchTh¹ch Lv4",
 		"NguyÖtB¹chTh¹ch Lv4",
-		"H?Ph¸ch Th¹ch CÊp 4",
+		"Hæ Ph¸ch Th¹ch CÊp 4",
 		"H¾c DiÖu Th¹ch CÊp 4",
 		"Bao Thiªn Kiªu LÖnh Lín",
-		"Bao Thiªn Kiªu LÖnh Nh?,
+		"Bao Thiªn Kiªu LÖnh Nhá",
 	};
 	for i=1, getn(tbItem) do
 		if tbItem[i] == sItemName then
@@ -1105,7 +1105,7 @@ function qht_create_boss(tbBoss,tPoint)
 	local npcIndex = CreateNpc(tbTemp[nRandIndex][1], tbTemp[nRandIndex][2], tPoint[1], tPoint[2], tPoint[3]);
 	if tbBoss[nRand][1] == 5 then
 		SetMapTaskTemp(6023,QHT_MAPTEMPTASK_GOLDBOSS_MAX, GetMapTaskTemp(6023, QHT_MAPTEMPTASK_GOLDBOSS_MAX) + 1);
-		Msg2Global(format("Boss Hoµng Kim %s ®· xuÊt hiÖn, c¸c v?®¹i hiÖp mau ®i Thiªn TÇm Th¸p tÇng 3 khiªu chiÕn.",tbTemp[nRandIndex][2]));
+		Msg2Global(format("Boss Hoµng Kim %s ®· xuÊt hiÖn, c¸c vÞ ®¹i hiÖp mau ®i Thiªn TÇm Th¸p tÇng 3 khiªu chiÕn.",tbTemp[nRandIndex][2]));
 	end
 	SetNpcDeathScript(npcIndex, tbBoss[nRand][4]);
 	return npcIndex;
@@ -1128,10 +1128,10 @@ end
 function qht_ds_goto_check()
 	local oldPlayerIndex = PlayerIndex;
 	if GetName() ~= gf_GetCaptainName() then
-		Talk(1,"","Ch?c?®éi tr­ëng míi c?th?tiÕn hµnh thao th¸c nµy");
+		Talk(1,"","ChØ cã ®éi tr­ëng míi cã thÓ tiÕn hµnh thao th¸c nµy");
 		return 0;
 	end
-	local msg = "Ng­êi ch¬i kh«ng c??b¶n ®å nµy: \n";
+	local msg = "Ng­êi ch¬i kh«ng cã ë b¶n ®å nµy: \n";
 	local nNum = 0;
 	local nMapID_Cap = GetWorldPos();
 	for i = 1, gf_GetTeamSize() do
@@ -1148,7 +1148,7 @@ function qht_ds_goto_check()
 		return 0;
 	end
 	
-	local msg = "Ng­êi ch¬i d­íi ®©y kh«ng ®ñ ®iÒu kiÖn k?n¨ng v?cÊp ®é:\n"
+	local msg = "Ng­êi ch¬i d­íi ®©y kh«ng ®ñ ®iÒu kiÖn kü n¨ng vµ cÊp ®é:\n"
 	local nNum = 0;
 	for i = 1, gf_GetTeamSize() do
 		PlayerIndex = gf_GetTeamMember(i);
@@ -1287,11 +1287,11 @@ function qht_ds_goto_qht(nNum)
 end
 
 function qht_award_wuxing_foot_3()
-	gf_EventGiveRandAward(QHT_AWARD_FOOT_3, gf_SumRandBase(QHT_AWARD_FOOT_3), 1, "C«ng chiÕn Thiªn TÇm Th¸p", "Giµy Ng?Hµnh cÊp 3")
+	gf_EventGiveRandAward(QHT_AWARD_FOOT_3, gf_SumRandBase(QHT_AWARD_FOOT_3), 1, "C«ng chiÕn Thiªn TÇm Th¸p", "Giµy Ngò Hµnh cÊp 3")
 end
 
 function qht_award_wuxing_badge_3()
-	gf_EventGiveRandAward(QHT_AWARD_BADGE_3, gf_SumRandBase(QHT_AWARD_BADGE_3), 1, "C«ng chiÕn Thiªn TÇm Th¸p", "Huy Ch­¬ng Ng?Hµnh cÊp 3")
+	gf_EventGiveRandAward(QHT_AWARD_BADGE_3, gf_SumRandBase(QHT_AWARD_BADGE_3), 1, "C«ng chiÕn Thiªn TÇm Th¸p", "Huy Ch­¬ng Ngò Hµnh cÊp 3")
 end
 
 function qht_award_tong_fight_flag()
@@ -1301,7 +1301,7 @@ function qht_award_tong_fight_flag()
 	qht_add_shengwang(200);
 	qht_add_shimen(300);
 	qht_award_jinwenhufu(1,100,100);
-	gf_WriteLogEx("C«ng chiÕn Thiªn TÇm Th¸p", "Bang Héi ChiÕn K?);
+	gf_WriteLogEx("C«ng chiÕn Thiªn TÇm Th¸p", "Bang Héi ChiÕn Kú");
 end
 
 function qht_award_tong_fight_flag_tiexue()
@@ -1311,7 +1311,7 @@ function qht_award_tong_fight_flag_tiexue()
 	qht_add_shengwang(300);
 	qht_add_shimen(400);
 	qht_award_jinwenhufu(3,100,100);
-	gf_WriteLogEx("C«ng chiÕn Thiªn TÇm Th¸p", "ThiÕt HuyÕt Bang Héi ChiÕn K?);
+	gf_WriteLogEx("C«ng chiÕn Thiªn TÇm Th¸p", "ThiÕt HuyÕt Bang Héi ChiÕn Kú");
 end
 
 function qht_relay_create_gold_boss(nRandSeed)
