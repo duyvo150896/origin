@@ -3061,7 +3061,7 @@ function Get_Book()
 	local szSay = {
 		g_szTitle.."NhÀn L≠u Ph∏i Ch©n Quy”n vµ Quy’t Y’u!",
 		"Mat tich phu/mtphu",
-		"NhÀn Ch©n Quy”n/Get_Book_ZhenJuan",
+		"NhÀn Ch©n Quy”n/Get_Book_ZhenJuan_caocap",
 		"NhÀn Quy’t Y’u/Get_Book_JueYao",
 		"Th®ng c p mÀt tﬁch Æ∑ trang bﬁ/Get_Book_Update",
 		"Ra kh·i/nothing",
@@ -3144,7 +3144,93 @@ function Get_NL_MT()
 	PlaySound("\\sound\\sound_i016.wav");
 	SetCurrentNpcSFX(PIdx2NpcIdx(),905,0,0)
 end
-
+function Get_Book_ZhenJuan_caocap()
+	if gf_Judge_Room_Weight(7, 1, g_szTitle) ~= 1 then
+		return 0;
+	end
+	local nRoute	= GetPlayerRoute();
+--	AddItem(0,107,30019,10);
+	if nRoute == 2 then
+		AddItem(0,107,30018-17,10)
+	end
+	
+	if nRoute == 3 then
+		AddItem(0,107,30020-17,10)
+	end
+	
+	if nRoute == 4 then
+		AddItem(0,107,30019-17,10)
+	end
+	
+	if nRoute == 6 then
+		AddItem(0,107,30021-17,10)
+	end
+	
+	if nRoute == 8 then
+		AddItem(0,107,30022-17,10)
+	end
+	
+	if nRoute == 9 then
+		AddItem(0,107,30023-17,10)
+	end
+	
+	if nRoute == 11 then
+		AddItem(0,107,30024-17,10)
+	end
+	
+	if nRoute == 12 then
+		AddItem(0,107,30025-17,10)
+	end
+	
+	if nRoute == 14 then
+		AddItem(0,107,30026-17,10)
+	end
+	
+	if nRoute == 15 then
+		AddItem(0,107,30027-17,10)
+	end
+	
+	if nRoute == 17 then
+		AddItem(0,107,30028-17,10)
+	end
+	
+	if nRoute == 18 then
+		AddItem(0,107,30029-17,10)
+	end
+	
+	if nRoute == 20 then
+		AddItem(0,107,30030-17,10)
+	end
+	
+	if nRoute == 21 then
+		AddItem(0,107,30031-17,10)
+	end
+	if nRoute == 25 then--ŒËœ…
+		AddItem(0,107,30038,5,1,-1,-1,-1,-1,-1,-1,-1,0)
+	  --AddItem(0, 107, 222-20,5)
+	end
+	if nRoute == 26 then--ŒËœ…
+		AddItem(0,107,30039,5,1,-1,-1,-1,-1,-1,-1,-1,0)
+	 -- AddItem(0, 107, 222-20,5)
+	end
+	if nRoute == 27 then--ŒËœ…
+		AddItem(0,107,30040,5,1,-1,-1,-1,-1,-1,-1,-1,0)
+	  --AddItem(0, 107, 222-20,5)
+	end
+	if nRoute == 23 then--¿•¢ÿÃÏ ¶
+		AddItem(0,107,30032-17,10)
+	end
+	
+	if nRoute == 29 then--ŒËœ…
+		AddItem(0,107,30033-17,10)
+	end
+	
+	if nRoute == 30 then--¡È≈Æ
+		AddItem(0,107,30034-17,10)
+	end
+	
+	-- gf_AddItemEx({0, 112, 158,	1, 4}, "L®ng Ba Vi BÈ toµn tÀp");
+end
 function Get_Book_ZhenJuan()
 	if gf_Judge_Room_Weight(7, 1, g_szTitle) ~= 1 then
 		return 0;
