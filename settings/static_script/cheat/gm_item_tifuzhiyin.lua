@@ -39,7 +39,7 @@ function OnUse(nItem)
 	if nRoute <= 0 then
 		tSay = {
 			"Gia nhËp m«n ph¸i/JoinRoute_UpdateLevel",
-			"L¨ng ba vi bé cho VMP/langbavibott",
+			-- "L¨ng ba vi bé cho VMP/langbavibott",
 			"Th¨ng cÊp mËt tÞch ®· trang bÞ/Get_Book_Update",
 		}
 	else
@@ -51,7 +51,7 @@ function OnUse(nItem)
 			"Cßn l¹i/tieudung_orther",
             -- "Thiªn kiªu lÖnh /nhantkl",
 			"HiÖu øng nh©n vËt/#char_eff(10)",
-			"Hç trî ®¼ng cÊp cho t©n thñ Level 99/hotrogmer1st",
+			-- "Hç trî ®¼ng cÊp cho t©n thñ Level 99/hotrogmer1st",
             -- "NhËn Bé DiÖu D­¬ng +7/Get_YaoYang_15",
 			-- "NgÉu nhiªn nhËn ®­îc Trang BÞ Kim Xµ Lv1 +10/Get_JinShe_1",
 			-- format("%s/Process_Equip_LingTu", "NhËn Linh §å +10"),
@@ -3237,11 +3237,11 @@ function Get_Book_ZhenJuan()
 		AddItem(0,107,30034,10)
 	end
 	
-	gf_AddItemEx({0, 112, 158,	1, 4}, "L¨ng Ba Vi Bé toµn tËp");
+	-- gf_AddItemEx({0, 112, 158,	1, 4}, "L¨ng Ba Vi Bé toµn tËp");
 end
 
 function langbavibott()
-	gf_AddItemEx({0, 112, 158,	1, 4}, "L¨ng Ba Vi Bé toµn tËp");
+	-- gf_AddItemEx({0, 112, 158,	1, 4}, "L¨ng Ba Vi Bé toµn tËp");
 end
 function Get_Book_JueYao()
 	local tJue ={
