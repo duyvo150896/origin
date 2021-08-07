@@ -79,7 +79,7 @@ function OnUse(nItem)
 		end
 		if 8 == nRoute then
 			tinsert(tSay, "NhËn X¸ Lîi Kim §¬n/Give_Dandan")
-			-- tinsert(tSay, "Nhan §å Buff NMK/DoBuffNMK")
+			tinsert(tSay, "Nhan §å Buff NMK/DoBuffNMK_HTTC")
 			-- tinsert(tSay, "Nhan §å Buff NMK_test (Kh«ng cã khi Open)/DoBuffNMK_test")
 		end		
 		if 17 == nRoute then
@@ -5043,13 +5043,13 @@ function DoBuffNMK_HTTC()
 	-- Say(g_szTitle.."------------------", getn(tSay), tSay);
 	local nBody 	= GetBody();
 	if nBody == 3 then
-		AddItem(0,110,516,1,1,7,292,-1,0);
-		AddItem(0,109,516,1,1,7,292,-1,0);
-		AddItem(0,108,516,1,1,7,398,-1,0);
+		AddItem(0,110,516,1,1,3,292,-1,0);
+		AddItem(0,109,516,1,1,3,292,-1,0);
+		AddItem(0,108,516,1,1,3,292,-1,0);
 	else
-		AddItem(0,110,517,1,1,7,292,-1,0);
-		AddItem(0,109,517,1,1,7,292,-1,0);
-		AddItem(0,108,517,1,1,7,398,-1,0);
+		AddItem(0,110,517,1,1,3,292,-1,0);
+		AddItem(0,109,517,1,1,3,292,-1,0);
+		AddItem(0,108,517,1,1,3,292,-1,0);
 	end
 end
 function DoBuffNMK_test()
