@@ -117,7 +117,7 @@ function tieudung()
  		-- "NhËn Ên chuyÓn sinh/Get_An",
 		"Ma Dao thach 1/madao1",
 		"NhËn Cöu ChuyÓn Håi Hån §an/cuuchuyen",
-		"NhËn M¸u /receiveTiLi",
+		-- "NhËn M¸u /receiveTiLi",
 		"NhËn HKDNP/hkdnp",
 		"NhËn Lak/Get_Energy_5x",
 		"NhËn B¸nh Ng«/banhngo",
@@ -130,7 +130,7 @@ end
 function tieudung_orther()
 	local tSay = {
 		g_szTitle.."Lùa chän",
-		"Nhan Bua Cuong Hoa/NhanBua",
+		-- "Nhan Bua Cuong Hoa/NhanBua",
           -- "N©ng cao ®¼ng cÊp chuyÓn sinh nh©n vËt/player_reborn",
 			-- "Thay ®æi h­íng Phôc Sinh/change_PhucSinh",
 			-- "Sinh ThÇn Cang gäi Boss bang héi/sinhthancang",
@@ -142,7 +142,7 @@ function tieudung_orther()
 			"Thao t¸c Vò Khİ/PS_VK",
 			-- "Thao t¸c kinh m¹ch /GetJingMai",
 			"Ngo¹i Trang C«ng Thµnh/ngoaitrang",			
-			"Phôc sinh thó c­ng/Pet_OP",
+			-- "Phôc sinh thó c­ng/Pet_OP",
 		-- "NhËn ChiÕn T­îng/chientuong",
 		-- "TTBR/thantaibaoruong",
 		-- "Nhan tmkl/tmkl",
