@@ -144,7 +144,7 @@ function tieudung_orther()
 			"Ngo¹i Trang C«ng Thµnh/ngoaitrang",			
 			"Phôc sinh thó c­ng/Pet_OP",
 		-- "NhËn ChiÕn T­îng/chientuong",
-		"TTBR/thantaibaoruong",
+		-- "TTBR/thantaibaoruong",
 		-- "Nhan tmkl/tmkl",
 		"Kü n¨ng sèng/Life_Skill",
 		-- "NhËn Thó Míi/nhanthucuoimoi",
@@ -1203,7 +1203,7 @@ function Pet_OP()
 	-- end
 	-- tinsert(tSay, format("%s/getPetEgg", "NhËn Trøng Thó C­ng"))
 	-- tinsert(tSay, format("%s/getLingLi", "NhËn ®iÓm linh lùc"))
-	tinsert(tSay, format("%s/getbook5", "NhËn Book 5"))
+	-- tinsert(tSay, format("%s/getbook5", "NhËn Book 5"))
 -- --	tinsert(tSay, format("%s/getbook6", "NhËn Book 6"))
 	-- tinsert(tSay, format("%s/getPet", "NhËn Pet 6"))
 	if GetSkillLevel(30149) == 0 then
