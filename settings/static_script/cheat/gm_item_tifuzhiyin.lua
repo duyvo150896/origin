@@ -49,12 +49,12 @@ function OnUse(nItem)
             "Trang BÞ/Get_Mored",
             "Tiªu dïng/tieudung",
 			"Cßn l¹i/tieudung_orther",
-            "Thiªn kiªu lÖnh /nhantkl",
+            -- "Thiªn kiªu lÖnh /nhantkl",
 			"HiÖu øng nh©n vËt/#char_eff(10)",
 			"Hç trî ®¼ng cÊp cho t©n thñ Level 99/hotrogmer1st",
-            "NhËn Bé DiÖu D­¬ng +7/Get_YaoYang_15",
+            -- "NhËn Bé DiÖu D­¬ng +7/Get_YaoYang_15",
 			-- "NgÉu nhiªn nhËn ®­îc Trang BÞ Kim Xµ Lv1 +10/Get_JinShe_1",
-			format("%s/Process_Equip_LingTu", "NhËn Linh §å +10"),
+			-- format("%s/Process_Equip_LingTu", "NhËn Linh §å +10"),
 			-- format("%s/Process_SanJianTao", "NhËn trang søc ®eo h«ng 6 sao"),
 			-- format("%s/Get_kx7", "NhËn trang søc ®eo h«ng 7 sao"),
 --			format("%s/test", "Test Nhan Event"),
@@ -1067,6 +1067,17 @@ function ngoctoc()
 	
 	AddItem(0,102,8846, 1,1,2,841,3,107,5,89,-1,0);
 	AddItem(0,102,8847, 1,1,2,841,3,107,5,89,-1,0);
+	
+end
+
+function hhvd_5()
+	-- AddItem(0,102,9,2,1,3,24,4,14,5,39,-1,0);
+	
+	-- AddItem(0,102,8846, 1,1,2,389,-1,-1,2,564,-1,0);
+	-- AddItem(0,102,8847, 1,1,2,389,-1,-1,2,564,-1,0);
+	
+	AddItem(0,102,8846, 1,1,-1,-1,-1,-1,-1,-1,-1,0);
+	AddItem(0,102,8847, 1,1,-1,-1,-1,-1,-1,-1,-1,0);
 	
 end
 
@@ -3666,17 +3677,17 @@ function Get_Mored()
 	local tSay = {
 		-- "NhËn Thiªn H¹ V« Song/thvs",	
 	-- "NhËn HiÖu ChiÕn Tr­êng/hieudothong",
-		"NhËn TT3 LL3 TT4 LL4/ttll3",
+		-- "NhËn TT3 LL3 TT4 LL4/ttll3",
 		 -- "NhËn TT1 LL/ttll1",
-		"NhËn ®­îc Trang BÞ Kim Xµ Lv3 +7 (lo¹i míi)/Get_KX3chonopt_6loai",
+		-- "NhËn ®­îc Trang BÞ Kim Xµ Lv3 +7 (lo¹i míi)/Get_KX3chonopt_6loai",
 		"Vò KhÝ ChÝnh (3 lç)/vukhi_8x",
 		"NhËn Thiªn NghÜa/thienghia_mod3_zin",
-		"NhËn ®­îc Trang BÞ Kim Xµ Lv3 +7 (lo¹i cò)/getkx3",
+		-- "NhËn ®­îc Trang BÞ Kim Xµ Lv3 +7 (lo¹i cò)/getkx3",
 		"NhËn Thiªn Chi tµng KiÕm/tctk",
 		-- "HHVD/huyhoang5",
-		"Ngäc Thiªn NghÜa/thienghia_ngoc",
-		"uÈn Linh cÊp 2/nhanul_2",
-		"Vâ L©m b¸ Chñ/vlbc",
+		-- "Ngäc Thiªn NghÜa/thienghia_ngoc",
+		-- "uÈn Linh cÊp 2/nhanul_2",
+		-- "Vâ L©m b¸ Chñ/vlbc",
 
 		-- "NhËn Vò KhÝ Nguyªn Tö/vknt",
 		-- "NhËn Vò Kh¶m /vkkham",
@@ -3684,18 +3695,19 @@ function Get_Mored()
 		-- "NhËn §å Long §»ng Phông Vò/longdang",
 
 		-- "NhËn Thiªn Chi Viªm §Õ/thienchiviemde",
-		"NhËn Viªm §Õ/viemde",
-		"NhËn Tö Quang Viªm §Õ/tuquangviemde",
+		-- "NhËn Viªm §Õ/viemde",
+		-- "NhËn Tö Quang Viªm §Õ/tuquangviemde",
 		"NhËn ®å buff/dobuffhttc",
 		-- "NhËn tö quang hiªn viªn thÇn binh/hienvienbinh",
 		"NhËn Cöu Thiªn Ngäc/cuuthienngoc",
-    	-- "NhËn B¹ch Kim Viªm §Õ/bkvd",
+    	"NhËn B¹ch Kim Viªm §Õ/bkvd",
 --		"LuyÖn max skill trÊn ph¸i/maxtranphai",
 --		"NhËn Th«ng Thiªn/getTiLi",
 --		"NhËn Thien Chi T­íng Qu©n/thienchituongquan",
 --		"NhËn T­íng Qu©n/tuongquan",
 --		"C¸c Lo¹i Ngäc/ngoctoc",
 --      "C¸c Lo¹i Ngäc/ngocdame",
+		" Ngäc/hhvd_5",
 
 		"§å 3 Lç/do3lo_8x",
 		"QuÎ 8 qu¸i/que8w", 
