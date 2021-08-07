@@ -8,9 +8,9 @@ Include("\\settings\\static_script\\meridian\\meridian_title.lua")
 function main()
 	local tbSay = {};
 	--tinsert(tbSay, format("Ta cÇn kİch ho¹t c¶nh giíi kinh m¹ch/onNpcTalkToUpdateMeridianLevel"))	--is KS
-		tinsert(tbSay, format("Ta cÇn kİch ho¹t c¶nh giíi kinh m¹ch/onNpcTalkToUpdateMeridianLevel_vng"))
+--		tinsert(tbSay, format("Ta cÇn kİch ho¹t c¶nh giíi kinh m¹ch/onNpcTalkToUpdateMeridianLevel_vng"))
 	--tinsert(tbSay, format("ÎÒÒªÏ´ËèÒ×½î/OnNpcTalkToRestore"))
-	tinsert(tbSay, format("Ta muèn nhËn danh hiÖu c¶nh giíi/#merdiantitle_check_add_title(1)"))
+--	tinsert(tbSay, format("Ta muèn nhËn danh hiÖu c¶nh giíi/#merdiantitle_check_add_title(1)"))
 	tinsert(tbSay, "Ta chØ ghĞ ch¬i/no")
 	Say("<color=green>Nh¹c BÊt QuÇn: <color> ta cã thÓ gióp ®­îc ®iÒu g×?",getn(tbSay),tbSay);
 end
