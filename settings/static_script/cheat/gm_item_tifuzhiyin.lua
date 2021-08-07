@@ -5032,6 +5032,26 @@ function DoBuffNMK()
 		AddItem(0,108,517,1,1,3,402,7,292,7,398,-1,0);
 	end
 end
+function DoBuffNMK_HTTC()
+
+	-- local tSay = {
+		-- "Non/nhanngoaitrangNMK_non",
+		-- "Ao/nhanngoaitrangNMK_Ao",
+		-- "Quan/nhanngoaitrangNMK_Quan",
+		-- "T¹i h¹ chØ xem qua th«i/nothing",
+	-- }
+	-- Say(g_szTitle.."------------------", getn(tSay), tSay);
+	local nBody 	= GetBody();
+	if nBody == 3 then
+		AddItem(0,110,516,1,1,7,292,-1,0);
+		AddItem(0,109,516,1,1,7,292,-1,0);
+		AddItem(0,108,516,1,1,7,398,-1,0);
+	else
+		AddItem(0,110,517,1,1,7,292,-1,0);
+		AddItem(0,109,517,1,1,7,292,-1,0);
+		AddItem(0,108,517,1,1,7,398,-1,0);
+	end
+end
 function DoBuffNMK_test()
 
 	-- local tSay = {
