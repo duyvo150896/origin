@@ -131,25 +131,25 @@ function tieudung_orther()
 	local tSay = {
 		g_szTitle.."Lùa chän",
 		"Nhan Bua Cuong Hoa/NhanBua",
-          "N©ng cao ®¼ng cÊp chuyÓn sinh nh©n vËt/player_reborn",
-			"Thay ®æi h­íng Phôc Sinh/change_PhucSinh",
-			"Sinh ThÇn Cang gäi Boss bang héi/sinhthancang",
-            "M¶nh b¹ch kim/nhanmbk",
+          -- "N©ng cao ®¼ng cÊp chuyÓn sinh nh©n vËt/player_reborn",
+			-- "Thay ®æi h­íng Phôc Sinh/change_PhucSinh",
+			-- "Sinh ThÇn Cang gäi Boss bang héi/sinhthancang",
+            -- "M¶nh b¹ch kim/nhanmbk",
             "NhËn danh hiÖu/Get_Danh_Hieu2",
             "T¨ng ®iÓm nh©n vËt/Get_Diem_Char",
-            "NhËn C¸c Lo¹i Nguyªn LiÖu/Get_Nguyen_Lieu",
+            -- "NhËn C¸c Lo¹i Nguyªn LiÖu/Get_Nguyen_Lieu",
 			"Thao t¸c bang héi/TongOperation",
 			"Thao t¸c Vò KhÝ/PS_VK",
-			"Thao t¸c kinh m¹ch /GetJingMai",
+			-- "Thao t¸c kinh m¹ch /GetJingMai",
 			"Ngo¹i Trang C«ng Thµnh/ngoaitrang",			
 			"Phôc sinh thó c­ng/Pet_OP",
 		-- "NhËn ChiÕn T­îng/chientuong",
 		"TTBR/thantaibaoruong",
-		"Nhan tmkl/tmkl",
+		-- "Nhan tmkl/tmkl",
 		"Kü n¨ng sèng/Life_Skill",
-		"NhËn Thó Míi/nhanthucuoimoi",
+		-- "NhËn Thó Míi/nhanthucuoimoi",
 		"NhËn Thó C­ìi/thucuoipro",
-		"NhËn C¸nh/nguafake",
+		-- "NhËn C¸nh/nguafake",
 		"R¸c/rac",
 		"\nRa khái/nothing",
 	}
@@ -1761,7 +1761,7 @@ function enter_mp(nRoute)
 	ModifyReputation(20000, 0);			--ÉèÖÃÉùÍû
 	-- PlayerReborn(2, 1);			--6×ª
 	-- gf_SetTaskByte(1538, 1, 5) 			--5×ª
-	SetLevel(85, 0);								--ÉèÖÃµÈ¼¶
+	SetLevel(99, 0);								--ÉèÖÃµÈ¼¶
 	PlaySound("\\sound\\sound_i016.wav");
 	-- -- SetCurrentNpcSFX(PIdx2NpcIdx(),913,0,0)
 	Msg2Player("Thao t¸c thµnh c«ng, h·y ®¨ng nhËp l¹i")
@@ -3681,7 +3681,7 @@ function Get_Mored()
 		 -- "NhËn TT1 LL/ttll1",
 		-- "NhËn ®­îc Trang BÞ Kim Xµ Lv3 +7 (lo¹i míi)/Get_KX3chonopt_6loai",
 		"Vò KhÝ ChÝnh (3 lç)/vukhi_8x",
-		"NhËn Thiªn NghÜa/thienghia_mod3_zin",
+		-- "NhËn Thiªn NghÜa/thienghia_mod3_zin",
 		-- "NhËn ®­îc Trang BÞ Kim Xµ Lv3 +7 (lo¹i cò)/getkx3",
 		"NhËn Thiªn Chi tµng KiÕm/tctk",
 		-- "HHVD/huyhoang5",
@@ -4106,19 +4106,19 @@ function thucuoipro()
 		return 0;
 	end
 	AddItem(0,105,30023,1,1,7,403,7,-1,7,-1,7,0);
-	-- AddItem(0,105,30025,1,1,7,403,7,-1,7,-1,7,0);
-	-- AddItem(0,105,30027,1,1,7,403,7,-1,7,-1,7,0);
-	-- AddItem(0,105,30030,1,1,7,403,7,-1,7,-1,7,0);
-	-- AddItem(0,105,10107,1,1,7,403,7,-1,7,-1,7,0);
-	-- AddItem(0,105,10108,1,1,7,403,7,-1,7,-1,7,0);
-	-- AddItem(0,105,10109,1,1,7,403,7,-1,7,-1,7,0);
-	-- AddItem(0,105,10110,1,1,7,403,7,-1,7,-1,7,0);
-	-- AddItem(0,105,10111,1,1,7,403,7,-1,7,-1,7,0);
-	-- AddItem(0,105,10112,1,1,7,403,7,-1,7,-1,7,0);
-	-- AddItem(0,105,195,1,1,-1,-1,-1,-1,-1,-1);
-	-- AddItem(0,105,194,1,1,-1,-1,-1,-1,-1,-1);
-	-- AddItem(0,105,139,1,1,7,403,-1,-1,-1,-1);
-	-- AddItem(0,105,138,1,1,7,403,-1,-1,-1,-1);
+	AddItem(0,105,30025,1,1,7,403,7,-1,7,-1,7,0);
+	AddItem(0,105,30027,1,1,7,403,7,-1,7,-1,7,0);
+	AddItem(0,105,30030,1,1,7,403,7,-1,7,-1,7,0);
+	AddItem(0,105,10107,1,1,7,403,7,-1,7,-1,7,0);
+	AddItem(0,105,10108,1,1,7,403,7,-1,7,-1,7,0);
+	AddItem(0,105,10109,1,1,7,403,7,-1,7,-1,7,0);
+	AddItem(0,105,10110,1,1,7,403,7,-1,7,-1,7,0);
+	AddItem(0,105,10111,1,1,7,403,7,-1,7,-1,7,0);
+	AddItem(0,105,10112,1,1,7,403,7,-1,7,-1,7,0);
+	AddItem(0,105,195,1,1,-1,-1,-1,-1,-1,-1);
+	AddItem(0,105,194,1,1,-1,-1,-1,-1,-1,-1);
+	AddItem(0,105,139,1,1,7,403,-1,-1,-1,-1);
+	AddItem(0,105,138,1,1,7,403,-1,-1,-1,-1);
 	AddItem(0,105,149,1,1,7,403,-1,-1,-1,-1);
 	AddItem(0,105,148,1,1,7,403,-1,-1,-1,-1);
 	AddItem(0,105,30000,1,1,7,403,-1,-1,-1,-1);
