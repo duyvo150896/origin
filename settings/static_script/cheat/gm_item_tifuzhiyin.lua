@@ -1011,7 +1011,7 @@ function vukhi_8x()
 end
 
 function vukhi_8x_select(id1, id2)
-	iLK = random(103,107)
+	iLK = random(115,120)
 	local level = 0; 
 	AddItem(0,id1,id2,1,1,0,0,0,0,1,-1,1,level,iLK);
 end
