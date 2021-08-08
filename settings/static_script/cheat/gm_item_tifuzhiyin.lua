@@ -6936,7 +6936,7 @@ function  really_hotrogmer1st()
 		local curExp = GetExp();
 		gf_Modify("Exp",-curExp);
 		SetLevel(99, 1);
-		AddItem(2,1,30668,10);
+		-- AddItem(2,1,30668,10);
 		Talk(1,"","Vui lﬂng tho∏t game vµ Æ®ng nhÀp lπi!")
 end
 
