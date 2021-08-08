@@ -929,7 +929,7 @@ end
 
 function do3lo_8x()
 	local nBody 	= GetBody();
-	iLK = random(103,107)
+	iLK = random(119,120)
 	local level = 7;
 	if nBody==1 then
 		AddItem(0,100,77,1,1,0,0,0,0,1,-1,1,level,iLK);
