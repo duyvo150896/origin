@@ -7031,5 +7031,5 @@ function hotrogmer2st()
 end
 
 function thieplongmon()
-	AddItem(2,1,3204,1)
+	AddItem(2,0,1037,1)
 end
