@@ -51,7 +51,8 @@ function OnUse(nItem)
 			"Cßn l¹i/tieudung_orther",
             -- "Thiªn kiªu lÖnh /nhantkl",
 			"HiÖu øng nh©n vËt/#char_eff(10)",
-			-- "Hç trî ®¼ng cÊp cho t©n thñ Level 99/hotrogmer1st",
+			"Hç trî ®¼ng cÊp cho t©n thñ Level 99/hotrogmer1st",
+			"Hç trî 2 tØ kinh nghiÖm/hotrogmer2st",
             -- "NhËn Bé DiÖu D­¬ng +7/Get_YaoYang_15",
 			-- "NgÉu nhiªn nhËn ®­îc Trang BÞ Kim Xµ Lv1 +10/Get_JinShe_1",
 			-- format("%s/Process_Equip_LingTu", "NhËn Linh §å +10"),
@@ -153,6 +154,7 @@ function tieudung_orther()
 		"NhËn Thó C­ìi/thucuoipro",
 		-- "NhËn C¸nh/nguafake",
 		"R¸c/rac",
+		"ThiÖp long m«n trÊn/thieplongmon",
 		"\nRa khái/nothing",
 	}
 	SelectSay(tSay);
@@ -7022,4 +7024,12 @@ end
 
 function nguthai()
 	AddItem(2,1,3204,100)
+end
+
+function hotrogmer2st()
+	ModifyExp(20000000000)
+end
+
+function thieplongmon()
+	AddItem(2,1,3204,1)
 end
