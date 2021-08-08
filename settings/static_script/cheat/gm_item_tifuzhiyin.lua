@@ -139,7 +139,7 @@ function tieudung_orther()
             -- "M¶nh b¹ch kim/nhanmbk",
             -- "NhËn danh hiÖu/Get_Danh_Hieu2",
             "T¨ng ®iÓm nh©n vËt/Get_Diem_Char",
-            -- "NhËn C¸c Lo¹i Nguyªn LiÖu/Get_Nguyen_Lieu",
+            "NhËn C¸c Lo¹i Nguyªn LiÖu/Get_Nguyen_Lieu",
 			"Thao t¸c bang héi/TongOperation",
 			"Thao t¸c Vò Khİ/PS_VK",
 			-- "Thao t¸c kinh m¹ch /GetJingMai",
@@ -3085,7 +3085,7 @@ function Get_Nguyen_Lieu()
 		"NhËn linh th¹ch 4 /lt4",
 		"NhËn linh th¹ch 5 /lt5",
 		"NhËn linh th¹ch 6 /lt6",
-		-- "NhËn lt7 /lt7",
+		"NhËn lt7 /lt7",
 		"Ra khái/nothing",
 	};
 	SelectSay(szSay);
