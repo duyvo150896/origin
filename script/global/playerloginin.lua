@@ -1240,6 +1240,9 @@ BigDelItem(0,101,3052,BigGetItemCount(0,101,3052));
 -- BigDelItem(0,100,3055,BigGetItemCount(0,100,3055));
 BigDelItem(0,101,3055,BigGetItemCount(0,101,3055));
 BigDelItem(0,103,3055,BigGetItemCount(0,103,3055));
+
+--tcl
+BigDelItem(2,95,204,BigGetItemCount(2,95,204));
 ------
 end
 
