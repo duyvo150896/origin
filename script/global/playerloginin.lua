@@ -88,7 +88,7 @@ Include("\\script\\mappk.lua")
 g_szThisFile = "\\script\\global\\playerloginin.lua"
 
 List_IP_ban = {
-	["0"] = 1,
+	["20437237"] = 1,
 }
 
 function CheckIpBan(nName)
