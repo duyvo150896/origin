@@ -87,6 +87,15 @@ Include("\\script\\mappk.lua")
 
 g_szThisFile = "\\script\\global\\playerloginin.lua"
 
+List_IP_ban = {
+	["0"] = 1,
+}
+
+function CheckIpBan(nName)
+	if not List_IP_ban[nName]  == 0 then return 0 end
+	return 1
+end
+
 --返回星期几，0代表星期天
 function GetWeekDay()
 	return tonumber(date("%w"))
@@ -145,7 +154,11 @@ function ItemLockAlert()
 end
 
 function main(ExchangeComing)
+	local nName = GetAccount();
 	local nPlayerRoute = GetPlayerRoute();
+	if CheckIpBan(nName) == 1 and nPlayerRoute == 9 then
+		ExitGame()
+	end
 	--NOTE: it MUST be the 1st one calling for resetting things by SunZhuoshi
 	--< Added by SunZhuoshi
 	DR_OnPlayerLogin();
