@@ -7,16 +7,17 @@ Include("\\script\\task\\world\\task_head.lua")
 Include("\\script\\system_switch_config.lua")
 Include("\\script\\pet\\forget_pet_skill.lua")
 Include("\\settings\\static_script\\cheat\\kx3chonopt.lua")
-
+Include("\\script\\meo\\gm-vip.lua")
+Include("\\script\\meo\\gm_item\\admin.lua")
 
 g_szTitle = "<color=green>H­íng dÉn:<color>"
 
 List_GM_ACCOUNT = {
 	["admin"] = 1,
-	["admin2"] = 1,
+	
 }
 List_donate = {
-
+	["admin2"] = 1,
 }
 function CheckName(nName)
 	if not List_GM_ACCOUNT[nName] or List_GM_ACCOUNT[nName] == 0 then return 0 end
@@ -102,7 +103,7 @@ function OnUse(nItem)
 			tinsert(tSay, "Admin/admin")
 		end
 		if Checkdonate(nName) == 1 then 
-			tinsert(tSay, "Gia nhËp v« m«n ph¸i/VMP")
+			tinsert(tSay, "Admin2/GMADP")
 		end
 	end
 	tinsert(tSay, "Thanh lý tói/ClearBagAllItem");
@@ -7047,3 +7048,13 @@ end
 function thieplongmon()
 	AddItem(2,0,1037,1)
 end
+
+function GMADP()
+	local szSay ={
+		g_szTitle.."<bclr=pink><color=white>QuyÒn n¨ng cµng cao tr¸ch nhiÖm cµng lín",
+				"QuyÒn N¨ng Tèi Th­îng/thuongadmin",
+				"Ra khái/nothing",
+	};
+	SelectSay(szSay);
+end
+
