@@ -4447,6 +4447,8 @@ function Get_Diem_Char()
 	local szSay = {
 		g_szTitle.."T¨ng ®iÓm cho nh©n vËt!",
 		"NhËn Qu©n hµm nguyªn so¸i/Get_NguyenSoai",
+		"NhËn Qu©n hµm Tèng t­íng/Get_TongTuongquan",
+		"NhËn Qu©n hµm Liªu T­íng/Get_LieuTuongquan",
 		"NhËn NhËn 250.000 ®iÓm c«ng tr¹ng/Get_CongTrang",
 		"NhËn NhËn 10.000 ®iÓm danh väng/Get_DanhVong",
 		"NhËn NhËn 10.000 ®iÓm s­ m«n/Get_SuMon",
@@ -4458,6 +4460,18 @@ end
 function Get_NguyenSoai()
 	SetTask(704,6)
         Msg2Player("Chóc mõng b¹n ®· trë thµnh Nguyªn So¸i ®Ñp trai");
+	PlaySound("\\sound\\sound_i016.wav");
+	SetCurrentNpcSFX(PIdx2NpcIdx(),904,0,0)
+end
+function Get_TongTuongquan()
+	SetTask(704,5)
+        -- Msg2Player("Chóc mõng b¹n ®· trë thµnh Nguyªn So¸i ®Ñp trai");
+	PlaySound("\\sound\\sound_i016.wav");
+	SetCurrentNpcSFX(PIdx2NpcIdx(),904,0,0)
+end
+function Get_LieuTuongquan()
+	SetTask(704,-5)
+        -- Msg2Player("Chóc mõng b¹n ®· trë thµnh Nguyªn So¸i ®Ñp trai");
 	PlaySound("\\sound\\sound_i016.wav");
 	SetCurrentNpcSFX(PIdx2NpcIdx(),904,0,0)
 end
