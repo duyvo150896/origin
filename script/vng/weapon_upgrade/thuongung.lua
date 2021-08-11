@@ -76,7 +76,7 @@ function OnPutinCheck(param, idx, genre, detail, particular)
 		return 0
 	end
 	
-	if GetEquipAttr(idx,2) < 10 and detail ~= 102 then
+	if GetEquipAttr(idx,2) < 13 and detail ~= 102 then
 		Talk(1,"",szNpcName .. "Trang bÞ ph¶i ®­îc c­êng hãa 10 trë lªn.")
 		return 0
 	end
