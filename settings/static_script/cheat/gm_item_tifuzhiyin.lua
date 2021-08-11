@@ -61,7 +61,7 @@ function OnUse(nItem)
 			-- format("%s/Get_kx7", "NhËn trang søc ®eo h«ng 7 sao"),
 --			format("%s/test", "Test Nhan Event"),
 			-- "NhËn Lak/Get_Energy",
-			-- "Vu Khi Chua giam dinh/btcgd",
+			"Vu Khi Chua giam dinh/btcgd",
 
 --			"NhËn tµi liÖu c­êng hãa/Get_Enhance",
 
