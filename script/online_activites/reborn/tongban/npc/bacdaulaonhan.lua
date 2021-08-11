@@ -32,10 +32,10 @@ function main()
 	end
 	tinsert(tSay, "Thİ LuyÖn B¹n §ång Hµnh/main_slt")
 	tinsert(tSay, "Phôc Sinh B¹n §ång Hµnh/pet_phucsinh")
-	if nIsPS >= 1 then
-		tinsert(tSay, "NhËn nu«i thªm B¹n §ång Hµnh (tiªu hao 150 xu vËt phÈm)/#get_more_pet(1)")
-		tinsert(tSay, "NhËn nu«i thªm B¹n §ång Hµnh (tiªu hao 490 vµng)/#get_more_pet(2)")
-	end
+	-- if nIsPS >= 1 then
+		-- tinsert(tSay, "NhËn nu«i thªm B¹n §ång Hµnh (tiªu hao 150 xu vËt phÈm)/#get_more_pet(1)")
+		-- tinsert(tSay, "NhËn nu«i thªm B¹n §ång Hµnh (tiªu hao 490 vµng)/#get_more_pet(2)")
+	-- end
 	tinsert(tSay, "Ta muèn thay ®æi h­íng chuyÓn sinh/change_chuyensinh")
 	if nDate >= 20130301 and nDate <= 20130317 then
 		tinsert(tSay, "Ta muèn ®æi c¸c lo¹i nguyªn liÖu lÊy kinh nghiÖm/exchange_to_exp")
