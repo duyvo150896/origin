@@ -864,14 +864,14 @@ function trans_talk_26()
 	local nSmallSeed = gf_GetTaskByte(TRANSLIFE_TASK_34_FLAG,TRANSLIFE_BYTE_TASK3) * 10 + gf_GetTaskByte(TRANSLIFE_TASK_34,TRANSLIFE_BYTE_TASK3) 
 	local nBigSeed = gf_GetTaskByte(TRANSLIFE_TASK_34_FLAG,TRANSLIFE_BYTE_TASK4) * 10 + gf_GetTaskByte(TRANSLIFE_TASK_34,TRANSLIFE_BYTE_TASK4) 
 	
-	if nResWar == 80 and nSeed == 480 and nSmallSeed == 320 and nBigSeed == 160 then
+	-- if nResWar == 80 and nSeed == 480 and nSmallSeed == 320 and nBigSeed == 160 then
 		SetTask(TRANSLIFE_TASK_34, 0)
 		SetTask(TRANSLIFE_TASK_34_FLAG, 0)
 		SetTaskTrans()
 		Talk(3,"trans_talk_27",szNpcName.."Thö th¸ch khã vËy ng­¬i còng cã thÓ hoµn thµnh sao?",szNpcName.."...",szNpcName.."§­îc, h·y thùc hiÖn thö th¸ch cuèi cïng cña ta!")
-	else
-		Talk(1,"",format(szNpcName.."Sè lÇn hoµn thµnh nhiÖm vô:\nHoµn thµnh Tèng Liªu Tµi Nguyªn ChiÕn: <color=yellow>%s/80 lÇn<color>\nTrång thµnh c«ng H¹t Gièng: <color=yellow>%s/480 lÇn<color>\nTrång thµnh c«ng B¸t Nh· Nhá: <color=yellow>%s/320 lÇn<color>\nTrång thµnh c«ng B¸t Nh· Lín: <color=yellow>%s/160 lÇn<color>",nResWar,nSeed,nSmallSeed,nBigSeed))
-	end
+	-- else
+		-- Talk(1,"",format(szNpcName.."Sè lÇn hoµn thµnh nhiÖm vô:\nHoµn thµnh Tèng Liªu Tµi Nguyªn ChiÕn: <color=yellow>%s/80 lÇn<color>\nTrång thµnh c«ng H¹t Gièng: <color=yellow>%s/480 lÇn<color>\nTrång thµnh c«ng B¸t Nh· Nhá: <color=yellow>%s/320 lÇn<color>\nTrång thµnh c«ng B¸t Nh· Lín: <color=yellow>%s/160 lÇn<color>",nResWar,nSeed,nSmallSeed,nBigSeed))
+	-- end
 end
 
 
