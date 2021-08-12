@@ -8,7 +8,7 @@ Include("\\script\\vng\\lib\\vnglib_award.lua");
 Include("\\script\\vng\\lib\\vnglib_function.lua");
 
 TOP_START_DATE = 20140725
-TOP_END_DATE  = 20140912
+TOP_END_DATE  = 20210912
 TSK_TOP_TRANSLIFE1 = 1
 TSK_TOP_HORNOR = 2
 TSK_TOP_1MIL_HORNOR = 3
