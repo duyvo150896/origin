@@ -106,7 +106,7 @@ function main()
 	Init_pet_fighting() -- Pet vs pet
 	Add_PetNpc() -- Bæc ß»u L∑o Nh©n
 --	if GetGlbValue(GLB_TSK_SERVER_ID) == 58 then
---		Add_HoangHuynh()  -- NPC dua top Hoang Ung
+		Add_HoangHuynh()  -- NPC dua top Hoang Ung
 --	end
 	Add_GoldenCard_Manager(); -- B∏n code HKLB ingame
 	Add_XaPhu() -- Thuy“n gia
