@@ -149,7 +149,7 @@ function tieudung_orther()
 			-- "Phôc sinh thó c­ng/Pet_OP",
 		-- "NhËn ChiÕn T­îng/chientuong",
 		-- "TTBR/thantaibaoruong",
-		-- "Nhan tmkl/tmkl",
+		"Nhan tmkl/tmkl",
 		"Kü n¨ng sèng/Life_Skill",
 		-- "NhËn Thó Míi/nhanthucuoimoi",
 		"NhËn Thó C­ìi/thucuoipro",
