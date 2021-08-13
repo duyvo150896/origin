@@ -79,6 +79,10 @@ function OnUse(goods_index)
 		Talk(1,"end_dialog","N¬i ®©y kh«ng ®­îc sö dông vËt phÈm nµy!")
 		return
 	end
+	if MapID ~= 202 then
+		Talk(1,"end_dialog","ChØ gäi ®­îc ë hµnh hoa th«n!")
+		return
+	end
 	local goods_id = GetItemParticular(goods_index) 
 	local boss_seq = 0
 	if goods_id == 1014 then
