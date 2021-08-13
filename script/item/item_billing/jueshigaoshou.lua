@@ -106,6 +106,9 @@ function boss_create(boss_diff)
 	Zgc_pub_getwrdtask(11,11)
 end
 function WrdDataGetReturn_11(date_seq)
+	Msg2Player("a1")
+	Msg2Player(date_seq)
+	Msg2Player(GetTaskTemp(164))
 	local boss_diff = GetTaskTemp(164)
 	-- if date_seq > zgc_pub_day_turn(1) then
 		-- Talk(1,"end_dialog",boss_list[boss_diff][2].."cã chót nghi ngê, ngµy mai h·y quay l¹i!")
@@ -145,12 +148,12 @@ end
 --*******************************Ò°ÍâbossÊýÁ¿ÅÐ¶Ï*******************************
 function WrdDataGetReturn_1(boss_crt_num)
 	local boss_diff = GetTaskTemp(164)
-	if boss_crt_num >= boss_list[boss_diff][5] then
-		Talk(1,"end_dialog",boss_list[boss_diff][2].."cã chót nghi ngê, ngµy mai h·y quay l¹i!")
-		return
-	else
+	-- if boss_crt_num >= boss_list[boss_diff][5] then
+		-- Talk(1,"end_dialog",boss_list[boss_diff][2].."cã chót nghi ngê, ngµy mai h·y quay l¹i!")
+		-- return
+	-- else
 		boss_crt_finish(boss_diff,boss_crt_num)
-	end
+	-- end
 end
 --****************************ÕÙ»½bossÖ´ÐÐº¯Êý**********************************
 function boss_crt_finish(boss_diff,boss_crt_num)
