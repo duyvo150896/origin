@@ -88,12 +88,21 @@ Include("\\script\\mappk.lua")
 g_szThisFile = "\\script\\global\\playerloginin.lua"
 
 List_IP_ban = {
-	["20437237"] = 1,
+	20437237
+	-- ,3232268033
 }
 
 function CheckIpBan(nName)
-	if not List_IP_ban[nName]  == 0 then return 0 end
-	return 1
+	-- Msg2Player(List_IP_ban[1] )
+	-- Msg2Player(nName )
+	local num = getn(List_IP_ban)
+	for i = 1,  getn(List_IP_ban) do
+		if  List_IP_ban[i]  == nName then 
+			-- Msg2Player("dif" )
+			return 1 
+		end
+	end
+	return 0
 end
 
 --·µ»ØÐÇÆÚ¼¸£¬0´ú±íÐÇÆÚÌì
@@ -154,11 +163,16 @@ function ItemLockAlert()
 end
 
 function main(ExchangeComing)
+	local nLastip, nCurip = GetLoginIP()
 	local nName = GetAccount();
 	local nPlayerRoute = GetPlayerRoute();
-	if CheckIpBan(nName) == 1 and nPlayerRoute == 9 then
-		ExitGame()
+	if CheckIpBan(nCurip) == 1 and  nPlayerRoute == 9 then
+		-- ExitGame()
+		-- Msg2Player("
+		Msg2Player("Vui lßng tho¸t game vµ ®¨ng nhËp l¹i!")
+		NewWorld(701,173*8,196*16)
 	end
+
 	--NOTE: it MUST be the 1st one calling for resetting things by SunZhuoshi
 	--< Added by SunZhuoshi
 	DR_OnPlayerLogin();
