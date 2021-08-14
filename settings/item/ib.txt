@@ -3,8 +3,8 @@ Sort	Page	X	Y	Description	Information	GiveItem1Type	GiveItem1Genre	GiveItem1Deta
 1	1	1	2	Tói Tiªu Dao Ngäc	<color=Gray>100 Xu<enter><color=Gold>2147483647 Xu	6	2	1	30604	1	10				2147483647	30	
 1	1	1	3	Tói H¹t Gièng	<color=Gray>40 Xu<enter><color=Gold>40 Xu	6	2	1	30087	1	10				40	30	
 1	1	1	4	Hßa ThÞ BÝch	<color=Gray>1099 Xu<enter><color=Gold>2147483647 Xu	6	2	1	1001	1	10				2147483647	7	
-1	1	2	1	Hoµng Kim §¹i Ng©n PhiÕu	<color=Gray>1000 Xu<enter><color=Gold>1000 Xu	6	2	1	30490	1	10				1000	30	
-1	1	2	2	§¹i ng©n phiÕu	<color=Gray>100 Xu<enter><color=Gold>100 Xu	6	2	1	199	1	10				100	30	
+1	1	2	1	Hoµng Kim §¹i Ng©n PhiÕu	<color=Gray>1000 Xu<enter><color=Gold>2147483647 Xu	6	2	1	30490	1	10				2147483647	30	
+1	1	2	2	§¹i ng©n phiÕu	<color=Gray>100 Xu<enter><color=Gold>2147483647 Xu	6	2	1	199	1	10				2147483647	30	
 1	1	2	3	C©y B¸t Nh· lín	<color=White>30 Xu<enter><color=Gold>15 Xu	6	2	0	398	1	10				15	30	
 1	1	2	4	Bµn Long BÝch	<color=Gray>32 Xu<enter><color=Gold>1 Xu	6	2	1	1000	1	10				1	7	
 1	1	3	1	Bao Thiªn Kiªu LÖnh Lín	<color=Gray>3000 Xu<enter><color=Gold>2147483647 Xu	6	2	95	2087	1	10				2147483647	30	
@@ -12,7 +12,7 @@ Sort	Page	X	Y	Description	Information	GiveItem1Type	GiveItem1Genre	GiveItem1Deta
 1	1	3	3	C©y B¸t Nh· nhá	<color=White>10 Xu<enter><color=Gold>5 Xu	6	2	0	504	1	10				5	30	
 1	1	3	4	ThÎ Th¸ng	<color=Gray>400 Xu<enter><color=Gold>2147483647 Xu	6	2	1	30740	1	10				2147483647	7	
 1	2	1	1	ThiÕt Tinh CÊp 3	<color=Gray>30 Xu<enter><color=Gold>10 Xu	6	2	1	30535	1	10				10	15	
-1	2	1	2	N÷ Oa B¶o H¹p	<color=Gray>2 Xu<enter><color=Gold>2147483647 Xu	6	2	1	30154	1	10				2147483647	30	
+1	2	1	2	N÷ Oa B¶o H¹p	<color=Gray>2 Xu<enter><color=Gold>10 Xu	6	2	1	30154	1	10				10	30	
 1	2	1	3	Ng«i Sao May M¾n	<color=Gray>50 Xu<enter><color=Gold>2147483647 Xu	6	2	1	30191	1	10				2147483647	30	
 1	2	1	4	BÝ Ng©n To¶n	<color=Gray>120 Xu<enter><color=Gold>2147483647 Xu	6	2	1	30538	1	10				2147483647	15	
 1	2	2	1	BÝ Ng©n Chïy	<color=Gray>180 Xu<enter><color=Gold>2147483647 Xu	6	2	1	30539	1	10				2147483647	15	
