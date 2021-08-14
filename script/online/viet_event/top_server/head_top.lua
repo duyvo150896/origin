@@ -19,9 +19,9 @@ szLOGSERVERNAME = "NGOA LONG"
 
 -- Qui ®Þnh gia trÞ ®iÓm danh väng , s­ m«n , qu©n c«ng , top Level nhËn th­ëng theo ®¼ng cÊp
 tb_topserver_award_limit = {				
-				[76] = {  3000,   4000,   50000,     0},
-				[77] = {  3000,   4000,   50000,     1},
-				[78] = {  4000,   5000,   55000,     2},
+				-- [76] = {  3000,   4000,   50000,     0},
+				-- [77] = {  3000,   4000,   50000,     1},
+				[78] = {  4000,   5000,   50000,     2},
 				[79] = {  5000,   5000,   55000,     3},
 				[80] = {  6000,   5000,   55000,     4},
 				[81] = {  7000,   6000,   55000,     5},
@@ -261,28 +261,75 @@ tb_golden_book_all = {
 
 tbMatTich70caocap  =
 {
-		[2] =  {"Kim Cang B¸t Nh· Ch©n QuyÓn", {0, 107, 204, 1}}, 
-		[3] =  {"V« TrÇn Bå §Ò Ch©n QuyÓn", {0, 107, 206, 1}}, 
-		[4] =  {"TiÒm Long Tóc DiÖt Ch©n QuyÓn", {0, 107, 205, 1}}, 
-		[14] =  {"HuyÒn ¶nh Mª T«ng Ch©n QuyÓn", {0, 107, 212, 1}}, 
-		[15] =  {"Qu©n Tö §íi Phong Ch©n QuyÓn", {0, 107, 213, 1}}, 
-		[8] =  {"Nh­ ý Kim §Ønh Ch©n QuyÓn", {0, 107, 208, 1}}, 
-		[9] =  {"BÝch H¶i TuyÖt ¢m Ch©n QuyÓn", {0, 107, 209, 1}}, 
-		[11] =  {"Hçn §én TrÊn Nh¹c Ch©n QuyÓn", {0, 107, 210, 1}}, 
-		[12] =  {"Quú Thiªn Du Long Ch©n QuyÓn", {0, 107, 211, 1}}, 
-		[6] =  {"Thiªn La Liªn Ch©u Ch©n QuyÓn", {0, 107, 207, 1}}, 
-		[17] =  {"TrÊn Qu©n Phi Long Th­¬ng Ch©n QuyÓn", {0, 107, 214, 1}}, 
-		[18] =  {"Xuyªn V©n L¹c Hång Ch©n QuyÓn", {0, 107, 215, 1}}, 
-		[20] = {"HuyÒn Minh Phong Ma Ch©n QuyÓn", {0, 107, 216, 1}}, 
-		[21] = {"Linh Cæ HuyÒn Tµ Ch©n QuyÓn", {0, 107, 217, 1}},
-		[23] = {"Cöu Thiªn Phong L«i Ch©n QuyÓn", {0,107,218, 1}},
-		[29] = {"Hång TrÇn Tóy Méng Ch©n QuyÓn", {0,107,222, 1}},
-		[30] = {"Phong Hoa Thiªn DiÖp Ch©n QuyÓn", {0,107,223, 1}},
+		[2] =  {"Kim Cang B¸t Nh· Ch©n QuyÓn", {0, 107, 204+29797, 5}}, 
+		[3] =  {"V« TrÇn Bå §Ò Ch©n QuyÓn", {0, 107, 206+29797, 5}}, 
+		[4] =  {"TiÒm Long Tóc DiÖt Ch©n QuyÓn", {0, 107, 205+29797, 5}}, 
+		[14] =  {"HuyÒn ¶nh Mª T«ng Ch©n QuyÓn", {0, 107, 212+29797, 5}}, 
+		[15] =  {"Qu©n Tö §íi Phong Ch©n QuyÓn", {0, 107, 213+29797, 5}}, 
+		[8] =  {"Nh­ ý Kim §Ønh Ch©n QuyÓn", {0, 107, 208+29797, 5}}, 
+		[9] =  {"BÝch H¶i TuyÖt ¢m Ch©n QuyÓn", {0, 107, 209+29797, 5}}, 
+		[11] =  {"Hçn §én TrÊn Nh¹c Ch©n QuyÓn", {0, 107, 210+29797, 5}}, 
+		[12] =  {"Quú Thiªn Du Long Ch©n QuyÓn", {0, 107, 211+29797, 5}}, 
+		[6] =  {"Thiªn La Liªn Ch©u Ch©n QuyÓn", {0, 107, 207+29797, 5}}, 
+		[17] =  {"TrÊn Qu©n Phi Long Th­¬ng Ch©n QuyÓn", {0, 107, 214+29797, 5}}, 
+		[18] =  {"Xuyªn V©n L¹c Hång Ch©n QuyÓn", {0, 107, 215+29797, 5}}, 
+		[20] = {"HuyÒn Minh Phong Ma Ch©n QuyÓn", {0, 107, 216+29797, 5}}, 
+		[21] = {"Linh Cæ HuyÒn Tµ Ch©n QuyÓn", {0, 107, 217+29797, 5}}, 
+		[23] = {"Cöu Thiªn Phong L«i Ch©n QuyÓn", {0,107,218+29797, 5}}, 
+		[29] = {"Hång TrÇn Tóy Méng Ch©n QuyÓn", {0,107,222+29797, 5}}, 
+		[30] = {"Phong Hoa Thiªn DiÖp Ch©n QuyÓn", {0,107,223+29797, 5}}, 
 }
 
+tbMatTich70caocap  =
+{
+		[2] =  {"Kim Cang B¸t Nh· Ch©n QuyÓn", {0, 107, 204+29797, 5}}, 
+		[3] =  {"V« TrÇn Bå §Ò Ch©n QuyÓn", {0, 107, 206+29797, 5}}, 
+		[4] =  {"TiÒm Long Tóc DiÖt Ch©n QuyÓn", {0, 107, 205+29797, 5}}, 
+		[14] =  {"HuyÒn ¶nh Mª T«ng Ch©n QuyÓn", {0, 107, 212+29797, 5}}, 
+		[15] =  {"Qu©n Tö §íi Phong Ch©n QuyÓn", {0, 107, 213+29797, 5}}, 
+		[8] =  {"Nh­ ý Kim §Ønh Ch©n QuyÓn", {0, 107, 208+29797, 5}}, 
+		[9] =  {"BÝch H¶i TuyÖt ¢m Ch©n QuyÓn", {0, 107, 209+29797, 5}}, 
+		[11] =  {"Hçn §én TrÊn Nh¹c Ch©n QuyÓn", {0, 107, 210+29797, 5}}, 
+		[12] =  {"Quú Thiªn Du Long Ch©n QuyÓn", {0, 107, 211+29797, 5}}, 
+		[6] =  {"Thiªn La Liªn Ch©u Ch©n QuyÓn", {0, 107, 207+29797, 5}}, 
+		[17] =  {"TrÊn Qu©n Phi Long Th­¬ng Ch©n QuyÓn", {0, 107, 214+29797, 5}}, 
+		[18] =  {"Xuyªn V©n L¹c Hång Ch©n QuyÓn", {0, 107, 215+29797, 5}}, 
+		[20] = {"HuyÒn Minh Phong Ma Ch©n QuyÓn", {0, 107, 216+29797, 5}}, 
+		[21] = {"Linh Cæ HuyÒn Tµ Ch©n QuyÓn", {0, 107, 217+29797, 5}}, 
+		[23] = {"Cöu Thiªn Phong L«i Ch©n QuyÓn", {0,107,218+29797, 5}}, 
+		[29] = {"Hång TrÇn Tóy Méng Ch©n QuyÓn", {0,107,222+29797, 5}}, 
+		[30] = {"Phong Hoa Thiªn DiÖp Ch©n QuyÓn", {0,107,223+29797, 5}}, 
+}
+tbBKVDnon  =
+{
+		[1] =  {"B¹ch Kim Viªm §Õ Kh«i", {0,103,30013,1,1,-1,-1,-1,-1,-1,-1,-1,0}}, 
+		[2] =  {"B¹ch Kim Viªm §Õ Kh«i", {0,103,30014,1,1,-1,-1,-1,-1,-1,-1,-1,0}}, 
+		[3] =  {"B¹ch Kim Viªm §Õ Kh«i", {0,103,30015,1,1,-1,-1,-1,-1,-1,-1,-1,0}}, 
+		[4] =  {"B¹ch Kim Viªm §Õ Kh«i", {0,103,30016,1,1,-1,-1,-1,-1,-1,-1,-1,0}}, 
+}
+
+tbBKVDGiap =
+{
+		[1] =  {"B¹ch Kim Viªm §Õ Gi¸p", {0,100,30013,1,1,-1,-1,-1,-1,-1,-1,-1,0}}, 
+		[2] =  {"B¹ch Kim Viªm §Õ Gi¸p", {0,100,30014,1,1,-1,-1,-1,-1,-1,-1,-1,0}}, 
+		[3] =  {"B¹ch Kim Viªm §Õ Gi¸p", {0,100,30015,1,1,-1,-1,-1,-1,-1,-1,-1,0}}, 
+		[4] =  {"B¹ch Kim Viªm §Õ Gi¸p", {0,100,30016,1,1,-1,-1,-1,-1,-1,-1,-1,0}}, 
+}
+
+tbBKVDTrang  =
+{
+		[1] =  {"B¹ch Kim Viªm §Õ Trang", {0,101,30013,1,1,-1,-1,-1,-1,-1,-1,-1,0}}, 
+		[2] =  {"B¹ch Kim Viªm §Õ Trang", {0,101,30014,1,1,-1,-1,-1,-1,-1,-1,-1,0}}, 
+		[3] =  {"B¹ch Kim Viªm §Õ Trang", {0,101,30015,1,1,-1,-1,-1,-1,-1,-1,-1,0}}, 
+		[4] =  {"B¹ch Kim Viªm §Õ Trang", {0,101,30016,1,1,-1,-1,-1,-1,-1,-1,-1,0}}, 
+}
+tbvdhh4 = {
+		[1] = {"Vinh Dù", {0,102,8840,1,1,-1,-1,-1,-1,-1,-1,-1,0}}, 
+		[2] = {"huy Hoµng", {0,102,8841,1,1,-1,-1,-1,-1,-1,-1,-1,0}},
+}
 local tbVukhiVietYen = {
-		--[2] = {"ViÖt Yªn Phi Tinh §ao", {0,3,30001,1,1,-1,-1,-1,-1,-1,-1,-1,0}}, 
-		--[2] = {"ViÖt Yªn Phi Tinh C«n", {0,5,30002,1,1,-1,-1,-1,-1,-1,-1,-1,0}},
+		[2] = {"ViÖt Yªn Phi Tinh §ao", {0,3,30001,1,1,-1,-1,-1,-1,-1,-1,-1,0}}, 
+		[2] = {"ViÖt Yªn Phi Tinh C«n", {0,5,30002,1,1,-1,-1,-1,-1,-1,-1,-1,0}},
 		[3] =  {"ViÖt Yªn Phi Tinh Tr­îng", {0,8,30003,1,1,-1,-1,-1,-1,-1,-1,-1,13}},
 		[4] =  {"ViÖt Yªn Phi Tinh Thñ", {0,0,30004,1,1,-1,-1,-1,-1,-1,-1,-1,13}},
 		[14] =  {"ViÖt Yªn Tr¶m NguyÖt KiÕm", {0,2,30010,1,1,-1,-1,-1,-1,-1,-1,-1,13}},
@@ -301,25 +348,25 @@ local tbVukhiVietYen = {
 -- 1 item, 2 command, 3 table
 -- must identify this table below the sub table
 tb_topserver_award_item = {				
-				[76] = {{3, tb_topserver_book70_1, 0, 0}, {2, "Earn(%d)", 1000000, 0}},
-				[77] = {{3, tb_topserver_book70_1, 0, 0}, {2, "Earn(%d)", 2000000, 0}},
-				[78] = {{3, tbMatTich70caocap, 0, 0},{3, tbMatTich70caocap, 0, 0},{3, tbMatTich70caocap, 0, 0}, {2, "Earn(%d)", 3000000, 0}},
-				[79] = {{1, "Vâ L©m Cao Thñ", {2,1,1040,1,4}, 60*24*60*60}, {2, "Earn(%d)", 4000000, 0}},
-				[80] = {{2, "AddItem(2,1,30164+mod(random(0,1000),%d),100)",20, 0}, {2, "Earn(%d)", 10000000, 0}},
-				[81] = {{2,"NhanRuongYeuQuyet(%d)", 30*24*60*60,0}, {1, "Méc R­¬ng", {2,1,30340,999,4}, 0}},
-				[82] = {{2, "NhanRuongYeuQuyet(%d)", 30*24*60*60,0},{2, "NhanRuongYeuQuyet(%d)", 30*24*60*60,0}, {1, "N÷ Oa Tinh Th¹ch", {2,1,504,2,4}, 30*24*60*60}},
-				[83] = {{3, tb_golden_book_all, 0, 0}, {2, "Earn(%d)", 10000000, 0}},
---				[84] = {{3, tb_topserver_book_med, 0, 0}, {1, "Thiªn Th¹ch Linh Th¹ch", {2,1,1068,1,4}, 30*24*60*60}},
---				[85] = {{3, tb_topserver_book_low, 0, 0}, {1, "M¶nh B¹ch Kim", {2,1,30346,1,1}, 0}},
-				[86] = {{1, "Qu©n C«ng Ch­¬ng", {2,1,9999,5,1}, 30*24*60*60}, {1, "Tñ ¸o", {2,1,1070,1,4}, 30*24*60*60}},
-				[87] = {{1, "Nh©n S©m V¹n N¨m", {2,1,30071,5,1}, 30*24*60*60},{1, "Qu©n C«ng Ch­¬ng", {2,1,9999,5,1}, 0}},
-				[88] = {{1, "Qu©n C«ng Ch­¬ng", {2,1,9999,5,1}, 30*24*60*60}, {1, "Qu©n C«ng §¹i", {2,1,9998,1,1}, 30*24*60*60}},
-				[89] = {{1, "Qu©n C«ng §¹i", {2,1,9998,5,1}, 30*24*60*60}},
---				[90] = {{1, "N÷ Oa Tinh Th¹ch", {2,1,504,4,4}, 30*24*60*60}},
+				-- [76] = {{3, tb_topserver_book70_1, 0, 0}, {2, "Earn(%d)", 1000000, 0}},
+				-- [77] = {{3, tb_topserver_book70_1, 0, 0}, {2, "Earn(%d)", 2000000, 0}},
+				[78] = {{3, tbMatTich70caocap, 0, 0},{3, tbMatTich70caocap, 0, 0},{3, tbMatTich70caocap, 0, 0}, {2, "Earn(%d)", 3000000, 0},  {2, "AddItem(2,1,30491,1,4)",20, 0}},
+				[79] = {{1, "Vâ L©m Cao Thñ", {2,1,1040,1,4}, 60*24*60*60},{3, tbMatTich70caocap, 0, 0}, {2, "Earn(%d)", 4000000, 0}},
+				[80] = {{2, "AddItem(2,1,30164+mod(random(0,1000),%d),100)",20, 0},{3, tbMatTich70caocap, 0, 0},  {2, "Earn(%d)", 10000000, 0}},
+				[81] = {{2, "AddItem(0,102,8840,1,1,-1,-1,-1,-1,-1,-1,-1,0)",20, 0},{3, tbMatTich70caocap, 0, 0},  {2, "AddItem(0,102,8841,1,1,-1,-1,-1,-1,-1,-1,-1,0)",20, 0},{1, "Méc R­¬ng", {2,1,30340,250,4}, 0}},
+				[82] = {{4, tbBKVDnon, 0, 0},{2, "AddItem(2,1,30164+mod(random(0,1000),%d),100)",20, 0},{2, "AddItem(2,1,30164+mod(random(0,1000),%d),100)",20, 0}, {1, "N÷ Oa Tinh Th¹ch", {2,1,504,2,4}, 30*24*60*60}},
+				-- [83] = {{3, tb_topserver_book_high, 0, 0}, {2, "Earn(%d)", 10000000, 0}},
+				[84] = {{3, tb_topserver_book_med, 0, 0}, {1, "Thiªn Th¹ch Linh Th¹ch", {2,1,1068,1,4}, 30*24*60*60}},
+				[85] = {{3, tb_topserver_book_low, 0, 0}, {1, "M¶nh B¹ch Kim", {2,1,30346,1,1}, 0},{2, "AddItem(2,1,30491,1,4)",20, 0}},
+				[86] = {{1, "Qu©n C«ng Vinh D", {2,1,30642,5,4}, 30*24*60*60}, {1, "Tñ ¸o", {2,1,1070,1,4}, 30*24*60*60}},
+				[87] = {{1, "Nh©n S©m V¹n N¨m", {2,1,30071,5,1}, 30*24*60*60}},
+				[88] = {{1, "Qu©n C«ng Vinh D", {2,1,30642,5,4}, 30*24*60*60}},
+				[89] = {{1, "N÷ Oa Tinh Th¹ch", {2,1,504,4,4}, 30*24*60*60}},
+				[90] = {{3, tb_topserver_book_high, 0, 0}, {2, "Earn(%d)", 10000000, 0}, {2, "AddItem(2,1,30491,1,4)",20, 0}},
 				[91] = {{1, "Qu©n C«ng Huy Hoµng", {2,1,9977,3,1}, 30*24*60*60}},
 				[92] = {{1, "Qu©n C«ng Huy Hoµng", {2,1,9977,6,1}, 30*24*60*60}},
-				[93] = {{1, "Thiªn Th¹ch Linh Th¹ch", {2,1,1068,2,4}, 30*24*60*60}},
-				[94] = {{1, "Qu©n C«ng Huy Hoµng", {2,1,9977,8,1}, 30*24*60*60}},
+				[93] = {{1, "Bao Thiªn Th¹ch Tinh Th¹ch", {2,1,1051,1,4}, 30*24*60*60}},
+				[94] = {{1, "Bao Thiªn Th¹ch Tinh Th¹ch", {2,1,1051,1,4}, 30*24*60*60}},
 --				[98] = {{3, tbMatTich70caocap, 0, 0}, {3, tbMatTich70caocap, 0, 0}, {3, tbMatTich70caocap, 0, 0}},
 				[99] = {{1, "§¹i §Þnh Hån", {2,1,1113,1}, 30*24*60*60},{1, "§Þnh Hån Thiªn Th¹ch ThÇn Th¹ch", {2,1,1067,1}, 30*24*60*60}},
 --				[192] = {{3, tbMatTich70caocap, 0, 0}, {3, tbMatTich70caocap, 0, 0}, {3, tbMatTich70caocap, 0, 0}, {1, "Th¸i DÞch Hçn Nguyªn C«ng §å", {2,0,1082,100,1}, 0}, {1, "L¨ng Ba Vi Bé", {0,112,78,1,1}, 0}},
