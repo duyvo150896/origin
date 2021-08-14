@@ -230,9 +230,9 @@ function wb_BigBoxAward()
 	-- }
 	-- gf_EventGiveRandAward(tAward, gf_SumRandBase(tAward), 1, "BOSS Th? gi¨ªi", "R-?ng V¦Ìng ¡ì1i Chi?n");	
 	 -- gf_AddItemEx2({2,1,30668, 5}, "THUL 6", "BOSS ThÕ giíi", "Tiªu diÖt  BOSS", 0, 1);
-	 gf_AddItemEx2({2,1,30427, 10}, "Bïa C­êng Hãa 12", "BOSS ThÕ giíi", "Tiªu diÖt  BOSS", 0, 1);
+	 -- gf_AddItemEx2({2,1,30427, 10}, "Bïa C­êng Hãa 12", "BOSS ThÕ giíi", "Tiªu diÖt  BOSS", 0, 1);
 	 Earn(5000000);
-	 local msg = format("Chóc mõng [%s] ®· giµnh ®­îc r­¬ng Vµng §¹i ChiÕn thu ®­îc  %d Bïa c­êng hãa 15", GetName(), 10);
+	 local msg = format("Chóc mõng [%s] ®· giµnh ®­îc r­¬ng Vµng §¹i ChiÕn");
 	Msg2Global(msg);
 	AddLocalNews(msg);
 	--»î¶¯
