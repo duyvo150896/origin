@@ -1757,19 +1757,20 @@ function enter_mp(nRoute)
 	end;
 
 	-- ----------------------------设置数值------------
-	SetTask(336, 20000);				--设置师门贡献度
-	ModifyReputation(20000, 0);			--设置声望
+	SetTask(336, 10000);				--设置师门贡献度
+	-- ModifyReputation(20000, 0);			--设置声望
+	Get_DanhVong()
 	-- PlayerReborn(2, 1);			--6转
 	-- gf_SetTaskByte(1538, 1, 5) 			--5转
-	SetLevel(99, 0);								--设置等级
+	SetLevel(78, 0);								--设置等级
 	PlaySound("\\sound\\sound_i016.wav");
 	-- -- SetCurrentNpcSFX(PIdx2NpcIdx(),913,0,0)
 	Msg2Player("Thao t竎 th祅h c玭g, h穣 ng nh藀 l筰")
 -- --	AddItem(0,105,15,1,1,-1,-1,-1,-1,-1,-1);
 	AddItem(2, 1, 1005, 1);
 	AddItem(0, 200,40, 1);
-	AddItem(2, 1, 1003, 1);
-	AddItem(2, 1, 1004, 1);
+	-- AddItem(2, 1, 1003, 1);
+	-- AddItem(2, 1, 1004, 1);
 	AddItem(2, 1, 2, 10);
 	-- Get_JinShe_admin();
 	-- hienvienbinh();
@@ -4497,8 +4498,8 @@ function Get_CongTrang_Lieu()
 	SetCurrentNpcSFX(PIdx2NpcIdx(),905,0,0)
 end
 function Get_DanhVong()
-	ModifyReputation(10000,0)
-        Msg2Player("Ch骳 m鮪g b筺  nh薾 頲 10.000 甶觤 danh v鋘g");
+	ModifyReputation(6000,0)
+        Msg2Player("Ch骳 m鮪g b筺  nh薾 頲 6.000 甶觤 danh v鋘g");
 	PlaySound("\\sound\\sound_i016.wav");
 	SetCurrentNpcSFX(PIdx2NpcIdx(),905,0,0)
 end
