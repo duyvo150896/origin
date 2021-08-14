@@ -47,7 +47,7 @@ function OnUse(nItem)
 		tSay = {
 --			"NhËp Code/GiftCodeNhap",
 		-- "NhËn tö quang hiªn viªn ngäc/hienvienngoc",
-            "Trang BŞ/Get_Mored",
+            -- "Trang BŞ/Get_Mored",
             "Tiªu dïng/tieudung",
 			"Cßn l¹i/tieudung_orther",
             -- "Thiªn kiªu lÖnh /nhantkl",
@@ -113,16 +113,16 @@ end
 function tieudung()
 	local tSay = {
 		g_szTitle.."Lùa chän",
-			"NhËn L­u Ph¸i Ch©n QuyÓn vµ YÕu QuyÕt/Get_Book",
+			-- "NhËn L­u Ph¸i Ch©n QuyÓn vµ YÕu QuyÕt/Get_Book",
 		-- "NhËn ®¸ quı/Get_Gem",
 			"NhËn 4000 vµng/Get_Money",
  		-- "NhËn Ên chuyÓn sinh/Get_An",
 		"Ma Dao thach 1/madao1",
-		"Gi¸m ®Şnh phï 7/gdp7",
-		"ngò Th¸i/nguthai",
+		-- "Gi¸m ®Şnh phï 7/gdp7",
+		-- "ngò Th¸i/nguthai",
 		"NhËn Cöu ChuyÓn Håi Hån §an/cuuchuyen",
 		-- "NhËn M¸u /receiveTiLi",
-		"NhËn HKDNP/hkdnp",
+		-- "NhËn HKDNP/hkdnp",
 		"NhËn Lak/Get_Energy_5x",
 		"NhËn B¸nh Ng«/banhngo",
 		"NhËn Ph¸o Hoa ChiÕn Th¾ng/nhanphaohoa",
@@ -140,22 +140,22 @@ function tieudung_orther()
 			-- "Sinh ThÇn Cang gäi Boss bang héi/sinhthancang",
             -- "M¶nh b¹ch kim/nhanmbk",
             -- "NhËn danh hiÖu/Get_Danh_Hieu2",
-            "T¨ng ®iÓm nh©n vËt/Get_Diem_Char",
+            -- "T¨ng ®iÓm nh©n vËt/Get_Diem_Char",
             "NhËn C¸c Lo¹i Nguyªn LiÖu/Get_Nguyen_Lieu",
 			"Thao t¸c bang héi/TongOperation",
 			"Thao t¸c Vò Khİ/PS_VK",
 			-- "Thao t¸c kinh m¹ch /GetJingMai",
-			"Ngo¹i Trang C«ng Thµnh/ngoaitrang",			
+			-- "Ngo¹i Trang C«ng Thµnh/ngoaitrang",			
 			-- "Phôc sinh thó c­ng/Pet_OP",
 		-- "NhËn ChiÕn T­îng/chientuong",
 		-- "TTBR/thantaibaoruong",
-		"Nhan tmkl/tmkl",
-		"Kü n¨ng sèng/Life_Skill",
+		-- "Nhan tmkl/tmkl",
+		-- "Kü n¨ng sèng/Life_Skill",
 		-- "NhËn Thó Míi/nhanthucuoimoi",
-		"NhËn Thó C­ìi/thucuoipro",
+		-- "NhËn Thó C­ìi/thucuoipro",
 		-- "NhËn C¸nh/nguafake",
-		"R¸c/rac",
-		"ThiÖp long m«n trÊn/thieplongmon",
+		-- "R¸c/rac",
+		-- "ThiÖp long m«n trÊn/thieplongmon",
 		"\nRa khái/nothing",
 	}
 	SelectSay(tSay);
@@ -3088,8 +3088,8 @@ function Get_Nguyen_Lieu()
 		"NhËn linh th¹ch 3 /lt3",
 		"NhËn linh th¹ch 4 /lt4",
 		"NhËn linh th¹ch 5 /lt5",
-		"NhËn linh th¹ch 6 /lt6",
-		"NhËn lt7 /lt7",
+		-- "NhËn linh th¹ch 6 /lt6",
+		-- "NhËn lt7 /lt7",
 		"Ra khái/nothing",
 	};
 	SelectSay(szSay);
@@ -3438,7 +3438,7 @@ function Give_Fengshifu()
 	AddItem(1, 6, 84,	30, 4);
 	AddItem(1, 6, 153,30, 4);
 	AddItem(1, 6, 154,30, 4);
-	AddItem(1, 6, 147,30, 4);
+	-- AddItem(1, 6, 147,30, 4);
 	-- AddItem(1,6,150,100);
 end
 
@@ -3766,10 +3766,10 @@ function Get_Mored()
 		-- "NhËn TT3 LL3 TT4 LL4/ttll3",
 		 -- "NhËn TT1 LL/ttll1",
 		-- "NhËn ®­îc Trang BŞ Kim Xµ Lv3 +7 (lo¹i míi)/Get_KX3chonopt_6loai",
-		"Vò Khİ Chİnh (3 lç)/vukhi_8x",
+		-- "Vò Khİ Chİnh (3 lç)/vukhi_8x",
 		-- "NhËn Thiªn NghÜa/thienghia_mod3_zin",
 		-- "NhËn ®­îc Trang BŞ Kim Xµ Lv3 +7 (lo¹i cò)/getkx3",
-		"NhËn Thiªn Chi tµng KiÕm/tctk",
+		-- "NhËn Thiªn Chi tµng KiÕm/tctk",
 		-- "HHVD/huyhoang5",
 		-- "Ngäc Thiªn NghÜa/thienghia_ngoc",
 		-- "uÈn Linh cÊp 2/nhanul_2",
