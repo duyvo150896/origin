@@ -18,13 +18,18 @@ g_nNeedWeight = 20
 g_nDenominator = 100							--∑÷ƒ∏£¨±Ì æ∏≈¬ µƒµ•Œª «x∑÷÷Æ1
 
 g_szFileName = "lanhua_bag.lua"					--Œƒº˛√˚
-
+--30001 - 30012
 g_tbItem = 
 {
 	--		¿‡–Õ	   ∏≈¬ 	 ˝¡ø √˚◊÷	ID1,ID2,ID3
-	[1] = {TYPE_EQUIP,	5,	1,	"ß´ng Ph≠¨ng Long Ch©u",	0,	102,	24,	},
-	[2] = {TYPE_EQUIP,	50,	1,	"Nh≠ ˝",		0,	102,	23,	},
-	[3] = {TYPE_EQUIP,	45,	1,	"C∏t T≠Íng",		0,	102,	22,	},
+	[1] = {TYPE_ITEM,	3,	1,	"Nguy÷t Hoa Chi Tinh",	2,	1,	3219,},
+	[2] = {TYPE_EQUIP,	3,	1,	"ß´ng Ph≠¨ng Long Ch©u",	0,	102,	24,},
+	[3] = {TYPE_EQUIP,	6,	1,	"Tµng ki’m ng‰c",0,	102,30001,},
+	[4] = {TYPE_EQUIP,	8,	1,	"Cˆu thi™n ng‰c",	0,	102,	129,},
+	[5] = {TYPE_ITEM,	20,	50,	"Bao Linh Thπch 7",	2,	1,	30419,},
+	[6] = {TYPE_ITEM,	60,	50,	"Bao Linh Thπch 6",	2,	1,	30418,},
+
+
 }
 
 
@@ -48,6 +53,8 @@ end
 function use_it()
 	--ŒÔ∆∑Ω±¿¯≤ø∑÷
 	local nRandIdx = get_random_item(g_tbItem)
+	local random_id_tangkiem=random(0,11)
+	local random_id_9t=random(0,6)
 	local lv_rand = random(1,2)
 	local lv = 1
 	
@@ -66,14 +73,18 @@ function use_it()
 	local szInfoDescribe = format("(%d,%d,%d)", g_tbItem[nRandIdx][5], g_tbItem[nRandIdx][6], g_tbItem[nRandIdx][7])
 	local Name = GetName()
 	local msg = format("Ng≠Íi ch¨i "..Name.." sˆ dÙng tÛi hµnh trang nhÀn Æ≠Óc ß´ng Ph≠¨ng Long Ch©u, thÀt may mæn  !!");
-		
+	-- gf_EventGiveRandAward(tAward, gf_SumRandBase(tAward), 1, "BOSS Th’ giÌi", "ßπi Chi’n B∂o Hπp")
 	local nRetCode = 0
-	if nRandIdx > 1 then
-		nRetCode = AddItem(g_tbItem[nRandIdx][5],g_tbItem[nRandIdx][6],g_tbItem[nRandIdx][7],g_tbItem[nRandIdx][3],1,-1,-1,-1,-1,-1,-1)
-	else
+	if nRandIdx == 2 then
 		nRetCode = AddItem(g_tbItem[nRandIdx][5],g_tbItem[nRandIdx][6],g_tbItem[nRandIdx][7],g_tbItem[nRandIdx][3],1,1,lv,-1,-1,-1,-1)
 		Msg2Global(msg);
 		AddLocalNews(msg);
+	elseif nRandIdx == 3  then
+		nRetCode = AddItem(g_tbItem[nRandIdx][5],g_tbItem[nRandIdx][6],g_tbItem[nRandIdx][7] + random_id_tangkiem,g_tbItem[nRandIdx][3],1,-1,-1,-1,-1,-1,-1)
+	elseif nRandIdx == 4  then
+		nRetCode = AddItem(g_tbItem[nRandIdx][5],g_tbItem[nRandIdx][6],g_tbItem[nRandIdx][7] + random_id_9t,				g_tbItem[nRandIdx][3],1,-1,-1,-1,-1,-1,-1)
+	else
+		nRetCode = AddItem(g_tbItem[nRandIdx][5],g_tbItem[nRandIdx][6],g_tbItem[nRandIdx][7] ,g_tbItem[nRandIdx][3])
 	end
 	if nRetCode == 1 then
 		Msg2Player("Bπn nhÀn Æ≠Óc  "..nItemNum.." "..szItemName)
@@ -86,10 +97,12 @@ end
 --∞¥’’∏≈¬ ªÒµ√g_tbItem¿Ô√Êµƒ“ªœÓƒ⁄»›
 function get_random_item(nTab)
 	local nRandom = random(1,g_nDenominator)
+	Msg2Global("nRandom:"..nRandom)
 	local nBase = 0
 	if check_item_tab(nTab) == 1 then
 		for i=1,getn(nTab) do
 			if nRandom <= nTab[i][2]+nBase then
+				Msg2Global("i:"..i)
 				return i
 			else
 				nBase = nBase + nTab[i][2]
