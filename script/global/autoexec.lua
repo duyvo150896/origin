@@ -2333,8 +2333,8 @@ function dialog_npc_create()
 	SetNpcScript(nNpcIndex,"\\script\\½­ÄÏÇø\\ÁúÈª´å\\npc\\ÕÅ´óÓÑ.lua");
 	nNpcIndex = CreateNpc("C«ng t¾c nguyÖt l­îng","C«ng t¾c nguyÖt l­îng",111,1665,2826);
 	SetNpcScript(nNpcIndex,"\\script\\task\\npc\\ÔÂÁÁ»ú¹Ø.lua");
-	nNpcIndex = CreateNpc("Nh¹c BÊt QuÇn","Nh¹c BÊt QuÇn",502,1682,3102);
-	SetNpcScript(nNpcIndex,"\\script\\Î÷±±Çø\\»ªÉ½\\npc\\ÔÀ²»Èº.lua");
+	-- nNpcIndex = CreateNpc("Nh¹c BÊt QuÇn","Nh¹c BÊt QuÇn",502,1682,3102);
+	-- SetNpcScript(nNpcIndex,"\\script\\Î÷±±Çø\\»ªÉ½\\npc\\ÔÀ²»Èº.lua");
 	nNpcIndex = CreateNpc("D­¬ng M«n ®Ö tö","D­¬ng M«n ®Ö tö",6012,1588,3207);
 	SetNpcScript(nNpcIndex,"\\script\\ÊÀ½çµØÍ¼\\ÉÙÁÖÒéÊÂÌü\\ÑîÃÅµÜ×Ó.lua");
 	nNpcIndex = CreateNpc("Nh¹n Kha","Nh¹n Kha",218,1627,3245);
