@@ -245,11 +245,13 @@ function confirm_conf_get_award_by_level(nLevel)
 		 	if nRoute == 2 and nLevel == 292 then
 		 		Say("Ta cã 2 mãn vò khÝ dµnh cho c¸c h¹, h·y chän vò khÝ phï hîp:", 2, "ViÖt Yªn Phi Tinh §ao/#ChonVuKhiThieuLam(1)", "ViÖt Yªn Phi Tinh C«n/#ChonVuKhiThieuLam(2)")
 		 	end
-		-- elseif tb_item[1] == 4 then -- table
-			-- local tb_Award = tb_item[2]
-			-- if tb_item[4] == 0 then
-				-- gf_AddItemEx2(tb_Award[nBody][2],tb_Award[nBody][1], szLogTitle,"nhËn th­ëng cÊp "..nLevel)			
-		 	-- end
+		elseif tb_item[1] == 4 then -- table
+			local tb_Award = tb_item[2]
+			-- Msg2Player(tb_Award[1][1])
+			-- Msg2Player(tb_Award[1][2][1])
+			if tb_item[4] == 0 then
+				gf_AddItemEx2({tb_Award[nBody][2][1],tb_Award[nBody][2][2],tb_Award[nBody][2][3],1,1,-1,-1,-1,-1,-1,-1,-1,0}, szLogTitle,"nhËn th­ëng cÊp "..nLevel)			
+		 	end
 		else
 			Talk(1, "", strNpcName.."§¼ng cÊp kh«ng ®óng!");
 			WriteLogEx(szLogTitle,"®¼ng cÊp kh«ng ®óng???");
