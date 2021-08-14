@@ -52,10 +52,37 @@ function main()
 		Say(strSay,getn(tSay),tSay)
 	end
 end
-
+function Checkgetaward()
+	local szList = "Sè l­îng nhËn th­ëng mËt tÞch ®· ®¨ng ký: \n"	
+	for Index = 1 , getn(tb_topserver_award_limit) do
+		if Index <= 84 then
+			if tb_topserver_award_limit[Index] ~= nil then
+				szList = szList.."CÊp: "..Index
+				szList = szList.."-Danh Väng: "..tb_topserver_award_limit[Index][1]
+				szList = szList.."-S­ M«n: "..tb_topserver_award_limit[Index][2]
+				szList = szList.."-C«ng tr¹ng: "..tb_topserver_award_limit[Index][3].."\n"
+			end
+		end
+	end
+	Talk(1,"",szList)	
+	
+	szList=""
+	for Index = 1 , getn(tb_topserver_award_limit) do
+		if Index > 84 then
+			if tb_topserver_award_limit[Index] ~= nil then
+				szList = szList.."CÊp: "..Index
+				szList = szList.."-Danh Väng: "..tb_topserver_award_limit[Index][1]
+				szList = szList.."-S­ M«n: "..tb_topserver_award_limit[Index][2]
+				szList = szList.."-C«ng tr¹ng: "..tb_topserver_award_limit[Index][3].."\n"
+			end
+		end
+	end
+	Talk(1,"",szList)	
+end
 function get_award_by_level()
 	local tSay = {}
 	tSay[0] = strNpcName.."Trong thêi gian tõ ngµy<color=red> "..szStartDate.." ®Õn 24:00 "..szEndDate.."<color>, khi ®¹t ®­îc c¸c mèc ®iÒu kiÖn nhËn th­ëng (xem thªm trªn trang chñ), ®ång ®¹o cã thÓ ®Õn gÆp ta ®Ó nhËn phÇn th­ëng."
+	tinsert(tSay,"Ta muèn xem ®iÒu kiÖn nhËn th­ëng/Checkgetaward")
 	for i=1,getn(tb_topserver_award_limit) do
 		if tb_topserver_award_limit[i] ~= nil then
 			if tb_topserver_award_limit[i][4] >= gf_GetTaskByte(TSK_TOP_LEVEL,1)  then
