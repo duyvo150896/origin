@@ -747,15 +747,16 @@ function CheckMaxJoinCount()
 	for i=1, GetTeamSize() do
 		PlayerIndex = GetTeamMember(i)
 		local nCount =	mod(GetTask(TSK_THAIHU_DAY),100)
-		if nCount >= 1 then
-			gf_Msg2Team("Tæ ®éi cña b¹n cã thµnh viªn "..GetName().." ®· tham gia 1 lÇn",2)
+		-- Msg2Player(nCount)
+		if nCount >= 6 then
+			gf_Msg2Team("Tæ ®éi cña b¹n cã thµnh viªn "..GetName().." ®· tham gia 6 lÇn",2)
 			return 0
-		elseif nCount < 1 then
+		elseif nCount < 6 then
 			if GetCash()<290000 then
 				gf_Msg2Team("Tæ ®éi cña b¹n cã thµnh viªn "..GetName().." kh«ng cã 29 vµng",2)
 				return 0
 			end
-		elseif nCount >= 1 and nCount <= 6 then
+		elseif nCount >= 3 and nCount <= 6 then
 			if GetItemCount(2,1,30230) < 20 then
 				gf_Msg2Team("Tæ ®éi cña b¹n cã thµnh viªn "..GetName().." kh«ng cã 20 xu vËt phÈm",2)
 				return 0
