@@ -462,13 +462,13 @@ function trans_talk_19()
 	local nSmallSeed = gf_GetTaskByte(TRANSLIFE_TASK_34,TRANSLIFE_BYTE_TASK3)
 	local nBigSeed = gf_GetTaskByte(TRANSLIFE_TASK_34,TRANSLIFE_BYTE_TASK4)
 	
-	-- if nResWar == 48 and nSeed == 192 and nSmallSeed == 128 and nBigSeed == 64 then
+	if nResWar == 48 and nSeed == 192 and nSmallSeed == 128 and nBigSeed == 64 then
 		SetTask(TRANSLIFE_TASK_34,0)
 		SetTaskTrans()
 		Talk(3,"trans_talk_20",szNpcName.."Thö th¸ch khã vËy ng­¬i còng cã thÓ hoµn thµnh sao?",szNpcName.."...",szNpcName.."§­îc, h·y thùc hiÖn thö th¸ch cuèi cïng cña ta!")
-	-- else
-		-- Talk(1,"",format(szNpcName.."Sè lÇn hoµn thµnh nhiÖm vô:\nHoµn thµnh Tèng Liªu Tµi Nguyªn ChiÕn: <color=yellow>%s/48 lÇn<color>\nTrång thµnh c«ng H¹t Gièng: <color=yellow>%s/192 lÇn<color>\nTrång thµnh c«ng B¸t Nh· Nhá: <color=yellow>%s/128 lÇn<color>\nTrång thµnh c«ng B¸t Nh· Lín: <color=yellow>%s/64 lÇn<color>",nResWar,nSeed,nSmallSeed,nBigSeed))
-	-- end
+	else
+		Talk(1,"",format(szNpcName.."Sè lÇn hoµn thµnh nhiÖm vô:\nHoµn thµnh Tèng Liªu Tµi Nguyªn ChiÕn: <color=yellow>%s/48 lÇn<color>\nTrång thµnh c«ng H¹t Gièng: <color=yellow>%s/192 lÇn<color>\nTrång thµnh c«ng B¸t Nh· Nhá: <color=yellow>%s/128 lÇn<color>\nTrång thµnh c«ng B¸t Nh· Lín: <color=yellow>%s/64 lÇn<color>",nResWar,nSeed,nSmallSeed,nBigSeed))
+	end
 end
 
 function trans_talk_20()
@@ -498,14 +498,14 @@ function trans_talk_21()
 		Talk(1,"",szNpcName.."Hçn Nguyªn C«ng tung hoµnh thiªn h¹, mÊy ai lÜnh héi ®­îc?")
 		return
 	end
-	-- if GetTask(TRANSLIFE_TASK_34) ~= 4 then
-		-- Talk(1,"",szNpcName.."Mau ®i so tµi B¹n §ång Hµnh!")
-		-- return
-	-- end
-	-- if floor(GetTask(TASK_VNG_PET_GODPOINT)/100) < 200 then
-		-- Talk(1,"",szNpcName.."B¹n §ång Hµnh cña ng­¬i ch­a tu luyÖn ®ñ 200 ®iÓm Linh Lùc!")
-		-- return
-	-- end	
+	if GetTask(TRANSLIFE_TASK_34) ~= 4 then
+		Talk(1,"",szNpcName.."Mau ®i so tµi B¹n §ång Hµnh!")
+		return
+	end
+	if floor(GetTask(TASK_VNG_PET_GODPOINT)/100) < 200 then
+		Talk(1,"",szNpcName.."B¹n §ång Hµnh cña ng­¬i ch­a tu luyÖn ®ñ 200 ®iÓm Linh Lùc!")
+		return
+	end	
 	SetTaskTrans()
 	SetTask(TRANSLIFE_TASK_34,0)
 	Talk(1,"",szNpcName.."Ha ha ng­¬i qu¶ xøng ®¸ng ®­îc truyÒn thô thøc thø 3 cña Hçn Nguyªn C«ng <color=yellow>Hçn Tôc Hßa Quang<color>. H·y ®em <color>1 Th¸i DÞch Hçn Nguyªn Phæ<color> ®Õn ®Ó b¾t ®Çu tu luyÖn!")
