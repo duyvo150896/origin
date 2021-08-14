@@ -46,10 +46,10 @@ function learn_translife_skill()
 		return
 	end
 	
-	-- if get_task_thonuong(BYTE_COUNT_FINISH) < 4 then
-		-- Talk(1,"",szNpcName.."H·y t×m gióp l·o phu 4 nhiÖm vô ThÞt N­íng råi l·o phu sÏ truyÒn thô!")
-		-- return
-	-- end
+	if get_task_thonuong(BYTE_COUNT_FINISH) < 4 then
+		Talk(1,"",szNpcName.."H·y t×m gióp l·o phu 4 nhiÖm vô ThÞt N­íng råi l·o phu sÏ truyÒn thô!")
+		return
+	end
 	
 	trans_talk_02()
 end
