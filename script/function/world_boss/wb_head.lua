@@ -120,8 +120,8 @@ function wb_KillAward()
 		AddItem(2,1,30072,1);
 	else
 		gf_Modify("Exp", 50000000);
-		gf_AddItemEx({2, 5, 7, 4,4}, "Gi¸m ®Þnh phï 7")
-		gf_AddItemEx({2, 1, 1009, 50,4}, "Thiªn th¹ch tinh th¹ch")
+		gf_AddItemEx({2, 5, 7, 4,0}, "Gi¸m ®Þnh phï 7")
+		gf_AddItemEx({2, 1, 1009, 50,0}, "Thiªn th¹ch tinh th¹ch")
 		-- -- gf_AddItemEx2({2,95,204, 5}, "TCL", "BOSS Th? gi¨ªi", "Tiau di?t  BOSS", 0, 1)
 		-- -- gf_AddItemEx2({2,1,30458, 2}, "Tô Linh Hoµn", "BOSS ThÕ gíi", "Tiªu diÖt BOSS ThÕ giíi", 0, 1)
 		 -- -- gf_AddItemEx2({2,1,30668, 5}, "THUL 6", "BOSS ThÕ gíi", "Tiªu diÖt BOSS ThÕ giíi", 0, 1)
@@ -148,8 +148,8 @@ function wb_SmallBoxAward()
 	gf_Modify("Exp", 14000000);
 	local tAward = {
 			{1, 50000, "Gi¸m ®Þnh phï 7", {2, 5, 7, 4, 4}, 0},
-			{1, 10000, "Ngò th¸i long tóy", {2, 1, 3204, 1, 4}, 0},
-			{1, 50000, "Tam DiÖu Long Hi", {2, 1, 3331, 5, 4}, 0},
+			{1, 10000, "Ngò th¸i long tóy", {2, 1, 3204, 1, 0}, 0},
+			{1, 50000, "Tam DiÖu Long Hi", {2, 1, 3331, 5, 0}, 0},
 		-- --{1, 0, "¸ß¼¶Ê¦ÃÅÃØ¼®°ü¹ü", {2, 1, 30627, 1, 4}, 0},
 		-- --{1, 0, "Ê¦ÃÅÕæ¾í°ü¹ü", {2, 1, 30665, 1, 4}, 0},
 		-- --{1, 0, "ÐÞÕæÒª¾÷²ÐÒ³", {2, 1, 30315, 1, 4}, 0},
@@ -221,7 +221,7 @@ function wb_BigBoxAward()
 	wb_SetBigBoxFlag();
 	--½±Àø
 	gf_Modify("Exp", 5000000);
-	gf_AddItemEx({2, 1, 1009, random(50,60),4}, "Thiªn th¹ch tinh th¹ch")
+	gf_AddItemEx({2, 1, 1009, random(50,60),0}, "Thiªn th¹ch tinh th¹ch")
 --	gf_AddItemEx2({2, 1, 30669, 40}, "M¶nh MËt TÞch", "BOSS ThÕ gíi", "R­¬ng Vµng §¹i ChiÕn", 0, 1);
 	-- local tAward = {
 		-- -- {1, 14, "L¨ng Ba Vi B?", {0, 112, 78, 1}, 0},
