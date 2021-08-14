@@ -354,7 +354,7 @@ function confirm_get_top_faction_award()
 		return	
 	end
 	
-	if LIB_txtData:AddValue(tonumber(nMonPhai),1,1) == 1 then
+	if LIB_txtData:AddValue(tonumber(nMonPhai),1,5) == 1 then
 		LIB_Award.szLogTitle = "NHAN THUONG DUA TOP "..szLOGSERVERNAME
 		LIB_Award.szLogAction = "nhËn"
 		-- Bit 1 nhËn phÇn th­ëng chuyÓn sinh 1
@@ -367,28 +367,7 @@ function confirm_get_top_faction_award()
 				item = {
 						{gdp={0,102,8844,1,1,-1,-1,-1,-1,-1,-1,-1}, name = "Huy Hoµng QuËt Khëi"}, 
 						{gdp={0,102,8845,1,1,-1,-1,-1,-1,-1,-1,-1}, name = "Vinh Dù QuËt Khëi"}, 
-						{gdp={0,105,tbSen[rand],1,1,-1,-1,-1,-1,-1,-1,-1}, name = "Hoa Sen"}}
-			}
-			 Get_YaoYang_15()
-			TraoMatTichCaoCap20(3, nMonPhai)
-			LIB_Award:Award(tbAward)
---		end
-		Talk(1,"","NhËn thµnh c«ng phÇn th­ëng h¹ng "..(nFactionRank+1).." m«n ph¸i "..tb_Route_Name[tonumber(nMonPhai)] .. ".")
-	end
-	
-	if LIB_txtData:AddValue(tonumber(nMonPhai),2,5) == 1 then
-		LIB_Award.szLogTitle = "NHAN THUONG DUA TOP "..szLOGSERVERNAME
-		LIB_Award.szLogAction = "nhËn"
-		-- Bit 1 nhËn phÇn th­ëng chuyÓn sinh 1
-		gf_SetTaskBit(TSK_TOP_AWARD,TSK_TOP_TRANSLIFE1,1)
-		local nItemLevel = 0
-		DelItem(2,1,30230,5000)
---		if nFactionRank == 0 then
-			local tbAward = {
-				item = {
-						-- {gdp={0,102,8844,1,1,-1,-1,-1,-1,-1,-1,-1}, name = "Huy Hoµng QuËt Khëi"}, 
-						-- {gdp={0,102,8845,1,1,-1,-1,-1,-1,-1,-1,-1}, name = "Vinh Dù QuËt Khëi"}, 
-						{gdp={0,105,10116,1,1,-1,-1,-1,-1,-1,-1,-1}, name = "Hoµng Hæ"}}
+						{gdp={0,105,tbSen[rand],1,1,7,403,-1,-1,-1,-1,-1,0}, name = "Hoa Sen"}}
 			}
 			 Get_YaoYang_15()
 			TraoMatTichCaoCap20(3, nMonPhai)
