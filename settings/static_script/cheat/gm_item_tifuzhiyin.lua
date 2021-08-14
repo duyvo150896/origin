@@ -178,7 +178,7 @@ function admin_2()
 		"Annouce b¶o tr×/annouce_baotri",
 		"HiÖu øng nh©n vËt Admin/testeff_ad",
 		-- "NhËn Trang BÞ Test/GetCT",
-		-- "Tr¹ng th¸i chiÕn ®Êu /Batcd",
+		"Tr¹ng th¸i chiÕn ®Êu /Batcd",
 		"Tr¹ng th¸i an toµn /Batlc",
 		"Gia nhËp v« m«n ph¸i/VMP",
 		-- "LuyÖn max skill trÊn ph¸i/maxtranphai",
@@ -4905,7 +4905,7 @@ function Boss_W4()
 		Msg2Global(msg);
 		Msg2Global(msg);
 		Msg2Global(msg);
-		local npcIndex = CreateNpc("WorldBoss_MW", "U Tr¹ch Chi ¶nh Minh Vâ", 606,168*8,187*16);
+		local npcIndex = CreateNpc("WorldBoss_MW", "U Tr¹ch Chi ¶nh Minh Vâ", nMap,nX,nY);
 		SetNpcLifeTime(npcIndex, 1*60 * 60);
 		SetNpcDeathScript(npcIndex, "\\script\\function\\world_boss\\wb_boss_death.lua");
 		SetNpcRemoveScript(npcIndex, "\\script\\function\\world_boss\\wb_boss_remove.lua");
