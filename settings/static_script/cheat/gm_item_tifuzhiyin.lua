@@ -1779,6 +1779,7 @@ function enter_mp(nRoute)
 	Earn(100000);
 	SaveNow()
 	Talk(1,"","Thao t¸c thµnh c«ng, h·y ®¨ng nhËp l¹i")
+	ExitGame()
 end
 
 function Get_YaoYang_15()
