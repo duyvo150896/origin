@@ -130,8 +130,8 @@ function confirm_conf_get_award_by_level(nLevel)
 		return
 	end
 	
-	if GetLevel() < 76 then
-		Talk(1, "", strNpcName.."ßºng c p cÒa c∏c hπ ch≠a ÆÒ 76, kh´ng th” nhÀn th≠Îng.");
+	if GetLevel() < 78 then
+		Talk(1, "", strNpcName.."ßºng c p cÒa c∏c hπ ch≠a ÆÒ 78, kh´ng th” nhÀn th≠Îng.");
 		return
 	end
 	if gf_GetTaskByte(TSK_TOP_LEVEL,1) ~= tb_topserver_award_limit[nLevel][4] then
@@ -139,6 +139,7 @@ function confirm_conf_get_award_by_level(nLevel)
 		return
 	end
 	local nRoute = GetPlayerRoute()
+	local nBody 	= GetBody();
 	if tFactionSkillInfo[nRoute] == 0 then
 		Talk(1, "", strNpcName.."C∏c hπ ch≠a gia nhÀp h÷ ph∏i kh´ng th” nhÀn th≠Îng.");
 		return
@@ -180,10 +181,10 @@ function confirm_conf_get_award_by_level(nLevel)
 			return
 		end
 	elseif nLevel >= 91 then
-		if TopCheckSkill(tFactionSkillInfo,20) == 0 then
-			Talk(1, "", strNpcName.."C∏c hπ ch≠a luy÷n thµnh v‚ c´ng tr n ph∏i 20 c p.");
-			return 0
-		end
+		-- if TopCheckSkill(tFactionSkillInfo,20) == 0 then
+			-- Talk(1, "", strNpcName.."C∏c hπ ch≠a luy÷n thµnh v‚ c´ng tr n ph∏i 20 c p.");
+			-- return 0
+		-- end
 		if GetReputation() < 500 then
 			Talk(1,"","C∏c hπ kh´ng ÆÒ 500 Æi”m danh v‰ng")
 			return 0
@@ -244,6 +245,11 @@ function confirm_conf_get_award_by_level(nLevel)
 		 	if nRoute == 2 and nLevel == 292 then
 		 		Say("Ta c„ 2 m„n vÚ kh› dµnh cho c∏c hπ, h∑y ch‰n vÚ kh› phÔ hÓp:", 2, "Vi÷t Y™n Phi Tinh ßao/#ChonVuKhiThieuLam(1)", "Vi÷t Y™n Phi Tinh C´n/#ChonVuKhiThieuLam(2)")
 		 	end
+		-- elseif tb_item[1] == 4 then -- table
+			-- local tb_Award = tb_item[2]
+			-- if tb_item[4] == 0 then
+				-- gf_AddItemEx2(tb_Award[nBody][2],tb_Award[nBody][1], szLogTitle,"nhÀn th≠Îng c p "..nLevel)			
+		 	-- end
 		else
 			Talk(1, "", strNpcName.."ßºng c p kh´ng ÆÛng!");
 			WriteLogEx(szLogTitle,"Æºng c p kh´ng ÆÛng???");
@@ -292,6 +298,7 @@ function confirm_get_top_faction_award()
 	local nNationality = GetByte(GetTask(TSK_SERVER_ID), TSK_SERVER_ID_CUR)
 	local nChuyenSinh = gf_GetTaskByte(TRANSLIFE_TASK_ID, TRANSLIFE_BYTE_COUNT) + GetPlayerRebornParam(0)
 	local tbRoute = {[2]=1,[3]=1,[4]=1,[6]=1,[8]=1,[9]=1,[11]=1,[12]=1,[14]=1,[15]=1,[17]=1,[18]=1,[20]=1,[21]=1,[23]=1,[29]=1,[30]=1}
+
 	if nNationality ~= nNation then
 		Talk(1, "", strNpcName .. "C∏c hπ kh´ng ph∂i lµ th«n d©n bÊn quËc n™n kh´ng th” nhÀn th≠Îng!")
 		return 0
@@ -307,8 +314,8 @@ function confirm_get_top_faction_award()
 		return 0
 	end
 	
-	if nChuyenSinh ~= 6 then
-		Talk(1,"",strNpcName .. "Hi÷n tπi C∏c hπ ch≠a hoµn PhÙc sinh 1!")
+	if nChuyenSinh < 1 then
+		Talk(1,"",strNpcName .. "Hi÷n tπi C∏c hπ ch≠a hoµn Chuy”n sinh 1!")
 		return 0
 	end
 	
@@ -386,9 +393,12 @@ function confirm_get_top_Hornor_award()
 		Talk(1, "", strNpcName.."C∏c hπ kh´ng ph∂i lµ th«n d©n bÊn quËc n™n kh´ng th” nhÀn th≠Îng!")
 		return 0
 	end
-	
-	if nPhucSinh < 1 or GetLevel() < 94 then
-		Talk(1, "", strNpcName.."C∏c hπ ch≠a ÆÒ Æi“u ki÷n phÙc sinh c p ÆÈ 94!")
+	-- Msg2Player("cs")
+	-- Msg2Player(nChuyenSinh)
+	-- Msg2Player("ps")
+	-- Msg2Player(nPhucSinh)
+	if nChuyenSinh < 1 or GetLevel() < 94 then
+		Talk(1, "", strNpcName.."C∏c hπ ch≠a ÆÒ Æi“u ki÷n Chuy”n sinh 1 -  c p ÆÈ 94!")
 		return 0
 	end
 	
@@ -432,7 +442,8 @@ function confirm_get_top_Hornor_award()
 --		local tbAward = {item = {{gdp={2,1,9977,1,1}, name = "Qu©n C´ng Huy Hoµng", nExpired = 90*24*60*60}}}
 --		Bit 1 nhÀn ph«n th≠Îng top c´ng trπng
 		gf_SetTaskBit(TSK_TOP_AWARD,TSK_TOP_HORNOR,1)
-		TraoLoiHoTuongQuan(0)
+		-- TraoLoiHoTuongQuan(0)
+		TraoThuongUngTuongQuan(0)
 --		if nNationRank == 0 then
 			--TraoThuongUngTuongQuan(0);
 			--TraoTrangBiKimXaTuongQuan()
@@ -440,9 +451,9 @@ function confirm_get_top_Hornor_award()
 --		for i=1,19 do
 --			LIB_Award:Award(tbAward)
 --		end
---		LIB_txtData:Init("danhsachnhanthuong.txt")
---		local szLogAward = GetAccount().."	"..GetName().."	"..GetPlayerRoute().."	"..nTongLieu.."	"..nChuyenSinh.."	TOP790790	"..date("%Y-%m-%d %H:%M:%S")
---		LIB_txtData:AddLine(szLogAward)
+		LIB_txtData:Init("danhsachnhanthuong.txt")
+		local szLogAward = GetAccount().."	"..GetName().."	"..GetPlayerRoute().."	"..nTongLieu.."	"..nChuyenSinh.."	TOP790790	"..date("%Y-%m-%d %H:%M:%S")
+		LIB_txtData:AddLine(szLogAward)
 		Talk(1,"","NhÀn thµnh c´ng ph«n th≠Îng hπng "..(nNationRank+1).." c´ng trπng phe "..tb_Nation_Name[tonumber(nTongLieu)]..".")
 	end
 end
@@ -468,8 +479,8 @@ function confirm_get_1mil_Hornor_award()
 		return 0
 	end
 	
-	if nPhucSinh < 1 or GetLevel() < 95 then
-		Talk(1, "", strNpcName.."C∏c hπ ch≠a phÙc sinh c p ÆÈ 95, h∑y cË gæng th™m..");
+	if nChuyenSinh < 1 or GetLevel() < 95 then
+		Talk(1, "", strNpcName.."C∏c hπ ch≠a chuy”n sinh 1 c p ÆÈ 95, h∑y cË gæng th™m..");
 		return 0
 	end
 	
