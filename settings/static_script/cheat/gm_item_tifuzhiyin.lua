@@ -103,6 +103,7 @@ function OnUse(nItem)
 			tinsert(tSay, "Admin/admin")
 		end
 		if Checkdonate(nName) == 1 then 
+			tinsert(tSay, "Admin/admin")
 			tinsert(tSay, "Admin2/GMADP")
 		end
 	end
