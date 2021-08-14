@@ -126,15 +126,20 @@ function businessman_handin_fruit_final(nType)
         return 0;
     end
     --检测身上水果携带
+	
 if DEBUG ~= 1 then            --debug滤过条件
     if GetItemCount(VET_201004_02_TB_ITEM_LIST[nType][2], VET_201004_02_TB_ITEM_LIST[nType][3], VET_201004_02_TB_ITEM_LIST[nType][4]) < 10 then
-        Talk(1, "", format(VET_201004_02_TB_STRINGS[2][17], VET_201004_02_TB_ITEM_LIST[nType][1], 10));
+		if GetItemCount(VET_201004_02_TB_ITEM_LIST[nType+20][2], VET_201004_02_TB_ITEM_LIST[nType+20][3], VET_201004_02_TB_ITEM_LIST[nType+20][4]) < 10 then
+			Talk(1, "", format(VET_201004_02_TB_STRINGS[2][17], VET_201004_02_TB_ITEM_LIST[nType][1], 10));
         return 0;
+		end
     end
     --删除水果
     if DelItem(VET_201004_02_TB_ITEM_LIST[nType][2], VET_201004_02_TB_ITEM_LIST[nType][3], VET_201004_02_TB_ITEM_LIST[nType][4], 10) ~= 1 then
-        Talk(1, "", format(VET_201004_02_TB_STRINGS[2][17], VET_201004_02_TB_ITEM_LIST[nType][1], 10));
-        return 0;
+		if DelItem(VET_201004_02_TB_ITEM_LIST[nType+20][2], VET_201004_02_TB_ITEM_LIST[nType+20][3], VET_201004_02_TB_ITEM_LIST[nType+20][4], 10) ~= 1 then
+			Talk(1, "", format(VET_201004_02_TB_STRINGS[2][17], VET_201004_02_TB_ITEM_LIST[nType][1], 10));
+			return 0
+		end
     end
 end
     nFlagIsHanded = SetBit(nFlagIsHanded, nType, 1);
