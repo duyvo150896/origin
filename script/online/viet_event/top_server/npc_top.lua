@@ -53,7 +53,7 @@ function main()
 	end
 end
 function Checkgetaward()
-	local szList = "Sè l­îng nhËn th­ëng mËt tŞch ®· ®¨ng kı: \n"	
+	local szList = "§iÒu kiÖn nhËn th­ëng: \n"	
 	for Index = 1 , getn(tb_topserver_award_limit) do
 		if Index <= 84 then
 			if tb_topserver_award_limit[Index] ~= nil then
@@ -200,7 +200,7 @@ function confirm_conf_get_award_by_level(nLevel)
 			return
 		end
 		if GetItemCount(2,1,30230) < 300 then
-			Talk(1,"","C¸c h¹ kh«ng ®ñ xu vËt phÈm nhËn th­ëng.")
+			Talk(1,"","C¸c h¹ kh«ng ®ñ 300 xu vËt phÈm nhËn th­ëng.")
 			return
 		end
 		if GetExp() < 300000000 then
