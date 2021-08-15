@@ -121,7 +121,7 @@ function wb_KillAward()
 	else
 		gf_Modify("Exp", 50000000);
 		gf_AddItemEx({2, 5, 7, 4,0}, "Gi¸m ®Þnh phï 7")
-		gf_AddItemEx({2, 1, 1009, 50,0}, "Thiªn th¹ch tinh th¹ch")
+		-- gf_AddItemEx({2, 1, 1009, 50,0}, "Thiªn th¹ch tinh th¹ch")
 		-- -- gf_AddItemEx2({2,95,204, 5}, "TCL", "BOSS Th? gi¨ªi", "Tiau di?t  BOSS", 0, 1)
 		-- -- gf_AddItemEx2({2,1,30458, 2}, "Tô Linh Hoµn", "BOSS ThÕ gíi", "Tiªu diÖt BOSS ThÕ giíi", 0, 1)
 		 -- -- gf_AddItemEx2({2,1,30668, 5}, "THUL 6", "BOSS ThÕ gíi", "Tiªu diÖt BOSS ThÕ giíi", 0, 1)
