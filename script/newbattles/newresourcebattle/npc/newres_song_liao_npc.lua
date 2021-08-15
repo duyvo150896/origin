@@ -395,7 +395,7 @@ function confirm_use_jungong(nType)
 		SetTask(701,GetTask(701) - nJunGongAward)
 	end
 	Msg2Player("B¹n nhËn ®­îc "..nExpAward.." ®iÓm kinh nghiÖm")
-	Msg2Player("B¹n nhËn ®­îc 10 Thiªn th¹ch tinh th¹ch")
+	-- Msg2Player("B¹n nhËn ®­îc 10 Thiªn th¹ch tinh th¹ch")
 	Msg2Player("B¹n nhËn ®­îc "..nJunGongAward.." ®iÓm c«ng tr¹ng")
 	--- §iÓm VËn May
 --	local nPointVM = gf_GetTaskByte(TSK_LUCKY_DAOHUU, BYTE_POINT_LUCKY)	
