@@ -14095,3 +14095,13 @@ ID	Title	AwrdItem	NeedSex	NeedBody	NeedRoute	AwardTimes	GlobalMsg	ExchangeMode	T
 60182	Bao §¸ Ngò S¾c nhá	2;1;30404;1						60182	720
 60183	Bao Thiªn Kiªu LÖnh Lín	2;95;2087;1						60183	720
 60184	Bao Thiªn Th¹ch Tinh Th¹ch	2;1;1051;1						60184	720
+60185	Hoµng kim ®¹i ng©n phiÕu	2;1;30490;1						60185	720
+60186	§¹i ng©n phiÕu	2;1;199;1						60186	720
+60187	N÷ Oa tinh th¹ch	2;1;504;1						60187	720
+60188	TiÓu ý vµng	2;1;30491;1						60188	720
+60189	TiÓu ý b¹c	2;1;30492;1						60189	720
+60190	TiÓu ý ®ång	2;1;30493;1						60190	720
+60191	Lôc L©m Lang Yªn	2;1;1014;1						60191	720
+60192	Thñy Hoµng BÝ ChiÕu	2;1;1047;1						60192	720
+60193	Ngù dông b¹ch ngäc th¹ch	2;1;1024;1						60193	720
+60194	Qu©n C«ng Huy Hoµng	2;1;9977;1						60194	720
