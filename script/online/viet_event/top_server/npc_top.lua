@@ -307,7 +307,7 @@ end
 function get_top_faction_award()
 	local nDate = tonumber(date("%Y%m%d"));
 	if nDate >= TOP_START_DATE and nDate <= TOP_END_DATE then	
-		Say(strNpcName.."NhËn phÇn th­ëng cao thñ hoµn thµnh <color=red>phôc sinh cÊp 96<color> ®Çu tiªn (theo hÖ ph¸i)",
+		Say(strNpcName.."NhËn phÇn th­ëng cao thñ hoµn thµnh <color=red>chuyÓn sinh 1 cÊp 96<color> ®Çu tiªn (theo hÖ ph¸i)",
 			2,
 			"Ta muèn nhËn/confirm_get_top_faction_award",
 			"§Ó ta suy nghÜ l¹i./dlgover");
