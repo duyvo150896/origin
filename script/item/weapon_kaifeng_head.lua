@@ -423,7 +423,7 @@ function Weapon_Kaifeng_Ex(nKfType,nAttributeType,nWeaponType)
 	local tbPLBCost = {
 			[1] = {2,1,1000,2},	--磐龙璧2个
 			[2] = {2,1,1000,4},	--磐龙璧4个
-			[3] = {2,1,30230,1},	--洗髓丹1个
+			[3] = {2,1,30230,50},	--洗髓丹1个
 			}
 	--判断开锋花费是否成功扣除
 	if DelItem(tbPLBCost[nKfType][1],tbPLBCost[nKfType][2],tbPLBCost[nKfType][3],tbPLBCost[nKfType][4]) == 1 then

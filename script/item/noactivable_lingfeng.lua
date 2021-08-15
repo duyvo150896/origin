@@ -17,7 +17,7 @@ function OnUse()
 	"KÝch Ho¹t cao cÊp? (cÇn 200 l­îng vµng, 10 thiªn th¹ch, 10 gi¸m ®Þnh phï cÊp 7, 1 tê mËt tÞch)/#Weapon_Kaifeng(3,1,7)",
 	"KÝch ho¹t th«ng th­êng? (cÇn 2 Bµn Long BÝch)/#Weapon_Kaifeng_Ex(1,1,7)",
 	"KÝch ho¹t kü? (cÇn 4 Bµn Long BÝch)/#Weapon_Kaifeng_Ex(2,1,7)",
-	"KÝch ho¹t cao cÊp (CÇn 1 VËt PhÈm Xu)/#Weapon_Kaifeng_Ex(3,1,7)",
+	"KÝch ho¹t cao cÊp (CÇn 50VËt PhÈm Xu)/#Weapon_Kaifeng_Ex(3,1,7)",
 	"T¹m thêi kh«ng kÝch ho¹t/nothing"
 	)
 
