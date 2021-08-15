@@ -114,7 +114,7 @@ end
 function tieudung()
 	local tSay = {
 		g_szTitle.."L˘a ch‰n",
-			-- "NhÀn L≠u Ph∏i Ch©n Quy”n vµ Y’u Quy’t/Get_Book",
+			"NhÀn L≠u Ph∏i Ch©n Quy”n vµ Y’u Quy’t/Get_Book",
 		-- "NhÀn Æ∏ qu˝/Get_Gem",
 			"NhÀn 4000 vµng/Get_Money",
  		-- "NhÀn  n chuy”n sinh/Get_An",
@@ -3070,9 +3070,9 @@ function Get_Book()
 	local szSay = {
 		g_szTitle.."NhÀn L≠u Ph∏i Ch©n Quy”n vµ Quy’t Y’u!",
 		"Mat tich phu/mtphu",
-		"NhÀn Ch©n Quy”n/Get_Book_ZhenJuan_caocap",
+		-- "NhÀn Ch©n Quy”n/Get_Book_ZhenJuan_caocap",
 		"NhÀn Quy’t Y’u/Get_Book_JueYao",
-		"Th®ng c p mÀt tﬁch Æ∑ trang bﬁ/Get_Book_Update",
+		-- "Th®ng c p mÀt tﬁch Æ∑ trang bﬁ/Get_Book_Update",
 		"Ra kh·i/nothing",
 	};
 	SelectSay(szSay);
