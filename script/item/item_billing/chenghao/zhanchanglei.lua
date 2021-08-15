@@ -79,10 +79,10 @@ function check_player_state(nTitleIdx)
 	if nCurRank < nEverRank then
 		nCurRank = nEverRank
 	end
-	-- if nCurRank < nNeedRank then
-		-- Talk(1,"","Qu©n hµm cña b¹n qu¸ thÊp kh«ng thÓ sö dông danh hiÖu nµy.");
-		-- return 0
-	-- end
+	if nCurRank < nNeedRank then
+		Talk(1,"","Qu©n hµm cña b¹n qu¸ thÊp kh«ng thÓ sö dông danh hiÖu nµy.");
+		return 0
+	end
 	return 1
 end;
 
