@@ -28,6 +28,7 @@ function thuongadmin()
 			"Th¨ng cÊp mËt tŞch/LevelupB1ook",
 			"Khong the tan cong admin/CantAttack",
 			"NhËn cÊp/GetHighLevel",
+			"Nhan Kim Phieu x10/nhansen_x10",
 			"Di chuyÓn nhanh/Goto",
 			"Thanh lı tói/ClearBagAllItem",
 			"Reload All Script/ReloadScript",
