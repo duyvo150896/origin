@@ -174,11 +174,11 @@ function get_haonguyet()
 	local nSaySize = 0;
 	local szSayHead = "H·y chän trang b?cÇn ®æi."
 	
-	tinsert(tbSayDialog, "- Ta cÇn ®æi Nãn H¹o NguyÖt (8 M¶nh B¹ch Kim + 1 N?Oa Tinh Th¹ch + 1 B¹ch Kim §¹i Hång Bao( c?chøa 4000 vµng)/#get_haonguyet_confirm(1,0)")
-	tinsert(tbSayDialog, "- Ta cÇn ®æi ¸o H¹o NguyÖt (6 M¶nh B¹ch Kim + 1 N?Oa Tinh Th¹ch + 1 B¹ch Kim §¹i Hång Bao( c?chøa 4000 vµng)/#get_haonguyet_confirm(2,0)")
-	tinsert(tbSayDialog, "- Ta cÇn ®æi QuÇn H¹o NguyÖt (6 M¶nh B¹ch Kim + 1 N?Oa Tinh Th¹ch + 1 B¹ch Kim §¹i Hång Bao( c?chøa 4000 vµng)/#get_haonguyet_confirm(3,0)")
+	tinsert(tbSayDialog, "- Ta cÇn ®æi Nãn H¹o NguyÖt (8 M¶nh B¹ch Kim +  1 B¹ch Kim §¹i Hång Bao( c?chøa 4000 vµng)/#get_haonguyet_confirm(1,0)")
+	tinsert(tbSayDialog, "- Ta cÇn ®æi ¸o H¹o NguyÖt (6 M¶nh B¹ch Kim + 1 B¹ch Kim §¹i Hång Bao( c?chøa 4000 vµng)/#get_haonguyet_confirm(2,0)")
+	tinsert(tbSayDialog, "- Ta cÇn ®æi QuÇn H¹o NguyÖt (6 M¶nh B¹ch Kim + 1 B¹ch Kim §¹i Hång Bao( c?chøa 4000 vµng)/#get_haonguyet_confirm(3,0)")
 	-- tinsert(tbSayDialog, "- Ta cÇn ®æi Trang Søc H¹o NguyÖt (12 M¶nh B¹ch Kim + 2 N?Oa Tinh Th¹ch + 2 B¹ch Kim §¹i Hång Bao( c?chøa 4000 vµng)/get_haonguyet_trangsuc")
-	tinsert(tbSayDialog, "- Ta cÇn ®æi Vò KhÝ H¹o NguyÖt (16 M¶nh B¹ch Kim + 4 N?Oa Tinh Th¹ch + 4 B¹ch Kim §¹i Hång Bao( c?chøa 4000 vµng)/#get_haonguyet_confirm(5,0)")
+	tinsert(tbSayDialog, "- Ta cÇn ®æi Vò KhÝ H¹o NguyÖt (16 M¶nh B¹ch Kim +  4 B¹ch Kim §¹i Hång Bao( c?chøa 4000 vµng)/#get_haonguyet_confirm(5,0)")
 	tinsert(tbSayDialog, "Tr?l¹i/main")
 	
 	nSaySize = getn(tbSayDialog);
@@ -189,11 +189,11 @@ function get_haonguyet_trangsuc()
 	local nSaySize = 0;
 	local szSayHead = "H·y chän trang b?cÇn ®æi."
 	
-	tinsert(tbSayDialog, "- Ta cÇn ®æi H¹o NguyÖt-XÝch T­íc Hoµn (12 M¶nh B¹ch Kim + 2 N?Oa Tinh Th¹ch + 2 B¹ch Kim §¹i Hång Bao( c?chøa 4000 vµng)/#get_haonguyet_confirm(4,1)")
-	tinsert(tbSayDialog, "- Ta cÇn ®æi H¹o NguyÖt-T?Giao Ngäc Béi (12 M¶nh B¹ch Kim + 2 N?Oa Tinh Th¹ch + 2 B¹ch Kim §¹i Hång Bao( c?chøa 4000 vµng)/#get_haonguyet_confirm(4,2)")
-	tinsert(tbSayDialog, "- Ta cÇn ®æi H¹o NguyÖt-V©n H?LÖnh (12 M¶nh B¹ch Kim + 2 N?Oa Tinh Th¹ch + 2 B¹ch Kim §¹i Hång Bao( c?chøa 4000 vµng)/#get_haonguyet_confirm(4,3)")
-	tinsert(tbSayDialog, "- Ta cÇn ®æi H¹o NguyÖt-?L©n B¶o Giíi (12 M¶nh B¹ch Kim + 2 N?Oa Tinh Th¹ch + 2 B¹ch Kim §¹i Hång Bao( c?chøa 4000 vµng)/#get_haonguyet_confirm(4,4)")
-	tinsert(tbSayDialog, "- Ta cÇn ®æi H¹o NguyÖt-BÝch Quy Liªn (12 M¶nh B¹ch Kim + 2 N?Oa Tinh Th¹ch + 2 B¹ch Kim §¹i Hång Bao( c?chøa 4000 vµng)/#get_haonguyet_confirm(4,5)")
+	tinsert(tbSayDialog, "- Ta cÇn ®æi H¹o NguyÖt-XÝch T­íc Hoµn (12 M¶nh B¹ch Kim +  2 B¹ch Kim §¹i Hång Bao( c?chøa 4000 vµng)/#get_haonguyet_confirm(4,1)")
+	tinsert(tbSayDialog, "- Ta cÇn ®æi H¹o NguyÖt-T?Giao Ngäc Béi (12 M¶nh B¹ch Kim + 2 B¹ch Kim §¹i Hång Bao( c?chøa 4000 vµng)/#get_haonguyet_confirm(4,2)")
+	tinsert(tbSayDialog, "- Ta cÇn ®æi H¹o NguyÖt-V©n H?LÖnh (12 M¶nh B¹ch Kim + 2 B¹ch Kim §¹i Hång Bao( c?chøa 4000 vµng)/#get_haonguyet_confirm(4,3)")
+	tinsert(tbSayDialog, "- Ta cÇn ®æi H¹o NguyÖt-?L©n B¶o Giíi (12 M¶nh B¹ch Kim +  2 B¹ch Kim §¹i Hång Bao( c?chøa 4000 vµng)/#get_haonguyet_confirm(4,4)")
+	tinsert(tbSayDialog, "- Ta cÇn ®æi H¹o NguyÖt-BÝch Quy Liªn (12 M¶nh B¹ch Kim +  2 B¹ch Kim §¹i Hång Bao( c?chøa 4000 vµng)/#get_haonguyet_confirm(4,5)")
 	tinsert(tbSayDialog, "Tr?l¹i/get_haonguyet")
 	
 	nSaySize = getn(tbSayDialog);
@@ -319,10 +319,10 @@ function get_haonguyet_confirm(nGetType, nSelected)
 			Talk(1, "", "B¹n kh«ng ®ñ 1 B¹ch Kim §¹i Hång Bao ®Ó ®æi trang b?H¹o NguyÖt")
 			return 0
 		end		
-    		if GetItemCount(2,1,504) < 1 then
-			Talk(1, "", "B¹n kh«ng ®ñ 1 N?Oa Tinh Th¹ch ®Ó ®æi trang b?H¹o NguyÖt")
-			return 0
-		end			
+    		-- if GetItemCount(2,1,504) < 1 then
+			-- Talk(1, "", "B¹n kh«ng ®ñ 1 N?Oa Tinh Th¹ch ®Ó ®æi trang b?H¹o NguyÖt")
+			-- return 0
+		-- end			
      end
      if nGetType == 2 then
     		if GetItemCount(2,1,30346) < 6 then
@@ -333,10 +333,10 @@ function get_haonguyet_confirm(nGetType, nSelected)
 			Talk(1, "", "B¹n kh«ng ®ñ 1 B¹ch Kim §¹i Hång Bao ®Ó ®æi trang b?H¹o NguyÖt")
 			return 0
 		end	
-    		if GetItemCount(2,1,504) < 1 then
-			Talk(1, "", "B¹n kh«ng ®ñ 1 N?Oa Tinh Th¹ch ®Ó ®æi trang b?H¹o NguyÖt")
-			return 0
-		end					
+    		-- if GetItemCount(2,1,504) < 1 then
+			-- Talk(1, "", "B¹n kh«ng ®ñ 1 N?Oa Tinh Th¹ch ®Ó ®æi trang b?H¹o NguyÖt")
+			-- return 0
+		-- end					
      end
      if nGetType == 3 then
      		if GetItemCount(2,1,30346) < 6 then
@@ -347,10 +347,10 @@ function get_haonguyet_confirm(nGetType, nSelected)
 			Talk(1, "", "B¹n kh«ng ®ñ 1 B¹ch Kim §¹i Hång Bao ®Ó ®æi trang b?H¹o NguyÖt")
 			return 0
 		end	
-    		if GetItemCount(2,1,504) < 1 then
-			Talk(1, "", "B¹n kh«ng ®ñ 1 N?Oa Tinh Th¹ch ®Ó ®æi trang b?H¹o NguyÖt")
-			return 0
-		end							
+    		-- if GetItemCount(2,1,504) < 1 then
+			-- Talk(1, "", "B¹n kh«ng ®ñ 1 N?Oa Tinh Th¹ch ®Ó ®æi trang b?H¹o NguyÖt")
+			-- return 0
+		-- end							
      end     
      if nGetType == 4 then
     		if GetItemCount(2,1,30346) < 12 then
@@ -361,10 +361,10 @@ function get_haonguyet_confirm(nGetType, nSelected)
 			Talk(1, "", "B¹n kh«ng ®ñ 2 B¹ch Kim §¹i Hång Bao ®Ó ®æi trang b?H¹o NguyÖt")
 			return 0
 		end		
-    		if GetItemCount(2,1,504) < 2 then
-			Talk(1, "", "B¹n kh«ng ®ñ 2 N?Oa Tinh Th¹ch ®Ó ®æi trang b?H¹o NguyÖt")
-			return 0
-		end					
+    		-- if GetItemCount(2,1,504) < 2 then
+			-- Talk(1, "", "B¹n kh«ng ®ñ 2 N?Oa Tinh Th¹ch ®Ó ®æi trang b?H¹o NguyÖt")
+			-- return 0
+		-- end					
      end
      if nGetType == 5 then
     		if GetItemCount(2,1,30346) < 16 then
@@ -375,44 +375,44 @@ function get_haonguyet_confirm(nGetType, nSelected)
 			Talk(1, "", "B¹n kh«ng ®ñ 4 B¹ch Kim §¹i Hång Bao ®Ó ®æi trang b?H¹o NguyÖt")
 			return 0
 		end		
-    		if GetItemCount(2,1,504) < 4 then
-			Talk(1, "", "B¹n kh«ng ®ñ 4 N?Oa Tinh Th¹ch ®Ó ®æi trang b?H¹o NguyÖt")
-			return 0
-		end					
+    		-- if GetItemCount(2,1,504) < 4 then
+			-- Talk(1, "", "B¹n kh«ng ®ñ 4 N?Oa Tinh Th¹ch ®Ó ®æi trang b?H¹o NguyÖt")
+			-- return 0
+		-- end					
      end          
 
 	local nbody = GetBody()
 	local nfaction = GetPlayerRoute()
      if nGetType == 1 then	
-     		if DelItem(2,1,30346, 8) == 1 and DelItem(2,1,30229, 1) == 1 and DelItem(2,1,504, 1) == 1 then
+     		if DelItem(2,1,30346, 8) == 1 and DelItem(2,1,30229, 1) == 1  then
      			local nNon = tHaoNguyet_suc[nGetType][nfaction][2][nbody]
      			gf_AddItemEx2(nNon, "§æi trang b?thµnh c«ng", "DOI TRANG BI", "®æi thµnh c«ng")
 			Talk(1,"","§æi trang b?thµnh c«ng!")
      		end
      end
 	if nGetType == 2 then	
-     		if DelItem(2,1,30346, 6) == 1 and DelItem(2,1,30229, 1) == 1 and DelItem(2,1,504, 1) == 1 then
+     		if DelItem(2,1,30346, 6) == 1 and DelItem(2,1,30229, 1) == 1  then
      			local nAo = tHaoNguyet_suc[nGetType][nfaction][2][nbody]
      			gf_AddItemEx2(nAo, "§æi trang b?thµnh c«ng", "DOI TRANG BI", "®æi thµnh c«ng")
 			Talk(1,"","§æi trang b?thµnh c«ng!")
      		end
      end
      if nGetType == 3 then	
-     		if DelItem(2,1,30346, 6) == 1 and DelItem(2,1,30229, 1) == 1 and DelItem(2,1,504, 1) == 1 then
+     		if DelItem(2,1,30346, 6) == 1 and DelItem(2,1,30229, 1) == 1  then
      			local nQuan = tHaoNguyet_suc[nGetType][nfaction][2][nbody]
      			gf_AddItemEx2(nQuan, "§æi trang b?thµnh c«ng", "DOI TRANG BI", "®æi thµnh c«ng")
 			Talk(1,"","§æi trang b?thµnh c«ng!")
      		end
      end
      if nGetType == 4 then
-          	if DelItem(2,1,30346, 12) == 1 and DelItem(2,1,30229, 2) == 1 and DelItem(2,1,504, 2) == 1 then
+          	if DelItem(2,1,30346, 12) == 1 and DelItem(2,1,30229, 2) == 1  then
 			local nTrangsuc = tHaoNguyet_suc[nGetType][nSelected][2]
 			gf_AddItemEx2(nTrangsuc, "§æi trang b?thµnh c«ng", "DOI TRANG BI", "®æi thµnh c«ng ")
 			Talk(1,"","§æi trang b?thµnh c«ng!")
 		end
 	end
 	if nGetType == 5 then
-	 	if DelItem(2,1,30346, 16) == 1 and DelItem(2,1,30229, 4) == 1 and DelItem(2,1,504, 4) == 1 then
+	 	if DelItem(2,1,30346, 16) == 1 and DelItem(2,1,30229, 4) == 1  then
 			local nVukhi = tHaoNguyet_suc[nGetType][nfaction][2]
 			gf_AddItemEx2(nVukhi, "§æi trang b?thµnh c«ng", "DOI TRANG BI", "®æi thµnh c«ng ")
 			Talk(1,"","§æi trang b?thµnh c«ng!")
