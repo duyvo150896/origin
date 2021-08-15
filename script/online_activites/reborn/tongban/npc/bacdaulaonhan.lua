@@ -31,7 +31,7 @@ function main()
 		tinsert(tSay, "NhËn th­ëng M· §¸o Thµnh C«ng/giapngo")
 	end
 	tinsert(tSay, "Thİ LuyÖn B¹n §ång Hµnh/main_slt")
-	tinsert(tSay, "Phôc Sinh B¹n §ång Hµnh/pet_phucsinh")
+	-- tinsert(tSay, "Phôc Sinh B¹n §ång Hµnh/pet_phucsinh")
 	-- if nIsPS >= 1 then
 		-- tinsert(tSay, "NhËn nu«i thªm B¹n §ång Hµnh (tiªu hao 150 xu vËt phÈm)/#get_more_pet(1)")
 		-- tinsert(tSay, "NhËn nu«i thªm B¹n §ång Hµnh (tiªu hao 490 vµng)/#get_more_pet(2)")
