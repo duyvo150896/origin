@@ -1781,7 +1781,8 @@ function enter_mp(nRoute)
 	Earn(100000);
 	SaveNow()
 	Talk(1,"","Thao t¸c thµnh c«ng, h·y ®¨ng nhËp l¹i")
-	ExitGame()
+	NewWorld(200,175*8,178*16)
+	-- ExitGame()
 end
 
 function Get_YaoYang_15()
@@ -5064,13 +5065,13 @@ function DoBuffNMK_HTTC()
 	-- Say(g_szTitle.."------------------", getn(tSay), tSay);
 	local nBody 	= GetBody();
 	if nBody == 3 then
-		AddItem(0,110,516,1,1,3,292,-1,-1,-1,-1,0);
-		AddItem(0,109,516,1,1,3,292,-1,-1,-1,-1,0);
-		AddItem(0,108,516,1,1,3,292,-1,-1,-1,-1,0);
+		AddItem(0,110,516,1,1,1,852	);
+		AddItem(0,109,516,1,1,3,292	);
+		AddItem(0,108,516,1,1,3,292	);
 	else
-		AddItem(0,110,517,1,1,3,292,-1,-1,-1,-1,0);
-		AddItem(0,109,517,1,1,3,292,-1,-1,-1,-1,0);
-		AddItem(0,108,517,1,1,3,292,-1,-1,-1,-1,0);
+		AddItem(0,110,517,1,1,1,852);
+		AddItem(0,109,517,1,1,3,292);
+		AddItem(0,108,517,1,1,3,292);
 	end
 end
 function DoBuffNMK_test()
