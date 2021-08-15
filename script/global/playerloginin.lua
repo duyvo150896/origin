@@ -172,7 +172,9 @@ function main(ExchangeComing)
 		Msg2Player("Vui lﬂng tho∏t game vµ Æ®ng nhÀp lπi!")
 		NewWorld(701,173*8,196*16)
 	end
-
+	if GetLevel() == 1 then
+		NewWorld(200,175*8,178*16)
+	end	
 	--NOTE: it MUST be the 1st one calling for resetting things by SunZhuoshi
 	--< Added by SunZhuoshi
 	DR_OnPlayerLogin();
