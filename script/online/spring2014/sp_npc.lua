@@ -47,7 +47,7 @@ function sp_BaiNian_AwardInfo()
 end
 
 function sp_BaiNian_GetLiShiBao()
-	if gf_GetPlayerRebornCount() <= 0 and gf_CheckBaseCondition(85) ~= 1 then
+	if gf_GetPlayerRebornCount() <= 0 and gf_CheckBaseCondition(77) ~= 1 then
 			return 0;
 	end
 	if BigGetItemCount(2, 1, 30624) > 0 then
@@ -92,7 +92,7 @@ function sp_DaNianShou_AwardInfo()
 end
 
 function sp_DaNianShou_Buy()
-	if gf_GetPlayerRebornCount() <= 0 and gf_CheckBaseCondition(85) ~= 1 then
+	if gf_GetPlayerRebornCount() <= 0 and gf_CheckBaseCondition(77) ~= 1 then
 			return 0;
 	end
 	local nFreeRoom = GetFreeItemRoom()*1000;

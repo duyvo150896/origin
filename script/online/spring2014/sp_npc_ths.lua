@@ -3,7 +3,7 @@ Include("\\script\\online\\spring2014\\sp_head.lua")
 
 function main()
 	sp_DailyReset();
-	if gf_GetPlayerRebornCount() <= 0 and gf_CheckBaseCondition(80, 1) ~= 1 then
+	if gf_GetPlayerRebornCount() <= 0 and gf_CheckBaseCondition(77, 1) ~= 1 then
 			return 0;
 	end
 	local nTimes = SP_TASK_GROUP:GetTask(SP_TASK_GROUP.ThsDrop);
