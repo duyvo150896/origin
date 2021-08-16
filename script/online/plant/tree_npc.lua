@@ -194,13 +194,13 @@ function getfruit()
 			SetTask(TSK_CSD_COUNT_C, nCSD_BNL)
 		end
 		---------------------------------
-		local nRandomNum = 0;
-		nRandomNum = random(1,100);
-		if nRandomNum <= 100 then
-			ModifyExp(200000);	--二十万经验
-			Msg2Player("B筺 nh薾 頲 20 v筺 kinh nghi謒");
-			WriteLog("[Ho箃 ng tr錸g c﹜ Th竔 H璢:"..GetName().."Nh薾 頲 20 v筺 kinh nghi謒");
-		end;
+		local nRandomexp = 0;
+		nRandomexp = random(3000000,4000000);
+		-- if nRandomNum <= 100 then
+			ModifyExp(nRandomexp);	--二十万经验
+			Msg2Player("B筺 nh薾 頲 1 ng v筺 kinh nghi謒");
+			-- WriteLog("[Ho箃 ng tr錸g c﹜ Th竔 H璢:"..GetName().."Nh薾 頲 20 v筺 kinh nghi謒");
+		-- end;
 		-- if GetLevel() < 90 then
 			-- if nRandomNum <= 100 then
 				-- ModifyExp(5000000);	--二十万经验
