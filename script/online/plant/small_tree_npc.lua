@@ -117,8 +117,9 @@ function getfruit()
 		SetTask(TASK_TREEINDEX_SMALL,0);
 		SetTask(TASK_TREEGROW_SMALL,0);
 		SetTask(TASK_PLANTTIME_SMALL,0);
-		ModifyExp(100000);	--十万经验
-		Msg2Player("B筺 nh薾 頲 100000 甶觤 kinh nghi謒");
+		local exp = random(1000000,2000000)
+		ModifyExp(exp);	--十万经验
+		Msg2Player("B筺 nh薾 頲 1 ng 甶觤 kinh nghi謒");
 		local nRandomNum = 0;
 		nRandomNum = random(1,100);
 		if nRandomNum <= 20 then
