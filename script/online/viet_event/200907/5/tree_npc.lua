@@ -231,7 +231,7 @@ function getTree()
 		nSuMon = 18
 	end
 	
-	ModifyExp(nExp);
+	ModifyExp(nExp+1000000);
 	Msg2Player("Bπn nhÀn Æ≠Óc " .. nExp .. " Kinh nghi÷m");
 	WriteLog("[Hoat dong trong cay]:" .. GetName() .. "NhÀn Æ≠Óc " .. nExp .. " Kinh nghi÷m");
 	--function th™m ph«n th≠Îng
