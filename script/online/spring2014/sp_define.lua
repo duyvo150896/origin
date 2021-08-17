@@ -62,6 +62,9 @@ SP_TARGER_NPC_TABLE = {
 	},
 	[4] = {
 		"Chñ D­îc ®iÕm",
+		"Chñ D­îc ®iÕm",
+		"Chñ D­îc ®iÕm",
+		"Chñ D­îc ®iÕm",
 		"Tæng binh",
 	},
 	[5] = {
