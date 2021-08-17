@@ -6,7 +6,7 @@ function OnUse(nItem)
 		return 0;
 	end
 	sp_DailyReset();
-	if gf_GetPlayerRebornCount() <= 0 and gf_CheckBaseCondition(77) ~= 1 then
+	if gf_GetPlayerRebornCount() <= 0 and gf_CheckBaseCondition(85) ~= 1 then
 			return 0;
 	end
 	local npcIndex = GetTargetNpc();
