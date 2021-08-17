@@ -31,10 +31,10 @@ function main()
 	if nDate >= TOP_START_DATE and nDate <= TOP_END_DATE then
 		tinsert(tSay,1,"NhËn phÇn th­ëng theo ®¼ng cÊp/get_award_by_level")
 --		tinsert(tSay,"NhËn th­ëng l­u ph¸i Thóy Yªn Linh N÷ cÊp 92-99/get_route_award_by_level_menu")
-		tinsert(tSay,"NhËn th­ëng cao thñ ®Çu tiªn ®¹t 1.400.000 ®iÓm c«ng tr¹ng/confirm_get_1mil_Hornor_award")
+		tinsert(tSay,"NhËn th­ëng cao thñ ®Çu tiªn ®¹t 540.000 ®iÓm c«ng tr¹ng/confirm_get_1mil_Hornor_award")
 --		tinsert(tSay,"NhËn phÇn th­ëng ¦u ®·i server " .. szServerName .. "/Say_NhanUuDai")
 		tinsert(tSay,"NhËn phÇn th­ëng cao thñ Top 1 mçi hÖ ph¸i/get_top_faction_award")
-		tinsert(tSay,"NhËn phÇn th­ëng 3 nh©n sÜ ®Çu tiªn mçi phe ®¹t 860.000 c«ng tr¹ng/confirm_get_top_Hornor_award")
+		tinsert(tSay,"NhËn phÇn th­ëng 3 nh©n sÜ ®Çu tiªn mçi phe ®¹t 360.000 c«ng tr¹ng/confirm_get_top_Hornor_award")
 --		tinsert(tSay,"§¨ng ký nhËn th­ëng top 100 chuyÓn sinh 1 cÊp 99/#CS_TopAward(1)")
 --		tinsert(tSay,"§¨ng ký nhËn th­ëng top 100 chuyÓn sinh 2 cÊp 99/#CS_TopAward(2)")
 --		tinsert(tSay,"§¨ng ký nhËn th­ëng top 100 chuyÓn sinh 3 cÊp 99/#CS_TopAward(3)")
@@ -343,17 +343,17 @@ function confirm_get_top_faction_award()
 		return 0
 	end
 	
-	if nChuyenSinh < 1 then
-		Talk(1,"",strNpcName .. "HiÖn t¹i C¸c h¹ ch­a hoµn ChuyÓn sinh 1!")
-		return 0
-	end
+	-- if nChuyenSinh < 1 then
+		-- Talk(1,"",strNpcName .. "HiÖn t¹i C¸c h¹ ch­a hoµn ChuyÓn sinh 1!")
+		-- return 0
+	-- end
 	
-	if GetLevel() < 96 then
+	if GetLevel() < 97 then
 		Talk(1, "", strNpcName .. "C¸c h¹ h·y phÊn ®Êu lªn cÊp ®é 96 råi quay l¹i nhÐ!");
 		return 0
 	end
 	
-	if nRep < 25000 or nFaction < 25000 or nHor < 500000  then
+	if nRep < 11000 or nFaction < 11000 or nHor < 200000  then
 		Talk(1, "", strNpcName.."C¸c h¹ ch­a ®ñ ®iÒu kiÖn nhËn th­ëng. Vui lßng kiÓm tra ®iÒu kiÖn danh väng, s­ m«n, c«ng tr¹ng.");
 		return 0
 	end
@@ -428,12 +428,13 @@ function confirm_get_top_Hornor_award()
 	-- Msg2Player(nChuyenSinh)
 	-- Msg2Player("ps")
 	-- Msg2Player(nPhucSinh)
-	if nChuyenSinh < 1 or GetLevel() < 94 then
-		Talk(1, "", strNpcName.."C¸c h¹ ch­a ®ñ ®iÒu kiÖn ChuyÓn sinh 1 -  cÊp ®é 94!")
+	-- if nChuyenSinh < 1 or GetLevel() < 94 then
+	 if  GetLevel() < 94 then
+		Talk(1, "", strNpcName.."C¸c h¹ ch­a ®ñ ®iÒu kiÖn  cÊp ®é 94!")
 		return 0
 	end
 	
-	if nRep < 25000 or nFaction < 25000 or abs(nHor) < 860000  then
+	if nRep < 11000 or nFaction < 11000 or abs(nHor) < 360000  then
 		Talk(1, "", strNpcName.."C¸c h¹ ch­a ®ñ ®iÒu kiÖn nhËn th­ëng. Vui lßng kiÓm tra ®iÒu kiÖn danh väng, s­ m«n, c«ng tr¹ng.");
 		return 0
 	end
@@ -510,12 +511,13 @@ function confirm_get_1mil_Hornor_award()
 		return 0
 	end
 	
-	if nChuyenSinh < 1 or GetLevel() < 95 then
-		Talk(1, "", strNpcName.."C¸c h¹ ch­a chuyÓn sinh 1 cÊp ®é 95, h·y cè g¾ng thªm..");
+	-- if nChuyenSinh < 1 or GetLevel() < 95 then
+	if  GetLevel() < 95 then
+		Talk(1, "", strNpcName.."C¸c h¹ ch­a  cÊp ®é 95, h·y cè g¾ng thªm..");
 		return 0
 	end
 	
-	if nRep < 30000 or nFaction < 30000 or abs(nHor) < 1400000  then
+	if nRep < 10000 or nFaction < 11000 or abs(nHor) < 540000  then
 		Talk(1, "", strNpcName.."C¸c h¹ ch­a ®ñ ®iÒu kiÖn nhËn th­ëng. Vui lßng kiÓm tra ®iÒu kiÖn danh väng, s­ m«n, c«ng tr¹ng.");
 		return 0
 	end
@@ -525,8 +527,8 @@ function confirm_get_1mil_Hornor_award()
 		return 0
 	end
 	
-	if GetItemCount(2,1,30230) < 39000 then
-		Talk(1,"", strNpcName.."C¸c h¹ kh«ng ®em ®ñ 39.000 xu vËt phÈm, hay lµ ®· ®Ó quªn trong r­¬ng?")
+	if GetItemCount(2,1,30230) < 19000 then
+		Talk(1,"", strNpcName.."C¸c h¹ kh«ng ®em ®ñ 19.000 xu vËt phÈm, hay lµ ®· ®Ó quªn trong r­¬ng?")
 		return 0
 	end
 	
