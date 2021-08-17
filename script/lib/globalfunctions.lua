@@ -2851,12 +2851,12 @@ end
 --µÈ¼¶¼°¼¼ÄÜÅĞ¶Ï
 function gf_CheckBaseCondition(nBaseLevel, bNotMsg)
 	local nLevel = GetLevel();
-	if nLevel < nBaseLevel or gf_Check55FullSkill() == 0 or GetPlayerFaction() == 0 then
-		if not bNotMsg or bNotMsg ~= 1 then
-			Talk(1,"",format("Ng­êi ch¬i cÊp <color=green>%d<color> trë lªn ®· gia nhËp hÖ ph¸i häc ®­îc <color=green>1<color> kü n¨ng cÊp <color=green>55<color> míi cã thÓ tham gia ho¹t ®éng.",nBaseLevel));
-		end
-		return 0;
-	end
+	-- if nLevel < nBaseLevel or gf_Check55FullSkill() == 0 or GetPlayerFaction() == 0 then
+		-- if not bNotMsg or bNotMsg ~= 1 then
+			-- Talk(1,"",format("Ng­êi ch¬i cÊp <color=green>%d<color> trë lªn ®· gia nhËp hÖ ph¸i häc ®­îc <color=green>1<color> kü n¨ng cÊp <color=green>55<color> míi cã thÓ tham gia ho¹t ®éng.",nBaseLevel));
+		-- end
+		-- return 0;
+	-- end
 	return 1;
 end
 
