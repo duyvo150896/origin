@@ -297,8 +297,8 @@ tbMatTich70caocap  =
 		[20] = {"Huy“n Minh Phong Ma Ch©n Quy”n", {0, 107, 216+29797, 5}}, 
 		[21] = {"Linh CÊ Huy“n Tµ Ch©n Quy”n", {0, 107, 217+29797, 5}}, 
 		[23] = {"Cˆu Thi™n Phong L´i Ch©n Quy”n", {0,107,218+29797, 5}}, 
-		[29] = {"HÂng Tr«n TÛy MÈng Ch©n Quy”n", {0,107,222+29797, 5}}, 
-		[30] = {"Phong Hoa Thi™n Di÷p Ch©n Quy”n", {0,107,223+29797, 5}}, 
+		[29] = {"HÂng Tr«n TÛy MÈng Ch©n Quy”n", {0,107,219+29797, 5}}, 
+		[30] = {"Phong Hoa Thi™n Di÷p Ch©n Quy”n", {0,107,220+29797, 5}}, 
 }
 tbBKVDnon  =
 {
