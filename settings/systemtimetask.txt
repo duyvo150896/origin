@@ -30,7 +30,7 @@ HOUR	MIN	SCRIPT	d	DESC
 12	1	\script\½á»é\mission\init_fields.lua
 12	2	\script\²Ø½£É½×¯\task_script\ontimer_notify.lua
 12	20	\script\online\qianhe_tower\qht_system_task.lua
-12	40	\script\task\killer_hall\mission\init_killer_hall.lua
+12	30	\script\task\killer_hall\mission\init_killer_hall.lua
 12	45	\script\missions\tong_melee\tm_systimer.lua
 13	0	\script\task\weekend\weekend_timer.lua
 14	0	\script\task\weekend\weekend_timer.lua
