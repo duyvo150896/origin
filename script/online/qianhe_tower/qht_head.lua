@@ -13,7 +13,7 @@ QIANHE_START_TIME = 2020091200;
 QIANHE_END_TIME = 2021092900;
 
 --活动开始使用临时任务变量，再次开启要注意了
-QHT_TASK_GROUP =  TaskManager:Create(7, 9);
+QHT_TASK_GROUP =  TaskManager:Create(7, 10);
 QHT_TASK_GROUP.DaySeq = 1; --跨天
 QHT_TASK_GROUP.DailyExp = 2; --每日获取经验
 QHT_TASK_GROUP.DailyZhenQi = 3; --每日获取真气
