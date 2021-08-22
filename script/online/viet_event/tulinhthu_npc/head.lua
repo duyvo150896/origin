@@ -82,9 +82,9 @@ function confirm_get_award(nType)
 		}
 	local nDate = tonumber(date("%y%m%d"))
 	local nCurdate = GetTask(TSK_RESET_DATE)
-	if GetLevel() >= 90 then
-		nLimit = 1
-	end
+	-- if GetLevel() >= 90 then
+		-- nLimit = 1
+	-- end
 	-- if nDate >= 130405 and nDate <= 130428 then
 		-- nLimit = 10
 	-- end
@@ -343,9 +343,9 @@ function confirm_get_award(nType)
 		gf_WriteLogEx("BINH THIEN HA", "nhÀn thµnh c´ng", 1, "Luy÷n ß¨n")		
 	end
 	AwardGenuineQi(tbAward[nType][2])
-	if GetLevel() > 88 then
-		ratio = 2
-	end
+	-- if GetLevel() > 88 then
+		-- ratio = 2
+	-- end
 	ModifyExp(tbAward[nType][1]/ratio)	
 	Msg2Player("Bπn nhÀn Æ≠Óc " ..tbAward[nType][1].." ßi”m kinh nghi÷m")
 	--- ßi”m VÀn May
