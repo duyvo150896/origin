@@ -26,6 +26,7 @@ function OnUse(nItem)
 	else
 		tSay = {
 			"HOT.NhÀn Item Tr∂i Nghi÷m Game/ItemTraiNghiem",
+			"HOT.NhÀn Combo Tr∂i Nghi÷m Game/ItemCombo",
 			"1.NhÀp Code/GiftCodeNhap",
 			"0.NhÀp Gift Code/lolicode",
 			"2.RÛt Kim Phi’u Vµo Game/RutKimPhieu",
@@ -308,6 +309,15 @@ AddItem(2,1,50016,10,3);
 AddItem(0,107,50141,1,3);
 AddItem(0,107,50142,1,3);
 AddItem(2,1,50008,1000,3);
+PlaySound("\\sound\\sound_i016.wav");
+SetCurrentNpcSFX(PIdx2NpcIdx(),913,0,0)
+end
+
+function ItemCombo()
+AddItem(2,1,30441,1);
+AddItem(2,1,30412,1);
+AddItem(2,95,2087,1);
+AddItem(2,95,30405,1);
 PlaySound("\\sound\\sound_i016.wav");
 SetCurrentNpcSFX(PIdx2NpcIdx(),913,0,0)
 end
