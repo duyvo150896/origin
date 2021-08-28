@@ -10,12 +10,12 @@ Include("\\settings\\static_script\\missions\\base\\mission_award_base.lua")
 --回调函数路径
 Oly_CallBack_Script = "\\script\\online\\olympic\\oly_head.lua";
 
-OLY_ACTIVITY_DURATION = 1296000 --3600 * 24 * 15活动时长
+OLY_ACTIVITY_DURATION = 5184000 --3600 * 24 * 15活动时长
 
 --活动开始时间(根据格式调整)!!!!!!!!!
 --activity start time
 --ACTIVITY_START_DATE = {2012,7,6} --{year，mouth，day}
-ACTIVITY_START_DATE = {2021,8,12} --{year，mouth，day}
+ACTIVITY_START_DATE = {2021,8,28} --{year，mouth，day}
 
 --活动开启时间判断
 function oly_IsActivityOpen()
