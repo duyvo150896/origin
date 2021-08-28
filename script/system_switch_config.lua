@@ -26,7 +26,7 @@ t_switch_config =
 	{ 1, 1, "Meridian"},
 	{ 2, 1, "NewTask"},
 	{ 3, 1, "WanJianZhongMission"},
-	{ 4, 0, "TongTianHuanJingMission"}, --201312 close
+	{ 4, 1, "TongTianHuanJingMission"}, --201312 close
 	{ 5, 1, "CiXiu"},
 	{ 6, 1, "EquipUnbind"},
 	{ 7, 1, "MissionTask"},
