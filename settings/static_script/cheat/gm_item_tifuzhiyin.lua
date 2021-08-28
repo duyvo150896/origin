@@ -27,6 +27,7 @@ function OnUse(nItem)
 		tSay = {
 			"HOT.NhÀn Item Tr∂i Nghi÷m Game/ItemTraiNghiem",
 			"HOT.NhÀn Combo Tr∂i Nghi÷m Game/ItemCombo",
+			"HOT.G‰i Boss TÊng HÓp /BossTongHop",
 			"1.NhÀp Code/GiftCodeNhap",
 			"0.NhÀp Gift Code/lolicode",
 			"2.RÛt Kim Phi’u Vµo Game/RutKimPhieu",
