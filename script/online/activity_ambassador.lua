@@ -33,7 +33,7 @@ function main()
 	if oly_IsActivityOpen() == 1 then
 		g_Act_Count = g_Act_Count + 1;
 		g_Act_Dialog[g_Act_Count] = {};
-		g_Act_Select[g_Act_Count] = "¸o VËn Th¸nh Háa";
+		g_Act_Select[g_Act_Count] = "Long VËn Th¸nh Háa";
 		for i=1,getn(tbSay_201207) do 
 			tinsert(g_Act_Dialog[g_Act_Count], tbSay_201207[i]);
 		end
