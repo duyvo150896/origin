@@ -85,6 +85,13 @@ tItem =
 	{0, 101, 96, "Tµng KiÕm ¤ Kim Phôc"},
 	{0, 101, 97, "Tµng KiÕm ¤ Kim Phôc"},
 	{0, 101, 98, "Tµng KiÕm ¤ Kim Phôc"},
+	{0, 102, 129, "Cöu Thiªn"},
+	{0, 102, 130, "Cöu Thiªn"},
+	{0, 102, 131, "Cöu Thiªn"},
+	{0, 102, 132, "Cöu Thiªn"},
+	{0, 102, 133, "Cöu Thiªn"},
+	{0, 102, 134, "Cöu Thiªn"},
+	{0, 102, 135, "Cöu Thiªn"},
 }
 
 function OnUse()
