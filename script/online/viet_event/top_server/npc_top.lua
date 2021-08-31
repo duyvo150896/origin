@@ -358,8 +358,8 @@ function confirm_get_top_faction_award()
 		return 0
 	end
 
-	if GetItemCount(2,1,30230) < 5000 then
-		Talk(1,"",strNpcName .. "C¸c h¹ kh«ng ®em ®ñ 5.000 xu vËt phÈm.")
+	if GetItemCount(2,1,30230) < 17000 then
+		Talk(1,"",strNpcName .. "C¸c h¹ kh«ng ®em ®ñ 17.000 xu vËt phÈm.")
 		return 0
 	end
 		
