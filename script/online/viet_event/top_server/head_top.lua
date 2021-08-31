@@ -17,6 +17,15 @@ TOP_CREATED_ROLE = 1324490626
 TOP_SERVER_ID = 91
 szLOGSERVERNAME = "NGOA LONG"
 
+
+	TSK_HOATDONGNEWSERVER = 1534
+	TSK_HOATDONGNEWSERVER_NHANTHUONG = 2157
+	TSK_CONGHIENBANG = 2185
+	TSK_TOP_LEVEL = 2545
+	TSK_TOP_AWARD = 2276
+	TSK_BONUS_CONLON = 2185
+	
+	
 -- Qui ®Þnh gia trÞ ®iÓm danh väng , s­ m«n , qu©n c«ng , top Level nhËn th­ëng theo ®¼ng cÊp
 tb_topserver_award_limit = {				
 				[76] = {  3000,   4000,   50000,     0},
