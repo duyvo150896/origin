@@ -349,7 +349,7 @@ function confirm_get_top_faction_award()
 	-- end
 	
 	if GetLevel() < 97 then
-		Talk(1, "", strNpcName .. "C¸c h¹ h·y phÊn ®Êu lªn cÊp ®é 96 råi quay l¹i nhÐ!");
+		Talk(1, "", strNpcName .. "C¸c h¹ h·y phÊn ®Êu lªn cÊp ®é 97 råi quay l¹i nhÐ!");
 		return 0
 	end
 	
