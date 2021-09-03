@@ -129,9 +129,9 @@ function main()
 	Activity_Npc_Add_201209();--9ÔÂ»î¶¯NPC´´½¨
 	Qht_Activity_Event();--¼¤Õ½Ç§Ñ°Ëş
 	Bkl_baoruong() --B¹ch Kim LÖnh b¶o r­¬ng
-	if tonumber(date("%y%m%d")) >= 140124 and tonumber(date("%y%m%d")) <= 200203 then
-		tuyetanh_baoruong() --Quı Ngä(Tş) B¶o R­¬ng
-		chieuda_baoruong()
+	if tonumber(date("%y%m%d")) >= 140124 and tonumber(date("%y%m%d")) <= 230203 then
+		-- tuyetanh_baoruong() --Quı Ngä(Tş) B¶o R­¬ng
+		-- chieuda_baoruong()
 		xichtho_baoruong()
 	end
 	npcVanMay() --Npc tİnh n¨ng VËn May §¹o H÷u
