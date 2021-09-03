@@ -8,7 +8,7 @@ tbDieuKien = {
 						[1] = {--option
 									[1] = {1, "59 xu vËt phÈm"},	--tabb
 									[2] = {1, "139 xu vËt phÈm"},	--cdpb
-									[3] = {1, "1 Ma Tinh"},	--xtcv							
+									[3] = {1, "1 xu vËt phÈm"},	--xtcv							
 								},
 						[2] = {--option
 									[1] = {--tabb
@@ -72,7 +72,7 @@ function open_QuyTy_box(nType, nLoaiBox)
 	local npc_index = GetTargetNpc()
 	local nNPC_name = GetNpcName(npc_index)
 	if nType == 1 then
-		if GetItemCount(2,1,30497) < tbDieuKien[nType][nLoaiBox][1] then		
+		if GetItemCount(2,1,30230) < tbDieuKien[nType][nLoaiBox][1] then		
 			Talk(1, "", "<color=green>"..nNPC_name.."<color>: §¹i hiÖp kh«ng ®ñ "..tbDieuKien[nType][nLoaiBox][2].." ®Ó më r­¬ng.");
 			return 0
 		end
@@ -124,7 +124,7 @@ function open_QuyTy_box(nType, nLoaiBox)
 			DoWait(31,29,1)	
 		end
 		if nType == 1 then
-			DelItem(2,1,30497, tbDieuKien[nType][nLoaiBox][1])
+			DelItem(2,1,30230, tbDieuKien[nType][nLoaiBox][1])
 		elseif nType == 2 then
 			if nLoaiBox == 1 then
 				Pay(tbDieuKien[nType][nLoaiBox][1][1]*10000)
@@ -134,7 +134,7 @@ function open_QuyTy_box(nType, nLoaiBox)
 				DelItem(2,1,1009, tbDieuKien[nType][nLoaiBox][2][1])
 			elseif nLoaiBox == 3 then
 				DelItem(2,1,30230, tbDieuKien[nType][nLoaiBox][1][1])
-				DelItem(2,1,1009, tbDieuKien[nType][nLoaiBox][2][1])
+				-- DelItem(2,1,1009, tbDieuKien[nType][nLoaiBox][2][1])
 			end
 		end
 		if nLoaiBox == 1 then
@@ -218,8 +218,8 @@ function xichtho_box_award()
 				-- {1, 100, "§Þnh Hån Thiªn Th¹ch ThÇn Th¹ch", {2,1,1067, 1},7 * 24 * 3600},
 				-- {1, 100, "§¹i §Þnh Hån", {2,1,1113, 1},7 * 24 * 3600},
 				-- {1, 100, "ChuyÓn Sinh §¬n", {2,1,30345, 1},7 * 24 * 3600},
-				-- {31, 15000, "give_weapon7()"},
-				-- {31, 10000, "give_weapon8()"},
+				{31, 15000, "give_weapon7()"},
+				{31, 10000, "give_weapon8()"},
 				{31, 10000, "give_weapon9()"},
 --				{31, 10000, "TrangBiKimXa3Sao(3)"},	
 				-- {31, 10000, "Book_Pet2(3)"},	
