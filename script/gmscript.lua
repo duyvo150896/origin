@@ -412,19 +412,19 @@ function call_faction_bt_boss(nPos1, nPos2, nPos3)
 	end
 
 	-- 招第一个boss
-	--local nNpcIndex = CreateNpc(strBossName[nPos1], strBossName[nPos1], szBossMapID[nPos1], szBossMapX[nPos1], szBossMapY[nPos1])
-	--SetNpcLifeTime(nNpcIndex, 1800)
-	--SetNpcScript(nNpcIndex, strBossScript[nPos1])
+	local nNpcIndex = CreateNpc(strBossName[nPos1], strBossName[nPos1], szBossMapID[nPos1], szBossMapX[nPos1], szBossMapY[nPos1])
+	SetNpcLifeTime(nNpcIndex, 1800)
+	SetNpcScript(nNpcIndex, strBossScript[nPos1])
 
 	-- 招第二个boss
-	--nNpcIndex = CreateNpc(strBossName[nPos2], strBossName[nPos2], szBossMapID[nPos2], szBossMapX[nPos2], szBossMapY[nPos2])
-	--SetNpcLifeTime(nNpcIndex, 1800)
-	--SetNpcScript(nNpcIndex, strBossScript[nPos2])
+	nNpcIndex = CreateNpc(strBossName[nPos2], strBossName[nPos2], szBossMapID[nPos2], szBossMapX[nPos2], szBossMapY[nPos2])
+	SetNpcLifeTime(nNpcIndex, 1800)
+	SetNpcScript(nNpcIndex, strBossScript[nPos2])
 
 	-- 招第三个boss
-	--nNpcIndex = CreateNpc(strBossName[nPos3], strBossName[nPos3], szBossMapID[nPos3], szBossMapX[nPos3], szBossMapY[nPos3])
-	--SetNpcLifeTime(nNpcIndex, 1800)
-	--SetNpcScript(nNpcIndex, strBossScript[nPos3])
+	nNpcIndex = CreateNpc(strBossName[nPos3], strBossName[nPos3], szBossMapID[nPos3], szBossMapX[nPos3], szBossMapY[nPos3])
+	SetNpcLifeTime(nNpcIndex, 1800)
+	SetNpcScript(nNpcIndex, strBossScript[nPos3])
 end;
 --********************************************太虚首饰任务创建刘铁匠************************************
 function taixujwl_liu_crt()
