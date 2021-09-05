@@ -279,7 +279,7 @@ tAttribute_quyty_first = {	--tAttribute_bkl_first
 
 	local add_flag = 0
 	local prize_name = ""
-	local nRan_weapon = get_random_quyty(tWeapon_quyty, 3000, 1)
+	local nRan_weapon = get_random_quyty(tWeapon_quyty, 8400, 1)
 	local nRandomAttr = 0
 	local nRandomAttrLevel = 0
 	local tWeaponAttr = {{0,0}, {0,0}, {0,0}}
@@ -332,7 +332,7 @@ tAttribute_quyty_first = {	--tAttribute_bkl_first
 	local tWeapon_quyty = { --tWeapon_bkl
 				{600, "¢m D­¬ng ¢n", 0, 0, 16},
 				{600, "Kh«ng Cã",	 0, 1, 55},
-				{1000, "Nha Cöu", 0, 2, 38},
+				{600, "Nha Cöu", 0, 2, 38},
 				{600, "NghÞch L©n",	0, 3, 66},
 				{600, "B¸t X¹ Chi X¹", 0,	4,	121},
 				{600, "ThÇn Ch©m", 0, 5, 42},
@@ -348,7 +348,7 @@ tAttribute_quyty_first = {	--tAttribute_bkl_first
 
 	local add_flag = 0
 	local prize_name = ""
-	local nRan_weapon = get_random_quyty(tWeapon_quyty, 2400, 1)
+	local nRan_weapon = get_random_quyty(tWeapon_quyty, 8400, 1)
 	local nRandomAttr = 0
 	local nRandomAttrLevel = 0
 	local tWeaponAttr = {{0,0}, {0,0}, {0,0}}
@@ -416,7 +416,7 @@ function give_weapon9()
 
 	local add_flag = 0
 	local prize_name = ""
-	local nRan_weapon = get_random_quyty(tWeapon_quyty, 2400, 1)
+	local nRan_weapon = get_random_quyty(tWeapon_quyty, 8400, 1)
 	local nRandomAttr = 0
 	local nRandomAttrLevel = 0
 	local tWeaponAttr = {{0,0}, {0,0}, {0,0}}
