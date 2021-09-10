@@ -6,11 +6,11 @@ SM_SUB2 = 30242;
 
 SM_titleTable = 
 {
-	{"Siªu Nh©n Trøng Muèi (néi c«ng +20)", 64, 1},
-	{"Siªu Nh©n Gao (søc m¹nh +20)", 64, 2},
-	{"Siªu Nh©n M× Bß (th©n ph¸p +20)", 64, 3},
-	{"Siªu Nh©n M× Gµ (g©n cèt +20)", 64, 4},
-	{"Siªu Nh©n M× T«m (linh ho¹t +20)", 64, 5}
+	{"Siªu Nh©n Trøng Muèi (néi c«ng +20)", 62, 1},
+	{"Siªu Nh©n Gao (søc m¹nh +20)", 62, 2},
+	{"Siªu Nh©n M× Bß (th©n ph¸p +20)", 62, 3},
+	{"Siªu Nh©n M× Gµ (g©n cèt +20)", 62, 4},
+	{"Siªu Nh©n M× T«m (linh ho¹t +20)", 62, 5}
 };
 
 function OnUse(itemIndex)
