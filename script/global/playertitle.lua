@@ -1894,6 +1894,87 @@ end
 --	end
 --end
 
+function _65_19_(type, stateID)
+	if 2 == type then
+		CastState("state_life_max_percent_add", -15, -1, 1, stateID);
+		Msg2Player("HiÖu øng:  Sinh mÖnh gi¶m 15%");		
+	end
+end
+
+function _65_20_(type, stateID)
+	if 2 == type then
+		CastState("state_neili_max_percent_add", -15, -1, 1, stateID);
+		Msg2Player("HiÖu øng:  Néi lùc gi¶m 15%");		
+	end
+end
+
+function _65_21_(type, stateID)
+	if 2 == type then
+		CastState("state_physical_parmor_poi_dec", -15, -1, 1, stateID);
+		Msg2Player("HiÖu øng:  Ngo¹i phßng gi¶m 15%");		
+	end
+end
+
+function _65_22_(type, stateID)
+	if 2 == type then
+		CastState("state_magic_parmor_poi_dec", -15, -1, 1, stateID);
+		Msg2Player("HiÖu øng:  Néi phßng gi¶m 15%");		
+	end
+end
+
+function _65_23_(type, stateID)
+	if 2 == type then
+		CastState("state_attack_speed_dec", -50, -1, 1, stateID);
+		Msg2Player("HiÖu øng:  Tèc ®é tÊn c«ng gi¶m 50%");		
+	end
+end
+
+function _65_24_(type, stateID)
+	if 2 == type then
+		CastState("state_burst_enhance_rate", -50, -1, 1, stateID);
+		Msg2Player("HiÖu øng:  Tèc ®é xuÊt chiªu 50%");		
+	end
+end
+
+function _65_25_(type, stateID)
+	if 2 == type then
+		CastState("state_slow", 20, -1, 1, stateID);
+		Msg2Player("HiÖu øng:  Tèc ®é di chuyÓn gi¶m 20%");
+	end
+end
+
+function _65_29_(type, stateID)
+	if 2 == type then
+		CastState("state_add_allability", 25, -1, 1, stateID);
+		Msg2Player("HiÖu øng:  Khžng tÊt c¶ tšng 25 ®iÓm");
+	end
+end
+
+function _65_26_(type, stateID)
+	if 2 == type then
+		CastState("state_add_strength", 50, -1, 1, stateID);
+		CastState("state_add_vitality", 50, -1, 1, stateID);
+		CastState("state_add_energy", 50, -1, 1, stateID);
+		Msg2Player("HiÖu øng:   Søc m¹nh tšng 50, G©n cèt tšng 50, Néi khÝ tšng 50");
+	end
+end
+
+function _65_27_(type, stateID)
+	if 2 == type then
+		CastState("state_add_dexterity", 50, -1, 1, stateID);
+		CastState("state_add_observe", 50, -1, 1, stateID);
+		CastState("state_add_energy", 50, -1, 1, stateID);
+
+		Msg2Player("HiÖu øng:  Th©n phžp tšng 50, Linh ho¹t tšng 50, Néi khÝ tšng 50");
+	end
+end
+
+function _65_28_(type, stateID)
+	if 2 == type then
+		CastState("state_move_speed_percent_add", 20, -1, 1, stateID);
+		Msg2Player("HiÖu øng:  Tèc ®é di chuyÓn tšng 20%");
+	end
+end
 --------------------------------------------------------------------------------------
 -- ¹¥³ÇÕ½³ÆºÅ
 
@@ -2302,3 +2383,152 @@ function _71_01_(nType, StateID)--buff
 		PlaySound("\\sound\\sound_i017.wav");
 	end
 end 
+
+function _73_01_(nType, nStateID)
+	CastState("state_physical_parmor_poi_add", 3, -1, 1, nStateID);
+	CastState("state_life_max_point_add", 10000, -1, 1, nStateID+1);
+	CastState("state_dodge_point_increase", 200, -1, 1, nStateID+2);
+end
+
+function _74_01_(nType, nStateID)
+		CastState("state_burst_enhance_rate", 5, -1, 1, nStateID);
+		CastState("state_medicine_time_increase", 30, -1, 1, nStateID +1);
+		CastState("state_life_max_point_add", 10000, -1, 1, nStateID+2);
+		CastState("state_add_book_attribute_value", 5, -1, 1, nStateID+3);
+		CastState("state_add_allability", 25, -1, 1, nStateID+4);
+end
+
+function _76_01_(nType, nStateID)
+		CastState("state_burst_enhance_rate", 7, -1, 1, nStateID);
+		CastState("state_medicine_time_increase", 35, -1, 1, nStateID+1);
+		CastState("state_life_max_point_add", 15000, -1, 1, nStateID+2);
+		CastState("state_add_book_attribute_value", 5, -1, 1, nStateID+3);
+		CastState("state_add_allability", 27, -1, 1, nStateID+4);
+end
+
+function _77_01_(nType, nStateID)
+		CastState("state_life_max_point_add", 20000, -1, 1, nStateID);
+		CastState("state_add_allability", 20, -1, 1, nStateID +1);
+		CastState("state_def_critical_point_increase", 30, -1, 1, nStateID +2);
+end
+
+function _77_02_(nType, nStateID)
+		CastState("state_life_max_point_add", 20000, -1, 1, nStateID);
+		CastState("state_add_allability", 20, -1, 1, nStateID+1);
+		CastState("state_def_critical_damage_increase", 60, -1, 1, nStateID+2);
+end
+
+function _77_03_(nType, nStateID)
+		CastState("state_life_max_point_add", 20000, -1, 1, nStateID);
+		CastState("state_add_allability", 20, -1, 1, nStateID+1);
+		CastState("state_critical_damage_increase", 50, -1, 1, nStateID+2);	
+end
+
+function _78_01_(nType, nStateID)
+		CastState("state_life_max_point_add", 20000, -1, 1, nStateID);
+		CastState("state_add_allability", 20, -1, 1, nStateID+1);
+		CastState("state_critical_point_increase", 15, -1, 1, nStateID+2);
+end
+
+function _78_02_(nType, nStateID)
+		CastState("state_life_max_point_add", 30000, -1, 1, nStateID);
+		CastState("state_add_allability", 20, -1, 1, nStateID+1);
+		CastState("state_m_attack_percent_add", 30, -1, 1, nStateID+2);
+		CastState("state_p_attack_percent_add", 30, -1, 1, nStateID+3);
+end
+
+function _79_01_(nType, nStateID)
+		CastState("state_burst_enhance_rate", 8, -1, 1, nStateID);
+		CastState("state_medicine_time_increase", 40, -1, 1, nStateID+1);
+		CastState("state_life_max_point_add", 20000, -1, 1, nStateID+2);
+		CastState("state_add_book_attribute_value", 5, -1, 1, nStateID+3);
+		CastState("state_add_allability", 30, -1, 1, nStateID+4);
+end
+
+--Hieu Bang
+function _75_10_(nType, nStateID)
+		CastState("state_life_max_point_add", 40000, -1, 1, nStateID);
+		CastState("state_def_critical_damage_increase", 100, -1, 1, nStateID+1);
+		CastState("state_def_critical_point_increase", 50, -1, 1, nStateID +2);
+		CastState("state_dodge_point_increase", 550, -1, 1, nStateID+3);
+end
+
+function _75_09_(nType, nStateID)
+		CastState("state_life_max_point_add", 35000, -1, 1, nStateID);
+		CastState("state_def_critical_damage_increase", 80, -1, 1, nStateID+1);
+		CastState("state_def_critical_point_increase", 40, -1, 1, nStateID +2);
+		CastState("state_dodge_point_increase", 500, -1, 1, nStateID+3);
+end
+
+function _75_08_(nType, nStateID)
+	CastState("state_life_max_point_add", 30000, -1, 1, nStateID);
+	CastState("state_def_critical_damage_increase", 70, -1, 1, nStateID+1);
+	CastState("state_def_critical_point_increase", 35, -1, 1, nStateID +2);
+	CastState("state_dodge_point_increase", 450, -1, 1, nStateID+3);
+end
+
+function _75_07_(nType, nStateID)
+	CastState("state_life_max_point_add", 25000, -1, 1, nStateID);
+	CastState("state_def_critical_damage_increase", 60, -1, 1, nStateID+1);
+	CastState("state_def_critical_point_increase", 30, -1, 1, nStateID +2);
+	CastState("state_dodge_point_increase", 400, -1, 1, nStateID+3);
+end
+
+function _75_06_(nType, nStateID)
+	CastState("state_life_max_point_add", 20000, -1, 1, nStateID);
+	CastState("state_def_critical_damage_increase", 50, -1, 1, nStateID+1);
+	CastState("state_def_critical_point_increase", 25, -1, 1, nStateID +2);
+	CastState("state_dodge_point_increase", 350, -1, 1, nStateID+3);
+end
+
+function _75_05_(nType, nStateID)
+	CastState("state_life_max_point_add", 18000, -1, 1, nStateID);
+	CastState("state_def_critical_damage_increase", 40, -1, 1, nStateID+1);
+	CastState("state_def_critical_point_increase", 20, -1, 1, nStateID +2);
+	CastState("state_dodge_point_increase", 300, -1, 1, nStateID+3);
+end
+
+function _75_04_(nType, nStateID)
+	CastState("state_life_max_point_add", 16000, -1, 1, nStateID);
+	CastState("state_def_critical_damage_increase", 25, -1, 1, nStateID+1);
+	CastState("state_def_critical_point_increase", 16, -1, 1, nStateID +2);
+	CastState("state_dodge_point_increase", 250, -1, 1, nStateID+3);
+end
+
+function _75_03_(nType, nStateID)
+	CastState("state_life_max_point_add", 14000, -1, 1, nStateID);
+	CastState("state_def_critical_damage_increase", 20, -1, 1, nStateID+1);
+	CastState("state_def_critical_point_increase", 14, -1, 1, nStateID +2);
+	CastState("state_dodge_point_increase", 200, -1, 1, nStateID+3);
+end
+
+function _75_02_(nType, nStateID)
+	CastState("state_life_max_point_add", 12000, -1, 1, nStateID);
+	CastState("state_def_critical_damage_increase", 15, -1, 1, nStateID+1);
+	CastState("state_def_critical_point_increase", 12, -1, 1, nStateID +2);
+	CastState("state_dodge_point_increase", 150, -1, 1, nStateID+3);
+end
+
+function _75_01_(nType, nStateID)
+	CastState("state_life_max_point_add", 10000, -1, 1, nStateID);
+	CastState("state_def_critical_damage_increase", 10, -1, 1, nStateID+1);
+	CastState("state_def_critical_point_increase", 10, -1, 1, nStateID +2);
+	CastState("state_dodge_point_increase", 100, -1, 1, nStateID+3);
+end
+
+function _69_01_(nType, nStateID)
+	CastState("state_life_max_point_add", 8000, -1, 1, nStateID);
+	CastState("state_add_allability", 20, -1, 1, nStateID + 1)
+	CastState("state_physical_armor_add", 60, -1, 1, nStateID+2);
+	CastState("state_magic_armor_add", 60, -1, 1, nStateID+3);
+	CastState("state_p_attack_percent_add", 6, -1, 1, nStateID+4);
+	CastState("state_m_attack_percent_add", 6, -1, 1, nStateID+5);
+end
+
+
+function _69_02_(nType, nStateID)
+	CastState("state_life_max_point_add", 6000, -1, 1, nStateID);
+	CastState("state_add_allability", 10, -1, 1, nStateID + 1)
+	CastState("state_physical_armor_add", 35, -1, 1, nStateID+2);
+	CastState("state_magic_armor_add", 35, -1, 1, nStateID+3);
+end
