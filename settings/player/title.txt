@@ -142,6 +142,12 @@ GENRE	DETAIL_TYPE	CONTENT	UNREPLACABLE	UNREMOVABLE	VERSION	EXPIRE	TYPE	SCRIPTFIL
 23	12	Xuyªn D­¬ng Thñ	0	0	0	0	3	\script\global\playertitle.lua	Equip	UnEquip	\UImage\ÎåĞĞÍ¼±ê\³ÆºÅ.spr	
 23	13	§o¹t Ph¸ch T¶n Nh©n	0	0	0	0	3	\script\global\playertitle.lua	Equip	UnEquip	\UImage\ÎåĞĞÍ¼±ê\³ÆºÅ.spr	
 23	14	§éc Tµm T¶n Nh©n	0	0	0	0	3	\script\global\playertitle.lua	Equip	UnEquip	\UImage\ÎåĞĞÍ¼±ê\³ÆºÅ.spr	
+23	15	Linh Phï §¹o Nh©n	0	0	0	0	3	\script\global\playertitle.lua	Equip	UnEquip	\UImage\ÎåĞĞÍ¼±ê\³ÆºÅ.spr		<color=yellow>HiÖu qu¶ danh hiÖu:<color>Néi c«ng t¨ng 5 ®iÓm<enter/><color=yellow>HiÖu qu¶ Èn:<color>Néi c«ng t¨ng 3 ®iÓm<enter/><color=yellow>M« t¶ danh hiÖu:<color>Danh hiÖu s¬ cÊp Thiªn S­	1	Néi c«ng t¨ng 5 ®iÓm	Néi c«ng t¨ng 3 ®iÓm
+23	16	Kim L« Sø	0	0	0	0	3	\script\global\playertitle.lua	Equip	UnEquip	\UImage\ÎåĞĞÍ¼±ê\³ÆºÅ.spr		<color=yellow>HiÖu qu¶ danh hiÖu:<color>Søc m¹ng t¨ng 5 ®iÓm<enter/><color=yellow>HiÖu qu¶ Èn:<color>Søc m¹ng t¨ng 3 ®iÓm<enter/><color=yellow>M« t¶ danh hiÖu:<color>Danh hiÖu s¬ cÊp Th¸nh ChiÕn	1	Søc m¹ng t¨ng 5 ®iÓm	Søc m¹ng t¨ng 3 ®iÓm
+23	17	TrËn Binh Sø	0	0	0	0	3	\script\global\playertitle.lua	Equip	UnEquip	\UImage\ÎåĞĞÍ¼±ê\³ÆºÅ.spr		<color=yellow>HiÖu qu¶ danh hiÖu:<color>Linh ho¹t t¨ng 5 ®iÓm<enter/><color=yellow>HiÖu qu¶ Èn:<color>Linh ho¹t t¨ng 3 ®iÓm<enter/><color=yellow>M« t¶ danh hiÖu:<color>Danh hiÖu s¬ cÊp TrËn Binh	1	Linh ho¹t t¨ng 5 ®iÓm	Linh ho¹t t¨ng 3 ®iÓm
+23	18	ƒm Tr¶o Sø	0	0	0	0	3	\script\global\playertitle.lua	Equip	UnEquip	\UImage\ÎåĞĞÍ¼±ê\³ÆºÅ.spr		<color=yellow>HiÖu qu¶ danh hiÖu:<color>Th©n ph¸p t¨ng 5 ®iÓm<enter/><color=yellow>HiÖu qu¶ Èn:<color>Th©n ph¸p t¨ng 3 ®iÓm<enter/><color=yellow>M« t¶ danh hiÖu:<color>Danh hiÖu s¬ cÊp HuyÕt Nh©n	1	Th©n ph¸p t¨ng 5 ®iÓm	Th©n ph¸p t¨ng 3 ®iÓm
+23	19	§¹p V©n Tiªn Tö	0	0	0	0	3	\script\global\playertitle.lua	Equip	UnEquip	\UImage\ÎåĞĞÍ¼±ê\³ÆºÅ.spr		<color=yellow>HiÖu qu¶ danh hiÖu:<color>Th©n ph¸p t¨ng 5 ®iÓm<enter/><color=yellow>HiÖu qu¶ Èn:<color>Th©n ph¸p t¨ng 3 ®iÓm<enter/><color=yellow>M« t¶ danh hiÖu:<color>Danh hiÖu s¬ cÊp Vò Tiªn	1	Th©n ph¸p t¨ng 5 ®iÓm	Th©n ph¸p t¨ng 3 ®iÓm
+23	20	TÇm H­¬ng Tiªn Tö	0	0	0	0	3	\script\global\playertitle.lua	Equip	UnEquip	\UImage\ÎåĞĞÍ¼±ê\³ÆºÅ.spr		<color=yellow>HiÖu qu¶ danh hiÖu:<color>Linh ho¹t t¨ng 5 ®iÓm<enter/><color=yellow>HiÖu qu¶ Èn:<color>Linh ho¹t t¨ng 3 ®iÓm<enter/><color=yellow>M« t¶ danh hiÖu:<color>Danh hiÖu s¬ cÊp Linh N÷	1	Linh ho¹t t¨ng 5 ®iÓm	Linh ho¹t t¨ng 3 ®iÓm
 24	1	Hçn Nguyªn T¨ng	0	0	0	0	3	\script\global\playertitle.lua	Equip	UnEquip	\UImage\ÎåĞĞÍ¼±ê\³ÆºÅ.spr	
 24	2	§Êu T¨ng	0	0	0	0	3	\script\global\playertitle.lua	Equip	UnEquip	\UImage\ÎåĞĞÍ¼±ê\³ÆºÅ.spr	
 24	3	ThiÒn Tu T¨ng	0	0	0	0	3	\script\global\playertitle.lua	Equip	UnEquip	\UImage\ÎåĞĞÍ¼±ê\³ÆºÅ.spr	
@@ -156,6 +162,12 @@ GENRE	DETAIL_TYPE	CONTENT	UNREPLACABLE	UNREMOVABLE	VERSION	EXPIRE	TYPE	SCRIPTFIL
 24	12	§« óy	0	0	0	0	3	\script\global\playertitle.lua	Equip	UnEquip	\UImage\ÎåĞĞÍ¼±ê\³ÆºÅ.spr	
 24	13	Th«i MÖnh T¶n Nh©n	0	0	0	0	3	\script\global\playertitle.lua	Equip	UnEquip	\UImage\ÎåĞĞÍ¼±ê\³ÆºÅ.spr	
 24	14	Thùc T©m T¶n Nh©n	0	0	0	0	3	\script\global\playertitle.lua	Equip	UnEquip	\UImage\ÎåĞĞÍ¼±ê\³ÆºÅ.spr	
+24	15	Bİ Ph¸p §¹o Nh©n	0	0	0	0	3	\script\global\playertitle.lua	Equip	UnEquip	\UImage\ÎåĞĞÍ¼±ê\³ÆºÅ.spr		<color=yellow>HiÖu qu¶ danh hiÖu:<color>Néi c«ng t¨ng 10 ®iÓm<enter/><color=yellow>HiÖu qu¶ Èn:<color>Néi c«ng t¨ng 6 ®iÓm<enter/><color=yellow>M« t¶ danh hiÖu:<color>Danh hiÖu (2) Thiªn S­	1	Néi c«ng t¨ng 10 ®iÓm	Néi c«ng t¨ng 6 ®iÓm
+24	16	B¹o S¸t Sø	0	0	0	0	3	\script\global\playertitle.lua	Equip	UnEquip	\UImage\ÎåĞĞÍ¼±ê\³ÆºÅ.spr		<color=yellow>HiÖu qu¶ danh hiÖu:<color>Søc m¹ng t¨ng 10 ®iÓm<enter/><color=yellow>HiÖu qu¶ Èn:<color>Søc m¹ng t¨ng 6 ®iÓm<enter/><color=yellow>M« t¶ danh hiÖu:<color>Danh hiÖu (2) Th¸nh ChiÕn	1	Søc m¹ng t¨ng 10 ®iÓm	Søc m¹ng t¨ng 6 ®iÓm
+24	17	Tö SÜ Sø	0	0	0	0	3	\script\global\playertitle.lua	Equip	UnEquip	\UImage\ÎåĞĞÍ¼±ê\³ÆºÅ.spr		<color=yellow>HiÖu qu¶ danh hiÖu:<color>Linh ho¹t t¨ng 10 ®iÓm<enter/><color=yellow>HiÖu qu¶ Èn:<color>Linh ho¹t t¨ng 6 ®iÓm<enter/><color=yellow>M« t¶ danh hiÖu:<color>Danh hiÖu (2) TrËn Binh	1	Linh ho¹t t¨ng 10 ®iÓm	Linh ho¹t t¨ng 6 ®iÓm
+24	18	DiÖt Hån Sø	0	0	0	0	3	\script\global\playertitle.lua	Equip	UnEquip	\UImage\ÎåĞĞÍ¼±ê\³ÆºÅ.spr		<color=yellow>HiÖu qu¶ danh hiÖu:<color>Th©n ph¸p t¨ng 10 ®iÓm<enter/><color=yellow>HiÖu qu¶ Èn:<color>Th©n ph¸p t¨ng 6 ®iÓm<enter/><color=yellow>M« t¶ danh hiÖu:<color>Danh hiÖu (2) HuyÕt Nh©n	1	Th©n ph¸p t¨ng 10 ®iÓm	Th©n ph¸p t¨ng 6 ®iÓm
+24	19	T©m Vò Tiªn Tö	0	0	0	0	3	\script\global\playertitle.lua	Equip	UnEquip	\UImage\ÎåĞĞÍ¼±ê\³ÆºÅ.spr		<color=yellow>HiÖu qu¶ danh hiÖu:<color>Th©n ph¸p t¨ng 10 ®iÓm<enter/><color=yellow>HiÖu qu¶ Èn:<color>Th©n ph¸p t¨ng 6 ®iÓm<enter/><color=yellow>M« t¶ danh hiÖu:<color>Danh hiÖu (2) Vò Tiªn	1	Th©n ph¸p t¨ng 10 ®iÓm	Th©n ph¸p t¨ng 6 ®iÓm
+24	20	Th¸m Ngäc Tiªn Tö	0	0	0	0	3	\script\global\playertitle.lua	Equip	UnEquip	\UImage\ÎåĞĞÍ¼±ê\³ÆºÅ.spr		<color=yellow>HiÖu qu¶ danh hiÖu:<color>Linh ho¹t t¨ng 10 ®iÓm<enter/><color=yellow>HiÖu qu¶ Èn:<color>Linh ho¹t t¨ng 6 ®iÓm<enter/><color=yellow>M« t¶ danh hiÖu:<color>Danh hiÖu (2) Linh N÷	1	Linh ho¹t t¨ng 10 ®iÓm	Linh ho¹t t¨ng 6 ®iÓm
 25	1	§¹t Ma Kim Cang	0	0	0	0	3	\script\global\playertitle.lua	Equip	UnEquip	\UImage\ÎåĞĞÍ¼±ê\³ÆºÅ.spr	
 25	2	La H¸n Hé Ph¸p	0	0	0	0	3	\script\global\playertitle.lua	Equip	UnEquip	\UImage\ÎåĞĞÍ¼±ê\³ÆºÅ.spr	
 25	3	TruyÒn kinh ph¸p s­	0	0	0	0	3	\script\global\playertitle.lua	Equip	UnEquip	\UImage\ÎåĞĞÍ¼±ê\³ÆºÅ.spr	
@@ -170,6 +182,12 @@ GENRE	DETAIL_TYPE	CONTENT	UNREPLACABLE	UNREMOVABLE	VERSION	EXPIRE	TYPE	SCRIPTFIL
 25	12	PhÊn uy t­íng qu©n	0	0	0	0	3	\script\global\playertitle.lua	Equip	UnEquip	\UImage\ÎåĞĞÍ¼±ê\³ÆºÅ.spr	
 25	13	H¾c V« Th­êng	0	0	0	0	3	\script\global\playertitle.lua	Equip	UnEquip	\UImage\ÎåĞĞÍ¼±ê\³ÆºÅ.spr	
 25	14	B¹ch V« Th­êng	0	0	0	0	3	\script\global\playertitle.lua	Equip	UnEquip	\UImage\ÎåĞĞÍ¼±ê\³ÆºÅ.spr	
+25	15	TrÊn Yªu §¹o Nh©n	0	0	0	0	3	\script\global\playertitle.lua	Equip	UnEquip	\UImage\ÎåĞĞÍ¼±ê\³ÆºÅ.spr		<color=yellow>HiÖu qu¶ danh hiÖu:<color>Néi c«ng t¨ng 20 ®iÓm<enter/><color=yellow>HiÖu qu¶ Èn:<color>Néi c«ng t¨ng 12 ®iÓm<enter/><color=yellow>M« t¶ danh hiÖu:<color>Danh hiÖu (3) Thiªn S­	1	Néi c«ng t¨ng 20 ®iÓm	Néi c«ng t¨ng 12 ®iÓm
+25	16	Hé Gi¸o Sø	0	0	0	0	3	\script\global\playertitle.lua	Equip	UnEquip	\UImage\ÎåĞĞÍ¼±ê\³ÆºÅ.spr		<color=yellow>HiÖu qu¶ danh hiÖu:<color>Søc m¹ng t¨ng 20 ®iÓm<enter/><color=yellow>HiÖu qu¶ Èn:<color>Søc m¹ng t¨ng 12 ®iÓm<enter/><color=yellow>M« t¶ danh hiÖu:<color>Danh hiÖu (3) Th¸nh ChiÕn	1	Søc m¹ng t¨ng 20 ®iÓm	Søc m¹ng t¨ng 12 ®iÓm
+25	17	Tr­êng Kú Sø	0	0	0	0	3	\script\global\playertitle.lua	Equip	UnEquip	\UImage\ÎåĞĞÍ¼±ê\³ÆºÅ.spr		<color=yellow>HiÖu qu¶ danh hiÖu:<color>Linh ho¹t t¨ng 20 ®iÓm<enter/><color=yellow>HiÖu qu¶ Èn:<color>Linh ho¹t t¨ng 12 ®iÓm<enter/><color=yellow>M« t¶ danh hiÖu:<color>Danh hiÖu (3) TrËn Binh	1	Linh ho¹t t¨ng 20 ®iÓm	Linh ho¹t t¨ng 12 ®iÓm
+25	18	Thanh Minh Sø	0	0	0	0	3	\script\global\playertitle.lua	Equip	UnEquip	\UImage\ÎåĞĞÍ¼±ê\³ÆºÅ.spr		<color=yellow>HiÖu qu¶ danh hiÖu:<color>Th©n ph¸p t¨ng 20 ®iÓm<enter/><color=yellow>HiÖu qu¶ Èn:<color>Th©n ph¸p t¨ng 12 ®iÓm<enter/><color=yellow>M« t¶ danh hiÖu:<color>Danh hiÖu (3) HuyÕt Nh©n	1	Th©n ph¸p t¨ng 20 ®iÓm	Th©n ph¸p t¨ng 12 ®iÓm
+25	19	Thu NguyÖt Sø	0	0	0	0	3	\script\global\playertitle.lua	Equip	UnEquip	\UImage\ÎåĞĞÍ¼±ê\³ÆºÅ.spr		<color=yellow>HiÖu qu¶ danh hiÖu:<color>Th©n ph¸p t¨ng 20 ®iÓm<enter/><color=yellow>HiÖu qu¶ Èn:<color>Th©n ph¸p t¨ng 12 ®iÓm<enter/><color=yellow>M« t¶ danh hiÖu:<color>Danh hiÖu (3) Vò Tiªn	1	Th©n ph¸p t¨ng 20 ®iÓm	Th©n ph¸p t¨ng 12 ®iÓm
+25	20	Nghªnh H­¬ng Sø	0	0	0	0	3	\script\global\playertitle.lua	Equip	UnEquip	\UImage\ÎåĞĞÍ¼±ê\³ÆºÅ.spr		<color=yellow>HiÖu qu¶ danh hiÖu:<color>Linh ho¹t t¨ng 20 ®iÓm<enter/><color=yellow>HiÖu qu¶ Èn:<color>Linh ho¹t t¨ng 12 ®iÓm<enter/><color=yellow>M« t¶ danh hiÖu:<color>Danh hiÖu (3) Linh N÷	1	Linh ho¹t t¨ng 20 ®iÓm	Linh ho¹t t¨ng 12 ®iÓm
 26	1	B¸t Bé Thiªn Long	0	0	0	0	3	\script\global\playertitle.lua	Equip	UnEquip	\UImage\ÎåĞĞÍ¼±ê\³ÆºÅ.spr	
 26	2	B¸t B¶o La H¸n	0	0	0	0	3	\script\global\playertitle.lua	Equip	UnEquip	\UImage\ÎåĞĞÍ¼±ê\³ÆºÅ.spr	
 26	3	V« L­îng Ph¸p T«n	0	0	0	0	3	\script\global\playertitle.lua	Equip	UnEquip	\UImage\ÎåĞĞÍ¼±ê\³ÆºÅ.spr	
@@ -184,6 +202,12 @@ GENRE	DETAIL_TYPE	CONTENT	UNREPLACABLE	UNREMOVABLE	VERSION	EXPIRE	TYPE	SCRIPTFIL
 26	12	Hæ Dùc t­íng qu©n	0	0	0	0	3	\script\global\playertitle.lua	Equip	UnEquip	\UImage\ÎåĞĞÍ¼±ê\³ÆºÅ.spr	
 26	13	U Minh Quû S¸t	0	0	0	0	3	\script\global\playertitle.lua	Equip	UnEquip	\UImage\ÎåĞĞÍ¼±ê\³ÆºÅ.spr	
 26	14	V« §æng La S¸t	0	0	0	0	3	\script\global\playertitle.lua	Equip	UnEquip	\UImage\ÎåĞĞÍ¼±ê\³ÆºÅ.spr	
+26	15	Tö Vi §¹o Nh©n	0	0	0	0	3	\script\global\playertitle.lua	Equip	UnEquip	\UImage\ÎåĞĞÍ¼±ê\³ÆºÅ.spr		<color=yellow>HiÖu qu¶ danh hiÖu:<color>Néi c«ng t¨ng 30 ®iÓm<enter/><color=yellow>HiÖu qu¶ Èn:<color>Néi c«ng t¨ng 18 ®iÓm<enter/><color=yellow>M« t¶ danh hiÖu:<color>Danh hiÖu (4) Thiªn S­	1	Néi c«ng t¨ng 30 ®iÓm	Néi c«ng t¨ng 18 ®iÓm
+26	16	Tiªu Dao ThÇn Sø	0	0	0	0	3	\script\global\playertitle.lua	Equip	UnEquip	\UImage\ÎåĞĞÍ¼±ê\³ÆºÅ.spr		<color=yellow>HiÖu qu¶ danh hiÖu:<color>Søc m¹ng t¨ng 30 ®iÓm<enter/><color=yellow>HiÖu qu¶ Èn:<color>Søc m¹ng t¨ng 18 ®iÓm<enter/><color=yellow>M« t¶ danh hiÖu:<color>Danh hiÖu (4) Th¸nh ChiÕn	1	Søc m¹ng t¨ng 30 ®iÓm	Søc m¹ng t¨ng 18 ®iÓm
+26	17	Thiªn Cuång §¹i T­íng	0	0	0	0	3	\script\global\playertitle.lua	Equip	UnEquip	\UImage\ÎåĞĞÍ¼±ê\³ÆºÅ.spr		<color=yellow>HiÖu qu¶ danh hiÖu:<color>Linh ho¹t t¨ng 30 ®iÓm<enter/><color=yellow>HiÖu qu¶ Èn:<color>Linh ho¹t t¨ng 18 ®iÓm<enter/><color=yellow>M« t¶ danh hiÖu:<color>Danh hiÖu (4) TrËn Binh	1	Linh ho¹t t¨ng 30 ®iÓm	Linh ho¹t t¨ng 18 ®iÓm
+26	18	NguyÖt nh Ma T«n	0	0	0	0	3	\script\global\playertitle.lua	Equip	UnEquip	\UImage\ÎåĞĞÍ¼±ê\³ÆºÅ.spr		<color=yellow>HiÖu qu¶ danh hiÖu:<color>Th©n ph¸p t¨ng 30 ®iÓm<enter/><color=yellow>HiÖu qu¶ Èn:<color>Th©n ph¸p t¨ng 18 ®iÓm<enter/><color=yellow>M« t¶ danh hiÖu:<color>Danh hiÖu (4) HuyÕt Nh©n	1	Th©n ph¸p t¨ng 30 ®iÓm	Th©n ph¸p t¨ng 18 ®iÓm
+26	19	Cöu Thiªn Th¸i Ph­îng	0	0	0	0	3	\script\global\playertitle.lua	Equip	UnEquip	\UImage\ÎåĞĞÍ¼±ê\³ÆºÅ.spr		<color=yellow>HiÖu qu¶ danh hiÖu:<color>Th©n ph¸p t¨ng 30 ®iÓm<enter/><color=yellow>HiÖu qu¶ Èn:<color>Th©n ph¸p t¨ng 18 ®iÓm<enter/><color=yellow>M« t¶ danh hiÖu:<color>Danh hiÖu (4) Vò Tiªn	1	Th©n ph¸p t¨ng 30 ®iÓm	Th©n ph¸p t¨ng 18 ®iÓm
+26	20	B¨ng T©m Ngäc N÷	0	0	0	0	3	\script\global\playertitle.lua	Equip	UnEquip	\UImage\ÎåĞĞÍ¼±ê\³ÆºÅ.spr		<color=yellow>HiÖu qu¶ danh hiÖu:<color>Linh ho¹t t¨ng 30 ®iÓm<enter/><color=yellow>HiÖu qu¶ Èn:<color>Linh ho¹t t¨ng 18 ®iÓm<enter/><color=yellow>M« t¶ danh hiÖu:<color>Danh hiÖu (4) Linh N÷	1	Linh ho¹t t¨ng 30 ®iÓm	Linh ho¹t t¨ng 18 ®iÓm
 27	1	Tr­ëng l·o §¹t Ma §­êng	0	0	0	0	3	\script\global\playertitle.lua	Equip	UnEquip	\UImage\ÎåĞĞÍ¼±ê\³ÆºÅ.spr	
 27	2	Tr­ëng l·o La H¸n §­êng	0	0	0	0	3	\script\global\playertitle.lua	Equip	UnEquip	\UImage\ÎåĞĞÍ¼±ê\³ÆºÅ.spr	
 27	3	Tr­ëng l·o Tµng Kinh C¸c	0	0	0	0	3	\script\global\playertitle.lua	Equip	UnEquip	\UImage\ÎåĞĞÍ¼±ê\³ÆºÅ.spr	
@@ -198,6 +222,12 @@ GENRE	DETAIL_TYPE	CONTENT	UNREPLACABLE	UNREMOVABLE	VERSION	EXPIRE	TYPE	SCRIPTFIL
 27	12	Chinh Lç T­íng Qu©n	0	0	0	0	3	\script\global\playertitle.lua	Equip	UnEquip	\UImage\ÎåĞĞÍ¼±ê\³ÆºÅ.spr	
 27	13	Diªm La Quû S¸t	0	0	0	0	3	\script\global\playertitle.lua	Equip	UnEquip	\UImage\ÎåĞĞÍ¼±ê\³ÆºÅ.spr	
 27	14	Cæ §éc La S¸t	0	0	0	0	3	\script\global\playertitle.lua	Equip	UnEquip	\UImage\ÎåĞĞÍ¼±ê\³ÆºÅ.spr	
+27	15	Hång M«ng §¹o Nh©n	0	0	0	0	3	\script\global\playertitle.lua	Equip	UnEquip	\UImage\ÎåĞĞÍ¼±ê\³ÆºÅ.spr		<color=yellow>HiÖu qu¶ danh hiÖu:<color>Néi c«ng t¨ng 35 ®iÓm<enter/><color=yellow>HiÖu qu¶ Èn:<color>Néi c«ng t¨ng 21 ®iÓm<enter/><color=yellow>M« t¶ danh hiÖu:<color>Danh hiÖu (5) Thiªn S­	1	Néi c«ng t¨ng 35 ®iÓm	Néi c«ng t¨ng 21 ®iÓm
+27	16	Kim Mao S­ V­¬ng Hé Ph¸p	0	0	0	0	3	\script\global\playertitle.lua	Equip	UnEquip	\UImage\ÎåĞĞÍ¼±ê\³ÆºÅ.spr		<color=yellow>HiÖu qu¶ danh hiÖu:<color>Søc m¹ng t¨ng 35 ®iÓm<enter/><color=yellow>HiÖu qu¶ Èn:<color>Søc m¹ng t¨ng 21 ®iÓm<enter/><color=yellow>M« t¶ danh hiÖu:<color>Danh hiÖu (5) Th¸nh ChiÕn	1	Søc m¹ng t¨ng 35 ®iÓm	Søc m¹ng t¨ng 21 ®iÓm
+27	17	B¹ch Mi ¦ng V­¬ng Hé Ph¸p	0	0	0	0	3	\script\global\playertitle.lua	Equip	UnEquip	\UImage\ÎåĞĞÍ¼±ê\³ÆºÅ.spr		<color=yellow>HiÖu qu¶ danh hiÖu:<color>Linh ho¹t t¨ng 35 ®iÓm<enter/><color=yellow>HiÖu qu¶ Èn:<color>Linh ho¹t t¨ng 21 ®iÓm<enter/><color=yellow>M« t¶ danh hiÖu:<color>Danh hiÖu (5) TrËn Binh	1	Linh ho¹t t¨ng 35 ®iÓm	Linh ho¹t t¨ng 21 ®iÓm
+27	18	Thanh Dùc Bøc V­¬ng Hé Ph¸p	0	0	0	0	3	\script\global\playertitle.lua	Equip	UnEquip	\UImage\ÎåĞĞÍ¼±ê\³ÆºÅ.spr		<color=yellow>HiÖu qu¶ danh hiÖu:<color>Th©n ph¸p t¨ng 35 ®iÓm<enter/><color=yellow>HiÖu qu¶ Èn:<color>Th©n ph¸p t¨ng 21 ®iÓm<enter/><color=yellow>M« t¶ danh hiÖu:<color>Danh hiÖu (5) HuyÕt Nh©n	1	Th©n ph¸p t¨ng 35 ®iÓm	Th©n ph¸p t¨ng 21 ®iÓm
+27	19	Linh §éng Tiªn Tö	0	0	0	0	3	\script\global\playertitle.lua	Equip	UnEquip	\UImage\ÎåĞĞÍ¼±ê\³ÆºÅ.spr		<color=yellow>HiÖu qu¶ danh hiÖu:<color>Th©n ph¸p t¨ng 35 ®iÓm<enter/><color=yellow>HiÖu qu¶ Èn:<color>Th©n ph¸p t¨ng 21 ®iÓm<enter/><color=yellow>M« t¶ danh hiÖu:<color>Danh hiÖu (5) Vò Tiªn	1	Th©n ph¸p t¨ng 35 ®iÓm	Th©n ph¸p t¨ng 21 ®iÓm
+27	20	B¸ch Hoa Tiªn Tö	0	0	0	0	3	\script\global\playertitle.lua	Equip	UnEquip	\UImage\ÎåĞĞÍ¼±ê\³ÆºÅ.spr		<color=yellow>HiÖu qu¶ danh hiÖu:<color>Linh ho¹t t¨ng 35 ®iÓm<enter/><color=yellow>HiÖu qu¶ Èn:<color>Linh ho¹t t¨ng 21 ®iÓm<enter/><color=yellow>M« t¶ danh hiÖu:<color>Danh hiÖu (5) Linh N÷	1	Linh ho¹t t¨ng 35 ®iÓm	Linh ho¹t t¨ng 21 ®iÓm
 28	1	Thñ täa §¹t Ma §­êng	0	0	0	0	3	\script\global\playertitle.lua	Equip	UnEquip	\UImage\ÎåĞĞÍ¼±ê\³ÆºÅ.spr	
 28	2	Thñ täa La H¸n §­êng	0	0	0	0	3	\script\global\playertitle.lua	Equip	UnEquip	\UImage\ÎåĞĞÍ¼±ê\³ÆºÅ.spr	
 28	3	Thñ täa Tµng Kinh C¸c	0	0	0	0	3	\script\global\playertitle.lua	Equip	UnEquip	\UImage\ÎåĞĞÍ¼±ê\³ÆºÅ.spr	
@@ -211,6 +241,13 @@ GENRE	DETAIL_TYPE	CONTENT	UNREPLACABLE	UNREMOVABLE	VERSION	EXPIRE	TYPE	SCRIPTFIL
 28	11	TrÊn Qu©n nguyªn so¸i	0	0	0	0	3	\script\global\playertitle.lua	Equip	UnEquip	\UImage\ÎåĞĞÍ¼±ê\³ÆºÅ.spr	
 28	12	Chinh Lç nguyªn so¸i	0	0	0	0	3	\script\global\playertitle.lua	Equip	UnEquip	\UImage\ÎåĞĞÍ¼±ê\³ÆºÅ.spr	
 28	13	Diªm La t«n gi¶	0	0	0	0	3	\script\global\playertitle.lua	Equip	UnEquip	\UImage\ÎåĞĞÍ¼±ê\³ÆºÅ.spr	
+28	14	Cæ §éc t«n gi¶	0	0	0	0	3	\script\global\playertitle.lua	Equip	UnEquip	\UImage\ÎåĞĞÍ¼±ê\³ÆºÅ.spr					
+28	15	Hång M«ng Ch©n Nh©n	0	0	0	0	3	\script\global\playertitle.lua	Equip	UnEquip	\UImage\ÎåĞĞÍ¼±ê\³ÆºÅ.spr		<color=yellow>HiÖu qu¶ danh hiÖu:<color>Néi c«ng t¨ng 40 ®iÓm<enter/><color=yellow>HiÖu qu¶ Èn:<color>Néi c«ng t¨ng 24 ®iÓm<enter/><color=yellow>M« t¶ danh hiÖu:<color>Danh hiÖu (6) Thiªn S­	1	Néi c«ng t¨ng 40 ®iÓm	Néi c«ng t¨ng 24 ®iÓm
+28	16	Kim Mao S­ V­¬ng	0	0	0	0	3	\script\global\playertitle.lua	Equip	UnEquip	\UImage\ÎåĞĞÍ¼±ê\³ÆºÅ.spr		<color=yellow>HiÖu qu¶ danh hiÖu:<color>Søc m¹ng t¨ng 40 ®iÓm<enter/><color=yellow>HiÖu qu¶ Èn:<color>Søc m¹ng t¨ng 24 ®iÓm<enter/><color=yellow>M« t¶ danh hiÖu:<color>Danh hiÖu (6) Th¸nh ChiÕn	1	Søc m¹ng t¨ng 40 ®iÓm	Søc m¹ng t¨ng 24 ®iÓm
+28	17	B¹ch MŞ ¦ng V­¬ng	0	0	0	0	3	\script\global\playertitle.lua	Equip	UnEquip	\UImage\ÎåĞĞÍ¼±ê\³ÆºÅ.spr		<color=yellow>HiÖu qu¶ danh hiÖu:<color>Linh ho¹t t¨ng 40 ®iÓm<enter/><color=yellow>HiÖu qu¶ Èn:<color>Linh ho¹t t¨ng 24 ®iÓm<enter/><color=yellow>M« t¶ danh hiÖu:<color>Danh hiÖu (6) TrËn Binh	1	Linh ho¹t t¨ng 40 ®iÓm	Linh ho¹t t¨ng 24 ®iÓm
+28	18	Thanh Dùc Bøc V­¬ng	0	0	0	0	3	\script\global\playertitle.lua	Equip	UnEquip	\UImage\ÎåĞĞÍ¼±ê\³ÆºÅ.spr		<color=yellow>HiÖu qu¶ danh hiÖu:<color>Th©n ph¸p t¨ng 40 ®iÓm<enter/><color=yellow>HiÖu qu¶ Èn:<color>Th©n ph¸p t¨ng 24 ®iÓm<enter/><color=yellow>M« t¶ danh hiÖu:<color>Danh hiÖu (6) HuyÕt Nh©n	1	Th©n ph¸p t¨ng 40 ®iÓm	Th©n ph¸p t¨ng 24 ®iÓm
+28	19	Linh §éng T«n Gi¶	0	0	0	0	3	\script\global\playertitle.lua	Equip	UnEquip	\UImage\ÎåĞĞÍ¼±ê\³ÆºÅ.spr		<color=yellow>HiÖu qu¶ danh hiÖu:<color>Th©n ph¸p t¨ng 40 ®iÓm<enter/><color=yellow>HiÖu qu¶ Èn:<color>Th©n ph¸p t¨ng 24 ®iÓm<enter/><color=yellow>M« t¶ danh hiÖu:<color>Danh hiÖu (6) Vò Tiªn	1	Th©n ph¸p t¨ng 40 ®iÓm	Th©n ph¸p t¨ng 24 ®iÓm
+28	20	B¸ch Hoa T«n Gi¶	0	0	0	0	3	\script\global\playertitle.lua	Equip	UnEquip	\UImage\ÎåĞĞÍ¼±ê\³ÆºÅ.spr		<color=yellow>HiÖu qu¶ danh hiÖu:<color>Linh ho¹t t¨ng 40 ®iÓm<enter/><color=yellow>HiÖu qu¶ Èn:<color>Linh ho¹t t¨ng 24 ®iÓm<enter/><color=yellow>M« t¶ danh hiÖu:<color>Danh hiÖu (6) Linh N÷	1	Linh ho¹t t¨ng 40 ®iÓm	Linh ho¹t t¨ng 24 ®iÓm
 28	14	Cæ §éc t«n gi¶	0	0	0	0	3	\script\global\playertitle.lua	Equip	UnEquip	\UImage\ÎåĞĞÍ¼±ê\³ÆºÅ.spr	
 30	1	Tèng Binh sÜ	0	0	0	0	3	\script\global\playertitle.lua	Equip	UnEquip	\UImage\ÎåĞĞÍ¼±ê\³ÆºÅ.spr	30 danh hiÖu chiÕn tr­êng
 30	2	Tèng_Vâ Dòng HiÖu óy	0	0	0	0	3	\script\global\playertitle.lua	Equip	UnEquip	\UImage\ÎåĞĞÍ¼±ê\³ÆºÅ.spr	
@@ -331,6 +368,14 @@ GENRE	DETAIL_TYPE	CONTENT	UNREPLACABLE	UNREMOVABLE	VERSION	EXPIRE	TYPE	SCRIPTFIL
 65	1	Du HiÖp	0	0	0	0	5	\script\global\playertitle.lua	Equip	UnEquip	\UImage\ÎåĞĞÍ¼±ê\ÓÎÏÀ.spr	
 65	2	¦ng D­¬ng	0	0	0	0	5	\script\global\playertitle.lua	Equip	UnEquip	\UImage\ÎåĞĞÍ¼±ê\Ó¥Ñï.spr	
 65	3	ChiÕn Cuång	0	0	0	0	5	\script\global\playertitle.lua	Equip	UnEquip	\UImage\ÎåĞĞÍ¼±ê\Õ½¿ñ.spr	
+65	19	C¶m	0	0	0	0	3	\script\global\playertitle.lua	Equip	UnEquip	\UImage\ÎåĞĞÍ¼±ê\³ÆºÅ.spr	
+65	20	Sæ mòi	0	0	0	0	3	\script\global\playertitle.lua	Equip	UnEquip	\UImage\ÎåĞĞÍ¼±ê\³ÆºÅ.spr	
+65	21	Tiªu ch¶y	0	0	0	0	3	\script\global\playertitle.lua	Equip	UnEquip	\UImage\ÎåĞĞÍ¼±ê\³ÆºÅ.spr	
+65	22	Ho	0	0	0	0	3	\script\global\playertitle.lua	Equip	UnEquip	\UImage\ÎåĞĞÍ¼±ê\³ÆºÅ.spr	
+65	23	Nhøc ®Çu	0	0	0	0	3	\script\global\playertitle.lua	Equip	UnEquip	\UImage\ÎåĞĞÍ¼±ê\³ÆºÅ.spr	
+65	24	§au bông	0	0	0	0	3	\script\global\playertitle.lua	Equip	UnEquip	\UImage\ÎåĞĞÍ¼±ê\³ÆºÅ.spr	
+65	26	Th©n thÓ c­êng tr¸ng	0	0	0	0	3	\script\global\playertitle.lua	Equip	UnEquip	\UImage\ÎåĞĞÍ¼±ê\³ÆºÅ.spr	
+65	27	Tinh thÇn ho¹t b¸t	0	0	0	0	3	\script\global\playertitle.lua	Equip	UnEquip	\UImage\ÎåĞĞÍ¼±ê\³ÆºÅ.spr						
 66	1	Chİ T«n V­¬ng Gi¶	0	0	0	0	5	\script\global\playertitle.lua	Equip	UnEquip	\UImage\µÚÈı°æ\wÎä»ê¶·ÆÇ\ÎäÊ¥.spr	
 66	2	§éc Bé Thiªn H¹	0	0	0	0	5	\script\global\playertitle.lua	Equip	UnEquip	\UImage\µÚÈı°æ\wÎä»ê¶·ÆÇ\°ÔÍõ.spr	
 66	3	Vâ l©m hµo kiÖt	0	0	0	0	5	\script\global\playertitle.lua	Equip	UnEquip	\UImage\µÚÈı°æ\wÎä»ê¶·ÆÇ\Ì©¶·.spr	
@@ -345,6 +390,8 @@ GENRE	DETAIL_TYPE	CONTENT	UNREPLACABLE	UNREMOVABLE	VERSION	EXPIRE	TYPE	SCRIPTFIL
 68	2	L·o ChiÕn H÷u	0	0	0	0	3	\script\global\playertitle.lua	Equip	UnEquip	\UImage\ÎåĞĞÍ¼±ê\³ÆºÅ.spr	
 68	3	Ng­êi N¨ng §éng	0	0	0	0	3	\script\global\playertitle.lua	Equip	UnEquip	\UImage\ÎåĞĞÍ¼±ê\³ÆºÅ.spr	
 68	4	NhiÖm Vô §¹t Nh©n	0	0	0	0	3	\script\global\playertitle.lua	Equip	UnEquip	\UImage\ÎåĞĞÍ¼±ê\³ÆºÅ.spr	
+69	1	Bang Chñ Vinh Dù	0	0	0	0	5	\script\global\playertitle.lua	Equip	UnEquip	\UImage\ÎåĞĞÍ¼±ê\ÈÙÓş°ïÖ÷.spr					
+69	2	Bang Héi Vinh Danh	0	0	0	0	5	\script\global\playertitle.lua	Equip	UnEquip	\UImage\ÎåĞĞÍ¼±ê\ÈÙÒ«°ïÅÉ.spr					
 70	1	Chøng NhËn 2 L­ng	0	0	0	0	5	\script\global\playertitle.lua	Equip	UnEquip	\image\loli.spr
 70	2	Thİch §èt TiÒn	0	0	0	0	5	\script\global\playertitle.lua	Equip	UnEquip	\image\thichdotien.spr
 70	3	Thõa TiÒn §¹i S­	0	0	0	0	5	\script\global\playertitle.lua	Equip	UnEquip	\image\thuatien.spr
@@ -355,3 +402,22 @@ GENRE	DETAIL_TYPE	CONTENT	UNREPLACABLE	UNREMOVABLE	VERSION	EXPIRE	TYPE	SCRIPTFIL
 70	8	T×nh Anh Em	0	0	0	0	5	\script\global\playertitle.lua	Equip	UnEquip	\image\tinhanhem.spr
 71	2	Hµng HiÖu	0	0	0	0	5	\script\global\playertitle.lua	Equip	UnEquip	\image\lolihanghieu.spr
 71	3	Hµng HiÖu VIP	0	0	0	0	5	\script\global\playertitle.lua	Equip	UnEquip	\image\lolihanghieu.spr
+73	1	Ph¸ Qu©n	0	0	0	0	5	\script\global\playertitle.lua	Equip	UnEquip	\UImage\µÚÈı°æ\wÎä»ê¶·ÆÇ\ÆÆ¾ü.spr	B¸n trong Ngù C¸c				
+74	1	Cöu Ngò Chİ T«n	0	0	0	0	3	\script\global\playertitle.lua	Equip	UnEquip	\UImage\ÎåĞĞÍ¼±ê\³ÆºÅ.spr					
+75	1	KÕt nghÜa	0	0	0	0	7	\script\global\playertitle.lua	Equip	UnEquip	\UImage\µÚÈı°æ\b°ï»á³ÆºÅ\01½áÒå.spr					
+75	2	HuÒ Thñ	0	0	0	0	7	\script\global\playertitle.lua	Equip	UnEquip	\UImage\µÚÈı°æ\b°ï»á³ÆºÅ\02Ğ¯ÊÖ.spr					
+75	3	Kim Lan	0	0	0	0	7	\script\global\playertitle.lua	Equip	UnEquip	\UImage\µÚÈı°æ\b°ï»á³ÆºÅ\03½ğÀ¼.spr					
+75	4	TÒ T©m	0	0	0	0	7	\script\global\playertitle.lua	Equip	UnEquip	\UImage\µÚÈı°æ\b°ï»á³ÆºÅ\04ÆëĞÄ.spr					
+75	5	§ång h­ëng	0	0	0	0	7	\script\global\playertitle.lua	Equip	UnEquip	\UImage\µÚÈı°æ\b°ï»á³ÆºÅ\05Í¬Ïí.spr					
+75	6	Phã Háa	0	0	0	0	7	\script\global\playertitle.lua	Equip	UnEquip	\UImage\µÚÈı°æ\b°ï»á³ÆºÅ\06¸°»ğ.spr					
+75	7	QuÇn Hïng	0	0	0	0	7	\script\global\playertitle.lua	Equip	UnEquip	\UImage\µÚÈı°æ\b°ï»á³ÆºÅ\07ÈºĞÛ.spr					
+75	8	Hîp m­u	0	0	0	0	7	\script\global\playertitle.lua	Equip	UnEquip	\UImage\µÚÈı°æ\b°ï»á³ÆºÅ\08ºÏÄ±.spr					
+75	9	Chİ Khİ	0	0	0	0	7	\script\global\playertitle.lua	Equip	UnEquip	\UImage\µÚÈı°æ\b°ï»á³ÆºÅ\09×³Ö¾.spr					
+75	10	§ång Cõu	0	0	0	0	7	\script\global\playertitle.lua	Equip	UnEquip	\UImage\µÚÈı°æ\b°ï»á³ÆºÅ\10Í¬³ğ.spr					
+76	1	C¸i ThÕ Hµo KiÖt	0	0	0	0	3	\script\global\playertitle.lua	Equip	UnEquip	\UImage\ÎåĞĞÍ¼±ê\³ÆºÅ.spr					
+77	1	Thiªn Xu	0	0	0	0	3	\script\global\playertitle.lua	Equip	UnEquip	\UImage\ÎåĞĞÍ¼±ê\³ÆºÅ.spr		<color=yellow>HiÖu qu¶ danh hiÖu:<color> V« Cù +50<enter/>TØ lÖ bŞ chÆn xuÊt chiªu -10%<enter/><color=yellow>HiÖu qu¶ Èn:<color> V« Cù +50<enter/>TØ lÖ bŞ chÆn xuÊt chiªu -10%<enter/>	1	V« Cù +50<enter/>TØ lÖ bŞ chÆn xuÊt chiªu -10%	V« Cù +50<enter/>TØ lÖ bŞ chÆn xuÊt chiªu -10%
+77	2	Thiªn Toµn	0	0	0	0	3	\script\global\playertitle.lua	Equip	UnEquip	\UImage\ÎåĞĞÍ¼±ê\³ÆºÅ.spr		<color=yellow>HiÖu qu¶ danh hiÖu:<color> TØ lÖ ph¸t huy c«ng kİch lín nhÊt +10%<enter/>B¹o kİch +10<enter/><color=yellow>HiÖu qu¶ Èn:<color> TØ lÖ ph¸t huy c«ng kİch lín nhÊt +10%<enter/>B¹o kİch +10<enter/>	1	TØ lÖ ph¸t huy c«ng kİch lín nhÊt +10%<enter/>B¹o kİch +10	TØ lÖ ph¸t huy c«ng kİch lín nhÊt +10%<enter/>B¹o kİch +10
+77	3	Thiªn C¬	0	0	0	0	3	\script\global\playertitle.lua	Equip	UnEquip	\UImage\ÎåĞĞÍ¼±ê\³ÆºÅ.spr		<color=yellow>HiÖu qu¶ danh hiÖu:<color> Ph¸ §Şch +50<enter/>S¸t th­¬ng b¹o kİch 50<enter/><color=yellow>HiÖu qu¶ Èn:<color> Ph¸ §Şch +50<enter/>S¸t th­¬ng b¹o kİch 50<enter/>	1	Ph¸ §Şch +50<enter/>S¸t th­¬ng b¹o kİch 50	Ph¸ §Şch +50<enter/>S¸t th­¬ng b¹o kİch 50
+78	1	Thiªn QuyÒn	0	0	0	0	3	\script\global\playertitle.lua	Equip	UnEquip	\UImage\ÎåĞĞÍ¼±ê\³ÆºÅ.spr		<color=yellow> HiÖu øng Danh HiÖu: <color> t¨ng C«ng Kİch tÊt c¶ c¸c Ngò Hµnh 10 <enter/> t¨ng 30% C«ng Kİch <enter/><color=yellow> Èn hiÖu øng: <color> t¨ng C«ng Kİch tÊt c¶ Ngò Hµnh 10 <enter/> t¨ng 30% C«ng Kİch <enter/>	1	T¨ng thªm C«ng Kİch tÊt c¶ Ngò Hµnh 10<enter/> T¨ng 30% C«ng Kİch	T¨ng thªm C«ng Kİch tÊt c¶ Ngò Hµnh 10<enter/> T¨ng 30% C«ng Kİch
+78	2	Ngäc H»ng	0	0	0	0	3	\script\global\playertitle.lua	Equip	UnEquip	\UImage\ÎåĞĞÍ¼±ê\³ÆºÅ.spr		<color=yellow> HiÖu øng Danh HiÖu: <color> t¨ng 8% x¸c suÊt xuÊt chiªu <enter/> t¨ng 15% x¸c suÊt B¸n Th­¬ng <enter/><color=yellow> Èn hiÖu øng: <color> t¨ng 8% x¸c suÊt xuÊt chiªu <enter/> t¨ng 15% xuÊt suÊt B¸n Th­¬ng <enter/>	1	T¨ng 8% x¸c suÊt xuÊt chiªu <enter/> t¨ng 15% x¸c suÊt B¸n Th­¬ng	T¨ng 8% x¸c suÊt xuÊt chiªu <enter/> t¨ng 15% x¸c suÊt B¸n Th­¬ng
+79	1	Vâ §éng Cµn Kh«n	0	0	0	0	3	\script\global\playertitle.lua	Equip	UnEquip	\UImage\ÎåĞĞÍ¼±ê\³ÆºÅ.spr					
