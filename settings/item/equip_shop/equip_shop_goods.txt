@@ -5581,4 +5581,8 @@ ID	Title	AwrdItem	NeedSex	NeedBody	NeedRoute	AwardTimes	GlobalMsg	ExchangeMode	T
 50177	Phong Th­ëng LÖnh: Ph¸ Qu©n	2;1;30561;1						50177	720	
 50178	Phong Th­ëng LÖnh: Ph¸ Qu©n	2;1;30562;1						50178	720	
 
-50179	Kim PhiÕu 1k	2;1;50022;1						50179	720	
+50179	Kim PhiÕu 1k	2;1;50022;1						50179	720
+	
+50180	Lôc L©m Lang Yªn	2;1;1014;1						50180	720	
+50181	Thñy Hoµng BÝ ChiÕu	2;1;1047;1						50181	720	
+50182	Uyªn ¦¬ng Kim Ti B¹c	2;1;1048;1						50182	720	
