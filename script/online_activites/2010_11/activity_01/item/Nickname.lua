@@ -6,24 +6,24 @@ NN_SUB2 = 30243;
 
 NN_titleTable = 
 {
-	{"Sèng Kh«ng Yªu!", 65, 1},
-	{"HËn §êi V« §èi", 65, 2},
-	{"Xinh Kh«ng Kiªu", 65, 3},
-	{"Võa Xinh Võa §iÖu", 65, 4},
-	{"Xinh G¸i Ngang Tr¸i", 65, 5},
-	{"XÊu KÕt CÊu §Ñp", 65, 6},
-	{"Teen Vâ L©m", 65, 7},
-	{"Buån V× §Ñp Trai", 65, 8},
-	{"BÐ Kháe BÐ §Ñp", 65, 9},
-	{"Bóp Bª Vâ L©m", 65, 10},	
-	{"Mü Nh©n Vâ L©m", 65, 11},
-	{"Mü N÷ Vâ L©m", 65, 12},
-	{"Vâ L©m KiÒu N÷", 65, 13},
-	{"Vâ L©m Mü Nam", 65, 14},
-	{"Hoa Hång Vâ L©m", 65, 15},
-	{"L·ng Tö §a T×nh", 65, 16},
-	{"HiÖp Kh¸ch V« Danh", 65, 17},
-	{"Vâ L©m TruyÒn Kú 2", 65, 18}
+	{"Sèng Kh«ng Yªu!", 62, 6},
+	{"HËn §êi V« §èi", 62, 7},
+	{"Xinh Kh«ng Kiªu", 62, 8},
+	{"Võa Xinh Võa §iÖu", 62, 9},
+	{"Xinh G¸i Ngang Tr¸i", 62, 10},
+	{"XÊu KÕt CÊu §Ñp", 62, 11},
+	{"Teen Vâ L©m", 62, 12},
+	{"Buån V× §Ñp Trai", 62, 13},
+	{"BÐ Kháe BÐ §Ñp", 62, 14},
+	{"Bóp Bª Vâ L©m", 62, 15},	
+	{"Mü Nh©n Vâ L©m", 62, 16},
+	{"Mü N÷ Vâ L©m", 62, 17},
+	{"Vâ L©m KiÒu N÷", 62, 18},
+	{"Vâ L©m Mü Nam", 62, 19},
+	{"Hoa Hång Vâ L©m", 62, 20},
+	--{"L·ng Tö §a T×nh", 62, 21},
+	--{"HiÖp Kh¸ch V« Danh", 62, 22},
+	{"Vâ L©m TruyÒn Kú 2", 62, 21}
 };
 
 function OnUse(itemIndex)
