@@ -10,11 +10,11 @@ L­u Thñy HiÖu	Tr¹ng th¸i (1 më 0 ®ãng)	Script ban ®Çu cña ho¹t ®éng	Server run f
 9	1	\script\online_activites\reborn\task\init.lua	ServerStartUp	PlayerLogin	0	0	NhiÖm vô chuyÓn sinh
 10	1	\script\online_activites\2010_07\activites_01\init.lua	ServerStartUp	PlayerLogin	2010070900	2010080824	Ho¹t ®éng th¸ng 7
 11	1	\script\online_activites\2010_08\activites_01\init.lua	ServerStartUp	PlayerLogin	2010081300	2010091300	Ho¹t ®éng th¸ng 8
-12	1	\script\online_activites\tiaozhansilingboss\init.lua	ServerStartUp	PlayerLogin	2010081300	2010091300	Ho¹t ®éng khiªu chiÕn tø linh
+12	1	\script\online_activites\tiaozhansilingboss\init.lua	ServerStartUp	PlayerLogin	2010081300	2022091300	Ho¹t ®éng khiªu chiÕn tø linh
 13	1	\script\online_activites\2010_09\activites_01\init.lua	ServerStartUp	PlayerLogin	2010091700	2010102500	Event Trung Thu th¸ng 9
 14	0	\script\online_activites\2010_09\activites_02\init.lua	ServerStartUp	PlayerLogin	2010091700	2010102500	Ho¹t ®éng Héi §Ìn Tø Linh th¸ng 9
 15	1	\script\online_activites\xinshouzhiyin\init.lua	ServerStartUp	PlayerLogin	0	0	Ho¹t ®éng h­íng dÉn t©n thñ
-16	1	\script\online_activites\2010_11\activity_01\init.lua	ServerStartUp	PlayerLogin	2010102900	2010120524	Ho¹t ®éng danh hiÖu
+16	1	\script\online_activites\2010_11\activity_01\init.lua	ServerStartUp	PlayerLogin	2010102900	2022120524	Ho¹t ®éng danh hiÖu
 17	1	\script\online_activites\2010_11\activity_02\init.lua	ServerStartUp	PlayerLogin	2010102900	2010120524	Ho¹t ®éng Hoa H­íng D­¬ng
 18	1	\script\online_activites\2010_11\activity_03\init.lua	ServerStartUp	PlayerLogin	2010102900	2010120524	Ho¹t ®éng thu thËp
 19	1	\script\online_activites\2010_12\activites_01\init.lua	ServerStartUp	PlayerLogin	2010121000	2011011000	Ho¹t ®éng gi¸ng sinh th¸ng 12
@@ -31,7 +31,7 @@ L­u Thñy HiÖu	Tr¹ng th¸i (1 më 0 ®ãng)	Script ban ®Çu cña ho¹t ®éng	Server run f
 30	1	\script\online_activites\2011_02\plant\init.lua	ServerStartUp	PlayerLogin	2011022500	2011032800	Event trång c©y Hoa Hång th¸ng 2 n¨m 2011
 31	1	\script\online_activites\2011_03\operating\init.lua	ServerStartUp	PlayerLogin	2011041200	2011043000	Event Giæ Tæ Hïng V­¬ng
 32	1	\script\online_activites\2011_03\boss\init.lua	ServerStartUp	PlayerLogin	2011041200	2011043000	EventBoss_201103
-33	0	\script\online_activites\2011_04\liberation\init.lua	ServerStartUp	PlayerLogin	2011042200	2011053000	Event ngµy gi¶i phãng 
+33	0	\script\online_activites\2011_04\liberation\init.lua	ServerStartUp	PlayerLogin	2011042200	2022053000	Event ngµy gi¶i phãng 
 34	1	\script\online_activites\2011_04\liberation\init.lua	ServerStartUp	PlayerLogin	2011061500	2011071100	Event mïa hÌ 2011 
 35	1	\script\online_activites\head\activity_normal_head.lua	ServerStartUp	PlayerLogin	2011071500	2011082200	Event mïa hÌ th¸ng 7 n¨m 2011 
 36	1	\script\online_activites\2011_07\head.lua	ServerStartUp	PlayerLogin	2011071500	2011082200	Summmer colors
