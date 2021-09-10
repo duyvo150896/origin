@@ -88,7 +88,7 @@ end
 --**************************物品使用主函数************************
 function OnUse(goods_index)
 	local MapID,Att_X,Att_Y = GetWorldPos()	
-  	local logContent = format("=> On %s Use Item Call Boss By %s on %s(%s/%s)", date("%Hh%M"), GetAccount(), MapID, div(Att_X,8), div(Att_Y,16));	local logContent = format("=> On %s Use Item Call Boss By %s on %s", date("%Hh%M"), GetAccount(), MapID);
+  	local logContent = format("=> On %s Use Item Call Boss By %s on %s(%s/%s)", date("%Hh%M"), GetAccount(), MapID, div(Att_X,8), div(Att_Y,16));
   	local filePatch = "data/callboss/";
   	local fileName = format("%s.txt", date("%y%m%d"));
    	Files_WriteLogInfo(filePatch, fileName, logContent );
