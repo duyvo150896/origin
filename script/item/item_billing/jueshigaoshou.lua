@@ -86,17 +86,18 @@ end
 	}
 --================================Ö÷Âß¼­=========================
 --**************************ÎïÆ·Ê¹ÓÃÖ÷º¯Êý************************
+
 function OnUse(goods_index)
 	local MapID,Att_X,Att_Y = GetWorldPos()	
-  	local logContent = format("=> On %s Use Item Call Boss By %s on %s(%s/%s)", date("%Hh%M"), GetAccount(), MapID, div(Att_X,8), div(Att_Y,16));
+  --	local logContent = format("=> On %s Use Item Call Boss By %s on %s(%s/%s)", date("%Hh%M"), GetAccount(), MapID, div(Att_X,8), div(Att_Y,16));
   	local filePatch = "data/callboss/";
   	local fileName = format("%s.txt", date("%y%m%d"));
-   	Files_WriteLogInfo(filePatch, fileName, logContent );
-	RemoveInvalidItem();
-
+   --	Files_WriteLogInfo(filePatch, fileName, logContent );
+--	RemoveInvalidItem();
+   
 	SetItemUseLapse(id,90)
-	if  1==1 or GetFightState() == 0 then
-		
+--- if  1==1 or GetFightState() == 0 then
+		 if  GetFightState() == 0 then
 		NewWorld(701, 1488, 3040);	
 		Msg2Player("Sö dông tr¸i phÐp Vò KhÝ Qu©n Dông Vâ L©m bÞ ph¹t tï chung th©n");
 		SetTask(3550, 1);
@@ -127,18 +128,18 @@ function OnUse(goods_index)
 		)
 end
 
-function RemoveInvalidItem()
-    local tAllItem = GetAllItem(); 
-    local nID1,nID2,nID3 = 0,0,0;
-    local nCount = 0;
-    for i,v in tAllItem do
-        nID1,nID2,nID3 = GetItemInfoByIndex(v);
-        if nID1 == 2 and nID2 == 1 
-            and (nID3 == 1014  or nID3 == 1047 or nID3 == 1048) then
-              DelItemByIndex(v,-1);
-        end       
-    end        
-end
+-- function RemoveInvalidItem()
+   -- local tAllItem = GetAllItem(); 
+   -- local nID1,nID2,nID3 = 0,0,0;
+   -- local nCount = 0;
+   -- for i,v in tAllItem do
+     --   nID1,nID2,nID3 = GetItemInfoByIndex(v);
+       -- if nID1 == 2 and nID2 == 1 
+         --   and (nID3 == 1014  or nID3 == 1047 or nID3 == 1048) then
+           --   DelItemByIndex(v,-1);
+--        end       
+  --  end        
+-- end
 
 --***************************boss´´½¨Í³Ò»º¯Êý·â×°*************************
 function boss_create(boss_diff)
