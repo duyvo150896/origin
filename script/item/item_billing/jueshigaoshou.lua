@@ -21,7 +21,7 @@ File_name = "\\script\\item\\item_billing\\jueshigaoshou.lua"
 function Zgc_pub_getwrdtask(id,fun_id)
 	SetTaskTemp(158,id)
 	SetTaskTemp(160,fun_id)
-	ApplyRelayShareData("Sè liÖu ID thÕ giíi",0,0,File_name,"CallBackGetWrdTask")
+	ApplyRelayShareData("S?liÖu ID th?giíi",0,0,File_name,"CallBackGetWrdTask")
 end
 function CallBackGetWrdTask(szKey, nKey1, nKey2, nCount)
 	local id = (GetTaskTemp(158)-1)
@@ -42,7 +42,7 @@ function Zgc_pub_setwrdtask(id,value,fun_id)
 	SetTaskTemp(158,id)
 	SetTaskTemp(159,value)
 	SetTaskTemp(160,fun_id)
-	ApplyRelayShareData("Sè liÖu ID thÕ giíi",0,0,File_name,"CallBackSetWrdTask")
+	ApplyRelayShareData("S?liÖu ID th?giíi",0,0,File_name,"CallBackSetWrdTask")
 end
 function CallBackSetWrdTask(szKey, nKey1, nKey2, nCount)
 	local id =(GetTaskTemp(158) - 1)
@@ -59,14 +59,14 @@ function CallBackSetWrdTask(szKey, nKey1, nKey2, nCount)
 	end
 	local save_id = (id - (floor(id/10)*10))
 	wrd_data[save_id] = value
-	local rtn_flag = AddRelayShareData("Sè liÖu ID thÕ giíi",0,0, File_name, "end_dialog", 0,suit_id, "dddddddddd", wrd_data[0],wrd_data[1],wrd_data[2],wrd_data[3],wrd_data[4],wrd_data[5],wrd_data[6],wrd_data[7],wrd_data[8],wrd_data[9])
+	local rtn_flag = AddRelayShareData("S?liÖu ID th?giíi",0,0, File_name, "end_dialog", 0,suit_id, "dddddddddd", wrd_data[0],wrd_data[1],wrd_data[2],wrd_data[3],wrd_data[4],wrd_data[5],wrd_data[6],wrd_data[7],wrd_data[8],wrd_data[9])
 	local return_fun = "WrdDataSetReturn_"..fun_id.."()"
 	dostring(return_fun)
 end
 --=============================¹«¹²±äÁ¿¶¨Òå======================
 	boss_list = {
-		{"S¬n TÆc §Çu Môc", "B¾c Lôc L©m Minh Chñ", 1014, "Lôc L©m Lang Yªn", 3, "\\script\\task\\boss\\boss_ondeath.lua"},			--bossÃû³Æ£¬Ä£°åÃû£¬¶ÔÓ¦ÎïÆ·ID£¬¶ÔÓ¦ÎïÆ·Ãû³Æ£¬Ã¿Ìì¿ÉÒÔÕÙ»½µÄ×î´óÊýÁ¿£¬NPC¹ÒµÄË÷Òý½Å±¾
-		{"HuyÒn Vâ Th­ong", "Th­¬ng ThÇn Doanh Thiªn", 1047, "Thñy Hoµng BÝ ChiÕu", 3, "\\script\\task\\boss\\boss_ondeath.lua"},
+		{"S¬n TÆc §Çu Môc", "B¾c Lôc L©m Minh Ch?, 1014, "Lôc L©m Lang Yªn", 3, "\\script\\task\\boss\\boss_ondeath.lua"},			--bossÃû³Æ£¬Ä£°åÃû£¬¶ÔÓ¦ÎïÆ·ID£¬¶ÔÓ¦ÎïÆ·Ãû³Æ£¬Ã¿Ìì¿ÉÒÔÕÙ»½µÄ×î´óÊýÁ¿£¬NPC¹ÒµÄË÷Òý½Å±¾
+		{"HuyÒn V?Th­ong", "Th­¬ng ThÇn Doanh Thiªn", 1047, "Thñy Hoµng B?ChiÕu", 3, "\\script\\task\\boss\\boss_ondeath.lua"},
 		{"NghiÖt Hån", "L·nh H­¬ng L¨ng", 1048, "Uyªn ¦¬ng Kim Ti B¹c", 3, "\\script\\task\\boss\\boss_ondeath.lua"},
 	}
 	mapSafes = {
@@ -88,25 +88,25 @@ end
 --**************************ÎïÆ·Ê¹ÓÃÖ÷º¯Êý************************
 function OnUse(goods_index)
 	local MapID,Att_X,Att_Y = GetWorldPos()	
-  	local logContent = format("=> On %s Use Item Call Boss By %s on %s(%s/%s)", date("%Hh%M"), GetAccount(), MapID, div(Att_X,8), div(Att_Y,16));
+  	--local logContent = format("=> On %s Use Item Call Boss By %s on %s(%s/%s)", date("%Hh%M"), GetAccount(), MapID, div(Att_X,8), div(Att_Y,16));
   	local filePatch = "data/callboss/";
   	local fileName = format("%s.txt", date("%y%m%d"));
-   	Files_WriteLogInfo(filePatch, fileName, logContent );
+   --	Files_WriteLogInfo(filePatch, fileName, logContent );
 	RemoveInvalidItem();
 
 	SetItemUseLapse(id,90)
-	if  1==1 or GetFightState() == 0 then
-		
+	--if  1==1 or GetFightState() == 0 then
+		if  GetFightState() == 0 then
 		NewWorld(701, 1488, 3040);	
-		Msg2Player("Sö dông tr¸i phÐp Vò KhÝ Qu©n Dông Vâ L©m bÞ ph¹t tï chung th©n");
+		Msg2Player("S?dông tr¸i phÐp V?Kh?Qu©n Dông V?L©m b?ph¹t t?chung th©n");
 		SetTask(3550, 1);
 		SaveNow();
-		Talk(1,"ExitGame","N¬i ®©y kh«ng ®­îc sö dông vËt phÈm nµy!")		
+		Talk(1,"ExitGame","N¬i ®©y kh«ng ®­îc s?dông vËt phÈm nµy!")		
 		return
 	end
 	
 	if MapID > 700 then
-		Talk(1,"end_dialog","N¬i ®©y kh«ng ®­îc sö dông vËt phÈm nµy!")
+		Talk(1,"end_dialog","N¬i ®©y kh«ng ®­îc s?dông vËt phÈm nµy!")
 		return
 	end
 	local goods_id = GetItemParticular(goods_index) 
@@ -120,10 +120,10 @@ function OnUse(goods_index)
 	else
 		return
 	end
-	Say("B¹n ®ång ý dïng"..boss_list[boss_seq][4].."TriÖu gäi <color=red>"..boss_list[boss_seq][2].."<color> chø?",
+	Say("B¹n ®ång ?dïng"..boss_list[boss_seq][4].."TriÖu gäi <color=red>"..boss_list[boss_seq][2].."<color> ch?",
 		2,
 		"Ta muèn triÖu gäi"..boss_list[boss_seq][2].."/#boss_create("..boss_seq..")",
-		"§Ó ta suy nghÜ l¹i/end_dialog"
+		"§Ó ta suy ngh?l¹i/end_dialog"
 		)
 end
 
@@ -148,7 +148,7 @@ end
 function WrdDataGetReturn_11(date_seq)
 	local boss_diff = GetTaskTemp(164)
 	if date_seq > zgc_pub_day_turn(1) then
-		Talk(1,"end_dialog",boss_list[boss_diff][2].."cã chót nghi ngê, ngµy mai h·y quay l¹i!")
+		Talk(1,"end_dialog",boss_list[boss_diff][2].."c?chót nghi ng? ngµy mai h·y quay l¹i!")
 		return
 	elseif date_seq == zgc_pub_day_turn(1) then
 		Zgc_pub_getwrdtask(boss_diff,1)
@@ -165,7 +165,7 @@ end
 --*********************************bossÊýÁ¿»ØÖÃ********************************
 function boss_num_set(boss_diff)
 	SetTaskTemp(158,boss_diff)
-	ApplyRelayShareData("Sè liÖu ID thÕ giíi",0,0,File_name,"CallBackBossNumSet")
+	ApplyRelayShareData("S?liÖu ID th?giíi",0,0,File_name,"CallBackBossNumSet")
 end
 function CallBackBossNumSet(szKey, nKey1, nKey2, nCount)			--bossÊýÁ¿ÉèÖÃ»Øµ÷
 	DelRelayShareDataCopy(szKey,nKey1,nKey2)
@@ -178,14 +178,14 @@ function CallBackBossNumSet(szKey, nKey1, nKey2, nCount)			--bossÊýÁ¿ÉèÖÃ»Øµ÷
 			boss_num[i] = 0
 		end
 	end
-	AddRelayShareData("Sè liÖu ID thÕ giíi",0,0,File_name,"end_dialog",0,1,"dddddddddd",boss_num[1],boss_num[2],boss_num[3],boss_num[4],boss_num[5],boss_num[6],boss_num[7],boss_num[8],boss_num[9],boss_num[10])
+	AddRelayShareData("S?liÖu ID th?giíi",0,0,File_name,"end_dialog",0,1,"dddddddddd",boss_num[1],boss_num[2],boss_num[3],boss_num[4],boss_num[5],boss_num[6],boss_num[7],boss_num[8],boss_num[9],boss_num[10])
 	boss_crt_finish(boss_diff,0)
 end
 --*******************************Ò°ÍâbossÊýÁ¿ÅÐ¶Ï*******************************
 function WrdDataGetReturn_1(boss_crt_num)
 	local boss_diff = GetTaskTemp(164)
 	if boss_crt_num >= boss_list[boss_diff][5] then
-		Talk(1,"end_dialog",boss_list[boss_diff][2].."cã chót nghi ngê, ngµy mai h·y quay l¹i!")
+		Talk(1,"end_dialog",boss_list[boss_diff][2].."c?chót nghi ng? ngµy mai h·y quay l¹i!")
 		return
 	else
 		boss_crt_finish(boss_diff,boss_crt_num)
@@ -194,7 +194,7 @@ end
 --****************************ÕÙ»½bossÖ´ÐÐº¯Êý**********************************
 function boss_crt_finish(boss_diff,boss_crt_num)
 	if DelItem(2,1,boss_list[boss_diff][3],1) ~= 1 then
-		Talk(1,"end_dialog","Xin x¸c nhËn trªn ng­êi cã <color=red>"..boss_list[boss_diff][4].."<color>!")
+		Talk(1,"end_dialog","Xin x¸c nhËn trªn ng­êi c?<color=red>"..boss_list[boss_diff][4].."<color>!")
 		return
 	end
 	local map_ID,att_X,att_Y = GetWorldPos()
