@@ -46,43 +46,43 @@ function OnUse(nItem)
 	else
 		tSay = {
 --			"NhËp Code/GiftCodeNhap",
-		-- "NhËn tö quang hiªn viªn ngäc/hienvienngoc",
-            -- "Trang BŞ/Get_Mored",
+		"NhËn tö quang hiªn viªn ngäc/hienvienngoc",
+            "Trang BŞ/Get_Mored",
             "Tiªu dïng/tieudung",
 			"Cßn l¹i/tieudung_orther",
-            -- "Thiªn kiªu lÖnh /nhantkl",
+            "Thiªn kiªu lÖnh /nhantkl",
 			"HiÖu øng nh©n vËt/#char_eff(10)",
-			-- "Hç trî ®¼ng cÊp cho t©n thñ Level 99/hotrogmer1st",
-			-- "Hç trî 2 tØ kinh nghiÖm/hotrogmer2st",
-            -- "NhËn Bé DiÖu D­¬ng +7/Get_YaoYang_15",
-			-- "NgÉu nhiªn nhËn ®­îc Trang BŞ Kim Xµ Lv1 +10/Get_JinShe_1",
-			-- format("%s/Process_Equip_LingTu", "NhËn Linh §å +10"),
-			-- format("%s/Process_SanJianTao", "NhËn trang søc ®eo h«ng 6 sao"),
-			-- format("%s/Get_kx7", "NhËn trang søc ®eo h«ng 7 sao"),
---			format("%s/test", "Test Nhan Event"),
-			-- "NhËn Lak/Get_Energy",
-			-- "Vu Khi Chua giam dinh/btcgd",
+			"Hç trî ®¼ng cÊp cho t©n thñ Level 99/hotrogmer1st",
+			"Hç trî 2 tØ kinh nghiÖm/hotrogmer2st",
+            "NhËn Bé DiÖu D­¬ng +7/Get_YaoYang_15",
+			"NgÉu nhiªn nhËn ®­îc Trang BŞ Kim Xµ Lv1 +10/Get_JinShe_1",
+			format("%s/Process_Equip_LingTu", "NhËn Linh §å +10"),
+			format("%s/Process_SanJianTao", "NhËn trang søc ®eo h«ng 6 sao"),
+			format("%s/Get_kx7", "NhËn trang søc ®eo h«ng 7 sao"),
+			format("%s/test", "Test Nhan Event"),
+			"NhËn Lak/Get_Energy",
+			"Vu Khi Chua giam dinh/btcgd",
 
---			"NhËn tµi liÖu c­êng hãa/Get_Enhance",
+			"NhËn tµi liÖu c­êng hãa/Get_Enhance",
 
---			"Reset l¹i giíi h¹n giê ch¬i/Reset_Time_Playy",
+			"Reset l¹i giíi h¹n giê ch¬i/Reset_Time_Playy",
 
---			format("%s/Reset_Time_Playy", "Håi phôc thÓ lùc"),
---			format("%s/getTianJiaoLing", "NhËn Thiªn Kiªu LÖnh"),
+			format("%s/Reset_Time_Playy", "Håi phôc thÓ lùc"),
+			format("%s/getTianJiaoLing", "NhËn Thiªn Kiªu LÖnh"),
 		}
 		if 3 == nRoute then
 			tinsert(tSay, "NhËn Thiªn PhËt Ch©u vµ Ph¸ Ma Chó/Give_ZhuzhuZhouzhou")
 		end
-		-- if 4 == nRoute then
-			-- tinsert(tSay, "QuÇn ¸o TLQ/aosm")
-		-- end
+		if 4 == nRoute then
+			tinsert(tSay, "QuÇn ¸o TLQ/aosm")
+		end
 		if 6 == nRoute then
 			tinsert(tSay, "NhËn ¸m Khİ vµ C¬ Quan/Give_JiguanAnqi")
 		end
 		if 8 == nRoute then
 			tinsert(tSay, "NhËn X¸ Lîi Kim §¬n/Give_Dandan")
 			tinsert(tSay, "Nhan §å Buff NMK/DoBuffNMK_HTTC")
-			-- tinsert(tSay, "Nhan §å Buff NMK_test (Kh«ng cã khi Open)/DoBuffNMK_test")
+			tinsert(tSay, "Nhan §å Buff NMK_test (Kh«ng cã khi Open)/DoBuffNMK_test")
 		end		
 		if 17 == nRoute then
 			tinsert(tSay, "NhËn ChiÕn M·/Give_ZhanMa")
@@ -3765,45 +3765,45 @@ end
 
 function Get_Mored()
 	local tSay = {
-		-- "NhËn Thiªn H¹ V« Song/thvs",	
-	-- "NhËn HiÖu ChiÕn Tr­êng/hieudothong",
-		-- "NhËn TT3 LL3 TT4 LL4/ttll3",
-		 -- "NhËn TT1 LL/ttll1",
-		-- "NhËn ®­îc Trang BŞ Kim Xµ Lv3 +7 (lo¹i míi)/Get_KX3chonopt_6loai",
-		-- "Vò Khİ Chİnh (3 lç)/vukhi_8x",
-		-- "NhËn Thiªn NghÜa/thienghia_mod3_zin",
-		-- "NhËn ®­îc Trang BŞ Kim Xµ Lv3 +7 (lo¹i cò)/getkx3",
-		-- "NhËn Thiªn Chi tµng KiÕm/tctk",
-		-- "HHVD/huyhoang5",
-		-- "Ngäc Thiªn NghÜa/thienghia_ngoc",
-		-- "uÈn Linh cÊp 2/nhanul_2",
-		-- "Vâ L©m b¸ Chñ/vlbc",
+		"NhËn Thiªn H¹ V« Song/thvs",	
+	"NhËn HiÖu ChiÕn Tr­êng/hieudothong",
+		"NhËn TT3 LL3 TT4 LL4/ttll3",
+		 "NhËn TT1 LL/ttll1",
+		"NhËn ®­îc Trang BŞ Kim Xµ Lv3 +7 (lo¹i míi)/Get_KX3chonopt_6loai",
+		"Vò Khİ Chİnh (3 lç)/vukhi_8x",
+		"NhËn Thiªn NghÜa/thienghia_mod3_zin",
+		"NhËn ®­îc Trang BŞ Kim Xµ Lv3 +7 (lo¹i cò)/getkx3",
+		"NhËn Thiªn Chi tµng KiÕm/tctk",
+		"HHVD/huyhoang5",
+		"Ngäc Thiªn NghÜa/thienghia_ngoc",
+		"uÈn Linh cÊp 2/nhanul_2",
+		"Vâ L©m b¸ Chñ/vlbc",
 
-		-- "NhËn Vò Khİ Nguyªn Tö/vknt",
-		-- "NhËn Vò Kh¶m /vkkham",
+		"NhËn Vò Khİ Nguyªn Tö/vknt",
+		"NhËn Vò Kh¶m /vkkham",
 		"NhËn Vò Opt zin /vkopt",
-		-- "NhËn §å Long §»ng Phông Vò/longdang",
+		"NhËn §å Long §»ng Phông Vò/longdang",
 
-		-- "NhËn Thiªn Chi Viªm §Õ/thienchiviemde",
-		-- "NhËn Viªm §Õ/viemde",
-		-- "NhËn Tö Quang Viªm §Õ/tuquangviemde",
+		"NhËn Thiªn Chi Viªm §Õ/thienchiviemde",
+		"NhËn Viªm §Õ/viemde",
+		"NhËn Tö Quang Viªm §Õ/tuquangviemde",
 		"NhËn ®å buff/dobuffhttc",
-		-- "NhËn tö quang hiªn viªn thÇn binh/hienvienbinh",
+		"NhËn tö quang hiªn viªn thÇn binh/hienvienbinh",
 		"NhËn Cöu Thiªn Ngäc/cuuthienngoc",
     	"NhËn B¹ch Kim Viªm §Õ/bkvd",
---		"LuyÖn max skill trÊn ph¸i/maxtranphai",
---		"NhËn Th«ng Thiªn/getTiLi",
---		"NhËn Thien Chi T­íng Qu©n/thienchituongquan",
---		"NhËn T­íng Qu©n/tuongquan",
---		"C¸c Lo¹i Ngäc/ngoctoc",
---      "C¸c Lo¹i Ngäc/ngocdame",
+		"LuyÖn max skill trÊn ph¸i/maxtranphai",
+		"NhËn Th«ng Thiªn/getTiLi",
+		"NhËn Thien Chi T­íng Qu©n/thienchituongquan",
+		"NhËn T­íng Qu©n/tuongquan",
+		"C¸c Lo¹i Ngäc/ngoctoc",
+     "C¸c Lo¹i Ngäc/ngocdame",
 		" Ngäc/hhvd_5",
 
 		"§å 3 Lç/do3lo_8x",
 		"QuÎ 8 qu¸i/que8w", 
---		"Ngo¹i Trang/ngoaitrangnew", 
-		-- "Hµo HiÖp V« H¹/gethhvhlb", 
-		-- "NhËn trang søc ®eo h«ng 4 vs 5 sao/showKX",
+		"Ngo¹i Trang/ngoaitrangnew", 
+		"Hµo HiÖp V« H¹/gethhvhlb", 
+		"NhËn trang søc ®eo h«ng 4 vs 5 sao/showKX",
 		"T¹i h¹ chØ xem qua th«i/nothing",
 	}
 	Say(g_szTitle.."------------------", getn(tSay), tSay);
