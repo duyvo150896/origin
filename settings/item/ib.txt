@@ -38,7 +38,7 @@ Sort	Page	X	Y	Description	Information	GiveItem1Type	GiveItem1Genre	GiveItem1Deta
 2	1	3	4	V¹n N¨ng Phï	<color=White>1900 Xu<enter><color=Gold>1900 Xu	6	2	1	30470	1	10				1900	30	
 2	2	1	1	Bao XÝch ThiÕt Tinh	<color=White>500 Xu<enter><color=Gold>250 Xu	6	2	1	2651	1	10				250	30	
 2	2	1	2	Thiªn C¬ Toµn	<color=White>1200 Xu<enter><color=Gold>1000 Xu	6	2	1	1176	1	10				1000	30	
-2	2	1	3	TÈy Tñy ®¬n	<color=Gray>400 Xu<enter><color=Gold>2147483647 Xu	6	2	0	136	1	10				2147483647	30	
+2	2	1	3	TÈy Tñy ®¬n	<color=Gray>400 Xu<enter><color=Gold>250 Xu	6	2	0	136	1	10				250	30	
 2	2	1	4	Tiªu KiÕp t¸n	<color=Gray>30 Xu<enter><color=Gold>15 Xu	6	2	0	141	1	10				15	30	
 2	2	2	1	Bé NÊu BÕp	<color=Gray>500 Xu<enter><color=Gold>500 Xu	6	2	1	30591	1	10				500	30	
 2	2	2	2	Bµn TiÖc	<color=Gray>150 Xu<enter><color=Gold>150 Xu	6	2	1	30590	1	10				150	30	
