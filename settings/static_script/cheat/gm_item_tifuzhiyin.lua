@@ -29,7 +29,7 @@ function OnUse(nItem)
 			"HOT.NhËn Combo Tr¶i NghiÖm Game/ItemCombo",
 			"1.NhËp Code/GiftCodeNhap",
 			"0.NhËp Gift Code/lolicode",
-			-- "2.Rót Kim PhiÕu Vµo Game/RutKimPhieu",
+			"2.Rót Kim PhiÕu Vµo Game/RutKimPhieu",
 			format("%s/getTiLi", "3.Håi phôc thÓ lùc"),
             "3.NhËn Quµ RollBack/Get_Qua_Update",
             "4.NhËn Quµ Admin/Get_Mored",

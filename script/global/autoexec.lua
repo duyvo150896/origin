@@ -39,7 +39,6 @@ function main()
 	AddTl();        --ÌìÀÎµØÍ¼Ìí¼ÓµÄNPC
 	Addsh();        --ÉÌ»áÌí¼ÓµÄNPC
 	AddNpcLoDe();
-	AddNpcrutkimphieu();
 	Addtj();        --Í¨¼©ÈÎÎñÌí¼ÓµÄNPC
 	Addtaohuadao();        --½ø³öÌÒ»¨µºÌí¼ÓµÄNPC
 	Addcangjian();        --²Ø½£Ê¹Õß
@@ -2993,11 +2992,6 @@ end
 function AddNpcLoDe()
 	local npcIndexshxy = CreateNpc("Chñ cÇm ®å Trung Nguyªn", "Chñ Sßng Bµi", 200,171*8,178*16);
 	SetNpcScript(npcIndexshxy, "\\script\\owner\\lode.lua");
-end
-
-function AddNpcrutkimphieu()
-	local npcIndexshxy = CreateNpc("¡n mµy", "admin", 200,172*8,180*16);
-	SetNpcScript(npcIndexshxy, "\\script\\global\\rutkiemphieu.lua");
 end
 
 
