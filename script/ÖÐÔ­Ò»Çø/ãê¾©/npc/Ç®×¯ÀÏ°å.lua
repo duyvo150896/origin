@@ -1,4 +1,4 @@
-
+Include("\\script\\napthe\\tien_trang.lua")
 -- ====================== ÎÄ¼şĞÅÏ¢ ======================
 
 -- ½£ÏÀÇéÔµonlineII Ç®×¯ÀÏ°å½Å±¾
@@ -22,8 +22,9 @@ else
 end
 
 function main()
-	Say("L·o cã thÓ gióp g× cho quı kh¸ch ®©y??", 1,
---		"ÎÒÏëÊ¹ÓÃ½ğ±Ò³äÓÎÏ·Ê±¼ä£¡/select_charge_style",
+	Say("L·o cã thÓ gióp g× cho quı kh¸ch ®©y??", 2,
+--		"Ta muèn sö dông xu ®Ó gia h¹n thêi gian ch¬i game!/select_charge_style",
+		"Ta muèn rót Kim PhiÕu/RutKimPhieu",
 		"Ta nh©n tiÖn ghĞ th¨m «ng th«i mµ!/nothing" )
 	return
 end
@@ -41,7 +42,7 @@ function select_charge_style()
 		3,
 		"Ta muèn dïng 200 Xu ®æi 7 ngµy ch¬i/#start_charge(1)",
 		"Ta muèn dïng 600 Xu ®æi 28 ngµy ch¬i/#start_charge(2)",
---		"ÎÒÏë×Ô¼ºÊäÈëÒªÊ¹ÓÃµÄ½ğ±ÒÊıÁ¿/customize_charge_input",
+--		"Ta muèn nhËp sè Xu ®Ó ®æi thêi gian ch¬i/customize_charge_input",
 		"T¹m thêi ch­a cÇn!/nothing" );
 end
 
