@@ -5,8 +5,8 @@
 Include("\\script\\online\\viet_event\\200909\\event_head.lua")
 
 function OnUse(nItemIdx)
-	if tonumber(date("%y%m%d")) < 090918 or tonumber(date("%y%m%d")) >= 091102 then
-		Talk(1, "", "Ho¹t ®éng ®· qu¸ h¹n");
+	if tonumber(date("%y%m%d")) < 210918 or tonumber(date("%y%m%d")) >= 211102 then
+		Talk(1, "", "Ho¹t ®éng ®· qu?h¹n");
 		return 0;
 	end
 	if GetTask(VIET_0909_TASK_ALREADY_GET_EXP) >= 300000000 then
@@ -30,7 +30,7 @@ function OnUse(nItemIdx)
 			if tbVIET_0909_SJLD_AWARD[nRand][4] ~= 0 then
 				SetItemExpireTime(nIndex, tbVIET_0909_SJLD_AWARD[nRand][4]);
 			end
-			WriteLogEx("Hoat dong trung thu","Sö dông b¸nh",1,tbVIET_0909_SJLD_AWARD[nRand][1])
+			WriteLogEx("Hoat dong trung thu","S?dông b¸nh",1,tbVIET_0909_SJLD_AWARD[nRand][1])
 		end
 		gf_SetLogCaption("");
 	end

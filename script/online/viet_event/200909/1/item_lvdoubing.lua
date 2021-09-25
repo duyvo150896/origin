@@ -5,7 +5,7 @@
 Include("\\script\\online\\viet_event\\200909\\event_head.lua")
 
 function OnUse(nItemIdx)
-	if tonumber(date("%y%m%d")) < 090918 or tonumber(date("%y%m%d")) >= 091102 then
+	if tonumber(date("%y%m%d")) < 210918 or tonumber(date("%y%m%d")) >= 211102 then
 		Talk(1, "", "Ho¹t ®éng ®· qu¸ h¹n");
 		return 0;
 	end
