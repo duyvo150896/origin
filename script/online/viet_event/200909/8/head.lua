@@ -22,7 +22,7 @@ tXiaoAwardList = {
 
 function npc_xiao_talk()
 	local nDate = tonumber(date("%Y%m%d"))
-	if nDate < 20090928 or nDate > 20091025 then
+	if nDate < 20210928 or nDate > 20211025 then
 		Say(szNpcName.."Ho¹t ®éng ®· kÕt thóc.",0)
 		return
 	end	
