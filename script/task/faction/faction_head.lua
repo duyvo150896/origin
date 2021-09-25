@@ -118,7 +118,7 @@ TB_FACTION_PLACE =
 	{"Thiªn Ba D­¬ng phñ",{219,1630,3274},1,6},
 	{"Ngò §éc Gi¸o",{407,1555,3282},1,7},
 	{"C«n L«n",{509,1513,3285},0,8},
---	{"Ã÷½Ì",{152,1518,3078},0,9},
+	{"Minh Gi¸o",{152,1518,3078},0,9},
 	{"Thóy Yªn",{404,1507,2788},0,10},
 }
 TB_FACTION_PLACE_INDEX = nil
@@ -369,10 +369,16 @@ TB_ROUTE_IN_INFO = {
 	[31] = {
 		npc_name = "§­êng Léng NguyÖt",
 		bewrite = "§· vµo hÖ ph¸i ta th× ®õng c©u nÖ lÖ cò nhµ §­êng, cø tïy ı hµnh tÈu giang hå. Chñy thñ lµ vò khİ së tr­êng cña ph¸i ta.",
+	in_route_talk = "Giê chİnh thøc thu nhËn ng­¬i lµm ®Ö tö vµ gióp ng­¬i ®¶ th«ng kinh m¹ch, <color=yellow>tÈy l¹i tiÒm n¨ng<color>. Vâ c«ng hÖ ph¸i xem träng <color=yellow>søc m¹nh<color>, sau nµy ng­¬i h·y cè g¾ng. Giê ng­¬i cã thÓ ®Õn gÆp Ch­ëng M«n nhËn <color=yellow>nhiÖm vô s­ m«n<color>råi.",
+		skill = {{17,"Chñy thñ kİch b×nh th­êng"},{1872,"M? ¶nh T©m Ph¸p"},{1875,"S¸t ?"}},
+		equip = 14,
 	},
 	[32] = {
 		npc_name = "V©n Hi Hßa",
 		bewrite = "§· vµo hÖ ph¸i ta ph¶i thÒ c¶ ®êi mang kiÕm tu hµnh, thùc thi chİnh nghÜa. KiÕm lµ vò khİ së tr­êng cña ph¸i ta.",
+		in_route_talk = "Giê chİnh thøc thu nhËn ng­¬i lµm ®Ö tö vµ gióp ng­¬i ®¶ th«ng kinh m¹ch, <color=yellow>tÈy l¹i tiÒm n¨ng<color>. Vâ c«ng hÖ ph¸i xem träng <color=yellow>søc m¹nh<color>, sau nµy ng­¬i h·y cè g¾ng. Giê ng­¬i cã thÓ ®Õn gÆp Ch­ëng M«n nhËn <color=yellow>nhiÖm vô s­ m«n<color>råi.",
+		skill = {{4,"Ki?m kİch b×nh th­êng"},{1887,"Nh©n Ki?m Hîp NhÊt"},{1888,"LuyÖn Ki?m Si Hµn"}},
+		equip = 2,
 	},
 }
 --Ê¦ÃÅÍâ×°
@@ -620,8 +626,13 @@ TB_FACTION_WEAPON_ROUTE = {
 	[20] = {7},
 	[21] = {11},
 	[23] = {2},
+	[25] = {3},
+	[26] = {9},
+	[27] = {11},
 	[29] = {13},
 	[30] = {12},
+	[31] = {14},
+	[32] = {2},
 }
 --ÀÏÃÅÅÉÊ¦ÃÅµÚÒ»Ì×Ôö¼Ó
 function old_route_equip_add(route_seq)
