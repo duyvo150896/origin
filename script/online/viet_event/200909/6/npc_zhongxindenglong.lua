@@ -62,7 +62,7 @@ function main()
 		"KÕt thóc ®èi tho¹i/viet_0909_nothing"
 	};
 	local nDate = tonumber(date("%Y%m%d"))
-	if nDate >= 20091001 and nDate <= 20091004 then
+	if nDate >= 20211001 and nDate <= 20211004 then
 		tinsert(t_dialog,1,"NhËn phÇn th­ëng dµnh cho Bang chñ/get_token")
 	end
 	Say("Sù kiÖn Trung Thu 2009 b¾t ®Çu diÔn ra tõ ngµy 18-09-2009 ®Õn hÕt ngµy 25-10-2009. Trong thêi gian nµy, ®ång ®¹o cã thÓ tham gia vµo c¸c sù kiÖn nçi bËc nh­: ChÕ biÕn B¸nh Trung Thu, vui cïng §Ìn KĞo Qu©n vµ Thá BĞo ó, tham gia tiªu diÖt Muçi §éc, Trång C©y H¹nh Phóc, xĞt th­ëng theo ®iÓm danh väng vµ ®iÓm s­ m«n ®Ó së h÷u nh÷ng phÇn th­ëng cùc khñng.Chóc ®ång ®¹o cã mét ®ªm Trung Thu Êm ¸p bªn ng­êi th©n vµ gia ®×nh!", getn(t_dialog), t_dialog);
@@ -79,7 +79,7 @@ end
 
 function get_token()
 	local nDate = tonumber(date("%Y%m%d"))
-	if nDate >= 20091001 and nDate <= 20091007 then
+	if nDate >= 20211001 and nDate <= 20211007 then
 		if IsTongMaster() ~= 1 then
 			Say("ChØ cã Bang chñ míi ®­îc nhËn th­ëng!",0)
 			return
