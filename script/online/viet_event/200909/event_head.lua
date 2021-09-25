@@ -359,8 +359,8 @@ tb_VIET_0909_YUTUXIANG = {
 	{"Tiªu KiÕp t¸n", 2000, {2, 0, 141, 1}, 15 * 24 * 3600},
 	{"Thiªn Th¹ch linh th¹ch", 10, {2, 1, 1068, 1}, 15 * 24 * 3600},	
 	{"R­¬ng TrÊn Ph¸i", 60, {2, 1, 30113, 1}, 30 * 24 * 3600},
---	{"R­¬ng YÕu QuyÕt_Cao CÊp", 20, {2, 1, 30112, 1}, 30 * 24 * 3600},
---	{"B¶o R­¬ng §Æc BiÖt", 16, {2, 1, 30091, 1}, 30 * 24 * 3600},
+	{"R­¬ng YÕu QuyÕt_Cao CÊp", 20, {2, 1, 30112, 1}, 30 * 24 * 3600},
+	{"B¶o R­¬ng §Æc BiÖt", 16, {2, 1, 30091, 1}, 30 * 24 * 3600},
 	{"ThÇn hµnh b¶o ®iÓn", 40, {0, 200, 40, 1}, 30 * 24 * 3600},
 	{"Tö Quang Bµi", 120, {2, 0, 762, 1}, 15 * 24 * 3600},
 	{"C¬m chiªn trøng", 15137, {1, 1, 14, 1}, 0},
@@ -375,7 +375,7 @@ VIET_0909_LOG_TITLE = "[Hoat dong trung thu 2009]";
 
 --ÁìÈ¡ÉÏÏß½±Àø
 function Viet0909_Give_ShangXian_Aword()
-	if tonumber(date("%y%m%d")) < 090918 or tonumber(date("%y%m%d")) >= 091026 then
+	if tonumber(date("%y%m%d")) < 210918 or tonumber(date("%y%m%d")) >= 211026 then
 		Talk(1, "", "Ho¹t ®éng ®· qu¸ h¹n");
 		return 0;
 	end
