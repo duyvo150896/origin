@@ -173,11 +173,11 @@ MAGIC_BB = 33;	--全体封招
 --Modify:去掉截止时间限制，让活动继续开下去。
 function Get_DragonBoatDay_State()
 	local nDate = tonumber(date("%Y%m%d"));
-	if nDate < 20060530 then
+	if nDate < 20210930 then
 		return 0;	--活动开始前
-	elseif nDate > 20060710 then
+	elseif nDate > 20211110 then
 		return 3;	--领奖截止		需要停止的时候返回1
-	elseif nDate > 20060630 then
+	elseif nDate > 20211030 then
 		return 3;	--活动结束后	需要结束的时候返回2
 	else
 		return 3;	--活动进行中
