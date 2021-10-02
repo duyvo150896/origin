@@ -2504,7 +2504,7 @@ end
 
 function upgrade_gather_skill()
 	local tGather = {1, 2, 3, 4, 5, 6};
-	local tName = {"§èn c©y", "Lµm da", "Canh t¸c", "H¸i thuèc" "§µo kho¸ng", "KÐo t¬"};
+	local tName = {"§èn c©y", "Lµm da", "Canh t¸c", "H¸i thuèc", "§µo kho¸ng", "KÐo t¬"};
 	local str = ""
 	for k, v in tName do
 		str = str.."<color=gold>"..v.."<color>,"
