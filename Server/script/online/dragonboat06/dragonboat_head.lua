@@ -55,43 +55,43 @@ AWARD_CSZZ2 = 1626	--¼ÇÂ¼ÁìÈ¡²æÉÕôÕ×ÓµÄÊ±¼ä
 AWARD_DIARY1 = 1627	--¼ÇÂ¼µ±ÌìÁìÈ¡±ÈÈüÈÕ¼ÇµÄ´ÎÊı
 AWARD_DIARY2 = 1628	--¼ÇÂ¼ÁìÈ¡±ÈÈüÈÕ¼ÇµÄÈÕÆÚ
 --================================================================
-NumTab = {"mét","hai","ba","bèn","Ng?","s¸u","b¶y","t¸m","chİn","ThËp"};
+NumTab = {"mét","hai","ba","bèn","Ngò ","s¸u","b¶y","t¸m","chİn","ThËp"};
 --================================================================
 RoomName = {
 		"M©n Giang  ",
 		"Cöu Long Giang",
 		"TÊn Giang  ",
 		"Thinh Giang  ",
-		"Giao Kh? ",
+		"Giao Khª  ",
 		"MŞch La Giang",
-		"Méc Lan Kh?,
+		"Méc Lan Khª",
 		"Ch©u Giang  ",---------------------------------------		
-		"Hoµng H? ",
+		"Hoµng Hµ  ",
 		"Hång Y Gi¶n",
-		"L¹c H? ",
-		"Y H? ",
-		"M·ng H? ",
-		"TÈm H? ",
-		"§an H? ",
+		"L¹c Hµ  ",
+		"Y Hµ  ",
+		"M·ng Hµ  ",
+		"TÈm Hµ  ",
+		"§an Hµ  ",
 		"MÉu §¬n Giang",----------------------------------------	
 		"Tr­êng Giang  ",
-		"Ph?H? ",
-		"Nam H? ",
-		"Sa H? ",
-		"Thanh Thñy H?,
-		"Giang An H?,
-		"Kim Sa H?,
-		"D­¬ng T?Giang",
+		"Phñ Hµ  ",
+		"Nam Hµ  ",
+		"Sa Hµ  ",
+		"Thanh Thñy Hµ",
+		"Giang An Hµ",
+		"Kim Sa Hµ",
+		"D­¬ng Tö Giang",
 		};
 --=================================================================================================
 BoatInfo = {
-		{"ThuyÒn Rång ph?th«ng","ThuyÒn Rång ph?th«ng kh«ng c?mµu s¾c v?tİnh n¨ng ®Æc biÖt."},
-		{"ThuyÒn Rång Thñy Ph¸o","C?kh?n¨ng b¾n thñy ®¹n rÊt m¹nh v?tÊn c«ng ®èi th?t?xa."},
-		{"ThuyÒn Rång Thñy L«i","C?kh?n¨ng ch«n thñy l«i d­íi n­íc, ®èi th?®i qua s?b?chÊn ®éng."},
-		{"ThuyÒn Rång Thñy L·ng","C?kh?n¨ng t¹o ra mét bøc t­êng sãng ng¨n c¶n ®èi ph­¬ng ®i qua."},
-		{"ThuyÒn rång §o¶n Binh","TuyÓn th?bªn c¹nh t¹m thêi kh«ng th?tiÕn lªn"},
-		{"ThuyÒn Rång Liªn X?,"C?kh?n¨ng b¾n thñy ®¹n khiÕn ®èi th?b?cho¸ng, ­u ®iÓm l?mét lÇn c?th?b¸n nhiÒu ph¸t."},
-		{"ThuyÒn rång TiÒm Hµnh","Khi b?t­êng sãng cña ®èi th?tÊn c«ng kh«ng nh÷ng kh«ng b?cho¸ng m?cßn m­în søc m¹nh cña t­êng sãng lÆn xuèng n­íc tr¸nh ®èi th?trong mét kho¶ng thêi gian."},
+		{"ThuyÒn Rång phæ th«ng","ThuyÒn Rång phæ th«ng kh«ng cã mµu s¾c vµ tİnh n¨ng ®Æc biÖt."},
+		{"ThuyÒn Rång Thñy Ph¸o","Cã kh¶ n¨ng b¾n thñy ®¹n rÊt m¹nh vµ tÊn c«ng ®èi thñ tõ xa."},
+		{"ThuyÒn Rång Thñy L«i","Cã kh¶ n¨ng ch«n thñy l«i d­íi n­íc, ®èi thñ ®i qua sÏ bŞ chÊn ®éng."},
+		{"ThuyÒn Rång Thñy L·ng","Cã kh¶ n¨ng t¹o ra mét bøc t­êng sãng ng¨n c¶n ®èi ph­¬ng ®i qua."},
+		{"ThuyÒn rång §o¶n Binh","TuyÓn thñ bªn c¹nh t¹m thêi kh«ng thÓ tiÕn lªn"},
+		{"ThuyÒn Rång Liªn X¹","Cã kh¶ n¨ng b¾n thñy ®¹n khiÕn ®èi thñ bŞ cho¸ng, ­u ®iÓm lµ mét lÇn cã thÓ b¸n nhiÒu ph¸t."},
+		{"ThuyÒn rång TiÒm Hµnh","Khi bŞ t­êng sãng cña ®èi thñ tÊn c«ng kh«ng nh÷ng kh«ng bŞ cho¸ng mµ cßn m­în søc m¹nh cña t­êng sãng lÆn xuèng n­íc tr¸nh ®èi thñ trong mét kho¶ng thêi gian."},
 		};
 --=================================================================================================
 BoxPos = {
@@ -173,11 +173,11 @@ MAGIC_BB = 33;	--È«Ìå·âÕĞ
 --Modify:È¥µô½ØÖ¹Ê±¼äÏŞÖÆ£¬ÈÃ»î¶¯¼ÌĞø¿ªÏÂÈ¥¡£
 function Get_DragonBoatDay_State()
 	local nDate = tonumber(date("%Y%m%d"));
-	if nDate < 20210930 then
+	if nDate < 20060530 then
 		return 0;	--»î¶¯¿ªÊ¼Ç°
-	elseif nDate > 20211110 then
+	elseif nDate > 20060710 then
 		return 3;	--Áì½±½ØÖ¹		ĞèÒªÍ£Ö¹µÄÊ±ºò·µ»Ø1
-	elseif nDate > 20211030 then
+	elseif nDate > 20060630 then
 		return 3;	--»î¶¯½áÊøºó	ĞèÒª½áÊøµÄÊ±ºò·µ»Ø2
 	else
 		return 3;	--»î¶¯½øĞĞÖĞ
@@ -202,7 +202,7 @@ function Create_Box(nCount)
 			SetNpcScript(npcBox,"\\script\\online\\dragonboat06\\box.lua")			
 		end;
 	else
-		Write_Log("Ho¹t ®éng tÕt §oan Ng?sai sãt","Khi m?r­¬ng, lçi s?r­¬ng, tr?b¸o lçi l?"..nCount);
+		Write_Log("Ho¹t ®éng tÕt §oan Ngä sai sãt","Khi më r­¬ng, lçi sè r­¬ng, trŞ b¸o lçi lµ:"..nCount);
 	end;
 end;
 
