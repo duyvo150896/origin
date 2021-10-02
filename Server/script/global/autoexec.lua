@@ -45,7 +45,7 @@ function main()
 	Addyangmen();        --Ìì²¨Ñî¸®Ìí¼ÓµÄNPC
 	AddChristmas()		--Ê¥µ®½Ú»î¶¯NPC£¨±£Áô¸øÒÔºóÍâ¹ú½ÚÈÕÓÃ£©
 	AddCheFu();		 --²É¼¯µØÍ¼³µ·ò
---	AddDragonBoatDay()	--¶ËÎç½Ú
+	AddDragonBoatDay()	--¶ËÎç½Ú
 	Addjiehun()	        --½á»é
 	Addtianshi()	        --ÌìÊ¦ÃØ¾³npc
 	AddXiBei()	        --Î÷±±ÇøNpc
@@ -65,7 +65,7 @@ function main()
 	AddNewBattle();		--ĞÂÕ½³¡NPC
 	ApplyRelayInitData()	--È¡Gameser³õÊ¼»¯Ê±ĞèÒªµÄRelayĞÅÏ¢
 	zgc_auto_fun_main()		--´å³¤µÄ×Ô¶¯º¯Êı
-	--AddSnowWarNpc()		--Ñ©ÕÌNPC
+	AddSnowWarNpc()		--Ñ©ÕÌNPC
 	AddKillerHall()	--É±ÊÖÌÃ
 	AddCaijiNpc()	--²É¼¯µØÍ¼ÎïÆ·±£¹ÜÈË,³É¶¼¶«ÃÅ¼ÓÎïÆ·±£¹ÜÈË
 	AddGongYe(); --¹«Ò±ÊÀ¼Ò
@@ -1088,7 +1088,7 @@ function Addjiehun()
 end
 
 function AddSnowWarNpc()
-    if tonumber(date("%y%m%d")) >= 091218 and tonumber(date("%y%m%d")) < 100117 then
+    if tonumber(date("%y%m%d")) >= 210918 and tonumber(date("%y%m%d")) < 220117 then
 	--ãê¾©Ñ©ÕÌ´«ËÍÈË
 	local npcIndex = CreateNpc("Giang hå hµo kiÖt","Xa phu_nĞm tuyÕt",200,1413,3056)
 	SetNpcScript(npcIndex,"\\script\\online\\´º½Ú»î¶¯\\ãê¾©Ñ©ÕÌ´«ËÍÈËin.lua")
