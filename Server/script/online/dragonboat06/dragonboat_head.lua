@@ -208,7 +208,7 @@ end;
 
 function Get_Multiple_Status()
 	local nDate = tonumber(date("%y%m%d"));
-	if nDate >= 070614 and nDate <= 070624 then
+	if nDate >= 2101014 and nDate <= 211024 then
 		return 1;
 	else
 		return 0;

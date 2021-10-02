@@ -45,7 +45,7 @@ function main()
 	Addyangmen();        --天波杨府添加的NPC
 	AddChristmas()		--圣诞节活动NPC（保留给以后外国节日用）
 	AddCheFu();		 --采集地图车夫
-	AddDragonBoatDay()	--端午节
+--	AddDragonBoatDay()	--端午节
 	Addjiehun()	        --结婚
 	Addtianshi()	        --天师秘境npc
 	AddXiBei()	        --西北区Npc
@@ -65,7 +65,7 @@ function main()
 	AddNewBattle();		--新战场NPC
 	ApplyRelayInitData()	--取Gameser初始化时需要的Relay信息
 	zgc_auto_fun_main()		--村长的自动函数
-	AddSnowWarNpc()		--雪仗NPC
+--	AddSnowWarNpc()		--雪仗NPC
 	AddKillerHall()	--杀手堂
 	AddCaijiNpc()	--采集地图物品保管人,成都东门加物品保管人
 	AddGongYe(); --公冶世家
