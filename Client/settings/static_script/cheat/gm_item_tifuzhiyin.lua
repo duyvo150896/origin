@@ -2503,8 +2503,8 @@ function Life_Skill()
 end
 
 function upgrade_gather_skill()
-	local tGather = {1, 2, 5, 6};
-	local tName = {"§èn c©y", "Lµm da", "§µo kho¸ng", "KÐo t¬"};
+	local tGather = {1, 2, 3, 4, 5, 6};
+	local tName = {"§èn c©y", "Lµm da", "Canh t¸c", "H¸i thuèc" "§µo kho¸ng", "KÐo t¬"};
 	local str = ""
 	for k, v in tName do
 		str = str.."<color=gold>"..v.."<color>,"
@@ -2535,8 +2535,8 @@ function upgrade_gather_skill_do(nSkill, nMax)
 end
 
 function upgrade_compose_skill()
-	local tGather = {2, 3, 4, 5, 9, 10};
-	local tName = {"ChÕ t¹o binh khÝ dµi", "ChÕ t¹o binh khÝ ng¾n", "ChÕ t¹o kú m«n binh khÝ", "Lµm hé gi¸p", "H¹ trang", "§Çu qu¸n"};
+	local tGather = {2, 3, 4, 5, 6, 7, 8, 9, 10};
+	local tName = {"ChÕ t¹o binh khÝ dµi", "ChÕ t¹o binh khÝ ng¾n", "ChÕ t¹o kú m«n binh khÝ", "Lµm hé gi¸p", "ChÕ thuèc", "NÊu n­íng", "ChÕ phï", "H¹ trang", "§Çu qu¸n"};
 	local str = ""
 	for k, v in tName do
 		str = str.."<color=gold>"..v.."<color>,"
