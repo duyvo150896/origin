@@ -27,22 +27,22 @@ tb_topserver_award_limit = {
 				[81] = {  7000,   6000,   55000,     5},
 				[82] = {  8000,   7000,   60000,     6},
 				[83] = {  9000,   8000,   60000,     7},
---				[84] = {10000,   9000,   70000,   	 8},
---				[85] = {10000, 10000,   80000,    9},				
+				[84] = {10000,   9000,   70000,   	 8},
+				[85] = {10000, 10000,   80000,    9},				
 				[86] = {10000, 10000,   80000,    8},
 				[87] = {10000, 10000,   80000,    9},
 				[88] = {10000, 10000,   80000,    10},
 				[89] = {10000, 10000,   80000,    11},
---				[90] = {10000, 10000,   80000,    14},
+				[90] = {10000, 10000,   80000,    14},
 				[91] = {11000, 11000,   85000,    12},
 				[92] = {11000, 11000,   90000,    13},
 				[93] = {11000, 11000,   95000,    14},
 				[94] = {12000, 12000,   120000,    15},
---				[98] = {16000, 16000,   160000,    19},
+				[98] = {16000, 16000,   160000,    19},
 				[99] = {14000, 14000,   140000,    16},
---				[192] = {22000, 22000, 220000, 21},
---				[292] = {25000, 25000, 250000, 22},
---				[396] = {25000, 25000, 250000, 23},
+				[192] = {22000, 22000, 220000, 21},
+				[292] = {25000, 25000, 250000, 22},
+				[396] = {25000, 25000, 250000, 23},
 };
 -- Danh s¸ch ID Skill 55
 tRouteSkillInfo =
@@ -69,9 +69,11 @@ tRouteSkillInfo =
 				[19] = 0,
 				[20] = 377,
 				[21] = 363,
-				[22] = 0,
 				[23] = 1030,
-				[28] = 0,
+				[24] = 0,
+				[25] = 1065,
+				[26] = 1095,
+				[27] = 1212,
 				[29] = 1176,
 				[30] = 1229,
 }
@@ -79,29 +81,32 @@ tRouteSkillInfo =
 tFactionSkillInfo =
 {
 		[0] = 0,
-		[1] = 0,	
-		[2] = 32,	
-		[3] = 57,	
-		[4] = 44,	
-		[5] = 0,	
-		[6] = 74,	
-		[7] = 0,	
-		[8] = 89,	
+		[1] = 0,
+		[2] = 32,
+		[3] = 57,
+		[4] = 44,
+		[5] = 0,
+		[6] = 74,
+		[7] = 0,
+		[8] = 89,
 		[9] = 102,
-		[10] = 0,			
+		[10] = 0,
 		[11] = 113,
 		[12] = 124,
-		[13] = 0,		
+		[13] = 0,
 		[14] = 146,
 		[15] = 159,
-		[16] = 0,		
+		[16] = 0,
 		[17] = 732,
 		[18] = 745,
-		[19] = 0,		
+		[19] = 0,
 		[20] = 775,
 		[21] = 774,
 		[23] = 1032,
-		[28] = 0,
+		[24] = 0,
+		[25] = 1066,
+		[26] = 1096,
+		[27] = 1213,
 		[29] = 1196,
 		[30] = 1230,
 }
@@ -122,6 +127,9 @@ tb_topserver_book45_1 = {
 			[20] = {"U Minh T©m Ph¸p", {0,107,26,1}},
 			[21] = {"Linh Cæ T©m Ph¸p", {0,107,28,1}},
 			[23] = {"Kinh Phong T©m Ph¸p", {0,107,181,1}},
+			[25] = {"Håi Phong T©m Gi¸o", {0,107,183,1}},
+			[26] = {"Phô Kú T©m Ph¸p", {0,107,185,1}},
+			[27] = {"Ng­ng HuyÕt T©m Ph¸p", {0,107,187,1}},
 			[29] = {"Tóy Méng T©m Ph¸p", {0,107,189,1}},
 			[30] = {"Phån Hoa T©m Ph¸p", {0,107,194,1}},
 }
@@ -142,6 +150,9 @@ tb_topserver_book45_2 = {
 			[20] = {"U Minh Quû Lôc", {0,107,25,1}}, 
 			[21] = {"Linh Cæ MËt tÞch", {0,107,27,1}}, 
 			[23] = {"Kinh Phong MËt tÞch", {0,107,180,1}}, 
+			[25] = {"Håi Phong MËt tÞch", {0,107,182,1}},
+			[26] = {"Phô Kú MËt tÞch", {0,107,184,1}},
+			[27] = {"Ng­ng HuyÕt MËt tÞch", {0,107,186,1}},
 			[29] = {"Tóy Méng  MËt tÞch", {0,107,188,1}}, 
 			[30] = {"Phån Hoa MËt tÞch", {0,107,190,1}}, 
 }
@@ -161,6 +172,9 @@ tb_topserver_book70_1 ={
 			[20] = {"U Minh Phong Ma Lôc",{0,107,178,1}},
 			[21] = {"Linh Cæ HuyÔn Tµ Lôc",{0,107,179,1}},
 			[23] = {"Cöu Thiªn Phong L«i QuyÓn",{0,107,198,1}},
+			[25] = {"Håi Phong Tr¶m NhËt MËt TÞch", {0,107,199,1}},
+			[26] = {"Phô Kú Hµnh TrËn MËt TÞch", {0,107,200,1}},
+			[27] = {"Ng­ng HuyÕt Phong Hån MËt tÞch", {0,107,201,1}},
 			[29] = {"Hång TrÇn Tóy Méng Phæ",{0,107,202,1}},
 			[30] = {"Phong Hoa Thiªn DiÖp QuyÓn",{0,107,203,1}},
 }
@@ -253,8 +267,11 @@ tb_golden_book_all = {
 				[17] = {"Liªn Hoµn Toµn Long Th­¬ng", {0, 112, 111, 1}},		
 				[18] = {"B¸ V­¬ng T­êng Phông TiÔn", {0, 112, 112, 1}},		
 				[20] = {"V« Thiªn Ma C«ng", {0, 112, 113, 1}},		
-				[21] = {"V« ¶nh Ma Cæ", {0, 112, 114, 1}},
+				[21] = {"V« ¶nh Ma Cæ", {0, 112, 114, 1}},				
 				[23] = {"Phong L«i Ch©u", {0,112,192,1}},
+				[25] = {"Cµn Kh«n §¹i Na Di T©m Ph¸p", {0, 112, 193, 1}},
+				[26] = {"Quang Minh Ngò Hµnh LÖnh", {0, 112, 194, 1}},
+				[27] = {"Hµn B¨ng Ng­ng HuyÕt Chó", {0, 112, 195, 1}},
 				[29] = {"Phông Minh Phæ", {0,112,196,1}},
 				[30] = {"Hoa Tiªn T©m Kinh", {0,112,197,1}},	
 }
@@ -276,13 +293,16 @@ tbMatTich70caocap  =
 		[20] = {"HuyÒn Minh Phong Ma Ch©n QuyÓn", {0, 107, 216, 1}}, 
 		[21] = {"Linh Cæ HuyÒn Tµ Ch©n QuyÓn", {0, 107, 217, 1}},
 		[23] = {"Cöu Thiªn Phong L«i Ch©n QuyÓn", {0,107,218, 1}},
+		[25] = {"Håi Phong Tr¶m NhËt Ch©n QuyÓn", {0, 112, 219, 1}},
+		[26] = {"Phô Kú Hµnh TrËn Ch©n QuyÓn", {0, 112, 220, 1}},
+		[27] = {"Ng­ng HuyÕt Phong Hån Ch©n QuyÓn", {0, 112, 221, 1}},
 		[29] = {"Hång TrÇn Tóy Méng Ch©n QuyÓn", {0,107,222, 1}},
 		[30] = {"Phong Hoa Thiªn DiÖp Ch©n QuyÓn", {0,107,223, 1}},
 }
 
 local tbVukhiVietYen = {
-		--[2] = {"ViÖt Yªn Phi Tinh §ao", {0,3,30001,1,1,-1,-1,-1,-1,-1,-1,-1,0}}, 
-		--[2] = {"ViÖt Yªn Phi Tinh C«n", {0,5,30002,1,1,-1,-1,-1,-1,-1,-1,-1,0}},
+		[2] = {"ViÖt Yªn Phi Tinh §ao", {0,3,30001,1,1,-1,-1,-1,-1,-1,-1,-1,0}}, 
+		[2] = {"ViÖt Yªn Phi Tinh C«n", {0,5,30002,1,1,-1,-1,-1,-1,-1,-1,-1,0}},
 		[3] =  {"ViÖt Yªn Phi Tinh Tr­îng", {0,8,30003,1,1,-1,-1,-1,-1,-1,-1,-1,13}},
 		[4] =  {"ViÖt Yªn Phi Tinh Thñ", {0,0,30004,1,1,-1,-1,-1,-1,-1,-1,-1,13}},
 		[14] =  {"ViÖt Yªn Tr¶m NguyÖt KiÕm", {0,2,30010,1,1,-1,-1,-1,-1,-1,-1,-1,13}},
@@ -309,22 +329,22 @@ tb_topserver_award_item = {
 				[81] = {{2,"NhanRuongYeuQuyet(%d)", 30*24*60*60,0}, {1, "Méc R­¬ng", {2,1,30340,999,4}, 0}},
 				[82] = {{2, "NhanRuongYeuQuyet(%d)", 30*24*60*60,0},{2, "NhanRuongYeuQuyet(%d)", 30*24*60*60,0}, {1, "N÷ Oa Tinh Th¹ch", {2,1,504,2,4}, 30*24*60*60}},
 				[83] = {{3, tb_golden_book_all, 0, 0}, {2, "Earn(%d)", 10000000, 0}},
---				[84] = {{3, tb_topserver_book_med, 0, 0}, {1, "Thiªn Th¹ch Linh Th¹ch", {2,1,1068,1,4}, 30*24*60*60}},
---				[85] = {{3, tb_topserver_book_low, 0, 0}, {1, "M¶nh B¹ch Kim", {2,1,30346,1,1}, 0}},
+				[84] = {{3, tb_topserver_book_med, 0, 0}, {1, "Thiªn Th¹ch Linh Th¹ch", {2,1,1068,1,4}, 30*24*60*60}},
+				[85] = {{3, tb_topserver_book_low, 0, 0}, {1, "M¶nh B¹ch Kim", {2,1,30346,1,1}, 0}},
 				[86] = {{1, "Qu©n C«ng Ch­¬ng", {2,1,9999,5,1}, 30*24*60*60}, {1, "Tñ ¸o", {2,1,1070,1,4}, 30*24*60*60}},
 				[87] = {{1, "Nh©n S©m V¹n N¨m", {2,1,30071,5,1}, 30*24*60*60},{1, "Qu©n C«ng Ch­¬ng", {2,1,9999,5,1}, 0}},
 				[88] = {{1, "Qu©n C«ng Ch­¬ng", {2,1,9999,5,1}, 30*24*60*60}, {1, "Qu©n C«ng §¹i", {2,1,9998,1,1}, 30*24*60*60}},
 				[89] = {{1, "Qu©n C«ng §¹i", {2,1,9998,5,1}, 30*24*60*60}},
---				[90] = {{1, "N÷ Oa Tinh Th¹ch", {2,1,504,4,4}, 30*24*60*60}},
+				[90] = {{1, "N÷ Oa Tinh Th¹ch", {2,1,504,4,4}, 30*24*60*60}},
 				[91] = {{1, "Qu©n C«ng Huy Hoµng", {2,1,9977,3,1}, 30*24*60*60}},
 				[92] = {{1, "Qu©n C«ng Huy Hoµng", {2,1,9977,6,1}, 30*24*60*60}},
 				[93] = {{1, "Thiªn Th¹ch Linh Th¹ch", {2,1,1068,2,4}, 30*24*60*60}},
 				[94] = {{1, "Qu©n C«ng Huy Hoµng", {2,1,9977,8,1}, 30*24*60*60}},
---				[98] = {{3, tbMatTich70caocap, 0, 0}, {3, tbMatTich70caocap, 0, 0}, {3, tbMatTich70caocap, 0, 0}},
+				[98] = {{3, tbMatTich70caocap, 0, 0}, {3, tbMatTich70caocap, 0, 0}, {3, tbMatTich70caocap, 0, 0}},
 				[99] = {{1, "§¹i §Þnh Hån", {2,1,1113,1}, 30*24*60*60},{1, "§Þnh Hån Thiªn Th¹ch ThÇn Th¹ch", {2,1,1067,1}, 30*24*60*60}},
---				[192] = {{3, tbMatTich70caocap, 0, 0}, {3, tbMatTich70caocap, 0, 0}, {3, tbMatTich70caocap, 0, 0}, {1, "Th¸i DÞch Hçn Nguyªn C«ng §å", {2,0,1082,100,1}, 0}, {1, "L¨ng Ba Vi Bé", {0,112,78,1,1}, 0}},
---				[292] = {{3, tbMatTich70caocap, 0, 0}, {1, "Th¸i DÞch Hçn Nguyªn C«ng §å", {2,0,1082,100,1}, 0}, {3, tbVukhiVietYen, 0, 0}},
---				[396] = {{1, "§¹i §Þnh Hån", {2,1,1113,1}, 30*24*60*60}, {1, "ChuyÓn Sinh §¬n", {2,1,30345,1,4}, 60*24*60*60}},
+				[192] = {{3, tbMatTich70caocap, 0, 0}, {3, tbMatTich70caocap, 0, 0}, {3, tbMatTich70caocap, 0, 0}, {1, "Th¸i DÞch Hçn Nguyªn C«ng §å", {2,0,1082,100,1}, 0}, {1, "L¨ng Ba Vi Bé", {0,112,78,1,1}, 0}},
+				[292] = {{3, tbMatTich70caocap, 0, 0}, {1, "Th¸i DÞch Hçn Nguyªn C«ng §å", {2,0,1082,100,1}, 0}, {3, tbVukhiVietYen, 0, 0}},
+				[396] = {{1, "§¹i §Þnh Hån", {2,1,1113,1}, 30*24*60*60}, {1, "ChuyÓn Sinh §¬n", {2,1,30345,1,4}, 60*24*60*60}},
 };
 
 tbTuVienChien = {
@@ -1530,6 +1550,9 @@ function TraoMatTich70CaoCap(nQty)
 		[20] = {item={{gdp={0,107,216, nQty}, name ="HuyÒn Minh Phong Ma Ch©n QuyÓn"}}},
 		[21] = {item={{gdp={0,107,217, nQty}, name ="Linh Cæ HuyÒn Tµ Ch©n QuyÓn"}}},
 		[23] = {item={{gdp={0,107,218,nQty}, name ="Cöu Thiªn Phong L«i Ch©n QuyÓn"}}},
+		[25] = {item={{gdp={0,107,219,nQty}, name ="Håi Phong Tr¶m NhËt Ch©n QuyÓn"}}},
+		[26] = {item={{gdp={0,107,220,nQty}, name ="Phô Kú Hµnh TrËn Ch©n QuyÓn"}}},
+		[27] = {item={{gdp={0,107,221,nQty}, name ="Ng­ng HuyÕt Phong Hån Ch©n QuyÓn"}}},
 		[29] = {item={{gdp={0,107,222,nQty}, name ="Hång TrÇn Tóy Méng Ch©n QuyÓn"}}},
 		[30] = {item={{gdp={0,107,223,nQty}, name ="Phong Hoa Thiªn DiÖp Ch©n QuyÓn"}}},
 	}
@@ -1639,6 +1662,9 @@ function NhanRuongYeuQuyet(nThoihan)
 		[20] = {item={{gdp={2,0,613,1}, name="Tói bÝ kiÕp Ngò §éc", nExpired = nThoihan}}},
 		[21] = {item={{gdp={2,0,613,1}, name="Tói bÝ kiÕp Ngò §éc", nExpired = nThoihan}}},
 		[23] = {fn="NhanBiKipConLon()"},
+		[25] = {fn="NhanBiKipMinhGiao()"},
+		[26] = {fn="NhanBiKipMinhGiao()"},
+		[27] = {fn="NhanBiKipMinhGiao()"},
 		[29] = {fn="NhanBiKipThuyYen()"},
 		[30] = {fn="NhanBiKipThuyYen()"},
 	}
@@ -1715,6 +1741,55 @@ function NhanBiKipThuyYen()
 	end
 end
 
+function NhanBiKipMinhGiao()
+	if gf_Judge_Room_Weight(5,100) ~= 1 then
+		Talk(1,"","Hµnh trang hoÆc søc lùc kh«ng ®ñ, vui lßng s¾p xÕp l¹i.")
+		return 0
+	end
+	local tbBiKipMinhGiao = {
+		[1] = {[1] = {item={{gdp={2,6,183,1}, name = "Th¸nh Háa §ao Ph¸p QuyÕt YÕu"}}}, nRate = 2.75},
+		[2] = {[1] = {item={{gdp={2,6,184,1}, name = "Yªu quyÕt Kim L­ Hé ThÓ"}}}, nRate = 2.75},
+		[3] = {[1] = {item={{gdp={2,6,185,1}, name = "Yªu quyÕt LiÖt Diªm Tr¶m"}}}, nRate = 4.55},
+		[4] = {[1] = {item={{gdp={2,6,186,1}, name = "Yªu quyÕt SÝ Diªm KÝch"}}}, nRate = 2.75},
+		[5] = {[1] = {item={{gdp={2,6,187,1}, name = "Yªu quyÕt Thiªn KiÕp PhÇn"}}}, nRate = 2.75},
+		[6] = {[1] = {item={{gdp={2,6,188,1}, name = "Yªu quyÕt Ng­ng Háa BÝch"}}}, nRate = 2.74},
+		[7] = {[1] = {item={{gdp={2,6,189,1}, name = "Yªu quyÕt Cuång DiÖm B«n"}}}, nRate = 2.74},
+		[8] = {[1] = {item={{gdp={2,6,190,1}, name = "Yªu quyÕt ChÝch Phong Toµn"}}}, nRate = 2.74},
+		[9] = {[1] = {item={{gdp={2,6,191,1}, name = "Yªu quyÕt B¸ Hoµng §o¹n"}}}, nRate = 2.74},
+		[10] = {[1] = {item={{gdp={2,6,192,1}, name = "Yªu quyÕt KhÝ Hãa Du Long"}}}, nRate = 2.74},
+		[11] = {[1] = {item={{gdp={2,6,193,1}, name = "Yªu quyÕt D­¬ng Diªm B¹o"}}}, nRate = 2.74},
+		[12] = {[1] = {item={{gdp={2,6,194,1}, name = "Yªu quyÕt B¹o S¸t KiÕp"}}}, nRate = 2.74},
+		[13] = {[1] = {item={{gdp={2,6,195,1}, name = "Quang Minh Bót Ph¸p QuyÕt YÕu"}}}, nRate = 2.74},
+		[14] = {[1] = {item={{gdp={2,6,196,1}, name = "Yªu quyÕt Kim Táa TrËn"}}}, nRate = 2.74},
+		[15] = {[1] = {item={{gdp={2,6,197,1}, name = "Yªu quyÕt YÕn Kú LÖnh"}}}, nRate = 2.74},
+		[16] = {[1] = {item={{gdp={2,6,198,1}, name = "Yªu quyÕt HuyÒn Thñy TrËn"}}}, nRate = 2.74},
+		[17] = {[1] = {item={{gdp={2,6,199,1}, name = "Yªu quyÕt Phong Binh LÖnh"}}}, nRate = 2.74},
+		[18] = {[1] = {item={{gdp={2,6,200,1}, name = "Yªu quyÕt Bµn Méc TrËn"}}}, nRate = 2.74},
+		[19] = {[1] = {item={{gdp={2,6,201,1}, name = "Yªu quyÕt TÊn ¶nh LÖnh"}}}, nRate = 2.74},
+		[20] = {[1] = {item={{gdp={2,6,202,1}, name = "Yªu quyÕt Cµn Kh«n NghÞ ChuyÓn"}}}, nRate = 2.74},
+		[21] = {[1] = {item={{gdp={2,6,203,1}, name = "Yªu quyÕt NghiÖp Háa TrËn"}}}, nRate = 2.74},
+		[22] = {[1] = {item={{gdp={2,6,204,1}, name = "Yªu quyÕt Thæ Lao TrËn"}}}, nRate = 2.74},
+		[23] = {[1] = {item={{gdp={2,6,205,1}, name = "Yªu quyÕt Ngò Linh T¸n Nguyªn"}}}, nRate = 2.75},
+		[24] = {[1] = {item={{gdp={2,6,206,1}, name = "Yªu quyÕt Ngò Linh Quy Nguyªn"}}}, nRate = 2.75},
+		[25] = {[1] = {item={{gdp={2,6,207,1}, name = "§o¹n Cèt Tr¶o QuyÕt YÕu"}}}, nRate = 4.55},
+		[26] = {[1] = {item={{gdp={2,6,208,1}, name = "Yªu quyÕt Phï Th­¬ng Ên"}}}, nRate = 2.75},
+		[27] = {[1] = {item={{gdp={2,6,209,1}, name = "Yªu quyÕt Thanh Dùc Bé Ph¸p"}}}, nRate = 2.75},
+		[28] = {[1] = {item={{gdp={2,6,210,1}, name = "Yªu quyÕt Bµng HuyÕt Ên"}}}, nRate = 2.74},
+		[29] = {[1] = {item={{gdp={2,6,211,1}, name = "Yªu quyÕt KhÊp HuyÕt Ên"}}}, nRate = 2.74},
+		[30] = {[1] = {item={{gdp={2,6,212,1}, name = "Yªu quyÕt Hµn HuyÕt Ên"}}}, nRate = 2.74},
+		[31] = {[1] = {item={{gdp={2,6,213,1}, name = "Yªu quyÕt XÝch Cèt Ên"}}}, nRate = 2.74},
+		[32] = {[1] = {item={{gdp={2,6,214,1}, name = "Yªu quyÕt Truy Hån Ên"}}}, nRate = 2.74},
+		[33] = {[1] = {item={{gdp={2,6,215,1}, name = "Yªu quyÕt S¸t Kinh Trao"}}}, nRate = 2.74},
+		[34] = {[1] = {item={{gdp={2,6,216,1}, name = "Yªu quyÕt Hµn B¨ng HuyÕt Ch­¬ng"}}}, nRate = 2.74},
+		[35] = {[1] = {item={{gdp={2,6,217,1}, name = "Yªu quyÕt Hãa HuyÕt Ên"}}}, nRate = 2.74},
+		[36] = {[1] = {item={{gdp={2,6,218,1}, name = "Yªu quyÕt VËn Th­¬ng Ên"}}}, nRate = 2.74},
+	}
+	LIB_Award.szLogTitle = "NHAN THUONG DUA TOP "..szLOGSERVERNAME
+	LIB_Award.szLogAction = "nhËn"
+	for i=1,5 do
+		LIB_Award:AwardByRate(tbBiKipMinhGiao)
+	end
+end
 
 function TraoMatTichCaoCap20(nQty, nRoute)
 	local tbMatTich = {
@@ -1733,6 +1808,9 @@ function TraoMatTichCaoCap20(nQty, nRoute)
 		[20] = {0,107,216, 2,"HuyÒn Minh Phong Ma Ch©n QuyÓn"},
 		[21] = {0,107,217, 1,"Linh Cæ HuyÒn Tµ Ch©n QuyÓn"},
 		[23] = {0,107,218,1,"Cöu Thiªn Phong L«i Ch©n QuyÓn"},
+		[25] = {0,107,219,1,"Håi Phong Tr¶m NhËt Ch©n QuyÓn"},
+		[26] = {0,107,220,1,"Phô Kú Hµnh TrËn Ch©n QuyÓn"},
+		[27] = {0,107,221,1,"Ng­ng HuyÕt Phong Hån Ch©n QuyÓn"},
 		[29] = {0,107,222,2,"Hång TrÇn Tóy Méng Ch©n QuyÓn"},
 		[30] = {0,107,223,2,"Phong Hoa Thiªn DiÖp Ch©n QuyÓn"},
 	}
@@ -1752,8 +1830,11 @@ function TraoMatTichCaoCap20(nQty, nRoute)
 		[13] = {[1] = 20, nRate = 5.88},
 		[14] = {[1] = 21, nRate = 5.88},
 		[15] = {[1] = 23, nRate = 5.88},
-		[16] = {[1] = 29, nRate = 5.88},
-		[17] = {[1] = 30, nRate = 5.92},
+		[16] = {[1] = 25, nRate = 5.88},
+		[17] = {[1] = 26, nRate = 5.88},
+		[18] = {[1] = 27, nRate = 5.88},
+		[19] = {[1] = 29, nRate = 5.88},
+		[20] = {[1] = 30, nRate = 5.88},
 	}
 	for i=1, nQty do
 		if nRoute == nil then
