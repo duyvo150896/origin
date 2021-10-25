@@ -557,17 +557,20 @@ function get_top_faction_info()
 	LIB_txtData:LoadData()
 	local szList = "Th«ng tin phÇn th­ëng top 1 hÖ ph¸i ®· nhËn: \n"	
 	local szList2 = szList
+	local szList3 = szList2
 	local i = 0
 	for i=1, getn(LIB_txtData.tbTextData) do
 		if tb_Route_Name[i] ~= "" then
 			if i < 14 then
 				szList = szList.."Cao thñ <color=green>"..tb_Route_Name[i].."<color>: "..LIB_txtData.tbTextData[i].."\n"
-			else
+			elseif i < 26 then
 				szList2 = szList2.."Cao thñ <color=green>"..tb_Route_Name[i].."<color>: "..LIB_txtData.tbTextData[i].."\n"
+			else
+				szList3 = szList3.."Cao thñ <color=green>"..tb_Route_Name[i].."<color>: "..LIB_txtData.tbTextData[i].."\n"
 			end
 		end
 	end
-	Talk(2,"",szList, szList2)	
+	Talk(3,"",szList, szList2,szList3)	
 end
 
 -- Xem th«ng tin top qu©n c«ng
