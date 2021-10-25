@@ -217,6 +217,12 @@ tb_topserver_book_high = {
 				[18] = {"B¸ V­¬ng T­êng Phông TiÔn-th­îng", {2, 1, 949, 1}},
 				[20] = {"V« Thiªn Ma C«ng-th­îng", {2, 1, 955, 1}},
 				[21] = {"V« ¶nh Ma Cæ-th­îng", {2, 1, 952, 1}},
+				[23] = {"§Òn bï 333 m·nh kim phiÕu", {2,1,50023,333}},
+				[25] = {"§Òn bï 333 m·nh kim phiÕu", {2,1,50023,333}},
+				[26] = {"§Òn bï 333 m·nh kim phiÕu", {2,1,50023,333}},
+				[27] = {"§Òn bï 333 m·nh kim phiÕu", {2,1,50023,333}},
+				[29] = {"§Òn bï 333 m·nh kim phiÕu", {2,1,50023,333}},
+				[30] = {"§Òn bï 333 m·nh kim phiÕu", {2,1,50023,333}},
 };
 
 tb_topserver_book_med = {
@@ -234,6 +240,12 @@ tb_topserver_book_med = {
 				[18] = {"B¸ V­¬ng T­êng Phông TiÔn-trung", {2, 1, 950, 1}},			
 				[20] = {"V« Thiªn Ma C«ng-trung", {2, 1, 956, 1}}, 
 				[21] = {"V« ¶nh Ma Cæ-trung", {2, 1, 953, 1}},
+				[23] = {"§Òn bï 333 m·nh kim phiÕu", {2,1,50023,333}},
+				[25] = {"§Òn bï 333 m·nh kim phiÕu", {2,1,50023,333}},
+				[26] = {"§Òn bï 333 m·nh kim phiÕu", {2,1,50023,333}},
+				[27] = {"§Òn bï 333 m·nh kim phiÕu", {2,1,50023,333}},
+				[29] = {"§Òn bï 333 m·nh kim phiÕu", {2,1,50023,333}},
+				[30] = {"§Òn bï 333 m·nh kim phiÕu", {2,1,50023,333}},
 };
 
 tb_topserver_book_low = {
@@ -251,6 +263,12 @@ tb_topserver_book_low = {
 				[18] = {"B¸ V­¬ng T­êng Phông TiÔn-h¹ ", {2, 1, 951, 1}},		
 				[20] = {"V« Thiªn Ma C«ng-h¹ ", {2, 1, 957, 1}},
 				[21] = {"V« ¶nh Ma Cæ-h¹ ", {2, 1, 954, 1}},
+				[23] = {"§Òn bï 333 m·nh kim phiÕu", {2,1,50023,333}},
+				[25] = {"§Òn bï 333 m·nh kim phiÕu", {2,1,50023,333}},
+				[26] = {"§Òn bï 333 m·nh kim phiÕu", {2,1,50023,333}},
+				[27] = {"§Òn bï 333 m·nh kim phiÕu", {2,1,50023,333}},
+				[29] = {"§Òn bï 333 m·nh kim phiÕu", {2,1,50023,333}},
+				[30] = {"§Òn bï 333 m·nh kim phiÕu", {2,1,50023,333}},
 };
 
 tb_golden_book_all = {
@@ -293,9 +311,9 @@ tbMatTich70caocap  =
 		[20] = {"HuyÒn Minh Phong Ma Ch©n QuyÓn", {0, 107, 216, 1}}, 
 		[21] = {"Linh Cæ HuyÒn Tµ Ch©n QuyÓn", {0, 107, 217, 1}},
 		[23] = {"Cöu Thiªn Phong L«i Ch©n QuyÓn", {0,107,218, 1}},
-		[25] = {"Håi Phong Tr¶m NhËt Ch©n QuyÓn", {0, 112, 219, 1}},
-		[26] = {"Phô Kú Hµnh TrËn Ch©n QuyÓn", {0, 112, 220, 1}},
-		[27] = {"Ng­ng HuyÕt Phong Hån Ch©n QuyÓn", {0, 112, 221, 1}},
+		[25] = {"Håi Phong Tr¶m NhËt Ch©n QuyÓn", {0, 107, 219, 1}},
+		[26] = {"Phô Kú Hµnh TrËn Ch©n QuyÓn", {0, 107, 220, 1}},
+		[27] = {"Ng­ng HuyÕt Phong Hån Ch©n QuyÓn", {0, 107, 221, 1}},
 		[29] = {"Hång TrÇn Tóy Méng Ch©n QuyÓn", {0,107,222, 1}},
 		[30] = {"Phong Hoa Thiªn DiÖp Ch©n QuyÓn", {0,107,223, 1}},
 }
@@ -328,7 +346,8 @@ tb_topserver_award_item = {
 				[80] = {{2, "AddItem(2,1,30164+mod(random(0,1000),%d),100)",20, 0}, {2, "Earn(%d)", 10000000, 0}},
 				[81] = {{2,"NhanRuongYeuQuyet(%d)", 30*24*60*60,0}, {1, "Méc R­¬ng", {2,1,30340,999,4}, 0}},
 				[82] = {{2, "NhanRuongYeuQuyet(%d)", 30*24*60*60,0},{2, "NhanRuongYeuQuyet(%d)", 30*24*60*60,0}, {1, "N÷ Oa Tinh Th¹ch", {2,1,504,2,4}, 30*24*60*60}},
-				[83] = {{3, tb_golden_book_all, 0, 0}, {2, "Earn(%d)", 10000000, 0}},
+--				[83] = {{3, tb_golden_book_all, 0, 0}, {2, "Earn(%d)", 10000000, 0}},
+				[83] = {{3, tb_topserver_book_high, 0, 0}, {2, "Earn(%d)", 10000000, 0}},
 				[84] = {{3, tb_topserver_book_med, 0, 0}, {1, "Thiªn Th¹ch Linh Th¹ch", {2,1,1068,1,4}, 30*24*60*60}},
 				[85] = {{3, tb_topserver_book_low, 0, 0}, {1, "M¶nh B¹ch Kim", {2,1,30346,1,1}, 0}},
 				[86] = {{1, "Qu©n C«ng Ch­¬ng", {2,1,9999,5,1}, 30*24*60*60}, {1, "Tñ ¸o", {2,1,1070,1,4}, 30*24*60*60}},
