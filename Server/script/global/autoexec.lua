@@ -2209,7 +2209,7 @@ function Add_HoangHuynh()
 	local nDate = tonumber(date("%y%m%d"))
 	local npcIndex = 0
 	if nDate >= 210720 then
-		npcIndex = CreateNpc("Tr«n B t Vi", "Jx2 Animal", 200,1407,2857);
+		npcIndex = CreateNpc(tb_npc_type[2], "Jx2 Animal", 200,1407,2857);
 		SetNpcScript(npcIndex, "\\script\\online\\viet_event\\top_server\\npc_top.lua");
 	end
 end
