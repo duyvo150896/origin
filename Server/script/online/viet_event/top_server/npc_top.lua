@@ -30,14 +30,14 @@ function main()
 	local tSay = {}
 	if nDate >= TOP_START_DATE and nDate <= TOP_END_DATE then
 		tinsert(tSay,1,"NhËn phÇn th­ëng theo ®¼ng cÊp/get_award_by_level")
---		tinsert(tSay,"NhËn th­ëng l­u ph¸i Thóy Yªn Linh N÷ cÊp 92-99/get_route_award_by_level_menu")
+		tinsert(tSay,"NhËn th­ëng l­u ph¸i Thóy Yªn Linh N÷ cÊp 92-99/get_route_award_by_level_menu")
 		tinsert(tSay,"NhËn th­ëng cao thñ ®Çu tiªn ®¹t 1.400.000 ®iÓm c«ng tr¹ng/confirm_get_1mil_Hornor_award")
 		tinsert(tSay,"NhËn phÇn th­ëng ¦u ®·i server " .. szServerName .. "/Say_NhanUuDai")
 		tinsert(tSay,"NhËn phÇn th­ëng cao thñ Top 1 mçi hÖ ph¸i/get_top_faction_award")
 		tinsert(tSay,"NhËn phÇn th­ëng 3 nh©n sÜ ®Çu tiªn mçi phe ®¹t 860.000 c«ng tr¹ng/confirm_get_top_Hornor_award")
---		tinsert(tSay,"§¨ng ký nhËn th­ëng top 100 chuyÓn sinh 1 cÊp 99/#CS_TopAward(1)")
---		tinsert(tSay,"§¨ng ký nhËn th­ëng top 100 chuyÓn sinh 2 cÊp 99/#CS_TopAward(2)")
---		tinsert(tSay,"§¨ng ký nhËn th­ëng top 100 chuyÓn sinh 3 cÊp 99/#CS_TopAward(3)")
+		tinsert(tSay,"§¨ng ký nhËn th­ëng top 100 chuyÓn sinh 1 cÊp 99/#CS_TopAward(1)")
+		tinsert(tSay,"§¨ng ký nhËn th­ëng top 100 chuyÓn sinh 2 cÊp 99/#CS_TopAward(2)")
+		tinsert(tSay,"§¨ng ký nhËn th­ëng top 100 chuyÓn sinh 3 cÊp 99/#CS_TopAward(3)")
 		tinsert(tSay,"Ho¹t ®éng "..szServerName.."/NewServer_HoatDong_Menu")
 	end
 	tinsert(tSay,"Bang héi danh gi¸/TopBangHoi_Menu")
@@ -130,8 +130,8 @@ function confirm_conf_get_award_by_level(nLevel)
 		return
 	end
 	
-	if GetLevel() < 76 then
-		Talk(1, "", strNpcName.."§¼ng cÊp cña c¸c h¹ ch­a ®ñ 76, kh«ng thÓ nhËn th­ëng.");
+	if GetLevel() < 50 then
+		Talk(1, "", strNpcName.."§¼ng cÊp cña c¸c h¹ ch­a ®ñ 50, kh«ng thÓ nhËn th­ëng.");
 		return
 	end
 	if gf_GetTaskByte(TSK_TOP_LEVEL,1) ~= tb_topserver_award_limit[nLevel][4] then
@@ -291,7 +291,7 @@ function confirm_get_top_faction_award()
 	local nNation = GetGlbValue(GLB_TSK_SERVER_ID)
 	local nNationality = GetByte(GetTask(TSK_SERVER_ID), TSK_SERVER_ID_CUR)
 	local nChuyenSinh = gf_GetTaskByte(TRANSLIFE_TASK_ID, TRANSLIFE_BYTE_COUNT) + GetPlayerRebornParam(0)
-	local tbRoute = {[2]=1,[3]=1,[4]=1,[6]=1,[8]=1,[9]=1,[11]=1,[12]=1,[14]=1,[15]=1,[17]=1,[18]=1,[20]=1,[21]=1,[23]=1,[25]=1,[26]=1,[27]=1,[29]=1,[30]=1}
+	local tbRoute = {[2]=1,[3]=1,[4]=1,[6]=1,[8]=1,[9]=1,[11]=1,[12]=1,[14]=1,[15]=1,[17]=1,[18]=1,[20]=1,[21]=1,[23]=1,[29]=1,[30]=1}
 	if nNationality ~= nNation then
 		Talk(1, "", strNpcName .. "C¸c h¹ kh«ng ph¶i lµ thÇn d©n bæn quèc nªn kh«ng thÓ nhËn th­ëng!")
 		return 0
@@ -557,20 +557,17 @@ function get_top_faction_info()
 	LIB_txtData:LoadData()
 	local szList = "Th«ng tin phÇn th­ëng top 1 hÖ ph¸i ®· nhËn: \n"	
 	local szList2 = szList
-	local szList3 = szList2
 	local i = 0
 	for i=1, getn(LIB_txtData.tbTextData) do
 		if tb_Route_Name[i] ~= "" then
 			if i < 14 then
 				szList = szList.."Cao thñ <color=green>"..tb_Route_Name[i].."<color>: "..LIB_txtData.tbTextData[i].."\n"
-			elseif i < 26 then
-				szList2 = szList2.."Cao thñ <color=green>"..tb_Route_Name[i].."<color>: "..LIB_txtData.tbTextData[i].."\n"
 			else
-				szList3 = szList3.."Cao thñ <color=green>"..tb_Route_Name[i].."<color>: "..LIB_txtData.tbTextData[i].."\n"
+				szList2 = szList2.."Cao thñ <color=green>"..tb_Route_Name[i].."<color>: "..LIB_txtData.tbTextData[i].."\n"
 			end
 		end
 	end
-	Talk(3,"",szList, szList2,szList3)	
+	Talk(2,"",szList, szList2)	
 end
 
 -- Xem th«ng tin top qu©n c«ng
@@ -670,18 +667,18 @@ function UuDaiServerMoi(nOrder)
 				local tbUuDai = {item = {{gdp={2,1,30368,1200}, name = "Cæ Linh Th¹ch"}, {gdp={2,1,30369,2000}, name = "Cæ Linh Ngäc"}}}
 				LIB_Award:Award(tbUuDai)
 			end
-			elseif nOrder == 9 then
-				local tbUuDai = {item = {{gdp={2,1,30164+(mod(random(1,10000),20)),1000}, name = "tr¸i c©y"}}}
-				LIB_Award:Award(tbUuDai)
-			elseif nOrder == 10 then
-				local tbUuDai = {item = {{gdp={2,1,30164+(mod(random(1,10000),20)),1000}, name = "tr¸i c©y"}}}
-				LIB_Award:Award(tbUuDai)
-			elseif nOrder == 11 then
-				local tbUuDai = {item = {{gdp={0,107,tbMatTich70caocap[nRoute][2][3],9}, name = "MËt tÞch 70 cao cÊp"}}}
-				LIB_Award:Award(tbUuDai)
-			elseif nOrder == 12 then
-				local tbUuDai = {item = {{gdp={2,1,30368,500}, name = "Cæ Linh Th¹ch"}, {gdp={2,1,30369,1000}, name = "Cæ Linh Ngäc"}}}
-				LIB_Award:Award(tbUuDai)
+--			elseif nOrder == 9 then
+--				local tbUuDai = {item = {{gdp={2,1,30164+(mod(random(1,10000),20)),1000}, name = "tr¸i c©y"}}}
+--				LIB_Award:Award(tbUuDai)
+--			elseif nOrder == 10 then
+--				local tbUuDai = {item = {{gdp={2,1,30164+(mod(random(1,10000),20)),1000}, name = "tr¸i c©y"}}}
+--				LIB_Award:Award(tbUuDai)
+--			elseif nOrder == 11 then
+--				local tbUuDai = {item = {{gdp={0,107,tbMatTich70caocap[nRoute][2][3],9}, name = "MËt tÞch 70 cao cÊp"}}}
+--				LIB_Award:Award(tbUuDai)
+--			elseif nOrder == 12 then
+--				local tbUuDai = {item = {{gdp={2,1,30368,500}, name = "Cæ Linh Th¹ch"}, {gdp={2,1,30369,1000}, name = "Cæ Linh Ngäc"}}}
+--				LIB_Award:Award(tbUuDai)
 --			end
 		end
 --	end

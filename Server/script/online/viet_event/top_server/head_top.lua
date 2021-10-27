@@ -37,8 +37,8 @@ tb_topserver_award_limit = {
 				[81] = {  7000,   6000,   55000,     15},
 				[82] = {  8000,   7000,   60000,     16},
 				[83] = {  9000,   8000,   60000,     17},
-				[84] = {10000,   9000,   70000,   	 18},
-				[85] = {10000, 10000,   80000,     19},				
+				[84] = {10000,   9000,   70000,     18},
+				[85] = {10000, 10000,   80000,     19},	
 				[86] = {10000, 10000,   80000,     20},
 				[87] = {10000, 10000,   80000,     21},
 				[88] = {10000, 10000,   80000,     22},
@@ -48,7 +48,7 @@ tb_topserver_award_limit = {
 				[92] = {11000, 11000,   90000,     26},
 				[93] = {11000, 11000,   95000,     27},
 				[94] = {12000, 12000,   120000,    28},
-				[98] = {16000, 16000,   160000,    29},
+				[98] = {13000, 13000,   130000,    29},
 				[99] = {14000, 14000,   140000,    30},
 --				[192] = {22000, 22000, 220000, 21},
 --				[292] = {25000, 25000, 250000, 22},
@@ -79,6 +79,7 @@ tRouteSkillInfo =
 				[19] = 0,
 				[20] = 377,
 				[21] = 363,
+				[22] = 0,
 				[23] = 1030,
 				[24] = 0,
 				[25] = 1065,
@@ -329,8 +330,8 @@ tbMatTich70caocap  =
 }
 
 local tbVukhiVietYen = {
---		[2] = {"ViÖt Yªn Phi Tinh §ao", {0,3,30001,1,1,-1,-1,-1,-1,-1,-1,-1,0}}, 
---		[2] = {"ViÖt Yªn Phi Tinh C«n", {0,5,30002,1,1,-1,-1,-1,-1,-1,-1,-1,0}},
+		--[2] = {"ViÖt Yªn Phi Tinh §ao", {0,3,30001,1,1,-1,-1,-1,-1,-1,-1,-1,0}}, 
+		--[2] = {"ViÖt Yªn Phi Tinh C«n", {0,5,30002,1,1,-1,-1,-1,-1,-1,-1,-1,0}},
 		[3] =  {"ViÖt Yªn Phi Tinh Tr­îng", {0,8,30003,1,1,-1,-1,-1,-1,-1,-1,-1,13}},
 		[4] =  {"ViÖt Yªn Phi Tinh Thñ", {0,0,30004,1,1,-1,-1,-1,-1,-1,-1,-1,13}},
 		[14] =  {"ViÖt Yªn Tr¶m NguyÖt KiÕm", {0,2,30010,1,1,-1,-1,-1,-1,-1,-1,-1,13}},
@@ -386,7 +387,7 @@ tb_topserver_award_item = {
 				[93] = {{1, "Thiªn Th¹ch Linh Th¹ch", {2,1,1068,2,4}, 30*24*60*60}},
 				[94] = {{1, "Qu©n C«ng Huy Hoµng", {2,1,9977,8,1}, 30*24*60*60}},
 				[98] = {{3, tbMatTich70caocap, 0, 0}, {3, tbMatTich70caocap, 0, 0}, {3, tbMatTich70caocap, 0, 0}},
-				[99] = {{1, "§¹i §Þnh Hån", {2,1,1113,1}, 30*24*60*60},{1, "§Þnh Hån Thiªn Th¹ch ThÇn Th¹ch", {2,1,1067,1}, 30*24*60*60}},
+				[99] = {{1, "§¹i §Þnh Hån", {2,1,1113,1}, 30*24*60*60},{1, "§Þnh Hån Thiªn Th¹ch ThÇn Th¹ch", {2,1,1067,1}, 30*24*60*60},{1, "L¨ng Ba Vi Bé toµn tËp", {0,112,158,1,1}, 0}},
 --				[192] = {{3, tbMatTich70caocap, 0, 0}, {3, tbMatTich70caocap, 0, 0}, {3, tbMatTich70caocap, 0, 0}, {1, "Th¸i DÞch Hçn Nguyªn C«ng §å", {2,0,1082,100,1}, 0}, {1, "L¨ng Ba Vi Bé", {0,112,78,1,1}, 0}},
 --				[292] = {{3, tbMatTich70caocap, 0, 0}, {1, "Th¸i DÞch Hçn Nguyªn C«ng §å", {2,0,1082,100,1}, 0}, {3, tbVukhiVietYen, 0, 0}},
 --				[396] = {{1, "§¹i §Þnh Hån", {2,1,1113,1}, 30*24*60*60}, {1, "ChuyÓn Sinh §¬n", {2,1,30345,1,4}, 60*24*60*60}},
@@ -618,7 +619,7 @@ function TopCheckLevel()
 	local nFaction = GetTask(336);
 	local nHor = abs(GetTask(701));
 	local nTaskVal = gf_GetTaskByte(TSK_TOP_LEVEL,1)
-	for i = 396, 76, -1 do
+	for i = 396, 50, -1 do
 		if type(tb_topserver_award_limit[i])=="table" and nLevel >= i and nRep >= tb_topserver_award_limit[i][1] and nFaction >= tb_topserver_award_limit[i][2] and nHor >= tb_topserver_award_limit[i][3] and nTaskVal >=  tb_topserver_award_limit[i][4] then
 			nAwardLevel = i;
 			break;
@@ -657,26 +658,26 @@ tb_Faction_Name = {
 
 tb_Route_Name = {	
 	[1] = "",
-	[2] = "ThiÕu L©m tôc gia",
-	[3] = "ThiÕu L©m thiÒn t¨ng",
-	[4] = "ThiÕu L©m vâ t¨ng",
+	[2] = "ThiÕu L©m Tôc Gia",
+	[3] = "ThiÕu L©m ThiÒn T«ng",
+	[4] = "ThiÕu L©m Vâ T«ng",
 	[5] = "",
 	[6] = "§­êng M«n",
 	[7] = "",
-	[8] = "Nga My phËt gia",
-	[9] = "Nga My tôc gia",
+	[8] = "Nga My PhËt Gia",
+	[9] = "Nga My Tôc Gia",
 	[10] = "",
-	[11] = "C¸i Bang TÜnh y",
+	[11] = "C¸i Bang TÜnh Y",
 	[12] = "C¸i Bang ¤ Y",
 	[13] = "",
-	[14] = "Vâ §ang ®¹o gia",
-	[15] = "Vâ §ang tôc gia",
+	[14] = "Vâ §ang §¹o Gia",
+	[15] = "Vâ §ang Tôc Gia",
 	[16] = "",
-	[17] = "D­¬ng M«n th­¬ng Kþ",
+	[17] = "D­¬ng M«n Th­¬ng Kþ",
 	[18] = "D­¬ng M«n Cung Kþ",
 	[19] = "",
-	[20] = "HiÖp §éc",
-	[21] = "Tµ §éc",
+	[20] = "Ngò §éc Tµ HiÖp",
+	[21] = "Ngò §éc Cæ S­",
 	[22] = "",
 	[23] = "C«n L«n Thiªn S­",
 	[24] = "",
@@ -684,9 +685,10 @@ tb_Route_Name = {
 	[26] = "Minh Gi¸o TrËn Binh",
 	[27] = "Minh Gi¸o HuyÕt Nh©n",
 	[28] = "",
-	[29] = "Thóy Yªn Vò N÷",
+	[29] = "Thóy Yªn Vò Tiªn",
 	[30] = "Thóy Yªn Linh N÷",
-		
+	
+	
 }
 
 tb_Nation_Name = {	
@@ -698,9 +700,6 @@ tb_Nation_Name = {
 function CheckMaxSkill55()
 	local nRoute = GetPlayerRoute();
 	local nSkillID = tRouteSkillInfo[nRoute];
---	if GetLevel() < 70 then
---	return 1
---	end
 	if nSkillID == 0 then
 		return 0;
 	else
@@ -710,7 +709,6 @@ function CheckMaxSkill55()
 			return 0
 		end;
 	end;
-	
 end;
 
 
