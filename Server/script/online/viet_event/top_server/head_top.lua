@@ -142,7 +142,7 @@ tb_topserver_book45_1 = {
 			[26] = {"Phô Kú T©m Ph¸p", {0,107,185,1}},
 			[27] = {"Ng­ng HuyÕt T©m Ph¸p", {0,107,187,1}},
 			[29] = {"Tóy Méng T©m Ph¸p", {0,107,189,1}},
-			[30] = {"Phån Hoa T©m Ph¸p", {0,107,194,1}},
+			[30] = {"Phån Hoa T©m Ph¸p", {0,107,191,1}},
 }
 
 tb_topserver_book45_2 = {
@@ -357,11 +357,11 @@ local tbVukhiVietYen = {
 -- must identify this table below the sub table
 tb_topserver_award_item = {				
 				[50] = {{3, tb_topserver_book45_1, 0, 0},{3, tb_topserver_book45_1, 0, 0},{3, tb_topserver_book45_1, 0, 0},{1, "N÷ Oa Tinh Th¹ch", {2,1,504,1,4}, 30*24*60*60}},
-				[55] = {{1, "L¨ng Ba Vi Bé", {0,112,78,1,1}, 0},{1, "N÷ Oa Tinh Th¹ch", {2,1,504,1,4}, 30*24*60*60}},
+				[55] = {{1, "L¨ng Ba Vi Bé", {0,112,78,1,1}, 0},{1, "N÷ Oa Tinh Th¹ch", {2,1,504,1,4}, 30*24*60*60},{2, "NhanRuongYeuQuyet(%d)", 30*24*60*60,0}},
 				[60] = {{3, tb_topserver_book45_2, 0, 0},{3, tb_topserver_book45_2, 0, 0},{3, tb_topserver_book45_2, 0, 0},{1, "N÷ Oa Tinh Th¹ch", {2,1,504,1,4}, 30*24*60*60}},
 				[65] = {{1, "L¨ng Ba Vi Bé", {0,112,78,1,1}, 0}, {2, "Earn(%d)", 1000000, 0}},
 				[70] = {{1, "L¨ng Ba Vi Bé toµn tËp", {0,112,158,1,1}, 0}, {2, "Earn(%d)", 1000000, 0}},
-				[71] = {{1, "N«ng Tang phæ", {2,1,1056,1,4}, 30*24*60*60}, {2, "Earn(%d)", 1000000, 0}},
+				[71] = {{1, "N«ng Tang phæ", {2,1,1056,1,4}, 30*24*60*60}, {2, "Earn(%d)", 1000000, 0},{2, "NhanRuongYeuQuyet(%d)", 30*24*60*60,0}},
 				[72] = {{1, "ChiÕn bµo cóp thÕ giíi", {2,1,505,1,4}, 60*24*60*60}, {2, "Earn(%d)", 1000000, 0}},
 				[73] = {{3, tb_topserver_book70_1, 0, 0}, {2, "Earn(%d)", 1000000, 0}},
 				[74] = {{1, "Tói h¹t gièng", {2,1,30087,3,4}, 30*24*60*60}, {2, "Earn(%d)", 1000000, 0}},
@@ -372,7 +372,7 @@ tb_topserver_award_item = {
 				[79] = {{1, "Vâ L©m Cao Thñ", {2,1,1040,1,4}, 60*24*60*60}, {2, "Earn(%d)", 4000000, 0}},
 				[80] = {{2, "AddItem(2,1,30164+mod(random(0,1000),%d),100)",20, 0}, {2, "Earn(%d)", 10000000, 0}},
 				[81] = {{2,"NhanRuongYeuQuyet(%d)", 30*24*60*60,0}, {1, "Méc R­¬ng", {2,1,30340,999,4}, 0}},
-				[82] = {{2, "NhanRuongYeuQuyet(%d)", 30*24*60*60,0},{2, "NhanRuongYeuQuyet(%d)", 30*24*60*60,0}, {1, "N÷ Oa Tinh Th¹ch", {2,1,504,2,4}, 30*24*60*60}},
+				[82] = {{2, "NhanRuongYeuQuyet(%d)", 30*24*60*60,0}, {1, "N÷ Oa Tinh Th¹ch", {2,1,504,2,4}, 30*24*60*60}},
 --				[83] = {{3, tb_golden_book_all, 0, 0}, {2, "Earn(%d)", 10000000, 0}},
 				[83] = {{3, tb_topserver_book_high, 0, 0}, {2, "Earn(%d)", 10000000, 0}},
 				[84] = {{3, tb_topserver_book_med, 0, 0}, {1, "Thiªn Th¹ch Linh Th¹ch", {2,1,1068,1,4}, 30*24*60*60}},
@@ -700,7 +700,9 @@ tb_Nation_Name = {
 function CheckMaxSkill55()
 	local nRoute = GetPlayerRoute();
 	local nSkillID = tRouteSkillInfo[nRoute];
-	if nSkillID == 0 then
+	if GetLevel() < 70 then
+		return 1
+	elseif nSkillID == 0 then
 		return 0;
 	else
 		if GetSkillLevel(nSkillID) >= 7 then
