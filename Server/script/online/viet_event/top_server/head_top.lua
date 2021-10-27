@@ -698,6 +698,9 @@ tb_Nation_Name = {
 function CheckMaxSkill55()
 	local nRoute = GetPlayerRoute();
 	local nSkillID = tRouteSkillInfo[nRoute];
+	if GetLevel() < 70 then
+	return 1
+	end
 	if nSkillID == 0 then
 		return 0;
 	else
@@ -707,6 +710,7 @@ function CheckMaxSkill55()
 			return 0
 		end;
 	end;
+	
 end;
 
 
