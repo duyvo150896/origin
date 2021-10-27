@@ -30,7 +30,7 @@ function main()
 	local tSay = {}
 	if nDate >= TOP_START_DATE and nDate <= TOP_END_DATE then
 		tinsert(tSay,1,"NhËn phÇn th­ëng theo ®¼ng cÊp/get_award_by_level")
-		tinsert(tSay,"NhËn th­ëng l­u ph¸i Thóy Yªn Linh N÷ cÊp 92-99/get_route_award_by_level_menu")
+--		tinsert(tSay,"NhËn th­ëng l­u ph¸i Thóy Yªn Linh N÷ cÊp 92-99/get_route_award_by_level_menu")
 		tinsert(tSay,"NhËn th­ëng cao thñ ®Çu tiªn ®¹t 1.400.000 ®iÓm c«ng tr¹ng/confirm_get_1mil_Hornor_award")
 		tinsert(tSay,"NhËn phÇn th­ëng ¦u ®·i server " .. szServerName .. "/Say_NhanUuDai")
 		tinsert(tSay,"NhËn phÇn th­ëng cao thñ Top 1 mçi hÖ ph¸i/get_top_faction_award")
@@ -670,18 +670,18 @@ function UuDaiServerMoi(nOrder)
 				local tbUuDai = {item = {{gdp={2,1,30368,1200}, name = "Cæ Linh Th¹ch"}, {gdp={2,1,30369,2000}, name = "Cæ Linh Ngäc"}}}
 				LIB_Award:Award(tbUuDai)
 			end
---			elseif nOrder == 9 then
---				local tbUuDai = {item = {{gdp={2,1,30164+(mod(random(1,10000),20)),1000}, name = "tr¸i c©y"}}}
---				LIB_Award:Award(tbUuDai)
---			elseif nOrder == 10 then
---				local tbUuDai = {item = {{gdp={2,1,30164+(mod(random(1,10000),20)),1000}, name = "tr¸i c©y"}}}
---				LIB_Award:Award(tbUuDai)
---			elseif nOrder == 11 then
---				local tbUuDai = {item = {{gdp={0,107,tbMatTich70caocap[nRoute][2][3],9}, name = "MËt tÞch 70 cao cÊp"}}}
---				LIB_Award:Award(tbUuDai)
---			elseif nOrder == 12 then
---				local tbUuDai = {item = {{gdp={2,1,30368,500}, name = "Cæ Linh Th¹ch"}, {gdp={2,1,30369,1000}, name = "Cæ Linh Ngäc"}}}
---				LIB_Award:Award(tbUuDai)
+			elseif nOrder == 9 then
+				local tbUuDai = {item = {{gdp={2,1,30164+(mod(random(1,10000),20)),1000}, name = "tr¸i c©y"}}}
+				LIB_Award:Award(tbUuDai)
+			elseif nOrder == 10 then
+				local tbUuDai = {item = {{gdp={2,1,30164+(mod(random(1,10000),20)),1000}, name = "tr¸i c©y"}}}
+				LIB_Award:Award(tbUuDai)
+			elseif nOrder == 11 then
+				local tbUuDai = {item = {{gdp={0,107,tbMatTich70caocap[nRoute][2][3],9}, name = "MËt tÞch 70 cao cÊp"}}}
+				LIB_Award:Award(tbUuDai)
+			elseif nOrder == 12 then
+				local tbUuDai = {item = {{gdp={2,1,30368,500}, name = "Cæ Linh Th¹ch"}, {gdp={2,1,30369,1000}, name = "Cæ Linh Ngäc"}}}
+				LIB_Award:Award(tbUuDai)
 --			end
 		end
 --	end
