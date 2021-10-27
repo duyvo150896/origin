@@ -329,8 +329,8 @@ tbMatTich70caocap  =
 }
 
 local tbVukhiVietYen = {
-		[2] = {"ViÖt Yªn Phi Tinh §ao", {0,3,30001,1,1,-1,-1,-1,-1,-1,-1,-1,0}}, 
-		[2] = {"ViÖt Yªn Phi Tinh C«n", {0,5,30002,1,1,-1,-1,-1,-1,-1,-1,-1,0}},
+--		[2] = {"ViÖt Yªn Phi Tinh §ao", {0,3,30001,1,1,-1,-1,-1,-1,-1,-1,-1,0}}, 
+--		[2] = {"ViÖt Yªn Phi Tinh C«n", {0,5,30002,1,1,-1,-1,-1,-1,-1,-1,-1,0}},
 		[3] =  {"ViÖt Yªn Phi Tinh Tr­îng", {0,8,30003,1,1,-1,-1,-1,-1,-1,-1,-1,13}},
 		[4] =  {"ViÖt Yªn Phi Tinh Thñ", {0,0,30004,1,1,-1,-1,-1,-1,-1,-1,-1,13}},
 		[14] =  {"ViÖt Yªn Tr¶m NguyÖt KiÕm", {0,2,30010,1,1,-1,-1,-1,-1,-1,-1,-1,13}},
@@ -698,9 +698,9 @@ tb_Nation_Name = {
 function CheckMaxSkill55()
 	local nRoute = GetPlayerRoute();
 	local nSkillID = tRouteSkillInfo[nRoute];
-	if GetLevel() < 70 then
-	return 1
-	end
+--	if GetLevel() < 70 then
+--	return 1
+--	end
 	if nSkillID == 0 then
 		return 0;
 	else
