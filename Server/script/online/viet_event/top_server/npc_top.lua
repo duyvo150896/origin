@@ -35,9 +35,9 @@ function main()
 		tinsert(tSay,"NhËn phÇn th­ëng ¦u ®·i server " .. szServerName .. "/Say_NhanUuDai")
 		tinsert(tSay,"NhËn phÇn th­ëng cao thñ Top 1 mçi hÖ ph¸i/get_top_faction_award")
 		tinsert(tSay,"NhËn phÇn th­ëng 3 nh©n sÜ ®Çu tiªn mçi phe ®¹t 860.000 c«ng tr¹ng/confirm_get_top_Hornor_award")
-		tinsert(tSay,"§¨ng kı nhËn th­ëng top 100 chuyÓn sinh 1 cÊp 99/#CS_TopAward(1)")
-		tinsert(tSay,"§¨ng kı nhËn th­ëng top 100 chuyÓn sinh 2 cÊp 99/#CS_TopAward(2)")
-		tinsert(tSay,"§¨ng kı nhËn th­ëng top 100 chuyÓn sinh 3 cÊp 99/#CS_TopAward(3)")
+--		tinsert(tSay,"§¨ng kı nhËn th­ëng top 100 chuyÓn sinh 1 cÊp 99/#CS_TopAward(1)")
+--		tinsert(tSay,"§¨ng kı nhËn th­ëng top 100 chuyÓn sinh 2 cÊp 99/#CS_TopAward(2)")
+--		tinsert(tSay,"§¨ng kı nhËn th­ëng top 100 chuyÓn sinh 3 cÊp 99/#CS_TopAward(3)")
 		tinsert(tSay,"Ho¹t ®éng "..szServerName.."/NewServer_HoatDong_Menu")
 	end
 	tinsert(tSay,"Bang héi danh gi¸/TopBangHoi_Menu")
@@ -87,10 +87,10 @@ function conf_get_award_by_level(nLevel)
 		Talk(1, "", strNpcName.."§¼ng cÊp cña c¸c h¹ ch­a ®ñ "..nLevel..", kh«ng thÓ nhËn th­ëng.");
 		return
 	end
-	if CheckMaxSkill55() == 0 then
-		Talk(1, "", strNpcName.."C¸c h¹ ch­a häc ®Çy ®ñ vâ c«ng cÊp 55, kh«ng thÓ nhËn th­ëng.");
-		return
-	end
+--	if CheckMaxSkill55() == 0 then
+--		Talk(1, "", strNpcName.."C¸c h¹ ch­a häc ®Çy ®ñ vâ c«ng cÊp 55, kh«ng thÓ nhËn th­ëng.");
+--		return
+--	end
 	if gf_GetTaskByte(TSK_TOP_LEVEL,1) > tb_topserver_award_limit[nLevel][4] then
 		Talk(1, "", strNpcName.."C¸c h¹ ®· nhËn phÇn th­ëng nµy råi. Kh«ng thÓ nhËn tiÕp ®­îc n÷a!");
 		return
