@@ -87,7 +87,7 @@ function conf_get_award_by_level(nLevel)
 		Talk(1, "", strNpcName.."§¼ng cÊp cña c¸c h¹ ch­a ®ñ "..nLevel..", kh«ng thÓ nhËn th­ëng.");
 		return
 	end
-	if CheckMaxSkill55() == 0 then
+	if GetLevel() >= 70 and CheckMaxSkill55() == 0 then
 		Talk(1, "", strNpcName.."C¸c h¹ ch­a häc ®Çy ®ñ vâ c«ng cÊp 55, kh«ng thÓ nhËn th­ëng.");
 		return
 	end
