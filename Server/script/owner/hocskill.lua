@@ -18,13 +18,13 @@ function HocSkill()
 		return 0
 	end
 
-	if GetItemCount(2,1,30230) < 50 then
-		Talk(1,"","Kh«ng ®ñ 50 xu vËt phÈm kh«ng thÓ häc kü n¨ng.")
+	if GetVipJinJuan() < 500 then
+		Talk(1,"","Kh«ng ®ñ 500 kim phiÕu kh«ng thÓ häc kü n¨ng.")
 		return 0
 	end
 
-	if GetItemCount(2,1,50032) >= 50 then
-		DelItem(2,1,50032,50)
+	if GetVipJinJuan()  >= 500 then
+		ModifyJinJuan(-500,1)
 		enter_mp(MonPhai)
 	end
 
