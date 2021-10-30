@@ -18,12 +18,12 @@ function HocSkill85()
 		return 0
 	end
 	
-if nRoute == 0 then
+	if GetReputation() < 10000 then
 		Talk(1, "", strNpcName.."C¸c h¹ ch­a ®ñ 10.000 ®iÓm danh väng.");
 		return 0
 	end
 	
-	if nRoute == 0 then
+	if GetTask(336) < 10000 then
 		Talk(1, "", strNpcName.."C¸c h¹ ch­a ®ñ 10.000 ®iÓm s­ m«n.");
 		return 0
 	end
