@@ -4,28 +4,37 @@ Include("\\script\\task\\world\\task_head.lua")
 Include("\\settings\\static_script\\lib\\itemfunctions.lua")
 
 
-function HocSkill()
-	local CapDo = 73;--level
-	local MonPhai = GetPlayerRoute();--lÊy th«ng tin m«n ph¸i
+function HocSkill85()
+	local CapDo = 85;--level
+	local MonPhai = GetPlayerRoute();--lÃŠy thÂ«ng tin mÂ«n phÂ¸i
 	
 	if  GetLevel() < CapDo then
-		Talk(1, "", strNpcName.."§¼ng cÊp cña c¸c h¹ ch­a ®ñ "..CapDo..", h·y cè g¾ng thªm..");
+		Talk(1, "", strNpcName.."Â§Â¼ng cÃŠp cÃ±a cÂ¸c hÂ¹ chÂ­a Â®Ã± "..CapDo..", hÂ·y cÃ¨ gÂ¾ng thÂªm..");
 		return 0
 	end
 
 	if nRoute == 0 then
-		Talk(1, "", strNpcName.."C¸c h¹ ch­a gia nhËp m«n ph¸i kh«ng thÓ häc vâ c«ng.");
+		Talk(1, "", strNpcName.."CÂ¸c hÂ¹ chÂ­a gia nhÃ‹p mÂ«n phÂ¸i khÂ«ng thÃ“ hÃ¤c vÃ¢ cÂ«ng.");
 		return 0
 	end
 	
-
-	if GetVipJinJuan() < 500 then
-		Talk(1,"","Kh«ng ®ñ 500 kim phiÕu kh«ng thÓ häc kü n¨ng.")
+if nRoute == 0 then
+		Talk(1, "", strNpcName.."CÂ¸c hÂ¹ chÂ­a Â®Ã± 10.000 Â®iÃ“m danh vÃ¤ng.");
+		return 0
+	end
+	
+	if nRoute == 0 then
+		Talk(1, "", strNpcName.."CÂ¸c hÂ¹ chÂ­a Â®Ã± 10.000 Â®iÃ“m sÂ­ mÂ«n.");
+		return 0
+	end
+	
+	if GetVipJinJuan() < 3000 then
+		Talk(1,"","KhÂ«ng Â®Ã± 3000 kim phiÃ•u khÂ«ng thÃ“ hÃ¤c kÃ¼ nÂ¨ng.")
 		return 0
 	end
 
-	if GetVipJinJuan()  >= 500 then
-		ModifyJinJuan(-500,1)
+	if GetVipJinJuan()  >= 3000 then
+		ModifyJinJuan(-3000,1)
 		enter_mp(MonPhai)
 	end
 
@@ -34,117 +43,117 @@ end
 function enter_mp(nRoute)
 	local nBegin = 0;
 	local nEnd = 0;
-	local nBody = GetBody(); --1=Õı³£ÄĞ£¬2=¿ıÎµÄĞ£¬3=ĞÔ¸ĞÅ®£¬4=½¿Ğ¡Å®
+	local nBody = GetBody(); --1=Ã•Ã½Â³Â£Ã„ÃÂ£Â¬2=Â¿Ã½ÃÂµÃ„ÃÂ£Â¬3=ÃÃ”Â¸ÃÃ…Â®Â£Â¬4=Â½Â¿ÃÂ¡Ã…Â®
 
-	--SetPlayerRoute(nRoute);						--c¸i nµy ®Ó cho nã v« m«n ph¸i nÕu nã ch­a v«
+	--SetPlayerRoute(nRoute);						--cÂ¸i nÂµy Â®Ã“ cho nÃ£ vÂ« mÂ«n phÂ¸i nÃ•u nÃ£ chÂ­a vÂ«
 
-	if nRoute == 2 then						--ÉÙÁÖË×¼Ò
+	if nRoute == 2 then						--Ã‰Ã™ÃÃ–Ã‹Ã—Â¼Ã’
 		LearnSkill(3);
 		LearnSkill(5);
 		LearnSkill(31);
 		nBegin = 21;
 		nEnd = 31;
-	elseif nRoute == 3 then					--ÉÙÁÖìøÉ®
+	elseif nRoute == 3 then					--Ã‰Ã™ÃÃ–Ã¬Ã¸Ã‰Â®
 		LearnSkill(6);
 		LearnSkill(56);
 		nBegin = 45;
 		nEnd = 56;
-	elseif nRoute == 4 then					--ÉÙÁÖÎäÉ®
+	elseif nRoute == 4 then					--Ã‰Ã™ÃÃ–ÃÃ¤Ã‰Â®
 		LearnSkill(2);
 		LearnSkill(43);
 		nBegin = 33;
 		nEnd = 43;
-	elseif nRoute == 14 then					--Îäµ±µÀ¼Ò
+	elseif nRoute == 14 then					--ÃÃ¤ÂµÂ±ÂµÃ€Â¼Ã’
 		LearnSkill(4);
 		LearnSkill(145);
 		nBegin = 125;
 		nEnd = 145;
-	elseif nRoute == 15 then					--Îäµ±Ë×¼Ò
+	elseif nRoute == 15 then					--ÃÃ¤ÂµÂ±Ã‹Ã—Â¼Ã’
 		LearnSkill(5);
 		LearnSkill(158);
 		nBegin = 147;
 		nEnd = 158;
-	elseif nRoute == 8 then					--¶ëáÒ·ğ¼Ò
+	elseif nRoute == 8 then					--Â¶Ã«Ã¡Ã’Â·Ã°Â¼Ã’
 		LearnSkill(4);
 		LearnSkill(88);
 		nBegin = 75
 		nEnd = 88;
-	elseif nRoute == 9 then					--¶ëáÒË×¼Ò
+	elseif nRoute == 9 then					--Â¶Ã«Ã¡Ã’Ã‹Ã—Â¼Ã’
 		LearnSkill(10);
 		LearnSkill(101);
 		nBegin = 90
 		nEnd = 101;
-	elseif nRoute == 11 then					--Ø¤°ï¾»Ò¢
+	elseif nRoute == 11 then					--Ã˜Â¤Â°Ã¯Â¾Â»Ã’Â¢
 		LearnSkill(2);
 		LearnSkill(112);
 		nBegin = 103
 		nEnd = 112;
-	elseif nRoute == 12 then					--Ø¤°ïÎÛÒ¢
+	elseif nRoute == 12 then					--Ã˜Â¤Â°Ã¯ÃÃ›Ã’Â¢
 		LearnSkill(5);
 		LearnSkill(123);
 		nBegin = 114
 		nEnd = 123;
-	elseif nRoute == 31 then					--ÉÙÁÖÎäÉ®
+	elseif nRoute == 31 then					--Ã‰Ã™ÃÃ–ÃÃ¤Ã‰Â®
 		LearnSkill(17);
 		LearnSkill(1882);
 		nBegin = 1872;
 		nEnd = 1882;
-	elseif nRoute == 6 then					--ÌÆÃÅ
+	elseif nRoute == 6 then					--ÃŒÃ†ÃƒÃ…
 		LearnSkill(7);
 		LearnSkill(73);
 		nBegin = 58
 		nEnd = 73;
-	elseif nRoute == 17 then					--ÑîÃÅÇ¹Æï
+	elseif nRoute == 17 then					--Ã‘Ã®ÃƒÃ…Ã‡Â¹Ã†Ã¯
 		LearnSkill(11);
 		LearnSkill(731);
 		nBegin = 720;
 		nEnd = 731;
-	elseif nRoute == 18 then					--ÑîÃÅ¹­Æï
+	elseif nRoute == 18 then					--Ã‘Ã®ÃƒÃ…Â¹Â­Ã†Ã¯
 		LearnSkill(12);
 		LearnSkill(744);
 		nBegin = 733;
 		nEnd = 744;
-	elseif nRoute == 20 then					--Îå¶¾Ğ°ÏÀ
+	elseif nRoute == 20 then					--ÃÃ¥Â¶Â¾ÃÂ°ÃÃ€
 		LearnSkill(13);
 		LearnSkill(774);
 		nBegin = 364;
 		nEnd = 377;
-	elseif nRoute == 21 then					--Îå¶¾¹ÆÊ¦
+	elseif nRoute == 21 then					--ÃÃ¥Â¶Â¾Â¹Ã†ÃŠÂ¦
 		LearnSkill(14);
 		LearnSkill(773);
 		nBegin = 347;
 		nEnd = 363;
-	elseif nRoute == 32 then					--À¥¢ØÌìÊ¦
+	elseif nRoute == 32 then					--Ã€Â¥Â¢Ã˜ÃŒÃ¬ÃŠÂ¦
 		LearnSkill(1885);
 		LearnSkill(1898);
 		nBegin = 1886 ;
 		nEnd = 1898;
-	elseif nRoute == 23 then					--À¥¢ØÌìÊ¦
+	elseif nRoute == 23 then					--Ã€Â¥Â¢Ã˜ÃŒÃ¬ÃŠÂ¦
 		LearnSkill(4);
 		LearnSkill(1031);
 		nBegin = 1017 ;
 		nEnd = 1031;
-	elseif nRoute == 25 then					--Ã÷½ÌÊ¥Õ½
+	elseif nRoute == 25 then					--ÃƒÃ·Â½ÃŒÃŠÂ¥Ã•Â½
 		LearnSkill(3);
 		LearnSkill(1065);
 		nBegin = 1053 ;
 		nEnd = 1065;
-	elseif nRoute == 26 then					--Ã÷½ÌÕó±ø
+	elseif nRoute == 26 then					--ÃƒÃ·Â½ÃŒÃ•Ã³Â±Ã¸
 		LearnSkill(8);
 		LearnSkill(1095);
 		nBegin = 1083 ;
 		nEnd = 1095;
-	elseif nRoute == 27 then					--Ã÷½ÌÑªÈË
+	elseif nRoute == 27 then					--ÃƒÃ·Â½ÃŒÃ‘ÂªÃˆÃ‹
 		LearnSkill(14);
 		LearnSkill(1212);
 		nBegin = 1131 ;
 		nEnd = 1143;
-	elseif nRoute == 29 then					--´äÑÌÎèÏÉ
+	elseif nRoute == 29 then					--Â´Ã¤Ã‘ÃŒÃÃ¨ÃÃ‰
 		LearnSkill(15);
 		LearnSkill(1195);
 		nBegin = 1165 ;
 		nEnd = 1176;
-	elseif nRoute == 30 then					--´äÑÌÁéÅ®
+	elseif nRoute == 30 then					--Â´Ã¤Ã‘ÃŒÃÃ©Ã…Â®
 		LearnSkill(16);
 		LearnSkill(1229);
 		nBegin = 1217 ;
@@ -162,5 +171,5 @@ function enter_mp(nRoute)
 	end;
 
 	SaveNow()
-	Talk(1,"ExitGame","Thao t¸c thµnh c«ng, h·y ®¨ng nhËp l¹i")
+	Talk(1,"ExitGame","Thao tÂ¸c thÂµnh cÂ«ng, hÂ·y Â®Â¨ng nhÃ‹p lÂ¹i")
 end
