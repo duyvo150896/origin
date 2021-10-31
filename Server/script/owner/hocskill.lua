@@ -8,16 +8,15 @@ function HocSkill()
 	local CapDo = 73;--level
 	local MonPhai = GetPlayerRoute();--lÊy th«ng tin m«n ph¸i
 	
-	if  GetLevel() < CapDo then
-		Talk(1, "", strNpcName.."§¼ng cÊp cña c¸c h¹ ch­a ®ñ "..CapDo..", h·y cè g¾ng thªm..");
-		return 0
-	end
-
 	if nRoute == 0 then
 		Talk(1, "", strNpcName.."C¸c h¹ ch­a gia nhËp m«n ph¸i kh«ng thÓ häc vâ c«ng.");
 		return 0
 	end
 	
+	if  GetLevel() < CapDo then
+		Talk(1, "", strNpcName.."§¼ng cÊp cña c¸c h¹ ch­a ®ñ "..CapDo..", h·y cè g¾ng thªm..");
+		return 0
+	end	
 
 	if GetVipJinJuan() < 500 then
 		Talk(1,"","Kh«ng ®ñ 500 kim phiÕu kh«ng thÓ häc kü n¨ng.")
