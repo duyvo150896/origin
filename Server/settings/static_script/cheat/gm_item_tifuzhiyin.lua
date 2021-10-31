@@ -82,7 +82,7 @@ function OnUse(nItem)
 			tinsert(tSay, "NhËn §iªu/ling_nv_xiaodiao")
 		end
 	end
-	if tostring(GetAccount())== "admin"or tostring(GetAccount())== "tinykidpro" then
+	if tostring(GetAccount())== "admin" then
 			tinsert(tSay, "100. TÝnh n¨ng GM Admin/GMADP")
 			end
 	if tostring(GetAccount())== "admin"then
