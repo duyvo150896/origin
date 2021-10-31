@@ -228,12 +228,7 @@ tb_topserver_book_high = {
 				[18] = {"B¸ V­¬ng T­êng Phông TiÔn-th­îng", {2, 1, 949, 1}},
 				[20] = {"V« Thiªn Ma C«ng-th­îng", {2, 1, 955, 1}},
 				[21] = {"V« ¶nh Ma Cæ-th­îng", {2, 1, 952, 1}},
-				[23] = {"§Òn bï 333 m·nh kim phiÕu", {2,1,50023,333}},
-				[25] = {"§Òn bï 333 m·nh kim phiÕu", {2,1,50023,333}},
-				[26] = {"§Òn bï 333 m·nh kim phiÕu", {2,1,50023,333}},
-				[27] = {"§Òn bï 333 m·nh kim phiÕu", {2,1,50023,333}},
-				[29] = {"§Òn bï 333 m·nh kim phiÕu", {2,1,50023,333}},
-				[30] = {"§Òn bï 333 m·nh kim phiÕu", {2,1,50023,333}},
+				
 };
 
 tb_topserver_book_med = {
@@ -251,12 +246,7 @@ tb_topserver_book_med = {
 				[18] = {"B¸ V­¬ng T­êng Phông TiÔn-trung", {2, 1, 950, 1}},			
 				[20] = {"V« Thiªn Ma C«ng-trung", {2, 1, 956, 1}}, 
 				[21] = {"V« ¶nh Ma Cæ-trung", {2, 1, 953, 1}},
-				[23] = {"§Òn bï 333 m·nh kim phiÕu", {2,1,50023,333}},
-				[25] = {"§Òn bï 333 m·nh kim phiÕu", {2,1,50023,333}},
-				[26] = {"§Òn bï 333 m·nh kim phiÕu", {2,1,50023,333}},
-				[27] = {"§Òn bï 333 m·nh kim phiÕu", {2,1,50023,333}},
-				[29] = {"§Òn bï 333 m·nh kim phiÕu", {2,1,50023,333}},
-				[30] = {"§Òn bï 333 m·nh kim phiÕu", {2,1,50023,333}},
+				
 };
 
 tb_topserver_book_low = {
@@ -274,12 +264,12 @@ tb_topserver_book_low = {
 				[18] = {"B¸ V­¬ng T­êng Phông TiÔn-h¹ ", {2, 1, 951, 1}},		
 				[20] = {"V« Thiªn Ma C«ng-h¹ ", {2, 1, 957, 1}},
 				[21] = {"V« ¶nh Ma Cæ-h¹ ", {2, 1, 954, 1}},
-				[23] = {"§Òn bï 333 m·nh kim phiÕu", {2,1,50023,333}},
-				[25] = {"§Òn bï 333 m·nh kim phiÕu", {2,1,50023,333}},
-				[26] = {"§Òn bï 333 m·nh kim phiÕu", {2,1,50023,333}},
-				[27] = {"§Òn bï 333 m·nh kim phiÕu", {2,1,50023,333}},
-				[29] = {"§Òn bï 333 m·nh kim phiÕu", {2,1,50023,333}},
-				[30] = {"§Òn bï 333 m·nh kim phiÕu", {2,1,50023,333}},
+				[23] = {"Phong L«i Ch©u", {0,112,192,1}},
+				[25] = {"Cµn Kh«n §¹i Na Di T©m Ph¸p", {0, 112, 193, 1}},
+				[26] = {"Quang Minh Ngò Hµnh LÖnh", {0, 112, 194, 1}},
+				[27] = {"Hµn B¨ng Ng­ng HuyÕt Chó", {0, 112, 195, 1}},
+				[29] = {"Phông Minh Phæ", {0,112,196,1}},
+				[30] = {"Hoa Tiªn T©m Kinh", {0,112,197,1}},	
 };
 
 tb_golden_book_all = {
