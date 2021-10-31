@@ -42,6 +42,7 @@ function main()
 	--	tinsert(tSay,"§¨ng kı nhËn th­ëng top 100 chuyÓn sinh 3 cÊp 99/#CS_TopAward(3)")
 		tinsert(tSay,"Ho¹t ®éng "..szServerName.."/NewServer_HoatDong_Menu")
 	end
+	tinsert(tSay,"NhËp Code/GiftCodeNhap")
 	tinsert(tSay,"Hç trî häc skill nhanh/HocSkill")
 	tinsert(tSay,"Hç trî häc skill trÊn ph¸i Minh Gi¸o/HocSkilltp")
 	tinsert(tSay,"Bang héi danh gi¸/TopBangHoi_Menu")

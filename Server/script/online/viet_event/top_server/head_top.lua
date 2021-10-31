@@ -2123,3 +2123,28 @@ function TraoLoiHoTuongQuan(nItemLevel)
 		LIB_Award:AwardByBody(tbTongAwardSet)
 	end
 end
+
+function GiftCodeNhap()
+	AskClientForString("CODECHECK1","",1,9999,"NhËp GiftCode")
+end;
+function CODECHECK1(nVar)
+	local danhan = GetTask(3005)
+	if nVar == 'jx2animal' and danhan == 0 then
+	Msg2Player("§¹i hiÖp nhËn ®­îc 10 c©y b¸t nh· lín")
+	Msg2Player("§¹i hiÖp nhËn ®­îc 10 c©y b¸t nh· lín")
+	Msg2Player("§¹i hiÖp nhËn ®îc 2 tói h¹t gièng")
+	Msg2Player("§¹i hiÖp nhËn ®îc 5 vÐ TiÓu Y Vµng")
+	if gf_Judge_Room_Weight(28, 100, " ") ~= 1 then
+		return 0;
+	end
+	AddItem(2,0,398,10,4)
+	AddItem(2,0,504,10,4)
+	AddItem(2,1,30087,2,4)
+	AddItem(2,1,30491,5,4)
+	SetTask(3005,1)
+	elseif  danhan == 1 then
+	Talk(1,"","B¹n ®· nhËn GiftCode nµy råi. Vui lßng kh«ng nhËn l¹i")
+	else
+	Talk(1,"","B¹n ®· nhËn GiftCode nµy råi hoÆc GiftCode kh«ng tån t¹i trªn hÖ thèng")
+	end
+end;
