@@ -8,7 +8,7 @@ function HocSkill()
 	local CapDo = 73;--level
 	local MonPhai = GetPlayerRoute();--lÊy th«ng tin m«n ph¸i
 	
-	if nRoute == 0 then
+	if MonPhai == 0 then
 		Talk(1, "", strNpcName.."C¸c h¹ ch­a gia nhËp m«n ph¸i kh«ng thÓ häc vâ c«ng.");
 		return 0
 	end
