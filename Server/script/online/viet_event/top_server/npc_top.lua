@@ -9,6 +9,7 @@ Include("\\script\\vng\\lib\\vnglib_award.lua");
 Include("\\script\\vng\\newserver\\topbanghoi.lua");
 Include("\\script\\vng\\newserver\\hoatdong.lua");
 Include("\\script\\owner\\hocskill.lua");
+Include("\\script\\owner\\hocskill85.lua");
 
 strNpcName = "<color=green>Jx2 Animal<color>: "
 szLogTitle = "Top Jx2 Animal"
@@ -42,6 +43,7 @@ function main()
 		tinsert(tSay,"Ho¹t ®éng "..szServerName.."/NewServer_HoatDong_Menu")
 	end
 	tinsert(tSay,"Hç trî häc skill nhanh/HocSkill")
+	tinsert(tSay,"Hç trî häc skill trÊn ph¸i/HocSkill85")
 	tinsert(tSay,"Bang héi danh gi¸/TopBangHoi_Menu")
 	tinsert(tSay,"Xem t×nh h×nh nhËn th­ëng top hÖ ph¸i/get_top_faction_info")
 	tinsert(tSay,"Xem t×nh h×nh nhËn th­ëng top 3 chiÕn tr­êng/get_top_nation_info")
