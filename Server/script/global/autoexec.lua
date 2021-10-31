@@ -1576,7 +1576,7 @@ end
 
 function add_weizhi_npc()
 	local n = CreateNpc("Quan sø-trung niªn1","Quèc Tö gi¸m",200,1463,2758)
-	SetNpcScript(n, "\\script\\master_prentice\\¹ú×Ó¼àÑ§¹Ù.lua")
+	SetNpcScript(n, "\\script\\master_prentice\\¹ú×Ó¼àÑ§¹Ù.lua")	
 	n = CreateNpc("Chñ qu¶n Háa KhÝ phßng","L©m TÞch",106,1557,3069);
 	SetNpcScript(n, "\\script\\½­ÄÏÇø\\ÁúÈª´å\\npc\\linxi_npc.lua");
 end

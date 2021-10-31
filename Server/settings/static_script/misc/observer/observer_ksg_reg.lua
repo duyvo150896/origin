@@ -41,14 +41,14 @@ function ObserverImpt:ksg_reg()
 	self:register(SYSEVENT_GLOBAL_COST_IB, "_on_cost_ib_item", _on_cost_ib_item)
 end
 
-function add_tifyzhiyin(id, data)
-	if IsExpSvrSystemOpen() == 1 then
+--function add_tifyzhiyin(id, data)
+	--if IsExpSvrSystemOpen() == 1 then
 		--体服指引（正式版本要删除）---------------------------
-    	if GetItemCount(2,1,30644) < 1 and GetFreeItemRoom() > 0 then
-    		AddItem(2,1,30644,1)
-    	end
-	end
-end
+    	--if GetItemCount(2,1,30644) < 1 and GetFreeItemRoom() > 0 then
+    	--	AddItem(2,1,30644,1)
+    	--end
+	--end
+--end
 
 --消耗IB Item
 function _on_cost_ib_item(id, data)
