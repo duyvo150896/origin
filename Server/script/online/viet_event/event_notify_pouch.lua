@@ -88,7 +88,7 @@ function SelectSay()
 		szSayHead = szSayHead..". Hi÷n Æang ch¨i tπi <color=yellow>Phﬂng M∏y Th©n Thi÷n<color>."
 	end
 		--Œ‰¡÷vip‘¬ø®
-	tinsert(tbSayDialog,"S˘ ki÷n C«n Sa V∑i LÂn (MÌi Nh t - Hot Nh t)/trongcansa"	)
+	--tinsert(tbSayDialog,"S˘ ki÷n C«n Sa V∑i LÂn (MÌi Nh t - Hot Nh t)/trongcansa"	)
 	if vc_IsVipCardOpen() ~= 0 then
 		tinsert(tbSayDialog, vc_GetMainTitle()) 
 	end
