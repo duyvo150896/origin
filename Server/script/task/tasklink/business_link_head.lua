@@ -152,10 +152,10 @@ function accept_new_task()
 	nReput = 3000
 	nFaction = 4000	
 
-	if GetLevel() < 73 or GetReputation() < nReput or GetTask(336) < nFaction or GetPlayerRoute() == 0 then
-		Say("N¨ng lùc cña ng­¬i cßn kĞm l¾m, ®îi ®Õn <color=yellow>cÊp 73, gia nhËp hÖ ph¸i, cã ®ñ ®iÓm danh väng vµ s­ m«n <color>h·y quay l¹i cèng hiÕn søc lùc còng ch­a muén.", 0)
-		return
-	end
+	--if GetLevel() < 73 or GetReputation() < nReput or GetTask(336) < nFaction or GetPlayerRoute() == 0 then
+	--	Say("N¨ng lùc cña ng­¬i cßn kĞm l¾m, ®îi ®Õn <color=yellow>cÊp 73, gia nhËp hÖ ph¸i, cã ®ñ ®iÓm danh väng vµ s­ m«n <color>h·y quay l¹i cèng hiÕn søc lùc còng ch­a muén.", 0)
+	--	return
+--	end
 	local nDate = tonumber(date("%y%m%d"))
 	--local nLastGetDate = floor(GetTask(TSK_CHECK_BAOHAP) / 100)	
 	--if nLastGetDate ~= nDate then
