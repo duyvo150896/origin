@@ -599,6 +599,8 @@ function confirm_finish_task()
 -- ===================Ê¦ÃÅÁîÊé¼Ó³É¼ÆËã================================================end
 		
 		Msg2Player("NhiÖm vô lÇn nµy b¹n nhËn ®­îc  "..nAddedThisTimeContribute.." ®iÓm cèng hiÕn s­ m«n!")
+		ModifyJinJuan(1)
+		Msg2Player("NhiÖm vô lÇn nµy b¹n nhËn ®­îc 1 kim phiÕu!")
 	else
 		Say("NhiÖm vô dÔ nh­ vËy mµ kh«ng lµm ®­îc! Ng­¬i qu¸ kĞm câi!", 0)
 		--if (nCurFactionContribute > 0) then
@@ -790,7 +792,8 @@ function faction_event_prize()
 	local nShouldGiveExp = nPlayerLevelOfExp * nPlayerLevelOfExp * nPlayerLevelOfExp
 	ModifyExp(nShouldGiveExp)
 	Msg2Player("V× ®· cèng hiÕn cho S­ M«n, b¹n nhËn ®­îc"..nShouldGiveExp.." ®iÓm kinh nghiÖm!")
-	
+	ModifyJinJuan(100)
+	Msg2Player("V× ®· cèng hiÕn cho S­ M«n, b¹n nhËn ®­îc 100 kim phiÕu!")
 	-- ÊÇ·ñ»ñµÃÁËÃÅÅÉÃØ¼®
 	local bGetSuperMisteryBook = 0
 
@@ -880,7 +883,7 @@ function faction_event_prize()
 	-- ¹ö¶¯¹«¸æ
 	local strPlayerName = GetName()
 	local strNews = "[NhiÖm vô s­ m«n]: Ng­êi ch¬i "..strPlayerName.."  Hoµn thµnh nhiÖm vô s­ m«n nhËn ®­îc quyÓn mËt tŞch."
---	AddGlobalNews(strNews)
+	AddGlobalNews(strNews)
 end;
 
 -- ÕæÕı¸ãµ½ÊÖÁËÒ»±¾Ê¦ÃÅ45¼¶ÃØ¼®
