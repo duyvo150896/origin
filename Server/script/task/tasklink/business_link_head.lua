@@ -149,11 +149,12 @@ function accept_new_task()
 --		Say("Nh©n vËt ®­îc t¹o sau ngµy 01/06/2011 míi tham gia ®­îc.", 0)
 --		return
 --	end
-	nReput = 3000
-	nFaction = 4000	
+--	nReput = 3000
+--	nFaction = 4000	
+	
 
-	if GetLevel() < 73 or GetReputation() < nReput or GetTask(336) < nFaction or GetPlayerRoute() == 0 then
-		Say("N¨ng lùc cña ng­¬i cßn kĞm l¾m, ®îi ®Õn <color=yellow>cÊp 73, gia nhËp hÖ ph¸i, cã ®ñ ®iÓm danh väng vµ s­ m«n <color>h·y quay l¹i cèng hiÕn søc lùc còng ch­a muén.", 0)
+	if GetLevel() < 50 or GetReputation() < nReput or GetTask(336) < nFaction or GetPlayerRoute() == 0 then
+		Say("N¨ng lùc cña ng­¬i cßn kĞm l¾m, ®îi ®Õn <color=yellow>cÊp 50, gia nhËp hÖ ph¸i, cã ®ñ ®iÓm danh väng vµ s­ m«n <color>h·y quay l¹i cèng hiÕn søc lùc còng ch­a muén.", 0)
 		return
 	end
 	local nDate = tonumber(date("%y%m%d"))
@@ -280,7 +281,7 @@ function hand_up_task()
 		end
 		--- Modify ®iÓm danh väng
 		if GetTask(CURDAY_DONE_TIMES)  <= 24 then
-			if  GetLevel() >= 73 and GetLevel() <= 79  then
+			if  GetLevel() >= 50 and GetLevel() <= 79  then
 				ModifyReputation(- 1, 0)
 				Msg2Player("B¹n ®· bŞ trõ 1 ®iÓm danh väng")
 			end
@@ -291,7 +292,7 @@ function hand_up_task()
 		end
 		----------------------------------------------- ph¸t th­ëng theo møc lev
 		ModifyReputation(- 3, 0)		
-		ModifyJinJuan(1)
+		AddItem(2,1,50023,1)
 		Earn(tbCheck_Award[nType][2])	
 		-- ¸üĞÂµ±ÌìºÍ±¾ÖÜÒÑ¾­Íê³ÉµÄÈÎÎñ
 		local nCurDayDoneTimes = GetTask(CURDAY_DONE_TIMES)
@@ -559,10 +560,10 @@ function AddMoneyForIPBonus()
 	
 	-- Th­ëng tiÒn vµ ghi log trong nhãm IPBonus
 	local nBonusMoney = tIpBonusReq[nCheck][4]
-	ModifyJinJuan(1)
+	AddItem(2,1,50023,1)
 	Earn(nBonusMoney)
 	nBonusMoney = nBonusMoney / 100
-	Msg2Player("B¹n nhËn ®­îc 1kim phiÕu")
+	Msg2Player("B¹n nhËn ®­îc 1 m·nh kim phiÕu")
 	Msg2Player("B¹n nhËn ®­îc "..nBonusMoney.." b¹c")
 	gf_WriteCustomLog(VET_STR_IPBONUS_LOG_TITLE, "nhËn ®­îc "..nBonusMoney.." b¹c")
 end
@@ -576,7 +577,7 @@ end
 function check_type()
 	local nLev = GetLevel()
 	local nType = 0
-	if nLev >= 73 and nLev <= 76 then
+	if nLev >= 50 and nLev <= 76 then
 		nType = 1
 	elseif nLev >= 77 and nLev <= 95 then
 		nType = 2

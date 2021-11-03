@@ -599,7 +599,7 @@ function confirm_finish_task()
 -- ===================Ê¦ÃÅÁîÊé¼Ó³É¼ÆËã================================================end
 		
 		Msg2Player("NhiÖm vô lÇn nµy b¹n nhËn ®­îc  "..nAddedThisTimeContribute.." ®iÓm cèng hiÕn s­ m«n!")
-		ModifyJinJuan(1)
+		AddItem(2,1,50023,1)
 		Msg2Player("NhiÖm vô lÇn nµy b¹n nhËn ®­îc 1 kim phiÕu!")
 	else
 		Say("NhiÖm vô dÔ nh­ vËy mµ kh«ng lµm ®­îc! Ng­¬i qu¸ kĞm câi!", 0)
@@ -792,8 +792,8 @@ function faction_event_prize()
 	local nShouldGiveExp = nPlayerLevelOfExp * nPlayerLevelOfExp * nPlayerLevelOfExp
 	ModifyExp(nShouldGiveExp)
 	Msg2Player("V× ®· cèng hiÕn cho S­ M«n, b¹n nhËn ®­îc"..nShouldGiveExp.." ®iÓm kinh nghiÖm!")
-	ModifyJinJuan(100)
-	Msg2Player("V× ®· cèng hiÕn cho S­ M«n, b¹n nhËn ®­îc 100 kim phiÕu!")
+	AddItem(2,1,50023,100)
+	Msg2Player("V× ®· cèng hiÕn cho S­ M«n, b¹n nhËn ®­îc 100 m·nh kim phiÕu!")
 	-- ÊÇ·ñ»ñµÃÁËÃÅÅÉÃØ¼®
 	local bGetSuperMisteryBook = 0
 
