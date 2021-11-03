@@ -273,11 +273,11 @@ function hand_up_task()
 
 		-- Í¨Öª³ÌĞò£¬Íê³ÉÁËÈÎÎñ
 		FinishTaskStep(11, nPrizeType, nCount * multiple) 
-		--if GetTask(CURDAY_DONE_TIMES) < 40 then
-			--ModifyReputation(- 3, 0)
-		--else
-			--ModifyReputation(- 5, 0)
-		--end
+		if GetTask(CURDAY_DONE_TIMES) < 40 then
+			ModifyReputation(- 3, 0)
+		else
+			ModifyReputation(- 5, 0)
+		end
 		--- Modify ®iÓm danh väng
 		if GetTask(CURDAY_DONE_TIMES)  <= 24 then
 			if  GetLevel() >= 73 and GetLevel() <= 79  then
@@ -292,6 +292,7 @@ function hand_up_task()
 		----------------------------------------------- ph¸t th­ëng theo møc lev
 		--ModifyReputation(- 3, 0)		
 		ModifyJinJuan(1)	
+		Earn(tbCheck_Award[nType][2])	
 		-- ¸üĞÂµ±ÌìºÍ±¾ÖÜÒÑ¾­Íê³ÉµÄÈÎÎñ
 		local nCurDayDoneTimes = GetTask(CURDAY_DONE_TIMES)
 		local nCurWeekDoneTimes = GetTask(CURWEEK_DONE_TIMES)
@@ -559,8 +560,10 @@ function AddMoneyForIPBonus()
 	-- Th­ëng tiÒn vµ ghi log trong nhãm IPBonus
 	local nBonusMoney = tIpBonusReq[nCheck][4]
 	ModifyJinJuan(1)
+	Earn(nBonusMoney)
 	nBonusMoney = nBonusMoney / 100
 	Msg2Player("B¹n nhËn ®­îc 1kim phiÕu")
+	Msg2Player("B¹n nhËn ®­îc "..nBonusMoney.." b¹c")
 	gf_WriteCustomLog(VET_STR_IPBONUS_LOG_TITLE, "nhËn ®­îc "..nBonusMoney.." b¹c")
 end
 
