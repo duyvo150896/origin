@@ -499,6 +499,7 @@ local nReputation = random(3,5);
 	ModifyExp(multiple_reward(SYS_KILLER_TASK, nExp));
 	Earn(nMoney);
 	ModifyReputation(nReputation,0);
+	AddItem(2,1,50023,5);
 	-----------------Ê¥µ®»î¶¯---------------------
 		Xmas_prize_get(4)
 	--------------------½áÊø------------------------
