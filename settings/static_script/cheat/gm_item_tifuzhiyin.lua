@@ -54,7 +54,7 @@ function OnUse(nItem)
 			"HiÖu øng nh©n vËt/#char_eff(10)",
 			-- "Hç trî ®¼ng cÊp cho t©n thñ Level 99/hotrogmer1st",
 			"Hç trî 2 tØ kinh nghiÖm/hotrogmer2st",
-            -- "NhËn Bé DiÖu D­¬ng +7/Get_YaoYang_15",
+            "NhËn Bé DiÖu D­¬ng +7/Get_YaoYang_15",
 			"NgÉu nhiªn nhËn ®­îc Trang BŞ Kim Xµ Lv1 +10/Get_JinShe_1",
 			-- format("%s/Process_Equip_LingTu", "NhËn Linh §å +10"),
 			-- format("%s/Process_SanJianTao", "NhËn trang søc ®eo h«ng 6 sao"),
@@ -117,13 +117,13 @@ function tieudung()
 			"NhËn L­u Ph¸i Ch©n QuyÓn vµ YÕu QuyÕt/Get_Book",
 		-- "NhËn ®¸ quı/Get_Gem",
 			"NhËn 4000 vµng/Get_Money",
- 		-- "NhËn Ên chuyÓn sinh/Get_An",
+ 		"NhËn Ên chuyÓn sinh/Get_An",
 		"Ma Dao thach 1/madao1",
 		-- "Gi¸m ®Şnh phï 7/gdp7",
 		-- "ngò Th¸i/nguthai",
 		"NhËn Cöu ChuyÓn Håi Hån §an/cuuchuyen",
-		-- "NhËn M¸u /receiveTiLi",
-		-- "NhËn HKDNP/hkdnp",
+		"NhËn M¸u /receiveTiLi",
+		"NhËn HKDNP/hkdnp",
 		"NhËn Lak/Get_Energy_5x",
 		"NhËn B¸nh Ng«/banhngo",
 		"NhËn Ph¸o Hoa ChiÕn Th¾ng/nhanphaohoa",
@@ -135,28 +135,28 @@ end
 function tieudung_orther()
 	local tSay = {
 		g_szTitle.."Lùa chän",
-		-- "Nhan Bua Cuong Hoa/NhanBua",
-          -- "N©ng cao ®¼ng cÊp chuyÓn sinh nh©n vËt/player_reborn",
-			-- "Thay ®æi h­íng Phôc Sinh/change_PhucSinh",
-			-- "Sinh ThÇn Cang gäi Boss bang héi/sinhthancang",
-            -- "M¶nh b¹ch kim/nhanmbk",
+		"Nhan Bua Cuong Hoa/NhanBua",
+          "N©ng cao ®¼ng cÊp chuyÓn sinh nh©n vËt/player_reborn",
+			"Thay ®æi h­íng Phôc Sinh/change_PhucSinh",
+			"Sinh ThÇn Cang gäi Boss bang héi/sinhthancang",
+            "M¶nh b¹ch kim/nhanmbk",
             "NhËn danh hiÖu/Get_Danh_Hieu2",
             "T¨ng ®iÓm nh©n vËt/Get_Diem_Char",
             "NhËn C¸c Lo¹i Nguyªn LiÖu/Get_Nguyen_Lieu",
 			"Thao t¸c bang héi/TongOperation",
 			"Thao t¸c Vò Khİ/PS_VK",
-			-- "Thao t¸c kinh m¹ch /GetJingMai",
-			-- "Ngo¹i Trang C«ng Thµnh/ngoaitrang",			
-			-- "Phôc sinh thó c­ng/Pet_OP",
+			"Thao t¸c kinh m¹ch /GetJingMai",
+			"Ngo¹i Trang C«ng Thµnh/ngoaitrang",			
+			"Phôc sinh thó c­ng/Pet_OP",
 		"NhËn ChiÕn T­îng/chientuong",
-		-- "TTBR/thantaibaoruong",
-		-- "Nhan tmkl/tmkl",
-		-- "Kü n¨ng sèng/Life_Skill",
+		"TTBR/thantaibaoruong",
+		"Nhan tmkl/tmkl",
+		"Kü n¨ng sèng/Life_Skill",
 		"NhËn Thó Míi/nhanthucuoimoi",
-		-- "NhËn Thó C­ìi/thucuoipro",
-		-- "NhËn C¸nh/nguafake",
-		-- "R¸c/rac",
-		-- "ThiÖp long m«n trÊn/thieplongmon",
+		"NhËn Thó C­ìi/thucuoipro",
+		"NhËn C¸nh/nguafake",
+		"R¸c/rac",
+		"ThiÖp long m«n trÊn/thieplongmon",
 		"\nRa khái/nothing",
 	}
 	SelectSay(tSay);
@@ -3572,17 +3572,17 @@ function GetJingMai()
 	local szSay = {
 		g_szTitle.."Thao th¸c kinh m¹ch",
 		"TÈy ®iÓm kinh m¹ch/GetJingMai_Reset",
-		-- format("%s/getZhenqi", "NhËn ch©n khİ"),
-		-- format("%s/getJingMaiTongRen", "NhËn Kinh M¹ch §ång Nh©n"),
+		format("%s/getZhenqi", "NhËn ch©n khİ"),
+		format("%s/getJingMaiTongRen", "NhËn Kinh M¹ch §ång Nh©n"),
 		"Ra khái/nothing",
 	};
 	if MeridianGetLevel() < 6 then
 		tinsert(szSay, 2, "Th¨ng cÊp c¶nh giíi/GetJingMai_Update")
 	end
-	if GetLevel() >=90  and MeridianGetLevel() < 2 then 
-		-- tinsert(szSay, 2, "§i ®Õn NPC th¨ng cÊp c¶nh giíi Vâ T­íng/GetJingMai_Update_votuong")
-		tinsert(szSay, 2, "Th¨ng cÊp c¶nh giíi Vâ T­íng/GetJingMai_Update_votuong_only")
-	end
+	-- if GetLevel() >=90  and MeridianGetLevel() < 2 then 
+		-- -- tinsert(szSay, 2, "§i ®Õn NPC th¨ng cÊp c¶nh giíi Vâ T­íng/GetJingMai_Update_votuong")
+		-- tinsert(szSay, 2, "Th¨ng cÊp c¶nh giíi Vâ T­íng/GetJingMai_Update_votuong_only")
+	-- end
 	SelectSay(szSay);
 end
 
@@ -3765,7 +3765,7 @@ end
 
 function Get_Mored()
 	local tSay = {
-		-- "NhËn Thiªn H¹ V« Song/thvs",	
+		"NhËn Thiªn H¹ V« Song/thvs",	
 	"NhËn HiÖu ChiÕn Tr­êng/hieudothong",
 		"NhËn TT3 LL3 TT4 LL4/ttll3",
 		 "NhËn TT1 LL/ttll1",
@@ -3777,7 +3777,7 @@ function Get_Mored()
 		"HHVD/huyhoang5",
 		"Ngäc Thiªn NghÜa/thienghia_ngoc",
 		"uÈn Linh cÊp 2/nhanul_2",
-		-- "Vâ L©m b¸ Chñ/vlbc",
+		"Vâ L©m b¸ Chñ/vlbc",
 
 		"NhËn Vò Khİ Nguyªn Tö/vknt",
 		"NhËn Vò Kh¶m /vkkham",
@@ -3803,7 +3803,7 @@ function Get_Mored()
 		"QuÎ 8 qu¸i/que8w", 
 		"Ngo¹i Trang/ngoaitrangnew", 
 		-- "Hµo HiÖp V« H¹/gethhvhlb", 
-		-- "NhËn trang søc ®eo h«ng 4 vs 5 sao/showKX",
+		"NhËn trang søc ®eo h«ng 4 vs 5 sao/showKX",
 		"T¹i h¹ chØ xem qua th«i/nothing",
 	}
 	Say(g_szTitle.."------------------", getn(tSay), tSay);
