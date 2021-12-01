@@ -3777,6 +3777,7 @@ function Get_Mored()
 		"HHVD/huyhoang5",
 		"Ngäc Thiªn NghÜa/thienghia_ngoc",
 		"uÈn Linh cÊp 2/nhanul_2",
+		"uÈn Linh cÊp 3/nhanul_3",
 		"Vâ L©m b¸ Chñ/vlbc",
 
 		"NhËn Vò Khİ Nguyªn Tö/vknt",
@@ -3925,7 +3926,16 @@ function nhanul_2()
 	}
 	SelectSay(tSay);
 end
-
+function nhanul_3()
+	local tSay = {
+		g_szTitle.."Lùa chän",
+		"NgÉu nhiªn nãn/UL3_non",
+		"NgÉu nhiªn ¸o/UL3_ao",
+		"NgÉu nhiªn quÇn/UL3_quan",
+		"\nRa khái/nothing",
+	}
+	SelectSay(tSay);
+end
 function cuuchuyen()
 	AddItem(1, 0, 32, 999, 0, 999);
 end
