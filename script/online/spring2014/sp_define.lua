@@ -5,7 +5,7 @@ SP_SWITCH = 1;
 --活动时间
 --\script\misc\taskmanager.lua
 SP_START_TIME = 2014013100;
-SP_END_TIME = 2024021500;
+SP_END_TIME = 2014021500;
 
 SP_CITY_TABLE = {
 	[1] = {
