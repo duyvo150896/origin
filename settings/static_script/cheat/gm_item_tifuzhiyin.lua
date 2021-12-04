@@ -41,73 +41,73 @@ function OnUse(nItem)
 		tSay = {
 			"Gia nhËp m«n ph¸i/JoinRoute_UpdateLevel",
 			-- "L¨ng ba vi bé cho VMP/langbavibott",
-			"Th¨ng cÊp mËt tŞch ®· trang bŞ/Get_Book_Update",
+			-- "Th¨ng cÊp mËt tŞch ®· trang bŞ/Get_Book_Update",
 		}
-	else
-		tSay = {
---			"NhËp Code/GiftCodeNhap",
-		-- "NhËn tö quang hiªn viªn ngäc/hienvienngoc",
-            "Trang BŞ/Get_Mored",
-            "Tiªu dïng/tieudung",
-			"Cßn l¹i/tieudung_orther",
-            -- "Thiªn kiªu lÖnh /nhantkl",
-			"HiÖu øng nh©n vËt/#char_eff(10)",
-			-- "Hç trî ®¼ng cÊp cho t©n thñ Level 99/hotrogmer1st",
-			"Hç trî 2 tØ kinh nghiÖm/hotrogmer2st",
-            "NhËn Bé DiÖu D­¬ng +7/Get_YaoYang_15",
-			"NgÉu nhiªn nhËn ®­îc Trang BŞ Kim Xµ Lv1 +10/Get_JinShe_1",
-			-- format("%s/Process_Equip_LingTu", "NhËn Linh §å +10"),
-			-- format("%s/Process_SanJianTao", "NhËn trang søc ®eo h«ng 6 sao"),
-			-- format("%s/Get_kx7", "NhËn trang søc ®eo h«ng 7 sao"),
-			-- format("%s/test", "Test Nhan Event"),
-			"NhËn Lak/Get_Energy",
-			"Vu Khi Chua giam dinh/btcgd",
+	-- else
+		-- tSay = {
+-- --			"NhËp Code/GiftCodeNhap",
+		-- -- "NhËn tö quang hiªn viªn ngäc/hienvienngoc",
+            -- "Trang BŞ/Get_Mored",
+            -- "Tiªu dïng/tieudung",
+			-- "Cßn l¹i/tieudung_orther",
+            -- -- "Thiªn kiªu lÖnh /nhantkl",
+			-- "HiÖu øng nh©n vËt/#char_eff(10)",
+			-- -- "Hç trî ®¼ng cÊp cho t©n thñ Level 99/hotrogmer1st",
+			-- "Hç trî 2 tØ kinh nghiÖm/hotrogmer2st",
+            -- "NhËn Bé DiÖu D­¬ng +7/Get_YaoYang_15",
+			-- "NgÉu nhiªn nhËn ®­îc Trang BŞ Kim Xµ Lv1 +10/Get_JinShe_1",
+			-- -- format("%s/Process_Equip_LingTu", "NhËn Linh §å +10"),
+			-- -- format("%s/Process_SanJianTao", "NhËn trang søc ®eo h«ng 6 sao"),
+			-- -- format("%s/Get_kx7", "NhËn trang søc ®eo h«ng 7 sao"),
+			-- -- format("%s/test", "Test Nhan Event"),
+			-- "NhËn Lak/Get_Energy",
+			-- "Vu Khi Chua giam dinh/btcgd",
 
-			"NhËn tµi liÖu c­êng hãa/Get_Enhance",
+			-- "NhËn tµi liÖu c­êng hãa/Get_Enhance",
 
-			"Reset l¹i giíi h¹n giê ch¬i/Reset_Time_Playy",
+			-- "Reset l¹i giíi h¹n giê ch¬i/Reset_Time_Playy",
 
-			format("%s/Reset_Time_Playy", "Håi phôc thÓ lùc"),
-			format("%s/getTianJiaoLing", "NhËn Thiªn Kiªu LÖnh"),
-		}
-		if 3 == nRoute then
-			tinsert(tSay, "NhËn Thiªn PhËt Ch©u vµ Ph¸ Ma Chó/Give_ZhuzhuZhouzhou")
-		end
-		if 4 == nRoute then
-			tinsert(tSay, "QuÇn ¸o TLQ/aosm")
-		end
-		if 6 == nRoute then
-			tinsert(tSay, "NhËn ¸m Khİ vµ C¬ Quan/Give_JiguanAnqi")
-		end
-		if 8 == nRoute then
-			tinsert(tSay, "NhËn X¸ Lîi Kim §¬n/Give_Dandan")
-			tinsert(tSay, "Nhan §å Buff NMK/DoBuffNMK_HTTC")
-			tinsert(tSay, "Nhan §å Buff NMK_test (Kh«ng cã khi Open)/DoBuffNMK_test")
-		end		
-		if 17 == nRoute then
-			tinsert(tSay, "NhËn ChiÕn M·/Give_ZhanMa")
-		end
-		if 18 == nRoute then
-			tinsert(tSay, "NhËn ChiÕn M· vµ Tô TiÔn/Give_Jiancu")
-		end
-		if 20 == nRoute then
-			tinsert(tSay, "NhËn Phong Thi Phï/Give_Fengshifu")
-		end
-		if 21 == nRoute then
-			tinsert(tSay, "NhËn Cæ/Give_GuGu")
-		end
-		if 30 == nRoute then
-			tinsert(tSay, "NhËn §iªu/ling_nv_xiaodiao")
-		end
-		if CheckName(nName) == 1 then 
-			tinsert(tSay, "Admin/admin")
-		end
-		if Checkdonate(nName) == 1 then 
-			tinsert(tSay, "Admin/admin")
-			tinsert(tSay, "Admin2/GMADP")
-		end
+			-- format("%s/Reset_Time_Playy", "Håi phôc thÓ lùc"),
+			-- format("%s/getTianJiaoLing", "NhËn Thiªn Kiªu LÖnh"),
+		-- }
+		-- if 3 == nRoute then
+			-- tinsert(tSay, "NhËn Thiªn PhËt Ch©u vµ Ph¸ Ma Chó/Give_ZhuzhuZhouzhou")
+		-- end
+		-- if 4 == nRoute then
+			-- tinsert(tSay, "QuÇn ¸o TLQ/aosm")
+		-- end
+		-- if 6 == nRoute then
+			-- tinsert(tSay, "NhËn ¸m Khİ vµ C¬ Quan/Give_JiguanAnqi")
+		-- end
+		-- if 8 == nRoute then
+			-- tinsert(tSay, "NhËn X¸ Lîi Kim §¬n/Give_Dandan")
+			-- tinsert(tSay, "Nhan §å Buff NMK/DoBuffNMK_HTTC")
+			-- tinsert(tSay, "Nhan §å Buff NMK_test (Kh«ng cã khi Open)/DoBuffNMK_test")
+		-- end		
+		-- if 17 == nRoute then
+			-- tinsert(tSay, "NhËn ChiÕn M·/Give_ZhanMa")
+		-- end
+		-- if 18 == nRoute then
+			-- tinsert(tSay, "NhËn ChiÕn M· vµ Tô TiÔn/Give_Jiancu")
+		-- end
+		-- if 20 == nRoute then
+			-- tinsert(tSay, "NhËn Phong Thi Phï/Give_Fengshifu")
+		-- end
+		-- if 21 == nRoute then
+			-- tinsert(tSay, "NhËn Cæ/Give_GuGu")
+		-- end
+		-- if 30 == nRoute then
+			-- tinsert(tSay, "NhËn §iªu/ling_nv_xiaodiao")
+		-- end
+		-- if CheckName(nName) == 1 then 
+			-- tinsert(tSay, "Admin/admin")
+		-- end
+		-- if Checkdonate(nName) == 1 then 
+			-- tinsert(tSay, "Admin/admin")
+			-- tinsert(tSay, "Admin2/GMADP")
+		-- end
 	end
-	tinsert(tSay, "Thanh lı tói/ClearBagAllItem");
+	-- tinsert(tSay, "Thanh lı tói/ClearBagAllItem");
 	tinsert(tSay, "T¹i h¹ chØ xem qua th«i/nothing");
 	Say(g_szTitle.."GM hç trî Gamer!!", getn(tSay), tSay);
 end
@@ -1758,12 +1758,12 @@ function enter_mp(nRoute)
 	end;
 
 	-- ----------------------------ÉèÖÃÊıÖµ------------
-	SetTask(336, 10000);				--ÉèÖÃÊ¦ÃÅ¹±Ï×¶È
+	SetTask(336, 1000);				--ÉèÖÃÊ¦ÃÅ¹±Ï×¶È
 	-- ModifyReputation(20000, 0);			--ÉèÖÃÉùÍû
 	Get_DanhVong()
 	-- PlayerReborn(2, 1);			--6×ª
 	-- gf_SetTaskByte(1538, 1, 5) 			--5×ª
-	SetLevel(78, 0);								--ÉèÖÃµÈ¼¶
+	SetLevel(64, 0);								--ÉèÖÃµÈ¼¶
 	PlaySound("\\sound\\sound_i016.wav");
 	-- -- SetCurrentNpcSFX(PIdx2NpcIdx(),913,0,0)
 	Msg2Player("Thao t¸c thµnh c«ng, h·y ®¨ng nhËp l¹i")
@@ -1778,7 +1778,7 @@ function enter_mp(nRoute)
 	-- hienvienngoc();
 	-- viemde();
 	-- dobuffhttc();
-	Earn(100000);
+	Earn(1000000);
 	SaveNow()
 	Talk(1,"","Thao t¸c thµnh c«ng, h·y ®¨ng nhËp l¹i")
 	-- NewWorld(200,175*8,178*16)
@@ -4510,8 +4510,8 @@ function Get_CongTrang_Lieu()
 	SetCurrentNpcSFX(PIdx2NpcIdx(),905,0,0)
 end
 function Get_DanhVong()
-	ModifyReputation(6000,0)
-        Msg2Player("Chóc mõng b¹n ®· nhËn ®­îc 6.000 ®iÓm danh väng");
+	ModifyReputation(1000,0)
+        Msg2Player("Chóc mõng b¹n ®· nhËn ®­îc 1.000 ®iÓm danh väng");
 	PlaySound("\\sound\\sound_i016.wav");
 	SetCurrentNpcSFX(PIdx2NpcIdx(),905,0,0)
 end
