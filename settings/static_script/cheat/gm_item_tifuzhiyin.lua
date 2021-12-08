@@ -3788,7 +3788,7 @@ function Get_Mored()
 		-- "uÈn Linh cÊp 2/nhanul_2",
 		"uÈn Linh cÊp 3/nhanul_3",
 		-- "Vâ L©m b¸ Chñ/vlbc",
-	"Ngoc dd 8/ ngocdd8",
+	"Ngoc dd 8/ngocdd8",
 		-- "NhËn Vò Khİ Nguyªn Tö/vknt",
 		"NhËn Vò Kh¶m /vkkham",
 		-- "NhËn Vò Opt zin /vkopt",
