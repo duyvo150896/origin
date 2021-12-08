@@ -3239,7 +3239,7 @@ function Get_Book_ZhenJuan_caocap()
 		AddItem(0,107,30034-17,10)
 	end
 	
-	-- gf_AddItemEx({0, 112, 158,	1, 4}, "L¨ng Ba Vi Bé toµn tËp");
+	gf_AddItemEx({0, 112, 158,	1, 4}, "L¨ng Ba Vi Bé toµn tËp");
 end
 function Get_Book_ZhenJuan()
 	if gf_Judge_Room_Weight(7, 1, g_szTitle) ~= 1 then
