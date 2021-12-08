@@ -3610,7 +3610,7 @@ function GetJingMai_Update()
 	local nLevel = MeridianGetLevel()
 	-- for i = nLevel + 1, 1 do
 	--for i = nLevel + 1, 4 do -- max
-	-- for i = nLevel + 1, 1 do
+	 for i = nLevel + 1, 2 do
 		MeridianUpdateLevel()
 	end
 
