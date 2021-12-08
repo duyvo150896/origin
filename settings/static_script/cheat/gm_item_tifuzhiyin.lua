@@ -3092,8 +3092,8 @@ function Get_Nguyen_Lieu()
 		"NhËn linh th¹ch 3 /lt3",
 		"NhËn linh th¹ch 4 /lt4",
 		"NhËn linh th¹ch 5 /lt5",
-		-- "NhËn linh th¹ch 6 /lt6",
-		-- "NhËn lt7 /lt7",
+		"NhËn linh th¹ch 6 /lt6",
+		"NhËn lt7 /lt7",
 		"Ra khái/nothing",
 	};
 	SelectSay(szSay);
