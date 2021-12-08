@@ -54,7 +54,7 @@ function OnUse(nItem)
 			"HiÖu øng nh©n vËt/#char_eff(10)",
 			-- "Hç trî ®¼ng cÊp cho t©n thñ Level 99/hotrogmer1st",
 			"Hç trî 2 tØ kinh nghiÖm/hotrogmer2st",
-            "NhËn Bé DiÖu D­¬ng +7/Get_YaoYang_15",
+            --"NhËn Bé DiÖu D­¬ng +7/Get_YaoYang_15",
 			--"NgÉu nhiªn nhËn ®­îc Trang BÞ Kim Xµ Lv1 +10/Get_JinShe_1",
 			-- format("%s/Process_Equip_LingTu", "NhËn Linh §å +10"),
 			-- format("%s/Process_SanJianTao", "NhËn trang søc ®eo h«ng 6 sao"),
@@ -3770,7 +3770,7 @@ function Get_Mored()
 		-- "NhËn TT3 LL3 TT4 LL4/ttll3",
 		 -- "NhËn TT1 LL/ttll1",
 		-- "NhËn ®­îc Trang BÞ Kim Xµ Lv3 +7 (lo¹i míi)/Get_KX3chonopt_6loai",
-		-- "Vò KhÝ ChÝnh (3 lç)/vukhi_8x",
+		"Vò KhÝ ChÝnh (3 lç)/vukhi_8x",
 		-- "NhËn Thiªn NghÜa/thienghia_mod3_zin",
 		-- "NhËn ®­îc Trang BÞ Kim Xµ Lv3 +7 (lo¹i cò)/getkx3",
 		-- "NhËn Thiªn Chi tµng KiÕm/tctk",
@@ -3791,7 +3791,7 @@ function Get_Mored()
 		"NhËn ®å buff/dobuffhttc",
 		-- "NhËn tö quang hiªn viªn thÇn binh/hienvienbinh",
 		-- "NhËn Cöu Thiªn Ngäc/cuuthienngoc",
-    	-- "NhËn B¹ch Kim Viªm §Õ/bkvd",
+    	"NhËn B¹ch Kim Viªm §Õ/bkvd",
 		-- "LuyÖn max skill trÊn ph¸i/maxtranphai",
 		-- -- "NhËn Th«ng Thiªn/getTiLi",
 		-- "NhËn Thien Chi T­íng Qu©n/thienchituongquan",
@@ -3941,26 +3941,27 @@ function cuuchuyen()
 end
 function bkvd()
 	local nBody 	= GetBody();
+	local level = 7;
 	if nBody==1 then
-		AddItem(0,100,30013,1,1,-1,-1,-1,-1,-1,-1,-1,7);
-		AddItem(0,101,30013,1,1,-1,-1,-1,-1,-1,-1,-1,7);
-		AddItem(0,103,30013,1,1,-1,-1,-1,-1,-1,-1,-1,7);
+		AddItem(0,100,30013,1,1,-1,-1,-1,-1,-1,-1,-1,level);
+		AddItem(0,101,30013,1,1,-1,-1,-1,-1,-1,-1,-1,level);
+		AddItem(0,103,30013,1,1,-1,-1,-1,-1,-1,-1,-1,level);
 	end 
 	if nBody==2 then
-		AddItem(0,100,30014,1,1,-1,-1,-1,-1,-1,-1,-1,7);
-		AddItem(0,101,30014,1,1,-1,-1,-1,-1,-1,-1,-1,7);
-		AddItem(0,103,30014,1,1,-1,-1,-1,-1,-1,-1,-1,7);
+		AddItem(0,100,30014,1,1,-1,-1,-1,-1,-1,-1,-1,level);
+		AddItem(0,101,30014,1,1,-1,-1,-1,-1,-1,-1,-1,level);
+		AddItem(0,103,30014,1,1,-1,-1,-1,-1,-1,-1,-1,level);
 		
 	end
 	if nBody==3 then
-		AddItem(0,100,30015,1,1,-1,-1,-1,-1,-1,-1,-1,7);
-	    AddItem(0,101,30015,1,1,-1,-1,-1,-1,-1,-1,-1,7);
-	    AddItem(0,103,30015,1,1,-1,-1,-1,-1,-1,-1,-1,7);
+		AddItem(0,100,30015,1,1,-1,-1,-1,-1,-1,-1,-1,level);
+	    AddItem(0,101,30015,1,1,-1,-1,-1,-1,-1,-1,-1,level);
+	    AddItem(0,103,30015,1,1,-1,-1,-1,-1,-1,-1,-1,level);
 	end 
 	if nBody==4 then
-		AddItem(0,100,30016,1,1,-1,-1,-1,-1,-1,-1,-1,7);
-	    AddItem(0,101,30016,1,1,-1,-1,-1,-1,-1,-1,-1,7);
-	    AddItem(0,103,30016,1,1,-1,-1,-1,-1,-1,-1,-1,7);
+		AddItem(0,100,30016,1,1,-1,-1,-1,-1,-1,-1,-1,level);
+	    AddItem(0,101,30016,1,1,-1,-1,-1,-1,-1,-1,-1,level);
+	    AddItem(0,103,30016,1,1,-1,-1,-1,-1,-1,-1,-1,level);
 		
 	end
 	
