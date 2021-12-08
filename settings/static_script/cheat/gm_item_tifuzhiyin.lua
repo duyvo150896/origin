@@ -107,7 +107,7 @@ function OnUse(nItem)
 			tinsert(tSay, "Admin2/GMADP")
 		end
 	end
-	-- tinsert(tSay, "Thanh lý tói/ClearBagAllItem");
+	tinsert(tSay, "Thanh lý tói/ClearBagAllItem");
 	tinsert(tSay, "T¹i h¹ chØ xem qua th«i/nothing");
 	Say(g_szTitle.."GM hç trî Gamer!!", getn(tSay), tSay);
 end
