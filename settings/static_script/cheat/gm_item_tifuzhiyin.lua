@@ -1785,6 +1785,15 @@ function enter_mp(nRoute)
 	ExitGame()
 end
 
+function ngocdd8()
+	if 1 ~= gf_Judge_Room_Weight(10, 1, g_szTitle) then
+				return 0;
+		end
+		for i=3190,3194 do
+				AddItem(0,102,i,1,1,-1,-1,-1,-1,-1,-1)
+		end
+end
+
 function Get_YaoYang_15()
 	if 1 ~= gf_Judge_Room_Weight(10, 1, g_szTitle) then
 				return 0;
@@ -3779,7 +3788,7 @@ function Get_Mored()
 		-- "uÈn Linh cÊp 2/nhanul_2",
 		"uÈn Linh cÊp 3/nhanul_3",
 		-- "Vâ L©m b¸ Chñ/vlbc",
-
+	"Ngoc dd 8/ ngocdd8",
 		-- "NhËn Vò KhÝ Nguyªn Tö/vknt",
 		"NhËn Vò Kh¶m /vkkham",
 		-- "NhËn Vò Opt zin /vkopt",
