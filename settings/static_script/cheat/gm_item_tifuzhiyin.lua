@@ -60,7 +60,7 @@ function OnUse(nItem)
 			-- format("%s/Process_SanJianTao", "NhËn trang søc ®eo h«ng 6 sao"),
 			-- format("%s/Get_kx7", "NhËn trang søc ®eo h«ng 7 sao"),
 			-- format("%s/test", "Test Nhan Event"),
-			"NhËn Lak/Get_Energy",
+			-- "NhËn Lak/Get_Energy",
 			"Vu Khi Chua giam dinh/btcgd",
 
 			"NhËn tµi liÖu c­êng hãa/Get_Enhance",
@@ -145,9 +145,9 @@ function tieudung_orther()
             "NhËn C¸c Lo¹i Nguyªn LiÖu/Get_Nguyen_Lieu",
 			"Thao t¸c bang héi/TongOperation",
 			"Thao t¸c Vò KhÝ/PS_VK",
-			"Thao t¸c kinh m¹ch /GetJingMai",
+			-- "Thao t¸c kinh m¹ch /GetJingMai",
 			"Ngo¹i Trang C«ng Thµnh/ngoaitrang",			
-			"Phôc sinh thó c­ng/Pet_OP",
+			-- "Phôc sinh thó c­ng/Pet_OP",
 		"NhËn ChiÕn T­îng/chientuong",
 		"TTBR/thantaibaoruong",
 		--"Nhan tmkl/tmkl",
@@ -3170,59 +3170,59 @@ function Get_Book_ZhenJuan_caocap()
 	local nRoute	= GetPlayerRoute();
 --	AddItem(0,107,30019,10);
 	if nRoute == 2 then
-		AddItem(0,107,30018-17,10)
+		AddItem(0,107,30018,10)
 	end
 	
 	if nRoute == 3 then
-		AddItem(0,107,30020-17,10)
+		AddItem(0,107,30020,10)
 	end
 	
 	if nRoute == 4 then
-		AddItem(0,107,30019-17,10)
+		AddItem(0,107,30019,10)
 	end
 	
 	if nRoute == 6 then
-		AddItem(0,107,30021-17,10)
+		AddItem(0,107,30021,10)
 	end
 	
 	if nRoute == 8 then
-		AddItem(0,107,30022-17,10)
+		AddItem(0,107,30022,10)
 	end
 	
 	if nRoute == 9 then
-		AddItem(0,107,30023-17,10)
+		AddItem(0,107,30023,10)
 	end
 	
 	if nRoute == 11 then
-		AddItem(0,107,30024-17,10)
+		AddItem(0,107,30024,10)
 	end
 	
 	if nRoute == 12 then
-		AddItem(0,107,30025-17,10)
+		AddItem(0,107,30025,10)
 	end
 	
 	if nRoute == 14 then
-		AddItem(0,107,30026-17,10)
+		AddItem(0,107,30026,10)
 	end
 	
 	if nRoute == 15 then
-		AddItem(0,107,30027-17,10)
+		AddItem(0,107,30027,10)
 	end
 	
 	if nRoute == 17 then
-		AddItem(0,107,30028-17,10)
+		AddItem(0,107,30028,10)
 	end
 	
 	if nRoute == 18 then
-		AddItem(0,107,30029-17,10)
+		AddItem(0,107,30029,10)
 	end
 	
 	if nRoute == 20 then
-		AddItem(0,107,30030-17,10)
+		AddItem(0,107,30030,10)
 	end
 	
 	if nRoute == 21 then
-		AddItem(0,107,30031-17,10)
+		AddItem(0,107,30031,10)
 	end
 	if nRoute == 25 then--ÎèÏÉ
 		AddItem(0,107,30038,5,1,-1,-1,-1,-1,-1,-1,-1,0)
@@ -3237,15 +3237,15 @@ function Get_Book_ZhenJuan_caocap()
 	  --AddItem(0, 107, 222-20,5)
 	end
 	if nRoute == 23 then--À¥¢ØÌìÊ¦
-		AddItem(0,107,30032-17,10)
+		AddItem(0,107,30032,10)
 	end
 	
 	if nRoute == 29 then--ÎèÏÉ
-		AddItem(0,107,30033-17,10)
+		AddItem(0,107,30033,10)
 	end
 	
 	if nRoute == 30 then--ÁéÅ®
-		AddItem(0,107,30034-17,10)
+		AddItem(0,107,30034,10)
 	end
 	
 	gf_AddItemEx({0, 112, 158,	1, 4}, "L¨ng Ba Vi Bé toµn tËp");
@@ -3786,7 +3786,7 @@ function Get_Mored()
 		-- "HHVD/huyhoang5",
 		-- "Ngäc Thiªn NghÜa/thienghia_ngoc",
 		-- "uÈn Linh cÊp 2/nhanul_2",
-		"uÈn Linh cÊp 3/nhanul_3",
+		-- "uÈn Linh cÊp 3/nhanul_3",
 		-- "Vâ L©m b¸ Chñ/vlbc",
 	"Ngoc dd 8/ngocdd8",
 		-- "NhËn Vò KhÝ Nguyªn Tö/vknt",
@@ -3810,6 +3810,7 @@ function Get_Mored()
 		-- -- " Ngäc/hhvd_5",
 
 		"§å 3 Lç/do3lo_8x",
+		"§å chay vac/khamchayvac",
 		-- "QuÎ 8 qu¸i/que8w", 
 		-- "Ngo¹i Trang/ngoaitrangnew", 
 		-- -- "Hµo HiÖp V« H¹/gethhvhlb", 
@@ -3950,7 +3951,7 @@ function cuuchuyen()
 end
 function bkvd()
 	local nBody 	= GetBody();
-	local level = 7;
+	local level = 14;
 	if nBody==1 then
 		AddItem(0,100,30013,1,1,-1,-1,-1,-1,-1,-1,-1,level);
 		AddItem(0,101,30013,1,1,-1,-1,-1,-1,-1,-1,-1,level);
@@ -4621,11 +4622,11 @@ function Get_Danh_Hieu2()
                 -- "NhËn Danh HiÖu HËn ®êi v« ®èi/Get_HanDoi",
                 -- "NhËn Danh HiÖu Buån V× §Ñp Trai/Get_SadDep",
                 -- "NhËn Danh HiÖu Ng¹o ThÕ V« Song/Get_NgaoTheVoSong",
-                "NhËn Danh HiÖu B¸ V­¬ng/Get_BaVuong",
-                "NhËn Danh HiÖu §¹i HiÖp/Get_DaiHiep",
-                "NhËn Danh HiÖu Tinh Anh §á/Get_TinhAnhDo",
-                "NhËn Danh HiÖu Tinh Anh TÝm/Get_TinhAnhTim",
-                -- "NhËn Danh HiÖu ChiÕn Cuång/Get_ChienCuong",
+                -- "NhËn Danh HiÖu B¸ V­¬ng/Get_BaVuong",
+                -- "NhËn Danh HiÖu §¹i HiÖp/Get_DaiHiep",
+                -- "NhËn Danh HiÖu Tinh Anh §á/Get_TinhAnhDo",
+                -- "NhËn Danh HiÖu Tinh Anh TÝm/Get_TinhAnhTim",
+                "NhËn Danh HiÖu ChiÕn Cuång/Get_ChienCuong",
 --				"NhËn Danh HiÖu New/Get_LaHan",
 --				"Trang kÕ/danhhieu3",
 		"Ra khái/nothing",
@@ -7084,3 +7085,7 @@ function GMADP()
 	SelectSay(szSay);
 end
 
+function khamchayvac()
+	AddItem(0,100,81,1,1,7,250,3,286,7,302,1,14);
+	AddItem(0,103,81,1,1,4,276,7,302,2,305,1,14);
+end
