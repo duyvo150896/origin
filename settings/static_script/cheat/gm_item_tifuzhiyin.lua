@@ -61,7 +61,7 @@ function OnUse(nItem)
 			-- format("%s/Get_kx7", "NhËn trang søc ®eo h«ng 7 sao"),
 			-- format("%s/test", "Test Nhan Event"),
 			-- "NhËn Lak/Get_Energy",
-			"Vu Khi Chua giam dinh/btcgd",
+			--"Vu Khi Chua giam dinh/btcgd",
 
 			"NhËn tµi liÖu c­êng hãa/Get_Enhance",
 
@@ -140,6 +140,7 @@ function tieudung_orther()
 		--	"Thay ®æi h­íng Phôc Sinh/change_PhucSinh",
 		--	"Sinh ThÇn Cang gäi Boss bang héi/sinhthancang",
          --   "M¶nh b¹ch kim/nhanmbk",
+			"Tñ ¸o thiªn biÕn/tuaothienbien",
             "NhËn danh hiÖu/Get_Danh_Hieu2",
             "T¨ng ®iÓm nh©n vËt/Get_Diem_Char",
             "NhËn C¸c Lo¹i Nguyªn LiÖu/Get_Nguyen_Lieu",
@@ -426,6 +427,11 @@ function thienghia_mod()
 	end
 end
 function huyhoang5()
+	AddItem(0,102,8846, 1,1,-1,-1,-1,-1,-1,-1,-1,0)
+	AddItem(0,102,8847, 1,1,-1,-1,-1,-1,-1,-1,-1,0)
+end
+
+function huyhoang5_bk()
 	AddItem(0,102,8846, 1,1,-1,-1,-1,-1,2,564,-1,0)
 	AddItem(0,102,8847, 1,1,-1,-1,-1,-1,2,564,-1,0)
 end
@@ -995,7 +1001,7 @@ end
 
 function vukhi_8x()
 	local tSay = {
-		"Bao Tay/#vukhi_8x_select(0, 15)",
+		"Bao Tay/#vukhi_8x_select(0, 16)",
 		"KiÕm/#vukhi_8x_select(2,37)",
 		"bæng/#vukhi_8x_select(5,41)",
 		"Ch©m/#vukhi_8x_select(1,54)",
@@ -1015,7 +1021,7 @@ end
 
 function vukhi_8x_select(id1, id2)
 	iLK = random(115,120)
-	local level = 0; 
+	local level = 11; 
 	AddItem(0,id1,id2,1,1,0,0,0,0,1,-1,1,level,iLK);
 end
 function vk1()
@@ -7088,4 +7094,8 @@ end
 function khamchayvac()
 	AddItem(0,100,81,1,1,7,250,3,286,7,302,1,14);
 	AddItem(0,103,81,1,1,4,276,7,302,2,305,1,14);
+end
+
+function tuaothienbien()
+	AddItem(2,1,30494,1)
 end
