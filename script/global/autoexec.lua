@@ -997,6 +997,8 @@ function ZgcNpcCreate()
 	{"B¶o r­¬ng Tµi nguyªn","B¶o r­¬ng Tµi nguyªn",308,1421,3058,"\\script\\gongcheng\\npc\\conf_res_protect.lua"},
 	--»áÊÔ
 	{"Vâ §ang  phã ch­ëng m«n","Long Quang Ch©n Nh©n",500,1633,3185,"\\script\\online_activites\\reborn\\effect\\npc\\npc_add_effect.lua"},
+	{"Vâ §ang  phã ch­ëng m«n","Long Quang Ch©n Nh©n",350,177*8,183*16,"\\script\\online_activites\\reborn\\effect\\npc\\npc_add_effect.lua"},
+	{"Vâ §ang  phã ch­ëng m«n","Long Quang Ch©n Nh©n",219,182*8,193*16,"\\script\\online_activites\\reborn\\effect\\npc\\npc_add_effect.lua"},
 	{"MËt th¸m §¹i Tèng T©y Vùc","MËt th¸m §¹i Tèng T©y Vùc",500,1759,3142,"\\script\\missions\\northwest_mission\\npc\\npc_log_in.lua"},
 	}
 
