@@ -119,8 +119,8 @@ function tieudung()
 			"NhËn 4000 vµng/Get_Money",
  		-- "NhËn Ên chuyÓn sinh/Get_An",
 		"Ma Dao thach 1/madao1",
-		-- "Gi¸m ®Þnh phï 7/gdp7",
-		-- "ngò Th¸i/nguthai",
+		 "Gi¸m ®Þnh phï 7/gdp7",
+		 "ngò Th¸i/nguthai",
 		"NhËn Cöu ChuyÓn Håi Hån §an/cuuchuyen",
 		"NhËn M¸u /receiveTiLi",
 		"NhËn HKDNP/hkdnp",
@@ -2151,8 +2151,8 @@ end
 
 function getkx3()
 	local tSay = {
-		"¢m ChÕ Max Ping 5 Opt/Get_JinShe",
-		-- "Option ngÉu Nhiªn/Get_JinShe_2",
+		--"¢m ChÕ Max Ping 5 Opt/Get_JinShe",
+		 "Option ngÉu Nhiªn/Get_JinShe_2",
 		"T¹i h¹ chØ xem qua th«i/nothing",
 	}
 	Say(g_szTitle.."------------------", getn(tSay), tSay);
@@ -2170,42 +2170,42 @@ FeedItem(xIndex,1000000)
 end
 
 function Get_JinShe_2()
-
-local ret1, xIndex = AddItem(0,152,4,1,1,-1,-1,-1,-1,-1,-1,-1,0);
+local level = 11;
+local ret1, xIndex = AddItem(0,152,4,1,1,-1,-1,-1,-1,-1,-1,-1,level);
 FeedItem(xIndex,1000000)
-local ret1, xIndex = AddItem(0,153,4,1,1,-1,-1,-1,-1,-1,-1,-1,0);
+local ret1, xIndex = AddItem(0,153,4,1,1,-1,-1,-1,-1,-1,-1,-1,level);
 FeedItem(xIndex,1000000)
-local ret1, xIndex = AddItem(0,154,4,1,1,-1,-1,-1,-1,-1,-1,-1,0);
+local ret1, xIndex = AddItem(0,154,4,1,1,-1,-1,-1,-1,-1,-1,-1,level);
 FeedItem(xIndex,1000000)
-local ret1, xIndex = AddItem(0,152,5,1,1,-1,-1,-1,-1,-1,-1,-1,0);
+local ret1, xIndex = AddItem(0,152,5,1,1,-1,-1,-1,-1,-1,-1,-1,level);
 FeedItem(xIndex,1000000)
-local ret1, xIndex = AddItem(0,153,5,1,1,-1,-1,-1,-1,-1,-1,-1,0);
+local ret1, xIndex = AddItem(0,153,5,1,1,-1,-1,-1,-1,-1,-1,-1,level);
 FeedItem(xIndex,1000000)
-local ret1, xIndex = AddItem(0,154,5,1,1,-1,-1,-1,-1,-1,-1,-1,0);
+local ret1, xIndex = AddItem(0,154,5,1,1,-1,-1,-1,-1,-1,-1,-1,level);
 FeedItem(xIndex,1000000)
-local ret1, xIndex = AddItem(0,152,6,1,1,-1,-1,-1,-1,-1,-1,-1,0);
+local ret1, xIndex = AddItem(0,152,6,1,1,-1,-1,-1,-1,-1,-1,-1,level);
 FeedItem(xIndex,1000000)
-local ret1, xIndex = AddItem(0,153,6,1,1,-1,-1,-1,-1,-1,-1,-1,0);
+local ret1, xIndex = AddItem(0,153,6,1,1,-1,-1,-1,-1,-1,-1,-1,level);
 FeedItem(xIndex,1000000)
-local ret1, xIndex = AddItem(0,154,6,1,1,-1,-1,-1,-1,-1,-1,-1,0);
+local ret1, xIndex = AddItem(0,154,6,1,1,-1,-1,-1,-1,-1,-1,-1,level);
 FeedItem(xIndex,1000000)
-local ret1, xIndex = AddItem(0,152,7,1,1,-1,-1,-1,-1,-1,-1,-1,0);
+local ret1, xIndex = AddItem(0,152,7,1,1,-1,-1,-1,-1,-1,-1,-1,level);
 FeedItem(xIndex,1000000)
-local ret1, xIndex = AddItem(0,153,7,1,1,-1,-1,-1,-1,-1,-1,-1,0);
+local ret1, xIndex = AddItem(0,153,7,1,1,-1,-1,-1,-1,-1,-1,-1,level);
 FeedItem(xIndex,1000000)
-local ret1, xIndex = AddItem(0,154,7,1,1,-1,-1,-1,-1,-1,-1,-1,0);
+local ret1, xIndex = AddItem(0,154,7,1,1,-1,-1,-1,-1,-1,-1,-1,level);
 FeedItem(xIndex,1000000)
-local ret1, xIndex = AddItem(0,152,8,1,1,-1,-1,-1,-1,-1,-1,-1,0);
+local ret1, xIndex = AddItem(0,152,8,1,1,-1,-1,-1,-1,-1,-1,-1,level);
 FeedItem(xIndex,1000000)
-local ret1, xIndex = AddItem(0,153,8,1,1,-1,-1,-1,-1,-1,-1,-1,0);
+local ret1, xIndex = AddItem(0,153,8,1,1,-1,-1,-1,-1,-1,-1,-1,level);
 FeedItem(xIndex,1000000)
-local ret1, xIndex = AddItem(0,154,8,1,1,-1,-1,-1,-1,-1,-1,-1,0);
+local ret1, xIndex = AddItem(0,154,8,1,1,-1,-1,-1,-1,-1,-1,-1,level);
 FeedItem(xIndex,1000000)
-local ret1, xIndex = AddItem(0,152,9,1,1,-1,-1,-1,-1,-1,-1,-1,0);
+local ret1, xIndex = AddItem(0,152,9,1,1,-1,-1,-1,-1,-1,-1,-1,level);
 FeedItem(xIndex,1000000)
-local ret1, xIndex = AddItem(0,153,9,1,1,-1,-1,-1,-1,-1,-1,-1,0);
+local ret1, xIndex = AddItem(0,153,9,1,1,-1,-1,-1,-1,-1,-1,-1,level);
 FeedItem(xIndex,1000000)
-local ret1, xIndex = AddItem(0,154,9,1,1,-1,-1,-1,-1,-1,-1,-1,0);
+local ret1, xIndex = AddItem(0,154,9,1,1,-1,-1,-1,-1,-1,-1,-1,level);
 FeedItem(xIndex,1000000)
 end
 
@@ -3170,59 +3170,59 @@ function Get_Book_ZhenJuan_caocap()
 	local nRoute	= GetPlayerRoute();
 --	AddItem(0,107,30019,10);
 	if nRoute == 2 then
-		AddItem(0,107,30018,10)
+		AddItem(0,107,30018-17,10)
 	end
 	
 	if nRoute == 3 then
-		AddItem(0,107,30020,10)
+		AddItem(0,107,30020-17,10)
 	end
 	
 	if nRoute == 4 then
-		AddItem(0,107,30019,10)
+		AddItem(0,107,30019-17,10)
 	end
 	
 	if nRoute == 6 then
-		AddItem(0,107,30021,10)
+		AddItem(0,107,30021-17,10)
 	end
 	
 	if nRoute == 8 then
-		AddItem(0,107,30022,10)
+		AddItem(0,107,30022-17,10)
 	end
 	
 	if nRoute == 9 then
-		AddItem(0,107,30023,10)
+		AddItem(0,107,30023-17,10)
 	end
 	
 	if nRoute == 11 then
-		AddItem(0,107,30024,10)
+		AddItem(0,107,30024-17,10)
 	end
 	
 	if nRoute == 12 then
-		AddItem(0,107,30025,10)
+		AddItem(0,107,30025-17,10)
 	end
 	
 	if nRoute == 14 then
-		AddItem(0,107,30026,10)
+		AddItem(0,107,30026-17,10)
 	end
 	
 	if nRoute == 15 then
-		AddItem(0,107,30027,10)
+		AddItem(0,107,30027-17,10)
 	end
 	
 	if nRoute == 17 then
-		AddItem(0,107,30028,10)
+		AddItem(0,107,30028-17,10)
 	end
 	
 	if nRoute == 18 then
-		AddItem(0,107,30029,10)
+		AddItem(0,107,30029-17,10)
 	end
 	
 	if nRoute == 20 then
-		AddItem(0,107,30030,10)
+		AddItem(0,107,30030-17,10)
 	end
 	
 	if nRoute == 21 then
-		AddItem(0,107,30031,10)
+		AddItem(0,107,30031-17,10)
 	end
 	if nRoute == 25 then--ÎèÏÉ
 		AddItem(0,107,30038,5,1,-1,-1,-1,-1,-1,-1,-1,0)
@@ -3237,15 +3237,15 @@ function Get_Book_ZhenJuan_caocap()
 	  --AddItem(0, 107, 222-20,5)
 	end
 	if nRoute == 23 then--À¥¢ØÌìÊ¦
-		AddItem(0,107,30032,10)
+		AddItem(0,107,30032-17,10)
 	end
 	
 	if nRoute == 29 then--ÎèÏÉ
-		AddItem(0,107,30033,10)
+		AddItem(0,107,30033-17,10)
 	end
 	
 	if nRoute == 30 then--ÁéÅ®
-		AddItem(0,107,30034,10)
+		AddItem(0,107,30034-17,10)
 	end
 	
 	gf_AddItemEx({0, 112, 158,	1, 4}, "L¨ng Ba Vi Bé toµn tËp");
@@ -3781,16 +3781,16 @@ function Get_Mored()
 		-- "NhËn ®­îc Trang BÞ Kim Xµ Lv3 +7 (lo¹i míi)/Get_KX3chonopt_6loai",
 		"Vò KhÝ ChÝnh (3 lç)/vukhi_8x",
 		-- "NhËn Thiªn NghÜa/thienghia_mod3_zin",
-		-- "NhËn ®­îc Trang BÞ Kim Xµ Lv3 +7 (lo¹i cò)/getkx3",
+		 "NhËn ®­îc Trang BÞ Kim Xµ Lv3 +7 /getkx3",
 		-- "NhËn Thiªn Chi tµng KiÕm/tctk",
-		-- "HHVD/huyhoang5",
+		 "HHVD/huyhoang5",
 		-- "Ngäc Thiªn NghÜa/thienghia_ngoc",
 		-- "uÈn Linh cÊp 2/nhanul_2",
 		-- "uÈn Linh cÊp 3/nhanul_3",
 		-- "Vâ L©m b¸ Chñ/vlbc",
 	"Ngoc dd 8/ngocdd8",
 		-- "NhËn Vò KhÝ Nguyªn Tö/vknt",
-		"NhËn Vò Kh¶m /vkkham",
+		--"NhËn Vò Kh¶m /vkkham",
 		-- "NhËn Vò Opt zin /vkopt",
 		-- "NhËn §å Long §»ng Phông Vò/longdang",
 
@@ -3810,7 +3810,7 @@ function Get_Mored()
 		-- -- " Ngäc/hhvd_5",
 
 		"§å 3 Lç/do3lo_8x",
-		"§å chay vac/khamchayvac",
+		--"§å chay vac/khamchayvac",
 		-- "QuÎ 8 qu¸i/que8w", 
 		-- "Ngo¹i Trang/ngoaitrangnew", 
 		-- -- "Hµo HiÖp V« H¹/gethhvhlb", 
@@ -3951,7 +3951,7 @@ function cuuchuyen()
 end
 function bkvd()
 	local nBody 	= GetBody();
-	local level = 14;
+	local level = 11;
 	if nBody==1 then
 		AddItem(0,100,30013,1,1,-1,-1,-1,-1,-1,-1,-1,level);
 		AddItem(0,101,30013,1,1,-1,-1,-1,-1,-1,-1,-1,level);
