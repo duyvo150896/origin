@@ -53,7 +53,7 @@ function OnUse(nItem)
             -- "Thiªn kiªu lÖnh /nhantkl",
 			"HiÖu øng nh©n vËt/#char_eff(10)",
 			-- "Hç trî ®¼ng cÊp cho t©n thñ Level 99/hotrogmer1st",
-			"Hç trî 2 tØ kinh nghiÖm/hotrogmer2st",
+			--"Hç trî 2 tØ kinh nghiÖm/hotrogmer2st",
             --"NhËn Bé DiÖu D­¬ng +7/Get_YaoYang_15",
 			--"NgÉu nhiªn nhËn ®­îc Trang BŞ Kim Xµ Lv1 +10/Get_JinShe_1",
 			-- format("%s/Process_Equip_LingTu", "NhËn Linh §å +10"),
