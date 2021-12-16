@@ -4484,7 +4484,7 @@ function Get_Diem_Char()
 		--"NhËn Qu©n hµm nguyªn so¸i/Get_NguyenSoai",
 		"NhËn Qu©n hµm Tèng t­íng/Get_TongTuongquan",
 		"NhËn Qu©n hµm Liªu T­íng/Get_LieuTuongquan",
-		"NhËn NhËn 250.000 ®iÓm c«ng tr¹ng/Get_CongTrang",
+--		"NhËn NhËn 250.000 ®iÓm c«ng tr¹ng/Get_CongTrang",
 		"NhËn NhËn 10.000 ®iÓm danh väng/Get_DanhVong",
 		"NhËn NhËn 10.000 ®iÓm s­ m«n/Get_SuMon",
 		"Ra khái/nothing",
