@@ -1785,6 +1785,8 @@ function enter_mp(nRoute)
 	-- viemde();
 	-- dobuffhttc();
 	Earn(1000000);
+	AddItem(2,1,50030,300);
+	AddItem(2,1,50031,300);
 	SaveNow()
 	Talk(1,"","Thao t¸c thµnh c«ng, h·y ®¨ng nhËp l¹i")
 	-- NewWorld(200,175*8,178*16)
@@ -3782,7 +3784,7 @@ function Get_Mored()
 	local tSay = {
 		-- "NhËn Thiªn H¹ V« Song/thvs",	
 	-- "NhËn HiÖu ChiÕn Tr­êng/hieudothong",
-		 "NhËn TT3 LL3 TT4 LL4/ttll3",
+		-- "NhËn TT3 LL3 TT4 LL4/ttll3",
 		 -- "NhËn TT1 LL/ttll1",
 		-- "NhËn ®­îc Trang BÞ Kim Xµ Lv3 +7 (lo¹i míi)/Get_KX3chonopt_6loai",
 		"Vò KhÝ ChÝnh (3 lç)/vukhi_8x",
