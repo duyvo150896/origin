@@ -3782,7 +3782,7 @@ function Get_Mored()
 	local tSay = {
 		-- "NhËn Thiªn H¹ V« Song/thvs",	
 	-- "NhËn HiÖu ChiÕn Tr­êng/hieudothong",
-		-- "NhËn TT3 LL3 TT4 LL4/ttll3",
+		 "NhËn TT3 LL3 TT4 LL4/ttll3",
 		 -- "NhËn TT1 LL/ttll1",
 		-- "NhËn ®­îc Trang BŞ Kim Xµ Lv3 +7 (lo¹i míi)/Get_KX3chonopt_6loai",
 		"Vò Khİ Chİnh (3 lç)/vukhi_8x",
