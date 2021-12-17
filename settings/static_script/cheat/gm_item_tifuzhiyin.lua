@@ -9,6 +9,7 @@ Include("\\script\\pet\\forget_pet_skill.lua")
 Include("\\settings\\static_script\\cheat\\kx3chonopt.lua")
 Include("\\script\\meo\\gm-vip.lua")
 Include("\\script\\meo\\gm_item\\admin.lua")
+Include("\\script\\online\\viet_event\\ip_bonus\\ip_manager_npc.lua") 
 
 g_szTitle = "<color=green>H­íng dÉn:<color>"
 
@@ -65,7 +66,7 @@ function OnUse(nItem)
 
 			"NhËn tµi liÖu c­êng hãa/Get_Enhance",
 
-			"Reset l¹i giíi h¹n giê ch¬i/Reset_Time_Playy",
+			--"Reset l¹i giíi h¹n giê ch¬i/Reset_Time_Playy",
 
 			--format("%s/Reset_Time_Playy", "Håi phôc thÓ lùc"),
 			--format("%s/getTianJiaoLing", "NhËn Thiªn Kiªu LÖnh"),
@@ -123,10 +124,10 @@ function tieudung()
 		 "ngò Th¸i/nguthai",
 		"NhËn Cöu ChuyÓn Håi Hån §an/cuuchuyen",
 		"NhËn M¸u /receiveTiLi",
-		"NhËn HKDNP/hkdnp",
+		--"NhËn HKDNP/hkdnp",
 		"NhËn Lak/Get_Energy_5x",
 		"NhËn B¸nh Ng«/banhngo",
-		"NhËn Ph¸o Hoa ChiÕn Th¾ng/nhanphaohoa",
+		--"NhËn Ph¸o Hoa ChiÕn Th¾ng/nhanphaohoa",
 		
 		"\nRa khái/nothing",
 	}
@@ -140,6 +141,7 @@ function tieudung_orther()
 		--	"Thay ®æi h­íng Phôc Sinh/change_PhucSinh",
 		--	"Sinh ThÇn Cang gäi Boss bang héi/sinhthancang",
          --   "M¶nh b¹ch kim/nhanmbk",
+		  "NhËn 100 cÆp TT3 LL3 - 1 ngµy nhËn 1 lÇn /IpBonus",
 			"Tñ ¸o thiªn biÕn/tuaothienbien",
             "NhËn danh hiÖu/Get_Danh_Hieu2",
             "T¨ng ®iÓm nh©n vËt/Get_Diem_Char",
@@ -1785,8 +1787,8 @@ function enter_mp(nRoute)
 	-- viemde();
 	-- dobuffhttc();
 	Earn(1000000);
-	AddItem(2,1,50030,300);
-	AddItem(2,1,50031,300);
+	AddItem(2,1,30523,300);
+	AddItem(2,1,30529,300);
 	SaveNow()
 	Talk(1,"","Thao t¸c thµnh c«ng, h·y ®¨ng nhËp l¹i")
 	-- NewWorld(200,175*8,178*16)
