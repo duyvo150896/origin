@@ -284,9 +284,9 @@ function FeatureMenu()
 		tinsert ( tbSayDialog, "NhËn Ph¸o Hoa mõng n¨m míi/Confirm_VET_201106_Give_Fire" )	--VET_201106_Give_Fire
 	end
 	tinsert(tbSayDialog,"Ta muèn ®æi 1 §¹i Ng©n PhiÕu lÊy 100 vËt phÈm Xu/exchange_xu")	
-	if GetLevel() < 88 then
-		tinsert(tbSayDialog,"NhËn th­ëng tİch lòy online/IpBonus")	
-	end
+	-- if GetLevel() < 88 then
+		-- tinsert(tbSayDialog,"NhËn th­ëng tİch lòy online/IpBonus")	
+	-- end
 	tinsert(tbSayDialog,"B¹n §ång Hµnh/pet_init")
 --	tinsert(tbSayDialog,"Ta muèn mua mÆt n¹ S¸t Thñ §­êng (60 vµng)/buy_mask")	
 --	tinsert(tbSayDialog,"Ta muèn nép Cñi Kh«/give_wood_201012")	
