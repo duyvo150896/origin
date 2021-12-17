@@ -259,9 +259,9 @@ end
 function IpBonus()
 	local tSay = {}
 	tinsert(tSay, "NhËn hiÖu qu¶ hç trî h»ng ngµy/buff_award")
-	tinsert(tSay, "NhËn th­ëng mçi 1 giê trªn m¹ng/online_award")
-	tinsert(tSay, "Xem thêi gian tİch lòy/show_time")
-	tinsert(tSay, "T×m hiÓu ho¹t ®éng/get_help")
+	-- tinsert(tSay, "NhËn th­ëng mçi 1 giê trªn m¹ng/online_award")
+	-- tinsert(tSay, "Xem thêi gian tİch lòy/show_time")
+	-- tinsert(tSay, "T×m hiÓu ho¹t ®éng/get_help")
 	tinsert(tSay, "Ta chØ ghĞ qua/nothing")	
 	Say(szNpcName.."Thêi gian trªn m¹ng cña c¸c h¹ sÏ ®­îc tİch lòy ®Ó ®æi nh÷ng phÇn th­ëng hÊp dÉn. C¸c h¹ cÇn ta gióp ®ì viÖc g×?",getn(tSay),tSay)
 end
@@ -290,8 +290,8 @@ function buff_award()
 	Say("Trong h«m nay c¸c h¹ nhËn ®­îc hiÖu qu¶ "..tBuff[nRandAttr][1],0)
 	Msg2Player("B¹n nhËn ®­îc hiÖu qu¶ "..tBuff[nRandAttr][1]);
 
-	AddItem(2,1,50030,100);
-	AddItem(2,1,50031,100);
+	AddItem(2,1,30523,100);
+	AddItem(2,1,30529,100);
 	
 	SetTask(TASK_GET_FUZHU_TYPE,nRandAttr);
 	SetTask(TASK_GET_FUZHU_DATE, tonumber(date("%y%m%d")));
