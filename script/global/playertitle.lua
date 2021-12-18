@@ -1610,7 +1610,7 @@ function _65_02_(type, stateID)
 end
 
 function _65_03_(type, stateID)
-	PT_AddAllWhenEquip_duyvo_2(type, stateID, 10, 15,7000);
+	PT_AddAllWhenEquip_duyvo_2(type, stateID, 10, 15,17000);
 end
 
 --function _65_04_(type, stateID)
