@@ -2168,6 +2168,7 @@ function PT_AddAllWhenEquip_duyvo_2(type, stateID, number1, number2, number3)
 		CastState("state_life_max_point_add", number3, -1, 1, stateID+ 2);
 		CastState("state_m_attack_percent_add", 15, -1, 1, stateID+ 3);
 		CastState("state_p_attack_percent_add", 15, -1, 1, stateID+ 4);
+		CastState("state_dec_equip_need", 30, -1, 1, stateID+ 5);
 		-- Msg2Player(format("%s%d%%s%d%s%s%d","HiÖu qu¶ nhËn ®­îc: T¨ng tèc ®é thi triÓn", number1, ",T¨ng Sinh lùc", number2, " ®iÓm", "T¨ng Sinh lùc", number3));
 	end
 end
