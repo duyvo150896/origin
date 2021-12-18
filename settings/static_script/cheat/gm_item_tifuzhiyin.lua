@@ -1686,7 +1686,7 @@ function enter_mp(nRoute)
 		nBegin = 75
 		nEnd = 88;
 		-- AddItem(0,102,131,2,1,-1,-1,-1,-1,-1,-1,1,0);
-		-- AddItem(0,2,8996,1,1,-1,-1,-1,-1,-1,-1,1,0);
+		AddItem(0,2,8996,1,1,-1,-1,-1,-1,-1,-1,1,0);
 	elseif nRoute == 9 then					--∂Î·“À◊º“
 		LearnSkill(10);
 		LearnSkill(102);
