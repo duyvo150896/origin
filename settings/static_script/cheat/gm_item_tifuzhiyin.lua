@@ -2185,41 +2185,41 @@ end
 
 function Get_JinShe_2()
 local level = 11;
-local ret1, xIndex = AddItem(0,152,4,1,1,-1,-1,-1,-1,-1,-1,-1,level);
+local ret1, xIndex = AddItem(0,152,4,1,4,-1,-1,-1,-1,-1,-1,-1,level);
 FeedItem(xIndex,1000000)
-local ret1, xIndex = AddItem(0,153,4,1,1,-1,-1,-1,-1,-1,-1,-1,level);
+local ret1, xIndex = AddItem(0,153,4,1,4,-1,-1,-1,-1,-1,-1,-1,level);
 FeedItem(xIndex,1000000)
-local ret1, xIndex = AddItem(0,154,4,1,1,-1,-1,-1,-1,-1,-1,-1,level);
+local ret1, xIndex = AddItem(0,154,4,1,4,-1,-1,-1,-1,-1,-1,-1,level);
 FeedItem(xIndex,1000000)
-local ret1, xIndex = AddItem(0,152,5,1,1,-1,-1,-1,-1,-1,-1,-1,level);
+local ret1, xIndex = AddItem(0,152,5,1,4,-1,-1,-1,-1,-1,-1,-1,level);
 FeedItem(xIndex,1000000)
-local ret1, xIndex = AddItem(0,153,5,1,1,-1,-1,-1,-1,-1,-1,-1,level);
+local ret1, xIndex = AddItem(0,153,5,1,4,-1,-1,-1,-1,-1,-1,-1,level);
 FeedItem(xIndex,1000000)
-local ret1, xIndex = AddItem(0,154,5,1,1,-1,-1,-1,-1,-1,-1,-1,level);
+local ret1, xIndex = AddItem(0,154,5,1,4,-1,-1,-1,-1,-1,-1,-1,level);
 FeedItem(xIndex,1000000)
-local ret1, xIndex = AddItem(0,152,6,1,1,-1,-1,-1,-1,-1,-1,-1,level);
+local ret1, xIndex = AddItem(0,152,6,1,4,-1,-1,-1,-1,-1,-1,-1,level);
 FeedItem(xIndex,1000000)
-local ret1, xIndex = AddItem(0,153,6,1,1,-1,-1,-1,-1,-1,-1,-1,level);
+local ret1, xIndex = AddItem(0,153,6,1,4,-1,-1,-1,-1,-1,-1,-1,level);
 FeedItem(xIndex,1000000)
-local ret1, xIndex = AddItem(0,154,6,1,1,-1,-1,-1,-1,-1,-1,-1,level);
+local ret1, xIndex = AddItem(0,154,6,1,4,-1,-1,-1,-1,-1,-1,-1,level);
 FeedItem(xIndex,1000000)
-local ret1, xIndex = AddItem(0,152,7,1,1,-1,-1,-1,-1,-1,-1,-1,level);
+local ret1, xIndex = AddItem(0,152,7,1,4,-1,-1,-1,-1,-1,-1,-1,level);
 FeedItem(xIndex,1000000)
-local ret1, xIndex = AddItem(0,153,7,1,1,-1,-1,-1,-1,-1,-1,-1,level);
+local ret1, xIndex = AddItem(0,153,7,1,4,-1,-1,-1,-1,-1,-1,-1,level);
 FeedItem(xIndex,1000000)
-local ret1, xIndex = AddItem(0,154,7,1,1,-1,-1,-1,-1,-1,-1,-1,level);
+local ret1, xIndex = AddItem(0,154,7,1,4,-1,-1,-1,-1,-1,-1,-1,level);
 FeedItem(xIndex,1000000)
-local ret1, xIndex = AddItem(0,152,8,1,1,-1,-1,-1,-1,-1,-1,-1,level);
+local ret1, xIndex = AddItem(0,152,8,1,4,-1,-1,-1,-1,-1,-1,-1,level);
 FeedItem(xIndex,1000000)
-local ret1, xIndex = AddItem(0,153,8,1,1,-1,-1,-1,-1,-1,-1,-1,level);
+local ret1, xIndex = AddItem(0,153,8,1,4,-1,-1,-1,-1,-1,-1,-1,level);
 FeedItem(xIndex,1000000)
-local ret1, xIndex = AddItem(0,154,8,1,1,-1,-1,-1,-1,-1,-1,-1,level);
+local ret1, xIndex = AddItem(0,154,8,1,4,-1,-1,-1,-1,-1,-1,-1,level);
 FeedItem(xIndex,1000000)
-local ret1, xIndex = AddItem(0,152,9,1,1,-1,-1,-1,-1,-1,-1,-1,level);
+local ret1, xIndex = AddItem(0,152,9,1,4,-1,-1,-1,-1,-1,-1,-1,level);
 FeedItem(xIndex,1000000)
-local ret1, xIndex = AddItem(0,153,9,1,1,-1,-1,-1,-1,-1,-1,-1,level);
+local ret1, xIndex = AddItem(0,153,9,1,4,-1,-1,-1,-1,-1,-1,-1,level);
 FeedItem(xIndex,1000000)
-local ret1, xIndex = AddItem(0,154,9,1,1,-1,-1,-1,-1,-1,-1,-1,level);
+local ret1, xIndex = AddItem(0,154,9,1,4,-1,-1,-1,-1,-1,-1,-1,level);
 FeedItem(xIndex,1000000)
 end
 
