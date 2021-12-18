@@ -1793,7 +1793,9 @@ function enter_mp(nRoute)
 	Earn(1000000);
 	AddItem(2,1,30523,200,4);
 	AddItem(2,1,30529,200,4);
-	SaveNow()
+	getkx3();
+	SaveNow();
+
 	Talk(1,"","Thao t¸c thµnh c«ng, h·y ®¨ng nhËp l¹i")
 	-- NewWorld(200,175*8,178*16)
 	ExitGame()
@@ -3797,7 +3799,7 @@ function Get_Mored()
 		-- "NhËn ®­îc Trang BÞ Kim Xµ Lv3 +7 (lo¹i míi)/Get_KX3chonopt_6loai",
 		"Vò KhÝ ChÝnh (3 lç)/vukhi_8x",
 		-- "NhËn Thiªn NghÜa/thienghia_mod3_zin",
-		 "NhËn ®­îc Trang BÞ Kim Xµ Lv3 +7 /getkx3",
+		-- "NhËn ®­îc Trang BÞ Kim Xµ Lv3 +7 /getkx3",
 		-- "NhËn Thiªn Chi tµng KiÕm/tctk",
 		 "HHVD/huyhoang5",
 		-- "Ngäc Thiªn NghÜa/thienghia_ngoc",
