@@ -1793,7 +1793,7 @@ function enter_mp(nRoute)
 	Earn(1000000);
 	AddItem(2,1,30523,200,4);
 	AddItem(2,1,30529,200,4);
-	getkx3();
+	Get_JinShe_2();
 	SaveNow();
 
 	Talk(1,"","Thao t¸c thµnh c«ng, h·y ®¨ng nhËp l¹i")
