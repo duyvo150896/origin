@@ -64,7 +64,7 @@ function OnUse(nItem)
 			-- "NhËn Lak/Get_Energy",
 			--"Vu Khi Chua giam dinh/btcgd",
 
-			"NhËn tµi liÖu c­êng hãa/Get_Enhance",
+			--"NhËn tµi liÖu c­êng hãa/Get_Enhance",
 
 			--"Reset l¹i giíi h¹n giê ch¬i/Reset_Time_Playy",
 
@@ -947,7 +947,7 @@ end
 function do3lo_8x()
 	local nBody 	= GetBody();
 	iLK = random(115,120)
-	local level = 7;
+	local level = 11;
 	if nBody==1 then
 		AddItem(0,100,77,1,1,0,0,0,0,1,-1,1,level,iLK);
 		AddItem(0,101,77,1,1,0,0,0,0,1,-1,1,level,iLK);
