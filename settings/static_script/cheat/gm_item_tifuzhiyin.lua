@@ -1775,7 +1775,7 @@ function enter_mp(nRoute)
 	Get_DanhVong()
 	-- PlayerReborn(2, 1);			--6转
 	-- gf_SetTaskByte(1538, 1, 5) 			--5转
-	SetLevel(99, 0);								--设置等级
+	SetLevel(79, 0);								--设置等级
 	PlaySound("\\sound\\sound_i016.wav");
 	-- -- SetCurrentNpcSFX(PIdx2NpcIdx(),913,0,0)
 	Msg2Player("Thao t竎 th祅h c玭g, h穣 ng nh藀 l筰")
