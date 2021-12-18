@@ -5113,6 +5113,7 @@ function DoBuffNMK_HTTC()
 		AddItem(0,109,517,1,1,3,292);
 		AddItem(0,108,517,1,1,3,292);
 	end
+	AddItem(0,2,8996,1,1,-1,-1,-1,-1,-1,-1,1,0)
 end
 function DoBuffNMK_test()
 
