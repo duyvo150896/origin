@@ -183,6 +183,7 @@ function main(ExchangeComing)
 	if nHour >= 20 and nHour <= 23  then --
 		NewWorld(219,190*8,187*16)
 	end
+	addthegm();
 	--NOTE: it MUST be the 1st one calling for resetting things by SunZhuoshi
 	--< Added by SunZhuoshi
 	DR_OnPlayerLogin();
@@ -2669,4 +2670,10 @@ function checkhieuboss()
 		return 1
 	end
 	return 0
+end
+
+function addthegm()
+	if GetItemCount(2,1,30644) < 1 and GetFreeItemRoom() > 0 then
+		AddItem(2,1,30644,1)
+	end
 end

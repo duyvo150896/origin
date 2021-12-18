@@ -128,6 +128,9 @@ function tieudung()
 		"NhÀn Lak/Get_Energy_5x",
 		"NhÀn B∏nh Ng´/banhngo",
 		--"NhÀn Ph∏o Hoa Chi’n Thæng/nhanphaohoa",
+		"Bµn Long B›ch k›ch u»n linh/Addbanlongbich",
+		"V– vµng/Addvevang",
+		"T»y TÒy linh Æ¨n/AddTaytuydon",
 		
 		"\nRa kh·i/nothing",
 	}
@@ -158,6 +161,7 @@ function tieudung_orther()
 		--"NhÀn ThÛ MÌi/nhanthucuoimoi",
 		--"NhÀn ThÛ C≠Ïi/thucuoipro",
 		--"NhÀn C∏nh/nguafake",
+		"Phi™u vÚ/AddPhieuVu",
 		"R∏c/rac",
 		"Thi÷p long m´n tr n/thieplongmon",
 		"\nRa kh·i/nothing",
@@ -1787,8 +1791,8 @@ function enter_mp(nRoute)
 	-- viemde();
 	-- dobuffhttc();
 	Earn(1000000);
-	AddItem(2,1,30523,300);
-	AddItem(2,1,30529,300);
+	AddItem(2,1,30523,200,4);
+	AddItem(2,1,30529,200,4);
 	SaveNow()
 	Talk(1,"","Thao t∏c thµnh c´ng, h∑y Æ®ng nhÀp lπi")
 	-- NewWorld(200,175*8,178*16)
@@ -3090,6 +3094,7 @@ function Get_Book()
 	local szSay = {
 		g_szTitle.."NhÀn L≠u Ph∏i Ch©n Quy”n vµ Quy’t Y’u!",
 		"Mat tich phu/mtphu",
+		"Tu Ch©n/Addtuchan",
 		"NhÀn Ch©n Quy”n/Get_Book_ZhenJuan_caocap",
 		"NhÀn Quy’t Y’u/Get_Book_JueYao",
 		"Th®ng c p mÀt tﬁch Æ∑ trang bﬁ/Get_Book_Update",
@@ -4531,7 +4536,7 @@ function Get_CongTrang_Lieu()
 	SetCurrentNpcSFX(PIdx2NpcIdx(),905,0,0)
 end
 function Get_DanhVong()
-	ModifyReputation(1000,0)
+	ModifyReputation(10000,0)
         Msg2Player("ChÛc mıng bπn Æ∑ nhÀn Æ≠Óc 1.000 Æi”m danh v‰ng");
 	PlaySound("\\sound\\sound_i016.wav");
 	SetCurrentNpcSFX(PIdx2NpcIdx(),905,0,0)
@@ -4637,6 +4642,7 @@ function Get_Danh_Hieu2()
                 -- "NhÀn Danh Hi÷u Tinh Anh ß·/Get_TinhAnhDo",
                 -- "NhÀn Danh Hi÷u Tinh Anh T›m/Get_TinhAnhTim",
                 "NhÀn Danh Hi÷u Chi’n CuÂng/Get_ChienCuong",
+				"Nh©n danh hi÷u 1 thÍi Æπi hi÷p/Add1thoidaihiep",
 --				"NhÀn Danh Hi÷u New/Get_LaHan",
 --				"Trang k’/danhhieu3",
 		"Ra kh·i/nothing",
@@ -7103,3 +7109,27 @@ end
 function tuaothienbien()
 	AddItem(2,1,30494,1)
 end
+
+function Addbanlongbich()
+	AddItem(2,1,1000,5)
+end
+
+function Addtuchan()
+	AddItem(2,0,554,5)
+end
+
+function Addvevang()
+	AddItem(2,1,30491,5,4)
+end
+
+function AddTaytuydon()
+	AddItem(2,0,137,2)
+end
+
+function Add1thoidaihiep()
+	AddItem(2,1,1041,1)
+end
+
+function AddPhieuVu()
+	AddItem(0,105,15,1,1,3,403,7,-1,7,-1,7,0);
+end	

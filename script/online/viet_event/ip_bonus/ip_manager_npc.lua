@@ -290,8 +290,8 @@ function buff_award()
 	Say("Trong h«m nay c¸c h¹ nhËn ®­îc hiÖu qu¶ "..tBuff[nRandAttr][1],0)
 	Msg2Player("B¹n nhËn ®­îc hiÖu qu¶ "..tBuff[nRandAttr][1]);
 
-	AddItem(2,1,30523,100);
-	AddItem(2,1,30529,100);
+	AddItem(2,1,30523,100,4);
+	AddItem(2,1,30529,100,4);
 	
 	SetTask(TASK_GET_FUZHU_TYPE,nRandAttr);
 	SetTask(TASK_GET_FUZHU_DATE, tonumber(date("%y%m%d")));
