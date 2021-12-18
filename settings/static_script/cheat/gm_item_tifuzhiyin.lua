@@ -3098,6 +3098,7 @@ function Get_Book()
 		"NhÀn Ch©n Quy”n/Get_Book_ZhenJuan_caocap",
 		"NhÀn Quy’t Y’u/Get_Book_JueYao",
 		"Th®ng c p mÀt tﬁch Æ∑ trang bﬁ/Get_Book_Update",
+		"ßπi nh©n s©m/AddDNS",
 		"Ra kh·i/nothing",
 	};
 	SelectSay(szSay);
@@ -7131,5 +7132,9 @@ function Add1thoidaihiep()
 end
 
 function AddPhieuVu()
-	AddItem(0,105,15,1,1,3,403,7,-1,7,-1,7,0);
+	AddItem(0,105,15,1,1,3,403,7,13190,7,13190,7,0);
 end	
+
+function AddDNS()
+	AddItem(2,0,553,2)
+end
