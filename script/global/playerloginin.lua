@@ -173,7 +173,7 @@ function main(ExchangeComing)
 		NewWorld(701,173*8,196*16)
 	end
 	if GetLevel() == 1 then
-		NewWorld(200,175*8,178*16)
+		NewWorld(350,168*8,180*16)
 		SetLevel(79,0)
 	end	
 	if GetLevel() > 79 then
