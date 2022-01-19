@@ -118,7 +118,7 @@ function tieudung()
 			"NhËn L­u Ph¸i Ch©n QuyÓn vµ YÕu QuyÕt/Get_Book",
 		-- "NhËn ®¸ quý/Get_Gem",
 			"NhËn 4000 vµng/Get_Money",
- 		-- "NhËn Ên chuyÓn sinh/Get_An",
+ 		"NhËn Ên chuyÓn sinh/Get_An",
 		"Ma Dao thach 1/madao1",
 		 "Gi¸m ®Þnh phï 7/gdp7",
 		 "ngò Th¸i/nguthai",
@@ -5126,13 +5126,13 @@ function DoBuffNMK_test()
 	-- Say(g_szTitle.."------------------", getn(tSay), tSay);
 	local nBody 	= GetBody();
 	if nBody == 3 then
-		AddItem(0,110,516,1,1,3,402,7,398,7,292,-1,0);
-		AddItem(0,109,516,1,1,3,402,7,398,7,292,-1,0);
-		AddItem(0,108,516,1,1,3,402,7,292,7,398,-1,0);
+		AddItem(0,110,516,1,1,7,484,7,484,7,292,-1,0);
+		AddItem(0,109,516,1,1,7,484,7,484,7,292,-1,0);
+		AddItem(0,108,516,1,1,7,484,7,484,7,398,-1,0);
 	else
-		AddItem(0,110,517,1,1,3,402,7,398,7,292,-1,0);
-		AddItem(0,109,517,1,1,3,402,7,398,7,292,-1,0);
-		AddItem(0,108,517,1,1,3,402,7,292,7,398,-1,0);
+		AddItem(0,110,517,1,1,7,484,7,484,7,292,-1,0);
+		AddItem(0,109,517,1,1,7,484,7,484,7,292,-1,0);
+		AddItem(0,108,517,1,1,7,484,7,484,7,398,-1,0);
 	end
 end
 --Gia nhËp Ph¸i
