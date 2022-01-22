@@ -180,9 +180,9 @@ function main(ExchangeComing)
 		SetLevel(79,0)
 	end	
 	local nHour, nMin = GetLocalTime();
-	if nHour >= 20 and nHour <= 23  then --
-		NewWorld(219,190*8,187*16)
-	end
+	-- if nHour >= 20 and nHour <= 23  then --
+		-- NewWorld(219,190*8,187*16)
+	-- end
 	addthegm();
 	--NOTE: it MUST be the 1st one calling for resetting things by SunZhuoshi
 	--< Added by SunZhuoshi
