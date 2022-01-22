@@ -1791,8 +1791,8 @@ function enter_mp(nRoute)
 	-- viemde();
 	-- dobuffhttc();
 	Earn(1000000);
-	AddItem(2,1,30523,200,4);
-	AddItem(2,1,30529,200,4);
+	AddItem(2,1,30523,400,4);
+	AddItem(2,1,30529,400,4);
 	Get_JinShe_2();
 	SaveNow();
 
