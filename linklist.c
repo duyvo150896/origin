@@ -102,10 +102,26 @@ void DeletionNode(int pos){ /*  1 2 3 4 5 6 */
             }
         }
 }
+LinkList* ReverseList(LinkList *headNode){
+    LinkList *pre, *cur, *next;
+    pre = NULL;
+    cur = headNode;
+    while (cur != NULL){
+        next = cur->pnext;
+        cur ->pnext = pre;
+        pre = cur;
+        cur = next;
+    }
+    headNode = pre;
+    return headNode;
+}
 void main (){
     LinkList *tmp;
-    int arr[] = {1,2,3,4,5,6};
-    int lenArr = sizeof(arr)/sizeof(int);
+    int cnt ;
+    scanf("%d",&cnt);
+    
+    int *arr = (int*)calloc(cnt, sizeof(int));
+    int lenArr = cnt;
     for (int i = 0 ; i < lenArr; i++)
         AddFirstNode(arr[i]);
     printList();
@@ -117,5 +133,7 @@ void main (){
     printList();
     DeletionNode(9);
     printList();
-    printf("Number of arr: %d", CountList());
+    printf("Number of arr: %d \n", CountList());
+    head=ReverseList(head);
+    printList();
 }
