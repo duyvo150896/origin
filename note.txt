@@ -1,0 +1,34 @@
+	1. Why should we hire you?
+	- In this job, it will be my priority to make sure I consistently add value to help your business thrive, grow and meet the needs of your customer
+	- I am a flexible and adaptable employee which will be available to work additional hour and help out the company in its time of need.
+	- I am confident that with my value, I will help you to not only complete perfectly the requirement from customer but also improve the quality of product day by day.
+	- I already have a 30-day plan in place of what I will do in the role if you hire me. To begin with, I will introduce myself to the team and establish the team's objective. Then, I will let them know my strengths, and how I can help them before starting work on an important project or task to show you what I am capable of and how I can add value in the role.
+	2. What can you bring to the company?
+	- I am a collaborative worker who always focuses on the needs of my team.
+	3. What do you see yourself in 5 years?
+	If I am successful, I plan to build a long-term career path with your company because I see you as the forward-thinking and innovative organization that is at the cutting edge of what  customers want
+	4. Why do you want to work for us?
+	Before applying for the role, I have researched your company in detail of what you do, how you operate and I see that your company is suitable for me completely.
+	5. Tell me about yourself
+	- Thank you for spending your time and giving me the opportunity to be interviewed for this position today. 
+	- My full name is VPD, I am 26 years old.
+	- Currently, I am working for Renesas Design VN with 3.5 years of experience on Embedded SW Engineer. In my position, I work for developing the 3D GFX driver for Renesas R-Car Gen3 board on Linux platform using C language.
+	- In more detail, I am actively in charge of full range of tasks in the team, from design, code, test, debug issue, support customer so on.
+	- Beside that base on my experience in bash and python script, I have joined to build up the CI/CD system to support automation testing and reduce manual work.
+	- I had opportunity to participate some important project which is applied the JB5001 standard and Scrum methodologies during 2 years ago as developer, tester and project leader role.
+	- With the highest sense of responsibility, all of projects have been released to customer with the high satisfied. 
+	- And by reading the JD, I saw that my knowledge and experience is suitable with your company's requirement for the Software Engineer position.
+	And the offer from you is very interesting. This is the reason I apply this position to your company.
+
+	1. Weak and strength:
+		a. Weak
+			- I think my biggest weakness that I hard to say no to people. Especially, when the manager assign task to me, I always say yes although some time I have no work load more for that. It causes I often work in additional hour to complete it.
+			- Although some time It makes me stressful a little bit, but It is also the chance for me to show up my capabilities.
+		b. Strength
+			- I am a fast leaner, excellent problem-solving capabilities, and I can manage a significant work load, careful in daily working.
+			- I am good at teamwork, communication.
+			- Also, I am able to handle multiple task and work independently also. For example, now I am contact person for Linux platform between our team and customer on Japanese, I discuss and work directly with them with rarely get support from the manager.
+			- And I see that I have talent to training for fresh engineer also. 2 my current mentee is working very well and on going to become the key member of team like me now.
+			- Have good mind-set in quality of product in development process.
+	2. Coong viec hien tai -> show up
+	3. Bai tap
