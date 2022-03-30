@@ -1,0 +1,32 @@
+1. Tell me about yourself
+- Thank you for spending your time and giving me the opportunity to be interviewed for this position today. 
+- My full name is VPD, I am 26 years old.
+- Currently, I am working for Renesas Design VN with 3.5 years of experience on Embedded SW Engineer. 
+- In my position, I work for developing the 3D GFX driver for Renesas board.
+- In more detail, I am actively in charge of full range of tasks in the team, from design, code, test, debug issue, support customer so on.
+- I have joined to build up the a system to support automation testing and reduce manual work.
+- I had opportunity to participate some important project which is applied the standard in product development process during 2 years ago as developer, tester and project leader role.
+- With the highest sense of responsibility, all of projects have been released to customer with the high satisfied. 
+- And by reading the JD, I saw that my knowledge and experience is suitable with your company's requirement for the Software Engineer position.
+And the offer from you is very interesting. This is the reason I apply this position to your company.
+
+2. Weak and strength:
+	a. Weak
+		- I think my biggest weakness that I hard to say no to people. Especially, when the manager assign task to me, I always say yes although some time I have no work load more for that. It causes I often work in additional hour to complete it.
+		- Although some time It makes me stressful a little bit, but It is also the chance for me to show up my capabilities.
+	b. Strength
+		- I am a fast leaner, excellent problem-solving capabilities, and I can manage a significant work load, careful in daily working.
+		- I am good at teamwork, communication.
+		- Also, I am able to handle multiple task and work independently also. For example, now I am contact person for Linux platform between our team and customer on Japanese, I discuss and work directly with them with rarely get support from the manager.
+		- And I see that I have talent to training for fresh engineer also. 2 my current mentee is working very well and on going to become the key member of team like me now.
+		- Have good mind-set in quality of product in development process.
+3. Coll run in to lazy status
+	- I think if the people could work in in this field in long the time until now they must love their job certainly. Maybe now they run into a problem and cause them have boring in their life include their job.  the interaction and relationship between team member is the key word to solve this problem in this situation. we can investigate their issue, listen, share, and help to pass over the problem and grow up together in the team
+4. What do your salary exp?
+	- Sorry for my question now, but before I share my sal expectation. Could you please share for me some about other benefit beside the salary such as allowance, insurance, paid leave, bonus, … if I can join your company.
+	- The biggest reason I would like to change the working env that I would like to get the place not only I can use my capability to help company grow up but also I can learn the new tech from that.
+	- Beside that I would like to improve my salary to deserve with my capability.
+	- So base on the my current salary and refer to my friend who is same generation in the same field, My salary expectation is around 1100 to 1200 usd per month
+5. Why do u want to change env?
+	- I saw that if I continues working in the current position, it's stable, safe and have no more chance to learn the new tech outside the company.
+	- The current company is the first place I work for after I graduate. If I continues, It's hard to have a breakthrough the salary.
