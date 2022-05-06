@@ -116,10 +116,10 @@ function UseDragonToken(nItemIdx)
 	tinsert(tSay, "T¾t Long Tö Quang/CloseSFX")
 	tinsert(tSay, "Kİch ho¹t hiÖu øng Vò Khİ/#WeaponEffect(1)")
 	if GetPlayerRebornParam(0) == 0 then
- 		tinsert(tSay, "Long Tö Héi lÖnh/#TransferLife(1)")
- 	else
- 		tinsert(tSay, "Tø Linh Long Tö lÖnh/#TranferTuLinh(1)")
- 	end
+		tinsert(tSay, "Long Tö Héi lÖnh/#TransferLife(1)")
+	else
+		tinsert(tSay, "Tø Linh Long Tö lÖnh/#TranferTuLinh(1)")
+	end
  	tinsert(tSay, "§ãng/closedialog")
 	Say("Cæn cæn tr­êng giang ®«ng thÖ thñy. L·ng hoa ®µo tËn anh hïng. ThŞ phi thµnh b¹i chuyÓn ®Çu kh«ng ! Long Tö Héi chiªu hiÒn n¹p sÜ, cao thñ gi÷ Long Tö Ên cã thÓ hiÖu lÖnh: ",getn(tSay),tSay)
 end
@@ -557,10 +557,10 @@ function translife_cloth_confirm(nType)
 			break
 		end
 	end	
-	if nCanAdd == 0 then
-		Talk(1,"","Ngo¹i trang kh«ng phï hîp. ChØ cã thÓ kİch ho¹t B¸t B¸t ngo¹i trang, Linh Lung ngo¹i trang, T­íng Qu©n ngo¹i trang.")
-		return
-	end
+	-- if nCanAdd == 0 then
+		-- Talk(1,"","Ngo¹i trang kh«ng phï hîp. ChØ cã thÓ kİch ho¹t B¸t B¸t ngo¹i trang, Linh Lung ngo¹i trang, T­íng Qu©n ngo¹i trang.")
+		-- return
+	-- end
 	local nExpireTime = GetItemExpireTime(nItemIdx) or 30*24*3600
 	if nExpireTime <= 0 then
 	 	nExpireTime =  30*24*3600
@@ -571,7 +571,7 @@ function translife_cloth_confirm(nType)
 		if DelItemByIndex(nItemIdx,-1) and Pay(8000000) == 1 then	
 			local nType_cs6 = GetPlayerRebornParam(1)
 			local nBody = GetBody()	
-			local _,_,_,_, _, lvatt1, att1, lvatt2, att2, lvatt3, att3  = gf_UnPack(tb_translife_cloth_cs6_nhanlai[nType_cs6][nBody][nType-5])	--gf_UnPack(tb_translife_cloth[nFaction][nTransCount][nType-5][2])
+			local  lvatt1, att1, lvatt2, att2, lvatt3, att3  = gf_UnPack(tb_translife_cloth_cs6_nhanlai[nType_cs6][nBody][nType-5])	--gf_UnPack(tb_translife_cloth[nFaction][nTransCount][nType-5][2])
 			local nRet, nItemIdx2 = AddItem(nG, nD, nP, 1,1, lvatt1, att1, lvatt2, att2, lvatt3, att3)
 			if nRet ==1 then
 				SetItemStatus(nItemIdx2, 0, 1)
@@ -583,7 +583,9 @@ function translife_cloth_confirm(nType)
 		if DelItemByIndex(nItemIdx,-1) and Pay(8000000) == 1 then	
 			local nType_cs7 = GetPlayerRebornParam(1)
 			local nBody = GetBody()	
-			local _,_,_,_, _, lvatt1, att1, lvatt2, att2, lvatt3, att3  = gf_UnPack(tb_translife_cloth_cs7_nhanlai[nType_cs7][nBody][nType-5])	--gf_UnPack(tb_translife_cloth[nFaction][nTransCount][nType-5][2])
+			local  a1, a2, a3, a4, a5, lvatt1, att1, lvatt2, att2, lvatt3, att3  = gf_UnPack(tb_translife_cloth_cs7_nhanlai[nType_cs7][nBody][nType-5])	--gf_UnPack(tb_translife_cloth[nFaction][nTransCount][nType-5][2])
+			-- Msg2Player(gf_UnPack(tb_translife_cloth_cs7_nhanlai[nType_cs7][nBody][nType-5]))
+			-- Msg2Player(a1, lvatt1, att1, lvatt2, att2, lvatt3, att3)
 			local nRet, nItemIdx2 = AddItem(nG, nD, nP, 1,1, lvatt1, att1, lvatt2, att2, lvatt3, att3)
 			if nRet ==1 then
 				SetItemStatus(nItemIdx2, 0, 1)
@@ -593,14 +595,18 @@ function translife_cloth_confirm(nType)
 		end	
 	else
 		--------------------------------------	
-		if DelItemByIndex(nItemIdx,-1) and Pay(1000000) == 1 then
-			local _,_,_,_, _, lvatt1, att1, lvatt2, att2, lvatt3, att3  = gf_UnPack(tb_translife_cloth[nFaction][nTransCount][nType-5][2])
-			local nRet, nItemIdx2 = AddItem(nG, nD, nP, 1,1, lvatt1, att1, lvatt2, att2, lvatt3, att3)
+--	Msg2Player(format("Debug %d -- %d  -- %d", nFaction,nTransCount,nType))
+	if DelItemByIndex(nItemIdx,-1) and Pay(1000000) == 1 then
+	for  nFaction = 1, 4 do
+			local  lvatt1, att1, lvatt2, att2, lvatt3, att3  = gf_UnPack(tb_translife_cloth[nFaction][nTransCount][nType-5][2])
+			--Msg2Player(format("Debug --1  %d --1 %d  --2 %d -2 %d --3 %d  --3 %d",  lvatt1, att1, lvatt2, att2, lvatt3, att3))
+			local nRet, nItemIdx2 = AddItem(nG, nD, nP, 1,1, lvatt2, att2, lvatt3, att3)
 			if nRet ==1 then
 				SetItemStatus(nItemIdx2, 0, 1)
 				SetItemExpireTime(nItemIdx2,nExpireTime)
 			end
 		end
+	end
 	end
 end
 function TranferTuLinh(nLife)
