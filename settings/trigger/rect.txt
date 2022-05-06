@@ -138,3 +138,6 @@ ID	TriggerType	TargetMap	RectLeftTopX	RectLeftTopY	RectRightBottomX	RectRightBot
 
 3001	3	106					\script\online\jpz_event\first_tong\first_tong_trigger.lua	LeaveMap
 3002	0	106					\script\online\jpz_event\first_tong\first_tong_trigger.lua	EnterMap
+
+3003	3	202					\script\mappk.lua	LeaveMap
+3004	0	202					\script\mappk.lua	EnterMap
