@@ -12,6 +12,8 @@ Tb_prize_bag = {
 	{"GÊm vµng",2,1,54,36},
 	{"T¬ Ngò S¾c",2,9,3,36},
 	{"D¹ Minh Ch©u",2,1,39,5},
+	{"L­u Tinh Sa",2,1,584,5},
+	{"§¹i §ång T©m ®¬n",2,1,576,5},
 }
 function OnUse()
 	local prize_list = ""
