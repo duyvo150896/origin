@@ -10,7 +10,7 @@ VET_201006_02_TB_LOG_ACTION_LIST = {
 };
 
 VET_201006_02_TB_STRING_LIST = {
-    [1] = "Khi cßn tr?l·o phu tõng tung hoµnh kh¾p v?l©m ®Ó truy t×m nh÷ng cuèn mËt tÞch c¸c m«n ph¸i b©y gi?gi?råi mÆc d?rÊt muèn t?m×nh ®i t×m nh­ng lùc bÊt tßng t©m . Ng­¬i c?th?gióp l·o phu tiÕp tôc t×m mËt tÞch ®­îc kh«ng ? L·o phu c?th?®æi cho ng­¬i mét vµi cuèn mËt tÞch qu?m?l·o phu ®· c?,
+    [1] = "Khi cßn tr?l·o phu tõng tung hoµnh kh¾p v?l©m ®Ó truy t×m nh÷ng cuèn mËt tÞch c¸c m«n ph¸i b©y gi?gi?råi mÆc d?rÊt muèn t?m×nh ®i t×m nh­ng lùc bÊt tßng t©m . Ng­¬i c?th?gióp l·o phu tiÕp tôc t×m mËt tÞch ®­îc kh«ng ? L·o phu c?th?®æi cho ng­¬i mét vµi cuèn mËt tÞch qu?m?l·o phu ®· c?",
     [2] = "Ta muèn ®æi mËt tÞch cÊp 45 thµnh cÊp 70",
     [3] = "T¹i h?ch?gh?ngang!",
     [4] = "§æi mËt tÞch m«n ph¸i",
@@ -42,7 +42,7 @@ VET_201006_02_TB_BOOK_LIST = {
     {"Thiªn La T©m Ph¸p", 0, 107, 8},
     {"Nh??MËt TÞch", 0, 107, 9},
     {"Nh??T©m Ph¸p", 0, 107, 10},
-    {"BÝch H¶i Ph?, 0, 107, 11},
+    {"BÝch H¶i Ph?", 0, 107, 11},
     {"BÝch H¶i T©m Ph¸p", 0, 107, 12},
     {"Hçn §én MËt tÞch", 0, 107, 13},
     {"Hçn §én T©m Ph¸p", 0, 107, 14},
@@ -74,18 +74,18 @@ VET_201006_02_TB_CHANGE_BOOK_LIST = {
     {1, 7, "V?TrÇn B?§Ò Kinh", {0, 107, 168, 1}, 0},
     {1, 8, "Thiªn La Liªn Ch©u Lôc", {0, 107, 169, 1}, 0},
     {1, 7, "Nh??Kim §Ønh MËt TÞch", {0, 107, 170, 1}, 0},
-    {1, 7, "BÝch H¶i TuyÖt ¢m Ph?, {0, 107, 171, 1}, 0},
+    {1, 7, "BÝch H¶i TuyÖt ¢m Ph?", {0, 107, 171, 1}, 0},
     {1, 7, "Hçn §én TrÊn Nh¹c MËt TÞch", {0, 107, 172, 1}, 0},
     {1, 7, "Qu?Thiªn Du Long MËt TÞch", {0, 107, 173, 1}, 0},
     {1, 7, "HuyÔn ¶nh M?Tung MËt TÞch", {0, 107, 174, 1}, 0},
     {1, 7, "Qu©n T?TiÖt Phong MËt TÞch", {0, 107, 175, 1}, 0},
-    {1, 7, "TrÊn Qu©n Phi Long Th­¬ng Ph?, {0, 107, 176, 1}, 0},
+    {1, 7, "TrÊn Qu©n Phi Long Th­¬ng Ph?", {0, 107, 176, 1}, 0},
     {1, 8, "Xuyªn V©n L¹c Hång MËt TÞch", {0, 107, 177, 1}, 0},
     {1, 7, "U Minh Phong Ma Lôc", {0, 107, 178, 1}, 0},
     {1, 7, "Linh C?HuyÔn T?Lôc", {0, 107, 179, 1}, 0},
     {1, 0, "Cöu Thiªn Phong L«i QuyÕt", {0, 107, 198, 1}, 0},    
-    {1, 0, "Hång TrÇn Tóy Méng Ph?, {0, 107, 202, 1}, 0},
-    {1, 0, "Phong Hoa Thiªn DiÖp Ph?, {0, 107, 203, 1}, 0},    
+    {1, 0, "Hång TrÇn Tóy Méng Ph?", {0, 107, 202, 1}, 0},
+    {1, 0, "Phong Hoa Thiªn DiÖp Ph?", {0, 107, 203, 1}, 0},    
 };
 
 --- MËt  tÞch cao cÊp-----
