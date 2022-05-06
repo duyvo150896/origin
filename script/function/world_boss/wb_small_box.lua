@@ -3,7 +3,7 @@ Include("\\script\\function\\world_boss\\wb_head.lua")
 
 function main()
 	local npcIndex = GetTargetNpc()
-	if wb_GetSmallBoxFlag() > 0 then
+	if wb_GetSmallBoxFlag() >0 then
 		Talk(1,"",format("§· nhËn phÇn th­ëng %s råi, kh«ng thÓ nhËn l¹i", GetNpcName(npcIndex)));
 		return
 	end
