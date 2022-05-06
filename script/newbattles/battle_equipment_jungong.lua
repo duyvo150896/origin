@@ -216,8 +216,8 @@ end;
 
 function check_palyer_jungong_equip_state_by_index(nEquipCamp,nEquipIdx,bDisableLog)
 	if nEquipCamp == 0 then
-		Msg2Player("§©y kh«ng ph¶i lµ trang bŞ chiÕn trËn ");
-		return 0;
+		--Msg2Player("§©y kh«ng ph¶i lµ trang bŞ chiÕn trËn ");
+		return 1;
 	end;
 	local nPlayerCamp = BT_GetCurCamp()
 	local nCurPoint = abs(BT_GetData(PT_RANKPOINT));
