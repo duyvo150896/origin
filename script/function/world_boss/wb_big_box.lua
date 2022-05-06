@@ -2,7 +2,7 @@
 Include("\\script\\function\\world_boss\\wb_head.lua")
 
 function main()
-	if wb_GetBigBoxFlag() > 0 then
+	if wb_GetBigBoxFlag() > 1 then
 		Talk(1,"",format("MÁi ngµy chÿ Æ≠Óc nhÀn 1 l«n ph«n th≠Îng %s", GetNpcName(GetTargetNpc())));
 		return
 	end
@@ -15,5 +15,5 @@ function main()
 	UseScrollEnable(0);
 	SetDeathScript("\\script\\function\\world_boss\\wb_player_death.lua")
 	CastState("state_fetter", 100, 18*16, 1, 9999);
-	ProgressSlot(15 * 18, "wb_BigBoxAward")
+	ProgressSlot(25 * 18, "wb_BigBoxAward")
 end
