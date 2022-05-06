@@ -15,7 +15,7 @@ ID	Name	MaxLevel	Faction	Route	Series	ExtraSeries	Type	Style1	Style2	DamageType	
 14	Tr¶o tÊn c«ng b×nh th­êng	1	0	0	7		-1	0	2	0	2	2048	1		0	1	1	1							72	6					1	1	2					456	96	1	17	100			1	\script\skill\ÆÕÍ¨¹¥»÷\ÆÕÍ¨¹¥»÷.lua		skill_interrupt_rate	10									
 15	Linh Chi c«ng kİch	1	0	0	7		-1	0	2	0	2	8192	1		0	1	1	1							72	6					1	1	2					456	112	1	17	100			1	\script\skill\ÆÕÍ¨¹¥»÷\ÆÕÍ¨¹¥»÷.lua		skill_interrupt_rate	10									
 16	S¸o c«ng kİch b×nh th­êng	1	0	0	7		-1	0	2	0	2	4096	1		0	1	1	1							72	6					1	1	2					456	112	1	17	100			1	\script\skill\ÆÕÍ¨¹¥»÷\ÆÕÍ¨¹¥»÷.lua		skill_interrupt_rate	10									
-17							4																																																			
+17	Chñy Thñ tÊn c«ng b×nh th­êng	1	0	0	7		-1	0	2	0	2	16384	1		0	1	1	1							72	6					1	1	2					456	112	1	17	100			1	\script\skill\ÆÕÍ¨¹¥»÷\ÆÕÍ¨¹¥»÷.lua		skill_interrupt_rate	10									
 18							4																																																			
 19	Ngåi thiÒn						6								1																							2																				
 20	Khinh c«ng						7				1		1		1																							2	600		8	30	8	20				cost_stamina_point_pk	5	skill_cast_interval	9							
@@ -948,6 +948,118 @@ ID	Name	MaxLevel	Faction	Route	Series	ExtraSeries	Type	Style1	Style2	DamageType	
 1050	Ngò L«i Chİnh Ph¸p Phï (Chiªu 2)	8	0	23	0		1	6	1	1	2	4	1		0	0	0	0							437	48					3	1	2					456	800	5		100			5	\script\skill\À¥ÂØÌìÊ¦\ÎåÀ×Õı·¨·û(ÕĞ2).lua		skill_interrupt_rate	25	skill_param1	15	skill_param2	150					32
 1051	V¹n L«i To¸i Tinh Phï (Chiªu 2)	8	0	23	0		1	5	2	1	2	4	1		0	0	0	0							438	30					2		5					456	600	1		100			1	\script\skill\À¥ÂØÌìÊ¦\ÍòÀ×ËéĞÇ·û(ÕĞ2).lua		skill_interrupt_rate	25									32
 1052	HuyÒn Phong TriÒn ı QuyÕt (Chiªu 2)	7	0	23	0		2	8	1		0	4	1		1	0	0	0								25												2	9999	1		100				\script\skill\À¥ÂØÌìÊ¦\Ğş·ç²øÒâ¾÷(ÕĞ2).lua												16
+1053	Th¸nh Háa Kim L­ C«ng	10	24	25	0		3	15	1		0	-1	0		1	0	0	0																				2								\script\skill\Ã÷½ÌÊ¥Õ½\Ê¥»ğ½ğÂ¯¹¦.lua												
+1054	Th¸nh Háa §ao Ph¸p	9	24	25	0		3	15	1		0	8	1		1	0	0	0																				2								\script\skill\Ã÷½ÌÊ¥Õ½\Ê¥»ğµ¶·¨.lua		skill_interrupt_rate	10									
+1055	Kim L« Hé ThÓ	9	24	25	0		2	10	1		0	8	1		1	0	0	0								50	1068											2	9999	1	54	100				\script\skill\Ã÷½ÌÊ¥Õ½\½ğÂ¯»¤Ìå.lua		skill_cast_interval	1080	skill_interrupt_rate	10							
+1056	LiÖt D­îng Tr¶m	7	24	25	7		1	1	2	0	0	8	1		0	1	1	1					1069	10	442	6					1	1	2		5			456	144	1	27	150			1	\script\skill\Ã÷½ÌÊ¥Õ½\ÁÒì¾Õ¶.lua		skill_cast_interval	18	skill_interrupt_rate	-55	cost_gas_point	1					
+1057	Sİ DiÖm Kİch	7	24	25	7		3	14	1		0	8	0		1	0	0	0																				2		1						\script\skill\Ã÷½ÌÊ¥Õ½\³ãÑ×»÷.lua												
+1058	Thiªn KiÕp PhÇn	8	24	25	7		2	1	2	0	0	8	1		0	0	0	1					1201	1		13	1072				1	1	2					456	600	1	27	150				\script\skill\Ã÷½ÌÊ¥Õ½\Ìì½Ù·Ù.lua		skill_cast_interval	90	skill_interrupt_rate	-55							
+1059	Ng­ng Háa Bİch	7	24	25	0		2	10	1		0	8	1		1	0	0	0								3	1073											2	9999	1	18	150				\script\skill\Ã÷½ÌÊ¥Õ½\Äı»ğèµ.lua		skill_cast_interval	810	skill_interrupt_rate	-55							
+1060	Cuång DiÔm B«n	9	24	25	7		20	1	2	0	1	8	1		0	0	0	0					1200	0			1074											456	600	3	54	-100				\script\skill\Ã÷½ÌÊ¥Õ½\¿ñÑæ±¼.lua		skill_cast_interval	180	skill_interrupt_rate	-55							
+1061	Chİch Phong TuyÒn	7	24	25	7		1	1	2	0	2	8	1		0	0	1	1					1071	21	445	14					1	0	2		2			456	600	1	36	150			4	\script\skill\Ã÷½ÌÊ¥Õ½\ÖË·çĞı.lua		skill_cast_interval	360	skill_interrupt_rate	-55	cost_gas_point	2					
+1062	B¸ Hoµng §o¹n	7	24	25	7		1	1	2	0	2	8	1		0	0	1	1							446	21	1076				1	0	2					456	600	1	27	150			1	\script\skill\Ã÷½ÌÊ¥Õ½\°Ô»Í¶Ï.lua		skill_cast_interval	54	skill_interrupt_rate	-55	cost_gas_point	1					
+1063	Khİ Hãa Du Long	7	24	25	0		3	15	1		0	8	0		1	0	0	0																				2		1						\script\skill\Ã÷½ÌÊ¥Õ½\Æø»¯ÓÎÁú.lua												
+1064	D­¬ng Viªm B¹o	9	24	25	7		1	5	2	0	2	8	1		0	0	0	1					1080	15	447	19					1	1	2					456	300	1	36	150			1	\script\skill\Ã÷½ÌÊ¥Õ½\ÑôÑ×±¬.lua		skill_cast_interval	1080	skill_interrupt_rate	-55							
+1065	B¹o S¸t K×nh	7	24	25	7		1	2	2	0	2	8	1		0	0	1	1					1081	9	448	10	1079				1	1	2					456	300	1	18	100			1	\script\skill\Ã÷½ÌÊ¥Õ½\±©É±¾¢.lua		skill_cast_interval	90	skill_interrupt_rate	-55	cost_gas_point	3					
+1066	Cµn Kh«n §¹i Na Di	20	24	25	0		2	3	0		0	8	1		0	0	0	0					1082	1		1												2	600	1	90	100				\script\skill\Ã÷½ÌÊ¥Õ½\Ç¬À¤´óÅ²ÒÆ.lua		skill_interrupt_rate	-55									
+1067	Th¸nh Háa §ao Ph¸p (Chiªu)	9	24	25	0		2	8	1		0	8	1		1	0	0	0								33												2	9999	1		100				\script\skill\Ã÷½ÌÊ¥Õ½\Ê¥»ğµ¶·¨(ÕĞ).lua												
+1068	Kim L« Hé ThÓ (Chiªu)	9	24	25	0		2	10	1		0	8	1		1	0	0	0								50												2	9999	1		100				\script\skill\Ã÷½ÌÊ¥Õ½\½ğÂ¯»¤Ìå(ÕĞ).lua												
+1069	LiÖt D­îng Tr¶m (Tö)	7	24	25	7		1	1	2	0	2	8	1		0	1	1	1							442	1	1070				1	1	2		5			456	144	1		150			1	\script\skill\Ã÷½ÌÊ¥Õ½\ÁÒì¾Õ¶(×Ó).lua												
+1070	LiÖt D­îng Tr¶m (Chiªu)	7	24	25	7		1	1	2	0	2	8	1		0	1	0	1					1201	1	442	1					1	1	2		5			456	144	1		150			1	\script\skill\Ã÷½ÌÊ¥Õ½\ÁÒì¾Õ¶(ÕĞ).lua												
+1071	Chİch Phong Toµn (Tö)	7	24	25	7		1	1	2	0	2	8	1		0	0	1	1							445	1	1075				1	0	2					456	600	1	36	150			1	\script\skill\Ã÷½ÌÊ¥Õ½\ÖË·çĞı(×Ó).lua												
+1072	Thiªn KiÕp PhÇn (Chiªu)	8	24	25	7		2	1	2	0	2	8	1		0	0	0	1								13					1	1	2					456	600	1		150				\script\skill\Ã÷½ÌÊ¥Õ½\Ìì½Ù·Ù(ÕĞ).lua												
+1073	Ninh Háa BŞch(Chiªu)	7	24	25	0		2	10	1		0	8	1		1	0	0	0								6												2	9999	1		150				\script\skill\Ã÷½ÌÊ¥Õ½\Äı»ğèµ(ÕĞ).lua												
+1074	Cuång DiÔm B«n (Chiªu)	9	24	25	7		20	1	2	0	1	8	1		0	0	0	0																				456	600	3		-100				\script\skill\Ã÷½ÌÊ¥Õ½\¿ñÑæ±¼(ÕĞ).lua												
+1075	Chİch Phong Toµn (Chiªu)	7	24	25	7		1	1	2	0	1	8	1		0	0	0	1							445	1					1	0	2					456	600	1		150			1	\script\skill\Ã÷½ÌÊ¥Õ½\ÖË·çĞı(ÕĞ).lua												
+1076	B¸ Hoµng §o¹n (Chiªu)	7	24	25	7		1	1	2	0	2	8	1		0	0	0	1							446	21					1	0	2					456	600	1		150			1	\script\skill\Ã÷½ÌÊ¥Õ½\°Ô»Í¶Ï(ÕĞ).lua												
+1077	Khİ Hãa Du Long (Chiªu)	7	24	25	7		2	10	1		0	8	1		1	0	0	0								18												2	9999	1		100				\script\skill\Ã÷½ÌÊ¥Õ½\Æø»¯ÓÎÁú(ÕĞ).lua												
+1078	D­¬ng Viªm B¹o (Chiªu)	9	24	25	7		2	8	2		2	8	1		0	0	0	0								1												2	144	1		150				\script\skill\Ã÷½ÌÊ¥Õ½\ÑôÑ×±¬(ÕĞ).lua												
+1079	B¹o S¸t K×nh (Chiªu)	7	24	25	7		1	2	2	0	2	8	1		0	0	0	1							448	10					1	1	2					456	300	1		100			1	\script\skill\Ã÷½ÌÊ¥Õ½\±©É±¾¢(ÕĞ).lua												
+1080	D­¬ng Viªm B¹o (Tö)	9	24	25	7		2	8	2		2	8	1		0	0	0	0								1	1078											2	144	1		150				\script\skill\Ã÷½ÌÊ¥Õ½\ÑôÑ×±¬(×Ó).lua												
+1081	B¹o S¸t K×nh (Tö)	7	24	25	7		2	11	2		0	8	1		0	0	1	1								1												2	144	1		100			1	\script\skill\Ã÷½ÌÊ¥Õ½\±©É±¾¢(×Ó).lua												
+1082	Cµn Kh«n §¹i Na Di (Tö)	20	24	26	7		1	3	2	2	1	8	1		0	0	0	0							449	1					1	0	2		17			456	600	1		100			5	\script\skill\Ã÷½ÌÊ¥Õ½\Ç¬À¤´óÅ²ÒÆ(×Ó).lua												
+1083	Quang Minh Tiªu Dao C«ng	10	24	26	0		3	15	1		0	-1	0		1	0	0	0																				2								\script\skill\Ã÷½ÌÕó±ø\¹âÃ÷åĞÒ£¹¦.lua												
+1084	Quang Minh Bót Ph¸p	9	24	26	0		2	8	1		0	512	1		1	0	0	0								34	1097											2	9999	1	36	100				\script\skill\Ã÷½ÌÕó±ø\¹âÃ÷±Ê·¨.lua		skill_cast_interval	1080	skill_interrupt_rate	25							
+1085	Kim Táa TrËn	7	24	26	0		28	2	2	0	1	512	1		0	0	0	0							450	24	1208				1	3	2					456	300	1	36	200			1	\script\skill\Ã÷½ÌÕó±ø\½ğËøÕó.lua		skill_cast_interval	270	skill_interrupt_rate	25	skill_param1	1261	skill_param2	1113			
+1086	YÕn Kú LÖnh	1	24	26	0		30	8	2		0	512	1		0	0	0	0								18												1048576	600	1	27	200				\script\skill\Ã÷½ÌÕó±ø\ÙÈÆìÁî.lua		skill_cast_interval	360									
+1087	HuyÒn Thñy TrËn	7	24	26	0		28	2	2	0	1	512	1		0	0	0	0							451	24	1209				1	3	2					456	300	1	36	200			1	\script\skill\Ã÷½ÌÕó±ø\ĞşË®Õó.lua		skill_cast_interval	270	skill_interrupt_rate	25	skill_param1	1262	skill_param2	1114			
+1088	Phong Binh LÖnh	8	24	26	0		2	9	1		0	512	1		0	0	0	0								18	1102											456	600	1	27	200				\script\skill\Ã÷½ÌÕó±ø\·â±øÁî.lua		skill_cast_interval	540	skill_interrupt_rate	-55							
+1089	Bµn Méc TrËn	7	24	26	0		28	2	2	0	1	512	1		0	0	0	0							452	24	1210				1	3	2					456	300	1	36	200			1	\script\skill\Ã÷½ÌÕó±ø\ÅÌÄ¾Õó.lua		skill_cast_interval	270	skill_interrupt_rate	25	skill_param1	1263	skill_param2	1115			
+1090	TÊn ¶nh LÖnh	7	24	26	0		2	10	1		0	512	1		1	0	0	0					1129	1		5	1104											2	9999	1	18	200				\script\skill\Ã÷½ÌÕó±ø\Ñ¸Ó°Áî.lua		skill_cast_interval	2160	skill_interrupt_rate	-550							
+1091	Cµn Kh«n NghŞch ChuyÓn	7	24	26	0		2	9	1		0	512	1		0	0	0	0								9	1105											460	800	1	27	100				\script\skill\Ã÷½ÌÕó±ø\Ç¬À¤Äæ×ª.lua		skill_cast_interval	180	skill_interrupt_rate	-55							
+1092	NghiÖp Háa TrËn	7	24	26	0		28	2	2	0	1	512	1		0	0	0	0							453	24	1211				1	3	2					456	300	1	36	200			1	\script\skill\Ã÷½ÌÕó±ø\Òµ»ğÕó.lua		skill_cast_interval	270	skill_interrupt_rate	25	skill_param1	1264	skill_param2	1116			
+1093	Thæ Lao TrËn	7	24	26	0		28	2	2	0	1	512	1		0	0	0	0							454	24	1212				1	3	2					456	300	1	36	200			1	\script\skill\Ã÷½ÌÕó±ø\ÍÁÀÎÕó.lua		skill_cast_interval	270	skill_interrupt_rate	25	skill_param1	1265	skill_param2	1117			
+1094	Ngò Linh T¸n Nguyªn	9	24	26	0		1	2	2	0	1	512	1		0	0	0	0							455	32	1108	1109			1	1	2		0			456	600	1	36	50			1	\script\skill\Ã÷½ÌÕó±ø\ÎåÁéÉ¢Ôª.lua		skill_interrupt_rate	25									
+1095	Ngò Linh Quy Nguyªn	7	24	26	0		2	8	1		0	512	1		1	0	0	0								52	1110											6	600	1	54	100				\script\skill\Ã÷½ÌÕó±ø\ÎåÁé¹éÔª.lua		skill_interrupt_rate	25	skill_cast_interval	1080							
+1096	Quang Minh Ngò Hµnh TrËn	20	24	26	0		1	3	2	2	2	512	1		0	0	0	0					1111	1	457	6					1	0	2		17			456	600	1	90	100			5	\script\skill\Ã÷½ÌÕó±ø\¹âÃ÷ÎåĞĞÕó.lua		skill_interrupt_rate	-55									
+1097	Quang Minh Bót Ph¸p (Chiªu)	9	24	26	0		2	8	1		0	512	1		1	0	0	0								34												2	9999	1		100				\script\skill\Ã÷½ÌÕó±ø\¹âÃ÷±Ê·¨(ÕĞ).lua												
+1098	Kim Táa TrËn (TrËn Kú Chiªu)	7	24	26	0		1	2	1	0	1	-1	1		0	0	0	0							471	1					0	3	2		1			456	9999	1	9	100			1	\script\skill\Ã÷½ÌÕó±ø\½ğËøÕó(ÕóÆìÕĞ).lua												
+1099	YÕn Kú LÖnh (Chiªu)	1	24	26	0		30	8	2		0	512	1		0	0	0	0								24												1048576	600	1		100				\script\skill\Ã÷½ÌÕó±ø\ÙÈÆìÁî(ÕĞ).lua												
+1100	YÕn Kú LÖnh (Nhá)	1	24	26	0		1	9	1		0	512	1		0	0	0	0							459	1					1	0	2					456	9999	1		100			1	\script\skill\Ã÷½ÌÕó±ø\ÙÈÆìÁî(ÕĞ×Ó).lua												
+1101	HuyÒn Thñy TrËn (TrËn Kú Chiªu)	7	24	26	0		1	2	1	0	1	-1	1		0	0	0	0							471	1					0	3	2		1			456	9999	1	9	100			1	\script\skill\Ã÷½ÌÕó±ø\ĞşË®Õó(ÕóÆìÕĞ).lua												
+1102	Phong Binh LÖnh (Chiªu)	8	24	26	0		2	9	1		0	512	1		0	0	0	0								18												456	600	1		200				\script\skill\Ã÷½ÌÕó±ø\·â±øÁî(ÕĞ).lua												
+1103	Bµn Méc TrËn (TrËn Kú Chiªu)	7	24	26	0		1	2	1	0	1	-1	1		0	0	0	0							471	1					0	3	2		1			456	9999	1	9	100			1	\script\skill\Ã÷½ÌÕó±ø\ÅÌÄ¾Õó(ÕóÆìÕĞ).lua												
+1104	TÊn nh LÖnh (Chiªu)	7	24	26	0		2	10	1		0	512	1		1	0	0	0								5												2	9999	1		200				\script\skill\Ã÷½ÌÕó±ø\Ñ¸Ó°Áî(ÕĞ).lua												
+1105	Cµn Kh«n NghŞch ChuyÓn (Chiªu)	7	24	26	0		2	9	1		0	512	1		0	0	0	0					1130	1	453	9												460	800	1		100				\script\skill\Ã÷½ÌÕó±ø\Ç¬À¤Äæ×ª(ÕĞ).lua												
+1106	NghiÖp Háa TrËn (TrËn Kú Chiªu)	7	24	26	0		1	2	1	0	1	-1	1		0	0	0	0							471	1					0	3	2		1			456	9999	1	9	100			1	\script\skill\Ã÷½ÌÕó±ø\Òµ»ğÕó(ÕóÆìÕĞ).lua												
+1107	Thæ Lao TrËn (TrËn Kú Chiªu)	7	24	26	0		1	2	1	0	1	-1	1		0	0	0	0							471	1					0	3	2		1			456	9999	1	9	100			1	\script\skill\Ã÷½ÌÕó±ø\ÍÁÀÎÕó(ÕóÆìÕĞ).lua												
+1108	Ngò Linh T¸n Nguyªn (Chiªu1)	9	24	26	0		1	2	2	0	1	512	1		0	0	0	0							455	32					1	1	2					456	600	1		50			1	\script\skill\Ã÷½ÌÕó±ø\ÎåÁéÉ¢Ôª(ÕĞ1).lua												
+1109	Ngò Linh T¸n Nguyªn (Chiªu2)	9	24	26	0		1	2	2	0	1	512	1		0	0	0	0							455	32					1	1	2					456	600	1		50			1	\script\skill\Ã÷½ÌÕó±ø\ÎåÁéÉ¢Ôª(ÕĞ2).lua												
+1110	Ngò Linh Quy Nguyªn (Chiªu)	7	24	26	0		2	8	1		0	512	1		1	0	0	0								52												6	600	1		100				\script\skill\Ã÷½ÌÕó±ø\ÎåÁé¹éÔª(ÕĞ).lua												
+1111	Quang Minh Ngò Hµnh TrËn (Tö)	20	24	26	0		1	3	0		1	512	1		0	0	0	0					1215	1	458	1					1	0	2					6	9999	1		100			1	\script\skill\Ã÷½ÌÕó±ø\¹âÃ÷ÎåĞĞÕó(×Ó).lua												
+1112	Ngò Linh T¸n Nguyªn (Tö)	9	24	26	0		1	2	2	0	1	512	1		0	0	1	0							456	1					3		1					456	9999	1		100			5	\script\skill\Ã÷½ÌÕó±ø\ÎåÁéÉ¢Ôª(×Ó).lua												
+1113	Kim Táa TrËn (YÕn Kú)	7	24	26	0		2	2	1	0	1	512	1		0	0	0	1								3												456	9999	6	9	100				\script\skill\Ã÷½ÌÕó±ø\½ğËøÕó(ÙÈÆì).lua		skill_interrupt_rate	-55									
+1114	HuyÒn Thñy TrËn (YÕn Kú)	7	24	26	0		2	2	1	0	1	512	1		0	0	0	1								3												456	9999	6	9	100				\script\skill\Ã÷½ÌÕó±ø\ĞşË®Õó(ÙÈÆì).lua		skill_interrupt_rate	-55									
+1115	Bµn Méc TrËn (YÕn Kú)	7	24	26	0		2	2	1	0	1	512	1		0	0	0	1								3												456	9999	6	9	100				\script\skill\Ã÷½ÌÕó±ø\ÅÌÄ¾Õó(ÙÈÆì).lua		skill_interrupt_rate	-55									
+1116	NghiÖp Háa TrËn (YÕn Kú)	7	24	26	0		2	2	1	0	1	512	1		0	0	0	1								3												456	9999	6	9	100				\script\skill\Ã÷½ÌÕó±ø\Òµ»ğÕó(ÙÈÆì).lua		skill_interrupt_rate	-55									
+1117	Thæ Lao TrËn (YÕn Kú)	7	24	26	0		2	2	1	0	1	512	1		0	0	0	1								3												456	9999	6	9	100				\script\skill\Ã÷½ÌÕó±ø\ÍÁÀÎÕó(ÙÈÆì).lua		skill_interrupt_rate	-55									
+1118	Quang Minh Bót Ph¸p Th­êng	9	24	26	0		0	1	2	0	2	512	1		0	0	1	1							460	6					1	0	2					456	600	1	17	100			1	\script\skill\Ã÷½ÌÕó±ø\¹âÃ÷±Ê·¨ÆÕÍ¨.lua												
+1119	Kim Táa TrËn (Phô Kú)	7	24	26	0		15	8	1			-1	1		0	0	0	0																				6	9999	15	18	100				\script\skill\Ã÷½ÌÕó±ø\½ğËøÕó(¸ºÆì).lua												
+1120	HuyÒn Thñy TrËn (Phô Kú)	7	24	26	0		15	8	1			-1	1		0	0	0	0																				6	9999	15	18	100				\script\skill\Ã÷½ÌÕó±ø\ĞşË®Õó(¸ºÆì).lua												
+1121	Bµn Méc TrËn (Phô Kú)	7	24	26	0		15	8	1			-1	1		0	0	0	0																				6	9999	15	18	100				\script\skill\Ã÷½ÌÕó±ø\ÅÌÄ¾Õó(¸ºÆì).lua												
+1122	NghiÖp Háa TrËn (Phô Kú)	7	24	26	0		15	8	1			-1	1		0	0	0	0																				6	9999	15	18	100				\script\skill\Ã÷½ÌÕó±ø\Òµ»ğÕó(¸ºÆì).lua												
+1123	Thæ Lao TrËn (Phô Kú)	7	24	26	0		15	8	1			-1	1		0	0	0	0																				6	9999	15	18	100				\script\skill\Ã÷½ÌÕó±ø\ÍÁÀÎÕó(¸ºÆì).lua												
+1124	Kim Táa TrËn (TrËn Kú)	7	24	26	0		1	2	1	0	1	-1	1		0	0	1	0							471	1					0	3	2		1			456	9999	1	9	100			1	\script\skill\Ã÷½ÌÕó±ø\½ğËøÕó(ÕóÆì).lua												
+1125	HuyÒn Thñy TrËn (TrËn Kú)	7	24	26	0		1	2	1	0	1	-1	1		0	0	1	0							471	1					0	3	2		1			456	9999	1	9	100			1	\script\skill\Ã÷½ÌÕó±ø\ĞşË®Õó(ÕóÆì).lua												
+1126	Bµn Méc TrËn (TrËn Kú)	7	24	26	0		1	2	1	0	1	-1	1		0	0	1	0							471	1					0	3	2		1			456	9999	1	9	100			1	\script\skill\Ã÷½ÌÕó±ø\ÅÌÄ¾Õó(ÕóÆì).lua												
+1127	NghiÖp Háa TrËn (TrËn Kú)	7	24	26	0		1	2	1	0	1	-1	1		0	0	1	0							471	1					0	3	2		1			456	9999	1	9	100			1	\script\skill\Ã÷½ÌÕó±ø\Òµ»ğÕó(ÕóÆì).lua												
+1128	Thæ Lao TrËn (TrËn Kú)	7	24	26	0		1	2	1	0	1	-1	1		0	0	1	0							471	1					0	3	2		1			456	9999	1	9	100			1	\script\skill\Ã÷½ÌÕó±ø\ÍÁÀÎÕó(ÕóÆì).lua												
+1129	TÊn nh LÖnh (Tö)	7	24	26	0		2	10	1		0	512	1		1	0	0	0								1												2	9999	1		100				\script\skill\Ã÷½ÌÕó±ø\Ñ¸Ó°Áî(×Ó).lua												
+1130	Cµn Kh«n NghŞch ChuyÓn (Tö)	7	24	27	0		2	9	1		0	512	1		0	0	0	0								1												2	9999	1		100				\script\skill\Ã÷½ÌÕó±ø\Ç¬À¤Äæ×ª(×Ó).lua												
+1131	Hµn B¨ng T©m Ph¸p	10	24	27	0		3	15	1		0	-1	0		1	0	0	0																				2								\script\skill\Ã÷½ÌÑªÈË\º®±ùĞÄ·¨.lua												
+1132	§o¹n Cèt Tr¶o	8	24	27	0		1	4	2	1	2	2048	1		0	1	1	0					1144	6	469	3					1	1	2		3			456	144	1	18	75			2	\script\skill\Ã÷½ÌÑªÈË\¶Ï¹Ç×¦.lua		skill_cast_interval	18	skill_interrupt_rate	-55							
+1133	Hñ Th­¬ng Ên	7	24	27	0		2	9	1		0	2048	1		0	0	0	0								17	1146											456	600	1	18	100				\script\skill\Ã÷½ÌÑªÈË\¸¯ÉËÓ¡.lua		skill_cast_interval	3240									
+1134	Thanh Dùc Bé Ph¸p	5	24	27	0		21	10	2		1	2048	1		1	0	0	0								2	1147												600	1	18	-100				\script\skill\Ã÷½ÌÑªÈË\ÇàÒí²½·¨.lua		skill_interrupt_rate	10	skill_cast_interval	90							
+1135	B¨ng HuyÕt Ên	8	24	27	0		2	9	1		0	2048	1		0	0	0	0								36	1148											456	600	1	40	100				\script\skill\Ã÷½ÌÑªÈË\±ÀÑªÓ¡.lua												
+1136	HÊp HuyÕt Ên	6	24	27	0		3	15	1		0	-1	0		1	0	0	0																				2								\script\skill\Ã÷½ÌÑªÈË\ÎüÑªÓ¡.lua												
+1137	Hµn HuyÕt Ên	6	24	27	0		2	9	1		0	2048	1		0	0	0	0								12	1150											456	600	1	36	100				\script\skill\Ã÷½ÌÑªÈË\º®ÑªÓ¡.lua		skill_cast_interval	540									
+1138	Thİch Cèt Ên	7	24	27	0		3	15	1		0	-1	0		1	0	0	0																				2								\script\skill\Ã÷½ÌÑªÈË\´Ì¹ÇÓ¡.lua												
+1139	Truy Hån Ên	7	24	27	0		2	9	1		0	2048	1		0	0	0	0								34	1152											456	600	1	36	100				\script\skill\Ã÷½ÌÑªÈË\×·»êÓ¡.lua		skill_cast_interval	1620									
+1140	Thİ C¶nh Tr¶o	8	24	27	0		20	1	2	1	1	2048	1		0	0	0	0									1153											456	600	3	36	-100				\script\skill\Ã÷½ÌÑªÈË\ß±¾±×¦.lua		skill_cast_interval	270	skill_interrupt_rate	-55							
+1141	Hµn B¨ng HuyÕt Ch­íng	8	24	27	0		2	10	1		0	2048	1		1	0	0	0								12	1154											2	9999	1	18	100				\script\skill\Ã÷½ÌÑªÈË\º®±ùÑªÕÏ.lua		skill_cast_interval	1620									
+1142	Hãa HuyÕt Ên	7	24	27	0		3	15	1		0	-1	0		1	0	0	0																				2								\script\skill\Ã÷½ÌÑªÈË\»¯ÑªÓ¡.lua												
+1143	VÉn Th­¬ng Ên	7	24	27	0		2	9	1		0	2048	1		0	0	0	0								26	1156											456	600	1	27	100				\script\skill\Ã÷½ÌÑªÈË\éæéäÓ¡.lua		skill_cast_interval	360									
+1144	§o¹n Cèt Tr¶o (Tö)	8	24	27	0		1	4	2	1	2	2048	1		0	1	0	0							469	3	1145				1	1	2		3			456	9999	1		100			1	\script\skill\Ã÷½ÌÑªÈË\¶Ï¹Ç×¦(×Ó).lua		skill_cast_interval	18	skill_interrupt_rate	-55							
+1145	§o¹n Cèt Tr¶o (Nhá)	8	24	27	0		1	4	2	1	2	2048	1		0	1	0	0							469	3					1	1	2		3			456	9999	1		100			1	\script\skill\Ã÷½ÌÑªÈË\¶Ï¹Ç×¦(×ÓÕĞ).lua		skill_cast_interval	18	skill_interrupt_rate	-55							
+1146	Hñ Th­¬ng Än (Chiªu)	7	24	27	0		2	9	1		0	2048	1		0	0	0	0								34												456	9999	1		100				\script\skill\Ã÷½ÌÑªÈË\¸¯ÉËÓ¡(ÕĞ).lua												
+1147	Thanh Dùc Bé Ph¸p (Chiªu)	5	24	27	0		21	10	2		1	2048	1		1	0	0	0								2													9999	1		-100				\script\skill\Ã÷½ÌÑªÈË\ÇàÒí²½·¨(ÕĞ).lua		skill_interrupt_rate	10									
+1148	B¨ng HuyÕt Än (Chiªu)	8	24	27	0		2	9	1		0	2048	1		0	0	0	0								36												456	9999	1		100				\script\skill\Ã÷½ÌÑªÈË\±ÀÑªÓ¡(ÕĞ).lua												
+1149	HÊp HuyÕt Än (Chiªu)	6	24	27	0		2	9	1		0	2048	1		0	0	0	0								12												456	9999	1		100				\script\skill\Ã÷½ÌÑªÈË\ÎüÑªÓ¡(ÕĞ).lua												
+1150	Hµn HuyÕt Än (Chiªu)	6	24	27	0		2	9	1		0	2048	1		0	0	0	0								12												456	9999	1		100				\script\skill\Ã÷½ÌÑªÈË\º®ÑªÓ¡(ÕĞ).lua												
+1151	Thİch Cèt Än (Chiªu)	7	24	27	0		2	9	1		0	2048	1		0	0	0	0								12												456	9999	1		100				\script\skill\Ã÷½ÌÑªÈË\´Ì¹ÇÓ¡(ÕĞ).lua												
+1152	Truy Hån Än (Chiªu)	7	24	27	0		2	9	1		0	2048	1		0	0	0	0								34												456	9999	1		100				\script\skill\Ã÷½ÌÑªÈË\×·»êÓ¡(ÕĞ).lua												
+1153	Thİ C¶nh Tr¶o (Chiªu)	8	24	27	0		20	1	2	1	1	2048	1		0	0	0	1																				456	9999	3		-100				\script\skill\Ã÷½ÌÑªÈË\ß±¾±×¦(ÕĞ).lua		skill_interrupt_rate	-55									
+1154	Hµn B¨ng HuyÕt Ch­íng (Chiªu)	8	24	27	0		2	10	1		0	2048	1		1	0	0	0								16												2	9999	1		100				\script\skill\Ã÷½ÌÑªÈË\º®±ùÑªÕÏ(ÕĞ).lua												
+1155	Hãa HuyÕt Än (Chiªu)	7	24	27	0		2	9	1		0	2048	1		0	0	0	0								32												456	9999	1		100				\script\skill\Ã÷½ÌÑªÈË\»¯ÑªÓ¡(ÕĞ).lua												
+1156	VÉn Th­¬ng Än (Chiªu)	7	24	27	0		2	9	1		0	2048	1		0	0	0	0								54												456	9999	1		100				\script\skill\Ã÷½ÌÑªÈË\éæéäÓ¡(ÕĞ).lua												
+1157	B¨ng HuyÕt Än B¹o Tr¸c	8	24	27	0		2	8	1	1	1	2048	1		0	0	0	0								1					1	1	2					456	9999	5		100				\script\skill\Ã÷½ÌÑªÈË\±ÀÑªÓ¡±¬Õ¨.lua												
+1158	B¨ng HuyÕt Än næ (Chiªu)	8	24	27	0		2	8	1	1	1	2048	1		0	0	0	0								1					1	1	2					456	9999	8		100				\script\skill\Ã÷½ÌÑªÈË\±ÀÑªÓ¡±¬Õ¨(ÕĞ).lua												
+1159	HÊp HuyÕt Än HÊp HuyÕt	6	24	27	0		2	9	2	1	0	2048	1		0	0	0	0							472	1					1	1	2					456	9999	1	3	100			1	\script\skill\Ã÷½ÌÑªÈË\ÎüÑªÓ¡ÎüÑª.lua												
+1160	HÊp HuyÕt Än hót m¸u (Chiªu)	6	24	27	0		2	9	2	1	0	2048	1		0	0	0	0							472	1					1	1	2					456	9999	1	3	100			1	\script\skill\Ã÷½ÌÑªÈË\ÎüÑªÓ¡ÎüÑª(ÕĞ).lua												
+1161	Hãa HuyÕt Än ho¸ huyÕt	7	24	27	0		2	9	2	1	0	2048	1		0	0	0	0								1					1	1	2					456	9999	1		100			1	\script\skill\Ã÷½ÌÑªÈË\»¯ÑªÓ¡»¯Ñª.lua												
+1162	Hãa HuyÕt Än hãa huyÕt (Chiªu)	7	24	27	0		2	9	2	1	0	2048	1		0	0	0	0								1					1	1	2					456	9999	1		100			1	\script\skill\Ã÷½ÌÑªÈË\»¯ÑªÓ¡»¯Ñª(ÕĞ).lua												
+1163	VÉn Th­¬ng Än tö vong	7	24	27	0		2	9	2	1	0	2048	1		0	0	0	0								1					1	1	2					456	9999	1		100			1	\script\skill\Ã÷½ÌÑªÈË\éæéäÓ¡éæéä.lua												
+1164	VÉn Th­¬ng Än tö vong (Chiªu)	7		27	0		2	9	2	1	0	2048	1		0	0	0	0								1					1	1	2					456	9999	1		100			1	\script\skill\Ã÷½ÌÑªÈË\éæéäÓ¡éæéä(ÕĞ).lua												
 1165	Phong Vò T©m Ph¸p	10	0	29	0		3	15	1		0	-1	0		1	0	0	0																				2								\script\skill\´äÑÌÎèÏÉ\·ãÎèĞÄ·¨.lua												
 1166	Khëi Vò	5	0	29	0		3	15	1		0	-1	0		1	0	0	0																				2								\script\skill\´äÑÌÎèÏÉ\ÆğÎè.lua												
 1167	Linh Miªu VËn	7	0	29	0		10	0	2	0	1	8192	1	30	0	0	1	0					1177	9	461	9	1184				1		2					456	9999	1	90	50			1	\script\skill\´äÑÌÎèÏÉ\ÁéÃ¨ÔÏ.lua		skill_interrupt_rate	10									
@@ -982,6 +1094,24 @@ ID	Name	MaxLevel	Faction	Route	Series	ExtraSeries	Type	Style1	Style2	DamageType	
 1196	Loan Phông Cöu Thiªn	20	0	29	0		10	7	1		1	8192	1	30	0	0	0	0					1197	1	467	18					1		2					456	9999	1	180	100			1	\script\skill\´äÑÌÎèÏÉ\ğ½·ï¾ÅÌì.lua		skill_interrupt_rate	-500									
 1197	MiÔn dŞch Loan Phông Cöu Thiªn	20	0	23	0		2	3	1		0	8192	1		0	0	0	0					1198	1		1												2	9999	1		100				\script\skill\´äÑÌÎèÏÉ\ğ½·ï¾ÅÌìÃâÒß.lua												
 1198	Loan Phông Cöu Thiªn (Nhá)	20	0	29	0		10	7	1	0	1	8192	1	30	0	0	0	0					1198	17	467	18					1		2					456	9999	1		100			1	\script\skill\´äÑÌÎèÏÉ\ğ½·ï¾ÅÌì(×Ó).lua												
+1199	Th¸nh Háa §ao Ph¸p (Tö)	9	24	25	0		2	0	2	0	2	8	1		0	1	1	1					1201	12	441	12					1	1	2					456	112	1	17	120			1	\script\skill\Ã÷½ÌÊ¥Õ½\Ê¥»ğµ¶·¨(×Ó).lua												
+1200	Cuång DiÖm B«n (Tö)	9	24	25	0		2	1	1		2	8	1		0	0	0	0								0												2	9999	1		100				\script\skill\Ã÷½ÌÊ¥Õ½\¿ñÑæ±¼(×Ó).lua		skill_interrupt_rate	-500									
+1201	Th¸nh Háa §ao Ph¸p (Nhá)	9	24	25	0		2	1	1		2	8	1		0	0	0	0								0												2	9999	1		100				\script\skill\Ã÷½ÌÊ¥Õ½\Ê¥»ğµ¶·¨(ÕĞ×Ó).lua		skill_interrupt_rate	-500									
+1202	Håi Phong LiÖt DiÖm	10	24	25	0		2	10	1	0	0	8	1		1	0	0	0								28	1205											2	9999	1	45	200				\script\skill\ÃØ¼®Îä¹¦\»Ø·æÁÒÑæ.lua		skill_cast_interval	1620	skill_interrupt_rate	-55							
+1203	Phô Kú LÖnh	10	24	26	0		29	8	2		0	512	1		0	0	0	0								18												1048576	600	1	27	200				\script\skill\ÃØ¼®Îä¹¦\¸ºÆìÁî.lua		skill_cast_interval	1080									
+1204	Hµn B¨ng Ng­ng HuyÕt Ên	10	24	27	0		2	10	1		0	2048	1		1	0	0	0								32	1207											2	9999	1	36	100				\script\skill\ÃØ¼®Îä¹¦\º®±ùÄıÑªÓ¡.lua		skill_cast_interval	1080	skill_interrupt_rate	25							
+1205	Håi Phong LiÖt DiÖm (Chiªu)	10	24	25	0		2	10	1	0	0	8	1		1	0	0	0								28												2	9999	1		200				\script\skill\ÃØ¼®Îä¹¦\»Ø·æÁÒÑæ(ÕĞ).lua												
+1206	Phô Kú LÖnh (BŞ ®éng)	10	24	26	0		3	15	1		0	-1	0		1	0	0	0																				2								\script\skill\ÃØ¼®Îä¹¦\¸ºÆìÁî(±»¶¯).lua												
+1207	Hµn B¨ng Ng­ng HuyÕt Än (Chiªu)	10	24	27	0		2	10	1		0	2048	1		1	0	0	0								32												2	9999	1		100				\script\skill\ÃØ¼®Îä¹¦\º®±ùÄıÑªÓ¡(ÕĞ).lua												
+1208	Kim Táa TrËn (Chiªu)	7	24	26	0		28	2	2	0	1	512	1		0	0	0	0							450	24					1	3	2					456	300	1		200			1	\script\skill\Ã÷½ÌÕó±ø\½ğËøÕó(ÕĞ).lua		skill_param1	1261	skill_param2	1113							
+1209	HuyÒn Thñy TrËn (Chiªu)	7	24	26	0		28	2	2	0	1	512	1		0	0	0	0							451	24					1	3	2					456	300	1		200			1	\script\skill\Ã÷½ÌÕó±ø\ĞşË®Õó(ÕĞ).lua		skill_param1	1262	skill_param2	1114							
+1210	Bµn Méc TrËn (Chiªu)	7	24	26	0		28	2	2	0	1	512	1		0	0	0	0							452	24					1	3	2					456	300	1		200			1	\script\skill\Ã÷½ÌÕó±ø\ÅÌÄ¾Õó(ÕĞ).lua		skill_param1	1263	skill_param2	1115							
+1211	NghiÖp Háa TrËn (Chiªu)	7	24	26	0		28	2	2	0	1	512	1		0	0	0	0							453	24					1	3	2					456	300	1		200			1	\script\skill\Ã÷½ÌÕó±ø\Òµ»ğÕó(ÕĞ).lua		skill_param1	1264	skill_param2	1116							
+1212	Thæ Lao TrËn (Chiªu)	7	24	26	0		28	2	2	0	1	512	1		0	0	0	0							454	24					1	3	2					456	300	1		200			1	\script\skill\Ã÷½ÌÕó±ø\ÍÁÀÎÕó(ÕĞ).lua		skill_param1	1265	skill_param2	1117							
+1213	Hµn B¨ng Miªn Ch­ëng	20	24	27	0		1	7	2	2	1	2048	1		0	0	0	0					1214	1	473	9					2		3		8			456	600	1	90	100			4	\script\skill\Ã÷½ÌÑªÈË\º®±ùÃàÕÆ.lua		skill_interrupt_rate	-55									
+1214	MiÔn dŞch Hµn B¨ng Miªn Ch­ëng	20	24	27	0		2	7	1		0	2048	1		0	0	0	0					1275	56		1												2	9999	1		100				\script\skill\Ã÷½ÌÑªÈË\º®±ùÃàÕÆÃâÒß.lua												
+1215	MiÔn dŞch Quang Minh Ngò Hµnh TrËn	20	24	26	0		2	3	0		1	512	1		0	0	0	0								1												2	9999	1		100				\script\skill\Ã÷½ÌÕó±ø\¹âÃ÷ÎåĞĞÕóÃâÒß.lua												
+1216	Bót tÊn c«ng tÇm xa b×nh th­êng	1	0	0	7		-1	0	2	0	2	512	1		0	1	1	1							73	6					1	1	2					456	96	1	17	100			1	\script\skill\ÆÕÍ¨¹¥»÷\ÆÕÍ¨¹¥»÷.lua		skill_interrupt_rate	10									
 1217	B¸ch Hoa Ngäc Lé C«ng	10	0	30	0		3	15	1		0	-1	0		1	0	0	0																				2								\script\skill\´äÑÌÁéÅ®\°Ù»¨ÓñÂ¶¹¦.lua												
 1218	Nu«i TiÓu §iªu	1	0	30	0		31	12	1		5	4096	1		1	0	0	0								17												131072	600	1	18	100				\script\skill\´äÑÌÁéÅ®\Î¹ÑøĞ¡õõ.lua		skill_interrupt_rate	35									
 1219	L¹c Hoa QuyÕt	7	0	30	0		2	0	2	0	0	4096	1		0	1	1	0					1266	9		12												456	600	1	18	100				\script\skill\´äÑÌÁéÅ®\Âä»¨¾÷.lua		skill_cast_interval	18	skill_interrupt_rate	-55							
@@ -1026,6 +1156,11 @@ ID	Name	MaxLevel	Faction	Route	Series	ExtraSeries	Type	Style1	Style2	DamageType	
 1258	T­ Gi¶o	10	0	30	0		1	1	2	0	0	-1	1		0	0	0	0					1259	5	474	2									2			456	96	1	9	100			2	\script\skill\´äÑÌÁéÅ®\õõ¼¼ÄÜ2.lua												
 1259	T­ Gi¶o (Nhá)	10	0	30	0		1	1	2	0	0	-1	1		0	0	0	0							474	1												456	96	1	9	100			1	\script\skill\´äÑÌÁéÅ®\õõ¼¼ÄÜ2(×Ó).lua												
 1260	Uy NhiÕp	10	0	30	0		1	1	2	0	2	-1	1		0	0	0	0							479	7												456	96	1	9	100			1	\script\skill\´äÑÌÁéÅ®\õõ¼¼ÄÜ3.lua												
+1261	ChØ lÖnh Kim Táa TrËn Phô Kú	7	24	26	0		2	8	1		2	512	1		1	0	0	0								1												2	9999	1	2	100				\script\skill\Ã÷½ÌÕó±ø\½ğËøÕó¸ºÆìÖ¸Áî.lua												
+1262	ChØ lÖnh HuyÒn Thñy TrËn Phô Kú	7	24	26	0		2	8	1		2	512	1		1	0	0	0								1												2	9999	1	2	100				\script\skill\Ã÷½ÌÕó±ø\ĞşË®Õó¸ºÆìÖ¸Áî.lua												
+1263	ChØ lÖnh Bµn Méc TrËn Phô Kú	7	24	26	0		2	8	1		2	512	1		1	0	0	0								1												2	9999	1	2	100				\script\skill\Ã÷½ÌÕó±ø\ÅÌÄ¾Õó¸ºÆìÖ¸Áî.lua												
+1264	ChØ lÖnh NghiÖp Háa TrËn Phô Kú	7	24	26	0		2	8	1		2	512	1		1	0	0	0								1												2	9999	1	2	100				\script\skill\Ã÷½ÌÕó±ø\Òµ»ğÕó¸ºÆìÖ¸Áî.lua												
+1265	ChØ lÖnh Thæ Lao TrËn Phô Kú	7	24	26	0		2	8	1		2	512	1		1	0	0	0								1												2	9999	1	2	100				\script\skill\Ã÷½ÌÕó±ø\ÍÁÀÎÕó¸ºÆìÖ¸Áî.lua												
 1266	L¹c Hoa QuyÕt (Nhá)	7	0	30	0		2	8	2	0	0	4096	1		0	1	0	0								1	1277											2	9999	1		100				\script\skill\´äÑÌÁéÅ®\Âä»¨¾÷(×Ó).lua												
 1267	§µo Hoa Ch­¬ng (Nhá)	6	0	30	0		2	8	1	0	0	4096	1		0	0	0	0								1	1278											2	9999	1		100				\script\skill\´äÑÌÁéÅ®\ÌÒ»¨ÕÎ(×Ó).lua												
 1268	B¸ch Hoa T©m Kinh (Nhá)	10	0	30	0		2	8	2	0	2	4096	1		0	0	0	0								1												2	9999	1		100				\script\skill\´äÑÌÁéÅ®\°Ù»¨ĞÄ¾­(×Ó).lua												
@@ -1048,9 +1183,21 @@ ID	Name	MaxLevel	Faction	Route	Series	ExtraSeries	Type	Style1	Style2	DamageType	
 1285	L¹c Hoa QuyÕt (§iªu)	7	0	30	0		1	0	2	0	0	-1	1		0	0	0	0					1233	4	474	2					1	1	2		1			456	96	1	9	100			4	\script\skill\´äÑÌÁéÅ®\Âä»¨¾÷(õõÕĞ).lua												
 1286	§o¹n V©n QuyÕt (Nhá)	6	0	29	0		2	10	1		0	8192	1		0	0	0	0								1												2	9999	1		100				\script\skill\´äÑÌÎèÏÉ\¶ÏÔÆ¾÷(×Ó).lua												
 1287	§o¹n V©n QuyÕt (Nhá)	6	0	29	0		2	10	1		0	8192	1		0	0	0	0								1												2	9999	1		100				\script\skill\´äÑÌÎèÏÉ\¶ÏÔÆ¾÷(ÕĞ×Ó).lua												
+1288	Hñ Th­¬ng Än hñ th­¬ng	7	24	27	0		2	9	1		0	2048	1		0	0	0	0								1												456	9999	1	2	100				\script\skill\Ã÷½ÌÑªÈË\¸¯ÉËÓ¡¸¯ÉË.lua												
+1289	Hñ Th­¬ng Än hñ th­¬ng (Chiªu)	7	24	27	0		2	9	1		0	2048	1		0	0	0	0								1												456	9999	1		100				\script\skill\Ã÷½ÌÑªÈË\¸¯ÉËÓ¡¸¯ÉË(ÕĞ).lua												
+1290	Håi Phong LiÖt DiÖm (Tö)	10	24	25	0		2	8	1		2	8	1		1	0	0	0								1												2	9999	1	2	100				\script\skill\ÃØ¼®Îä¹¦\»Ø·æÁÒÑæ(×Ó).lua												
 1293	Cöu Thiªn Phong L«i QuyÕt	10	0	23	0		2	8	1		0	4	1		0	0	0	0									1294											2	9999	1	1	100				\script\skill\ÃØ¼®Îä¹¦\¾ÅÌì·çÀ×¾÷.lua		skill_interrupt_rate	-55	skill_cast_interval	540					200	20	
 1294	Cöu Thiªn Phong L«i QuyÕt (Chiªu)	10	0	23	0		2	8	1		0	4	1		0	0	0	0																				2	9999	1		100				\script\skill\ÃØ¼®Îä¹¦\¾ÅÌì·çÀ×¾÷(ÕĞ).lua										200	25	
 1295	T©m Ph¸p Cöu Thiªn Phong L«i QuyÕt	10	0	23	0		3	15	1		0	-1	0		1	0	0	0																				2								\script\skill\ÃØ¼®Îä¹¦\¾ÅÌì·çÀ×¾÷ĞÄ·¨.lua												
+1296	Håi Phong Tr¶m NhËt C«ng	10	24	25	0		2	10	1	0	0	8	1		1	0	0	0								28	1297											2	9999	1	45	200				\script\skill\ÃØ¼®Îä¹¦\»Ø·æÕ¶ÈÕ¹¦.lua		skill_cast_interval	1620	skill_interrupt_rate	-55					200	15	
+1297	Håi Phong Tr¶m NhËt C«ng (Chiªu)	10	24	25	0		2	10	1	0	0	8	1		1	0	0	0								28												2	9999	1		200				\script\skill\ÃØ¼®Îä¹¦\»Ø·æÕ¶ÈÕ¹¦(ÕĞ).lua										200	15	
+1298	Håi Phong Tr¶m NhËt C«ng (Tö)	10	24	25	0		2	8	1		2	8	1		1	0	0	0								1												2	9999	1	2	100				\script\skill\ÃØ¼®Îä¹¦\»Ø·æÕ¶ÈÕ¹¦(×Ó).lua												
+1299	Håi Phong Tr¶m NhËt C«ng T©m Ph¸p	10	24	25	0		3	15	1		0	-1	0		1	0	0	0																				2								\script\skill\ÃØ¼®Îä¹¦\»Ø·æÕ¶ÈÕ¹¦ĞÄ·¨.lua												
+1300	Phô Kú Hµnh TrËn LÖnh	10	24	26	0		29	8	2		0	512	1		0	0	0	0								18												1048576	600	1	27	200				\script\skill\ÃØ¼®Îä¹¦\¸ºÆìĞĞÕóÁî.lua		skill_cast_interval	1080									
+1301	Phô Kú Hµnh TrËn LÖnh T©m Ph¸p	10	24	26	0		3	15	1		0	-1	0		1	0	0	0																				2								\script\skill\ÃØ¼®Îä¹¦\¸ºÆìĞĞÕóÁîĞÄ·¨.lua												
+1302	Ng­ng HuyÕt Phong Hån Än	10	24	27	0		2	10	1		0	2048	1		1	0	0	0								32	1303											2	9999	1	36	100				\script\skill\ÃØ¼®Îä¹¦\ÄıÑª·â»êÓ¡.lua		skill_cast_interval	1080	skill_interrupt_rate	25					1000	30	
+1303	Ng­ng HuyÕt Phong Hån Än (Chiªu)	10	24	27	0		2	10	1		0	2048	1		1	0	0	0								32												2	9999	1		100				\script\skill\ÃØ¼®Îä¹¦\ÄıÑª·â»êÓ¡(ÕĞ).lua										1000	30	
+1304	Ng­ng HuyÕt Phong Hån Än T©m Ph¸p	10	24	27	0		3	15	1		0	-1	0		1	0	0	0																				2								\script\skill\ÃØ¼®Îä¹¦\ÄıÑª·â»êÓ¡ĞÄ·¨.lua												
 1305	Hång TrÇn Tóy Méng Ng©m	10	0	29	0		2	8	1		0	8192	1		1	0	0	0								27	1306											2	9999	1	36	200				\script\skill\ÃØ¼®Îä¹¦\ºì³¾×íÃÎÒ÷.lua		skill_interrupt_rate	-55	skill_cast_interval	1080					200	15	
 1306	Hång TrÇn Tóy Méng Ng©m (Chiªu)	10	0	29	0		2	8	1		0	8192	1		1	0	0	0								27												2	9999	1		100				\script\skill\ÃØ¼®Îä¹¦\ºì³¾×íÃÎÒ÷(ÕĞ).lua		skill_interrupt_rate	-55							200	15	
 1307	T©m Ph¸p Hång TrÇn Tóy Méng Ng©m	10	0	29	0		3	15	1		0	-1	0		1	0	0	0																				2								\script\skill\ÃØ¼®Îä¹¦\ºì³¾×íÃÎÒ÷ĞÄ·¨.lua												
@@ -1188,6 +1335,7 @@ ID	Name	MaxLevel	Faction	Route	Series	ExtraSeries	Type	Style1	Style2	DamageType	
 1477	VËn Linh ChØ ChiÕn	3	0	0	0		2	9	1		0	-1	1		1	0	0	0								1												2	9999	1	2	100				\script\skill\Íâ´«ĞÂÔö\ÔÏÁéÖ¹Õ½.lua												
 1481	Tinh Hµ H¹o H·n (nhá)	1	0	0	0		2	8	1		0	-1	1		1	0	0	0								1												2	9999	1	2	100				\script\skill\Íâ´«ĞÂÔö\ĞÇºÓºÆå«(×Ó).lua												
 1482	KiÕm Ca M·n §Şa (nhá) 	1	0	0	0		2	8	1		0	-1	1		1	0	0	0								1												2	9999	1	2	100				\script\skill\Íâ´«ĞÂÔö\½£¸êÂúµØ(×Ó).lua												
+1483	NPC CÇm C«ng Kİch	20	0	0	0		1	6	2	1	0	-1	0		0	0	1	0							37	6					1		2					456	600	1	17	100			1	\script\skill\ÆÕÍ¨¹¥»÷\npcÆÕÍ¨¹¥»÷.lua												
 1484	NPC LiÖt DiÔm C«ng Kİch 	20	0	0	0		1	6	2	1	0	-1	0		0	0	0	0							12	6					1	1	2					456	140	1	17	100			1	\script\skill\ÆÕÍ¨¹¥»÷\npcÆÕÍ¨¹¥»÷.lua												
 1486	boss L«i Kİch	20	0	0	0		1	6	1	1	1	-1	1		0	0	0	0							13	3					4	1	2		1			456	600	1	17	100			8	\script\skill\ÆÕÍ¨¹¥»÷\npcÆÕÍ¨¹¥»÷.lua		skill_param1	21	skill_param2	21							
 1489	NPC B¸ch Th©n Ph¹m Vi C«ng Kİch	20	0	0	0		1	6	2	1	0	-1	0		0	0	0	0							503	6					1		2					456	600	1	17	100			1	\script\skill\ÆÕÍ¨¹¥»÷\npcÆÕÍ¨¹¥»÷.lua												
@@ -1345,8 +1493,71 @@ ID	Name	MaxLevel	Faction	Route	Series	ExtraSeries	Type	Style1	Style2	DamageType	
 1679	Hoµnh T¶o Thiªn Qu©n (tö)	2					1	6	2	1	1	-1	0		0	0	0	0							519	2					2	0	3		0			456	9999	1	9	100			10	\script\skill\Íâ´«ĞÂÔö\Ì«Ò»Ëş\ºáÉ¨Ç§¾ü(×Ó).lua		skill_interrupt_rate	-550									
 1680	L­u Quang TuyÖt ¶nh	2					1	6	2	1	1	-1	0		0	0	0	0					1679	80	511	9					2	0	2		18			456	9999	1	90	167			4	\script\skill\Íâ´«ĞÂÔö\Ì«Ò»Ëş\Á÷¹â¾øÓ°.lua		skill_interrupt_rate	-550									
 1681	L­u Quang TuyÖt ¶nh (Tö)	1					1	6	2	1	1	-1	0		0	0	0	0							515	4					2	0	2		1			456	9999	1	27	167			4	\script\skill\Íâ´«ĞÂÔö\Ì«Ò»Ëş\Á÷¹â¾øÓ°(×Ó).lua		skill_interrupt_rate	-550									
+1682	Th¸i NhÊt Th¸p V« ¶nh C­íc	9					1	6	2	1	2	-1	0		0	0	0	0					1684	12	55	5					1	1	2		1			456	96	1	18	100				\script\skill\Íâ´«ĞÂÔö\Ì«Ò»Ëş\npc\Ì«Ò»ËşÎŞÓ°½Å.lua												
+1683	Th¸i NhÊt Th¸p La H¸n QuyÒn	7					1	4	2	1	2	-1	0		0	0	0	0					1686	9	45	4					1	1	2		5			456	144	1	27	150				\script\skill\Íâ´«ĞÂÔö\Ì«Ò»Ëş\npc\Ì«Ò»ËşÂŞººÈ­.lua												
+1684	Th¸i NhÊt Th¸p V« ¶nh C­íc (Tö)	9					1	6	2	1	2	-1	0		0	0	0	0					1685	12	55	3					1	1	2		2			456	96	1		100			1	\script\skill\Íâ´«ĞÂÔö\Ì«Ò»Ëş\npc\Ì«Ò»ËşÎŞÓ°½Å(×Ó).lua												
+1685	Th¸i NhÊt Th¸p V« ¶nh C­íc (NhŞ Tö)	9					1	6	2	1	2	-1	0		0	0	0	0							55	3					1	1	2					456	96	1		100			1	\script\skill\Íâ´«ĞÂÔö\Ì«Ò»Ëş\npc\Ì«Ò»ËşÎŞÓ°½Å(×Ó×Ó).lua												
+1686	Th¸i NhÊt Th¸p La H¸n QuyÒn (Tö)	7					1	4	2	1	2	-1	0		0	0	0	0							45	0					1	1	2					456	96	1		100			1	\script\skill\Íâ´«ĞÂÔö\Ì«Ò»Ëş\npc\Ì«Ò»ËşÂŞººÈ­(×Ó).lua												
+1687	Th¸i NhÊt Th¸p §¹i Lùc Kim Cang ChØ	7					1	6	2	1	2	-1	0		0	0	0	0							40	72					1	1	2					456	600	1	73	300			1	\script\skill\Íâ´«ĞÂÔö\Ì«Ò»Ëş\npc\Ì«Ò»Ëş´óÁ¦½ğ¸ÕÖ¸.lua												
+1688	Th¸i NhÊt Th¸p S­ Tö Hèng	5					1	6	2	1	1	-1	0		0	0	0	0							41	54					1	0	2					456	9999	1	65	600			1	\script\skill\Íâ´«ĞÂÔö\Ì«Ò»Ëş\npc\Ì«Ò»ËşÊ¨×Óºğ.lua												
+1689	Th¸i NhÊt Th¸p §¹t Ma Vò Kinh	7					1	2	2	0	2	-1	0		0	0	0	0					1690	18	59	6					1	1	2					456	128	1	36	133			1	\script\skill\Íâ´«ĞÂÔö\Ì«Ò»Ëş\npc\Ì«Ò»Ëş´ïÄ¦Îä¾­.lua												
+1690	Th¸i NhÊt Th¸p §¹t Ma Vò Kinh (Tö)	7					1	2	2	0	2	-1	0		0	0	0	0							59						1	1	2					456	128	1		100			1	\script\skill\Íâ´«ĞÂÔö\Ì«Ò»Ëş\npc\Ì«Ò»Ëş´ïÄ¦Îä¾­(×Ó).lua												
+1691	Th¸i NhÊt Th¸p Tr¶m Ma §ao Ph¸p	5					1	0	2	0	2	-1	0		0	0	0	0							56	12					1	1	2					456	96	1	18	100			1	\script\skill\Íâ´«ĞÂÔö\Ì«Ò»Ëş\npc\Ì«Ò»ËşÕ¶Ä§µ¶·¨.lua												
+1692	Th¸i NhÊt Th¸p Tİch D­¬ng KiÕm Khİ	7					1	5	2	1	2	-1	0		0	0	0	0							15	45					1		2					456	600	1	55	100			1	\script\skill\Íâ´«ĞÂÔö\Ì«Ò»Ëş\npc\Ì«Ò»ËşÖËÑô½£Æø.lua												
+1693	Th¸i NhÊt Th¸p B¸t Qu¸i KiÕm Khİ	7					1	6	2	1	1	-1	0		0	0	0	0					1694	99	28	72					1	1	2					456	600	1	108	100			1	\script\skill\Íâ´«ĞÂÔö\Ì«Ò»Ëş\npc\Ì«Ò»Ëş°ËØÔ½£Æø.lua												
+1694	Th¸i NhÊt Th¸p B¸t Qu¸i KiÕm Khİ (NhŞ Tö)	7					1	6	2	1	1	-1	0		0	0	0	0							29	0					3	1	0		0			456	9999	1		100			8	\script\skill\Íâ´«ĞÂÔö\Ì«Ò»Ëş\npc\Ì«Ò»Ëş°ËØÔ½£Æø(×Ó×Ó).lua												
+1695	Th¸i NhÊt Th¸p Th­îng Thanh V« Cùc C«ng	7					1	2	2	0	2	-1	0		0	0	0	0					1696	36	87	14					1	1	2		2			456	144	1	45	100			2	\script\skill\Íâ´«ĞÂÔö\Ì«Ò»Ëş\npc\Ì«Ò»ËşÉÏÇåÎŞ¼«¹¦.lua												
+1696	Th¸i NhÊt Th¸p Th­îng Thanh V« Cùc C«ng (Tö)	7					1	2	2	0	2	-1	0		0	0	0	0							87	0					1	1	2					456	96	1		100			1	\script\skill\Íâ´«ĞÂÔö\Ì«Ò»Ëş\npc\Ì«Ò»ËşÉÏÇåÎŞ¼«¹¦(×Ó).lua												
+1697	Th¸i NhÊt Th¸p ThiÕu D­¬ng quyÕt	6					1	1	2	0	2	-1	0		0	0	0	0							17	18					1		2					456	600	1	27	100			1	\script\skill\Íâ´«ĞÂÔö\Ì«Ò»Ëş\npc\Ì«Ò»ËşÉÙÑô¾÷.lua												
+1698	Th¸i NhÊt Th¸p M·n Thiªn Hoa Vò	7					1	2	2	0	1	-1	0		0	0	0	0							36	27					4	1	2		2			456	600	1	35	100			9	\script\skill\Íâ´«ĞÂÔö\Ì«Ò»Ëş\npc\Ì«Ò»ËşÂúÌì»¨Óê.lua												
+1699	Th¸i NhÊt Th¸p B¹o Vò Lª Hoa Ch©m	7					1	2	2	0	1	-1	0		0	0	0	0					1700	14	33	4					2		2		1			456	600	1	27	100			4	\script\skill\Íâ´«ĞÂÔö\Ì«Ò»Ëş\npc\Ì«Ò»Ëş±©ÓêÀæ»¨Õë.lua												
+1700	Th¸i NhÊt Th¸p B¹o Vò Lª Hoa Ch©m (Tö)	7					1	2	2	0	1	-1	0		0	0	0	0					1701	10	34	0					1		2		3			456	9999	1		100			2	\script\skill\Íâ´«ĞÂÔö\Ì«Ò»Ëş\npc\Ì«Ò»Ëş±©ÓêÀæ»¨Õë(×Ó).lua												
+1701	Th¸i NhÊt Th¸p B¹o Vò Lª Hoa Ch©m (NhŞ Tö)	7					1	2	2	0	1	-1	0		0	0	0	0							35	0					1		2					456	9999	1		100			1	\script\skill\Íâ´«ĞÂÔö\Ì«Ò»Ëş\npc\Ì«Ò»Ëş±©ÓêÀæ»¨Õë(×Ó×Ó).lua												
+1702	Th¸i NhÊt Th¸p Lôc Hîp QuyÒn Ph¸p	6					1	1	2	0	2	-1	0		0	0	0	0							67	12					1	1	2					456	160	1	18	100			1	\script\skill\Íâ´«ĞÂÔö\Ì«Ò»Ëş\npc\Ì«Ò»ËşÁùºÏÈ­·¨.lua												
+1703	Th¸i NhÊt Th¸p Tóy QuyÒn	7					1	2	2	0	1	-1	0		0	0	0	0							68	18					1		2					456	600	1	19	400			1	\script\skill\Íâ´«ĞÂÔö\Ì«Ò»Ëş\npc\Ì«Ò»Ëş×íÈ­.lua												
+1704	Th¸i NhÊt Th¸p §¶ CÈu Bæng Ph¸p	7					1	2	2	0	2	-1	0		0	0	0	0					1705	9	70	4					1	1	2		5			456	300	1	36	75				\script\skill\Íâ´«ĞÂÔö\Ì«Ò»Ëş\npc\Ì«Ò»Ëş´ò¹·¹÷·¨.lua												
+1705	Th¸i NhÊt Th¸p §¶ CÈu C«n Ph¸p (Tö)	7					1	2	2	0	2	-1	0		0	0	0	0							70	1					1	1	2					456	300	1		100			1	\script\skill\Íâ´«ĞÂÔö\Ì«Ò»Ëş\npc\Ì«Ò»Ëş´ò¹·¹÷·¨(×Ó).lua												
+1706	Th¸i NhÊt Th¸p Khu Xµ C«n Ph¸p	7					1	0	2	0	2	-1	0		0	0	0	0					1707	9	69	2					1	1	2		4			456	300	1	22	100			1	\script\skill\Íâ´«ĞÂÔö\Ì«Ò»Ëş\npc\Ì«Ò»ËşÇıÉß¹÷·¨.lua												
+1707	Th¸i NhÊt Th¸p Khu Xµ C«n Ph¸p (Tö)	7					1	0	2	0	2	-1	0		0	0	0	0							69	3					1	1	2					456	300	1		100			1	\script\skill\Íâ´«ĞÂÔö\Ì«Ò»Ëş\npc\Ì«Ò»ËşÇıÉß¹÷·¨(×Ó).lua												
+1708	Th¸i NhÊt Th¸p D­¬ng Gia To¸i Kim TiÔn	8					1	1	2	0	2	-1	0		0	0	0	0							409	54					1		2					456	600	1	72	150			1	\script\skill\Íâ´«ĞÂÔö\Ì«Ò»Ëş\npc\Ì«Ò»ËşÑî¼ÒËé½ğ¼ı.lua												
+1709	Th¸i NhÊt Th¸p L­u Quang TuyÖt ¶nh TiÔn	7					1	2	2	0	1	-1	0		0	0	0	0							410	18					0		6		36			456	600	1	72	100			35	\script\skill\Íâ´«ĞÂÔö\Ì«Ò»Ëş\npc\Ì«Ò»ËşÁ÷¹â¾øÓ°¼ı.lua												
+1710	Th¸i NhÊt Th¸p D­¬ng Gia Thiªn Hµnh Th­¬ng	7					1	1	2	0	1	-1	0		0	0	0	0					1711	24	402	6					1		2		2			456	9999	1	36	100			2	\script\skill\Íâ´«ĞÂÔö\Ì«Ò»Ëş\npc\Ì«Ò»ËşÑî¼ÒÌìºâÇ¹.lua												
+1711	Th¸i NhÊt Th¸p D­¬ng Gia Thiªn Hµnh Th­¬ng (Tö)	7					1	1	2	0	1	-1	0		0	0	0	0							403	1					1		2					456	9999	1		100			1	\script\skill\Íâ´«ĞÂÔö\Ì«Ò»Ëş\npc\Ì«Ò»ËşÑî¼ÒÌìºâÇ¹(×Ó).lua												
+1712	Th¸i NhÊt Th¸p D­¬ng Gia B«n Lang Th­¬ng	7					20	0	2		1	-1	0		0	0	0	0					1713	3		3												456	600	1	54	-100				\script\skill\Íâ´«ĞÂÔö\Ì«Ò»Ëş\npc\Ì«Ò»ËşÑî¼Ò±¼ÀÇÇ¹.lua												
+1713	Th¸i NhÊt Th¸p D­¬ng Gia B«n Lang Th­¬ng (Tö)	7					1	0	2	0	2	-1	0		0	0	0	0							401	4					1		2					456	144	1	9	100			1	\script\skill\Íâ´«ĞÂÔö\Ì«Ò»Ëş\npc\Ì«Ò»ËşÑî¼Ò±¼ÀÇÇ¹(×Ó).lua												
+1714	Th¸i NhÊt Th¸p PhÉn CÇm Chö H¹c QuyÕt	7					1	2	2	0	2	-1	0		0	0	0	0							85	18					1		2					456	600	1	22	100			1	\script\skill\Íâ´«ĞÂÔö\Ì«Ò»Ëş\npc\Ì«Ò»Ëş·ÙÇÙÖóº×¾÷.lua												
+1715	Th¸i NhÊt Th¸p Tïy  Khóc	7					10	4	2	1	1	-1	0		0	0	0	0					1716	36	37	20					2		3		4			456	9999	1	270	100			4	\script\skill\Íâ´«ĞÂÔö\Ì«Ò»Ëş\npc\Ì«Ò»ËşËæÒâÇú.lua												
+1716	Th¸i NhÊt Th¸p Tïy  Khóc (Tö)	7					10	4	2	1	1	-1	0		0	0	0	0					1716	18	37	3					2		3		4			456	9999	1		100			4	\script\skill\Íâ´«ĞÂÔö\Ì«Ò»Ëş\npc\Ì«Ò»ËşËæÒâÇú(×Ó).lua												
+1717	Th¸i NhÊt Th¸p V¹n Cæ Thùc Thiªn	8					1	6	2	1	2	-1	0		0	0	0	0							114	36					1		2					456	600	1	72	200			1	\script\skill\Íâ´«ĞÂÔö\Ì«Ò»Ëş\npc\Ì«Ò»ËşÍò¹ÆÊ´Ìì.lua												
+1718	Th¸i NhÊt Th¸p Cuång Phong Tr¶o	6					1	4	2	1	2	-1	0		0	0	0	0					1719	14	113	3					1	1	2		3			456	300	1	18	75			1	\script\skill\Íâ´«ĞÂÔö\Ì«Ò»Ëş\npc\Ì«Ò»Ëş¿ñ·ç×¦.lua												
+1719	Th¸i NhÊt Th¸p Cuång Phong Tr¶o (Tö)	6					1	4	2	1	2	-1	0		0	0	0	0							113	2					1	1	2					456	9999	1		100			1	\script\skill\Íâ´«ĞÂÔö\Ì«Ò»Ëş\npc\Ì«Ò»Ëş¿ñ·ç×¦(×Ó).lua												
+1720	Th¸i NhÊt Th¸p V¹n §éc §o¹t MÖnh §ao	7					1	1	2	0	1	-1	0		0	0	0	0					1721	18	117	3					1		2		2			456	400	1	27	100			1	\script\skill\Íâ´«ĞÂÔö\Ì«Ò»Ëş\npc\Ì«Ò»ËşÍò¶¾¶áÃüµ¶.lua												
+1721	Th¸i NhÊt Th¸p V¹n §éc §o¹t MÖnh §ao (Tö)	7					1	1	2	0	1	-1	0		0	0	0	0							117	1					1		2					456	9999	1		100			1	\script\skill\Íâ´«ĞÂÔö\Ì«Ò»Ëş\npc\Ì«Ò»ËşÍò¶¾¶áÃüµ¶(×Ó).lua												
+1722	Th¸i NhÊt Th¸p Thi Béc §¹i Ph¸p	5					2	0	0		0	-1	0		0	0	0	0					1723	17		18												8240	600	1	19	100				\script\skill\Íâ´«ĞÂÔö\Ì«Ò»Ëş\npc\Ì«Ò»ËşÊ¬±¬´ó·¨.lua												
+1723	Th¸i NhÊt Th¸p Thi Béc §¹i Ph¸p (Tö)	5					1	8	1	0	1	-1	0		0	0	0	0							116	1					1	1	2					456	9999	1		100			1	\script\skill\Íâ´«ĞÂÔö\Ì«Ò»Ëş\npc\Ì«Ò»ËşÊ¬±¬´ó·¨(×Ó).lua												
+1724	Th¸i NhÊt Th¸p Thİ C¶nh Tr¶o	8					20	1	2	1	1	-1	0		0	0	0	0																				456	600	3	36	-100				\script\skill\Íâ´«ĞÂÔö\Ì«Ò»Ëş\npc\Ì«Ò»Ëşß±¾±×¦.lua												
+1725	Th¸i NhÊt Th¸p B¨ng HuyÕt Än	8					2	9	1		0	-1	0		0	0	0	0								36												456	600	1	40	100				\script\skill\Íâ´«ĞÂÔö\Ì«Ò»Ëş\npc\Ì«Ò»Ëş±ÀÑªÓ¡.lua												
+1726	Th¸i NhÊt Th¸p NghiÖp Háa TrËn	7					28	2	2	0	1	-1	0		0	0	0	0							453	24					1	3	2					456	150	1	36	200			1	\script\skill\Íâ´«ĞÂÔö\Ì«Ò»Ëş\npc\Ì«Ò»ËşÒµ»ğÕó.lua			skill_param1	1264	skill_param2	1116						
+1727	Th¸i NhÊt Th¸p Ngò Linh T¸n Nguyªn	9					1	2	2	0	1	-1	0		0	0	0	0							455	32					1	1	2		0			456	600	1	36	100			1	\script\skill\Íâ´«ĞÂÔö\Ì«Ò»Ëş\npc\Ì«Ò»ËşÎåÁéÉ¢Ôª.lua												
+1728	Th¸i NhÊt Th¸p Ngò Linh T¸n Nguyªn (Tö)	9					1	2	2	0	1	-1	0		0	0	0	0							456	1					3		1					456	9999	1		100			5	\script\skill\Íâ´«ĞÂÔö\Ì«Ò»Ëş\npc\Ì«Ò»ËşÎåÁéÉ¢Ôª(×Ó).lua												
+1729	Th¸i NhÊt Th¸p D­¬ng Diªm B¹o	9					1	5	2	0	2	-1	0		0	0	0	0					1730	15	447	19					1	1	2					456	300	1	36	150			1	\script\skill\Íâ´«ĞÂÔö\Ì«Ò»Ëş\npc\Ì«Ò»ËşÑôÑ×±¬.lua												
+1730	Th¸i NhÊt Th¸p D­¬ng Diªm B¹o (Tö)	9					2	8	2		2	-1	0		0	0	0	0								1												2	144	1		150				\script\skill\Íâ´«ĞÂÔö\Ì«Ò»Ëş\npc\Ì«Ò»ËşÑôÑ×±¬(×Ó).lua												
+1731	Th¸i NhÊt Th¸p B¸ Hoµng §o¹n	7					1	1	2	0	2	-1	0		0	0	0	0							446	21					1	0	2					456	600	1	27	150			1	\script\skill\Íâ´«ĞÂÔö\Ì«Ò»Ëş\npc\Ì«Ò»Ëş°Ô»Í¶Ï.lua												
+1732	Th¸i NhÊt Th¸p V¹n L«i To¸i Tinh Phï	8					1	6	2	1	2	-1	0		0	0	0	0							438	30					2		5		0			456	600	1	36	100			1	\script\skill\Íâ´«ĞÂÔö\Ì«Ò»Ëş\npc\Ì«Ò»ËşÍòÀ×ËéĞÇ·û.lua												
+1733	Th¸i NhÊt Th¸p V¹n L«i To¸i Tinh Phï (Nhá)	8					1	6	2	1	1	-1	0		0	0	0	0							440	1					2		5					456	9999	1		100			5	\script\skill\Íâ´«ĞÂÔö\Ì«Ò»Ëş\npc\Ì«Ò»ËşÍòÀ×ËéĞÇ·û(×Ó).lua												
+1734	Th¸i NhÊt Th¸p B¹o L«i Phï	7					1	5	2	1	1	-1	0		0	0	0	0							436	72					3	1	0		0			456	600	1	112	100			1	\script\skill\Íâ´«ĞÂÔö\Ì«Ò»Ëş\npc\Ì«Ò»Ëş±¬À×·û.lua												
+1735	Th¸i NhÊt Th¸p B¸ch §iÖp Nghªnh H­¬ng QuyÕt	8					2	10	2	0	1	-1	0		0	0	0	0					1733	11	477	14					1	1	2					456	600	1	27	100			1	\script\skill\Íâ´«ĞÂÔö\Ì«Ò»Ëş\npc\Ì«Ò»Ëş°ÙµûÓ­Ïã¾÷.lua												
+1736	Th¸i NhÊt Th¸p B¸ch §iÖp Nghªnh H­¬ng QuyÕt (Nhá)	8					2	8	2	0	2	-1	0		0	0	0	0								1												2	9999	1		100				\script\skill\Íâ´«ĞÂÔö\Ì«Ò»Ëş\npc\Ì«Ò»Ëş°ÙµûÓ­Ïã¾÷(×Ó).lua												
+1737	Th¸i NhÊt Th¸p B¸ch §iÖp Nghªnh H­¬ng QuyÕt (§iªu)	8					1	10	2	0	2	-1	0		0	0	0	0							477	7					1	1	2					456	96	1	9	100			1	\script\skill\Íâ´«ĞÂÔö\Ì«Ò»Ëş\npc\Ì«Ò»Ëş°ÙµûÓ­Ïã¾÷(õõ).lua												
+1738	Th¸i NhÊt Th¸p Ngäc Long Xuyªn NguyÖt QuyÕt	7					2	2	2	0	1	-1	0		0	0	0	0					1736	34	480	34					1		2					456	600	1	36	100			1	\script\skill\Íâ´«ĞÂÔö\Ì«Ò»Ëş\npc\Ì«Ò»ËşÓñÁú´©ÔÂ¾÷.lua												
+1739	Th¸i NhÊt Th¸p Ngäc Long Xuyªn NguyÖt QuyÕt (Nhá)	7					2	8	2	0	0	-1	0		0	0	0	0								1												2	9999	1		100				\script\skill\Íâ´«ĞÂÔö\Ì«Ò»Ëş\npc\Ì«Ò»ËşÓñÁú´©ÔÂ¾÷(×Ó).lua												
+1740	Th¸i NhÊt Th¸p Ngäc Long Xuyªn NguyÖt QuyÕt (§iªu)	7					1	7	2	0	1	-1	0	2	0	0	0	0							480	2					1		2					456	600	1	24	100			1	\script\skill\Íâ´«ĞÂÔö\Ì«Ò»Ëş\npc\Ì«Ò»ËşÓñÁú´©ÔÂ¾÷(õõ).lua												
+1741	Th¸i NhÊt Th¸p Méng Xµ	7					10	2	2	0	1	-1	0	30	0	0	0	0					1739	18	466	18					1		2					456	9999	1	144	100			1	\script\skill\Íâ´«ĞÂÔö\Ì«Ò»Ëş\npc\Ì«Ò»ËşÃÎÉß.lua												
+1742	Th¸i NhÊt Th¸p Méng Xµ (Nhá)	7					10	2	2	0	1	-1	0	30	0	0	0	0					1739	18	466	18					1		2					456	9999	1		100			1	\script\skill\Íâ´«ĞÂÔö\Ì«Ò»Ëş\npc\Ì«Ò»ËşÃÎÉß(×Ó).lua												
 1743	Th¸i NhÊt Th¸p Thu NguyÖt Phó	7					10	1	2	0	1	-1	0	30	0	0	0	0					1741	18	463	18					1		2					456	9999	1	90	100			1	\script\skill\Íâ´«ĞÂÔö\Ì«Ò»Ëş\npc\Ì«Ò»ËşÇïÔÂ¸³.lua												
 1744	Th¸i NhÊt Th¸p Thu NguyÖt Phó ( Tö)	7					10	1	2	0	1	-1	0	30	0	0	0	0					1741	18	463	18					1		2					456	9999	1		100			1	\script\skill\Íâ´«ĞÂÔö\Ì«Ò»Ëş\npc\Ì«Ò»ËşÇïÔÂ¸³(×Ó).lua												
+1745	Nga My PhËt Gia-Vßng s¸ng tÊt c¶ tr¹ng th¸i	1					15	8	1			-1	0		0	0	0	0																				12	9999	30	18	100				\script\skill\Íâ´«ĞÂÔö\Ì«Ò»Ëş\npc\¶ëáÒ·ğ¼ÒÈ«×´Ì¬¹â»·.lua												
+1746	Th¸i NhÊt Th¸p Ngäc N÷ KiÕm Ph¸p	7					1	4	2	1	2	-1	0		0	0	0	0							7	18	220				1		2		7			456	600	1	19	100			1	\script\skill\Íâ´«ĞÂÔö\Ì«Ò»Ëş\npc\Ì«Ò»ËşÓñÅ®½£·¨.lua												
 1747	Th«n V©n Thó-SÊm toµn mµn h×nh (tö tö)	2					1	6	2	1	1	-1	0		0	0	0	0					1748	1	509	6					3	0	1		0			456	9999	1	36	20			20	\script\skill\Íâ´«ĞÂÔö\Ì«Ò»Ëş\ÍÌÔÆÊŞÈ«ÆÁÉÁµç.lua		skill_param1	1000	skill_param2	1000	skill_interrupt_rate	-550					
 1748	Th«n V©n Thó-SÊm toµn mµn h×nh (tö tö tö)	2					1	6	2	1	1	-1	0		0	0	0	0							509	5					3	0	1		0			456	9999	1	36	20			40	\script\skill\Íâ´«ĞÂÔö\Ì«Ò»Ëş\ÍÌÔÆÊŞÈ«ÆÁÉÁµç.lua		skill_param1	1500	skill_param2	1500	skill_interrupt_rate	-550					
 1749	TŞch Tµ V« §Şch ThuÉn bŞ tÊn c«ng	1					2	8	1		0	-1	0		0	0	0	0																				6	9999	1	18	100				\script\skill\Íâ´«ĞÂÔö\Ì«Ò»Ëş\±ÙĞ°ÎŞµĞ¶Ü±»»÷.lua												
@@ -1379,8 +1590,308 @@ ID	Name	MaxLevel	Faction	Route	Series	ExtraSeries	Type	Style1	Style2	DamageType	
 1776	Gia LuËt Phi Hång viªn (thiªu)	2					1	6	2	1	1	-1	0		0	0	0	0							510	1					1	0	1					456	9999	1	3	100			1	\script\skill\Íâ´«ĞÂÔö\Ì«Ò»Ëş\Ò®ÂÉ·ÉºèÔ²ÉÕ.lua		skill_interrupt_rate	-550									
 1777	Gia LuËt Phi Hång trùc tuyÕn 	2					1	6	2	1	1	-1	0		0	0	0	0							508	6					0		2		0			456	9999	1	18	100			10	\script\skill\Íâ´«ĞÂÔö\Ì«Ò»Ëş\Ò®ÂÉ·ÉºèÖ±Ïß.lua		skill_interrupt_rate	-550									
 1778	Hoang Háa Chi CÇu (tö tö)	1					1	6	2	1	1	-1	0		0	0	0	0					1753	19	507	1												456	9999	1	3	100			1	\script\skill\Íâ´«ĞÂÔö\Ì«Ò»Ëş\»Ä»ğÖ®Çò(×Ó×Ó).lua		skill_interrupt_rate	-550									
+1783	D­¬ng Viªm	20	99	99			1	6	2	1	1	-1	0		0	0	0	0							545	5					2	0	3		3			456	9999	1	180	40			30	\script\skill\Íâ´«ĞÂÔö\½£µ´ÑàÔÆ\ÑôÑ×.lua		skill_interrupt_rate	-550									
+1784	B¸ Khİ	20	99	99			1	0	2	0	1	-1	0		0	0	0	0							572	1												456	9999	1	9	100			1	\script\skill\Íâ´«ĞÂÔö\½£µ´ÑàÔÆ\°ÔÆø.lua		skill_interrupt_rate	-550									
+1785	Háa QuyÒn	20	99	99			1	2	2	0	0	-1	0		0	0	0	0							546	1					1	0	2					456	2500	1	18	100			1	\script\skill\Íâ´«ĞÂÔö\½£µ´ÑàÔÆ\»ğÈ­.lua		skill_interrupt_rate	-550									
+1786	BÊt Tri Háa	20	99	99			1	8	2		1	-1	0		0	0	0	0							508	1					1	1	2					456	9999	1	2	100			1	\script\skill\Íâ´«ĞÂÔö\½£µ´ÑàÔÆ\²»Öª»ğ.lua		skill_interrupt_rate	-550									
+1787	§¹i Viªm Giíi	20	99	99			1	6	2	1	1	-1	0		0	0	0	0							556	5					3	0	1		0			456	9999	1	18	100			8	\script\skill\Íâ´«ĞÂÔö\½£µ´ÑàÔÆ\´óÑ×½ä.lua		skill_param1	300	skill_param2	300	skill_interrupt_rate	-550					
+1788	BÊt Tri Háa Béc	20	99	99			1	6	2	1	1	-1	0		0	0	0	0							513	1					1	0	1					456	9999	1	3	100			1	\script\skill\Íâ´«ĞÂÔö\½£µ´ÑàÔÆ\²»Öª»ğ±¬.lua		skill_interrupt_rate	-550									
+1789	ThËp Tù T­êng	20	99	99			19	10	2		1	-1	0		0	0	0	0					2151	26		27					0	1	2						500	1	32	150			7	\script\skill\Íâ´«ĞÂÔö\½£µ´ÑàÔÆ\Ê®×ÖÇ½.lua		skill_interrupt_rate	-550									
+1790	B¨ng Hoµn Tiªu Kİ	20	99	99			1	8	2		1	-1	0		0	0	0	0							564	1					1	1	2					456	9999	1	2	100			1	\script\skill\Íâ´«ĞÂÔö\½£µ´ÑàÔÆ\±ù»·±ê¼Ç.lua		skill_interrupt_rate	-550									
+1791	S¸t th­¬ng Yªn Vò Mª Li	20	99	99			1	2	2	0	1	-1	0		0	0	0	0							555	15					1	1	2					456	9999	1	18	100			1	\script\skill\Íâ´«ĞÂÔö\½£µ´ÑàÔÆ\ÑÌÓêÃÔÀëÉËº¦.lua		skill_interrupt_rate	-550									
+1792	§éc DiÔm	20	99	99			1	2	2	0	1	-1	0		0	0	0	0							558	2					1	0	2					456	9999	1	18	100			1	\script\skill\Íâ´«ĞÂÔö\½£µ´ÑàÔÆ\¶¾Ñæ.lua		skill_interrupt_rate	-550									
+1793	Yªn Vò Mª Li Tiªu Kİ	20	99	99			1	8	2		1	-1	0		0	0	0	0							557	1					1	1	2					456	9999	1	2	100			1	\script\skill\Íâ´«ĞÂÔö\½£µ´ÑàÔÆ\ÑÌÓêÃÔÀë±ê¼Ç.lua		skill_interrupt_rate	-550									
+1794	Quy T©m	20	99	99			1	2	2	0	0	-1	0		0	0	0	0													1	0	2					456	9999	1	54	100			1	\script\skill\Íâ´«ĞÂÔö\½£µ´ÑàÔÆ\Ô¡»ğÖØÉú.lua		skill_interrupt_rate	-550									
+1795	Thiªn Vò B¶o Lu©n	20	99	99			2	9	0		2	-1	0		0	0	0	0																				456	9999	1	90	100				\script\skill\Íâ´«ĞÂÔö\½£µ´ÑàÔÆ\Ô¡»ğÖØÉú.lua		skill_interrupt_rate	-550									
+1796	Thiªn Vò B¶o Lu©n (Ngo¹i c«ng)	20	99	99			2	9	0		2	-1	0		0	0	0	0																				456	9999	1	9	100				\script\skill\Íâ´«ĞÂÔö\½£µ´ÑàÔÆ\ÌìÎè±¦ÂÖ£¨Íâ¹¥£©.lua		skill_interrupt_rate	-550									
+1797	Thiªn Vò B¶o Lu©n (Néi c«ng)	20	99	99			2	9	0		2	-1	0		0	0	0	0																				456	9999	1	9	100				\script\skill\Íâ´«ĞÂÔö\½£µ´ÑàÔÆ\ÌìÎè±¦ÂÖ£¨ÄÚ¹¥£©.lua		skill_interrupt_rate	-550									
+1798	Thiªn Vò B¶o Lu©n (Chİnh x¸c)	20	99	99			2	9	0		2	-1	0		0	0	0	0																				456	9999	1	9	100				\script\skill\Íâ´«ĞÂÔö\½£µ´ÑàÔÆ\ÌìÎè±¦ÂÖ£¨ÃüÖĞ£©.lua		skill_interrupt_rate	-550									
+1799	Thiªn Vò B¶o Lu©n (Chİ m¹ng)	20	99	99			2	9	0		2	-1	0		0	0	0	0																				456	9999	1	9	100				\script\skill\Íâ´«ĞÂÔö\½£µ´ÑàÔÆ\ÌìÎè±¦ÂÖ£¨»áĞÄ£©.lua		skill_interrupt_rate	-550									
+1800	Thiªn Vò B¶o Lu©n (Tèc ®é ®¸nh)	20	99	99			2	9	0		2	-1	0		0	0	0	0																				456	9999	1	9	100				\script\skill\Íâ´«ĞÂÔö\½£µ´ÑàÔÆ\ÌìÎè±¦ÂÖ£¨¹¥ËÙ£©.lua		skill_interrupt_rate	-550									
+1801	Lôc §¹o Lu©n Håi	20	99	99			15	9	1	1	1	-1	0		0	0	0	0																				4	9999	7	9	100				\script\skill\Íâ´«ĞÂÔö\½£µ´ÑàÔÆ\ÁùµÀÂÖ»Ø.lua		skill_interrupt_rate	-550									
+1802	Linh Lung Thİch (Chiªu)	17					1	1	1		1	16384	1		0	1	0	1							525	16					1		2					456	160	1		100			1	\script\skill\ÌÆÃÅÈÎÏÀ\Ááçç´Ì(ÕĞ).lua												
+1803	Kinh Th¸n cña KiÕm ThÇn	20					1	2	2	0	0	-1	0		0	0	0	0							554	1					1	0	2					456	9999	1	54	100			1	\script\skill\Íâ´«ĞÂÔö\½£µ´ÑàÔÆ\Ô¡»ğÖØÉú.lua		skill_interrupt_rate	-550									
+1804	Linh Tª Truy MÖnh (Chiªu)	17					1	2	1		0	16384	1		0	1	0	1					1825	15	526	13					1		2					456	600	1		100			1	\script\skill\ÌÆÃÅÈÎÏÀ\ÁéÏ¬×·Ãü(ÕĞ).lua												
+1807	Bİch L¹c NhÉn (Tö)	17					1	2	1		1	16384	1		0	1	1	1							525	13	1808				1		2					456	160	1		100			1	\script\skill\ÌÆÃÅÈÎÏÀ\±ÌÂäÈĞ(×Ó).lua												
+1808	Bİch L¹c NhÉn (Chiªu)	17					1	2	1		1	16384	1		0	1	0	1							525	13					1		2					456	160	1		100			1	\script\skill\ÌÆÃÅÈÎÏÀ\±ÌÂäÈĞ(ÕĞ).lua												
+1810	Kinh Hång §o¹n (Chiªu)	17					2	1	1		0	16384	1		0	1	0	1								8												456	160	1		100				\script\skill\ÌÆÃÅÈÎÏÀ\¾ªºè¶Ï(ÕĞ).lua												
+1812	Thª Phong §o¹t (Chiªu)	17					1	1	1		1	16384	1		0	1	0	1							525	14					1		2		2			456	160	1		100			2	\script\skill\ÌÆÃÅÈÎÏÀ\Æà·æ¶á(ÕĞ).lua												
+1815	To¸i Méng B¨ng (Tö)	17					1	2	1		1	16384	1		0	1	1	1							525	23	1816				1		2					456	160	1		100			1	\script\skill\ÌÆÃÅÈÎÏÀ\ËéÃÎ±À(×Ó).lua												
+1816	To¸i Méng B¨ng (Chiªu)	17					1	2	1		1	16384	1		0	1	0	1							525	23					1		2					456	160	1		100			1	\script\skill\ÌÆÃÅÈÎÏÀ\ËéÃÎ±À(ÕĞ).lua												
+1818	L­u Tinh C¶n NguyÖt (Tö)	17					1	2	1		1	16384	1		0	1	1	1							527	15	1819				2		1					456	600	1		100			3	\script\skill\ÌÆÃÅÈÎÏÀ\Á÷ĞÇ¸ÏÔÂ(×Ó).lua												
+1819	L­u Tinh C¶n NguyÖt (Chiªu)	17					1	2	1		1	16384	1		0	1	0	1							527	15					2		1					456	600	1		100			3	\script\skill\ÌÆÃÅÈÎÏÀ\Á÷ĞÇ¸ÏÔÂ(ÕĞ).lua												
+1821	Yªn Vò Mª Li (Tö)	17					1	2	1		1	16384	1		0	1	1	1							528	4	1822				1		2		7			456	600	1		-100			6	\script\skill\ÌÆÃÅÈÎÏÀ\ÑÌÓêÃÔÀë(×Ó).lua		missle_damage_num	3									
+1822	Yªn Vò Mª Li (Chiªu)	17					1	2	1		1	16384	1		0	1	0	1							528	4					1		2		7			456	600	1		-100			6	\script\skill\ÌÆÃÅÈÎÏÀ\ÑÌÓêÃÔÀë(ÕĞ).lua		missle_damage_num	3									
+1824	Mª Tung ThuÊn Bé (Chiªu)	10					2	10	2		0	16384	1		0	0	0	0								1												460	600	1	7	-100				\script\skill\ÌÆÃÅÈÎÏÀ\ÃÔ×ÙË²²½(ÕĞ).lua												
+1825	T¨ng S¸t  1	17					2	8	2		0	16384	1		1	0	0	0								1												2	9999	1	2	100				\script\skill\ÌÆÃÅÈÎÏÀ\É±Òâ»ñµÃ1.lua												
+1826	T¨ng S¸t  2	10					2	8	2		0	16384	1		1	0	0	0								1												2	9999	1	2	100				\script\skill\ÌÆÃÅÈÎÏÀ\É±Òâ»ñµÃ2.lua												
+1827	T¨ng S¸t  3	10					2	8	2		0	16384	1		1	0	0	0								1												2	9999	1	2	100				\script\skill\ÌÆÃÅÈÎÏÀ\É±Òâ»ñµÃ3.lua												
+1828	Mª Tung ThuÊn Bé (Chiªu_Con)	10					2	8	2		0	16384	1		0	0	0	0								1												2	9999	1		100				\script\skill\ÌÆÃÅÈÎÏÀ\ÃÔ×ÙË²²½(ÕĞ×Ó).lua												
+1829	Kinh Hång §o¹n (Con)	17					2	1	1		0	16384	1		0	0	0	1								1												456	160	1		100				\script\skill\ÌÆÃÅÈÎÏÀ\¾ªºè¶Ï(×Ó).lua		skill_cast_interval	270	skill_interrupt_rate	-55							
+1830	Thiªn nh TuyÖt S¸t (Con)	20					2	3	1		0	-1	1		0	0	0	0								1												2	9999	1		100				\script\skill\ÌÆÃÅÈÎÏÀ\Ç§Ó°¾øÉ±(×Ó).lua												
+1832	Tµn V©n KiÕm Canh (Con)	17					2	8	2		0	-1	1		0	0	0	0								1												2	9999	1		100				\script\skill\À¥ÂØ½£×ğ\²ĞÔÆ½£î¸(×Ó).lua												
+1833	Tµn V©n KiÕm Canh (Linh KiÕm)	17					1	5	1	1	1	-1	1		0	0	0	0							529	13					1	1	2					456	160	1	18	125			1	\script\skill\À¥ÂØ½£×ğ\²ĞÔÆ½£î¸(Áé½£).lua												
+1834	Tµn V©n KiÕm Canh (Chiªu)	17					1	1	1		1	-1	1		0	0	1	1							529	9					1	1	2		2			456	160	1	18	125			3	\script\skill\À¥ÂØ½£×ğ\²ĞÔÆ½£î¸(ÕĞ).lua												
+1836	Nh©n KiÕm Hîp NhÊt TÊn C«ng	1					0	1	2		0	-1	1		0	0	1	1					1868	1	530	5					1	0	2					456	160	1	17	150			1	\script\skill\ÆÕÍ¨¹¥»÷\ÆÕÍ¨¹¥»÷.lua												
+1837	Nh©n KiÕm Hîp NhÊt (Linh KiÕm)	1					0	1	2	1	0	-1	1		0	0	0	0							530	8					1	0	2					456	160	1	17	150			1	\script\skill\ÆÕÍ¨¹¥»÷\ÆÕÍ¨¹¥»÷.lua												
+1839	LuyÖn KiÕm-Sİ Hµn (Chiªu)	7					2	8	1		0	-1	1		1	0	0	0								7												2	9999	1		100				\script\skill\À¥ÂØ½£×ğ\Á¶½£-³ãº®(ÕĞ).lua												
+1841	LuyÖn KiÕm-Thiªn Minh (Chiªu)	7					2	8	1		0	-1	1		1	0	0	0								7												2	9999	1		100				\script\skill\À¥ÂØ½£×ğ\Á¶½£-ÌìÚ¤(ÕĞ).lua												
+1843	LuyÖn KiÕm-Phong CËn (Chiªu)	7					2	8	2		0	-1	1		1	0	0	0								7												2	9999	1		100				\script\skill\À¥ÂØ½£×ğ\Á¶½£-·áâË(ÕĞ).lua												
+1845	§o¹n Thñy KiÕm Canh (Con)	17					2	8	1		0	-1	1		0	0	0	0								1												2	9999	1		100				\script\skill\À¥ÂØ½£×ğ\¶ÏË®½£î¸(×Ó).lua												
+1846	§o¹n Thñy KiÕm Canh (Linh KiÕm)	17					1	5	1	1	1	-1	1		0	0	0	0							532	9					1	1	2					456	160	1	18	100			1	\script\skill\À¥ÂØ½£×ğ\¶ÏË®½£î¸(Áé½£).lua												
+1847	§o¹n Thñy KiÕm Canh (Chiªu)	17					1	1	1		1	-1	1		0	0	1	0							531	11					1	1	2					456	160	1	18	100			1	\script\skill\À¥ÂØ½£×ğ\¶ÏË®½£î¸(ÕĞ).lua												
+1849	B¹o L«i KiÕm Canh (Con)	17					2	8	2		0	-1	1		0	0	0	0								1												2	9999	1		100				\script\skill\À¥ÂØ½£×ğ\±©À×½£î¸(×Ó).lua												
+1850	B¹o L«i KiÕm Canh (Linh KiÕm)	17					1	5	1	1	1	-1	1		0	0	0	0							534	24	1851				1	0	2					456	160	1	45	150			1	\script\skill\À¥ÂØ½£×ğ\±©À×½£î¸(Áé½£).lua												
+1851	B¹o L«i KiÕm Canh (Chiªu)	17					1	5	1	1	1	-1	1		0	0	0	0							534	24					1	0	2					456	160	1	45	150			1	\script\skill\À¥ÂØ½£×ğ\±©À×½£î¸(ÕĞ).lua												
+1853	Håi Phong KiÕm Canh (Con)	17					2	8	2		0	-1	1		0	0	0	0								1	1854	1855										2	9999	1		100				\script\skill\À¥ÂØ½£×ğ\»Ø·ç½£î¸(×Ó).lua												
+1854	Håi Phong KiÕm Canh (Con_Chiªu 1)	17					2	8	1		0	-1	1		0	0	0	0								1												2	9999	1		100				\script\skill\À¥ÂØ½£×ğ\»Ø·ç½£î¸(×ÓÕĞ1).lua												
+1855	Håi Phong KiÕm Canh (Con_Chiªu 2)	17					2	8	1		0	-1	1		0	0	0	0								1												2	9999	1		100				\script\skill\À¥ÂØ½£×ğ\»Ø·ç½£î¸(×ÓÕĞ2).lua												
+1856	Håi Phong KiÕm Canh (Linh KiÕm)	17					1	5	1		1	-1	1		0	0	0	0							535	1					1		2		9			456	44	1	126	-100			15	\script\skill\À¥ÂØ½£×ğ\»Ø·ç½£î¸(Áé½£).lua												
+1860	KiÕm Thñ Kh«ng Minh (Linh KiÕm)	17					1	8	1		1	-1	1		0	0	0	0					1861	1	536	1					1		2		18			6	44	1	270	100			15	\script\skill\À¥ÂØ½£×ğ\½£ÊØ¿ÕÃ÷(Áé½£).lua												
+1861	KiÕm Thñ Kh«ng Minh (Linh KiÕm_Con)	17					1	9	1		1	-1	1		0	0	0	0							536	1					1		2		18			456	44	1		100			15	\script\skill\À¥ÂØ½£×ğ\½£ÊØ¿ÕÃ÷(Áé½£×Ó).lua												
+1863	Thiªn Phong Trôy (Chiªu)	10					28	2	2		1	-1	1		0	0	0	0							537	7					1	3	2					456	600	1	18	100			1	\script\skill\À¥ÂØ½£×ğ\Ìì·æ×¹(ÕĞ).lua												
+1864	Thiªn Phong Trôy (Linh KiÕm)	10					1	2	1		1	-1	1		0	0	0	0							538	1					1		2					456	9999	1	2	100			1	\script\skill\À¥ÂØ½£×ğ\Ìì·æ×¹(Áé½£).lua												
+1865	Sİ Hµn TÊn C«ng	1					2	5	1		2	-1	1		0	0	0	0								1												456	9999	1	2	100				\script\skill\À¥ÂØ½£×ğ\³ãº®¹¥»÷.lua												
+1866	Thiªn Minh TÊn C«ng	1					2	5	1	1	2	-1	1		0	0	0	0								1												456	9999	1	2	100				\script\skill\À¥ÂØ½£×ğ\ÌìÚ¤¹¥»÷.lua												
+1867	Phong CËn TÊn C«ng	1					2	5	1		2	-1	1		0	0	0	0								1												456	9999	1	2	100				\script\skill\À¥ÂØ½£×ğ\·áâË¹¥»÷.lua												
+1868	Nh©n KiÕm Hîp NhÊt (Con)	1					2	8	1		0	-1	1		0	0	0	0								1												2	9999	1		100				\script\skill\À¥ÂØ½£×ğ\ÈË½£ºÏÒ»(×Ó).lua												
+1869	LuyÖn KiÕm-Sİ Hµn (Linh KiÕm)	1					2	8	1		0	-1	1		0	0	0	0								1												2	9999	1	2	100				\script\skill\À¥ÂØ½£×ğ\Á¶½£buff.lua												
+1870	LuyÖn KiÕm-Thiªn Minh (Linh KiÕm)	1					2	8	1		0	-1	1		0	0	0	0								1												2	9999	1	2	100				\script\skill\À¥ÂØ½£×ğ\Á¶½£buff.lua												
+1871	LuyÖn KiÕm-Phong CËn (Linh KiÕm)	1					2	8	1		0	-1	1		0	0	0	0								1												2	9999	1	2	100				\script\skill\À¥ÂØ½£×ğ\Á¶½£buff.lua												
+1872	MŞ nh T©m Ph¸p	10	5	31			3	15	1		0	-1	0		1	0	0	0																				2								\script\skill\ÌÆÃÅÈÎÏÀ\÷ÈÓ°ĞÄ·¨.lua												
+1873	Linh Lung Thİch	7	5	31			1	1	1		1	16384	1		0	1	1	1							525	16	1802				1		2					456	144	1	18	150			1	\script\skill\ÌÆÃÅÈÎÏÀ\Ááçç´Ì.lua		skill_cast_interval	1	skill_interrupt_rate	-55							
+1874	Linh Tª Truy MÖnh	7	5	31			1	2	1		0	16384	1		0	0	1	1							526	13	1804				1		2					456	600	1	18	125			1	\script\skill\ÌÆÃÅÈÎÏÀ\ÁéÏ¬×·Ãü.lua		skill_cast_interval	90	skill_interrupt_rate	0							
+1875	S¸t ı	7	5	31			2	8	1		0	16384	1		1	0	0	0								13												2	9999	1	15	100				\script\skill\ÌÆÃÅÈÎÏÀ\É±Òâ.lua		skill_cast_interval	1080	skill_interrupt_rate	25							
+1876	Bİch L¹c NhÉn	7	5	31			2	2	1		1	16384	1		0	0	1	1					1807	1														456	144	1	18	150				\script\skill\ÌÆÃÅÈÎÏÀ\É±ÒâÏûºÄ.lua		skill_cast_interval	270	skill_interrupt_rate	-55							
+1877	Kinh Hång §o¹n	7	5	31			2	1	1		0	16384	1		0	0	0	1					1829	5		6	1810											456	144	1	9	200				\script\skill\ÌÆÃÅÈÎÏÀ\¾ªºè¶Ï.lua		skill_cast_interval	216	skill_interrupt_rate	-55							
+1878	Thª Phong §o¹t	7	5	31			1	1	1		1	16384	1		0	0	1	1							525	14	1812				1		2		2			456	144	1	18	150			2	\script\skill\ÌÆÃÅÈÎÏÀ\Æà·æ¶á.lua		skill_cast_interval	36	skill_interrupt_rate	-55							
+1879	Hçn §én §Êu Ph¸ch	7	5	31			2	8	1		0	16384	1		1	0	0	0								1												2	9999	1	2	200				\script\skill\ÌÆÃÅÈÎÏÀ\»ìãç¶·ÆÇ.lua		skill_cast_interval	630	skill_interrupt_rate	-55					500		
+1880	To¸i Méng B¨ng	7	5	31			1	2	1		1	16384	1		0	0	1	1					1815	1														456	144	1	27	150				\script\skill\ÌÆÃÅÈÎÏÀ\É±ÒâÏûºÄ.lua		skill_cast_interval	270	skill_interrupt_rate	-55							
+1881	L­u Tinh C¶n NguyÖt	7	5	31			2	2	1		1	16384	1		0	0	1	0					1818	1														456	600	1	18	125				\script\skill\ÌÆÃÅÈÎÏÀ\É±ÒâÏûºÄ.lua		skill_cast_interval	108	skill_interrupt_rate	0							
+1882	Yªn Vò Mª Li	7	5	31			1	2	1		1	16384	1		0	0	1	0					1821	1	539	5					3		4		2			456	600	1	54	-100			1	\script\skill\ÌÆÃÅÈÎÏÀ\É±ÒâÏûºÄ.lua		skill_cast_interval	540	skill_interrupt_rate	10	missle_vanish_after_collide	1					
+1883	Thiªn ¶nh tuyÖt s¸t	20	5	31			1	3	2	0	1	16385	1		0	0	0	0							539	7					4		2		9			456	9999	1	90	-100			9	\script\skill\ÌÆÃÅÈÎÏÀ\Ç§Ó°¾øÉ±.lua		skill_param1	23	skill_param2	23	skill_interrupt_rate	-550					
+1884	Mª Tung ThuÊn Bé	10	5	31			2	10	2		0	16384	1		0	0	0	0					1825	4		1	1824											64	600	1	7	-100				\script\skill\ÌÆÃÅÈÎÏÀ\ÃÔ×ÙË²²½.lua		skill_cast_interval	270	skill_interrupt_rate	-55							
+1885	C«n H­ KiÕm QuyÕt	10	22	32			3	15	1		0	-1	0		1	0	0	0																				2								\script\skill\À¥ÂØ½£×ğ\À¥Ğé½£¾÷.lua												
+1886	Tµn V©n KiÕm Canh	7	22	32			1	1	1		1	4	1		0	1	1	1					1832	1	529	9	1834				1	1	2		2			456	240	1	18	125			3	\script\skill\À¥ÂØ½£×ğ\²ĞÔÆ½£î¸.lua		skill_cast_interval	18	skill_interrupt_rate	-55							
+1887	Nh©n KiÕm Hîp NhÊt	1	22	32			3	15	1		0	4	0		1	0	0	0																				2								\script\skill\À¥ÂØ½£×ğ\ÈË½£ºÏÒ».lua												
+1888	LuyÖn KiÕm-Sİ Hµn	1	22	32			2	8	1		0	4	1		1	0	0	0								7	1839											2	9999	1	18	125				\script\skill\À¥ÂØ½£×ğ\Á¶½£-³ãº®.lua		skill_cast_interval	720	skill_interrupt_rate	10							
+1889	LuyÖn KiÕm-Thiªn Minh	1	22	32			2	8	1		0	4	1		1	0	0	0								7	1841											2	9999	1	18	125				\script\skill\À¥ÂØ½£×ğ\Á¶½£-ÌìÚ¤.lua		skill_cast_interval	720	skill_interrupt_rate	10							
+1890	LuyÖn KiÕm-Phong CËn	1	22	32			2	8	1		0	4	1		1	0	0	0								7	1843											2	9999	1	18	125				\script\skill\À¥ÂØ½£×ğ\Á¶½£-·áâË.lua		skill_cast_interval	720	skill_interrupt_rate	10							
+1891	§o¹n Thñy KiÕm Canh	7	22	32			1	1	1		1	4	1		0	0	1	0					1845	1	531	11	1847				1	1	2					456	240	1	18	100			1	\script\skill\À¥ÂØ½£×ğ\¶ÏË®½£î¸.lua		skill_cast_interval	90	skill_interrupt_rate	-55							
+1892	B¹o L«i KiÕm Canh	7	22	32			1	1	1		1	4	1		0	0	1	1					1849	1	533	16					1	1	2		1			456	240	1	27	150			5	\script\skill\À¥ÂØ½£×ğ\±©À×½£î¸.lua		skill_cast_interval	180	skill_interrupt_rate	-55							
+1893	Håi Phong KiÕm Canh	7	22	32			2	1	1		1	4	1		0	0	0	0					1853	1		1												456	600	1	18	100				\script\skill\À¥ÂØ½£×ğ\»Ø·ç½£î¸.lua		skill_cast_interval	720	skill_interrupt_rate	-55							
+1894	TriÖu Håi Linh KiÕm	1	22	32		4	2	8	1		0	4	1		1	0	0	0								1												2	9999	1	2	100				\script\skill\À¥ÂØ½£×ğ\Áé½£ÕÙ»Ø.lua		skill_cast_interval	54	skill_interrupt_rate	-55							
+1895	KiÕm ı Ph¶n X¹	1	22	32			2	8	1		0	4	1		1	0	0	0								7												2	9999	1	9	100				\script\skill\À¥ÂØ½£×ğ\½£Òâ·´Éä.lua		skill_cast_interval	360	skill_interrupt_rate	-55						7	
+1896	KiÕm Thñ Kh«ng Minh	7	22	32			2	8	1		0	4	1		1	0	0	0								1												2	9999	1	18	100				\script\skill\À¥ÂØ½£×ğ\½£ÊØ¿ÕÃ÷.lua		skill_cast_interval	1080	skill_interrupt_rate	-55							
+1897	V¹n kiÕm hãa vò trËn	20	22	32			1	3	2	2	1	4	1		0	0	0	0					1899	1	540	7					4	1	2		1			456	600	1	90	-100			80	\script\skill\À¥ÂØ½£×ğ\Íò½£»¯ÓêÕó.lua		skill_param1	13	skill_param2	13	skill_interrupt_rate	-550					
+1898	Thiªn Phong Trôy	10	22	32			28	2	2		1	4	1		0	0	0	0							537	7	1863				1	3	2					456	600	1	18	100			1	\script\skill\À¥ÂØ½£×ğ\Ìì·æ×¹.lua		skill_cast_interval	540	skill_interrupt_rate	-55							
+1899	V¹n KiÕm Hãa Vò TrËn (Con)	20	22	32			2	8	2		0	-1	1		0	0	0	0								1												2	9999	1		100				\script\skill\À¥ÂØ½£×ğ\Íò½£»¯ÓêÕó(×Ó).lua												
+1900	V¹n KiÕm Hãa Vò TrËn (Linh KiÕm)	20					1	5	1	2	1	-1	1		0	0	0	0							541	80					1	1	2					456	600	1	90	100			1	\script\skill\À¥ÂØ½£×ğ\Íò½£»¯ÓêÕó(Áé½£).lua												
+1901	HiÖp nh Bé	10	5	31			2	10	2		0	16384	1		0	0	0	0					1825	4		6	1824											64	600	1	7	-100				\script\skill\ÌÆÃÅÈÎÏÀ\ÃÔ×ÙË²²½.lua		skill_cast_interval	270	skill_interrupt_rate	-55							
+1902	V« Song HiÖp ¶nh Bé	10	5	31			2	10	2		0	16384	1		0	0	0	0					2735	4		6	2734											64	600	1	7	-100				\script\skill\ÌÆÃÅÈÎÏÀ\ÃÔ×ÙË²²½.lua		skill_cast_interval	270	skill_interrupt_rate	-55							
+1903	§Şnh nh QuyÕt	10	22	32			28	2	2		1	4	1		0	0	0	0							537	7	1863				1	3	2					456	600	1	18	100			1	\script\skill\À¥ÂØ½£×ğ\Ìì·æ×¹.lua		skill_cast_interval	540	skill_interrupt_rate	-55							
+1904	V« Song §Şnh nh QuyÕt	10	22	32			28	2	2		1	4	1		0	0	0	0							537	7	2736				1	3	2					456	600	1	18	100			1	\script\skill\À¥ÂØ½£×ğ\Ìì·æ×¹.lua		skill_cast_interval	540	skill_interrupt_rate	-55							
+1905	HiÖp nh Bé-BŞ §éng	10					3	15	1		0	-1	0		0	0	0	0																				2								\script\skill\ÌÆÃÅÈÎÏÀ\ÃÔ×ÙÏÀÓ°²½±»¶¯.lua												
+1906	V« Song HiÖp nh Bé-BŞ §éng	10					3	15	1		0	-1	0		0	0	0	0																				2								\script\skill\ÌÆÃÅÈÎÏÀ\ÎŞË«ÃÔ×ÙÏÀÓ°²½±»¶¯.lua												
+1907	§Şnh nh QuyÕt-BŞ §éng	10					3	15	1		0	-1	0		1	0	0	0																				2								\script\skill\À¥ÂØ½£×ğ\Ìì·æ¶¨Ó°¾÷±»¶¯.lua												
+1908	V« Song §Şnh nh-BŞ §éng	10					3	15	1		0	-1	0		1	0	0	0																				2								\script\skill\À¥ÂØ½£×ğ\ÎŞË«Ìì·æ¶¨Ó°±»¶¯.lua												
 1909	Tr¹ng th¸i Phån Hoa	10					2	9	1		0	-1	0		1	0	0	0								1												456	9999	1	2	100				\script\skill\ÃØ¼®Îä¹¦\·±»¨×´Ì¬.lua												
+1920	Npc dïng DŞch C©n Kinh	20					1	3	2	0	1	-1	0		0	0	0	0					1921	17	133	18					2		5					456	9999	1	181	100			3	\script\skill\npc¼¼ÄÜ\Á÷ÅÉ¼¼ÄÜ\NpcÓÃÒ×½î¾­.lua		skill_interrupt_rate	-550									
+1921	Npc dïng DŞch C©n Kinh (Tö 1)	20					2	3	1		2	-1	0		0	0	0	0					1922	17		1												2	9999	1		100				\script\skill\npc¼¼ÄÜ\Á÷ÅÉ¼¼ÄÜ\NpcÓÃÒ×½î¾­(×Ó1).lua												
+1922	Npc dïng DŞch C©n Kinh (Tö 2)	20					1	3	2	0	1	-1	0		0	0	0	0					1923	1	134	2					2		5					456	9999	1		100			3	\script\skill\npc¼¼ÄÜ\Á÷ÅÉ¼¼ÄÜ\NpcÓÃÒ×½î¾­(×Ó2).lua												
+1923	Npc dïng DŞch C©n Kinh (Tö 3)	20					2	3	1		2	-1	0		0	0	0	0					1924	17		1												2	9999	1		100				\script\skill\npc¼¼ÄÜ\Á÷ÅÉ¼¼ÄÜ\NpcÓÃÒ×½î¾­(×Ó3).lua												
+1924	Npc dïng DŞch C©n Kinh (Tö 4)	20					1	3	2	0	1	-1	0		0	0	0	0					1925	1	135	2					2		5					456	9999	1		100			3	\script\skill\npc¼¼ÄÜ\Á÷ÅÉ¼¼ÄÜ\NpcÓÃÒ×½î¾­(×Ó4).lua												
+1925	Npc dïng DŞch C©n Kinh (Tö 5)	20					2	3	1		2	-1	0		0	0	0	0					1926	17		1												2	9999	1		100				\script\skill\npc¼¼ÄÜ\Á÷ÅÉ¼¼ÄÜ\NpcÓÃÒ×½î¾­(×Ó5).lua												
+1926	Npc dïng DŞch C©n Kinh (Tö 6)	20					1	3	2	0	1	-1	0		0	0	0	0					1927	1	136	2					2		5					456	9999	1		100			3	\script\skill\npc¼¼ÄÜ\Á÷ÅÉ¼¼ÄÜ\NpcÓÃÒ×½î¾­(×Ó6).lua												
+1927	Npc dïng DŞch C©n Kinh (Tö 7)	20					2	3	1		2	-1	0		0	0	0	0					1928	17		1												2	9999	1		100				\script\skill\npc¼¼ÄÜ\Á÷ÅÉ¼¼ÄÜ\NpcÓÃÒ×½î¾­(×Ó7).lua												
+1928	Npc dïng DŞch C©n Kinh (Tö 8)	20					1	3	2	0	1	-1	0		0	0	0	0					1929	1	137	2					2		5					456	9999	1		100			3	\script\skill\npc¼¼ÄÜ\Á÷ÅÉ¼¼ÄÜ\NpcÓÃÒ×½î¾­(×Ó8).lua												
+1929	Npc dïng DŞch C©n Kinh (Tö 9)	20					2	3	1		2	-1	0		0	0	0	0					1930	17		1												2	9999	1		100				\script\skill\npc¼¼ÄÜ\Á÷ÅÉ¼¼ÄÜ\NpcÓÃÒ×½î¾­(×Ó9).lua												
+1930	Npc dïng DŞch C©n Kinh (Tö 10)	20					1	3	2	0	1	-1	0		0	0	0	0					1931	1	133	2					2		5					456	9999	1		100			3	\script\skill\npc¼¼ÄÜ\Á÷ÅÉ¼¼ÄÜ\NpcÓÃÒ×½î¾­(×Ó10).lua												
+1931	Npc dïng DŞch C©n Kinh (Tö 11)	20					2	3	1		2	-1	0		0	0	0	0					1932	17		1												2	9999	1		100				\script\skill\npc¼¼ÄÜ\Á÷ÅÉ¼¼ÄÜ\NpcÓÃÒ×½î¾­(×Ó11).lua												
+1932	Npc dïng DŞch C©n Kinh (Tö 12)	20					1	3	2	0	1	-1	0		0	0	0	0					1933	1	134	2					2		5					456	9999	1		100			3	\script\skill\npc¼¼ÄÜ\Á÷ÅÉ¼¼ÄÜ\NpcÓÃÒ×½î¾­(×Ó12).lua												
+1933	Npc dïng DŞch C©n Kinh (Tö 13)	20					2	3	1		2	-1	0		0	0	0	0					1934	17		1												2	9999	1		100				\script\skill\npc¼¼ÄÜ\Á÷ÅÉ¼¼ÄÜ\NpcÓÃÒ×½î¾­(×Ó13).lua												
+1934	Npc dïng DŞch C©n Kinh (Tö 14)	20					1	3	2	0	1	-1	0		0	0	0	0					1935	1	135	2					2		5					456	9999	1		100			3	\script\skill\npc¼¼ÄÜ\Á÷ÅÉ¼¼ÄÜ\NpcÓÃÒ×½î¾­(×Ó14).lua												
+1935	Npc dïng DŞch C©n Kinh (Tö 15)	20					2	3	1		2	-1	0		0	0	0	0					1936	17		1												2	9999	1		100				\script\skill\npc¼¼ÄÜ\Á÷ÅÉ¼¼ÄÜ\NpcÓÃÒ×½î¾­(×Ó15).lua												
+1936	Npc dïng DŞch C©n Kinh (Tö 16)	20					1	3	2	0	1	-1	0		0	0	0	0					1937	1	136	2					2		5					456	9999	1		100			3	\script\skill\npc¼¼ÄÜ\Á÷ÅÉ¼¼ÄÜ\NpcÓÃÒ×½î¾­(×Ó16).lua												
+1937	Npc dïng DŞch C©n Kinh (Tö 17)	20					2	3	1		2	-1	0		0	0	0	0					1938	17		1												2	9999	1		100				\script\skill\npc¼¼ÄÜ\Á÷ÅÉ¼¼ÄÜ\NpcÓÃÒ×½î¾­(×Ó17).lua												
+1938	Npc dïng DŞch C©n Kinh (Tö 18)	20					1	3	2	0	1	-1	0		0	0	0	0					1939	1	137	2					2		5					456	9999	1		100			3	\script\skill\npc¼¼ÄÜ\Á÷ÅÉ¼¼ÄÜ\NpcÓÃÒ×½î¾­(×Ó18).lua												
+1939	Npc dïng DŞch C©n Kinh (Tö 19)	20					2	3	1		2	-1	0		0	0	0	0								1												2	9999	1		100				\script\skill\npc¼¼ÄÜ\Á÷ÅÉ¼¼ÄÜ\NpcÓÃÒ×½î¾­(×Ó19).lua												
+1940	Npc dïng TÈy Tñy Kinh	20					1	7	2	1	1	-1	0		0	0	0	0					1941	1	140	18					1	1	2		18			456	9999	1	271	100			15	\script\skill\npc¼¼ÄÜ\Á÷ÅÉ¼¼ÄÜ\NpcÓÃÏ´Ëè¾­.lua		skill_interrupt_rate	-550									
+1941	Npc dïng miÔn dŞch TÈy Tñy Kinh	20					2	7	1		0	-1	0		0	0	0	0																				2	9999	1		100				\script\skill\npc¼¼ÄÜ\Á÷ÅÉ¼¼ÄÜ\NpcÓÃÏ´Ëè¾­ÃâÒß.lua												
+1942	Npc dïng Nh­ Lai ThÇn Ch­ëng	20					1	7	2	1	1	-1	0	2	0	0	0	0		1943	1				138	6					2		3		3			456	9999	1	108	100				\script\skill\npc¼¼ÄÜ\Á÷ÅÉ¼¼ÄÜ\NpcÓÃÈçÀ´ÉñÕÆ.lua		skill_interrupt_rate	-550									
+1943	Npc dïng Nh­ Lai ThÇn Ch­ëng (Tö)	20					1	7	2	1	1	-1	0		0	0	0	0							139	18					1		2					456	9999	1	36	100			1	\script\skill\npc¼¼ÄÜ\Á÷ÅÉ¼¼ÄÜ\NpcÓÃÈçÀ´ÉñÕÆ(×Ó).lua												
+1944	Npc dïng V¹n T­íng ThÇn C«ng	20					2	7	1	1	0	-1	0		0	0	0	0								36												2	9999	1	37	100				\script\skill\npc¼¼ÄÜ\Á÷ÅÉ¼¼ÄÜ\NpcÓÃÍòÏàÉñ¹¦.lua		skill_interrupt_rate	-550									
+1945	Npc dïng V¹n T­íng ThÇn C«ng (Tö 1)	20					2	7	1	1	1	-1	0		0	0	0	0																				6	9999	15		100				\script\skill\npc¼¼ÄÜ\Á÷ÅÉ¼¼ÄÜ\NpcÓÃÍòÏàÉñ¹¦(×Ó1).lua												
+1946	Npc dïng V¹n T­íng ThÇn C«ng (Tö 2)	20					2	7	1	1	1	-1	0		0	0	0	0																				456	9999	15		100				\script\skill\npc¼¼ÄÜ\Á÷ÅÉ¼¼ÄÜ\NpcÓÃÍòÏàÉñ¹¦(×Ó2).lua												
+1947	Npc dïng Thiªn ¢m TrÊn Hån Khóc	20					10	7	1	1	1	-1	0		0	0	0	0					1948	1	143	18					1		2					456	9999	1	270	100			1	\script\skill\npc¼¼ÄÜ\Á÷ÅÉ¼¼ÄÜ\NpcÓÃÌìÒôÕò»êÇú.lua		skill_interrupt_rate	-550									
+1948	Npc dïng miÔn dŞch Thiªn ¢m TrÊn Hån Khóc	20					2	7	1		0	-1	0		0	0	0	0					1949	17		1												2	9999	1		100				\script\skill\npc¼¼ÄÜ\Á÷ÅÉ¼¼ÄÜ\NpcÓÃÌìÒôÕò»êÇúÃâÒß.lua												
+1949	Npc dïng Thiªn ¢m TrÊn Hån Khóc (Tö 1)	20					10	7	1	1	1	-1	0		0	0	0	0					1950	17	144	1					1		2					456	9999	1		100			1	\script\skill\npc¼¼ÄÜ\Á÷ÅÉ¼¼ÄÜ\NpcÓÃÌìÒôÕò»êÇú(×Ó1).lua												
+1950	Npc dïng Thiªn ¢m TrÊn Hån Khóc (Tö 2)	20					10	7	1	1	1	-1	0		0	0	0	0					1951	17	143	1					1		2					456	9999	1		100			1	\script\skill\npc¼¼ÄÜ\Á÷ÅÉ¼¼ÄÜ\NpcÓÃÌìÒôÕò»êÇú(×Ó2).lua												
+1951	Npc dïng Thiªn ¢m TrÊn Hån Khóc (Tö 3)	20					10	7	1	1	1	-1	0		0	0	0	0					1949	1	143	1					1		2					456	9999	1		100			1	\script\skill\npc¼¼ÄÜ\Á÷ÅÉ¼¼ÄÜ\NpcÓÃÌìÒôÕò»êÇú(×Ó3).lua												
+1952	Npc dïng HÊp Tinh TrËn	20					1	3	2	0	1	-1	0		0	0	0	0							141	54			1		2	3	5					456	9999	1	55	100			5	\script\skill\npc¼¼ÄÜ\Á÷ÅÉ¼¼ÄÜ\NpcÓÃÎüĞÇÕó.lua		skill_interrupt_rate	-500									
+1953	Npc dïng HÊp Tinh TrËn (Tö)	20					1	3	2	0	1	-1	0		0	0	0	0							142	1			1		3	3	2		1			456	9999	1	38	100			30	\script\skill\npc¼¼ÄÜ\Á÷ÅÉ¼¼ÄÜ\NpcÓÃÎüĞÇÕó(×Ó).lua												
+1954	Npc dïng V« ¶nh Ma Cæ	20					1	7	2	1	1	-1	0		0	0	0	0							161	54					1		2					456	9999	1	63	100			1	\script\skill\npc¼¼ÄÜ\Á÷ÅÉ¼¼ÄÜ\NpcÓÃÎŞÓ°Ä§¹Æ.lua		skill_interrupt_rate	-500									
+1955	Npc dïng V« ¶nh Ma Cæ ¤n DŞch	20					1	7	1	1	1	-1	0		0	0	0	0							162	1					1		2					456	9999	1	3	100			1	\script\skill\npc¼¼ÄÜ\Á÷ÅÉ¼¼ÄÜ\NpcÓÃÎŞÓ°Ä§¹ÆÎÁÒß.lua												
+1956	Npc dïng Gi¸ng Long ThËp B¸t Ch­ëng	20					1	3	2	0	1	-1	0		0	0	0	0					1957	71	145	3					2		3		4			456	9999	1	90	120			17	\script\skill\npc¼¼ÄÜ\Á÷ÅÉ¼¼ÄÜ\NpcÓÃ½µÁúÊ®°ËÕÆ.lua		skill_interrupt_rate	-500									
+1957	Npc dïng Gi¸ng Long ThËp B¸t Ch­ëng (Tö)	20					1	3	2	0	1	-1	0		0	0	0	0							146	1					1		2					456	9999	1		100			1	\script\skill\npc¼¼ÄÜ\Á÷ÅÉ¼¼ÄÜ\NpcÓÃ½µÁúÊ®°ËÕÆ(×Ó).lua												
+1958	Npc dïng §¶ CÈu C«n Ph¸p	20					1	3	2	0	1	-1	0		0	0	0	0					1959	1	147	18					4	1	2					456	9999	1	181	100			1	\script\skill\npc¼¼ÄÜ\Á÷ÅÉ¼¼ÄÜ\NpcÓÃ´ò¹·¹÷Õó.lua		skill_interrupt_rate	-500									
+1959	Npc dïng miÔn dŞch §¶ CÈu C«n Ph¸p	20					2	3	1		0	-1	0		0	0	0	0					1960	1		1												2	9999	1		100			1	\script\skill\Ø¤°ïÎÛÒÂ\´ò¹·¹÷ÕóÃâÒß.lua												
+1960	Npc dïng §¶ CÈu C«n Ph¸p (Tö 1)	20					1	3	1		1	-1	0		0	0	0	0					1961	33	148	1					1		2					6	9999	1		100			1	\script\skill\Ø¤°ïÎÛÒÂ\´ò¹·¹÷Õó(×Ó1).lua												
+1961	Npc dïng §¶ CÈu C«n Ph¸p (Tö 2)	20					1	3	2	0	1	-1	0		0	0	0	0					1962	18	147	1					4	1	2					456	999	1		100			1	\script\skill\Ø¤°ïÎÛÒÂ\´ò¹·¹÷Õó(×Ó2).lua												
+1962	Npc dïng §¶ CÈu C«n Ph¸p (Tö 3)	20					1	3	2	0	1	-1	0		0	0	0	0					1963	1	147	1					4	1	2					456	9999	1		100			1	\script\skill\Ø¤°ïÎÛÒÂ\´ò¹·¹÷Õó(×Ó3).lua												
+1963	Npc dïng §¶ CÈu C«n Ph¸p (Tö 4)	20					1	3	1		1	-1	0		0	0	0	0					1964	17	148	1					1		2					6	9999	1		100			1	\script\skill\Ø¤°ïÎÛÒÂ\´ò¹·¹÷Õó(×Ó4).lua												
+1964	Npc dïng §¶ CÈu C«n Ph¸p (Tö 5)	20					1	3	2	0	1	-1	0		0	0	0	0					1965	18	147	1					4	1	2					456	9999	1		100			1	\script\skill\Ø¤°ïÎÛÒÂ\´ò¹·¹÷Õó(×Ó5).lua												
+1965	Npc dïng §¶ CÈu C«n Ph¸p (Tö 6)	20					1	3	2	0	1	-1	0		0	0	0	0					1966	1	147	1					4	1	2					456	9999	1		100			1	\script\skill\Ø¤°ïÎÛÒÂ\´ò¹·¹÷Õó(×Ó6).lua												
+1966	Npc dïng §¶ CÈu C«n Ph¸p (Tö 7)	20					1	3	1		1	-1	0		0	0	0	0					1967	17	148	1					1		2					6	9999	1		100			1	\script\skill\Ø¤°ïÎÛÒÂ\´ò¹·¹÷Õó(×Ó7).lua												
+1967	Npc dïng §¶ CÈu C«n Ph¸p (Tö 8)	20					1	3	2	0	1	-1	0		0	0	0	0					1968	18	147	1					4	1	2					456	9999	1		100			1	\script\skill\Ø¤°ïÎÛÒÂ\´ò¹·¹÷Õó(×Ó8).lua												
+1968	Npc dïng §¶ CÈu C«n Ph¸p (Tö 9)	20					1	3	2	0	1	-1	0		0	0	0	0					1969	1	147	1					4	1	2					456	9999	1		100			1	\script\skill\Ø¤°ïÎÛÒÂ\´ò¹·¹÷Õó(×Ó9).lua												
+1969	Npc dïng §¶ CÈu C«n Ph¸p (Tö 10)	20					1	3	1		1	-1	0		0	0	0	0					1970	17	148	1					1		2					6	9999	1		100			1	\script\skill\Ø¤°ïÎÛÒÂ\´ò¹·¹÷Õó(×Ó10).lua												
+1970	Npc dïng §¶ CÈu C«n Ph¸p (Tö 11)	20					1	3	2	0	1	-1	0		0	0	0	0					1971	18	147	1					4	1	2					456	9999	1		100			1	\script\skill\Ø¤°ïÎÛÒÂ\´ò¹·¹÷Õó(×Ó11).lua												
+1971	Npc dïng §¶ CÈu C«n Ph¸p (Tö 12)	20					1	3	2	0	1	-1	0		0	0	0	0					1972	1	147	1					4	1	2					456	9999	1		100			1	\script\skill\Ø¤°ïÎÛÒÂ\´ò¹·¹÷Õó(×Ó12).lua												
+1972	Npc dïng §¶ CÈu C«n Ph¸p (Tö 13)	20					1	3	1		1	-1	0		0	0	0	0					1973	17	148	1					1		2					6	9999	1		100			1	\script\skill\Ø¤°ïÎÛÒÂ\´ò¹·¹÷Õó(×Ó13).lua												
+1973	Npc dïng §¶ CÈu C«n Ph¸p (Tö 14)	20					1	3	2	0	1	-1	0		0	0	0	0							147	1					4	1	2					456	9999	1		100			1	\script\skill\Ø¤°ïÎÛÒÂ\´ò¹·¹÷Õó(×Ó14).lua												
+1974	Npc dïng Liªn Hoµn Toµn Long Th­¬ng	20					20	3	2	0	1	-1	0		0	0	0	0					1975	1		6												456	999	"6,15"	186	100				\script\skill\npc¼¼ÄÜ\Á÷ÅÉ¼¼ÄÜ\NpcÓÃÁ¬»·×êÁúÇ¹.lua		skill_interrupt_rate	-500									
+1975	Npc dïng miÔn dŞch Liªn Hoµn Toµn Long Th­¬ng	20					2	3	1		0	-1	0		0	0	0	0								1												2	9999	1		100				\script\skill\npc¼¼ÄÜ\Á÷ÅÉ¼¼ÄÜ\NpcÓÃÁ¬»·×êÁúÇ¹ÃâÒß.lua												
+1976	Npc dïng B¸ V­¬ng T­êng Ph­îng TiÔn	20					1	3	2	0	1	-1	0		0	0	0	0							158	54					1		2					456	9999	1	63	100			1	\script\skill\npc¼¼ÄÜ\Á÷ÅÉ¼¼ÄÜ\NpcÓÃ°ÔÍõÏè·ï¼ı.lua		skill_interrupt_rate	-500									
+1977	Npc dïng B¸ V­¬ng T­êng Ph­îng TiÔn Mao	20					1	3	2	0	1	-1	0		0	0	0	0							159	1					3		2		2			456	9999	1	18	100			8	\script\skill\npc¼¼ÄÜ\Á÷ÅÉ¼¼ÄÜ\NpcÓÃ°ÔÍõÏè·ï¼ıÓğÃ«.lua												
+1978	Npc dïng V« Cùc Phong L«i QuyÕt	20					20	7	2	2	1	-1	0		0	0	0	0					1979	2		1												456	9999	15	108	-100				\script\skill\npc¼¼ÄÜ\Á÷ÅÉ¼¼ÄÜ\NpcÓÃÎŞ¼«·çÀ×¾÷.lua		skill_interrupt_rate	-500									
+1979	Npc dïng miÔn dŞch V« Cùc Phong L«i QuyÕt	20					2	3	1		0	-1	0		0	0	0	0								1												2	9999	1		100				\script\skill\npc¼¼ÄÜ\Á÷ÅÉ¼¼ÄÜ\NpcÓÃÎŞ¼«·çÀ×¾÷ÃâÒß.lua		skill_interrupt_rate	-500									
+1980	Npc dïng Cµn Kh«n §¹i Na Di	20					2	3	0		0	-1	0		0	0	0	0					1981	1		1												2	9999	1	90	100				\script\skill\npc¼¼ÄÜ\Á÷ÅÉ¼¼ÄÜ\NpcÓÃÇ¬À¤´óÅ²ÒÆ.lua		skill_interrupt_rate	-55									
+1981	Npc dïng Cµn Kh«n §¹i Na Di (Tö)	20					1	3	2	2	1	-1	0		0	0	0	0							449	1					1	0	2		17			456	9999	1		100			5	\script\skill\npc¼¼ÄÜ\Á÷ÅÉ¼¼ÄÜ\NpcÓÃÇ¬À¤´óÅ²ÒÆ(×Ó).lua												
+1982	Npc dïng Quang Minh Ngò Hµnh TrËn	20					1	3	2	2	2	-1	0		0	0	0	0					1983	1	457	6					1	0	2		17			456	9999	1	90	100			5	\script\skill\npc¼¼ÄÜ\Á÷ÅÉ¼¼ÄÜ\NpcÓÃ¹âÃ÷ÎåĞĞÕó.lua		skill_interrupt_rate	-55									
+1983	Npc dïng Quang Minh Ngò Hµnh TrËn (Tö)	20					1	3	1		1	-1	0		0	0	0	0					1984	1	458	1					1	0	2					6	9999	1		100			1	\script\skill\npc¼¼ÄÜ\Á÷ÅÉ¼¼ÄÜ\NpcÓÃ¹âÃ÷ÎåĞĞÕó(×Ó).lua												
+1984	Npc dïng miÔn dŞch Quang Minh Ngò Hµnh TrËn	20					2	3	0		1	-1	0		0	0	0	0								1												2	9999	1		100				\script\skill\npc¼¼ÄÜ\Á÷ÅÉ¼¼ÄÜ\NpcÓÃ¹âÃ÷ÎåĞĞÕóÃâÒß.lua												
+1985	Npc dïng Hµn B¨ng Miªn Ch­ëng	20					1	7	2	2	1	-1	0		0	0	0	0					1986	1	473	9					2		3		8			456	9999	1	90	100			4	\script\skill\npc¼¼ÄÜ\Á÷ÅÉ¼¼ÄÜ\NpcÓÃº®±ùÃàÕÆ.lua		skill_interrupt_rate	-55									
+1986	Npc dïng miÔn dŞch Hµn B¨ng Miªn Ch­ëng	20					2	7	1		0	-1	0		0	0	0	0					1987	56		1												2	9999	1		100				\script\skill\npc¼¼ÄÜ\Á÷ÅÉ¼¼ÄÜ\NpcÓÃº®±ùÃàÕÆÃâÒß.lua												
+1987	Npc dïng Hµn B¨ng Miªn Ch­ëng (Nhá)	20					1	7	2	2	1	-1	0		0	0	0	0							473	1					2		5		0			456	9999	1		100			5	\script\skill\npc¼¼ÄÜ\Á÷ÅÉ¼¼ÄÜ\NpcÓÃº®±ùÃàÕÆ(×Ó).lua												
+1988	Npc dïng Loan Phông Cöu Thiªn	20					10	7	1		1	-1	0	30	0	0	0	0					1989	1	467	18					1		2					456	9999	1	180	100			1	\script\skill\npc¼¼ÄÜ\Á÷ÅÉ¼¼ÄÜ\NpcÓÃğ½·ï¾ÅÌì.lua		skill_interrupt_rate	-500									
+1989	Npc dïng miÔn dŞch Loan Phông Cöu Thiªn	20					2	3	1		0	-1	0		0	0	0	0					1990	1		1												2	9999	1		100				\script\skill\npc¼¼ÄÜ\Á÷ÅÉ¼¼ÄÜ\NpcÓÃğ½·ï¾ÅÌìÃâÒß.lua												
+1990	Npc dïng Loan Phông Cöu Thiªn (Nhá)	20					10	7	1	0	1	-1	0	30	0	0	0	0					1990	17	467	18					1		2					456	9999	1		100			1	\script\skill\npc¼¼ÄÜ\Á÷ÅÉ¼¼ÄÜ\NpcÓÃğ½·ï¾ÅÌì(×Ó).lua												
+1991	Npc dïng V« Th­îng Th¸i Cùc KiÕm	20					1	7	2	1	1	-1	0		0	0	0	0					1992	1	149	66					0		6		6			456	9999	1	182	100			90	\script\skill\npc¼¼ÄÜ\Á÷ÅÉ¼¼ÄÜ\NpcÓÃÎŞÉÏÌ«¼«½£.lua		skill_interrupt_rate	-500									
+1992	Npc dïng miÔn dŞch V« Th­îng Th¸i Cùc KiÕm	20					2	7	1		0	-1	0		0	0	0	0					1993	48		1												2	9999	1		100				\script\skill\Îäµ±µÀ¼Ò\ÎŞÉÏÌ«¼«½£ÃâÒß.lua												
+1993	Npc dïng V« Th­îng Th¸i Cùc KiÕm (Tö 1)	20					1	7	2	1	1	-1	0		0	0	0	0					1994	1	150	8					0		6		6			456	9999	1		100			90	\script\skill\Îäµ±µÀ¼Ò\ÎŞÉÏÌ«¼«½£(×Ó1).lua												
+1994	Npc dïng V« Th­îng Th¸i Cùc KiÕm (Tö 2)	20					1	7	2	1	1	-1	0		0	0	0	0					1995	1	151	4					0		6		6			456	9999	1		100			90	\script\skill\Îäµ±µÀ¼Ò\ÎŞÉÏÌ«¼«½£(×Ó2).lua												
+1995	Npc dïng V« Th­îng Th¸i Cùc KiÕm (Tö 3)	20					1	7	2	1	1	-1	0		0	0	0	0					1996	1	152	9					0		6		6			456	9999	1		100			90	\script\skill\Îäµ±µÀ¼Ò\ÎŞÉÏÌ«¼«½£(×Ó3).lua												
+1996	Npc dïng V« Th­îng Th¸i Cùc KiÕm (Tö 4)	20					1	7	2	1	1	-1	0		0	0	0	0					1997	1	153	11					0		6		6			456	9999	1		100			90	\script\skill\Îäµ±µÀ¼Ò\ÎŞÉÏÌ«¼«½£(×Ó4).lua												
+1997	Npc dïng V« Th­îng Th¸i Cùc KiÕm (Tö 5)	20					1	7	2	1	1	-1	0		0	0	0	0							154	16					0		6		6			456	9999	1		100			90	\script\skill\Îäµ±µÀ¼Ò\ÎŞÉÏÌ«¼«½£(×Ó5).lua												
+1998	Npc dïng Th¸i Cùc ThÇn C«ng	20					1	3	2	0	1	-1	0		0	0	0	0					1999	62	155	54					2		5					456	9999	1	109	100			2	\script\skill\npc¼¼ÄÜ\Á÷ÅÉ¼¼ÄÜ\NpcÓÃÌ«¼«Éñ¹¦.lua		skill_interrupt_rate	-500									
+1999	Npc dïng Th¸i Cùc ThÇn C«ng (Tö 1)	20					1	3	2	0	1	-1	0		0	0	0	0					2029	9	155	1					2		5					456	9999	1		100			2	\script\skill\npc¼¼ÄÜ\Á÷ÅÉ¼¼ÄÜ\NpcÓÃÌ«¼«Éñ¹¦(×Ó1).lua												
+2000	Npc dïng Kim Chung Tr¸o	10					2	10	0		0	-1	0		0	0	0	0								36												2	9999	1	37	100				\script\skill\npc¼¼ÄÜ\Á÷ÅÉ¼¼ÄÜ\NpcÓÃ½ğÖÓÕÖ.lua												
+2001	Npc dïng Phôc Hæ Khİ C«ng	7					1	4	2	1	2	-1	0		0	0	0	0							4	18					1		2		2			456	9999	1	19	100			1	\script\skill\npc¼¼ÄÜ\Á÷ÅÉ¼¼ÄÜ\NpcÓÃ·ü»¢Æø¹¦.lua												
+2002	Npc dïng Quan ¢m QuyÕt	6					2	12	2	1	0	-1	0		0	0	0	0								18												270	9999	1	19	100				\script\skill\npc¼¼ÄÜ\Á÷ÅÉ¼¼ÄÜ\NpcÓÃ¹ÛÒô¾÷.lua												
+2003	Npc dïng TÜnh D¹ T­	6					10	9	2		1	-1	0		0	0	0	0					2004	18	81	18					1		2					456	9999	1	270	100			1	\script\skill\npc¼¼ÄÜ\Á÷ÅÉ¼¼ÄÜ\NpcÓÃ¾²Ò¹Ë¼.lua												
+2004	Npc dïng TÜnh D¹ T­ (Tö)	6					10	9	2		1	-1	0		0	0	0	0					2004	18	81	18					1		2					456	9999	1		100			1	\script\skill\npc¼¼ÄÜ\Á÷ÅÉ¼¼ÄÜ\NpcÓÃ¾²Ò¹Ë¼(×Ó).lua												
+2005	Npc dïng Yªu Cæ	7					2	17	0		0	-1	0		0	0	0	0								18			2	1								6	9999	1	23	100				\script\skill\npc¼¼ÄÜ\Á÷ÅÉ¼¼ÄÜ\NpcÓÃÑı¹Æ.lua												
+2006	Npc dïng khinh c«ng						7				1		1		1																							2	9999		8	30	8	20														
+2007	Npc dïng Táa HÇu CÇm N· Thñ	7					1	9	3		0	-1	0		0	0	0	0							90	5					1	1	2	4			1	456	9999	1	13	100			1	\script\skill\npc¼¼ÄÜ\Á÷ÅÉ¼¼ÄÜ\NpcÓÃËøºíÇÜÄÃÊÖ.lua												
+2008	Npc dïng Quı Thiªn §¹i H¹p C«n	10					1	2	2	0	2	-1	0		0	0	0	0							106	12					1	1	2					456	9999	1	18	100			1	\script\skill\npc¼¼ÄÜ\Á÷ÅÉ¼¼ÄÜ\NpcÓÃŞñÌì´óãØ¹÷.lua												
+2009	Npc dïng D­¬ng Gia Ph¸ Phong Th­¬ng	7					1	0	2	0	2	-1	0		0	0	0	0					2010	26	400	3					1	1	2		3			456	9999	1	45	100			2	\script\skill\npc¼¼ÄÜ\Á÷ÅÉ¼¼ÄÜ\NpcÓÃÑî¼ÒÆÆ·çÇ¹.lua												
+2010	Npc dïng D­¬ng Gia Ph¸ Phong Th­¬ng (Tö)	7					1	0	2	0	2	-1	0		0	0	0	0							400	1					1	1	2		12			456	9999	1		100			2	\script\skill\npc¼¼ÄÜ\Á÷ÅÉ¼¼ÄÜ\NpcÓÃÑî¼ÒÆÆ·çÇ¹(×Ó).lua												
+2011	Npc dïng Bİch NguyÖt Phi Tinh Th­¬ng	7					20	2	2	0	1	-1	0		0	0	0	0		2012						1												456	9999	3	54	-100				\script\skill\npc¼¼ÄÜ\Á÷ÅÉ¼¼ÄÜ\NpcÓÃ±ÌÔÂ·ÉĞÇÇ¹.lua												
+2012	Npc dïng Bİch NguyÖt Phi Tinh Th­¬ng (Tö)	7					1	2	2	0	1	-1	0		0	0	0	0							411	6					1		2					456	9999	1	18	100			1	\script\skill\npc¼¼ÄÜ\Á÷ÅÉ¼¼ÄÜ\NpcÓÃ±ÌÔÂ·ÉĞÇÇ¹(×Ó).lua												
 2013	NPC sö dông Thiªn L«i Phï	7					1	5	2	1	2	-1	0		0	0	0	0							431	22					1		2		3			456	9999	1	36	100			2	\script\skill\npc¼¼ÄÜ\Á÷ÅÉ¼¼ÄÜ\NpcÓÃÌìÀ×·û.lua												
+2014	Npc dïng Oanh L«i Phï	6					1	5	2	1	2	-1	0		0	0	0	0							434	10					1	1	2					456	9999	1	28	100			1	\script\skill\npc¼¼ÄÜ\Á÷ÅÉ¼¼ÄÜ\NpcÓÃºäÀ×·û.lua												
+2015	Npc dïng LiÖt Diªm Tr¶m	7					1	1	2	0	0	-1	0		0	0	0	0					2016	10	442	6					1	1	2		5			456	144	1	27	150			1	\script\skill\npc¼¼ÄÜ\Á÷ÅÉ¼¼ÄÜ\NpcÓÃÁÒì¾Õ¶.lua												
+2016	Npc dïng LiÖt Diªm Tr¶m (Tö)	7					1	1	2	0	2	-1	0		0	0	0	0							442	1					1	1	2		5			456	144	1		150			1	\script\skill\npc¼¼ÄÜ\Á÷ÅÉ¼¼ÄÜ\NpcÓÃÁÒì¾Õ¶(×Ó).lua												
+2017	Npc dïng Ng­ng Háa Bİch	7					2	10	1		0	-1	0		0	0	0	0								3												2	9999	1	18	150				\script\skill\npc¼¼ÄÜ\Á÷ÅÉ¼¼ÄÜ\NpcÓÃÄı»ğèµ.lua												
+2018	Npc dïng B¹o S¸t K×nh	7					1	2	2	0	2	-1	0		0	0	0	0					2019	9	448	10					1	1	2					456	9999	1	18	100			1	\script\skill\npc¼¼ÄÜ\Á÷ÅÉ¼¼ÄÜ\NpcÓÃ±©É±¾¢.lua												
+2019	Npc dïng B¹o S¸t K×nh (Tö)	7					2	11	2		0	-1	0		0	0	0	0								1												2	9999	1		100			1	\script\skill\npc¼¼ÄÜ\Á÷ÅÉ¼¼ÄÜ\NpcÓÃ±©É±¾¢(×Ó).lua												
+2020	Npc dïng Cµn Kh«n NghŞch ChuyÓn	7					2	9	1		0	-1	0		0	0	0	0								9												64	9999	1	27	100				\script\skill\npc¼¼ÄÜ\Á÷ÅÉ¼¼ÄÜ\NpcÓÃÇ¬À¤Äæ×ª.lua												
+2021	Npc dïng Kim Táa TrËn	7					28	2	2	0	1	-1	0		0	0	0	0							450	24					1	3	2					456	9999	1	36	200			1	\script\skill\npc¼¼ÄÜ\Á÷ÅÉ¼¼ÄÜ\NpcÓÃ½ğËøÕó.lua												
+2022	Npc dïng §o¹n Cèt Tr¶o	8					1	4	2	1	2	-1	0		0	0	0	0					2023	6	469	3					1	1	2		3			456	144	1	18	75			2	\script\skill\npc¼¼ÄÜ\Á÷ÅÉ¼¼ÄÜ\NpcÓÃ¶Ï¹Ç×¦.lua												
+2023	Npc dïng §o¹n Cèt Tr¶o (Tö)	8					1	4	2	1	2	-1	0		0	0	0	0							469	3					1	1	2		3			456	9999	1		100			1	\script\skill\npc¼¼ÄÜ\Á÷ÅÉ¼¼ÄÜ\NpcÓÃ¶Ï¹Ç×¦(×Ó).lua												
+2024	Npc dïng Truy Hån Än	7					2	9	1		0	-1	0		0	0	0	0								34												456	600	1	36	100				\script\skill\npc¼¼ÄÜ\Á÷ÅÉ¼¼ÄÜ\NpcÓÃ×·»êÓ¡.lua												
+2025	Npc dïng Linh Miªu VËn	7					10	0	2	0	1	-1	0	30	0	0	0	0					2026	9	461	9					1		2					456	9999	1	90	50			1	\script\skill\npc¼¼ÄÜ\Á÷ÅÉ¼¼ÄÜ\NpcÓÃÁéÃ¨ÔÏ.lua												
+2026	Npc dïng Linh Miªu VËn (Nhá)	7					10	0	2	0	1	-1	0	30	0	0	0	0					2026	9	461	9					1		2					456	9999	1		50			1	\script\skill\npc¼¼ÄÜ\Á÷ÅÉ¼¼ÄÜ\NpcÓÃÁéÃ¨ÔÏ(×Ó).lua												
+2027	Npc dïng Thiªn Háa DiÔm D­¬ng	7					10	8	2	0	1	-1	0	30	0	0	0	0					2028	18	465	18					1		2					6	9999	1	90	100			1	\script\skill\npc¼¼ÄÜ\Á÷ÅÉ¼¼ÄÜ\NpcÓÃÌì»ğÑŞÑô.lua												
+2028	Npc dïng Thiªn Háa DiÔm D­¬ng (Nhá)	7					10	8	2	0	1	-1	0	30	0	0	0	0					2028	18	465	18					1		2					6	9999	1		100			1	\script\skill\npc¼¼ÄÜ\Á÷ÅÉ¼¼ÄÜ\NpcÓÃÌì»ğÑŞÑô(×Ó).lua												
+2029	Npc dïng Th¸i Cùc ThÇn C«ng (Tö 2)	20					1	3	2	0	1	-1	0		0	0	0	0					2030	9	155	1					2		5					456	9999	1		100			2	\script\skill\npc¼¼ÄÜ\Á÷ÅÉ¼¼ÄÜ\NpcÓÃÌ«¼«Éñ¹¦(×Ó2).lua												
+2030	Npc dïng Th¸i Cùc ThÇn C«ng (Tö 3)	20					1	3	2	0	1	-1	0		0	0	0	0							155	1					2		5					456	9999	1		100			2	\script\skill\npc¼¼ÄÜ\Á÷ÅÉ¼¼ÄÜ\NpcÓÃÌ«¼«Éñ¹¦(×Ó3).lua												
+2031	Npc dïng Th¸i Cùc ThÇn C«ng Tø T­îng	20					1	3	2	0	1	-1	0		0	0	0	0							156	1					3		0					456	9999	1		100			4	\script\skill\npc¼¼ÄÜ\Á÷ÅÉ¼¼ÄÜ\NpcÓÃÌ«¼«Éñ¹¦ËÄÏó.lua												
+2032	Npc dïng Th¸i Cùc ThÇn C«ng B¸t Qu¸i	20					1	3	2	0	1	-1	0		0	0	0	0							157	1					3		0					456	9999	1		100			8	\script\skill\npc¼¼ÄÜ\Á÷ÅÉ¼¼ÄÜ\NpcÓÃÌ«¼«Éñ¹¦°ËØÔ.lua												
+2033	Npc dïng Thiªn La §Şa Vâng	10					8	13	1		1	-1	0		0	0	0	0							96	18					1	1	2					456	9999	1	19	-100			1	\script\skill\npc¼¼ÄÜ\Á÷ÅÉ¼¼ÄÜ\NpcÓÃÌìÂŞµØÍø.lua												
+2034	Npc dïng Thiªn La §Şa Vâng	10					19	13	2		1	-1	0		0	0	0	0								1					3		2						9999	1	3	100				\script\skill\npc¼¼ÄÜ\Á÷ÅÉ¼¼ÄÜ\NpcÓÃÌìÂŞµØÍø(ÕĞ).lua												
+2035	Npc dïng Cµn Kh«n QuyÕt	6					20	2	2		1	-1	0		0	0	0	0		2036						6												456	9999	1	54	-100				\script\skill\npc¼¼ÄÜ\Á÷ÅÉ¼¼ÄÜ\NpcÓÃÇ¬À¤¾÷.lua												
+2036	Npc dïng Cµn Kh«n QuyÕt (Tö)	6					1	2	2		2	-1	0		0	0	0	0					2037	12	93	5					1		2		3			456	9999	1	15	100			2	\script\skill\npc¼¼ÄÜ\Á÷ÅÉ¼¼ÄÜ\NpcÓÃÇ¬À¤¾÷(×Ó).lua												
+2037	Npc dïng Cµn Kh«n QuyÕt (NhŞ Tö)	6					1	2	2		2	-1	0		0	0	0	0							94	1					1		2					456	9999	1		100			1	\script\skill\npc¼¼ÄÜ\Á÷ÅÉ¼¼ÄÜ\NpcÓÃÇ¬À¤¾÷(×Ó×Ó).lua												
+2038	Npc dïng NgÊt ®i	1					2	8	1		0	-1	0		0	0	0	0																				2	9999	1	1800	100				\script\skill\Íâ´«ĞÂÔö\Ì«Ò»Ëş\óïŞÈÎŞµĞ.lua												
+2039	Npc dïng Ngê vùc	1					2	8	1		0	-1	0		0	0	0	0																				2	9999	1	54	100				\script\skill\Íâ´«ĞÂÔö\Ì«Ò»Ëş\óïŞÈÎŞµĞ.lua												
+2040	Npc dïng Vç tay	1					2	8	1		0	-1	0		0	0	0	0																				2	9999	1	54	100				\script\skill\Íâ´«ĞÂÔö\Ì«Ò»Ëş\óïŞÈÎŞµĞ.lua												
+2041	Npc dïng ChiÕn th¾ng	1					2	8	1		0	-1	0		0	0	0	0																				2	9999	1	54	100				\script\skill\Íâ´«ĞÂÔö\Ì«Ò»Ëş\óïŞÈÎŞµĞ.lua												
+2042	Npc dïng Mª Tung ThuÊn Bé	10					2	10	2		0	-1	0		0	0	0	0						4		6												460	600	1	7	100				\script\skill\npc¼¼ÄÜ\Á÷ÅÉ¼¼ÄÜ\NpcÓÃÃÔ×ÙË²²½.lua												
+2043	Npc dïng Linh Lung Thİch	1					1	1	1		0	-1	0		0	0	0	0						15	525	16					1		2					456	160	1	18	150			1	\script\skill\npc¼¼ÄÜ\Á÷ÅÉ¼¼ÄÜ\NpcÓÃÁáçç´Ì.lua												
+2044	Npc dïng To¸i Méng B¨ng	1					1	2	1		0	-1	0		0	0	0	0					2045	1														456	160	1	27	150				\script\skill\npc¼¼ÄÜ\Á÷ÅÉ¼¼ÄÜ\NpcÓÃÉ±ÒâÏûºÄ.lua												
+2045	Npc dïng To¸i Méng B¨ng (Tö)	1					1	2	1		0	-1	0		0	0	0	0							525	23					1		2					456	160	1		100			1	\script\skill\npc¼¼ÄÜ\Á÷ÅÉ¼¼ÄÜ\NpcÓÃËéÃÎ±À(×Ó).lua												
+2046	Npc dïng S¸t 	1					2	8	1		0	-1	0		0	0	0	0								35												2	9999	1	36	100				\script\skill\npc¼¼ÄÜ\Á÷ÅÉ¼¼ÄÜ\NpcÓÃÉ±Òâ.lua												
+2047	Npc dïng Kinh Hång §o¹n	1					2	1	1		0	-1	0		0	0	0	0					2048	5		8												456	160	1	9	150				\script\skill\npc¼¼ÄÜ\Á÷ÅÉ¼¼ÄÜ\NpcÓÃ¾ªºè¶Ï.lua												
+2048	Npc dïng Kinh Hång §o¹n (Tö)	1					2	1	1		0	-1	0		0	0	0	0								1												456	160	1		100				\script\skill\npc¼¼ÄÜ\Á÷ÅÉ¼¼ÄÜ\NpcÓÃ¾ªºè¶Ï(×Ó).lua												
+2049	Npc dïng Hçn §én §Êu Ph¸ch	1					2	8	1		0	-1	0		0	0	0	0								1												2	9999	1	2	200				\script\skill\npc¼¼ÄÜ\Á÷ÅÉ¼¼ÄÜ\NpcÓÃ»ìãç¶·ÆÇ.lua												
+2050	Npc dïng Yªn Vò Mª Li	1					1	2	1		1	-1	0		0	0	0	0					2051	1	527	5					3		4		2			456	600	1	54	100			24	\script\skill\npc¼¼ÄÜ\Á÷ÅÉ¼¼ÄÜ\NpcÓÃÉ±ÒâÏûºÄ.lua												
+2051	Npc dïng Yªn Vò Mª Li (Tö)	1					1	2	1		1	-1	0		0	0	0	0							528	4					1		2		8			456	600	1		100			6	\script\skill\npc¼¼ÄÜ\Á÷ÅÉ¼¼ÄÜ\NpcÓÃÑÌÓêÃÔÀë(×Ó).lua												
+2052	Npc dïng LuyÖn KiÕm-Thiªn Minh	1					2	8	1		0	-1	0		0	0	0	0								17												2	9999	1	18	125				\script\skill\npc¼¼ÄÜ\Á÷ÅÉ¼¼ÄÜ\NpcÓÃÁ¶½£-ÌìÚ¤.lua					10							
+2053	Npc dïng Thiªn Minh tÊn c«ng	1					2	5	1	1	2	-1	0		0	0	0	0								1												456	9999	1	2	100				\script\skill\npc¼¼ÄÜ\Á÷ÅÉ¼¼ÄÜ\NpcÓÃÌìÚ¤¹¥»÷.lua												
+2054	Npc dïng LuyÖn KiÕm-Thiªn Minh (Linh KiÕm)	1					2	8	1		0	-1	0		0	0	0	0								1												2	9999	1	2	100				\script\skill\npc¼¼ÄÜ\Á÷ÅÉ¼¼ÄÜ\NpcÓÃÁ¶½£buff.lua												
+2055	Npc dïng Thiªn Phong Trôy	10					28	2	2		1	-1	0		0	0	0	0							537	15					1	3	2					456	600	1	18	100			1	\script\skill\npc¼¼ÄÜ\Á÷ÅÉ¼¼ÄÜ\NpcÓÃÌì·æ×¹.lua												
+2056	Npc dïng Thiªn Phong Trôy (Linh KiÕm)	10					1	2	1		1	-1	0		0	0	0	0							538	1					1		2					456	9999	1	2	100			1	\script\skill\À¥ÂØ½£×ğ\Ìì·æ×¹(Áé½£).lua												
+2057	Npc dïng LuyÖn KiÕm-Sİ Hµn	1					2	8	1		0	-1	0		0	0	0	0								17												2	9999	1	18	125				\script\skill\npc¼¼ÄÜ\Á÷ÅÉ¼¼ÄÜ\NpcÓÃÁ¶½£-³ãº®.lua												
+2058	Npc dïng LuyÖn KiÕm-Sİ Hµn (Linh KiÕm)	1					2	8	1		0	-1	0		0	0	0	0								1												2	9999	1	2	100				\script\skill\npc¼¼ÄÜ\Á÷ÅÉ¼¼ÄÜ\NpcÓÃÁ¶½£buff.lua												
+2059	Npc dïng Nh©n KiÕm Hîp NhÊt	1					3	15	1		0	-1	0		0	0	0	0																				2								\script\skill\npc¼¼ÄÜ\Á÷ÅÉ¼¼ÄÜ\NpcÓÃÈË½£ºÏÒ».lua												
+2060	Npc dïng Nh©n KiÕm Hîp NhÊt tÊn c«ng	1					0	1	2		0	-1	0		0	0	0	0					2061	1	530	5					1	0	2					456	160	1	17	150			1	\script\skill\ÆÕÍ¨¹¥»÷\ÆÕÍ¨¹¥»÷.lua												
+2061	Npc dïng Nh©n KiÕm Hîp NhÊt (Linh KiÕm)	1					0	1	2	1	0	-1	0		0	0	0	0							530	8					1	0	2					456	160	1	17	150			1	\script\skill\ÆÕÍ¨¹¥»÷\ÆÕÍ¨¹¥»÷.lua												
+2062	Npc dïng Nh©n KiÕm Hîp NhÊt (Tö)	1					2	8	1		0	-1	0		0	0	0	0								1												2	9999	1		100				\script\skill\npc¼¼ÄÜ\Á÷ÅÉ¼¼ÄÜ\NpcÓÃÈË½£ºÏÒ»(×Ó).lua												
+2063	Npc dïng Tµn V©n KiÕm Canh	1					1	1	1		0	-1	0		0	0	0	0					2064	1	529	9					1	1	2		2			456	160	1	18	125			3	\script\skill\npc¼¼ÄÜ\Á÷ÅÉ¼¼ÄÜ\NpcÓÃ²ĞÔÆ½£î¸.lua												
+2064	Npc dïng Tµn V©n KiÕm Canh (Tö)	1					2	8	2		0	-1	0		0	0	0	0								1												2	9999	1		100				\script\skill\npc¼¼ÄÜ\Á÷ÅÉ¼¼ÄÜ\NpcÓÃ²ĞÔÆ½£î¸(×Ó).lua												
+2065	Npc dïng Tµn V©n KiÕm Canh (Linh KiÕm)	1					1	5	1	1	0	-1	0		0	0	0	0							529	13					1	1	2					456	160	1	18	125			1	\script\skill\À¥ÂØ½£×ğ\²ĞÔÆ½£î¸(Áé½£).lua												
+2066	Npc dïng §o¹n Thñy KiÕm Canh	1					1	1	1		1	-1	0		0	0	0	0					2067	1	531	11					1	1	2					456	160	1	18	100			1	\script\skill\npc¼¼ÄÜ\Á÷ÅÉ¼¼ÄÜ\NpcÓÃ¶ÏË®½£î¸.lua												
+2067	Npc dïng §o¹n Thñy KiÕm Canh (Tö)	1					2	8	1		0	-1	0		0	0	0	0								1												2	9999	1		100				\script\skill\npc¼¼ÄÜ\Á÷ÅÉ¼¼ÄÜ\NpcÓÃ¶ÏË®½£î¸(×Ó).lua												
+2068	Npc dïng §o¹n Thñy KiÕm Canh (Linh KiÕm)	1					1	5	1	1	1	-1	0		0	0	0	0							532	9					1	1	2					456	160	1	18	100			1	\script\skill\À¥ÂØ½£×ğ\¶ÏË®½£î¸(Áé½£).lua												
+2069	Npc dïng B¹o L«i KiÕm Canh	1					1	1	1		0	-1	0		0	0	0	0					2070	1	533	16					1	1	2		1			456	160	1	27	150			5	\script\skill\npc¼¼ÄÜ\Á÷ÅÉ¼¼ÄÜ\NpcÓÃ±©À×½£î¸.lua												
+2070	Npc dïng B¹o L«i KiÕm Canh (Tö)	1					2	8	2		0	-1	0		0	0	0	0								1												2	9999	1		100				\script\skill\npc¼¼ÄÜ\Á÷ÅÉ¼¼ÄÜ\NpcÓÃ±©À×½£î¸(×Ó).lua												
+2071	Npc dïng B¹o L«i KiÕm Canh (Linh KiÕm)	1					1	5	1	1	0	-1	0		0	0	0	0							534	24					1	0	2					456	160	1	45	150			1	\script\skill\À¥ÂØ½£×ğ\±©À×½£î¸(Áé½£).lua												
+2072	Npc dïng KiÕm  Ph¶n X¹	1					2	8	1		0	-1	0		0	0	0	0								7												2	9999	1	9	100				\script\skill\npc¼¼ÄÜ\Á÷ÅÉ¼¼ÄÜ\NpcÓÃ½£Òâ·´Éä.lua												
+2073	Npc dïng LuyÖn KiÕm-Phong CËn	1					2	8	1		0	-1	0		0	0	0	0								17												2	9999	1	18	125				\script\skill\npc¼¼ÄÜ\Á÷ÅÉ¼¼ÄÜ\NpcÓÃÁ¶½£-·áâË.lua												
+2074	Npc dïng Phong CËn tÊn c«ng	1					2	5	1		2	-1	0		0	0	0	0								1												456	9999	1	2	100				\script\skill\À¥ÂØ½£×ğ\·áâË¹¥»÷.lua												
+2075	Npc dïng LuyÖn KiÕm-Phong CËn (Linh KiÕm)	1					2	8	1		0	-1	0		0	0	0	0								1												2	9999	1	2	100				\script\skill\À¥ÂØ½£×ğ\Á¶½£buff.lua												
+2076	Npc dïng Håi Phong KiÕm Canh	1					2	1	1		1	-1	0		0	0	0	0					2076	1		1												456	600	1	18	100				\script\skill\npc¼¼ÄÜ\Á÷ÅÉ¼¼ÄÜ\NpcÓÃ»Ø·ç½£î¸.lua												
+2077	Npc dïng Håi Phong KiÕm Canh (Tö)	1					2	8	2		0	-1	0		0	0	0	0								1												2	9999	1		100				\script\skill\npc¼¼ÄÜ\Á÷ÅÉ¼¼ÄÜ\NpcÓÃ»Ø·ç½£î¸(×Ó).lua												
+2078	Npc dïng Håi Phong KiÕm Canh (Linh KiÕm)	1					1	5	1		1	-1	0		0	0	0	0							535	1					1		2		9			456	44	1	126	-100			15	\script\skill\À¥ÂØ½£×ğ\»Ø·ç½£î¸(Áé½£).lua												
+2079	Npc dïng Thiªn nh TuyÖt S¸t	20					1	3	2	2	1	-1	0		0	0	0	0							539	7					4		2		9			456	9999	1	90	-100			9	\script\skill\npc¼¼ÄÜ\Á÷ÅÉ¼¼ÄÜ\NpcÓÃÇ§Ó°¾øÉ±.lua												
+2080	Npc dïng Thiªn nh TuyÖt S¸t (Tö)	20					2	3	1		0	-1	0		0	0	0	0								1												2	9999	1		100				\script\skill\npc¼¼ÄÜ\Á÷ÅÉ¼¼ÄÜ\NpcÓÃÇ§Ó°¾øÉ±(×Ó).lua												
+2081	Npc dïng V¹n KiÕm Hãa Vò TrËn	20					1	3	2	2	1	-1	0		0	0	0	0					2083	1	540	14					4	1	2		3			456	600	1	90	-100			25	\script\skill\npc¼¼ÄÜ\Á÷ÅÉ¼¼ÄÜ\NpcÓÃÍò½£»¯ÓêÕó.lua												
+2082	Npc dïng V¹n KiÕm Hãa Vò TrËn (Tö)	20					2	8	2		0	-1	0		0	0	0	0								1												2	9999	1		100				\script\skill\npc¼¼ÄÜ\Á÷ÅÉ¼¼ÄÜ\NpcÓÃÍò½£»¯ÓêÕó(×Ó).lua												
+2083	Npc dïng V¹n KiÕm Hãa Vò TrËn (Linh KiÕm)	20					1	5	1	2	1	-1	0		0	0	0	0							541	80					1	1	2					456	600	1	90	100			1	\script\skill\npc¼¼ÄÜ\Á÷ÅÉ¼¼ÄÜ\NpcÓÃÍò½£»¯ÓêÕó(Áé½£).lua												
+2084	Npc dïng Cöu Vü Hoa Tiªn QuyÕt	20					2	3	2	2	1	-1	0		0	0	0	0					2087	3		6												456	600	1	90	100				\script\skill\npc¼¼ÄÜ\Á÷ÅÉ¼¼ÄÜ\NpcÓÃ¾ÅÎ²»¨ÏÉ¾÷.lua												
+2085	Npc dïng miÔn dŞch Cöu Vü Hoa Tiªn QuyÕt	20					2	7	1		0	-1	0		0	0	0	0					2086	8		1												2	9999	1		100				\script\skill\npc¼¼ÄÜ\Á÷ÅÉ¼¼ÄÜ\NpcÓÃ¾ÅÎ²»¨ÏÉ¾÷ÃâÒß.lua												
+2086	Npc dïng Cöu Vü Hoa Tiªn QuyÕt (Nhá)	20					2	3	2	2	2	-1	0		0	0	0	0								1												2	9999	1		100				\script\skill\npc¼¼ÄÜ\Á÷ÅÉ¼¼ÄÜ\NpcÓÃ¾ÅÎ²»¨ÏÉ¾÷(×Ó).lua												
+2087	Npc dïng Cöu Vü Hoa Tiªn QuyÕt (§iªu)	20					1	7	2	0	1	-1	0	2	0	0	0	0					2088	2	478	3					1	1	2		17			456	96	1	36	100			1	\script\skill\npc¼¼ÄÜ\Á÷ÅÉ¼¼ÄÜ\NpcÓÃ¾ÅÎ²»¨ÏÉ¾÷(õõ).lua												
+2088	Npc dïng Cöu Vü Hoa Tiªn QuyÕt (§iªu Uy)	20					1	7	2	0	1	-1	0		0	0	0	0							481	1					1		2					456	9999	1		100			1	\script\skill\npc¼¼ÄÜ\Á÷ÅÉ¼¼ÄÜ\NpcÓÃ¾ÅÎ²»¨ÏÉ¾÷(õõÍş).lua												
+2105	L«i Hèng	20	99	99			1	2	2	1	0	-1	0		0	0	0	0							548	1					1	0	2					456	9999	1	18	100			1	\script\skill\Íâ´«ĞÂÔö\½£µ´ÑàÔÆ\À×ºğ.lua		skill_interrupt_rate	-550									
+2106	L«i Hèng Tö	20	99	99			2	8	1	1	1	-1	0		0	0	0	0													1	1	2					456	9999	1	18	100			1	\script\skill\Íâ´«ĞÂÔö\½£µ´ÑàÔÆ\À×ºğ×Ó.lua		skill_interrupt_rate	-550									
+2107	Th­¬ng Háa	20	99	99			1	6	2	1	2	-1	0		0	0	0	0							550	1					1	1	2					456	9999	5	108	100			1	\script\skill\Íâ´«ĞÂÔö\½£µ´ÑàÔÆ\²Ô»ğ.lua		skill_interrupt_rate	-550									
+2108	Chia sÎ s¸t th­¬ng néi ngo¹i c«ng BOSS phã b¶n	20	99	99			1	14	0			-1	0		0	0	0	0																				2	9999	1	9	100				\script\skill\Íâ´«ĞÂÔö\½£µ´ÑàÔÆ\BOSSÉËº¦·ÖÌ¯.lua		skill_interrupt_rate	-500									
+2109	S¸t th­¬ng B¨ng Ho¹i	20	99	99			1	2	2	0	2	-1	0		0	0	0	0							551	15					1	1	2					456	9999	1	18	100			1	\script\skill\Íâ´«ĞÂÔö\½£µ´ÑàÔÆ\±ù»·ÉËº¦.lua		skill_interrupt_rate	-500									
+2110	Tö Quang	20	99	99			1	6	2	1	1	-1	0		0	0	0	0							552	5					2	0	3		3			456	9999	1	180	50			40	\script\skill\Íâ´«ĞÂÔö\½£µ´ÑàÔÆ\ËÀ¹â.lua		skill_interrupt_rate	-500									
+2111	Kı hiÖu Kim ¤ Phæ ChiÕu	20	99	99			1	2	2	0	1	-1	0		0	0	0	0							567	1					1	1	2		2			456	9999	1	2	100			1	\script\skill\Íâ´«ĞÂÔö\½£µ´ÑàÔÆ\½ğÎÚÆÕÕÕ.lua												
+2112	NPC kh¸ng bÊt lîi	20	99	99			3	15	1		0	-1	0		1	0	0	0																				2								\script\skill\Íâ´«ĞÂÔö\NPC¿¹¸ºÃæ.lua												
+2113	Tiªm DiÖt	20	99	99			2	8	1	1	0	-1	0		0	0	0	0													1	1	2					6	9999	1	9	100				\script\skill\Íâ´«ĞÂÔö\½£µ´ÑàÔÆ\¼ßÃğ.lua			10									
+2114	Tiªm DiÖt Tö	20	99	99			2	8	1	1	0	-1	0		0	0	0	0													1	1	2					6	9999	1	9	100				\script\skill\Íâ´«ĞÂÔö\½£µ´ÑàÔÆ\¼ßÃğ×Ó.lua			10									
+2115	Dôc Háa Trïng Sinh	2	99	99			1	6	2	1	2	-1	0		0	0	0	0													1	1	2					456	9999	1	180	100			1	\script\skill\Íâ´«ĞÂÔö\½£µ´ÑàÔÆ\Ô¡»ğÖØÉú.lua		skill_interrupt_rate	-550									
+2116	S¸t th­¬ng Kim ¤ Phæ ChiÕu	20	99	99			1	2	2	0	1	-1	0		0	0	0	0							567	1					1	1	2		2			456	9999	1	54	100			1	\script\skill\Íâ´«ĞÂÔö\½£µ´ÑàÔÆ\½ğÎÚÆÕÕÕ.lua												
+2117	Tuyªn C¸o Tö Vong	20	99	99			1	2	2	0	1	-1	0		0	0	0	0							565	1					1	0	2					456	9999	1	108	100			1	\script\skill\Íâ´«ĞÂÔö\½£µ´ÑàÔÆ\ËÀÍöĞû¸æ.lua		skill_interrupt_rate	-550									
+2118	ThuÊn Bé	20	99	99			1	2	2	0	2	-1	0		0	0	0	0													1	0	2					456	9999	1	54	100			1	\script\skill\Íâ´«ĞÂÔö\½£µ´ÑàÔÆ\Ô¡»ğÖØÉú.lua		skill_interrupt_rate	-550									
+2119	L«i Hèng Tö_Tö	20	99	99			2	8	1	1	1	-1	0		0	0	0	0													1	1	2					456	9999	1	18	100			1	\script\skill\Íâ´«ĞÂÔö\½£µ´ÑàÔÆ\À×ºğ×Ó×Ó.lua		skill_interrupt_rate	-550									
+2120	Thiªn Ma Hµng Phôc	20	99	99			1	6	2	1	1	-1	0		0	0	0	0					2123	1	563	32					3	0	2		8			456	9999	1	270	100			40	\script\skill\Íâ´«ĞÂÔö\½£µ´ÑàÔÆ\ÌìÄ§½µ·ü.lua		skill_interrupt_rate	-550									
+2121	HuyÕt Tr× §Şa Ngôc	20	99	99			1	8	2		1	-1	0		0	0	0	0							562	1					1	1	2					456	9999	11	3	100			1	\script\skill\Íâ´«ĞÂÔö\½£µ´ÑàÔÆ\Ñª³ØµØÓü.lua		skill_interrupt_rate	-550									
+2122	S¸t th­¬ng HuyÕt Tr× §Şa Ngôc	20	99	99			1	6	2	1	1	-1	0		0	0	0	0							562	1					1	0	1					456	9999	11	3	100			1	\script\skill\Íâ´«ĞÂÔö\½£µ´ÑàÔÆ\Ñª³ØµØÓüÉËº¦.lua		skill_interrupt_rate	-550									
+2123	Nh¾c nhë Thiªn Ma Hµng Phôc	20	99	99			1	8	2		1	-1	0		0	0	0	0							511	1					1	0	2					456	9999	1	2	100			1	\script\skill\Íâ´«ĞÂÔö\½£µ´ÑàÔÆ\ÌìÄ§½µ·üÌáÊ¾.lua		skill_interrupt_rate	-550									
+2124	Xö QuyÕt	20	99	99			1	6	2	1	2	-1	0		0	0	0	0							571	89					1	0	1					456	9999	1	90	100			1	\script\skill\Íâ´«ĞÂÔö\½£µ´ÑàÔÆ\´¦¾ö.lua		skill_interrupt_rate	-550									
+2151	ThËp Tù T­êng_Tö	20					19	10	2		1	-1	0		0	0	0	0								1					1	1	2						500	1		150			7	\script\skill\Íâ´«ĞÂÔö\½£µ´ÑàÔÆ\Ê®×ÖÇ½.lua		skill_interrupt_rate	-550									
+2504	Chóc Dung tÊn c«ng th­êng	20					1	4	2	1	0	-1	1		0	1	0	0							513	11					1	1	2					456	144	1	14	100			1	\script\skill\ÆÕÍ¨¹¥»÷\npcÆÕÍ¨¹¥»÷.lua												
+2505	D¹ Oanh tÊn c«ng th­êng	20					1	4	2	1	0	-1	1		0	1	0	0							581	11					2	0	3		1			456	600	1	14	100			1	\script\skill\ÆÕÍ¨¹¥»÷\npcÆÕÍ¨¹¥»÷.lua		skill_param1	2	skill_param2	0							
+2506	T« Y Y tÊn c«ng th­êng	20					1	4	2	1	0	-1	1		0	1	0	0							621	11					1	0	2					456	144	1	14	100			1	\script\skill\ÆÕÍ¨¹¥»÷\npcÆÕÍ¨¹¥»÷.lua												
+2507	T« TuÖ Nhµn tÊn c«ng th­êng	20					1	4	1	1	1	-1	1		0	0	0	0							597	3					4	0	2		3			456	9999	1	14	100			4	\script\skill\ÆÕÍ¨¹¥»÷\npcÆÕÍ¨¹¥»÷.lua		skill_param1	23	skill_param2	23							
+2508	Ph­¬ng Tinh tÊn c«ng th­êng	20					1	4	2	1	0	-1	1		0	1	0	0							598	11					1	0	2					456	144	1	14	100			1	\script\skill\ÆÕÍ¨¹¥»÷\npcÆÕÍ¨¹¥»÷.lua												
+2509	Hång Än tÊn c«ng th­êng	20					1	4	2	1	0	-1	1		0	1	0	0							602	11					1	0	2					456	144	1	14	100			1	\script\skill\ÆÕÍ¨¹¥»÷\npcÆÕÍ¨¹¥»÷.lua												
 30001	§¹n tiÓu tuyÕt cÇu	1	0	0	0		1	0	2	2	1	32768	1		0	0	0	0							30003	36					1		2					128	9999	1	37	-200			1	\script\skill\ÆÕÍ¨¹¥»÷\Ğ¡Ñ©ÇòÕ¨µ¯.lua		cost_goods_id	219	cost_goods_num	5							
 30002	§¹n trung tuyÕt cÇu	1	0	0	0		1	0	2	2	1	32768	1		0	0	0	0							30004	36					1		2					128	9999	1	37	-200			1	\script\skill\ÆÕÍ¨¹¥»÷\ÖĞÑ©ÇòÕ¨µ¯.lua		cost_goods_id	220	cost_goods_num	5							
 30003	§¹n ®¹i TuyÕt cÇu	1	0	0	0		1	0	2	2	1	32768	1		0	0	0	0							30005	36					1		2					128	9999	1	37	-200			1	\script\skill\ÆÕÍ¨¹¥»÷\´óÑ©ÇòÕ¨µ¯.lua		cost_goods_id	221	cost_goods_num	5							
@@ -1528,7 +2039,7 @@ ID	Name	MaxLevel	Faction	Route	Series	ExtraSeries	Type	Style1	Style2	DamageType	
 30146	D­¬ng Gia NPC To¸i Kim TiÔn	20	0	0	0		1	1	2	0	2	-1	0		0	0	1	1							409	54	762				1		2					456	600	1	72	150			1	\script\skill\ÆÕÍ¨¹¥»÷\npcÆÕÍ¨¹¥»÷.lua												
 30147	NPC tÊn c«ng ¸m khİ	20	0	0	7		0	0	2	0	2	-1	0		0	0	1	0							2	6					1		2					456	400	1	17	100			1	\script\skill\ÆÕÍ¨¹¥»÷\npcÆÕÍ¨¹¥»÷.lua												
 30148	C«ng kİch th­êng (Néi)	20	0	0	0		1	6	2	1	0	-1	0		0	1	1	0							30006	5					1	1						456	96	1	18	100			1	\script\skill\³èÎï¼¼ÄÜ\³èÎïÆÕÍ¨¹¥»÷£¨ÄÚ£©.lua		skill_cast_interval	18									
-30149	Gi¸ng Linh ThuËt	9	0	0	0		2	10	1		0	-1	1		1	0	0	0					30156	1		5												2	9999	1	18	100				\script\skill\³èÎï¼¼ÄÜ\½µÁéÊõ.lua		skill_cast_interval	540									
+30149	Gi¸ng Linh ThuËt	9	0	0	0		2	10	1		0	-1	1		1	0	0	0					30156	1		5												2	9999	1	18	100							540									
 30150	Th­îng Thanh V« Cùc C«ng (Nhá 1)	7	13	15	7		1	2	2	0	2	512	1		0	0	0	0							87	0					1	1	2					456	96	1		100			1	\script\skill\Îäµ±Ë×¼Ò\ÉÏÇåÎŞ¼«¹¦(ÕĞ1×Ó).lua												
 30151	Th­îng Thanh V« Cùc C«ng (Nhá 2)	7	13	15	7		1	2	2	0	2	512	1		0	0	0	0							87	0					1	1	2					456	96	1		100			1	\script\skill\Îäµ±Ë×¼Ò\ÉÏÇåÎŞ¼«¹¦(ÕĞ2×Ó).lua												
 30152	ThÊt Tinh QuyÕt (Nhá)	7	13	15	7		1	1	2	0	2	512	1		0	0	0	0					30153	7	78	1					1	1	2					456	96	1		100			1	\script\skill\Îäµ±Ë×¼Ò\ÆßĞÇ¾÷(ÕĞ×Ó).lua												
@@ -1555,3 +2066,88 @@ ID	Name	MaxLevel	Faction	Route	Series	ExtraSeries	Type	Style1	Style2	DamageType	
 30173	B¸ch V¹n Xung Chµng_Xung thİch	20	0	0	1		20	2	2		1	-1	0		1	0	0	0		30174					30006	3												456	600	1	18	100			1	\script\skill\³èÎï¼¼ÄÜ\ÌØÊâ³èÎï¼¼ÄÜ\ÉµÄñ³å´Ì.lua		skill_cast_interval	216									
 30174	B¸ch V¹n Xung Chµng_Chiªu	20	0	0	1		301	2	2		2	-1	0		1	0	0	0							507	3												456	600	1	18	100			1	\script\skill\³èÎï¼¼ÄÜ\ÌØÊâ³èÎï¼¼ÄÜ\°ÙÍò³å×².lua												
 30175	Ho¸n Hïng Tr¶m Kİch_Chiªu (Tö)	20	0	0	0		2	8	0		0	-1	0		0	0	0	0								5												2	9999	1	17	-100				\script\skill\³èÎï¼¼ÄÜ\ÌØÊâ³èÎï¼¼ÄÜ\ä½ĞÜÕ¶»÷ÎŞµĞ.lua												
+30176	Kü n¨ng tiªu diÖt nhanh	20			0		1	2	2	0	1	-1	0		0	0	0	0							513	15					1	1	2					456	9999	1	18	100			1	\script\skill\npc¼¼ÄÜ\bossÃëÉ±.lua												
+30177	Linh Quang NhÊt ThiÓm	10	0	0	0		3	14	1		0	-1	0		1	0	0	0																				2								\script\skill\³èÎï¼¼ÄÜ\Áé¹âÒ»ÉÁ.lua		cost_tianzi	40									
+30178	Ng­ng ThÇn QuyÕt	10	0	0	0		3	14	1		0	-1	0		1	0	0	0																				2								\script\skill\³èÎï¼¼ÄÜ\ÄıÉñ¾÷.lua		cost_tianzi	40									
+30179	Kinh §µo QuyÕt	10	0	0	0		3	14	1		0	-1	0		1	0	0	0																				2								\script\skill\³èÎï¼¼ÄÜ\¾ªÌÎ¾÷.lua		cost_tianzi	40									
+30180	Nguyªn Thñy B¹o Né	10	0	0	0		3	14	1		0	-1	0		1	0	0	0																				2								\script\skill\³èÎï¼¼ÄÜ\Ô­Ê¼±©Å­.lua		cost_tianzi	40									
+30181	ThiÕt Bè Sam	10	0	0	0		3	14	1		0	-1	0		1	0	0	0																				2								\script\skill\³èÎï¼¼ÄÜ\Ìú²¼ÉÀ.lua		cost_tianzi	40									
+30182	Viªm Béc ThuËt	20	0	0	1		1	2	2	1	0	-1	0		0	0	0	0							30006	5	30183											456	96	1	18	100			1	\script\skill\³èÎï¼¼ÄÜ\µ÷ÓÃÕĞÊ½.lua		skill_cast_interval	90									
+30183	Viªm Béc ThuËt_Chiªu 1	20	0	0	1		1	2	2	1	0	-1	0		0	0	0	0							30006	5												456	96	1	18	100			1	\script\skill\³èÎï¼¼ÄÜ\ÌØÊâ³èÎï¼¼ÄÜ\Ñ×±¬Êõ.lua												
+30184	Viªm Béc ThuËt_Chiªu 2	20	0	0	1		1	2	2	1	0	-1	0		0	0	0	0							30006	5												456	96	1	18	100			1	\script\skill\³èÎï¼¼ÄÜ\ÌØÊâ³èÎï¼¼ÄÜ\Ñ×±¬Êõ£¨ÕĞ£©.lua												
+30185	Viªm Linh Thøc TØnh	20	0	0	1		2	8	2		0	-1	0		0	0	0	0								5	30186											2	9999	1	17	-100				\script\skill\³èÎï¼¼ÄÜ\µ÷ÓÃÕĞÊ½.lua		skill_cast_interval	270									
+30186	Viªm Linh Thøc TØnh_Chiªu	20	0	0	1		2	8	2		0	-1	0		0	0	0	0								5												2	9999	1	17	-100				\script\skill\³èÎï¼¼ÄÜ\ÌØÊâ³èÎï¼¼ÄÜ\Ñ×Áé¾õĞÑ.lua												
+30187	Viªm Ma Tr¶m	20	0	0	1		1	6	2	1	0	-1	1		0	0	0	0							442	6	30188					1	2		5			456	96	1	27	150			1	\script\skill\³èÎï¼¼ÄÜ\µ÷ÓÃÕĞÊ½.lua		skill_cast_interval	270									
+30188	Viªm Ma Tr¶m_Chiªu 1	20	0	0	1		1	6	2	1	0	-1	1		0	0	0	0							442	6						1	2		5			456	96	1	27	150			1	\script\skill\³èÎï¼¼ÄÜ\ÌØÊâ³èÎï¼¼ÄÜ\Ñ×Ä§Õ¶.lua												
+30189	Viªm Ma Tr¶m_Chiªu 2	20	0	0	1		1	6	2	1	0	-1	1		0	0	0	0							442	6						1	2		5			456	96	1	27	150			1	\script\skill\³èÎï¼¼ÄÜ\Ñ×Ä§Õ¶(ÕĞ).lua												
+30190	§o¹n Hån Kİch	20	0	0	1		1	0	2	0	0	-1	0		0	0	1	1							199	6	30191				1	1	2					456	96	1	27	100			1	\script\skill\³èÎï¼¼ÄÜ\µ÷ÓÃÕĞÊ½.lua		skill_cast_interval	90									
+30191	§o¹n Hån Kİch_Chiªu	20	0	0	1		1	0	2	0	0	-1	0		0	0	1	1							199	6					1	1	2					456	96	1	27	100			1	\script\skill\³èÎï¼¼ÄÜ\ÌØÊâ³èÎï¼¼ÄÜ\¶Ï»ê»÷.lua												
+30192	Cuång Phong Liªn Kİch	20	0	0	1		1	6	2	0	2	-1	0		0	0	1	1							55	5	30193				1	1	2		1			456	96	1	18	100				\script\skill\³èÎï¼¼ÄÜ\µ÷ÓÃÕĞÊ½.lua		skill_cast_interval	180									
+30193	Cuång Phong Liªn Kİch_Chiªu	20	0	0	1		1	6	2	0	2	-1	0		0	0	1	1					30194	12	55	5					1	1	2		1			456	96	1	18	100			1	\script\skill\³èÎï¼¼ÄÜ\ÌØÊâ³èÎï¼¼ÄÜ\¿ñ·çÁ¬»÷.lua												
+30194	Cuång Phong Liªn Kİch_Chiªu (Tö)	20	0	0	1		1	6	2	0	2	-1	0		0	0	1	1					30195	12	55	3					1	1	2		2			456	96	1	18	100			1	\script\skill\³èÎï¼¼ÄÜ\ÌØÊâ³èÎï¼¼ÄÜ\¿ñ·çÁ¬»÷(×Ó).lua												
+30195	Cuång Phong Liªn Kİch_Chiªu (NhŞ Tö)	20	0	0	1		1	6	2	0	2	-1	0		0	0	1	1							55	3					1	1	2					456	96	1	18	100			1	\script\skill\³èÎï¼¼ÄÜ\ÌØÊâ³èÎï¼¼ÄÜ\¿ñ·çÁ¬»÷(×Ó×Ó).lua												
+30196	Phong V« NgÊn	20	0	0	1		2	8	2	0	0	-1	0		0	0	0	0								5	30197											2	9999	1	8	100				\script\skill\³èÎï¼¼ÄÜ\µ÷ÓÃÕĞÊ½.lua		skill_cast_interval	360									
+30197	Phong V« NgÊn_Chiªu	20	0	0	1		2	8	2	0	0	-1	0		0	0	0	0								5												2	9999	1	8	100				\script\skill\³èÎï¼¼ÄÜ\ÌØÊâ³èÎï¼¼ÄÜ\·çÎŞºÛ.lua												
+30198	Hïng Ch­ëng M·nh Kİch	20	0	0	1		1	2	2	0	0	-1	0		0	0	0	0							113	3	30199											456	96	1	18	100			1	\script\skill\³èÎï¼¼ÄÜ\µ÷ÓÃÕĞÊ½.lua		skill_cast_interval	216									
+30199	Hïng Ch­ëng M·nh Kİch_Chiªu	20	0	0	1		1	2	2	0	0	-1	0		0	0	0	0							113	3												456	96	1	18	100			1	\script\skill\³èÎï¼¼ÄÜ\ÌØÊâ³èÎï¼¼ÄÜ\ĞÜÕÆÃÍ»÷.lua												
+30200	PhÖ HuyÕt Hoµnh T¶o	20	0	0	1		1	2	2	0	0	-1	0		0	0	0	0							30023	5	30201											456	96	1	18	100			1	\script\skill\³èÎï¼¼ÄÜ\µ÷ÓÃÕĞÊ½.lua		skill_cast_interval	90									
+30201	PhÖ HuyÕt Hoµnh T¶o_Chiªu	20	0	0	1		1	2	2	0	0	-1	0		0	0	0	0							30023	5												456	96	1	18	100			1	\script\skill\³èÎï¼¼ÄÜ\ÌØÊâ³èÎï¼¼ÄÜ\ÊÉÑªºáÉ¨.lua												
+30202	Âm HuyÕt QuyÕt	20	0	0	0		1	0	2	0	0	-1	0		0	0	1	1							202	6	30203				1	1	2					456	96	1	27	100			1	\script\skill\³èÎï¼¼ÄÜ\µ÷ÓÃÕĞÊ½.lua		skill_cast_interval	270									
+30203	Âm HuyÕt QuyÕt_Chiªu	20	0	0	0		1	0	2	0	0	-1	0		0	0	1	1							202	6					1	1	2					456	96	1	27	100			1	\script\skill\³èÎï¼¼ÄÜ\ÌØÊâ³èÎï¼¼ÄÜ\ÒûÑª¾÷.lua												
+30204	ThiÕu ©m QuyÕt(chiªu tö)	7	13	15	7		5	1	2	2	0	512	1		0	0	0	1							88	6					1	1	2					456	96	1		100			1	\script\skill\Îäµ±Ë×¼Ò\ÉÙÒõ¾÷(ÕĞ×Ó).lua												
+2684	Bang-TÊn c«ng Kim	20					1	1	1		1	-1	1		0	1	0	0							680	17					1		2					456	600	1	18	150			1	\script\skill\°ï»áBOSS\°ï»á½ğÊôĞÔ¹¥»÷.lua		skill_cast_interval	18									
+2685	Bang-TÊn c«ng Méc	20					1	1	1		1	-1	1		0	1	0	0							681	17					1		2					456	600	1	18	150			1	\script\skill\°ï»áBOSS\°ï»áÄ¾ÊôĞÔ¹¥»÷.lua		skill_cast_interval	18									
+2686	Bang-TÊn c«ng Thñy	20					1	1	1		1	-1	1		0	1	0	0							682	17					1		2					456	600	1	18	150			1	\script\skill\°ï»áBOSS\°ï»áË®ÊôĞÔ¹¥»÷.lua		skill_cast_interval	18									
+2687	Bang-TÊn c«ng Háa	20					1	1	1		1	-1	1		0	1	0	0							683	17					1		2					456	600	1	18	150			1	\script\skill\°ï»áBOSS\°ï»á»ğÊôĞÔ¹¥»÷.lua		skill_cast_interval	18									
+2688	Bang-TÊn c«ng Thæ	20					1	1	1		1	-1	1		0	1	0	0							684	17					1		2					456	600	1	18	150			1	\script\skill\°ï»áBOSS\°ï»áÍÁÊôĞÔ¹¥»÷.lua		skill_cast_interval	18									
+30205	Quan ¢m QuyÕt (Chiªu thøc)	6	7	8	0		2	12	2		0	4	1		1	1	0	0																				270	9999	1		100				\script\skill\¶ëáÒ³ö¼Ò\¹ÛÒô¾÷(ÕĞ×Ó).lua												
+30206	NPC Thñ VÖ chuyÓn tiÕp	20	0	0	7		1	3	2	0	1	-1	0		1	0	0	1					692	6	239	6					1		2		18			456	500	1	61	-100			3	\script\skill\npc¼¼ÄÜ\NPCÊØÎÀ´«ËÍ.lua												
+30207	Thi Béc §¹i Ph¸p (YÕu QuyÕt míi kh«ng næ thi)	5	19	20	0		2	0	0		0	128	1		0	0	0	0					169	17		18												8240	600	1	19	100				\script\skill\Îå¶¾Ğ°ÏÀ\Ê¬±¬´ó·¨£¨ĞÂ¾÷Òª²»±¬Ê¬Ìå£©.lua		skill_interrupt_rate	25	skill_cast_interval	180							
+30208	Tr¶m Ma §ao Ph¸p (Xua tan YÕu QuyÕt míi)	5	1	2	7		1	0	2	0	2	40	1		0	1	1	1							56	12	30209				1	1	2					456	96	1	18	100			1	\script\skill\ÉÙÁÖË×¼Ò\Õ¶Ä§µ¶·¨£¨ĞÂ¾÷ÒªÇıÉ¢£©.lua		skill_cast_interval	18	skill_interrupt_rate	-55							
+30209	Tr¶m Ma §ao Ph¸p (chiªu) (Xua tan YÕu QuyÕt míi)	5	1	2	0		2	8	1		2	8	1		0	0	0	0					30210	11														2	96	1		100			1	\script\skill\ÉÙÁÖË×¼Ò\Õ¶Ä§µ¶·¨(ÕĞ).lua												
+30210	Tr¶m Ma §ao Ph¸p (chiªu thøc) (Xua tan YÕu QuyÕt míi)	5	1	2	7		1	0	2	0	2	8	1		0	0	0	1							56	0					1	1	2					456	96	1		100			1	\script\skill\ÉÙÁÖË×¼Ò\Õ¶Ä§µ¶·¨(ÕĞ×Ó)£¨ĞÂ¾÷ÒªÇıÉ¢£©.lua												
+30211	Nhiªn Méc §ao Ph¸p (Xua tan YÕu QuyÕt míi)	7	1	2	1		1	1	2	0	2	40	1		0	0	1	1							49	12	30212				1	0	2					456	300	1	18	100			1	\script\skill\ÉÙÁÖË×¼Ò\È¼Ä¾µ¶·¨£¨ĞÂ¾÷ÒªÇıÉ¢£©.lua		skill_cast_interval	54	skill_interrupt_rate	-55							
+30212	Nhiªn Méc §ao Ph¸p (chiªu) (Xua tan YÕu QuyÕt míi)	7	1	2	0		2	8	1		2	8	1		0	0	0	0					30213	11														2	300	1		100				\script\skill\ÉÙÁÖË×¼Ò\È¼Ä¾µ¶·¨(ÕĞ).lua												
+30213	Nhiªn Méc §ao Ph¸p (chiªu thøc) (Xua tan YÕu QuyÕt míi)	7	1	2	1		1	1	2	0	2	8	1		0	0	0	1							49	5					1	0	2					456	300	1		100			1	\script\skill\ÉÙÁÖË×¼Ò\È¼Ä¾µ¶·¨(ÕĞ×Ó)£¨ĞÂ¾÷ÒªÇıÉ¢£©.lua												
+30214	Tóy §iÖp (YÕu QuyÕt Míi)	8	10	11	0		2	8	1		0	1	1		1	0	0	0								36	30215	30216										2	9999	1	37	200				\script\skill\Ø¤°ï¾»ÒÂ\×íµû£¨ĞÂ¾÷Òª£©.lua		skill_interrupt_rate	10	skill_cast_interval	1080							
+30215	Tóy §iÖp (YÕu QuyÕt Míi) (Chiªu 1)	8	10	11	0		2	8	1		0	1	1		1	0	0	0																				2	9999	1		100				\script\skill\Ø¤°ï¾»ÒÂ\×íµû(ÕĞ1)£¨ĞÂ¾÷Òª£©.lua												
+30216	Tóy §iÖp (YÕu QuyÕt Míi) (Chiªu 2)	8	10	11	0		2	8	1		0	1	1		1	0	0	0																				2	9999	1		100				\script\skill\Ø¤°ï¾»ÒÂ\×íµû(ÕĞ2)£¨ĞÂ¾÷Òª£©.lua												
+30217	Hoµn ThÇn ThuËt (YÕu QuyÕt Míi)	6	0	30	0		2	12	2	 	0	4096	1		1	0	0	0								25	30218											2	9999	1	27	100				\script\skill\´äÑÌÁéÅ®\»¹ÉñÊõ£¨ĞÂ¾÷Òª£©.lua		skill_cast_interval	1620	skill_interrupt_rate	25							
+30218	Hoµn ThÇn ThuËt (YÕu QuyÕt Míi) (Chiªu)	6	0	30	0		2	12	2	 	0	4096	1		1	0	0	0								25												2	9999	1		100				\script\skill\´äÑÌÁéÅ®\»¹ÉñÊõ£¨ĞÂ¾÷Òª£©(ÕĞ).lua												
+30219	Lôc Hãa C«ng	6	13	15	0		2	12	1		0	512	1		1	0	0	0								36	30220											6	500	1	37	200				\script\skill\Îäµ±Ë×¼Ò\ÁùÆø»¯Óñ¹¦£¨ĞÂ¾÷Òª£©.lua		skill_interrupt_rate	10	skill_cast_interval	18							
+30220	Lôc Hãa C«ng (chiªu)	6	13	15	0		2	12	1		0	512	1		1	0	0	0																				6	9999	1		100				\script\skill\Îäµ±Ë×¼Ò\ÁùÆø»¯Óñ¹¦£¨ĞÂ¾÷Òª£©(ÕĞ).lua												
+2092	Ng« B¹ng Tö §éc §µm	20					1	8	2	1	1	-1	0		0	0	0	0							486	7					1	1	2					456	800	1	9	100			1	\script\skill\npc¼¼ÄÜ\ÎâÅÖ×Ó¼¼ÄÜ\ÎâÅÖ×Ó¶¾Ì¶.lua		skill_interrupt_rate										
+2093	Ng« B¹ng Tö B¹o L«i	20					1	6	2	1	1	-1	0		0	0	0	0							542	7					4	1	2		0			456	9999	1	9	100			5	\script\skill\npc¼¼ÄÜ\ÎâÅÖ×Ó¼¼ÄÜ\ÎâÅÖ×Ó±©À×.lua		skill_param1	40	skill_param2	40	skill_interrupt_rate	-550					
+2094	Ng« B¹ng Tö B¹o L«i Béc	20					1	6	2	1	1	-1	0		0	0	0	0							471	1					1	0	1					456	9999	1	3	100			1	\script\skill\npc¼¼ÄÜ\ÎâÅÖ×Ó¼¼ÄÜ\ÎâÅÖ×Ó±©À×±¬Õ¨.lua		skill_interrupt_rate	-550									
+2095	Ng« B¹ng Tö B¨ng Háa	20					1	3	2		1	-1	0		0	0	0	0							520	7					1	1	2		0			456	800	1	9	100			1	\script\skill\npc¼¼ÄÜ\ÎâÅÖ×Ó¼¼ÄÜ\ÎâÅÖ×Ó±À»ğ.lua		skill_interrupt_rate	-550									
+2096	Ng« B¹ng Tö B¨ng Háa Béc	20					1	3	2		1	-1	0		0	0	0	0							513	1					1	0	1					456	9999	1	3	100			1	\script\skill\npc¼¼ÄÜ\ÎâÅÖ×Ó¼¼ÄÜ\ÎâÅÖ×Ó±À»ğ±¬Õ¨.lua		skill_interrupt_rate	-550									
+2097	Ng« B¹ng Tö Hoµn Oa	20					1	3	2		1	-1	0		0	0	0	0							471	7					1	0	2		0			456	9999	1	9	100			1	\script\skill\npc¼¼ÄÜ\ÎâÅÖ×Ó¼¼ÄÜ\ÎâÅÖ×ÓäöÎĞ.lua		skill_interrupt_rate	-550									
+2098	Ng« B¹ng Tö CÊm Cè	20					1	3	2		1	-1	0		0	0	0	0							471	7					1	0	2		0			456	9999	1	9	100			1	\script\skill\npc¼¼ÄÜ\ÎâÅÖ×Ó¼¼ÄÜ\ÎâÅÖ×Ó½ûïÀ.lua		skill_interrupt_rate	-550									
+2099	Ng« B¹ng Tö L¹c Tinh	20					1	6	2	1	1	-1	0		0	0	0	0							543	5					4	1	2		4			456	9999	1	54	100			12	\script\skill\npc¼¼ÄÜ\ÎâÅÖ×Ó¼¼ÄÜ\ÎâÅÖ×ÓĞÇÂä.lua		skill_param1	40	skill_param2	40	skill_interrupt_rate	-550					
+2100	Ng« B¹ng Tö Næi GiËn	20					2	8	2		0	-1	0		0	0	0	0								7												2	9999	1	9	100				\script\skill\npc¼¼ÄÜ\ÎâÅÖ×Ó¼¼ÄÜ\ÎâÅÖ×Ó±©×ß.lua		skill_interrupt_rate	-550									
+2101	Ng« B¹ng Tö Hé ThuÉn	20					2	8	2		0	-1	0		0	0	0	0								7												2	9999	1	9	100				\script\skill\npc¼¼ÄÜ\ÎâÅÖ×Ó¼¼ÄÜ\ÎâÅÖ×Ó»¤¶Ü.lua		skill_interrupt_rate	-550									
+2102	Ng« B¹ng Tö Phong B¹o	20					2	8	2		0	-1	0		0	0	0	0								7												2	9999	1	9	100				\script\skill\npc¼¼ÄÜ\ÎâÅÖ×Ó¼¼ÄÜ\ÎâÅÖ×Ó·ç±©.lua		skill_interrupt_rate	-550									
+2103	Ng« B¹ng Tö ST Phong B¹o	20					15	9	1		0	-1	1		1	0	0	0																				456	9999	9	18	100				\script\skill\npc¼¼ÄÜ\ÎâÅÖ×Ó¼¼ÄÜ\ÎâÅÖ×Ó·ç±©ÉËº¦.lua												
+2104	Ng« B¹ng Tö Tróc T­êng	20					19	13	2		1	-1	1		0	0	0	0							544	7					3		2						9999	1	9	100				\script\skill\npc¼¼ÄÜ\ÎâÅÖ×Ó¼¼ÄÜ\ÎâÅÖ×ÓÖşÇ½.lua		skill_interrupt_rate	-550									
+2630	TiÒn Ph­¬ng Phong	20			0		1	4	1	1	1	-1	1		0	0	0	0					2631	2	661	5					4	1	2		1			456	9999	1	12	100			1	\script\skill\YÑî¾§BOSS\Ç°·½Ö®·ç.lua												
+2631	Long QuyÓn LiÖt Kh«n	20			0		1	5	2	1	1	-1	1		0	0	0	0							433	18	1038				4	1	2		1			456	600	1	12	100			9	\script\skill\YÑî¾§BOSS\Ç°·½Ö®·ç.lua		skill_param1	11	skill_param2	11							
+2632	H÷u Ph­¬ng Háa	20			0		1	0	2	0	1	-1	1		0	0	1	0							607	9					3	0	0					456	9999	1	12	100			9	\script\skill\YÑî¾§BOSS\ÓÒ·½Ö®»ğ.lua												
+2633	T¶ Ph­¬ng §Şa	20			0		1	1	2	0	1	-1	1		0	1	1	1							591	6					1	0	2					456	9999	1	12	100			1	\script\skill\YÑî¾§BOSS\×ó·½Ö®µØ.lua												
+2634	HËu Ph­¬ng Thñy	20			0		1	0	1		1	-1	1		0	1	1	1							663	6					2	0	1					128	600	1	27	100			3	\script\skill\YÑî¾§BOSS\ºó·½Ö®Ë®.lua												
+2635	§éc Thİch Cèt Béc 1-Tö	17	5	6	7		1	2	2	0	1	2	1		0	0	0	0							666	1			1		1	1	2					456	9999	1	10	100			1	\script\skill\ÌÆÃÅ\¶¾´Ì¹Ç±¬Õ¨1.lua												
+2636	§¸ Xe NĞm §¸ (Tr¸i)	20					1	4	1	1	1	-1	1		0	0	0	0							667	96					1	1	2					128	1000	1	100	100			1	\script\skill\YÑî¾§BOSS\Í¶Ê¯³µ·ÉÊ¯.lua												
+2637	Nhiªn LiÖu Tù Næ	1					20	0	2		1	-1	1		0	0	1	0		2638						3												456	600	1	54	-100				\script\skill\YÑî¾§BOSS\È¼ÓÍ×Ô±¬.lua		cost_goods_id	96783	cost_goods_num	1							
+2638	Næ	1					1	0	2	0	2	-1	1		0	0	1	1					2639	6	669	2					1		2					456	144	1	9	100			1	\script\skill\YÑî¾§BOSS\È¼ÓÍ×Ô±¬±¬Õ¨.lua												
+2639	Tù VÉn	1					2	4	1	1	1	-1	1		0	0	0	0																				2	9999	1	2	100				\script\skill\YÑî¾§BOSS\È¼ÓÍ×Ô±¬×Ô¾¡.lua												
+2640	Vßng hµo quang Xe NĞm §¸	1					15	10	1	1	1	-1	1		0	0	0	0																				6	9999	15	1	100				\script\skill\YÑî¾§BOSS\Í¶Ê¯³µ¹â»·.lua												
+2641	TiÔn Th¸p TiÔn Vò	1					1	4	1	1	1	-1	1		0	0	0	0					2642	2	670	2					4	1	2		1			456	600	1	8	100			9	\script\skill\YÑî¾§BOSS\¼ıËş¼ıÓê.lua		skill_param1	11	skill_param2	11							
+2642	TiÔn Th¸p TiÔn Vò (Tö)	1					1	4	1	1	1	-1	1		0	0	0	0							671	2					1	1	2					456	600	1	3	100			1	\script\skill\YÑî¾§BOSS\¼ıËş¼ıÓê(×Ó).lua												
+2643	TiÔn Th¸p Ná Xa TiÔn ThØ	20					1	4	1	1	0	-1	1		0	0	0	0							672	6					1	0	2					128	900	1	18	100			1	\script\skill\YÑî¾§BOSS\åó³µ¼ıÊ¸.lua												
+2644	Sãng Xung Kİch	1					1	4	1	1	1	-1	1		0	0	1	0							651	3					1	0	2					456	96	1	18	100			1	\script\skill\YÑî¾§BOSS\¼´ËÀ.lua												
+2645	Sãng ChÊn §éng	20					1	4	1	1	1	-1	1		0	0	1	0							666	3					1	0	2					456	96	1	18	100			1	\script\skill\YÑî¾§BOSS\³å»÷²¨.lua												
+2646	Mét B¹t Tai	1					1	4	1	1	1	-1	1		0	0	1	0							585	3					1	0	2					456	96	1	110	100			1	\script\skill\YÑî¾§BOSS\¼´ËÀ.lua												
+2647	§¸ Xe NĞm §¸ (Ph¶i)	20					1	4	1	1	1	-1	1		0	0	0	0							673	96					1	1	2					128	1000	1	100	100			1	\script\skill\YÑî¾§BOSS\Í¶Ê¯³µ·ÉÊ¯.lua												
+2648	ChiÕn Tr­êng Míi-TiÔn C«ng	20	0	0	7		0	0	2	0	2	-1	0		0	0	1	0							674	6					1		2					456	400	1	17	100			1	\script\skill\YÑî¾§BOSS\¼ıÊ¸¹¥»÷.lua												
+2736	V« Song Thiªn Phong Trôy (Chiªu)	10					28	2	2		1	-1	1		0	0	0	0							537	7					1	3	2					456	600	1	18	100			1	\script\skill\À¥ÂØ½£×ğ\ÎŞË«Ìì·æ×¹(ÕĞ).lua												
+2737	Xu©n L«i	1	0	0	0		1	0	2	2	1	-1	1		1	0	0	0							675	18					1		2					456	500	1	54	-100			1	\script\skill\ÆäËû\´ºÀ×Ò»Ïì³ı¾ÉËê.lua		cost_goods_id	31272	cost_goods_num	1							
+2738	M·n Hång	1	0	0	0		1	0	2	2	1	-1	1		1	0	0	0							676	18					1		2					456	500	1	54	-100			1	\script\skill\ÆäËû\ÅÚÕÌÉùÉùÓ­ĞÂÄê.lua		cost_goods_id	31287	cost_goods_num	1							

@@ -8,8 +8,7 @@ ID	Name	Type	LifeTime	Height	Speed	ZSpeed	ZAcceleration	CollidRangeW	CollidRange
 7	Ngäc N÷ kiÕm ph¸p	0	12	60	60			3	3	1	1				1	
 8	Vâ §ang kiÕm ph¸p	0	18	80	60			3	3	1	1				1	
 9	L­u Quang kiÕm ph¸p	0	15	80	80			3	3	1	1				1	
-10	VŞ ¦¬ng kiÕm ph¸p	0	2	10	0			3	3	3	3				0	
-11	Nhu V©n kiÕm ph¸p	0	15	80	80			3	3	1	1				1	
+10	VŞ ¦¬ng kiÕm ph¸p	0	2	10	0			3	3	3	3				0	11	Nhu V©n kiÕm ph¸p	0	15	80	80			3	3	1	1				1	
 12	LiÖt DiÖm kiÕm ph¸p	0	2	10	0			3	3	3	3				0	
 13	B«n L«i KiÕm QuyÕt	0	2	1	0			7	7	7	7				0	
 14	Th¸i Thanh kiÕm khİ	0	3	10	0			1	3	1	3				0	
@@ -276,8 +275,26 @@ ID	Name	Type	LifeTime	Height	Speed	ZSpeed	ZAcceleration	CollidRangeW	CollidRange
 438	V¹n L«i To¸i Tinh Phï	0	36	75	60			5	5	5	5				1	
 439	V« Cùc Phong L«i QuyÕt	0	9	1	0			30	30	30	30				0	
 440	V¹n L«i To¸i Tinh Phï (Nhá)	0	90	10	50			3	3	3	3				1	
+441	Th¸nh Háa §ao Ph¸p	0	3	60	0			3	3	3	3				0	
+442	LiÖt D­îng Tr¶m	0	3	60	0			3	3	3	3				0	
+443	Sİ DiÖm Kİch	0	3	60	0			7	5	7	5				0	
+444	Thiªn KiÕp PhÇn	0	3	60	0			3	3	3	3				0	
 445	Chİch Phong TuyÒn	0	3	1	0			9	9	9	9				0	
+446	B¸ Hoµng §o¹n	0	10	10	100			7	7	7	7				1	
 447	D­¬ng Viªm B¹o	0	9	60	0			15	15	15	15				0	
+448	B¹o S¸t K×nh	0	3	60	0			5	5	5	5				0	
+449	Cµn Kh«n §¹i Na Di	0	12	1	0			23	23	23	23				0	
+450	Kim TrËn Kú	4	270	10	0			0	0	0	0	18			0	
+451	Thñy TrËn Kú	4	270	10	0			0	0	0	0	18			0	
+452	Méc TrËn Kú	4	180	10	0			0	0	0	0	18			0	
+453	Háa TrËn Kú	4	90	10	0			0	0	0	0	18			0	
+454	Thæ TrËn Kú	4	180	10	0			0	0	0	0	18			0	
+455	Ngò Linh T¸n Nguyªn	0	12	60	0			7	7	7	7				0	
+456	Ngò Linh T¸n Nguyªn (Tö)	0	36	60	15			5	5	5	5				1	
+457	Quang Minh Ngò Hµnh TrËn	0	12	1	0			23	23	23	23				0	
+458	Quang Minh Ngò Hµnh TrËn (Tö)	0	12	1	0			23	23	23	23				0	
+459	YÓn Kú	0	12	1	0			11	11	11	11				0	
+460	Quang Minh Bót Ph¸p Th­êng	0	18	60	90			3	7	3	7				1	
 461	Linh Miªu VËn	0	2	10	0			23	23	23	23	65537		1	0	
 462	MŞ Hoa	0	2	10	0			23	23	23	23	65537		1	0	
 463	Thu NguyÖt Phó	0	2	10	0			23	23	23	23	65537		1	0	
@@ -286,7 +303,11 @@ ID	Name	Type	LifeTime	Height	Speed	ZSpeed	ZAcceleration	CollidRangeW	CollidRange
 466	Méng Xµ	0	2	10	0			23	23	23	23	65537		1	0	
 467	Loan Phông Cöu Thiªn	0	2	10	0			23	23	23	23			1	0	
 468	Loan Phông Cöu Thiªn (Nhá)	0	15	75	90			3	3	3	3				1	
+469	§o¹n Cèt Tr¶o	0	2	60	0			3	3	3	3				0	
+470	B¨ng HuyÕt Än B¹o Tr¸c	3	2	60	0			7	7	7	7				0	
 471	HiÖu qu¶ kú tö	0	2	1	0			17	17	17	17				0	
+472	HÊp HuyÕt Än HÊp HuyÕt	3	2	60	0			3	3	3	3				0	
+473	Hµn B¨ng Miªn Ch­ëng	0	105	90	50			5	5	5	5				1	
 474	L¹c Hoa QuyÕt	0	2	10	0			3	3	3	3				0	
 475	§µo hoa ch­¬ng	0	270	10	0			13	13	13	13				0	
 476	Mª X¶o QuyÕt	0	180	10	0			11	11	11	11				0	
@@ -365,3 +386,95 @@ ID	Name	Type	LifeTime	Height	Speed	ZSpeed	ZAcceleration	CollidRangeW	CollidRange
 518	Hoang Háa LiÖt DiÖm-HiÖu øng ®¹n	0	18	10	0			13	13	13	13				0	
 517	Duy tr× ch¸y lín	0	18	10	0			23	23	23	23	9		1	0	
 519	Hoµnh T¶o Thiªn Qu©n	0	15	75	100			3	7	3	7				1	
+525	NhËm HiÖp CËn ChiÕn C«ng Kİch	0	6	10	0			11	11	11	11				0	
+526	NhËm HiÖp Linh Tª §ao	0	126	15	16			3	3	3	3	9			3	
+527	NhËm HiÖpPhi ®ao	0	54	15	30			3	3	3	3				1	
+528	S¸t th­¬ng Yªn Vò Mª Li	0	5	1	0			17	17	17	17				0	
+529	Tµn V©n	0	5	1	0			7	7	7	7				0	
+530	KiÕm T«n tÊn c«ng th­êng	0	5	1	0			7	7	7	7				0	
+531	§o¹n Thñy-Ngang	0	90	1	0			13	3	13	3				0	
+532	§o¹n Thñy-Däc	0	90	1	0			3	13	3	13				0	
+533	B¹o L«i-Nhá	0	5	1	0			9	9	9	9				0	
+534	B¹o L«i-Lín	0	30	1	40			11	11	11	11				1	
+535	Håi Phong	0	10	1	0			15	15	15	15				0	
+536	Linh KiÕm Thñ Hé	0	18	1	0			15	15	15	15				0	
+537	Thiªn Phong	4	108	1	0			15	15	15	15	18			0	
+538	Thiªn Phong_§¹n	0	3	1	0			15	15	15	15				0	
+539	Thiªn ¶nh tuyÖt s¸t	0	2	1	0			11	11	11	11				0	
+540	V¹n KiÕm Hãa Vò-Nhá	0	9	10	0			9	9	9	9				0	
+541	V¹n KiÕm Hãa Vò-Lín	0	9	10	0			17	17	17	17				0	
+545	D­¬ng Viªm	0	18	75	20			3	7	3	7				1	
+546	Háa QuyÒn	0	90	10	15			3	7	3	7	9			3	
+547	BÊt Tri Háa	0	180	6	10			13	13	13	13				1	
+548	L«i Hèng	0	36	75	15			3	7	3	7	9			3	
+549	B¨ng Hoµn Tiªu Kİ	0	54	10	0			5	5	5	5				0	
+550	Th­¬ng Háa	0	108	5	0			5	5	5	5				0	
+551	S¸t th­¬ng B¨ng Ho¹i	0	15	1	0			5	5	5	5				0	
+552	Tö Quang	0	18	75	18			3	7	3	7				1	
+553	§éc V©n	0	270	6	0			11	11	11	11				0	
+554	Kinh Th¸n cña KiÕm ThÇn	0	36	75	60			3	7	3	7				0	
+555	S¸t th­¬ng Yªn Vò Mª Li	0	15	1	0			5	5	5	5				0	
+556	§¹i Viªm Giíi	0	54	1	1			5	50	5	50				1	
+557	Yªn Vò Mª Li Tiªu Kİ	0	36	10	0			5	5	5	5				0	
+558	§éc DiÔm	0	18	10	0			11	11	11	11				0	
+559	S¸t th­¬ng Yªn Vò Mª Li	0	30	10	0			9	9	9	9				0	
+560	Lôc §¹o Lu©n Håi	0	54	6	100			3	3	3	3				0	
+561	Lôc §¹o Lu©n Håi (Tö)	0	54	6	100			7	7	7	7				0	
+562	HuyÕt Tr× §Şa Ngôc	0	18	75	0			11	11	11	11				0	
+563	Thiªn Ma Hµng Phôc	0	54	50	50			3	7	3	7				1	
+564	B¨ng Hoµn Tiªu Kİ	0	36	10	0			5	5	5	5				0	
+565	Tuyªn C¸o Tö Vong	0	108	75	35			33	33	33	33				1	
+566	Kim ¤ Tiªu Kİ	0	54	10	0			1	1	1	1				0	
+567	Kim ¤ S¸t Th­¬ng	0	54	10	0			23	23	23	23				0	
+571	Xö QuyÕt	0	36	75	100			33	33	33	33				1	
+572	B¸ Khİ	0	180	6	10			13	13	13	13				1	
+573	Kim Bµi §Ö NhÊt Bang Háa B¹o b¾t ®Çu	0	54	1	0			3	3	3	3	3			0	
+574	Yªn Háa Kim Bµi §Ö NhÊt Bang	0	54	1	0			3	3	3	3	3			0	
+580	Xuyªn T©m Ch©m	0	12	60	120			4	4	4	4				1	
+581	Phi Hoµng Ch©m	0	12	60	120			5	5	5	5				1	
+582	SËu Vò	0	12	60	0			15	15	15	15				0	
+583	o S¸t TrËn	0	12	60	120			5	5	5	5				1	
+584	DÉn §éc Sa	0	12	60	0			11	11	11	11				0	
+585	DiÔm Phong 1	0	18	10	0			12	12	12	12				0	
+586	DiÔm Phong 2	0	18	10	0			13	13	13	13				0	
+587	DiÔm Phong 3	0	18	10	0			14	14	14	14				0	
+588	DiÔm Phong 4	0	18	10	0			15	15	15	15				0	
+589	DiÔm Phong 5	0	18	10	0			16	16	16	16				0	
+590	DiÔm Phong 6	0	18	10	0			17	17	17	17				0	
+591	PhÇn Th©n QuyÕt	0	16	10	0			15	15	15	15				0	
+592	Ch©n D­¬ng KiÕm Khİ	0	12	60	80			4	4	4	4				1	
+593	HuyÒn ¢m KiÕm Khİ	0	12	60	80			4	4	4	4				1	
+594	T¶  Thiªn	0	18	60	40			5	8	5	8				1	
+595	Ngù Long Ch­ëng ph¸p	0	2	10	0			5	5	5	5				0	
+596	C«n T¶o Lôc Hîp	0	18	60	0			11	11	11	11				0	
+597	L¹c L«i	0	27	10	0			11	11	11	11				0	
+598	Toµn Phong	0	20	10	0			11	11	11	11				0	
+602	§¶ng Ma Cang Khİ	0	18	10	0			15	15	15	15				0	
+621	ƒm H­¬ng S¬ nh	0	16	10	0			30	30	30	30				0	
+635	NPC Dông DiÔm Phong	0	108	10	0			12	12	12	12				0	
+638	Ngo¹i quan Dung NhËt Thæ Tøc	0	27	60	20			4	4	4	4				1	
+639	S¸t Th­¬ng Dung NhËt Thæ Tøc	0	12	60	60			5	5	5	5				1	
+642	Viªn Th¹ch C«ng Kİch TiÒn TÊu	0	18	60	0			11	11	11	11				0	
+680	Kim Tö §¹n	0	36	75	35			3	7	3	7				1	
+681	Méc Tö §¹n	0	36	75	35			3	7	3	7				1	
+682	Thñy Tö §¹n	0	36	75	35			3	7	3	7				1	
+683	Háa Tö §¹n	0	36	75	35			3	7	3	7				1	
+684	Thæ Tö §¹n	0	36	75	35			3	7	3	7				1	
+542	Ng« B¹ng Tö B¹o L«i	0	50	10	0			5	5	5	5				0	
+543	Ng« B¹ng Tö L¹c Tinh	0	36	200	0	-60		13	13	13	13				0	
+544	Ng« B¹ng Tö Tróc T­êng	4	180	1	0			3	3	3	3	18			0	
+520	Kı hiÖu §¹i Kim §ao	0	54	10	0			23	23	23	23	9		1	0	
+611	D­¬ng Gia TÊn Ph¸t ThØ	0	12	60	80			4	8	4	8				1	
+607	Trõng Giang LuyÖn	0	12	40	60			5	5	5	5				1	
+663	HËu Ph­¬ng Thñy	0	12	40	60			3	8	3	8				1	
+666	ThÊu Minh Béc	0	12	60	0			11	11	11	11				0	
+667	Phi Th¹ch	0	8	20	0			7	7	7	7				0	
+669	Næ	0	18	10	150			6	6	6	6				0	
+670	TiÔn Vò TiÔn	0	12	10	0			3	3	3	3				0	
+671	Ph¹m vi TiÔn Vò	0	12	10	0			9	9	9	9				0	
+672	Ná Xa TiÔn	0	12	10	60			5	5	5	5				0	
+651	Sãng Xung Kİch	0	30	60	50			10	10	10	10				1	
+673	Phi Th¹ch X	0	8	20	0			7	7	7	7				0	
+674	Truy Kİch TiÔn	0	9	80	120			3	3	1	1	9			3	
+675	Ph¸o	0	18	90	10	-5		7	7	7	7				1	
+676	Phong ph¸o	0	18	90	10	-5		7	7	7	7				1	
