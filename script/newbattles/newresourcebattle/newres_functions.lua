@@ -101,6 +101,8 @@ function newres_sign_up()
 end
 
 function newres_confirm_sign_up(nSelected)
+	local nHour = tonumber( date("%H"))
+
 	local tCash = {
 		[1] = {60000, 0, 1, 2},
 		[2] = {0, 68, 2, 1},	
@@ -130,6 +132,10 @@ function newres_confirm_sign_up(nSelected)
 			return
 		end
 	else
+		if nHour >= 21 and nHour <= 22 then
+		Talk(1, "", "Trong thêi gian ®¸nh Boss ThÕ Giíi, ng­¬i kh«ng ®­îc phÐp sang phe ®Þch ¨n kÐ :) !!!!")
+				return		
+		end
 		if nSelected == 2 then
 			if GetItemCount(2, 1, 30230) < tCash_PhongHam[nPhongHam][1] then
 				Talk(1, "", "B¹n kh«ng mang theo ®ñ Xu vËt phÈm!")
