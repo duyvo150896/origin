@@ -31,25 +31,25 @@ function main()
 		tinsert(tSay, "NhËn th­ëng M· §¸o Thµnh C«ng/giapngo")
 	end
 	tinsert(tSay, "Thİ LuyÖn B¹n §ång Hµnh/main_slt")
-	tinsert(tSay, "Phôc Sinh B¹n §ång Hµnh/pet_phucsinh")
-	if nIsPS >= 1 then
-		tinsert(tSay, "NhËn nu«i thªm B¹n §ång Hµnh (tiªu hao 150 xu vËt phÈm)/#get_more_pet(1)")
-		tinsert(tSay, "NhËn nu«i thªm B¹n §ång Hµnh (tiªu hao 490 vµng)/#get_more_pet(2)")
-	end
+	-- tinsert(tSay, "Phôc Sinh B¹n §ång Hµnh/pet_phucsinh")
+	-- if nIsPS >= 1 then
+		-- tinsert(tSay, "NhËn nu«i thªm B¹n §ång Hµnh (tiªu hao 150 xu vËt phÈm)/#get_more_pet(1)")
+		-- tinsert(tSay, "NhËn nu«i thªm B¹n §ång Hµnh (tiªu hao 490 vµng)/#get_more_pet(2)")
+	-- end
 	tinsert(tSay, "Ta muèn thay ®æi h­íng chuyÓn sinh/change_chuyensinh")
 	if nDate >= 20130301 and nDate <= 20130317 then
 		tinsert(tSay, "Ta muèn ®æi c¸c lo¹i nguyªn liÖu lÊy kinh nghiÖm/exchange_to_exp")
 	end
-	if GetTask(TSK_CS6_TULINH) < 1 then
-		tinsert(tSay, "Ta muèn cã bİ kİp Phôc Sinh ®Ó ®¹t c¶nh giíi cao h¬n trong §¶ Th«ng Kinh M¹ch/cs6_infor")		
-	elseif GetTask(TSK_CS6_TULINH) >= 1 then
-		tinsert(tSay, "Ta muèn häc bİ kİp Phôc Sinh ®Ó ®¹t c¶nh giíi cao h¬n trong §¶ Th«ng Kinh M¹ch/cs6_npc1_infor2")			
-	end
+	-- if GetTask(TSK_CS6_TULINH) < 1 then
+		-- tinsert(tSay, "Ta muèn cã bİ kİp Phôc Sinh ®Ó ®¹t c¶nh giíi cao h¬n trong §¶ Th«ng Kinh M¹ch/cs6_infor")		
+	-- elseif GetTask(TSK_CS6_TULINH) >= 1 then
+		-- tinsert(tSay, "Ta muèn häc bİ kİp Phôc Sinh ®Ó ®¹t c¶nh giíi cao h¬n trong §¶ Th«ng Kinh M¹ch/cs6_npc1_infor2")			
+	-- end
 --	tinsert(tSay, "Ta muèn ®æi ®iÓm ch©n khİ (1 ®iÓm ch©n khİ tiªu hao 2.000.000 ®iÓm kinh nghiÖm)/exchange_chankhi")
 --	tinsert(tSay, "Ta muèn ®æi 1 ®iÓm ch©n khİ (tiªu hao 10 vµng)/#exchange_chankhi_bygold(1)")	
 --	tinsert(tSay, "Ta muèn ®æi 10 ®iÓm ch©n khİ (tiªu hao 100 vµng)/#exchange_chankhi_bygold(2)")	
 --	tinsert(tSay, "NhËn hç trî hoµn thµnh nhiÖm vô §¶ Th«ng Kinh M¹ch (tiªu hao 10 Xu vËt phÈm)/get_item_kinhmach")	
-	tinsert(tSay, "NhËn vËt phÈm hç trî lµm nhiÖm vô Tø Linh DiÖt Ph¸p TrËn (tiªu hao 10 Xu vËt phÈm)/get_item_tulinh")	
+	-- tinsert(tSay, "NhËn vËt phÈm hç trî lµm nhiÖm vô Tø Linh DiÖt Ph¸p TrËn (tiªu hao 10 Xu vËt phÈm)/get_item_tulinh")	
 --	tinsert(tSay, "Ta cã İt ®Æc s¶n, nhê tiÒn bèi gióp luyÖn ch©n khİ/GetQiByFruit")
 --	tinsert(tSay, "Ta cã İt cña c¶i, nhê tiÒn bèi gióp luyÖn ch©n khİ/GetQiByGold")
 	tinsert(tSay, "Sö dông ChuyÓn Sinh §¬n/use_chuyensinhdon")	
