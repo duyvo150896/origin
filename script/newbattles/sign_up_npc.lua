@@ -15,7 +15,7 @@ Include("\\script\\function\\vip_card\\vc_head.lua")
 Include("\\script\\lib\\globalfunctions.lua");
 Include("\\settings\\static_script\\global\\merit.lua")
 
-Include("\\script\\lib.lua");
+-- Include("\\script\\lib.lua");
 --g_sNpcNameºÍg_nNpcCamp¶¼ÊÇÒ»¸öÈ«¾Ö±äÁ¿£¬ËüÃÇÔÚÏôÔ¶Â¥ºÍÕÔÑÓÄêµÄ½Å±¾ÉÏ¶¨Òå
 
 function battle_main()
@@ -379,10 +379,10 @@ function get_battle_award()
 		return 0;
 	end
 	local selTab = {
-	                format("Dïng qu©n c«ng ch­¬ng (PhÇn th­ëng qu©n c«ng gÊp %d lÇn, kinh nghiÖm gÊp 1.5 lÇn)/#get_battle_award_confirm(%d)",tbJUNGONGZHANG[1][5],1),
-                    format("Dïng ®¹i qu©n c«ng ch­¬ng (PhÇn th­ëng qu©n c«ng gÊp %d lÇn, kinh nghiÖm gÊp ®«i)/#get_battle_award_confirm(%d)",tbJUNGONGZHANG[2][5],2),
+	                -- format("Dïng qu©n c«ng ch­¬ng (PhÇn th­ëng qu©n c«ng gÊp %d lÇn, kinh nghiÖm gÊp 1.5 lÇn)/#get_battle_award_confirm(%d)",tbJUNGONGZHANG[1][5],1),
+                    -- format("Dïng ®¹i qu©n c«ng ch­¬ng (PhÇn th­ëng qu©n c«ng gÊp %d lÇn, kinh nghiÖm gÊp ®«i)/#get_battle_award_confirm(%d)",tbJUNGONGZHANG[2][5],2),
                     format("Dïng huy hoµng ch­¬ng (PhÇn th­ëng qu©n c«ng gÊp %d lÇn, kinh nghiªm gÊp 2.5 lÇn)/#get_battle_award_confirm(%d)",tbJUNGONGZHANG[3][5],3),
-                    format("Ta muèn dïng Vinh Dù Qu©n C«ng Ch­¬ng (PhÇn th­ëng qu©n c«ng %d lÇn, phÇn th­ëng kinh nghiÖm 3 lÇn)/#get_battle_award_confirm(%d)",tbJUNGONGZHANG[4][5],4),
+                    -- format("Ta muèn dïng Vinh Dù Qu©n C«ng Ch­¬ng (PhÇn th­ëng qu©n c«ng %d lÇn, phÇn th­ëng kinh nghiÖm 3 lÇn)/#get_battle_award_confirm(%d)",tbJUNGONGZHANG[4][5],4),
                     "Kh«ng dïng/not_use_jungongzhang_confirm",
                     "Ch­a muèn nhËn th­ëng/nothing",
                     }
@@ -482,10 +482,10 @@ function get_all_award(nType)
 	local tbExpMultiple = --¾ü¹¦ÕÂµÄ½±Àø·­±¶±¶Êý
 	{
 		[0] = 1,
-		[1] = 1.5,
-		[2] = 2,
-		[3] = 2.5,
-		[4] = 3,
+		[1] = 1.2,
+		[2] = 1.5,
+		[3] = 1.8,
+		[4] = 2.0,
 	};	
 	local nGetExpAwardCount = BT_GetData(PT_GET_EXP_AWARD_COUNT);
 	if nLastBattle ~= MAINBATTLE_ID then	--Èç¹ûÊÇÐ¡Õ½³¡
@@ -498,10 +498,15 @@ function get_all_award(nType)
 				nExpAward = nExpAward * 2
 			end
 		end	
-		nExpAward = floor(nExpAward*tbExpMultiple[nType]);
+		-- nExpAward = floor(nExpAward*tbExpMultiple[nType]);
 		--< Added by SunZhuoshi
 		HBRewardInSmallBattleField();
 		-->
+		-- if GetLevel() >=  98 then
+			-- nExpAward = floor(nExpAward*0.8)
+		-- elseif GetLevel() >=  90 and GetLevel() <  98 then
+			-- nExpAward = floor(nExpAward*2)
+		-- end
 		ModifyExp(nExpAward);
 		Msg2Player("B¹n nhËn ®­îc "..nExpAward.." ®iÓm kinh nghiÖm");	
 		--ÎäÁÖvipÁî
@@ -511,11 +516,11 @@ function get_all_award(nType)
 		HBRewardInBigBattleField();
 		-->
 		if nGetExpAwardCount < 1 then	--Èç¹û»ñÈ¡´óÕ½³¡½±Àø´ÎÊýÐ¡ÓÚ1
-			nExpAward = floor(nExpAward*tbExpMultiple[nType]);
+			-- nExpAward = floor(nExpAward*tbExpMultiple[nType]);
 			ModifyExp(nExpAward);
 			Msg2Player("B¹n nhËn ®­îc "..nExpAward.." ®iÓm kinh nghiÖm");	
-			ModifyExp(5000000);
-			Msg2Player("B¹n nhËn thªm ®­îc 5000000 ®iÓm kinh nghiÖm");				
+			-- ModifyExp(5000000);
+			-- Msg2Player("B¹n nhËn thªm ®­îc 5000000 ®iÓm kinh nghiÖm");				
 			BT_SetData(PT_GET_EXP_AWARD_COUNT,nGetExpAwardCount+1);
 			BT_SetData(PT_GET_EXP_AWARD_DATE,nDate);		
 		else
