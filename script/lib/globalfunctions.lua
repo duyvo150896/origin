@@ -478,7 +478,7 @@ end;
 -- **********************************************************************************************************************
 --·µ»ØÁ÷ÅÉtable
 function gf_GetRouteTable()
-	return {2,3,4,6,8,9,11,12,14,15,17,18,20,21,23,29,30};
+	return {2,3,4,6,8,9,11,12,14,15,17,18,20,21,23,25,26,27,29,30};
 end;
 -- ******************************************* Comment by Vilh *****************************************************
 -- Name			: 	gf_CheckPlayerRoute
@@ -2851,12 +2851,12 @@ end
 --µÈ¼¶¼°¼¼ÄÜÅÐ¶Ï
 function gf_CheckBaseCondition(nBaseLevel, bNotMsg)
 	local nLevel = GetLevel();
-	if nLevel < nBaseLevel or gf_Check55FullSkill() == 0 or GetPlayerFaction() == 0 then
-		if not bNotMsg or bNotMsg ~= 1 then
-			Talk(1,"",format("Ng­êi ch¬i cÊp <color=green>%d<color> trë lªn ®· gia nhËp hÖ ph¸i häc ®­îc <color=green>1<color> kü n¨ng cÊp <color=green>55<color> míi cã thÓ tham gia ho¹t ®éng.",nBaseLevel));
-		end
-		return 0;
-	end
+	-- if nLevel < nBaseLevel or gf_Check55FullSkill() == 0 or GetPlayerFaction() == 0 then
+		-- if not bNotMsg or bNotMsg ~= 1 then
+			-- Talk(1,"",format("Ng­êi ch¬i cÊp <color=green>%d<color> trë lªn ®· gia nhËp hÖ ph¸i häc ®­îc <color=green>1<color> kü n¨ng cÊp <color=green>55<color> míi cã thÓ tham gia ho¹t ®éng.",nBaseLevel));
+		-- end
+		-- return 0;
+	-- end
 	return 1;
 end
 
