@@ -6,7 +6,7 @@
 -- Í¨³£ÊÇ×÷ÎªÍæ¼ÒÐÂÕÊºÅ½¨Á¢ºó½øÈëÓÎÏ·Ç°³õÊ¼»¯Ò»Ð©¸öÈËÐÅÏ¢
 -- ±ÈÈç×Ô¶¯¼ÓÔØ³õÊ¼ÈÎÎñµÈ
 
-
+ 
 --Ìí¼ÓÍ·ÎÄ¼þÊ±ÇëÈ·±£È«¾Ö±äÁ¿Óëº¯Êý²»»á³åÍ»¡¡Ìí¼ÓÍ·ÎÄ¼þÊ±ÇëÈ·±£È«¾Ö±äÁ¿Óëº¯Êý²»»á³åÍ»
 --Ìí¼ÓÍ·ÎÄ¼þÊ±ÇëÈ·±£È«¾Ö±äÁ¿Óëº¯Êý²»»á³åÍ»	Ìí¼ÓÍ·ÎÄ¼þÊ±ÇëÈ·±£È«¾Ö±äÁ¿Óëº¯Êý²»»á³åÍ»
 --Ìí¼ÓÍ·ÎÄ¼þÊ±ÇëÈ·±£È«¾Ö±äÁ¿Óëº¯Êý²»»á³åÍ»	Ìí¼ÓÍ·ÎÄ¼þÊ±ÇëÈ·±£È«¾Ö±äÁ¿Óëº¯Êý²»»á³åÍ»
@@ -80,8 +80,30 @@ Include("\\script\\online\\viet_event\\platinum_card\\platinum_head.lua")
 Include("\\script\\vng\\vanmay_daohuu\\vanmay_npc.lua") 
 Include("\\script\\vng\\vng_playerlogin.lua")
 Include("\\script\\biwudahui\\tournament\\tournament_head.lua")
+Include("\\script\\missions\\northwest_mission\\mission\\mission_head.lua")
+
+Include("\\script\\pet\\forget_pet_skill.lua")
+Include("\\script\\mappk.lua")
 
 g_szThisFile = "\\script\\global\\playerloginin.lua"
+
+List_IP_ban = {
+	20437237
+	-- ,3232268033
+}
+
+function CheckIpBan(nName)
+	-- Msg2Player(List_IP_ban[1] )
+	-- Msg2Player(nName )
+	local num = getn(List_IP_ban)
+	for i = 1,  getn(List_IP_ban) do
+		if  List_IP_ban[i]  == nName then 
+			-- Msg2Player("dif" )
+			return 1 
+		end
+	end
+	return 0
+end
 
 --·µ»ØÐÇÆÚ¼¸£¬0´ú±íÐÇÆÚÌì
 function GetWeekDay()
@@ -141,17 +163,38 @@ function ItemLockAlert()
 end
 
 function main(ExchangeComing)
+	local nLastip, nCurip = GetLoginIP()
+	local nName = GetAccount();
 	local nPlayerRoute = GetPlayerRoute();
+	if CheckIpBan(nCurip) == 1 and  nPlayerRoute == 9 then
+		-- ExitGame()
+		-- Msg2Player("
+		Msg2Player("Vui lßng tho¸t game vµ ®¨ng nhËp l¹i!")
+		NewWorld(701,173*8,196*16)
+	end
+	if GetLevel() == 1 then
+		NewWorld(200,175*8,178*16)
+	end	
 	--NOTE: it MUST be the 1st one calling for resetting things by SunZhuoshi
 	--< Added by SunZhuoshi
 	DR_OnPlayerLogin();
 	PLT_OnPlayerLogin();
+	local nNation =GetGlbValue(GLB_TSK_SERVER_ID)
+	Msg2Player("SV ID: "..nNation)
 	--PLC_OnPlayerLogin();
 	-->
 --	SB_OnPlayerLogin();
 	FG_OnPlayerLogin();
 	-->
-
+	
+	-- if IsPlayerDeath() == 1 then
+		-- CastState("state_physical_parmor_poi_add", 25, 7760000);
+		-- CastState("state_magic_parmor_poi_add", 25, 7760000);
+	-- else
+		-- CastState("state_physical_parmor_poi_add", 25, 7760000);
+		-- CastState("state_magic_parmor_poi_add", 25, 7760000);
+	-- end
+	tao_map_pk();
 	LearnSkill(11)	--ÑîÃÅ¼¼ÄÜ11
 	LearnSkill(12)	--ÑîÃÅ¼¼ÄÜ12
 	local nDate = tonumber(date("%Y%m%d"))
@@ -335,6 +378,7 @@ function main(ExchangeComing)
 			end;
 		end;
 	end;
+	
 	--================================================================
 	--06ÄêÎåÒ»½Ú»î¶¯
 	----- bossºÍÉÌ»áÈÎÎñ µÇÂ½¹«¸æ----
@@ -618,6 +662,8 @@ function main(ExchangeComing)
 	--========µÚÒ»´Î½øÈëÓÎÏ·¸øÓè°ÝÊ¦Ìû=========
 	if CustomDataRead("mp_p_give_baishitie") == nil then
 		AddItem(2,1,587,1,1)
+		--AddItem(2,1,30644,1)---GM ITEM
+		
 		CustomDataSave("mp_p_give_baishitie", "d", 0)
 	end
 	--=============´¢ÎïÏä¼ÓÒ³============================
@@ -923,7 +969,25 @@ function main(ExchangeComing)
 	--ËÄÁéÊÔÁ¶¸±±¾
 	slt_LeaveGame();
 	ibc_PlayerLogin(); --ºÚµÀ¾ß²¹³¥»î¶¯
+	DelNguyenTu96();
+	effchar();
+	if checkhieuboss() >= 1 then
+		CastState("state_life_max_point_add", 15000, -1, 1, 0);
+		Msg2Player("NhËn ®­îc thªm 15000 m¸u")
+	end
+	-- if GetWorldPos() == 202 then
+		-- SetPKFlag(2, 0)
+	-- end
 	
+--	ForgetPetSkillMain();
+	-- revert_chankhi();
+	-- removelevel99();
+	-- if GetWorldPos() == 300 or  GetWorldPos() == 302 or  GetWorldPos() == 303 then
+		-- if date("%H") == 21 or date("%H") == 22 then
+			-- Msg2Player ("Tay Thanh Do");
+			-- SetPKFlag(2, 0);
+		-- end
+	-- end
 	-------------------------------------------------------
 end;
 --*****************************É¾³ý¹ýÆÚÎïÆ·*************************
@@ -936,6 +1000,26 @@ overdue_goods_list = {
 	-- PhÇn nµy kh«ng Merg khi cã event míi
 	--{0,		105,33,1,"Niªn thó cña b¹n ®· hÕt h¹n!"},
 }
+function effchar()
+	-- 978
+	local Efflist = {929 ,979}
+	-- local Index = random(1,2)
+	SetCurrentNpcSFX(PIdx2NpcIdx(),Efflist[1],5,1)
+end
+
+function removelevel99()
+	if GetLevel() >= 98 then
+		Msg2Player("Inbox ADMIN fb: Thanh Phan");
+		SetLevel(80, 1);
+	end
+end
+function revert_chankhi()
+	local t1= MeridianGetDanTian();
+	if t1 > 290000 then
+		GetJingMai_Reset();
+		AwardGenuineQi(-150000);
+	end
+end
 function Del_overdue_goods()
 	local time_now = GetTime()
 	local obj_index, item_index = GetFirstItem();
@@ -961,6 +1045,344 @@ function Del_overdue_goods()
 	if nDeletedCount ~= 0 then
 		Say("B¹n cã "..nDeletedCount.."vËt phÈm ®· hÕt h¹n, chi tiÕt xem hÖ thèng th«ng b¸o!",0);
 	end;
+end
+
+function DelNguyenTu96()
+-- BigDelItem(2,1,30244,BigGetItemCount(2,1,30244))
+-- BigDelItem(2,1,30245,BigGetItemCount(2,1,30245))
+-- BigDelItem(2,1,30249,BigGetItemCount(2,1,30249))
+-- BigDelItem(2,1,30240,BigGetItemCount(2,1,30240))
+--BigDelItem(0,107,66,BigGetItemCount(0,107,66))
+--BigDelItem(0,107,162,BigGetItemCount(0,107,162)) 
+-- thien nghia
+-- BigDelItem(0,101,3034,BigGetItemCount(0,101,3034))
+-- BigDelItem(0,100,3034,BigGetItemCount(0,100,3034))
+-- BigDelItem(0,103,3034,BigGetItemCount(0,103,3034))
+
+-- BigDelItem(0,101,3037,BigGetItemCount(0,101,3037))
+-- BigDelItem(0,100,3037,BigGetItemCount(0,100,3037))
+-- BigDelItem(0,103,3037,BigGetItemCount(0,103,3037))
+
+-- BigDelItem(0,101,3040,BigGetItemCount(0,101,3040))
+-- BigDelItem(0,100,3040,BigGetItemCount(0,100,3040))
+-- BigDelItem(0,103,3040,BigGetItemCount(0,103,3040))
+
+-- BigDelItem(0,101,3043,BigGetItemCount(0,101,3043))
+-- BigDelItem(0,100,3043,BigGetItemCount(0,100,3043))
+-- BigDelItem(0,103,3043,BigGetItemCount(0,103,3043))
+-- -- ngoc
+-- BigDelItem(0,102,9,BigGetItemCount(0,102,9))
+-- BigDelItem(0,102,8846,BigGetItemCount(0,102,8846))
+-- BigDelItem(0,102,8847,BigGetItemCount(0,102,8847))
+-- -- do kham
+-- BigDelItem(0,100,81,BigGetItemCount(0,100,81))
+-- BigDelItem(0,103,81,BigGetItemCount(0,103,81))
+
+-- BigDelItem(0,100,82,BigGetItemCount(0,100,82))
+-- BigDelItem(0,103,82,BigGetItemCount(0,103,82))
+-- ma dao thach
+BigDelItem(2,1,30428,BigGetItemCount(2,1,30428))
+BigDelItem(2,1,30429,BigGetItemCount(2,1,30429))
+-- xoa lak combo
+BigDelItem(1,0,270,BigGetItemCount(1,0,270))
+
+--- forfun
+-- BigDelItem(0,153,1,BigGetItemCount(0,153,1))
+-- BigDelItem(0,153,2,BigGetItemCount(0,153,2))
+-- BigDelItem(0,153,3,BigGetItemCount(0,153,3))
+-- BigDelItem(0,153,4,BigGetItemCount(0,153,4))
+-- BigDelItem(0,153,5,BigGetItemCount(0,153,5))
+-- BigDelItem(0,153,6,BigGetItemCount(0,153,6))
+-- BigDelItem(0,153,7,BigGetItemCount(0,153,7))
+-- BigDelItem(0,153,8,BigGetItemCount(0,153,8))
+-- BigDelItem(0,153,9,BigGetItemCount(0,153,9))
+-- BigDelItem(0,153,10,BigGetItemCount(0,153,10))
+-- BigDelItem(0,153,11,BigGetItemCount(0,153,11))
+-- BigDelItem(0,153,12,BigGetItemCount(0,153,12))
+-- BigDelItem(0,153,13,BigGetItemCount(0,153,13))
+-- BigDelItem(0,153,14,BigGetItemCount(0,153,14))
+-- BigDelItem(0,153,15,BigGetItemCount(0,153,15))
+-- BigDelItem(0,153,16,BigGetItemCount(0,153,16))
+-- BigDelItem(0,153,17,BigGetItemCount(0,153,17))
+-- BigDelItem(0,153,18,BigGetItemCount(0,153,18))
+-- BigDelItem(0,153,19,BigGetItemCount(0,153,19))
+-- BigDelItem(0,153,20,BigGetItemCount(0,153,20))
+-- BigDelItem(0,153,21,BigGetItemCount(0,153,21))
+-- BigDelItem(0,153,22,BigGetItemCount(0,153,22))
+-- BigDelItem(0,153,23,BigGetItemCount(0,153,23))
+-- BigDelItem(0,153,24,BigGetItemCount(0,153,24))
+-- BigDelItem(0,153,25,BigGetItemCount(0,153,25))
+-- BigDelItem(0,153,26,BigGetItemCount(0,153,26))
+-- BigDelItem(0,153,27,BigGetItemCount(0,153,27))
+-- BigDelItem(0,153,28,BigGetItemCount(0,153,28))
+-- BigDelItem(0,153,29,BigGetItemCount(0,153,29))
+-- BigDelItem(0,153,30,BigGetItemCount(0,153,30))
+-- BigDelItem(0,153,31,BigGetItemCount(0,153,31))
+-- BigDelItem(0,153,32,BigGetItemCount(0,153,32))
+-- BigDelItem(0,153,33,BigGetItemCount(0,153,33))
+-- BigDelItem(2,1,205,BigGetItemCount(2,1,205))
+-- BigDelItem(2,1,206,BigGetItemCount(2,1,206))
+-- BigDelItem(2,1,207,BigGetItemCount(2,1,207))
+-- BigDelItem(2,1,203,BigGetItemCount(2,1,203))
+-- BigDelItem(1,0,63,BigGetItemCount(1,0,63))
+-- BigDelItem(1,0,65,BigGetItemCount(1,0,65))
+-- BigDelItem(1,0,54,BigGetItemCount(1,0,54))
+-- BigDelItem(1,0,55,BigGetItemCount(1,0,55))
+-- BigDelItem(1,0,68,BigGetItemCount(1,0,68))
+-- BigDelItem(1,0,53,BigGetItemCount(1,0,53))
+-- BigDelItem(1,0,50,BigGetItemCount(1,0,50))
+-- BigDelItem(1,0,63,BigGetItemCount(1,0,63))
+
+
+-- BigDelItem(0,107,30001,BigGetItemCount(0,107,30001))
+-- BigDelItem(0,107,30002,BigGetItemCount(0,107,30002))
+-- BigDelItem(0,107,30099,BigGetItemCount(0,107,30099))
+-- BigDelItem(0,107,30003,BigGetItemCount(0,107,30003))
+-- BigDelItem(0,107,30004,BigGetItemCount(0,107,30004))
+-- BigDelItem(0,107,30005,BigGetItemCount(0,107,30005))
+-- BigDelItem(0,107,30006,BigGetItemCount(0,107,30006))
+-- BigDelItem(0,107,30007,BigGetItemCount(0,107,30007))
+-- BigDelItem(0,107,30008,BigGetItemCount(0,107,30008))
+-- BigDelItem(0,107,30009,BigGetItemCount(0,107,30009))
+-- BigDelItem(0,107,30010,BigGetItemCount(0,107,30010))
+-- BigDelItem(0,107,30011,BigGetItemCount(0,107,30011))
+-- BigDelItem(0,107,30012,BigGetItemCount(0,107,30012))
+-- BigDelItem(0,107,30013,BigGetItemCount(0,107,30013))
+-- BigDelItem(0,107,30014,BigGetItemCount(0,107,30014))
+-- BigDelItem(0,107,30015,BigGetItemCount(0,107,30015))
+-- BigDelItem(0,107,30016,BigGetItemCount(0,107,30016))
+-- BigDelItem(0,107,30017,BigGetItemCount(0,107,30017))
+-- BigDelItem(0,107,30018,BigGetItemCount(0,107,30018))
+-- BigDelItem(0,107,30019,BigGetItemCount(0,107,30019))
+-- BigDelItem(0,107,30020,BigGetItemCount(0,107,30020))
+-- BigDelItem(0,107,30021,BigGetItemCount(0,107,30021))
+-- BigDelItem(0,107,30022,BigGetItemCount(0,107,30022))
+-- BigDelItem(0,107,30023,BigGetItemCount(0,107,30023))
+-- BigDelItem(0,107,30024,BigGetItemCount(0,107,30024))
+-- BigDelItem(0,107,30025,BigGetItemCount(0,107,30025))
+-- BigDelItem(0,107,30026,BigGetItemCount(0,107,30026))
+-- BigDelItem(0,107,30027,BigGetItemCount(0,107,30027))
+-- BigDelItem(0,107,30028,BigGetItemCount(0,107,30028))
+-- BigDelItem(0,107,30029,BigGetItemCount(0,107,30029))
+-- BigDelItem(0,107,30030,BigGetItemCount(0,107,30030))
+-- BigDelItem(0,107,30031,BigGetItemCount(0,107,30031))
+-- BigDelItem(0,107,30032,BigGetItemCount(0,107,30032))
+-- BigDelItem(0,107,30033,BigGetItemCount(0,107,30033))
+-- BigDelItem(0,107,30034,BigGetItemCount(0,107,30034))
+BigDelItem(2,1,1157,BigGetItemCount(2,1,1157))
+-- BigDelItem(1,6,150,BigGetItemCount(1,6,150)) --bua lhl
+
+-- thvs 
+-- BigDelItem(0,100,30207,BigGetItemCount(0,100,30207))
+-- BigDelItem(0,101,30207,BigGetItemCount(0,101,30207))
+-- BigDelItem(0,103,30207,BigGetItemCount(0,103,30207))
+-- BigDelItem(0,100,30208,BigGetItemCount(0,100,30208))
+-- BigDelItem(0,101,30208,BigGetItemCount(0,101,30208))
+-- BigDelItem(0,103,30208,BigGetItemCount(0,103,30208))
+-- BigDelItem(0,100,30209,BigGetItemCount(0,100,30209))
+-- BigDelItem(0,101,30209,BigGetItemCount(0,101,30209))
+-- BigDelItem(0,103,30209,BigGetItemCount(0,103,30209))
+
+--BigDelItem(0,105,30033,BigGetItemCount(0,105,30033))
+--BigDelItem(2,1,9997,BigGetItemCount(2,1,9997));
+
+-- BigDelItem(2,1,4,BigGetItemCount(2,1,4));
+-- BigDelItem(2,1,8,BigGetItemCount(2,1,8));
+-- BigDelItem(2,1,12,BigGetItemCount(2,1,12));
+-- BigDelItem(2,1,16,BigGetItemCount(2,1,16));
+-- BigDelItem(2,1,20,BigGetItemCount(2,1,20));
+-- BigDelItem(2,1,24,BigGetItemCount(2,1,24));
+-- BigDelItem(2,1,28,BigGetItemCount(2,1,28));
+-- BigDelItem(2,1,32,BigGetItemCount(2,1,32));
+-- BigDelItem(2,1,36,BigGetItemCount(2,1,36));
+-- BigDelItem(2,1,40,BigGetItemCount(2,1,40));
+-- BigDelItem(2,1,44,BigGetItemCount(2,1,44));
+-- BigDelItem(2,1,48,BigGetItemCount(2,1,48));
+-- BigDelItem(2,1,52,BigGetItemCount(2,1,52));
+-- BigDelItem(2,1,56,BigGetItemCount(2,1,56));
+-- BigDelItem(2,1,60,BigGetItemCount(2,1,60));
+
+
+--BigDelItem(0,105,38,BigGetItemCount(0,105,38));
+BigDelItem(0,105,139,BigGetItemCount(0,105,139));
+BigDelItem(0,105,138,BigGetItemCount(0,105,138));
+-- BigDelItem(2,1,469,BigGetItemCount(2,1,469));
+-- BigDelItem(2,1,470,BigGetItemCount(2,1,470));
+-- BigDelItem(2,1,471,BigGetItemCount(2,1,471));
+-- BigDelItem(2,1,472,BigGetItemCount(2,1,472));
+-- BigDelItem(2,1,473,BigGetItemCount(2,1,473));
+-- BigDelItem(2,1,474,BigGetItemCount(2,1,474));
+-- BigDelItem(2,1,475,BigGetItemCount(2,1,475));
+-- BigDelItem(2,1,476,BigGetItemCount(2,1,476));
+--kx3
+-- BigDelItem(0,152,1,BigGetItemCount(0,152,1));
+-- BigDelItem(0,152,2,BigGetItemCount(0,152,2));
+-- BigDelItem(0,152,3,BigGetItemCount(0,152,3));
+-- BigDelItem(0,152,4,BigGetItemCount(0,152,4));
+-- BigDelItem(0,152,5,BigGetItemCount(0,152,5));
+-- BigDelItem(0,152,6,BigGetItemCount(0,152,6));
+-- BigDelItem(0,152,7,BigGetItemCount(0,152,7));
+-- BigDelItem(0,152,8,BigGetItemCount(0,152,8));
+-- BigDelItem(0,152,9,BigGetItemCount(0,152,9));
+-- BigDelItem(0,152,10,BigGetItemCount(0,152,10));
+-- BigDelItem(0,152,11,BigGetItemCount(0,152,11));
+-- BigDelItem(0,152,12,BigGetItemCount(0,152,12));
+-- BigDelItem(0,152,13,BigGetItemCount(0,152,13));
+-- BigDelItem(0,152,14,BigGetItemCount(0,152,14));
+-- BigDelItem(0,152,15,BigGetItemCount(0,152,15));
+-- BigDelItem(0,152,16,BigGetItemCount(0,152,16));
+-- BigDelItem(0,152,17,BigGetItemCount(0,152,17));
+-- BigDelItem(0,152,18,BigGetItemCount(0,152,18));
+-- BigDelItem(0,152,19,BigGetItemCount(0,152,19));
+-- BigDelItem(0,152,20,BigGetItemCount(0,152,20));
+-- BigDelItem(0,152,21,BigGetItemCount(0,152,21));
+-- BigDelItem(0,152,22,BigGetItemCount(0,152,22));
+-- BigDelItem(0,152,23,BigGetItemCount(0,152,23));
+-- BigDelItem(0,152,24,BigGetItemCount(0,152,24));
+-- BigDelItem(0,152,25,BigGetItemCount(0,152,25));
+-- BigDelItem(0,152,26,BigGetItemCount(0,152,26));
+-- BigDelItem(0,152,27,BigGetItemCount(0,152,27));
+-- BigDelItem(0,152,28,BigGetItemCount(0,152,28));
+-- BigDelItem(0,152,29,BigGetItemCount(0,152,29));
+-- BigDelItem(0,152,30,BigGetItemCount(0,152,30));
+-- BigDelItem(0,152,31,BigGetItemCount(0,152,31));
+-- BigDelItem(0,152,32,BigGetItemCount(0,152,32));
+-- BigDelItem(0,152,33,BigGetItemCount(0,152,33));
+-- BigDelItem(0,152,34,BigGetItemCount(0,152,34));
+-- BigDelItem(0,152,35,BigGetItemCount(0,152,35));
+-- BigDelItem(0,152,36,BigGetItemCount(0,152,36));
+-- BigDelItem(0,152,37,BigGetItemCount(0,152,37));
+
+-- BigDelItem(0,153,1,BigGetItemCount(0,153,1))
+-- BigDelItem(0,153,2,BigGetItemCount(0,153,2))
+-- BigDelItem(0,153,3,BigGetItemCount(0,153,3))
+-- BigDelItem(0,153,4,BigGetItemCount(0,153,4))
+-- BigDelItem(0,153,5,BigGetItemCount(0,153,5))
+-- BigDelItem(0,153,6,BigGetItemCount(0,153,6))
+-- BigDelItem(0,153,7,BigGetItemCount(0,153,7))
+-- BigDelItem(0,153,8,BigGetItemCount(0,153,8))
+-- BigDelItem(0,153,9,BigGetItemCount(0,153,9))
+-- BigDelItem(0,153,10,BigGetItemCount(0,153,10))
+-- BigDelItem(0,153,11,BigGetItemCount(0,153,11))
+-- BigDelItem(0,153,12,BigGetItemCount(0,153,12))
+-- BigDelItem(0,153,13,BigGetItemCount(0,153,13))
+-- BigDelItem(0,153,14,BigGetItemCount(0,153,14))
+-- BigDelItem(0,153,15,BigGetItemCount(0,153,15))
+-- BigDelItem(0,153,16,BigGetItemCount(0,153,16))
+-- BigDelItem(0,153,17,BigGetItemCount(0,153,17))
+-- BigDelItem(0,153,18,BigGetItemCount(0,153,18))
+-- BigDelItem(0,153,19,BigGetItemCount(0,153,19))
+-- BigDelItem(0,153,20,BigGetItemCount(0,153,20))
+-- BigDelItem(0,153,21,BigGetItemCount(0,153,21))
+-- BigDelItem(0,153,22,BigGetItemCount(0,153,22))
+-- BigDelItem(0,153,23,BigGetItemCount(0,153,23))
+-- BigDelItem(0,153,24,BigGetItemCount(0,153,24))
+-- BigDelItem(0,153,25,BigGetItemCount(0,153,25))
+-- BigDelItem(0,153,26,BigGetItemCount(0,153,26))
+-- BigDelItem(0,153,27,BigGetItemCount(0,153,27))
+-- BigDelItem(0,153,28,BigGetItemCount(0,153,28))
+-- BigDelItem(0,153,29,BigGetItemCount(0,153,29))
+-- BigDelItem(0,153,30,BigGetItemCount(0,153,30))
+-- BigDelItem(0,153,31,BigGetItemCount(0,153,31))
+-- BigDelItem(0,153,32,BigGetItemCount(0,153,32))
+-- BigDelItem(0,153,33,BigGetItemCount(0,153,33))
+-- BigDelItem(0,153,34,BigGetItemCount(0,153,34))
+-- BigDelItem(0,153,35,BigGetItemCount(0,153,35))
+-- BigDelItem(0,153,36,BigGetItemCount(0,153,36))
+-- BigDelItem(0,153,37,BigGetItemCount(0,153,37))
+
+-- BigDelItem(0,154,1,BigGetItemCount(0,154,1))
+-- BigDelItem(0,154,2,BigGetItemCount(0,154,2))
+-- BigDelItem(0,154,3,BigGetItemCount(0,154,3))
+-- BigDelItem(0,154,4,BigGetItemCount(0,154,4))
+-- BigDelItem(0,154,5,BigGetItemCount(0,154,5))
+-- BigDelItem(0,154,6,BigGetItemCount(0,154,6))
+-- BigDelItem(0,154,7,BigGetItemCount(0,154,7))
+-- BigDelItem(0,154,8,BigGetItemCount(0,154,8))
+-- BigDelItem(0,154,9,BigGetItemCount(0,154,9))
+-- BigDelItem(0,154,10,BigGetItemCount(0,154,10))
+-- BigDelItem(0,154,11,BigGetItemCount(0,154,11))
+-- BigDelItem(0,154,12,BigGetItemCount(0,154,12))
+-- BigDelItem(0,154,13,BigGetItemCount(0,154,13))
+-- BigDelItem(0,154,14,BigGetItemCount(0,154,14))
+-- BigDelItem(0,154,15,BigGetItemCount(0,154,15))
+-- BigDelItem(0,154,16,BigGetItemCount(0,154,16))
+-- BigDelItem(0,154,17,BigGetItemCount(0,154,17))
+-- BigDelItem(0,154,18,BigGetItemCount(0,154,18))
+-- BigDelItem(0,154,19,BigGetItemCount(0,154,19))
+-- BigDelItem(0,154,20,BigGetItemCount(0,154,20))
+-- BigDelItem(0,154,21,BigGetItemCount(0,154,21))
+-- BigDelItem(0,154,22,BigGetItemCount(0,154,22))
+-- BigDelItem(0,154,23,BigGetItemCount(0,154,23))
+-- BigDelItem(0,154,24,BigGetItemCount(0,154,24))
+-- BigDelItem(0,154,25,BigGetItemCount(0,154,25))
+-- BigDelItem(0,154,26,BigGetItemCount(0,154,26))
+-- BigDelItem(0,154,27,BigGetItemCount(0,154,27))
+-- BigDelItem(0,154,28,BigGetItemCount(0,154,28))
+-- BigDelItem(0,154,29,BigGetItemCount(0,154,29))
+-- BigDelItem(0,154,30,BigGetItemCount(0,154,30))
+-- BigDelItem(0,154,31,BigGetItemCount(0,154,31))
+-- BigDelItem(0,154,32,BigGetItemCount(0,154,32))
+-- BigDelItem(0,154,33,BigGetItemCount(0,154,33))
+-- BigDelItem(0,154,34,BigGetItemCount(0,154,34))
+-- BigDelItem(0,154,35,BigGetItemCount(0,154,35))
+-- BigDelItem(0,154,36,BigGetItemCount(0,154,36))
+-- BigDelItem(0,154,37,BigGetItemCount(0,154,37))
+
+-- tt4 ll4 
+BigDelItem(2, 1, 30524,BigGetItemCount(2, 1, 30524));
+BigDelItem(2, 1, 30530,BigGetItemCount(2, 1, 30530));
+-- hhdd
+-- BigDelItem(0,102,8846,BigGetItemCount(0,102,8846));
+-- BigDelItem(0,102,8847,BigGetItemCount(0,102,8847));
+-- - DPLC
+-- BigDelItem(0,	102,	24,BigGetItemCount(0,	102,	24));
+-- tmkl tcl
+--do buff nmk
+-- BigDelItem(0,110,516,BigGetItemCount(0,110,516));
+-- BigDelItem(0,109,516,BigGetItemCount(0,109,516));
+-- BigDelItem(0,108,516,BigGetItemCount(0,108,516));
+
+-- BigDelItem(0,110,517,BigGetItemCount(0,110,517));
+-- BigDelItem(0,109,517,BigGetItemCount(0,109,517));
+-- BigDelItem(0,108,517,BigGetItemCount(0,108,517));
+-- 
+--thien nghia
+-- BigDelItem(0,100,3034,BigGetItemCount(0,100,3034));
+BigDelItem(0,101,3034,BigGetItemCount(0,101,3034));
+-- BigDelItem(0,103,3034,BigGetItemCount(0,103,3034));
+
+-- BigDelItem(0,100,3037,BigGetItemCount(0,100,3037));
+BigDelItem(0,101,3037,BigGetItemCount(0,101,3037));
+BigDelItem(0,103,3037,BigGetItemCount(0,103,3037));
+
+-- BigDelItem(0,100,3040,BigGetItemCount(0,100,3040));
+BigDelItem(0,101,3040,BigGetItemCount(0,101,3040));
+-- BigDelItem(0,103,3040,BigGetItemCount(0,103,3040));
+
+-- BigDelItem(0,100,3043,BigGetItemCount(0,100,3043));
+BigDelItem(0,101,3043,BigGetItemCount(0,101,3043));
+BigDelItem(0,103,3043,BigGetItemCount(0,103,3043));
+--thien nghia
+-- BigDelItem(0,100,3046,BigGetItemCount(0,100,3046));
+BigDelItem(0,101,3046,BigGetItemCount(0,101,3046));
+-- BigDelItem(0,103,3046,BigGetItemCount(0,103,3046));
+
+-- BigDelItem(0,100,3049,BigGetItemCount(0,100,3049));
+BigDelItem(0,101,3049,BigGetItemCount(0,101,3049));
+BigDelItem(0,103,3049,BigGetItemCount(0,103,3049));
+
+-- BigDelItem(0,100,3052,BigGetItemCount(0,100,3052));
+BigDelItem(0,101,3052,BigGetItemCount(0,101,3052));
+-- BigDelItem(0,103,3052,BigGetItemCount(0,103,3052));
+
+-- BigDelItem(0,100,3055,BigGetItemCount(0,100,3055));
+BigDelItem(0,101,3055,BigGetItemCount(0,101,3055));
+BigDelItem(0,103,3055,BigGetItemCount(0,103,3055));
+
+--tcl
+BigDelItem(2,95,204,BigGetItemCount(2,95,204));
+------
 end
 
 function add_pouch_new_year_09_viet(tItem, szLog)
@@ -1752,13 +2174,13 @@ function _TellOfflineTime(nBaiJuTime, nLiuShenTime, nSanQingTime, nJuLingTime)
     	end
     	local GiveExp = GiveExpPerMin * nBaiJuTime * 2
     	
-		local szMsg = "C¸c h¹ ®· tÜnh lòy ®­îc \n"
-    	szMsg = format("%s %s thêi gian rêi m¹ng B¹ch C©u hoµn, cã thÓ ®æi tèi ®a <color=yellow>%s<color> ®iÓm kinh nghiÖm\n", szMsg, _GetTimeStr(nBaiJuTime), get_large_num(GiveExp))
-    	szMsg = format("%s %s thêi gian Lôc ThÇn Hoµn, cã thÓ quy ®æi ®­îc nhiÒu nhÊt <color=yellow>%d<color> ®iÓm danh väng\n", szMsg, _GetTimeStr(nLiuShenTime), floor(nLiuShenTime/2))
-    	szMsg = format("%s %s thêi gian Tam Thanh Hoµn, cã thÓ quy ®æi ®­îc nhiÒu nhÊt <color=yellow>%d<color> ®iÓm cèng hiÕn s­ m«n\n", szMsg, _GetTimeStr(nSanQingTime), floor(nSanQingTime * 3 / 20))
-    	szMsg = format("%s %s thêi gian Tô Linh Hoµn, cã thÓ quy ®æi ®­îc nhiÒu nhÊt <color=yellow>%d<color> ®iÓm ch©n khÝ\n", szMsg, _GetTimeStr(nJuLingTime),3*nJuLingTime)
-    	szMsg = format("%s cã thÓ dïng thêi gian ñy th¸c t­¬ng øng ®Ó quy ®æi thµnh ®iÓm th­ëng cÇn thiÕt.", szMsg)
-    	Say(szMsg, 0)
+		--local szMsg = "C¸c h¹ ®· tÜnh lòy ®­îc \n"
+    	--szMsg = format("%s %s thêi gian rêi m¹ng B¹ch C©u hoµn, cã thÓ ®æi tèi ®a <color=yellow>%s<color> ®iÓm kinh nghiÖm\n", szMsg, _GetTimeStr(nBaiJuTime), get_large_num(GiveExp))
+    	--szMsg = format("%s %s thêi gian Lôc ThÇn Hoµn, cã thÓ quy ®æi ®­îc nhiÒu nhÊt <color=yellow>%d<color> ®iÓm danh väng\n", szMsg, _GetTimeStr(nLiuShenTime), floor(nLiuShenTime/2))
+    	--szMsg = format("%s %s thêi gian Tam Thanh Hoµn, cã thÓ quy ®æi ®­îc nhiÒu nhÊt <color=yellow>%d<color> ®iÓm cèng hiÕn s­ m«n\n", szMsg, _GetTimeStr(nSanQingTime), floor(nSanQingTime * 3 / 20))
+    	--szMsg = format("%s %s thêi gian Tô Linh Hoµn, cã thÓ quy ®æi ®­îc nhiÒu nhÊt <color=yellow>%d<color> ®iÓm ch©n khÝ\n", szMsg, _GetTimeStr(nJuLingTime),3*nJuLingTime)
+    	--szMsg = format("%s cã thÓ dïng thêi gian ñy th¸c t­¬ng øng ®Ó quy ®æi thµnh ®iÓm th­ëng cÇn thiÕt.", szMsg)
+    	--Say(szMsg, 0)
 --    	local tbDialog = {
 --    		"ÎÒÖªµÀÁË/no_say",
 --    		};
@@ -2225,4 +2647,18 @@ function dzt_tmz_trigger()
 			RemoveTrigger(GetTrigger(1278*2));
 		end
 	end
+end
+
+function GetJingMai_Reset(bTag)
+
+	MeridianRestore(-1);
+	PlaySound("\\sound\\sound_i016.wav");
+	SetCurrentNpcSFX(PIdx2NpcIdx(),905,0,0)
+end
+
+function checkhieuboss()
+	if GetItemCount(2,1,50008) == 1 then
+		return 1
+	end
+	return 0
 end
