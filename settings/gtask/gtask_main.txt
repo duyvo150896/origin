@@ -1,6 +1,5 @@
 Task_Name	Task_ID	Task_Flag	From_NPC	To_NPC	Ex_Condition	Finish_Condition	Task_Action	Task_Prize	Action_Room_Weight	Prize_Room_Weight	Cancel_Task	Skip_Task
 Tªn nhiÖm vô 	ID nhiÖm vô (yªu cÇu ®Õm liªn tôc tõ 1 trë lªn)	lËp l¹i, ghi kı hiÖu	Tªn npc nhËn nhiÖm vô	Tªn npc hoµn thµnh nhiÖm vô	§iÒu kiÖn tiÒn ®Ò. b¶ng gtask_condition.txt	§iÒu kiÖn hoµn thµnh, b¶ng gtask_condition.txt	NhiÖm vô Action, b¶ng gtask_prize.txt	PhÇn th­ëng hoµn thµnh, b¶ng gtask_prize.txt	KiÓm tra träng l­îng kh«ng gian Action, dïng kı hiÖu ";" ®Ó c¸ch ra	KiÓm tra träng l­îng kh«ng gian Prize, dïng kı hiÖu "," ®Ó c¸ch ra	Hñy nhiÖm vô, ®iÒn-1 tøc kh«ng thÓ hñy nhÖm vô, ®iÒn sè tøc cÇn tiªu hao l­îng tiÒn, ®¬n vŞ tİnh: ®ång	Bá qua nhiÖm vô, ®iÒn -1 tøc kh«ng thÓ bá qua nhiÖm vô nµy, ®iÒn sè tøc cÇn tiªu hao l­îng tiÒn t­¬ng øng, ®¬n vŞ: ®ång
-T×m kú d­îc kh¸ng ®éc	1	0	Chñ töu lÇu	Nh¹c BÊt QuÇn	30001			30001&30019	1;0	1;0	-1	-1
 Thu thËp nguyªn liÖu chÕ d­îc	2	0	Nh¹c BÊt QuÇn	Nh¹c BÊt QuÇn	30002	30003&30004	30103&30104	30020	1;0	1;0	1	-1
 T×m hiÓu t×nh h×nh b¸ t¸nh	3	0	Nh¹c BÊt QuÇn	B¸ch HiÓu Sinh	30002	30134	30002	30021	1;0	1;0	-1	-1
 ThØnh gi¸o B¹ch Danh Danh	4	0	B¸ch HiÓu Sinh	B¹ch Doanh Doanh	30128			30023	1;0	1;0	-1	-1
@@ -131,16 +130,6 @@ Dòng gi¶ bÊt tö	128	1			30161&30178	30196&30201	30272	30222&30257	1;0	1;0	1	2000
 ThÊt tinh hoa	129	1			30161&30178	30197&30202		30222&30259&30260	1;0	1;0	1	-1
 Tö Kim Méc	130	1			30161&30178	30198&30203		30222&30261&30262	1;0	1;0	1	-1
 Kho¸n tinh thiÕt	131	1			30161&30178	30199&30204		30222&30263&30264	1;0	1;0	1	-1
-NhiÖm vô nhËp m«n C«n L«n(1)	132	0	Chu BÊt HoÆc	M· BÊt TiÒn	30205&30213&30215			30276	1;0	1;0	-1	-1
-NhiÖm vô nhËp m«n C«n L«n(2)	133	0	M· BÊt TiÒn	TÇn BÊt Tri	30002			30277	1;0	1;0	-1	-1
-NhiÖm vô nhËp m«n C«n L«n(3)	134	0	TÇn BÊt Tri	TÇn BÊt Tri	30002	30206&30207		30278	1;0	1;0	-1	-1
-NhiÖm vô nhËp m«n C«n L«n(4)	135	0	TÇn BÊt Tri	M· BÊt TiÒn	30002	30211&30212	30273	30279&30286	1;0	1;0	-1	-1
-NhiÖm vô nhËp m«n Thóy Yªn(1)	136	0	Sµi Hoµng Nhi	Chu Tö V¨n	30205&30214&30215			30280	1;0	1;0	-1	-1
-NhiÖm vô nhËp m«n Thóy Yªn(2)	137	0	Chu Tö V¨n	Tö Quyªn	30002	30208	30274	30281	1;0	1;0	-1	-1
-NhiÖm vô nhËp m«n Thóy Yªn(3)	138	0	Tö Quyªn	Chu Tö V¨n	30002	30209	30275	30282	1;0	1;0	-1	-1
-NhiÖm vô nhËp m«n Thóy Yªn(4)	139	0	Chu Tö V¨n	Hå Man Thµnh	30002			30283	1;0	1;0	-1	-1
-NhiÖm vô nhËp m«n Thóy Yªn(5)	140	0	Hå Man Thµnh	Hå Man Thµnh	30002	30210		30284	1;0	1;0	-1	-1
-NhiÖm vô nhËp m«n Thóy Yªn(6)	141	0	Hå Man Thµnh	Sµi Hoµng Nhi	30002			30285&30287	1;0	1;0	-1	-1
 T×m LiÖp Hé	142	0	Nh¹c BÊt QuÇn	LiÖp Hé	30161&30216			30289&30290	1;0	1;0	1	-1
 T×m Trãc Yªu Nh©n	143	0	LiÖp Hé	Nh¹n Kha	30002			30291&30292	1;0	1;0	1	-1
 Thu thËp nguyªn liÖu	144	0	Nh¹n Kha	Nh¹n Kha	30002	30217&30218		30293&30294	1;0	1;0	1	-1
