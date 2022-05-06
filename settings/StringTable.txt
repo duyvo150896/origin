@@ -2550,7 +2550,7 @@ LOC_G_UNBINDEQUIP_CANNOT_START	Trang bÞ nµy kh«ng thÓ gi¶i khãa
 LOC_G_UNBINDEQUIP_PUTIN	H·y cho trang bÞ khãa vµo
 LOC_ENHANCE_SAFE_DETAIL	Sau khi c­êng hãa thÊt b¹i sÏ kh«ng rít cÊp
 LOC_ENHANCE_ITEM_DINGHUN	§Þnh Hån +%d
-LOC_ENHANCE_ITEM_MSG2PLAYER	Msg2Global(GetName()..'®· c­êng hãa thµnh c«ng %s ®Õn cÊp %d')
+
 LOC_KNIFE_STONNE_ITEM_COST	Mµi trang bÞ cÇn tiªu hao nguyªn liÖu 
 LOC_KNIFE_STONE_MONEY_COST	Mµi trang bÞ cÇn tiªu hao vµng
 LOC_MSG_USE_DUMMY_REVIVAL_OTHER	C¸c h¹ ®· sö dông ThÕ Th©n Phï, cã muèn håi sinh t¹i chç   %d  gi©y
