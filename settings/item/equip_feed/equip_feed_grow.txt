@@ -100,17 +100,51 @@ ID duy nhÊt	unuse line(2~10)	Gi¸ trÞ l­îng trang bÞ mang theo tæng thÓ
 90	Hoan L¨ng Ngoa	6000	248	1	1	249	1	1	250	1	1
 91	§»ng Giao Ngoa	6000	256	1	1	257	1	1	258	1	1
 92	Khëi Ph­îng Ngoa	6000	263	1	1	264	1	1	265	1	1
-100	Th«ng Thiªn Qu¸n	3000	300	0	0	301	0	0	302	0	0
-101	Th«ng Thiªn Bµo	3000	306	0	0	307	0	0	308	0	0
-102	Th«ng Thiªn Trang	3000	312	0	0	313	0	0	314	0	0
-103	Th«ng Thiªn Giíi	2000	318	0	0	319	0	0	320	0	0
-104	Th«ng Thiªn Béi	2000	324	0	0	325	0	0	326	0	0
-105	Vò KhÝ Th«ng Thiªn (Néi c«ng, néi kÝch )	3000	330	0	0	331	0	0	332	0	0
-106	Vò KhÝ Th«ng Thiªn (Søc m¹nh, ngo¹i c«ng)	3000	333	0	0	334	0	0	335	0	0
-107	Vò KhÝ Th«ng Thiªn (Th©n ph¸p, néi c«ng ®µn)	3000	339	0	0	340	0	0	341	0	0
-108	Vò KhÝ Th«ng Thiªn (S¸t th­¬ng linh ho¹t)	3000	342	0	0	343	0	0	344	0	0
-109	Vò KhÝ Th«ng Thiªn (S¸t th­¬ng th©n ph¸p)	3000	348	0	0	349	0	0	350	0	0
-110	Vò KhÝ Th«ng Thiªn (S¸t th­¬ng søc m¹nh)	3000	336	0	0	337	0	0	338	0	0
-111	H¾c B¹ch V« Song Kh«i	3000	354	0	0	357	0	0	358	0	0
-112	H¾c B¹ch V« Song Gi¸p	3000	355	0	0	357	0	0	358	0	0
-113	H¾c B¹ch V« Song Trang	3000	356	0	0	357	0	0	358	0	0
+93	TÝn VËt Bang Héi Lv16	6000	270	0	0	271	0	0	272	0	0
+94	TÝn VËt Bang Héi Lv17	6000	273	0	0	274	0	0	275	0	0
+95	TÝn VËt Bang Héi Lv18	6000	276	0	0	277	0	0	278	0	0
+96	TÝn VËt Bang Héi Lv19	6000	279	0	0	280	0	0	281	0	0
+97	TÝn VËt Bang Héi Lv20	6000	282	0	0	283	0	0	284	0	0
+98	§Çu S¸t Tinh	6000	285	0	0						
+99	¸o S¸t Tinh	6000	286	0	0						
+100	QuÇn S¸t Tinh	6000	287	0	0						
+101	Vò KhÝ S¸t Tinh (S¸t th­¬ng)	6000	316	0	0	317	0	0			
+102	Vò KhÝ S¸t Tinh (CÇm)	6000	314	0	0	317	0	0			
+103	Vò KhÝ S¸t Tinh (Néi c«ng )	6000	313	0	0	317	0	0			
+104	Vò KhÝ S¸t Tinh (Ngo¹i c«ng)	6000	315	0	0	317	0	0			
+105	Trang Søc S¸t Tinh	6000	309	0	0						
+110	Th«ng Thiªn Qu¸n	3000	340	0	0	341	0	0	342	0	0
+111	Th«ng Thiªn Bµo	3000	346	0	0	347	0	0	348	0	0
+112	Th«ng Thiªn Trang	3000	352	0	0	353	0	0	354	0	0
+113	Th«ng Thiªn Giíi	2000	358	0	0	359	0	0	360	0	0
+114	Th«ng Thiªn Béi	2000	364	0	0	365	0	0	366	0	0
+115	Vò KhÝ Th«ng Thiªn (Néi c«ng, néi kÝch )	3000	370	0	0	371	0	0	372	0	0
+116	Vò KhÝ Th«ng Thiªn (Søc m¹nh, ngo¹i c«ng)	3000	373	0	0	374	0	0	375	0	0
+117	Vò KhÝ Th«ng Thiªn (Th©n ph¸p, néi c«ng ®µn)	3000	379	0	0	380	0	0	381	0	0
+118	Vò KhÝ Th«ng Thiªn (S¸t th­¬ng linh ho¹t)	3000	382	0	0	383	0	0	384	0	0
+119	Vò KhÝ Th«ng Thiªn (S¸t th­¬ng th©n ph¸p)	3000	388	0	0	389	0	0	390	0	0
+120	Vò KhÝ Th«ng Thiªn (S¸t th­¬ng søc m¹nh)	3000	376	0	0	377	0	0	378	0	0
+121	H¾c B¹ch V« Song Kh«i	3000	394	0	0	397	0	0	398	0	0
+122	H¾c B¹ch V« Song Gi¸p	3000	395	0	0	397	0	0	398	0	0
+123	H¾c B¹ch V« Song Trang	3000	396	0	0	397	0	0	398	0	0
+124	Tö Kh¸ch M·o	6000	400	0	0	401	0	0	402	0	0
+125	Tö Kh¸ch Y	6000	403	0	0	404	0	0	405	0	0
+126	Tö Kh¸ch Trang	6000	406	0	0	407	0	0	408	0	0
+127	Tr¸c ViÖt - §Çu S¸t Tinh	6000	418	0	0	422	0	0	423	0	0
+128	Tr¸c ViÖt - ¸o S¸t Tinh	6000	419	0	0	422	0	0	423	0	0
+129	Tr¸c ViÖt - QuÇn S¸t Tinh	6000	420	0	0	422	0	0	423	0	0
+130	Tr¸c ViÖt - Vò KhÝ S¸t Tinh (S¸t th­¬ng)	6000	430	0	0	431	0	0			
+131	Tr¸c ViÖt - Vò KhÝ S¸t Tinh (CÇm)	6000	428	0	0	431	0	0			
+132	Tr¸c ViÖt - Vò KhÝ S¸t Tinh (Néi c«ng )	6000	427	0	0	431	0	0			
+133	Tr¸c ViÖt - Vò KhÝ S¸t Tinh (Ngo¹i c«ng)	6000	429	0	0	431	0	0			
+134	Tr¸c ViÖt - Trang Søc S¸t Tinh	6000	424	0	0						
+135	S¸t Lang Phi Phong	6000	434	1	1	435	1	1	436	1	1
+136	NhuÖ Nha Phi Phong	6000	442	1	1	443	1	1	444	1	1
+137	Méng S¸t Phi Phong	6000	449	1	1	450	1	1	451	1	1
+138	S¸t Lang Ch­¬ng	6000	434	1	1	435	1	1	436	1	1
+139	NhuÖ Nha Ch­¬ng	6000	442	1	1	443	1	1	444	1	1
+140	Méng S¸t Ch­¬ng	6000	449	1	1	450	1	1	451	1	1
+141	S¸t Lang Ngoa	6000	434	1	1	435	1	1	436	1	1
+142	NhuÖ Nha Ngoa	6000	442	1	1	443	1	1	444	1	1
+143	Méng S¸t Ngoa	6000	449	1	1	450	1	1	451	1	1
+144	B¸ch ChiÕn HuyÕt Phi-Chu	6000	456	0	0	457	0	0	458	0	0

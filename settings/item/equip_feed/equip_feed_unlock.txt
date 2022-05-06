@@ -74,11 +74,33 @@ ID	Name	EquipWorth	UnlockLv1	AttrGroup1	AttrLv1	UnlockLv2	AttrGroup2	AttrLv2	Unl
 64	Hoan L¨ng Ngoa	6000	4	251		8	252		12	255	
 65	§»ng Giao Ngoa	6000	4	259		8	260		12	262	
 66	Khëi Ph­îng Ngoa	6000	4	266		8	267		12	269	
-100	Th«ng Thiªn Qu¸n	3000	1	303		6	304		10	305	
-101	Th«ng Thiªn Bµo	3000	1	309		6	310		10	311	
-102	Th«ng Thiªn Trang	3000	1	315		6	316		10	317	
-103	Th«ng Thiªn Giíi	3000	1	321		6	322		10	323	
-104	Th«ng Thiªn Béi	3000	1	327		6	328		10	329	
-95	vò khÝ Èm huyÕt (néi)	3000	1	345		6	346		10	347	
-97	vò khÝ Èm huyÕt (ngo¹i)	3000	1	351		6	352		10	353	
-105	më khãa H¾c B¹ch V« Song	2000	10	359							
+67	§Çu S¸t Tinh	6000	1	288		6	289		10	290	
+68	¸o S¸t Tinh	6000	1	288		6	289		10	290	
+69	QuÇn S¸t Tinh	6000	1	288		6	289		10	290	
+70	Vò KhÝ S¸t Tinh	6000	1	318		6	319		10	320	
+71	Trang Søc S¸t Tinh	6000	1	310		6	311		10	312	
+100	Th«ng Thiªn Qu¸n	3000	1	343		6	344		10	345	
+101	Th«ng Thiªn Bµo	3000	1	349		6	350		10	351	
+102	Th«ng Thiªn Trang	3000	1	355		6	356		10	357	
+103	Th«ng Thiªn Giíi	3000	1	361		6	362		10	363	
+104	Th«ng Thiªn Béi	3000	1	367		6	368		10	369	
+95	vò khÝ Èm huyÕt (néi)	3000	1	385		6	386		10	387	
+97	vò khÝ Èm huyÕt (ngo¹i)	3000	1	391		6	392		10	393	
+105	më khãa H¾c B¹ch V« Song	2000	10	399							
+106	Tö Kh¸ch M·o	6000	1	409		6	410		10	411	
+107	Tö Kh¸ch Y	6000	1	412		6	413		10	414	
+108	Tö Kh¸ch Trang	6000	1	415		6	416		10	417	
+109	Tr¸c ViÖt - §Çu S¸t Tinh	6000	1	421		6	421		10	421	
+110	Tr¸c ViÖt - ¸o S¸t Tinh	6000	1	421		6	421		10	421	
+111	Tr¸c ViÖt - QuÇn S¸t Tinh	6000	1	421		6	421		10	421	
+112	Tr¸c ViÖt - Vò KhÝ S¸t Tinh	6000	1	432		6	432		10	432	
+113	Tr¸c ViÖt - Trang Søc S¸t Tinh	6000	1	425		6	425		10	425	
+114	S¸t Lang Phi Phong	6000	4	437		8	438		12	439	
+115	NhuÖ Nha Phi Phong	6000	4	445		8	446		12	447	
+116	Méng S¸t Phi Phong	6000	4	452		8	453		12	454	
+117	S¸t Lang Ch­¬ng	6000	4	437		8	438		12	440	
+118	NhuÖ Nha Ch­¬ng	6000	4	445		8	446		12	447	
+119	Méng S¸t Ch­¬ng	6000	4	452		8	453		12	454	
+120	S¸t Lang Ngoa	6000	4	437		8	438		12	441	
+121	NhuÖ Nha Ngoa	6000	4	445		8	446		12	449	
+122	Méng S¸t Ngoa	6000	4	452		8	453		12	455	
