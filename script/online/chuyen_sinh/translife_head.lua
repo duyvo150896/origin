@@ -230,9 +230,9 @@ tb_translife_cloth =
 							{"Chuy”n Sinh Trang", {0,110,514,1,1,4,306,4,102}},	
 						},
 				[5] = 	{
-							{"Chuy”n Sinh Trang", {0,108,514,1,1,6,389,3,329}},	
-							{"Chuy”n Sinh Trang", {0,109,514,1,1,5,342,3,329}},	
-							{"Chuy”n Sinh Trang", {0,110,514,1,1,6,306,3,329}},	
+							{"Chuy”n Sinh Trang", {1,1,6,389,3,329}},	
+							{"Chuy”n Sinh Trang", {1,1,5,342,3,329}},	
+							{"Chuy”n Sinh Trang", {1,1,6,306,3,329}},		
 						},
 			},
 				
@@ -261,9 +261,9 @@ tb_translife_cloth =
 							{"Chuy”n Sinh Trang", {0,110,514,1,1,4,79,4,80,4,102}},	
 						},
 				[5] =	{
-							{"Chuy”n Sinh Trang", {0,108,514,1,1,4,107,3,329}},	
-							{"Chuy”n Sinh Trang", {0,109,514,1,1,5,409,3,329}},	
-							{"Chuy”n Sinh Trang", {0,110,514,1,1,5,79,5,80,3,329}},	
+							{"Chuy”n Sinh Trang", {1,1,4,107,3,329}},	
+							{"Chuy”n Sinh Trang", {1,1,5,409,3,329}},	
+							{"Chuy”n Sinh Trang", {1,1,5,79,5,80,3,329}}	
 						},
 			},	
 
@@ -292,9 +292,9 @@ tb_translife_cloth =
 							{"Chuy”n Sinh Trang", {0,110,514,1,1,6,41,6,42,4,102}},	
 						},
 				[5] =	{
-							{"Chuy”n Sinh Trang", {0,108,514,1,1,4,27,3,329}},	
-							{"Chuy”n Sinh Trang", {0,109,514,1,1,5,342,3,329}},	
-							{"Chuy”n Sinh Trang", {0,110,514,1,1,4,292,4,293,3,329}},	
+							{"Chuy”n Sinh Trang", {1,1,4,27,3,329}},	
+							{"Chuy”n Sinh Trang", {1,1,5,342,3,329}},	
+							{"Chuy”n Sinh Trang", {1,1,4,292,4,293,3,329}},		
 						},
 			},
 				
@@ -323,9 +323,9 @@ tb_translife_cloth =
 							{"Chuy”n Sinh Trang", {0,110,514,1,1,4,306,4,102}},	
 						},
 				[5] =	{
-							{"Chuy”n Sinh Trang", {0,108,514,1,1,2,252,3,329}},	
-							{"Chuy”n Sinh Trang", {0,109,514,1,1,5,342,3,329}},	
-							{"Chuy”n Sinh Trang", {0,110,514,1,1,6,306,3,329}},	
+							{"Chuy”n Sinh Trang", {1,1,2,252,3,329}},	
+							{"Chuy”n Sinh Trang", {1,1,5,342,3,329}},	
+							{"Chuy”n Sinh Trang", {1,1,6,306,3,329}},		
 						},
 			},
 }
