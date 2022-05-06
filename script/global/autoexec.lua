@@ -106,7 +106,7 @@ function main()
 	Init_pet_fighting() -- Pet vs pet
 	Add_PetNpc() -- B¾c §Èu L·o Nh©n
 --	if GetGlbValue(GLB_TSK_SERVER_ID) == 58 then
---		Add_HoangHuynh()  -- NPC dua top Hoang Ung
+		Add_HoangHuynh()  -- NPC dua top Hoang Ung
 --	end
 	Add_GoldenCard_Manager(); -- B¸n code HKLB ingame
 	Add_XaPhu() -- ThuyÒn gia
@@ -129,9 +129,9 @@ function main()
 	Activity_Npc_Add_201209();--9ÔÂ»î¶¯NPC´´½¨
 	Qht_Activity_Event();--¼¤Õ½Ç§Ñ°Ëş
 	Bkl_baoruong() --B¹ch Kim LÖnh b¶o r­¬ng
-	if tonumber(date("%y%m%d")) >= 140124 and tonumber(date("%y%m%d")) <= 140203 then
-		tuyetanh_baoruong() --Quı Ngä(Tş) B¶o R­¬ng
-		chieuda_baoruong()
+	if tonumber(date("%y%m%d")) >= 140124 and tonumber(date("%y%m%d")) <= 230203 then
+		-- tuyetanh_baoruong() --Quı Ngä(Tş) B¶o R­¬ng
+		-- chieuda_baoruong()
 		xichtho_baoruong()
 	end
 	npcVanMay() --Npc tİnh n¨ng VËn May §¹o H÷u
@@ -155,7 +155,15 @@ function main()
 	_kf_create_npc_server_start()--¿ç·şÏà¹ØNPC´´½¨
 	Observer:onEvent(SYSEVENT_GAMESERVER_START, 0)
 	AddHeiYiZhuangShi();
+	NPCLuyenCong();
 end;
+
+function  NPCLuyenCong()
+	local npcindex  = CreateNpc("Phi YÕn Tiªn Tö","LuyÖn C«ng Tiªn N÷",  219, 1520, 2988)
+	SetNpcScript(npcindex, "\\script\\global\\npc_luyencong.lua")
+	local npcindex  = CreateNpc("Phi YÕn Tiªn Tö","LuyÖn C«ng Tiªn N÷",  350, 197*8, 176*16)
+	SetNpcScript(npcindex, "\\script\\global\\npc_luyencong.lua")
+end
 
 function ApplyRelayInitData()
 	GetBattleData(0,7)			-- È¡Õ½³¡ĞÅÏ¢
@@ -467,16 +475,16 @@ function Addcangjian()
     SetNpcScript(npcIndexcangjian1, "\\script\\²Ø½£É½×¯\\task_script\\³É¶¼\\²Ø½£Ê¹Õß.lua");
 
     local npcIndexcangjian2 = CreateNpc("V­¬ng An Th¹ch", "Sø gi¶ Tµng KiÕm", 200,1229,2762);
-    SetNpcScript(npcIndexcangjian2, "\\script\\²Ø½£É½×¯\\task_script\\ãê¾©\\²Ø½£Ê¹Õß.lua");
+    SetNpcScript(npcIndexcangjian2, "\\script\\²Ø½£É½×¯\\task_script\\³É¶¼\\²Ø½£Ê¹Õß.lua");
 
     local npcIndexcangjian3 = CreateNpc("V­¬ng An Th¹ch", "Sø gi¶ Tµng KiÕm", 100,1510,3106);
-    SetNpcScript(npcIndexcangjian3, "\\script\\²Ø½£É½×¯\\task_script\\ÈªÖİ\\²Ø½£Ê¹Õß.lua");
+    SetNpcScript(npcIndexcangjian3, "\\script\\²Ø½£É½×¯\\task_script\\³É¶¼\\²Ø½£Ê¹Õß.lua");
 
     local npcIndexcangjian4 = CreateNpc("V­¬ng An Th¹ch", "Sø gi¶ Tµng KiÕm", 350,1395,2851);
-    SetNpcScript(npcIndexcangjian4, "\\script\\²Ø½£É½×¯\\task_script\\ÏåÑô\\²Ø½£Ê¹Õß.lua");
+    SetNpcScript(npcIndexcangjian4, "\\script\\²Ø½£É½×¯\\task_script\\³É¶¼\\²Ø½£Ê¹Õß.lua");
 
     local npcIndexcangjian5 = CreateNpc("V­¬ng An Th¹ch", "Sø gi¶ Tµng KiÕm", 150,1745,3119);
-    SetNpcScript(npcIndexcangjian5, "\\script\\²Ø½£É½×¯\\task_script\\ÑïÖİ\\²Ø½£Ê¹Õß.lua");
+    SetNpcScript(npcIndexcangjian5, "\\script\\²Ø½£É½×¯\\task_script\\³É¶¼\\²Ø½£Ê¹Õß.lua");
 
 end;
 
@@ -678,7 +686,16 @@ function Addxinan()
     SetNpcScript(npcIndexxinan51, "\\script\\Î÷ÄÏÇø\\´óÀí¸®\\npc\\Ò©µêÀÏ°å.lua");
 
     local npcIndexxinan52 = CreateNpc("Vâ L©m Minh Chñ1", "Sø gi¶ m«n ph¸i", 400,1548,2981);
-    SetNpcScript(npcIndexxinan52, "\\script\\Î÷ÄÏÇø\\´óÀí¸®\\npc\\ÃÅÅÉ½ÓÒıÈË.lua");
+    SetNpcScript(npcIndexxinan52, "\\script\\xaphu.lua");
+
+    local npcIndexxinan52_1 = CreateNpc("Vâ L©m Minh Chñ1", "Sø gi¶ m«n ph¸i Free", 300,1798,3536);
+    SetNpcScript(npcIndexxinan52_1, "\\script\\xaphu.lua");
+
+    local npcIndexxinan52_2 = CreateNpc("Vâ L©m Minh Chñ1", "Sø gi¶ m«n ph¸i Free", 200,1404,2835);
+    SetNpcScript(npcIndexxinan52_2, "\\script\\xaphu.lua");
+
+    local npcIndexxinan52_3 = CreateNpc("HiÖp n÷", "MÌo Xinh", 100,1456,2960);
+    SetNpcScript(npcIndexxinan52_3, "\\script\\xaphu.lua");
 
     local npcIndexxinan53 = CreateNpc("Chñ tiÖm vò khİ T©y Nam", "Chñ TiÖm Nam phôc", 400,1471,2956);
     SetNpcScript(npcIndexxinan53, "\\script\\Î÷ÄÏÇø\\´óÀí¸®\\npc\\ÄĞ×°µêÀÏ°å.lua");
@@ -947,7 +964,7 @@ function ZgcNpcCreate()
 	--npc_index = CreateNpc("Giang hå tuÊn kiÖt","Tiªu ViÔn L©u",200,1409,2772);	--ãê¾©£º176,173
 	--npc_index = CreateNpc("Chñ qu¶n Háa Khİ phßng","TiÓu Ngäc",350,1469,2970);	
 	npc_index = CreateNpc("Chñ qu¶n Háa Khİ phßng","TiÓu Ngäc",200,1377,2895);		
-	SetNpcScript(npc_index, "\\script\\ÖĞÔ­Ò»Çø\\ãê¾©\\npc\\ÏôÔ¶Â¥.lua")
+	SetNpcScript(npc_index, "\\script\\battles\\battlejoin2.lua")
 	--npc_index = CreateNpc("Giang hå tuÊn kiÖt","Tiªu ViÔn L©u",200,1402,2918);	--ãê¾©£º175,182
 	--SetNpcScript(npc_index, "\\script\\ÖĞÔ­Ò»Çø\\ãê¾©\\npc\\ÏôÔ¶Â¥.lua")
 	--*****************************NPCĞÅÏ¢±í*********************************
@@ -2316,8 +2333,8 @@ function dialog_npc_create()
 	SetNpcScript(nNpcIndex,"\\script\\½­ÄÏÇø\\ÁúÈª´å\\npc\\ÕÅ´óÓÑ.lua");
 	nNpcIndex = CreateNpc("C«ng t¾c nguyÖt l­îng","C«ng t¾c nguyÖt l­îng",111,1665,2826);
 	SetNpcScript(nNpcIndex,"\\script\\task\\npc\\ÔÂÁÁ»ú¹Ø.lua");
-	nNpcIndex = CreateNpc("Nh¹c BÊt QuÇn","Nh¹c BÊt QuÇn",502,1682,3102);
-	SetNpcScript(nNpcIndex,"\\script\\Î÷±±Çø\\»ªÉ½\\npc\\ÔÀ²»Èº.lua");
+	-- nNpcIndex = CreateNpc("Nh¹c BÊt QuÇn","Nh¹c BÊt QuÇn",502,1682,3102);
+	-- SetNpcScript(nNpcIndex,"\\script\\Î÷±±Çø\\»ªÉ½\\npc\\ÔÀ²»Èº.lua");
 	nNpcIndex = CreateNpc("D­¬ng M«n ®Ö tö","D­¬ng M«n ®Ö tö",6012,1588,3207);
 	SetNpcScript(nNpcIndex,"\\script\\ÊÀ½çµØÍ¼\\ÉÙÁÖÒéÊÂÌü\\ÑîÃÅµÜ×Ó.lua");
 	nNpcIndex = CreateNpc("Nh¹n Kha","Nh¹n Kha",218,1627,3245);
@@ -2603,15 +2620,15 @@ end
 function shenghuotai_npc_create()
 	if oly_IsActivityOpen() == 1 then
 		local npcIndex = CreateNpc("aoyunshenghuotai","Th¸nh Háa TuyÒn Ch©u",100,1327,3077);
-		SetNpcScript(npcIndex,"\\script\\online\\olympic\\npc\\red_sh.lua");
+		SetNpcScript(npcIndex,"\\script\\online\\olympic\\npc\\wuhuan_sh.lua");
 		local npcIndex = CreateNpc("aoyunshenghuotai","Th¸nh Háa §¹i Lı",400,1444,2876);
-		SetNpcScript(npcIndex,"\\script\\online\\olympic\\npc\\black_sh.lua");
+		SetNpcScript(npcIndex,"\\script\\online\\olympic\\npc\\wuhuan_sh.lua");
 		local npcIndex = CreateNpc("aoyunshenghuotai","Th¸nh Háa Thµnh §«",300,1853,3553);
-		SetNpcScript(npcIndex,"\\script\\online\\olympic\\npc\\green_sh.lua");
+		SetNpcScript(npcIndex,"\\script\\online\\olympic\\npc\\wuhuan_sh.lua");
 		local npcIndex = CreateNpc("aoyunshenghuotai","Th¸nh Háa Ph­îng T­êng",500,1768,3136);
-		SetNpcScript(npcIndex,"\\script\\online\\olympic\\npc\\yellow_sh.lua");
+		SetNpcScript(npcIndex,"\\script\\online\\olympic\\npc\\wuhuan_sh.lua");
 		local npcIndex = CreateNpc("aoyunshenghuotai","Th¸nh Háa T­¬ng D­¬ng ",350,1431,2810);
-		SetNpcScript(npcIndex,"\\script\\online\\olympic\\npc\\blue_sh.lua");
+		SetNpcScript(npcIndex,"\\script\\online\\olympic\\npc\\wuhuan_sh.lua");
 		local npcIndex = CreateNpc("aoyunshenghuotai","Th¸nh Háa BiÖn Kinh",200,1470,2778);
 		SetNpcScript(npcIndex,"\\script\\online\\olympic\\npc\\wuhuan_sh.lua");
 	end
@@ -2690,15 +2707,18 @@ end
 
 function tuyetanh_baoruong()	--QuyTy_baoruong
 	local tbQT_BaoRuong_Pos = {
-					{100, 1289, 3105},	--TuyÖt ¶nh
-					{100, 1294, 3109}, 
-					{100, 1302, 3115},
-					{100, 1304, 3101},
-					{500, 1810, 3014},
-					{500, 1810, 2996},
-					{500, 1803, 3007},
-					{500, 1816, 3003},
-					{400, 1400, 2934},
+					-- {100, 1289, 3105},	--TuyÖt ¶nh
+					-- {100, 1294, 3109}, 
+					-- {100, 1302, 3115},
+					-- {100, 1304, 3101},
+					-- {500, 1810, 3014},
+					-- {500, 1810, 2996},
+					-- {500, 1803, 3007},
+					-- {500, 1816, 3003},					{400, 1400, 2934},
+					{200, 1400, 2706},
+					{200, 1400, 2712},
+					{200, 1410, 2706},
+					{200, 1410, 2712},
 			}
 	for i = 1, getn(tbQT_BaoRuong_Pos) do
 		local npcIndex = CreateNpc("R­¬ng tiÒn","TuyÖt ¶nh Bİ B¶o",tbQT_BaoRuong_Pos[i][1],tbQT_BaoRuong_Pos[i][2],tbQT_BaoRuong_Pos[i][3]);
@@ -2724,14 +2744,16 @@ function chieuda_baoruong()
 end
 function xichtho_baoruong()	
 	local tbQT_BaoRuong_Pos = {
-					{200, 1439, 2716},	-- Xİch Thè
+					{200, 1439, 2716},-- X?h Th?
 					{200, 1445, 2722},
 					{200, 1438, 2728},
-					{200, 1430, 2722},	
-					{150, 1772, 3118}, 		
-					{150, 1772, 3129}, 		
-					{150, 1784, 3129}, 		
-					{150, 1783, 3116}, 		
+					{200, 1430, 2722},
+					{200, 1420, 2706},
+					{200, 1420, 2712},
+					{150, 1772, 3118}, 
+					{150, 1772, 3129}, 
+					{150, 1784, 3129}, 
+					{150, 1783, 3116}, 
 					{400, 1412, 2915},		
 			}
 	for i = 1, getn(tbQT_BaoRuong_Pos) do
