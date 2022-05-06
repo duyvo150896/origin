@@ -1,8 +1,63 @@
 MaxLevel	Attribute_1	Event_1	LastTime_1	Value_1	Rate_1	Attribute_2	Event_2	LastTime_2	Value_2	Rate_2	Attribute_3	Event_3	LastTime_3	Value_3	Rate_3	ActiveTime	Description
-7	state_life_max_point_add			5000,35000													T¨ng Sinh lùc /1
-7	state_add_vitality			60,420													G©n cèt t¨ng: /1 
-7	state_add_strength			60,420													Søc m¹nh t¨ng /1 
-7	state_add_dexterity			60,420													Th©n ph¸p t¨ng: /1 
-7	state_add_observe			60,420													Linh ho¹t t¨ng /1 
-7	state_add_energy			60,420													Néi c«ng t¨ng /1 
-7	state_add_allability			30,210													Kh¸ng tÊt c¶ t¨ng: /1 
+7	state_life_max_point_add			5000,35000													ÉúÃüÉÏÏŞÔö¼Ó/1
+7	state_add_vitality			60,420													¸ù¹ÇÔö¼Ó/1
+7	state_add_strength			60,420													Á¦Á¿Ôö¼Ó/1
+7	state_add_dexterity			60,420													Éí·¨Ôö¼Ó/1
+7	state_add_observe			60,420													¶´²ìÔö¼Ó/1
+7	state_add_energy			60,420													ÄÚ¹¦Ôö¼Ó/1
+7	state_add_allability			30,210													ËùÓĞÊôĞÔÔö¼Ó/1
+1	state_npc_event_2_magic			65536580,65536580		state_diffuse_skill_effect			1741291570,1741291570		state_diffuse_skill_effect			1740636210,1740636210			±»¹¥»÷Ê±ÓĞ6%¸ÅÂÊÃ¿°ëÃë»Ø¸´3%ÉúÃü,³ÖĞø5Ãë<enter>ÖÜÎ§ÓÑ¾üÉúÃüÉÏÏŞÌá¸ß5%<enter>ÖÜÎ§ÓÑ¾üÊ©Õ¹ËÙ¶ÈÌá¸ß5%
+1	state_npc_event_2_magic			65536610,65536610													±»¹¥»÷Ê±ÓĞ5%¸ÅÂÊÃ¿°ëÃë»Ø¸´2.5%ÉúÃü,³ÖĞø5Ãë
+1	state_npc_event_2_magic			65536640,65536640													±»¹¥»÷Ê±ÓĞ4%¸ÅÂÊÃ¿°ëÃë»Ø¸´2%ÉúÃü,³ÖĞø5Ãë
+1	state_npc_event_2_magic			65536670,65536670													±»¹¥»÷Ê±ÓĞ3%¸ÅÂÊÃ¿°ëÃë»Ø¸´1.5%ÉúÃü,³ÖĞø5Ãë
+1	state_npc_event_2_magic			65536700,65536700													±»¹¥»÷Ê±ÓĞ2%¸ÅÂÊÃ¿°ëÃë»Ø¸´1%ÉúÃü,³ÖĞø5Ãë
+1	state_npc_event_2_magic			65536730,65536730													±»¹¥»÷Ê±ÓĞ1%¸ÅÂÊÃ¿°ëÃë»Ø¸´0.5%ÉúÃü,³ÖĞø5Ãë
+1	state_npc_event_2_magic			65536590,65536590		state_diffuse_skill_effect			1741291570,1741291570		state_diffuse_skill_effect			1740636210,1740636210			±»¹¥»÷Ê±ÓĞ12%¸ÅÂÊÌá¸ß°Á¹ÇµãÊı100µã,³ÖĞø5Ãë<enter>ÖÜÎ§ÓÑ¾üÉúÃüÉÏÏŞÌá¸ß5%<enter>ÖÜÎ§ÓÑ¾üÊ©Õ¹ËÙ¶ÈÌá¸ß5%
+1	state_npc_event_2_magic			65536620,65536620													±»¹¥»÷Ê±ÓĞ10%¸ÅÂÊÌá¸ß°Á¹ÇµãÊı100µã,³ÖĞø5Ãë
+1	state_npc_event_2_magic			65536650,65536650													±»¹¥»÷Ê±ÓĞ8%¸ÅÂÊÌá¸ß°Á¹ÇµãÊı100µã,³ÖĞø5Ãë
+1	state_npc_event_2_magic			65536680,65536680													±»¹¥»÷Ê±ÓĞ6%¸ÅÂÊÌá¸ß°Á¹ÇµãÊı100µã,³ÖĞø5Ãë
+1	state_npc_event_2_magic			65536710,65536710													±»¹¥»÷Ê±ÓĞ4%¸ÅÂÊÌá¸ß°Á¹ÇµãÊı100µã,³ÖĞø5Ãë
+1	state_npc_event_2_magic			65536740,65536740													±»¹¥»÷Ê±ÓĞ2%¸ÅÂÊÌá¸ß°Á¹ÇµãÊı100µã,³ÖĞø5Ãë
+1	state_npc_event_2_magic			65536600,65536600		state_diffuse_skill_effect			1741291570,1741291570		state_diffuse_skill_effect			1740636210,1740636210			¹¥»÷Ê±ÓĞ12%¼õÉÙÄ¿±ê40µã»¤¼×,³ÖĞø5Ãë<enter>ÖÜÎ§ÓÑ¾üÉúÃüÉÏÏŞÌá¸ß5%<enter>ÖÜÎ§ÓÑ¾üÊ©Õ¹ËÙ¶ÈÌá¸ß5%
+1	state_npc_event_2_magic			65536630,65536630													¹¥»÷Ê±ÓĞ10%¼õÉÙÄ¿±ê40µã»¤¼×,³ÖĞø5Ãë
+1	state_npc_event_2_magic			65536660,65536660													¹¥»÷Ê±ÓĞ8%¼õÉÙÄ¿±ê40µã»¤¼×,³ÖĞø5Ãë
+1	state_npc_event_2_magic			65536690,65536690													¹¥»÷Ê±ÓĞ6%¼õÉÙÄ¿±ê40µã»¤¼×,³ÖĞø5Ãë
+1	state_npc_event_2_magic			65536620,65536620													¹¥»÷Ê±ÓĞ4%¼õÉÙÄ¿±ê40µã»¤¼×,³ÖĞø5Ãë
+1	state_npc_event_2_magic			65536650,65536650													¹¥»÷Ê±ÓĞ2%¼õÉÙÄ¿±ê40µã»¤¼×,³ÖĞø5Ãë
+1	state_aogu_point_add			400,400		state_element_all_attack_point_add			200,200		state_element_all_defend_point_add			200,200			°Á¹ÇµãÊıÔö¼Ó/1<enter>È«ÎåĞĞ¹¥·ÀÊôĞÔÔö¼Ó/2
+1	state_aogu_point_add			360,360		state_element_all_attack_point_add			150,150		state_element_all_defend_point_add			150,150			°Á¹ÇµãÊıÔö¼Ó/1<enter>È«ÎåĞĞ¹¥·ÀÊôĞÔÔö¼Ó/2
+1	state_aogu_point_add			320,320		state_element_all_attack_point_add			120,120		state_element_all_defend_point_add			120,120			°Á¹ÇµãÊıÔö¼Ó/1<enter>È«ÎåĞĞ¹¥·ÀÊôĞÔÔö¼Ó/2
+1	state_aogu_point_add			300,300		state_element_all_attack_point_add			120,120		state_element_all_defend_point_add			120,120			°Á¹ÇµãÊıÔö¼Ó/1<enter>È«ÎåĞĞ¹¥·ÀÊôĞÔÔö¼Ó/2
+1	state_aogu_point_add			280,280		state_element_all_attack_point_add			100,100		state_element_all_defend_point_add			100,100			°Á¹ÇµãÊıÔö¼Ó/1<enter>È«ÎåĞĞ¹¥·ÀÊôĞÔÔö¼Ó/2
+1	state_aogu_point_add			260,260		state_element_all_attack_point_add			100,100		state_element_all_defend_point_add			100,100			°Á¹ÇµãÊıÔö¼Ó/1<enter>È«ÎåĞĞ¹¥·ÀÊôĞÔÔö¼Ó/2
+1	state_aogu_point_add			240,240		state_element_all_attack_point_add			80,80		state_element_all_defend_point_add			80,80			°Á¹ÇµãÊıÔö¼Ó/1<enter>È«ÎåĞĞ¹¥·ÀÊôĞÔÔö¼Ó/2
+1	state_aogu_point_add			220,220		state_element_all_attack_point_add			80,80		state_element_all_defend_point_add			80,80			°Á¹ÇµãÊıÔö¼Ó/1<enter>È«ÎåĞĞ¹¥·ÀÊôĞÔÔö¼Ó/2
+1	state_aogu_point_add			200,200		state_element_all_attack_point_add			60,60		state_element_all_defend_point_add			60,60			°Á¹ÇµãÊıÔö¼Ó/1<enter>È«ÎåĞĞ¹¥·ÀÊôĞÔÔö¼Ó/2
+1	state_aogu_point_add			180,180		state_element_all_attack_point_add			60,60		state_element_all_defend_point_add			60,60			°Á¹ÇµãÊıÔö¼Ó/1<enter>È«ÎåĞĞ¹¥·ÀÊôĞÔÔö¼Ó/2
+1	state_aogu_point_add			160,160		state_element_all_attack_point_add			40,40		state_element_all_defend_point_add			40,40			°Á¹ÇµãÊıÔö¼Ó/1<enter>È«ÎåĞĞ¹¥·ÀÊôĞÔÔö¼Ó/2
+1	state_aogu_point_add			140,140		state_element_all_attack_point_add			40,40		state_element_all_defend_point_add			40,40			°Á¹ÇµãÊıÔö¼Ó/1<enter>È«ÎåĞĞ¹¥·ÀÊôĞÔÔö¼Ó/2
+1	state_aogu_point_add			120,120		state_element_all_attack_point_add			30,30		state_element_all_defend_point_add			30,30			°Á¹ÇµãÊıÔö¼Ó/1<enter>È«ÎåĞĞ¹¥·ÀÊôĞÔÔö¼Ó/2
+1	state_aogu_point_add			100,100		state_element_all_attack_point_add			30,30		state_element_all_defend_point_add			30,30			°Á¹ÇµãÊıÔö¼Ó/1<enter>È«ÎåĞĞ¹¥·ÀÊôĞÔÔö¼Ó/2
+1	state_aogu_point_add			80,80		state_element_all_attack_point_add			20,20		state_element_all_defend_point_add			20,20			°Á¹ÇµãÊıÔö¼Ó/1<enter>È«ÎåĞĞ¹¥·ÀÊôĞÔÔö¼Ó/2
+1	state_aogu_point_add			60,60		state_element_all_attack_point_add			20,20		state_element_all_defend_point_add			20,20			°Á¹ÇµãÊıÔö¼Ó/1<enter>È«ÎåĞĞ¹¥·ÀÊôĞÔÔö¼Ó/2
+1	state_aogu_point_add			40,40		state_element_all_attack_point_add			10,10		state_element_all_defend_point_add			10,10			°Á¹ÇµãÊıÔö¼Ó/1<enter>È«ÎåĞĞ¹¥·ÀÊôĞÔÔö¼Ó/2
+1	state_aogu_point_add			20,20		state_element_all_attack_point_add			10,10		state_element_all_defend_point_add			10,10			°Á¹ÇµãÊıÔö¼Ó/1<enter>È«ÎåĞĞ¹¥·ÀÊôĞÔÔö¼Ó/2
+1	state_m_attack_percent_add			50,50		state_p_attack_percent_add			50,50		state_damage_point			1000,1000			ÄÚÍâ¹¥ÉËº¦Ìá¸ß/1%<enter>ÉËº¦Ôö¼Ó/3
+4	state_m_attack_percent_add			10,40		state_p_attack_percent_add			10,40		state_damage_point			200,800			ÄÚÍâ¹¥ÉËº¦Ìá¸ß/1%<enter>ÉËº¦Ôö¼Ó/3
+1	state_aogu_point_add			320,320		state_element_all_attack_point_add			100,100		state_element_all_defend_point_add			100,100			°Á¹ÇµãÊıÔö¼Ó/1<enter>È«ÎåĞĞ¹¥·ÀÊôĞÔÔö¼Ó/2
+1	state_aogu_point_add			280,280		state_element_all_attack_point_add			80,80		state_element_all_defend_point_add			80,80			°Á¹ÇµãÊıÔö¼Ó/1<enter>È«ÎåĞĞ¹¥·ÀÊôĞÔÔö¼Ó/2
+1	state_aogu_point_add			260,260		state_element_all_attack_point_add			80,80		state_element_all_defend_point_add			80,80			°Á¹ÇµãÊıÔö¼Ó/1<enter>È«ÎåĞĞ¹¥·ÀÊôĞÔÔö¼Ó/2
+1	state_aogu_point_add			240,240		state_element_all_attack_point_add			80,80		state_element_all_defend_point_add			80,80			°Á¹ÇµãÊıÔö¼Ó/1<enter>È«ÎåĞĞ¹¥·ÀÊôĞÔÔö¼Ó/2
+1	state_aogu_point_add			220,220		state_element_all_attack_point_add			60,60		state_element_all_defend_point_add			60,60			°Á¹ÇµãÊıÔö¼Ó/1<enter>È«ÎåĞĞ¹¥·ÀÊôĞÔÔö¼Ó/2
+1	state_aogu_point_add			200,200		state_element_all_attack_point_add			60,60		state_element_all_defend_point_add			60,60			°Á¹ÇµãÊıÔö¼Ó/1<enter>È«ÎåĞĞ¹¥·ÀÊôĞÔÔö¼Ó/2
+1	state_aogu_point_add			180,180		state_element_all_attack_point_add			40,40		state_element_all_defend_point_add			40,40			°Á¹ÇµãÊıÔö¼Ó/1<enter>È«ÎåĞĞ¹¥·ÀÊôĞÔÔö¼Ó/2
+1	state_aogu_point_add			160,160		state_element_all_attack_point_add			40,40		state_element_all_defend_point_add			40,40			°Á¹ÇµãÊıÔö¼Ó/1<enter>È«ÎåĞĞ¹¥·ÀÊôĞÔÔö¼Ó/2
+1	state_aogu_point_add			140,140		state_element_all_attack_point_add			30,30		state_element_all_defend_point_add			30,30			°Á¹ÇµãÊıÔö¼Ó/1<enter>È«ÎåĞĞ¹¥·ÀÊôĞÔÔö¼Ó/2
+1	state_aogu_point_add			120,120		state_element_all_attack_point_add			30,30		state_element_all_defend_point_add			30,30			°Á¹ÇµãÊıÔö¼Ó/1<enter>È«ÎåĞĞ¹¥·ÀÊôĞÔÔö¼Ó/2
+1	state_aogu_point_add			100,100		state_element_all_attack_point_add			20,20		state_element_all_defend_point_add			20,20			°Á¹ÇµãÊıÔö¼Ó/1<enter>È«ÎåĞĞ¹¥·ÀÊôĞÔÔö¼Ó/2
+1	state_aogu_point_add			80,80		state_element_all_attack_point_add			20,20		state_element_all_defend_point_add			20,20			°Á¹ÇµãÊıÔö¼Ó/1<enter>È«ÎåĞĞ¹¥·ÀÊôĞÔÔö¼Ó/2
+1	state_aogu_point_add			60,60		state_element_all_attack_point_add			10,10		state_element_all_defend_point_add			10,10			°Á¹ÇµãÊıÔö¼Ó/1<enter>È«ÎåĞĞ¹¥·ÀÊôĞÔÔö¼Ó/2
+1	state_aogu_point_add			40,40		state_element_all_attack_point_add			10,10		state_element_all_defend_point_add			10,10			°Á¹ÇµãÊıÔö¼Ó/1<enter>È«ÎåĞĞ¹¥·ÀÊôĞÔÔö¼Ó/2
+1	state_aogu_point_add			30,30		state_element_all_attack_point_add			10,10		state_element_all_defend_point_add			10,10			°Á¹ÇµãÊıÔö¼Ó/1<enter>È«ÎåĞĞ¹¥·ÀÊôĞÔÔö¼Ó/2
+1	state_aogu_point_add			20,20		state_element_all_attack_point_add			10,10		state_element_all_defend_point_add			10,10			°Á¹ÇµãÊıÔö¼Ó/1<enter>È«ÎåĞĞ¹¥·ÀÊôĞÔÔö¼Ó/2
+1	state_aogu_point_add			10,10		state_element_all_attack_point_add			10,10		state_element_all_defend_point_add			10,10			°Á¹ÇµãÊıÔö¼Ó/1<enter>È«ÎåĞĞ¹¥·ÀÊôĞÔÔö¼Ó/2

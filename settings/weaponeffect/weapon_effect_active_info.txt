@@ -11,3 +11,6 @@ WeaponDetailType	ActiveAniOnHorse	ActiveAniNotOnHorse	ActiveSoundDelay	ActiveEff
 9		特效开启_笔	36	36
 10		特效开启_琴	36	36
 11		特效开启_爪	36	36
+12		特效开启_笛	36	36
+13		特效开启_灵枝	72	72
+14		杀意	18	18
