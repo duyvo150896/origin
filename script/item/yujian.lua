@@ -6,9 +6,39 @@
 --´úÂëÐÞ¸Ä¼ÇÂ¼
 
 g_tInfo = {
+	[30190]	= {
+		tItem		= {0, 105, 30190},
+		nEffectID	= 190,
+		tLimitSkill	= {20},
+		bLimitInteractive	= 1;
+		},
+	[30143]	= {
+		tItem		= {0, 105, 30143},
+		nEffectID	= 147,
+		tLimitSkill	= {20},
+		bLimitInteractive	= 1;
+		},
+	[30149]	= {
+		tItem		= {0, 105, 30149},
+		nEffectID	= 144,
+		tLimitSkill	= {20},
+		bLimitInteractive	= 1;
+		},
+	[30150]	= {
+		tItem		= {0, 105, 30150},
+		nEffectID	= 145,
+		tLimitSkill	= {20},
+		bLimitInteractive	= 1;
+		},
+	[30151]	= {
+		tItem		= {0, 105, 30151},
+		nEffectID	= 146,
+		tLimitSkill	= {20},
+		bLimitInteractive	= 1;
+		},
 	[10107]	= {
 		tItem		= {0, 105, 10107},
-		nEffectID	= 1,
+		nEffectID	=1,
 		tLimitSkill	= {20},
 		bLimitInteractive	= 1;
 		},
@@ -188,7 +218,92 @@ g_tInfo = {
 		tLimitSkill	= {20},
 		bLimitInteractive	= 1,
 	},
+  [211]	= {
+		tItem		= {0, 105, 211},
+		nEffectID	= 211,
+		tLimitSkill	= {20},
+		bLimitInteractive	= 1;
+	},
+
+  [212]	= {
+		tItem		= {0, 105, 212},
+		nEffectID	= 212,
+		tLimitSkill	= {20},
+		bLimitInteractive	= 1;
+	},
+
+  [213]	= {
+		tItem		= {0, 105, 213},
+		nEffectID	= 213,
+		tLimitSkill	= {20},
+		bLimitInteractive	= 1;
+	},
+
+  [214]	= {
+		tItem		= {0, 105, 214},
+		nEffectID	= 214,
+		tLimitSkill	= {20},
+		bLimitInteractive	= 1;
+	},
+  [215]	= {
+		tItem		= {0, 105, 215},
+		nEffectID	= 215,
+		tLimitSkill	= {20},
+		bLimitInteractive	= 1;
+	},
+       [216]	= {
+		tItem		= {0, 105, 216},
+		nEffectID	= 216,
+		tLimitSkill	= {20},
+		bLimitInteractive	= 1;
+	},
+       [217]	= {
+		tItem		= {0, 105, 217},
+		nEffectID	= 217,
+		tLimitSkill	= {20},
+		bLimitInteractive	= 1;
+	},
+
+       [218]	= {
+		tItem		= {0, 105, 218},
+		nEffectID	= 218,
+		tLimitSkill	= {20},
+		bLimitInteractive	= 1;
+	},
+       [219]	= {
+		tItem		= {0, 105, 219},
+		nEffectID	= 219,
+		tLimitSkill	= {20},
+		bLimitInteractive	= 1;
+	},
+       [220]	= {
+		tItem		= {0, 105, 220},
+		nEffectID	= 220,
+		tLimitSkill	= {20},
+		bLimitInteractive	= 1;
+	},
+       [221]	= {
+		tItem		= {0, 105, 221},
+		nEffectID	= 221,
+		tLimitSkill	= {20},
+		bLimitInteractive	= 1;
+	},
+       [222]	= {
+		tItem		= {0, 105, 222},
+		nEffectID	= 222,
+		tLimitSkill	= {20},
+		bLimitInteractive	= 1;
+	},
+       [223]	= {
+		tItem		= {0, 105, 223},
+		nEffectID	= 223,
+		tLimitSkill	= {20},
+		bLimitInteractive	= 1;
+	},
+
 };
+
+
 
 function OnEquip(nItemIndex)
 	local nG, nD, nP	= GetItemInfoByIndex(nItemIndex);
@@ -203,7 +318,8 @@ function OnEquip(nItemIndex)
 	end
 
 	if tInfo.nEffectID then
-		SetHorseEffect(tInfo.nEffectID);
+ SetHorseEffect(tInfo.nEffectID);
+    
 	end
 
 	if tInfo.tLimitSkill then
