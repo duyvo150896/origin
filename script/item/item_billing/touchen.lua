@@ -57,7 +57,7 @@ function kick_off()
 		return
 	end
 	SetTask(TSK_EXCHANGE_JUNGONG_TIME,nCurTime)
-	Say("Kİch ho¹t sö dông vËt phÈm thµnh c«ng. Sau 72 giê b¹n cã thÓ sö dông vËt phÈm nµy.",0)
+	Say("Kİch ho¹t sö dông vËt phÈm thµnh c«ng. Sau 0.5 giê b¹n cã thÓ sö dông vËt phÈm nµy.",0)
 	WriteLogEx("Chuyen doi cong trang","kİch ho¹t sö dông",tonumber(date("%Y%m%d%H%M")))
 end
 
@@ -84,8 +84,8 @@ function use(nItemIdx,nType)
 		Say("B¹n ch­a kİch ho¹t sö dông vËt phÈm nµy!",0)
 		return
 	end	
-	if GetTime() - GetTask(TSK_EXCHANGE_JUNGONG_TIME) < 72*60*60 then
-		Say("Thêi gian kİch ho¹t vËt phÈm ch­a ®ñ 72 giê!",0)
+	if GetTime() - GetTask(TSK_EXCHANGE_JUNGONG_TIME) < 30*60 then
+		Say("Thêi gian kİch ho¹t vËt phÈm ch­a ®ñ 30 phót!",0)
 		return
 	end
 	if GetTime() - GetTask(TSK_EXCHANGE_JUNGONG_TIME) > 96*60*60 then
