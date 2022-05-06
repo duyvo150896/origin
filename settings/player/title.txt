@@ -345,3 +345,13 @@ GENRE	DETAIL_TYPE	CONTENT	UNREPLACABLE	UNREMOVABLE	VERSION	EXPIRE	TYPE	SCRIPTFIL
 68	2	L∑o Chi’n H˜u	0	0	0	0	3	\script\global\playertitle.lua	Equip	UnEquip	\UImage\ŒÂ––Õº±Í\≥∆∫≈.spr	
 68	3	Ng≠Íi N®ng ßÈng	0	0	0	0	3	\script\global\playertitle.lua	Equip	UnEquip	\UImage\ŒÂ––Õº±Í\≥∆∫≈.spr	
 68	4	Nhi÷m VÙ ßπt Nh©n	0	0	0	0	3	\script\global\playertitle.lua	Equip	UnEquip	\UImage\ŒÂ––Õº±Í\≥∆∫≈.spr	
+70	1	Ch¯ng NhÀn 2 L≠ng	0	0	0	0	5	\script\global\playertitle.lua	Equip	UnEquip	\image\loli.spr
+70	2	Th›ch ßËt Ti“n	0	0	0	0	5	\script\global\playertitle.lua	Equip	UnEquip	\hieuloli\thichdotien.spr
+70	3	Thıa Ti“n ßπi S≠	0	0	0	0	5	\script\global\playertitle.lua	Equip	UnEquip	\hieuloli\thuatien.spr
+70	4	Di÷t Hæc Tinh	0	0	0	0	5	\script\global\playertitle.lua	Equip	UnEquip	\hieuloli\diethactinh.spr
+70	5	CÊ MÈ Team	0	0	0	0	5	\script\global\playertitle.lua	Equip	UnEquip	\hieuloli\comoteam.spr
+70	6	Kh–t L—t Team	0	0	0	0	5	\script\global\playertitle.lua	Equip	UnEquip	\hieuloli\khetlet.spr
+70	7	HÊ B∏o Team	0	0	0	0	5	\script\global\playertitle.lua	Equip	UnEquip	\hieuloli\hobaoteam.spr
+70	8	T◊nh Anh Em	0	0	0	0	5	\script\global\playertitle.lua	Equip	UnEquip	\hieuloli\tinhanhem.spr
+71	2	Hµng Hi÷u	0	0	0	0	5	\script\global\playertitle.lua	Equip	UnEquip	\hieuloli\lolihanghieu.spr
+71	3	Hµng Hi÷u VIP	0	0	0	0	5	\script\global\playertitle.lua	Equip	UnEquip	\hieuloli\lolihanghieu.spr
