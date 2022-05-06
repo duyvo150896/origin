@@ -67,6 +67,12 @@ ID	EventType	AttributeCount	TargetType	Time	TimeEnhance	Attribute_0	Value_0	Prob
 66	attack_2_magic	2	1	0	1	imme_effect_interval	18		1	state_life_suck	400	100	2				
 67	attack_2_magic	2	1	0	1	imme_effect_interval	18		1	state_life_suck	600	100	2				
 68	attack_2_magic	2	1	0	1	imme_effect_interval	18		1	state_life_suck	800	100	2				
+69	be_attacked_2_magic	2		90	1	imme_effect_interval	360		1	state_element_all_defend_point_add	39	20	1				
+70	attack_2_magic	2		90	1	imme_effect_interval	450		1	state_element_all_attack_point_add	52	20	1				
+71	attack_2_magic	2		90	1	imme_effect_interval	450		1	state_element_all_attack_point_add	10	20	1				
+72	be_attacked_2_magic	2		90	1	imme_effect_interval	360		1	state_element_all_defend_point_add	42	20	1				
+73	attack_2_magic	2		90	1	imme_effect_interval	450		1	state_element_all_attack_point_add	65	20	1				
+74	attack_2_magic	2		90	1	imme_effect_interval	450		1	state_element_all_attack_point_add	15	20	1				
 3001	be_attacked_2_magic	2	1		1	imme_effect_interval	9		1	imme_life_percent_damage	10	100	2				
 3002	be_attacked_2_magic	2		2	1	imme_effect_interval	90		1	state_skill_casted_when_magic_end	105709569	100	1				
 3003	be_attacked_2_magic	3		108	1	imme_effect_interval	270		1	state_receive_half_damage	8	100	2	state_destiny_point_add	60	100	1
@@ -75,3 +81,12 @@ ID	EventType	AttributeCount	TargetType	Time	TimeEnhance	Attribute_0	Value_0	Prob
 3006	be_attacked_2_magic	2	1	18	1	imme_effect_interval	9		1	state_lost_life_per18_monster	5000	100	2				
 3007	be_attacked_2_magic	2		2	1	imme_effect_interval	18		1	state_skill_casted_when_magic_end	114622465	100	1				
 3008	skill_be_interrupted_2_magic	2		54	1	state_block_left_skill	100	100	1	state_lock	100	100	1				
+3009	attack_2_magic	2		90	1	imme_effect_interval	450		1	state_element_all_attack_point_add	15	20	1				
+3010	attack_2_magic	2		90	1	imme_effect_interval	450		1	state_element_all_attack_point_add	20	20	1				
+3011	attack_2_magic	2		90	1	imme_effect_interval	450		1	state_element_all_attack_point_add	25	20	1				
+3012	attack_2_magic	2		90	1	imme_effect_interval	450		1	state_element_all_attack_point_add	30	20	1				
+3013	attack_2_magic	2		90	1	imme_effect_interval	450		1	state_element_all_attack_point_add	35	20	1				
+3014	attack_2_magic	2		90	1	imme_effect_interval	450		1	state_element_all_attack_point_add	40	20	1				
+3015	attack_2_magic	2		90	1	imme_effect_interval	450		1	state_element_all_attack_point_add	45	20	1				
+3016	attack_2_magic	2		90	1	imme_effect_interval	450		1	state_element_all_attack_point_add	50	20	1				
+3017	attack_2_magic	2		90	1	imme_effect_interval	450		1	state_element_all_attack_point_add	55	20	1				
