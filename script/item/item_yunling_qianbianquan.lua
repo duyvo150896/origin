@@ -7,6 +7,7 @@ t_item_index =
 	[30491] = 1,
 	[30492] = 2,
 	[30493] = 3,
+	[50029] = 4,
 }
 t_itemconfig = 
 {
@@ -14,6 +15,7 @@ t_itemconfig =
 	{2, 1, 30491, "VĞ TiÕu Y Vµng", 1000, 9999},
 	{2, 1, 30492,"VĞ TiÕu Y B¹c", 100, 9999},
 	{2, 1, 30493,"VĞ TiÕu Y §ång", 10, 9999},
+	{2, 1, 50029,"VĞ TiÕu Y Vµng", 1000, 9999},
 }
 
 function OnUse(nItemIndex)
@@ -56,7 +58,9 @@ end
 function _use_item3(nNum)
 	_real_use(3, 0, nNum)
 end
-
+function _use_item4(nNum)
+	_real_use(4, 0, nNum)
+end
 function _real_use(nType, nItemIndex, nNum)
 	local t = t_itemconfig[nType]
 	if t and nNum >= 1 and nNum <= t[6] then
