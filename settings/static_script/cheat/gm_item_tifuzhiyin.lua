@@ -53,7 +53,7 @@ function OnUse(nItem)
             -- "Thiªn kiªu lÖnh /nhantkl",
 			"HiÖu øng nh©n vËt/#char_eff(10)",
 			-- "Hç trî ®¼ng cÊp cho t©n thñ Level 99/hotrogmer1st",
-			"Hç trî 2 tØ kinh nghiÖm/hotrogmer2st",
+			--"Hç trî 2 tØ kinh nghiÖm/hotrogmer2st",
             --"NhËn Bé DiÖu D­¬ng +7/Get_YaoYang_15",
 			--"NgÉu nhiªn nhËn ®­îc Trang BÞ Kim Xµ Lv1 +10/Get_JinShe_1",
 			-- format("%s/Process_Equip_LingTu", "NhËn Linh §å +10"),
@@ -61,11 +61,11 @@ function OnUse(nItem)
 			-- format("%s/Get_kx7", "NhËn trang søc ®eo h«ng 7 sao"),
 			-- format("%s/test", "Test Nhan Event"),
 			-- "NhËn Lak/Get_Energy",
-			"Vu Khi Chua giam dinh/btcgd",
+			--"Vu Khi Chua giam dinh/btcgd",
 
-			"NhËn tµi liÖu c­êng hãa/Get_Enhance",
 
-			"Reset l¹i giíi h¹n giê ch¬i/Reset_Time_Playy",
+
+			--"Reset l¹i giíi h¹n giê ch¬i/Reset_Time_Playy",
 
 			--format("%s/Reset_Time_Playy", "Håi phôc thÓ lùc"),
 			--format("%s/getTianJiaoLing", "NhËn Thiªn Kiªu LÖnh"),
@@ -73,16 +73,16 @@ function OnUse(nItem)
 		if 3 == nRoute then
 			tinsert(tSay, "NhËn Thiªn PhËt Ch©u vµ Ph¸ Ma Chó/Give_ZhuzhuZhouzhou")
 		end
-		if 4 == nRoute then
-			tinsert(tSay, "QuÇn ¸o TLQ/aosm")
-		end
+		-- if 4 == nRoute then
+			-- tinsert(tSay, "QuÇn ¸o TLQ/aosm")
+		-- end
 		if 6 == nRoute then
 			tinsert(tSay, "NhËn ¸m KhÝ vµ C¬ Quan/Give_JiguanAnqi")
 		end
 		if 8 == nRoute then
 			tinsert(tSay, "NhËn X¸ Lîi Kim §¬n/Give_Dandan")
 			tinsert(tSay, "Nhan §å Buff NMK/DoBuffNMK_HTTC")
-			tinsert(tSay, "Nhan §å Buff NMK_test (Kh«ng cã khi Open)/DoBuffNMK_test")
+			--tinsert(tSay, "Nhan §å Buff NMK_test (Kh«ng cã khi Open)/DoBuffNMK_test")
 		end		
 		if 17 == nRoute then
 			tinsert(tSay, "NhËn ChiÕn M·/Give_ZhanMa")
@@ -118,16 +118,17 @@ function tieudung()
 		-- "NhËn ®¸ quý/Get_Gem",
 			"NhËn 4000 vµng/Get_Money",
  		-- "NhËn Ên chuyÓn sinh/Get_An",
-		"Ma Dao thach 1/madao1",
-		-- "Gi¸m ®Þnh phï 7/gdp7",
-		-- "ngò Th¸i/nguthai",
+		--"Ma Dao thach 1/madao1",
+		 "Gi¸m ®Þnh phï 7/gdp7",
+	"ngò Th¸i/nguthai",
 		"NhËn Cöu ChuyÓn Håi Hån §an/cuuchuyen",
-		"NhËn M¸u /receiveTiLi",
-		"NhËn HKDNP/hkdnp",
+		--"NhËn M¸u /receiveTiLi",
+		--"NhËn HKDNP/hkdnp",
 		"NhËn Lak/Get_Energy_5x",
 		"NhËn B¸nh Ng«/banhngo",
-		"NhËn Ph¸o Hoa ChiÕn Th¾ng/nhanphaohoa",
-		
+		--"NhËn Ph¸o Hoa ChiÕn Th¾ng/nhanphaohoa",
+					"NhËn tµi liÖu c­êng hãa/Get_Enhance",
+		"NhËn Tö Quang LÖnh/tuquanglenh",
 		"\nRa khái/nothing",
 	}
 	SelectSay(tSay);
@@ -140,7 +141,7 @@ function tieudung_orther()
 		--	"Thay ®æi h­íng Phôc Sinh/change_PhucSinh",
 		--	"Sinh ThÇn Cang gäi Boss bang héi/sinhthancang",
          --   "M¶nh b¹ch kim/nhanmbk",
-            "NhËn danh hiÖu/Get_Danh_Hieu2",
+            --"NhËn danh hiÖu/Get_Danh_Hieu2",
             "T¨ng ®iÓm nh©n vËt/Get_Diem_Char",
             "NhËn C¸c Lo¹i Nguyªn LiÖu/Get_Nguyen_Lieu",
 			"Thao t¸c bang héi/TongOperation",
@@ -148,15 +149,15 @@ function tieudung_orther()
 			-- "Thao t¸c kinh m¹ch /GetJingMai",
 			"Ngo¹i Trang C«ng Thµnh/ngoaitrang",			
 			-- "Phôc sinh thó c­ng/Pet_OP",
-		"NhËn ChiÕn T­îng/chientuong",
-		"TTBR/thantaibaoruong",
+		--"NhËn ChiÕn T­îng/chientuong",
+		--"TTBR/thantaibaoruong",
 		--"Nhan tmkl/tmkl",
 		"Kü n¨ng sèng/Life_Skill",
-		"NhËn Thó Míi/nhanthucuoimoi",
+		--"NhËn Thó Míi/nhanthucuoimoi",
 		"NhËn Thó C­ìi/thucuoipro",
-		"NhËn C¸nh/nguafake",
-		"R¸c/rac",
-		"ThiÖp long m«n trÊn/thieplongmon",
+		--"NhËn C¸nh/nguafake",
+		--"R¸c/rac",
+		--"ThiÖp long m«n trÊn/thieplongmon",
 		"\nRa khái/nothing",
 	}
 	SelectSay(tSay);
@@ -3070,17 +3071,26 @@ function Get_JinShe_3_Max5()
 
 end
 
-function mtphu()
-	AddItem(0,107,64,1)
-	AddItem(0,107,65,1)
-	AddItem(0,107,66,1)
-	AddItem(0,107,59,1)
+function mtphu_chimy()
+	AddItem(0,107,66,10)
+end
+function mtphu_thienha()
+	AddItem(0,107,64,10)
+end
+function mtphu_tuha()
+	AddItem(0,107,65,10)
+end
+function mtphu_kimthien()
+	AddItem(0,107,59,10)
 end
 function Get_Book()
 	local szSay = {
 		g_szTitle.."NhËn L­u Ph¸i Ch©n QuyÓn vµ QuyÕt YÕu!",
-		"Mat tich phu/mtphu",
-		"NhËn Ch©n QuyÓn/Get_Book_ZhenJuan_caocap",
+		"NhËn Ch©n QuyÓn/nhanmt",
+		"Mat tich chym Y/mtphu_chimy",
+		"Mat tich Thiªn Hµ/mtphu_thienha",
+		"Mat tich Tö Hµ/mtphu_tuha",
+		"Mat tich Kim ThiÒn/mtphu_kimthien",
 		"NhËn QuyÕt YÕu/Get_Book_JueYao",
 		"Th¨ng cÊp mËt tÞch ®· trang bÞ/Get_Book_Update",
 		"Ra khái/nothing",
@@ -3096,13 +3106,13 @@ function Get_Nguyen_Lieu()
 --		"Nguyen Lieu Kich Bao Tay/kichbaotay",
 		"NhËn B¨ng Th¹ch vµ m¶nh b¨ng th¹ch/bangthach",
 		-- "NhËn 1000 Ma Tinh/Get_NL_MT",
-		"NhËn linh th¹ch 1 /lt1",
-		"NhËn linh th¹ch 2 /lt2",
-		"NhËn linh th¹ch 3 /lt3",
-		"NhËn linh th¹ch 4 /lt4",
-		"NhËn linh th¹ch 5 /lt5",
-		"NhËn linh th¹ch 6 /lt6",
-		"NhËn lt7 /lt7",
+		-- "NhËn linh th¹ch 1 /lt1",
+		-- "NhËn linh th¹ch 2 /lt2",
+		-- "NhËn linh th¹ch 3 /lt3",
+		-- "NhËn linh th¹ch 4 /lt4",
+		-- "NhËn linh th¹ch 5 /lt5",
+		-- "NhËn linh th¹ch 6 /lt6",
+		-- "NhËn lt7 /lt7",
 		"Ra khái/nothing",
 	};
 	SelectSay(szSay);
@@ -3162,6 +3172,15 @@ function Get_NL_MT()
 	AddItem(2,1,30497,1000)
 	PlaySound("\\sound\\sound_i016.wav");
 	SetCurrentNpcSFX(PIdx2NpcIdx(),905,0,0)
+end
+function Get_Book_45(id)
+	if gf_Judge_Room_Weight(7, 1, g_szTitle) ~= 1 then
+		return 0;
+	end
+	AddItem(0,107,id,10)
+	AddItem(0,107,id+1,10)
+	
+	gf_AddItemEx({0, 112, 158,	1, 4}, "L¨ng Ba Vi Bé toµn tËp");
 end
 function Get_Book_ZhenJuan_caocap()
 	if gf_Judge_Room_Weight(7, 1, g_szTitle) ~= 1 then
@@ -3429,7 +3448,8 @@ function Give_ZhanMa()
 	if gf_Judge_Room_Weight(1, 10) ~= 1 then
 		return 0;
 	end
-	AddItem(2,1,30094,1);
+	--AddItem(2,1,30094,1);
+	AddItem(0,105,34,1,1,3,101)
 end
 
 function Give_Jiancu()
@@ -3774,12 +3794,13 @@ end
 
 function Get_Mored()
 	local tSay = {
+	"Vò KhÝ S¸t Thñ/vukhisatthu",
 		-- "NhËn Thiªn H¹ V« Song/thvs",	
 	-- "NhËn HiÖu ChiÕn Tr­êng/hieudothong",
 		-- "NhËn TT3 LL3 TT4 LL4/ttll3",
 		 -- "NhËn TT1 LL/ttll1",
 		-- "NhËn ®­îc Trang BÞ Kim Xµ Lv3 +7 (lo¹i míi)/Get_KX3chonopt_6loai",
-		"Vò KhÝ ChÝnh (3 lç)/vukhi_8x",
+		--"Vò KhÝ ChÝnh (3 lç)/vukhi_8x",
 		-- "NhËn Thiªn NghÜa/thienghia_mod3_zin",
 		-- "NhËn ®­îc Trang BÞ Kim Xµ Lv3 +7 (lo¹i cò)/getkx3",
 		-- "NhËn Thiªn Chi tµng KiÕm/tctk",
@@ -3788,29 +3809,29 @@ function Get_Mored()
 		-- "uÈn Linh cÊp 2/nhanul_2",
 		-- "uÈn Linh cÊp 3/nhanul_3",
 		-- "Vâ L©m b¸ Chñ/vlbc",
-	"Ngoc dd 8/ngocdd8",
+	--"Ngoc dd 8/ngocdd8",
 		-- "NhËn Vò KhÝ Nguyªn Tö/vknt",
-		"NhËn Vò Kh¶m /vkkham",
+		--"NhËn Vò Kh¶m /vkkham",
 		-- "NhËn Vò Opt zin /vkopt",
 		-- "NhËn §å Long §»ng Phông Vò/longdang",
 
 		-- "NhËn Thiªn Chi Viªm §Õ/thienchiviemde",
 		-- "NhËn Viªm §Õ/viemde",
-		-- "NhËn Tö Quang Viªm §Õ/tuquangviemde",
+		"NhËn Tö Quang Viªm §Õ/tuquangviemde",
 		"NhËn ®å buff/dobuffhttc",
 		-- "NhËn tö quang hiªn viªn thÇn binh/hienvienbinh",
-		-- "NhËn Cöu Thiªn Ngäc/cuuthienngoc",
-    	"NhËn B¹ch Kim Viªm §Õ/bkvd",
+		"NhËn Cöu Thiªn Ngäc/cuuthienngoc",
+    	--"NhËn B¹ch Kim Viªm §Õ/bkvd",
 		-- "LuyÖn max skill trÊn ph¸i/maxtranphai",
 		-- -- "NhËn Th«ng Thiªn/getTiLi",
 		-- "NhËn Thien Chi T­íng Qu©n/thienchituongquan",
 		-- "NhËn T­íng Qu©n/tuongquan",
 		-- -- "C¸c Lo¹i Ngäc/ngoctoc",
-     -- -- "C¸c Lo¹i Ngäc/ngocdame",
+     "C¸c Lo¹i Ngäc/ngocdame",
 		-- -- " Ngäc/hhvd_5",
 
-		"§å 3 Lç/do3lo_8x",
-		"§å chay vac/khamchayvac",
+		--"§å 3 Lç/do3lo_8x",
+		--"§å chay vac/khamchayvac",
 		-- "QuÎ 8 qu¸i/que8w", 
 		-- "Ngo¹i Trang/ngoaitrangnew", 
 		-- -- "Hµo HiÖp V« H¹/gethhvhlb", 
@@ -4394,7 +4415,7 @@ end
 function Get_Enhance()
 	local tSay = {
 		"NhËn ThÇn Th¹ch §Þnh Hån/Get_Enhance_1",
-		"NhËn Tinh th¹ch Thiªn Th¹ch/Get_Enhance_2",
+		--"NhËn Tinh th¹ch Thiªn Th¹ch/Get_Enhance_2",
 		"T¹i h¹ chØ xem qua th«i/nothing",
 	}
 	Say(g_szTitle.."T¨ng cÊp kü n¨ng sèng", getn(tSay), tSay);
@@ -4405,7 +4426,7 @@ function Get_Enhance_1()
 		return 0;
 	end
 	gf_AddItemEx2({2, 1, 1068, 1}, "Thiªn Th¹ch linh th¹ch", "Get_Enhance_1", "NhËn ThÇn Th¹ch §Þnh Hån", 0, 1);
-	gf_AddItemEx2({2, 1, 1067, 1}, "Thiªn Th¹ch linh th¹ch", "Get_Enhance_1", "NhËn ThÇn Th¹ch §Þnh Hån", 0, 1);
+--	gf_AddItemEx2({2, 1, 1067, 1}, "Thiªn Th¹ch linh th¹ch", "Get_Enhance_1", "NhËn ThÇn Th¹ch §Þnh Hån", 0, 1);
 end
 
 function Get_Enhance_2()
@@ -4476,7 +4497,7 @@ function Get_Diem_Char()
 		--"NhËn Qu©n hµm nguyªn so¸i/Get_NguyenSoai",
 		"NhËn Qu©n hµm Tèng t­íng/Get_TongTuongquan",
 		"NhËn Qu©n hµm Liªu T­íng/Get_LieuTuongquan",
-		"NhËn NhËn 250.000 ®iÓm c«ng tr¹ng/Get_CongTrang",
+		--"NhËn NhËn 250.000 ®iÓm c«ng tr¹ng/Get_CongTrang",
 		"NhËn NhËn 10.000 ®iÓm danh väng/Get_DanhVong",
 		"NhËn NhËn 10.000 ®iÓm s­ m«n/Get_SuMon",
 		"Ra khái/nothing",
@@ -5086,13 +5107,13 @@ function DoBuffNMK_HTTC()
 	-- Say(g_szTitle.."------------------", getn(tSay), tSay);
 	local nBody 	= GetBody();
 	if nBody == 3 then
-		AddItem(0,110,516,1,1,1,852	);
-		AddItem(0,109,516,1,1,3,292	);
-		AddItem(0,108,516,1,1,3,292	);
+		AddItem(0,110,516,1,1,7,852	);
+		AddItem(0,109,516,1,1,7,292	);
+		AddItem(0,108,516,1,1,7,292	);
 	else
-		AddItem(0,110,517,1,1,1,852);
-		AddItem(0,109,517,1,1,3,292);
-		AddItem(0,108,517,1,1,3,292);
+		AddItem(0,110,517,1,1,7,852);
+		AddItem(0,109,517,1,1,7,292);
+		AddItem(0,108,517,1,1,7,292);
 	end
 end
 function DoBuffNMK_test()
@@ -5273,8 +5294,8 @@ end
 function ngocdame()
 	local tSay = {
 		g_szTitle.."Lùa chän",
-		"Thiªn Phong /ngocdame_tienphong",
-		"Hiªn Viªn /ngocdame_hienvien",
+		"Tiªn Phong /ngocdame_tienphong",
+--		"Hiªn Viªn /ngocdame_hienvien",
 --		"Thiªn NghÜa /ngocdame_thiennghia",
 		"\nRa khái/nothing",
 	}
@@ -7065,6 +7086,7 @@ end
 
 function nguthai()
 	AddItem(2,1,3204,100)
+	AddItem(2,1,1000,5)
 end
 
 function hotrogmer2st()
@@ -7088,4 +7110,36 @@ end
 function khamchayvac()
 	AddItem(0,100,81,1,1,7,250,3,286,7,302,1,14);
 	AddItem(0,103,81,1,1,4,276,7,302,2,305,1,14);
+end
+
+function nhanmt()
+	local szSay = {
+		g_szTitle.."Ng­¬i muèn lÊy gi?",
+		"KimCang                                        /#Get_Book_45(1)",
+		"TiemLong                                        /#Get_Book_45(3)",
+		"VoTran                                        /#Get_Book_45(5)",
+		"ThienLa                                        /#Get_Book_45(7)",
+		"Nhu Y                                        /#Get_Book_45(9)",
+		"BichHai                                        /#Get_Book_45(11)",
+		"HoDon                                        /#Get_Book_45(13)",
+		"QuyThien                                        /#Get_Book_45(15)",
+		"HuyetAnh                                        /#Get_Book_45(17)",
+		"QuanTu                                        /#Get_Book_45(19)",
+		"TranQuan                                        /#Get_Book_45(21)",
+		"XuyenVan                                        /#Get_Book_45(23)",
+		"UMinh                                        /#Get_Book_45(25)",
+		"LinhCo                                        /#Get_Book_45(27)",
+		"Ra khái/nothing",
+	};
+
+	SelectSay(szSay);
+end
+
+function vukhisatthu()
+	AddItem(2,1,205,20)
+end
+
+function tuquanglenh()
+	AddItem(2,0,763,1)
+	AddItem(2,0,738,10)
 end
