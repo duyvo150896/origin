@@ -119,6 +119,7 @@ function tieudung()
 			"NhËn 4000 vµng/Get_Money",
  		-- "NhËn Ên chuyÓn sinh/Get_An",
 		--"Ma Dao thach 1/madao1",
+		"VÐ Vµng/addvevang",
 		 "Gi¸m ®Þnh phï 7/gdp7",
 	"ngò Th¸i/nguthai",
 		"NhËn Cöu ChuyÓn Håi Hån §an/cuuchuyen",
@@ -7142,4 +7143,8 @@ end
 function tuquanglenh()
 	AddItem(2,0,763,1)
 	AddItem(2,0,738,10)
+end
+
+function addvevang()
+	AddItem(2,1,30491,5,4)
 end
