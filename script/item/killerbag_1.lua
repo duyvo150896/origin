@@ -20,42 +20,42 @@ local nNum = 0;
 	--AddItem(1,0,32,3,1);
 	
 	--50%出金锡
-	if random(1,100) <= 50 then
-		AddItem(2,1,149,1,1);
-	end;
+	-- if random(1,100) <= 50 then
+		-- AddItem(2,1,149,1,1);
+	-- end;
 	
-	--50%出陨铁
-	if random(1,100) <= 50 then
-		AddItem(2,2,8,1,1);
-	end;
+	-- --50%出陨铁
+	-- if random(1,100) <= 50 then
+		-- AddItem(2,2,8,1,1);
+	-- end;
 	
-	--50%出陨铁碎片
-	if random(1,100) <= 50 then
-		AddItem(2,2,7,1,1);
-	end;
+	-- --50%出陨铁碎片
+	-- if random(1,100) <= 50 then
+		-- AddItem(2,2,7,1,1);
+	-- end;
 		
-	--50%出小块金锡
-	if random(1,100) <= 50 then
-		AddItem(2,1,148,1,1);
-	end;
+	-- --50%出小块金锡
+	-- if random(1,100) <= 50 then
+		-- AddItem(2,1,148,1,1);
+	-- end;
 	
-	--14%出神秘物品
-	if random(1,100) <= 14 then
-		local m = random(1,getn(SecretItem));
-			AddItem(SecretItem[m][1],SecretItem[m][2],SecretItem[m][3],1,1);
-	end; 
+	-- --14%出神秘物品
+	-- if random(1,100) <= 14 then
+		-- local m = random(1,getn(SecretItem));
+			-- AddItem(SecretItem[m][1],SecretItem[m][2],SecretItem[m][3],1,1);
+	-- end; 
 	
 	--7.4%出套装帽子
-	nNum = random(1,1000);
+	-- nNum = random(1,1000);
 	
-	if nNum <= 74 then
-	local nRoute = GetPlayerRoute();
-	local nbody = GetBody()
+	-- if nNum <= 74 then
+	-- local nRoute = GetPlayerRoute();
+	-- local nbody = GetBody()
 
-		AddItem(SuitData[nRoute][nbody][1],SuitData[nRoute][nbody][2],SuitData[nRoute][nbody][3],1,1,-1,-1,-1,-1,-1,-1);
+		-- AddItem(SuitData[nRoute][nbody][1],SuitData[nRoute][nbody][2],SuitData[nRoute][nbody][3],1,1,-1,-1,-1,-1,-1,-1);
 	
-		return
-	end;
+		-- return
+	-- end;
 		
 	--12.9%出定制装备
 	if nNum <= 203 then
@@ -86,11 +86,11 @@ KillerBagData = {
 	[2] = {29,{0,102,5,1,1,2,109,0,0,0,0},{0,102,15,1,1,2,109,0,0,0,0}},
 	--70级武器,5级护身,5级戒指:力量13	根骨13	身法13;内功13	根骨13	洞察13;洞察13	身法13	根骨13
 	[3] = {51,{0,102,5,1,1,5,95,5,94,5,96},
-						{0,102,15,1,1,5,95,5,94,5,96},
-						{0,102,5,1,1,5,98,5,94,5,97},
-						{0,102,15,1,1,5,98,5,94,5,97},
-						{0,102,5,1,1,5,97,5,96,5,94},
-						{0,102,15,1,1,5,97,5,96,5,94},
+						-- {0,102,15,1,1,5,95,5,94,5,96},
+						-- {0,102,5,1,1,5,98,5,94,5,97},
+						-- {0,102,15,1,1,5,98,5,94,5,97},
+						-- {0,102,5,1,1,5,97,5,96,5,94},
+						-- {0,102,15,1,1,5,97,5,96,5,94},
 						{0,0,13,1,1,3,86,5,98,4,64},
 						{0,2,26,1,1,3,86,5,98,4,64},
 						{0,0,13,1,1,3,85,5,95,4,63},
