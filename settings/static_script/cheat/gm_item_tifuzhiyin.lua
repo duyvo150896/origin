@@ -4864,12 +4864,12 @@ function Boss_W1()
 
 	local nMap,nX,nY = GetWorldPos();
 	local nNpcIdx = 0
-	local msg = format("Theo t×nh b¸o, 1 qu¸i nh©n víi vâ c«ng v« ®Þch thiªn h¹ ®· xuÊt hiÖn t¹i Tµi Nguyªn ChiÕn, mau ®Õn thu phôc h¾n !!!");
+	local msg = format("Theo t×nh b¸o, 1 qu¸i nh©n víi vâ c«ng v« ®Þch thiªn h¹ ®· xuÊt hiÖn t¹i V©n Méng Tr¹ch, mau ®Õn thu phôc h¾n !!!");
 			Msg2Global(msg);
 		Msg2Global(msg);
 		Msg2Global(msg);
 		Msg2Global(msg);
-		local npcIndex = CreateNpc("WorldBoss_HL", "§µo Hoa §¶o Chñ Hoµng Long", 606,168*8,187*16);
+		local npcIndex = CreateNpc("WorldBoss_HL", "§µo Hoa §¶o Chñ Hoµng Long", 151,182*8,184*16);
 		SetNpcLifeTime(npcIndex, 1*60 * 60);
 		SetNpcDeathScript(npcIndex, "\\script\\function\\world_boss\\wb_boss_death.lua");
 		SetNpcRemoveScript(npcIndex, "\\script\\function\\world_boss\\wb_boss_remove.lua");
@@ -4880,8 +4880,8 @@ function Boss_W5()
 
 	local nMap,nX,nY = GetWorldPos();
 	local nNpcIdx = 0
-		local npcIndex = CreateNpc("WorldBoss_dfbb", "§«ng Ph­¬ng BÊt B¹i", 606,168*8,187*16);
-		local msg = format("Theo t×nh b¸o, 1 qu¸i nh©n víi vâ c«ng v« ®Þch thiªn h¹ ®· xuÊt hiÖn t¹i Tµi Nguyªn ChiÕn, mau ®Õn thu phôc h¾n !!!");
+		local npcIndex = CreateNpc("WorldBoss_dfbb", "§«ng Ph­¬ng BÊt B¹i", 151,182*8,184*16);
+		local msg = format("Theo t×nh b¸o, 1 qu¸i nh©n víi vâ c«ng v« ®Þch thiªn h¹ ®· xuÊt hiÖn t¹i V©n Méng Tr¹ch, mau ®Õn thu phôc h¾n !!!");
 		Msg2Global(msg);
 		Msg2Global(msg);
 		Msg2Global(msg);
@@ -4897,8 +4897,8 @@ function Boss_W6()
 
 	local nMap,nX,nY = GetWorldPos();
 	local nNpcIdx = 0
-		local npcIndex = CreateNpc("TYT_HyehuoTYS", "Gi¸c §éc Thó", 606,168*8,187*16);
-		local msg = format("Theo t×nh b¸o, 1 qu¸i nh©n víi vâ c«ng v« ®Þch thiªn h¹ ®· xuÊt hiÖn t¹i Tµi Nguyªn ChiÕn, mau ®Õn thu phôc h¾n !!!");
+		local npcIndex = CreateNpc("TYT_HyehuoTYS", "Gi¸c §éc Thó", 151,182*8,184*16);
+		local msg = format("Theo t×nh b¸o, 1 qu¸i nh©n víi vâ c«ng v« ®Þch thiªn h¹ ®· xuÊt hiÖn t¹i V©n Méng Tr¹ch, mau ®Õn thu phôc h¾n !!!");
 		Msg2Global(msg);
 		Msg2Global(msg);
 		Msg2Global(msg);
@@ -4914,12 +4914,12 @@ function Boss_W2()
 
 	local nMap,nX,nY = GetWorldPos();
 	local nNpcIdx = 0
-	local msg = format("Theo t×nh b¸o, 1 qu¸i nh©n víi vâ c«ng v« ®Þch thiªn h¹ ®· xuÊt hiÖn t¹i Tµi Nguyªn ChiÕn, mau ®Õn thu phôc h¾n !!!");
+	local msg = format("Theo t×nh b¸o, 1 qu¸i nh©n víi vâ c«ng v« ®Þch thiªn h¹ ®· xuÊt hiÖn t¹i V©n Méng Tr¹ch, mau ®Õn thu phôc h¾n !!!");
 			Msg2Global(msg);
 		Msg2Global(msg);
 		Msg2Global(msg);
 		Msg2Global(msg);
-		local npcIndex = CreateNpc("WorldBoss_CLBZ", "T©y Vùc Th­¬ng Lang B¸ V­¬ng", 606,168*8,187*16);
+		local npcIndex = CreateNpc("WorldBoss_CLBZ", "T©y Vùc Th­¬ng Lang B¸ V­¬ng", 151,182*8,184*16);
 		SetNpcLifeTime(npcIndex, 1*60 * 60);
 		SetNpcDeathScript(npcIndex, "\\script\\function\\world_boss\\wb_boss_death.lua");
 		SetNpcRemoveScript(npcIndex, "\\script\\function\\world_boss\\wb_boss_remove.lua");
@@ -4929,12 +4929,12 @@ function Boss_W3()
 
 	local nMap,nX,nY = GetWorldPos();
 	local nNpcIdx = 0
-	local msg = format("Theo t×nh b¸o, 1 qu¸i nh©n víi vâ c«ng v« ®Þch thiªn h¹ ®· xuÊt hiÖn t¹i Tµi Nguyªn ChiÕn, mau ®Õn thu phôc h¾n !!!");
+	local msg = format("Theo t×nh b¸o, 1 qu¸i nh©n víi vâ c«ng v« ®Þch thiªn h¹ ®· xuÊt hiÖn t¹i V©n Méng Tr¹ch, mau ®Õn thu phôc h¾n !!!");
 			Msg2Global(msg);
 		Msg2Global(msg);
 		Msg2Global(msg);
 		Msg2Global(msg);
-		local npcIndex = CreateNpc("WorldBoss_TJ", "Ngäc S¬n Chi Linh Thiªn Cöu", 606,168*8,187*16);
+		local npcIndex = CreateNpc("WorldBoss_TJ", "Ngäc S¬n Chi Linh Thiªn Cöu", 151,182*8,184*16);
 		SetNpcLifeTime(npcIndex, 1*60 * 60);
 		SetNpcDeathScript(npcIndex, "\\script\\function\\world_boss\\wb_boss_death.lua");
 		SetNpcRemoveScript(npcIndex, "\\script\\function\\world_boss\\wb_boss_remove.lua");
@@ -4943,13 +4943,13 @@ end
 function Boss_W4()
 
 	local nMap,nX,nY = GetWorldPos();
-	local msg = format("Theo t×nh b¸o, 1 qu¸i nh©n víi vâ c«ng v« ®Þch thiªn h¹ ®· xuÊt hiÖn t¹i Tµi Nguyªn ChiÕn, mau ®Õn thu phôc h¾n !!!");
+	local msg = format("Theo t×nh b¸o, 1 qu¸i nh©n víi vâ c«ng v« ®Þch thiªn h¹ ®· xuÊt hiÖn t¹i V©n Méng Tr¹ch, mau ®Õn thu phôc h¾n !!!");
 	local nNpcIdx = 0
 			Msg2Global(msg);
 		Msg2Global(msg);
 		Msg2Global(msg);
 		Msg2Global(msg);
-		local npcIndex = CreateNpc("WorldBoss_MW", "U Tr¹ch Chi ¶nh Minh Vâ", nMap,nX,nY);
+		local npcIndex = CreateNpc("WorldBoss_MW", "U Tr¹ch Chi ¶nh Minh Vâ", 151,nX,nY);
 		SetNpcLifeTime(npcIndex, 1*60 * 60);
 		SetNpcDeathScript(npcIndex, "\\script\\function\\world_boss\\wb_boss_death.lua");
 		SetNpcRemoveScript(npcIndex, "\\script\\function\\world_boss\\wb_boss_remove.lua");

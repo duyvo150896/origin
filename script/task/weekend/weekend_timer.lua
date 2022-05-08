@@ -43,18 +43,18 @@ function main()
 	-- end;
 	-- Msg2SubWorld(GetLocalHour());
 	local ran= random(1,5)
-	local ran_2 = random(0,1)
-	if  GetLocalHour() == 10 then
-		if ran_2 == 0 then
-			Boss_ThuongThan();
-		else
-			Boss_LucLam();
-		end
-	end
-	if  GetLocalHour() == 15 then
-		 Boss_AnhTu();
-	end
-	if  GetLocalHour() == 20 then
+	-- local ran_2 = random(0,1)
+	-- if  GetLocalHour() == 10 then
+		-- if ran_2 == 0 then
+			-- Boss_ThuongThan();
+		-- else
+			-- Boss_LucLam();
+		-- end
+	-- end
+	-- if  GetLocalHour() == 15 then
+		 -- Boss_AnhTu();
+	-- end
+	if  GetLocalHour() == 22 then
 		if ran == 1 then
 			Boss_W1();
 		end
@@ -71,10 +71,10 @@ function main()
 			Boss_W5();
 		end
 	end
-	if  GetLocalHour() == 22 then
-		Boss_HuongLang();
-	end
-	if  GetLocalHour() == 21 then
-		 Boss_LanHoa();
-	end
+	-- if  GetLocalHour() == 22 then
+		-- Boss_HuongLang();
+	-- end
+	-- if  GetLocalHour() == 21 then
+		 -- Boss_LanHoa();
+	-- end
 end;
