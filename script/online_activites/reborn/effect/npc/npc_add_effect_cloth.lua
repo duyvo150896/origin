@@ -341,10 +341,10 @@ function cloth_effect_suit_chk(nEquipPos)
             break;
         end
     end
-    if bChkFlag == 0 then
-        Talk(1, "", VIE_201005_REBORN_STR_NpcName..VIE_201005_REBORN_STR_NpcDialog[3][12]);
-        return 0;
-    end
+  --  if bChkFlag == 0 then
+  --      Talk(1, "", VIE_201005_REBORN_STR_NpcName..VIE_201005_REBORN_STR_NpcDialog[3][12]);
+  --      return 0;
+  --  end
     return 1;
 end
 
