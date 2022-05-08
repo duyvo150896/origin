@@ -31,7 +31,7 @@ function OnDeath(id, f, x)
 		else --ÍíÉÏË¢µÄ
 			nScriptFile = "\\script\\function\\world_boss\\wb_small_box1.lua";
 		end
-		for i = 1, 16 do
+		for i = 1, 8 do
 			local smallBox = CreateNpc("tongbaoxiang", "§¹i ChiÕn B¶o H¹p", nMap, nX + random(-i, i), nY + random(-i, i));
 			if smallBox > 0 then
 				SetNpcScript(smallBox, nScriptFile);

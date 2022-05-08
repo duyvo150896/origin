@@ -119,8 +119,9 @@ function wb_KillAward()
 	if GetWorldPos() == 202 then
 		AddItem(2,1,30072,1);
 	else
-		gf_Modify("Exp", 50000000);
-		gf_AddItemEx({2, 5, 7, 4,0}, "Gi¸m ®Þnh phï 7")
+		--gf_Modify("Exp", 50000000);
+		--gf_AddItemEx({2, 5, 7, 4,0}, "Gi¸m ®Þnh phï 7")
+			gf_AddItemEx({2, 1, 504, 8,4}, "N÷ Oa Tinh Th¹ch")
 		-- gf_AddItemEx({2, 1, 1009, 50,0}, "Thiªn th¹ch tinh th¹ch")
 		-- -- gf_AddItemEx2({2,95,204, 5}, "TCL", "BOSS Th? gi¨ªi", "Tiau di?t  BOSS", 0, 1)
 		-- -- gf_AddItemEx2({2,1,30458, 2}, "Tô Linh Hoµn", "BOSS ThÕ gíi", "Tiªu diÖt BOSS ThÕ giíi", 0, 1)
@@ -134,9 +135,9 @@ function wb_KillAward()
 		-- if nRetCode == 1 then
 				-- SetItemExpireTime(nIndex,24 * 3600);
 		-- end
-		-- local msg = format("Chóc mõng [%s] ®· hoµn thµnh ®ßn kÕt liÔu %s, nhËn ®­îc %d kinh nghiÖm, %s*%d, %s", GetName(), wb_GetBossName() or "BOSS", 10000000, "Bïa C­êng Hãa", 10, "Trïm diÖt Boss hiÖu");
-		-- Msg2Global(msg);
-		-- AddLocalNews(msg);
+		 local msg = format("Chóc mõng [%s] ®· hoµn thµnh ®ßn kÕt liÔu %s, nhËn ®­îc %d N÷ Oa Tinh Th¹ch", GetName(), wb_GetBossName() or "BOSS", 8");
+		 Msg2Global(msg);
+		 AddLocalNews(msg);
 	end
 end
 
@@ -147,9 +148,9 @@ function wb_SmallBoxAward()
 	--½±Àø
 	gf_Modify("Exp", 14000000);
 	local tAward = {
-			{1, 50000, "Gi¸m ®Þnh phï 7", {2, 5, 7, 4, 4}, 0},
-			{1, 10000, "Ngò th¸i long tóy", {2, 1, 3204, 1, 0}, 0},
-			{1, 50000, "Tam DiÖu Long Hi", {2, 1, 3331, 5, 0}, 0},
+			{1, 50000, "N÷ Oa Tinh Th¹ch", {2, 1, 504, 2,4}, 0},
+			--{1, 10000, "Ngò th¸i long tóy", {2, 1, 3204, 1, 0}, 0},
+			{1, 50000, "N÷ Oa Tinh Th¹ch", {2, 1, 504, 2,4}, 0},
 		-- --{1, 0, "¸ß¼¶Ê¦ÃÅÃØ¼®°ü¹ü", {2, 1, 30627, 1, 4}, 0},
 		-- --{1, 0, "Ê¦ÃÅÕæ¾í°ü¹ü", {2, 1, 30665, 1, 4}, 0},
 		-- --{1, 0, "ÐÞÕæÒª¾÷²ÐÒ³", {2, 1, 30315, 1, 4}, 0},
@@ -220,8 +221,8 @@ function wb_BigBoxAward()
 	SetNpcLifeTime(npcIndex, 0);
 	wb_SetBigBoxFlag();
 	--½±Àø
-	gf_Modify("Exp", 5000000);
-	gf_AddItemEx({2, 1, 1009, random(50,60),0}, "Thiªn th¹ch tinh th¹ch")
+	--gf_Modify("Exp", 5000000);
+	gf_AddItemEx({2, 1, 504, random(4,6),4}, "N÷ Oa tinh th¹ch")
 --	gf_AddItemEx2({2, 1, 30669, 40}, "M¶nh MËt TÞch", "BOSS ThÕ gíi", "R­¬ng Vµng §¹i ChiÕn", 0, 1);
 	-- local tAward = {
 		-- -- {1, 14, "L¨ng Ba Vi B?", {0, 112, 78, 1}, 0},
@@ -235,8 +236,8 @@ function wb_BigBoxAward()
 	-- gf_EventGiveRandAward(tAward, gf_SumRandBase(tAward), 1, "BOSS Th? gi¨ªi", "R-?ng V¦Ìng ¡ì1i Chi?n");	
 	 -- gf_AddItemEx2({2,1,30668, 5}, "THUL 6", "BOSS ThÕ giíi", "Tiªu diÖt  BOSS", 0, 1);
 	 -- gf_AddItemEx2({2,1,30427, 10}, "Bïa C­êng Hãa 12", "BOSS ThÕ giíi", "Tiªu diÖt  BOSS", 0, 1);
-	 Earn(5000000);
-	 local msg = format("Chóc mõng [%s] ®· giµnh ®­îc r­¬ng Vµng §¹i ChiÕn, thu ®­îc 1 sè Thiªn th¹ch tinh th¹ch",GetName());
+	-- Earn(5000000);
+	 local msg = format("Chóc mõng [%s] ®· giµnh ®­îc r­¬ng Vµng §¹i ChiÕn, thu ®­îc 1 sè N÷ Oa tinh th¹ch",GetName());
 	Msg2Global(msg);
 	AddLocalNews(msg);
 	--»î¶¯
