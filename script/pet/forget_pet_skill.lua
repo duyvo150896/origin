@@ -20,7 +20,7 @@ function _ChoosePet()
 			-- local szItem = format("%s(T≠ ch t cﬂn lπi:%d/%d)/#_ChooseSkill(%d)", tbPetList[i].szName, tbPetList[i].nCurTianZi, tbPetList[i].nMaxTianZi, i)
 			-- tinsert(tbSay, szItem)
 			--Msg2Player(tbPetList[i].nCurTianZi, tbPetList[i].nMaxTianZi);
-			if   tbPetList[i].nCurTianZi < 25  then
+			if   tbPetList[i].nCurTianZi < 100  then
 			--			Msg2Player(tbPetList[i].nCurTianZi);
 						_ChooseSkill(i);
 			end
