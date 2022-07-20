@@ -56,7 +56,7 @@ function OnUse(nItem)
 			--"Hç trî 2 tØ kinh nghiÖm/hotrogmer2st",
             --"NhËn Bé DiÖu D­¬ng +7/Get_YaoYang_15",
 			--"NgÉu nhiªn nhËn ®­îc Trang BŞ Kim Xµ Lv1 +10/Get_JinShe_1",
-			-- format("%s/Process_Equip_LingTu", "NhËn Linh §å +10"),
+			format("%s/Process_Equip_LingTu", "NhËn Linh §å +10"),
 			-- format("%s/Process_SanJianTao", "NhËn trang søc ®eo h«ng 6 sao"),
 			-- format("%s/Get_kx7", "NhËn trang søc ®eo h«ng 7 sao"),
 			-- format("%s/test", "Test Nhan Event"),
@@ -73,16 +73,16 @@ function OnUse(nItem)
 		if 3 == nRoute then
 			tinsert(tSay, "NhËn Thiªn PhËt Ch©u vµ Ph¸ Ma Chó/Give_ZhuzhuZhouzhou")
 		end
-		-- if 4 == nRoute then
-			-- tinsert(tSay, "QuÇn ¸o TLQ/aosm")
-		-- end
+		if 4 == nRoute then
+			tinsert(tSay, "QuÇn ¸o TLQ/aosm")
+		end
 		if 6 == nRoute then
 			tinsert(tSay, "NhËn ¸m Khİ vµ C¬ Quan/Give_JiguanAnqi")
 		end
 		if 8 == nRoute then
 			tinsert(tSay, "NhËn X¸ Lîi Kim §¬n/Give_Dandan")
 			tinsert(tSay, "Nhan §å Buff NMK/DoBuffNMK_HTTC")
-			--tinsert(tSay, "Nhan §å Buff NMK_test (Kh«ng cã khi Open)/DoBuffNMK_test")
+			tinsert(tSay, "Nhan §å Buff NMK_test (Kh«ng cã khi Open)/DoBuffNMK_test")
 		end		
 		if 17 == nRoute then
 			tinsert(tSay, "NhËn ChiÕn M·/Give_ZhanMa")
@@ -115,16 +115,16 @@ function tieudung()
 	local tSay = {
 		g_szTitle.."Lùa chän",
 			"NhËn L­u Ph¸i Ch©n QuyÓn vµ YÕu QuyÕt/Get_Book",
-		-- "NhËn ®¸ quı/Get_Gem",
+		"NhËn ®¸ quı/Get_Gem",
 			"NhËn 4000 vµng/Get_Money",
- 		-- "NhËn Ên chuyÓn sinh/Get_An",
-		--"Ma Dao thach 1/madao1",
+ 		"NhËn Ên chuyÓn sinh/Get_An",
+		"Ma Dao thach 1/madao1",
 		"VĞ Vµng/addvevang",
 		 "Gi¸m ®Şnh phï 7/gdp7",
 	"ngò Th¸i/nguthai",
 		"NhËn Cöu ChuyÓn Håi Hån §an/cuuchuyen",
-		--"NhËn M¸u /receiveTiLi",
-		--"NhËn HKDNP/hkdnp",
+		"NhËn M¸u /receiveTiLi",
+		"NhËn HKDNP/hkdnp",
 		"NhËn Lak/Get_Energy_5x",
 		"NhËn B¸nh Ng«/banhngo",
 		--"NhËn Ph¸o Hoa ChiÕn Th¾ng/nhanphaohoa",
@@ -137,20 +137,20 @@ end
 function tieudung_orther()
 	local tSay = {
 		g_szTitle.."Lùa chän",
-		--"Nhan Bua Cuong Hoa/NhanBua",
-         -- "N©ng cao ®¼ng cÊp chuyÓn sinh nh©n vËt/player_reborn",
-		--	"Thay ®æi h­íng Phôc Sinh/change_PhucSinh",
+		-- "Nhan Bua Cuong Hoa/NhanBua",
+         "N©ng cao ®¼ng cÊp chuyÓn sinh nh©n vËt/player_reborn",
+			"Thay ®æi h­íng Phôc Sinh/change_PhucSinh",
 		--	"Sinh ThÇn Cang gäi Boss bang héi/sinhthancang",
          --   "M¶nh b¹ch kim/nhanmbk",
-            --"NhËn danh hiÖu/Get_Danh_Hieu2",
+            "NhËn danh hiÖu/Get_Danh_Hieu2",
             "T¨ng ®iÓm nh©n vËt/Get_Diem_Char",
             "NhËn C¸c Lo¹i Nguyªn LiÖu/Get_Nguyen_Lieu",
 			"Thao t¸c bang héi/TongOperation",
 			"Thao t¸c Vò Khİ/PS_VK",
-			-- "Thao t¸c kinh m¹ch /GetJingMai",
+			"Thao t¸c kinh m¹ch /GetJingMai",
 			"Ngo¹i Trang C«ng Thµnh/ngoaitrang",			
-			-- "Phôc sinh thó c­ng/Pet_OP",
-		--"NhËn ChiÕn T­îng/chientuong",
+			"Phôc sinh thó c­ng/Pet_OP",
+		"NhËn ChiÕn T­îng/chientuong",
 		--"TTBR/thantaibaoruong",
 		--"Nhan tmkl/tmkl",
 		"Kü n¨ng sèng/Life_Skill",
@@ -1201,20 +1201,22 @@ function getTiLi()
 end
 function Pet_OP()
 	local tSay = {}
-	-- if GetSkillLevel(30149) == 0 then
-		-- tinsert(tSay, format("%s/activePet", "Kİch ho¹t phôc sinh thó c­ng"))
-	-- end
-	-- tinsert(tSay, format("%s/getPetEgg", "NhËn Trøng Thó C­ng"))
-	-- tinsert(tSay, format("%s/getLingLi", "NhËn ®iÓm linh lùc"))
-	-- tinsert(tSay, format("%s/getbook5", "NhËn Book 5"))
--- --	tinsert(tSay, format("%s/getbook6", "NhËn Book 6"))
-	-- tinsert(tSay, format("%s/getPet", "NhËn Pet 6"))
 	if GetSkillLevel(30149) == 0 then
 		tinsert(tSay, format("%s/activePet", "Kİch ho¹t phôc sinh thó c­ng"))
 	end
+	tinsert(tSay, format("%s/getPetEgg", "NhËn Trøng Thó C­ng"))
+	tinsert(tSay, format("%s/getLingLi", "NhËn ®iÓm linh lùc"))
+	tinsert(tSay, format("%s/getbook5", "NhËn Book 5"))
+	tinsert(tSay, format("%s/getbook6", "NhËn Book 6"))
+	tinsert(tSay, format("%s/getPet", "NhËn Pet 6"))
+	-- if GetSkillLevel(30149) == 0 then
+		-- tinsert(tSay, format("%s/activePet", "Kİch ho¹t phôc sinh thó c­ng"))
+	-- end
 tinsert(tSay, format("%s/getbook4", "NhËn Book 4"))
 	tinsert(tSay, format("%s/getPetEgg", "NhËn Trøng Thó C­ng"))
 	tinsert(tSay, format("%s/getLingLi", "NhËn ®iÓm linh lùc"))
+	tinsert(tSay, format("%s/ForgetPetSkillMain", "Xoa skill"))
+	
 	tinsert(tSay, "T¹i h¹ chØ xem qua th«i/nothing");
 	Say(g_szTitle.."Ng­¬i cÇn gióp ®ì g×? Liªn hÖ https://facebook.com/Thuong.EoPi ®Ó ®­îc hç trî thªm!!!", getn(tSay), tSay);
 end
@@ -3087,7 +3089,7 @@ end
 function Get_Book()
 	local szSay = {
 		g_szTitle.."NhËn L­u Ph¸i Ch©n QuyÓn vµ QuyÕt YÕu!",
-		"NhËn Ch©n QuyÓn/nhanmt",
+		"NhËn Ch©n QuyÓn/Get_Book_ZhenJuan_caocap",
 		"Mat tich chym Y/mtphu_chimy",
 		"Mat tich Thiªn Hµ/mtphu_thienha",
 		"Mat tich Tö Hµ/mtphu_tuha",
@@ -3106,7 +3108,7 @@ function Get_Nguyen_Lieu()
 		-- "NhËn 100 Thiªn Cang LÖnh/Get_NL_TCL",
 --		"Nguyen Lieu Kich Bao Tay/kichbaotay",
 		"NhËn B¨ng Th¹ch vµ m¶nh b¨ng th¹ch/bangthach",
-		-- "NhËn 1000 Ma Tinh/Get_NL_MT",
+		 "NhËn 1000 Ma Tinh/Get_NL_MT",
 		-- "NhËn linh th¹ch 1 /lt1",
 		-- "NhËn linh th¹ch 2 /lt2",
 		-- "NhËn linh th¹ch 3 /lt3",
@@ -3606,7 +3608,7 @@ function GetJingMai()
 		format("%s/getJingMaiTongRen", "NhËn Kinh M¹ch §ång Nh©n"),
 		"Ra khái/nothing",
 	};
-	if MeridianGetLevel() < 3 then
+	if MeridianGetLevel() < 4 then
 		tinsert(szSay, 2, "Th¨ng cÊp c¶nh giíi/GetJingMai_Update")
 	end
 	-- if GetLevel() >=90  and MeridianGetLevel() < 2 then 
@@ -3640,12 +3642,12 @@ function GetJingMai_Update()
 	local nLevel = MeridianGetLevel()
 	-- for i = nLevel + 1, 1 do
 	--for i = nLevel + 1, 4 do -- max
-	 for i = nLevel + 1, 2 do
+	 for i = nLevel + 1, 4 do
 		MeridianUpdateLevel()
 	end
 
-	--local nNum = 600000 - (MeridianGetDanTian() + MeridianGetQiHai());
-	 local nNum = 300000 - (MeridianGetDanTian() + MeridianGetQiHai());
+	local nNum = 600000 - (MeridianGetDanTian() + MeridianGetQiHai());
+	 -- local nNum = 300000 - (MeridianGetDanTian() + MeridianGetQiHai());
 	-- local nNum = 150000 - (MeridianGetDanTian() + MeridianGetQiHai());
 	if nNum > 0 then
 		AwardGenuineQi(nNum);
@@ -3795,12 +3797,12 @@ end
 
 function Get_Mored()
 	local tSay = {
-	"Vò Khİ S¸t Thñ/vukhisatthu",
+	--"Vò Khİ S¸t Thñ/vukhisatthu",
 		-- "NhËn Thiªn H¹ V« Song/thvs",	
 	-- "NhËn HiÖu ChiÕn Tr­êng/hieudothong",
 		-- "NhËn TT3 LL3 TT4 LL4/ttll3",
 		 -- "NhËn TT1 LL/ttll1",
-		-- "NhËn ®­îc Trang BŞ Kim Xµ Lv3 +7 (lo¹i míi)/Get_KX3chonopt_6loai",
+		"NhËn ®­îc Trang BŞ Kim Xµ Lv3 +7 (lo¹i míi)/Get_KX3chonopt_6loai",
 		--"Vò Khİ Chİnh (3 lç)/vukhi_8x",
 		-- "NhËn Thiªn NghÜa/thienghia_mod3_zin",
 		-- "NhËn ®­îc Trang BŞ Kim Xµ Lv3 +7 (lo¹i cò)/getkx3",
@@ -3818,23 +3820,24 @@ function Get_Mored()
 
 		-- "NhËn Thiªn Chi Viªm §Õ/thienchiviemde",
 		-- "NhËn Viªm §Õ/viemde",
-		"NhËn Tö Quang Viªm §Õ/tuquangviemde",
+		--"NhËn Tö Quang Viªm §Õ/tuquangviemde",
 		"NhËn ®å buff/dobuffhttc",
 		-- "NhËn tö quang hiªn viªn thÇn binh/hienvienbinh",
-		"NhËn Cöu Thiªn Ngäc/cuuthienngoc",
+		--"NhËn Cöu Thiªn Ngäc/cuuthienngoc",
     	--"NhËn B¹ch Kim Viªm §Õ/bkvd",
 		-- "LuyÖn max skill trÊn ph¸i/maxtranphai",
 		-- -- "NhËn Th«ng Thiªn/getTiLi",
 		-- "NhËn Thien Chi T­íng Qu©n/thienchituongquan",
+				 "NhËn Loi Ho T­íng Qu©n/loihotuongquan",
 		-- "NhËn T­íng Qu©n/tuongquan",
 		-- -- "C¸c Lo¹i Ngäc/ngoctoc",
-     "C¸c Lo¹i Ngäc/ngocdame",
+    -- "C¸c Lo¹i Ngäc/ngocdame",
 		-- -- " Ngäc/hhvd_5",
 
-		--"§å 3 Lç/do3lo_8x",
+		"§å 3 Lç/do3lo_8x",
 		--"§å chay vac/khamchayvac",
 		-- "QuÎ 8 qu¸i/que8w", 
-		-- "Ngo¹i Trang/ngoaitrangnew", 
+		 "Ngo¹i Trang/ngoaitrangnew", 
 		-- -- "Hµo HiÖp V« H¹/gethhvhlb", 
 		-- "NhËn trang søc ®eo h«ng 4 vs 5 sao/showKX",
 		"T¹i h¹ chØ xem qua th«i/nothing",
@@ -4416,7 +4419,7 @@ end
 function Get_Enhance()
 	local tSay = {
 		"NhËn ThÇn Th¹ch §Şnh Hån/Get_Enhance_1",
-		--"NhËn Tinh th¹ch Thiªn Th¹ch/Get_Enhance_2",
+		"NhËn Tinh th¹ch Thiªn Th¹ch/Get_Enhance_2",
 		"T¹i h¹ chØ xem qua th«i/nothing",
 	}
 	Say(g_szTitle.."T¨ng cÊp kü n¨ng sèng", getn(tSay), tSay);
@@ -4426,8 +4429,9 @@ function Get_Enhance_1()
 	if gf_Judge_Room_Weight(2, 10, " ") ~= 1 then
 		return 0;
 	end
-	gf_AddItemEx2({2, 1, 1068, 1}, "Thiªn Th¹ch linh th¹ch", "Get_Enhance_1", "NhËn ThÇn Th¹ch §Şnh Hån", 0, 1);
---	gf_AddItemEx2({2, 1, 1067, 1}, "Thiªn Th¹ch linh th¹ch", "Get_Enhance_1", "NhËn ThÇn Th¹ch §Şnh Hån", 0, 1);
+	gf_AddItemEx2({2, 1, 1068, 4}, "Thiªn Th¹ch linh th¹ch", "Get_Enhance_1", "NhËn ThÇn Th¹ch §Şnh Hån", 0, 1);
+	gf_AddItemEx2({2, 1, 1067, 4}, "Thiªn Th¹ch linh th¹ch", "Get_Enhance_1", "NhËn ThÇn Th¹ch §Şnh Hån", 0, 1);
+	gf_AddItemEx2({2, 1, 1113, 4}, "Thiªn Th¹ch linh th¹ch", "Get_Enhance_1", "NhËn ThÇn Th¹ch §Şnh Hån", 0, 1);
 end
 
 function Get_Enhance_2()
@@ -4640,14 +4644,14 @@ end
 function Get_Danh_Hieu2()
 	local szSay = {
 		g_szTitle.."NhËn danh hiÖu mµ ®¹i hiÖp mong muèn!",
-                -- "NhËn Danh HiÖu Sèng kh«ng yªu/Get_DelYeu",
-                -- "NhËn Danh HiÖu HËn ®êi v« ®èi/Get_HanDoi",
-                -- "NhËn Danh HiÖu Buån V× §Ñp Trai/Get_SadDep",
-                -- "NhËn Danh HiÖu Ng¹o ThÕ V« Song/Get_NgaoTheVoSong",
-                -- "NhËn Danh HiÖu B¸ V­¬ng/Get_BaVuong",
-                -- "NhËn Danh HiÖu §¹i HiÖp/Get_DaiHiep",
-                -- "NhËn Danh HiÖu Tinh Anh §á/Get_TinhAnhDo",
-                -- "NhËn Danh HiÖu Tinh Anh Tİm/Get_TinhAnhTim",
+                "NhËn Danh HiÖu Sèng kh«ng yªu/Get_DelYeu",
+                "NhËn Danh HiÖu HËn ®êi v« ®èi/Get_HanDoi",
+                "NhËn Danh HiÖu Buån V× §Ñp Trai/Get_SadDep",
+                "NhËn Danh HiÖu Ng¹o ThÕ V« Song/Get_NgaoTheVoSong",
+                "NhËn Danh HiÖu B¸ V­¬ng/Get_BaVuong",
+                "NhËn Danh HiÖu §¹i HiÖp/Get_DaiHiep",
+                "NhËn Danh HiÖu Tinh Anh §á/Get_TinhAnhDo",
+                "NhËn Danh HiÖu Tinh Anh Tİm/Get_TinhAnhTim",
                 "NhËn Danh HiÖu ChiÕn Cuång/Get_ChienCuong",
 --				"NhËn Danh HiÖu New/Get_LaHan",
 --				"Trang kÕ/danhhieu3",
@@ -4890,6 +4894,7 @@ function Boss_W5()
 		SetNpcLifeTime(npcIndex, 1*60 * 60);
 		SetNpcDeathScript(npcIndex, "\\script\\function\\world_boss\\wb_boss_death.lua");
 		SetNpcRemoveScript(npcIndex, "\\script\\function\\world_boss\\wb_boss_remove.lua");
+		
 
 end
 
@@ -7148,3 +7153,42 @@ end
 function addvevang()
 	AddItem(2,1,30491,5,4)
 end
+function loihotuongquan()
+	local nBody 	= GetBody();
+	if nBody==1 then
+		AddItem(0,100,30215,1,1,-1,-1,-1,-1,-1,-1,-1,10)
+		AddItem(0,101,30215,1,1,-1,-1,-1,-1,-1,-1,-1,10)
+		AddItem(0,103,30215,1,1,-1,-1,-1,-1,-1,-1,-1,10)
+		-- AddItem(0,102,3036,1,1,-1,-1,-1,-1,-1,-1,-1,0)
+		-- AddItem(0,102,3040,1,1,-1,-1,-1,-1,-1,-1,-1,0)
+		-- AddItem(0,102,3044,1,1,-1,-1,-1,-1,-1,-1,-1,0)
+	end
+	
+	if nBody==2 then
+		AddItem(0,100,3017,1,1,-1,-1,-1,-1,-1,-1,-1,10)
+		AddItem(0,101,3017,1,1,-1,-1,-1,-1,-1,-1,-1,10)
+		AddItem(0,103,3017,1,1,-1,-1,-1,-1,-1,-1,-1,10)
+		AddItem(0,102,3037,1,1,-1,-1,-1,-1,-1,-1,-1,0)
+		AddItem(0,102,3041,1,1,-1,-1,-1,-1,-1,-1,-1,0)
+		AddItem(0,102,3045,1,1,-1,-1,-1,-1,-1,-1,-1,0)
+	end
+	
+	if nBody==3 then
+		AddItem(0,100,3018,1,1,-1,-1,-1,-1,-1,-1,-1,10)
+		AddItem(0,101,3018,1,1,-1,-1,-1,-1,-1,-1,-1,10)
+		AddItem(0,103,3018,1,1,-1,-1,-1,-1,-1,-1,-1,10)
+		AddItem(0,102,3038,1,1,-1,-1,-1,-1,-1,-1,-1,0)
+		AddItem(0,102,3042,1,1,-1,-1,-1,-1,-1,-1,-1,0)
+		AddItem(0,102,3046,1,1,-1,-1,-1,-1,-1,-1,-1,0)
+	end
+	
+	if nBody==4 then
+		AddItem(0,100,3019,1,1,-1,-1,-1,-1,-1,-1,-1,10)
+		AddItem(0,101,3019,1,1,-1,-1,-1,-1,-1,-1,-1,10)
+		AddItem(0,103,3019,1,1,-1,-1,-1,-1,-1,-1,-1,10)
+		AddItem(0,102,3039,1,1,-1,-1,-1,-1,-1,-1,-1,0)
+		AddItem(0,102,3043,1,1,-1,-1,-1,-1,-1,-1,-1,0)
+		AddItem(0,102,3047,1,1,-1,-1,-1,-1,-1,-1,-1,0)
+	end
+end
+
