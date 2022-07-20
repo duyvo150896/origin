@@ -8,6 +8,7 @@
 MONTE_TO_GOLD_RATE = 10000
 
 function OnUse(id)
+	Msg2Player("DBG")
 	local tbSay = {}
 	local nPetCount,tbPetList = GetPetList()
 	local szBookName = GetItemName(id)
@@ -68,7 +69,7 @@ function _get_need_money(nLevel)
 	if nLevel>=1 and nLevel<=getn(tMoney) then
 		return tMoney[nLevel]
 	else
-		return 999999*10000
+		return 9*10000
 	end
 end
 
