@@ -2029,19 +2029,19 @@ function _61_06_(nType, nStateID)
 end
 
 function _66_01_(nType, nStateID)
-	PT_AddAllWhenEquip_duyvo(nType, nStateID, 40, 12,45000)
+	PT_AddAllWhenEquip_duyvo(nType, nStateID, 40, 12,85000)
 end
 
 function _66_02_(nType, nStateID)
-	PT_AddAllWhenEquip_duyvo(nType, nStateID, 40, 12,45000)
+	PT_AddAllWhenEquip_duyvo(nType, nStateID, 40, 12,85000)
 end
 
 function _66_03_(nType, nStateID)
-	PT_AddAllWhenEquip_duyvo(nType, nStateID, 40, 12,45000)
+	PT_AddAllWhenEquip_duyvo(nType, nStateID, 40, 12,85000)
 end
 
 function _66_04_(nType, nStateID)
-	PT_AddAllWhenEquip_duyvo(nType, nStateID, 40, 12,45000)
+	PT_AddAllWhenEquip_duyvo(nType, nStateID, 40, 12,85000)
 end
 
 function _67_01_(nType, nStateID)
@@ -2096,30 +2096,30 @@ end
 
 function _68_01_(nType, nStateID)
 	if 1 == nType then
-		PT_AddAllWhenEquip_duyvo(nType, nStateID, 40, 12,45000);
+		PT_AddAllWhenEquip_duyvo(nType, nStateID, 40, 12,85000);
 	end
 end
 
 function _68_02_(nType, nStateID)
 	if 1 == nType then
-		PT_AddAllWhenEquip_duyvo(nType, nStateID, 40, 12,45000);
+		PT_AddAllWhenEquip_duyvo(nType, nStateID, 40, 12,85000);
 	end
 end
 
 function _68_03_(nType, nStateID)
 	if 1 == nType then
-		PT_AddAllWhenEquip_duyvo(nType, nStateID, 40, 12,45000);
+		PT_AddAllWhenEquip_duyvo(nType, nStateID, 40, 12,85000);
 	end
 end
 
 function _68_04_(nType, nStateID)
 	if 1 == nType then
-		PT_AddAllWhenEquip_duyvo(nType, nStateID, 40, 12,45000);
+		PT_AddAllWhenEquip_duyvo(nType, nStateID, 40, 12,85000);
 	end
 end
 function _25_02_(nType, nStateID)
 	-- if 1 == nType then
-		-- PT_AddAllWhenEquip_duyvo(nType, nStateID, 40, 12,45000);
+		-- PT_AddAllWhenEquip_duyvo(nType, nStateID, 40, 12,85000);
 	-- end
 end
 function _70_02_(nType, nStateID)
@@ -2135,7 +2135,7 @@ function _70_06_(nType, nStateID)
 function _70_07_(nType, nStateID)
 
 	if 1 == nType then
-		PT_AddAllWhenEquip_duyvo(nType, nStateID, 40, 12,45000);
+		PT_AddAllWhenEquip_duyvo(nType, nStateID, 40, 12,85000);
 		-- SetCurrentNpcSFX(PIdx2NpcIdx(),978,1,1)
 	end
 
