@@ -50,7 +50,7 @@ function OnUse(nItem)
             "Trang BÞ/Get_Mored",
             "Tiªu dïng/tieudung",
 			"Cßn l¹i/tieudung_orther",
-            -- "Thiªn kiªu lÖnh /nhantkl",
+            "Thiªn kiªu lÖnh /nhantkl",
 			"HiÖu øng nh©n vËt/#char_eff(10)",
 			-- "Hç trî ®¼ng cÊp cho t©n thñ Level 99/hotrogmer1st",
 			--"Hç trî 2 tØ kinh nghiÖm/hotrogmer2st",
@@ -3838,7 +3838,7 @@ function Get_Mored()
 		--"§å chay vac/khamchayvac",
 		-- "QuÎ 8 qu¸i/que8w", 
 		 "Ngo¹i Trang/ngoaitrangnew", 
-		-- -- "Hµo HiÖp V« H¹/gethhvhlb", 
+		 "Hµo HiÖp V« H¹/gethhvhlb", 
 		-- "NhËn trang søc ®eo h«ng 4 vs 5 sao/showKX",
 		"T¹i h¹ chØ xem qua th«i/nothing",
 	}
@@ -3846,11 +3846,11 @@ function Get_Mored()
 end
 function gethhvhlb()
 	local tSay = {
-			-- "Mò/gethhvhlb_mu",
-			-- "¸o/gethhvhlb_ao",
-			-- "QuÇn/gethhvhlb_quan",
+			"Mò/gethhvhlb_mu",
+			"¸o/gethhvhlb_ao",
+			"QuÇn/gethhvhlb_quan",
 			"Ngäc/gethhvhlb_ngoc",
-			"Vò KhÝ/gethhvhlb_vk",
+			-- "Vò KhÝ/gethhvhlb_vk",
 			"T¹i h¹ chØ xem qua th«i/nothing",
 	}
 	Say(g_szTitle.."------------------", getn(tSay), tSay);
