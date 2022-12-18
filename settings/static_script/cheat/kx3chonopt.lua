@@ -246,7 +246,7 @@ function SetKX3SL_6(nType,ID1, ID2, ID3,ID4,ID5,nguhanh)
 end
 
 function SetKX3SL_End(nType,ID1,ID2,ID3,ID4,ID5,ID6,nguhanh)
-	local pifeng,pIndex = AddItem(0,nType,nguhanh,1,1,-1,-1,-1,-1,-1,-1,0,0)
+	local pifeng,pIndex = AddItem(0,nType,nguhanh,1,1,-1,-1,-1,-1,-1,-1,0,10)
     FeedItem(pIndex,1000000)
 	SetItemFeedUpAttrs(pIndex,-1,ID2,ID3,ID4,ID5,ID6);
 	-- DelItem(2,1,50005,1);
