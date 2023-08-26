@@ -66,7 +66,7 @@ Sort	Page	X	Y	Description	Information	GiveItem1Type	GiveItem1Genre	GiveItem1Deta
 3	2	2	4	Chøc N÷ thoa	<color=Gray>20 Xu<enter><color=Gold>9 Xu	6	0	200	27	1	10				9	15	
 3	2	3	1	Cuèc ThÇn N«ng	<color=Gray>20 Xu<enter><color=Gold>9 Xu	6	0	200	28	1	10				9	15	
 3	2	3	2	Thiªn S­ KhÝ	<color=Gray>50 Xu<enter><color=Gold>20 Xu	6	0	200	38	1	10				20	14	
-4	1	1	1	VÐ TiÕu Y Vµng	<color=Gray>1989 Xu<enter><color=Gold>2147483647 Xu	6	2	1	30491	1	10				2147483647	7	
+4	1	1	1	VÐ TiÕu Y Vµng	<color=Gray>1989 Xu<enter><color=Gold>1 Xu	6	2	1	30491	1	10				1	7	
 4	1	1	2	VÐ TiÕu Y B¹c	<color=Gray>222 Xu<enter><color=Gold>2147483647 Xu	6	2	1	30492	1	10				2147483647	7	
 4	1	1	3	VÐ TiÕu Y §ång	<color=Gray>25 Xu<enter><color=Gold>2147483647 Xu	6	2	1	30493	1	10				2147483647	7	
 4	1	1	4	Khiªm Vò Ngo¹i Trang Bao	<color=Gray>200 Xu<enter><color=Gold>200 Xu	6	2	1	3384	1	10				200	30	
