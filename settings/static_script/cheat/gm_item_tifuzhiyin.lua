@@ -54,13 +54,13 @@ function OnUse(nItem)
 			"HiÖu øng nh©n vËt/#char_eff(10)",
 			-- "Hç trî ®¼ng cÊp cho t©n thñ Level 99/hotrogmer1st",
 			--"Hç trî 2 tØ kinh nghiÖm/hotrogmer2st",
-            --"NhËn Bé DiÖu D­¬ng +7/Get_YaoYang_15",
+            "NhËn Bé DiÖu D­¬ng +7/Get_YaoYang_15",
 			--"NgÉu nhiªn nhËn ®­îc Trang BÞ Kim Xµ Lv1 +10/Get_JinShe_1",
-			format("%s/Process_Equip_LingTu", "NhËn Linh §å +10"),
+			--format("%s/Process_Equip_LingTu", "NhËn Linh §å +10"),
 			-- format("%s/Process_SanJianTao", "NhËn trang søc ®eo h«ng 6 sao"),
 			-- format("%s/Get_kx7", "NhËn trang søc ®eo h«ng 7 sao"),
 			-- format("%s/test", "Test Nhan Event"),
-			-- "NhËn Lak/Get_Energy",
+			"NhËn Lak/Get_Energy",
 			--"Vu Khi Chua giam dinh/btcgd",
 
 
@@ -142,7 +142,7 @@ function tieudung_orther()
 	--		"Thay ®æi h­íng Phôc Sinh/change_PhucSinh",
 		--	"Sinh ThÇn Cang gäi Boss bang héi/sinhthancang",
          --   "M¶nh b¹ch kim/nhanmbk",
-       --     "NhËn danh hiÖu/Get_Danh_Hieu2",
+            "NhËn danh hiÖu/Get_Danh_Hieu2",
             "T¨ng ®iÓm nh©n vËt/Get_Diem_Char",
             "NhËn C¸c Lo¹i Nguyªn LiÖu/Get_Nguyen_Lieu",
 			"Thao t¸c bang héi/TongOperation",
@@ -253,36 +253,24 @@ end
 function tk_8x()
 	local nBody 	= GetBody();
 	if nBody==1 then
-		-- AddItem(0,100,30001,1,1,-1,-1,-1,-1,-1,-1,-1,10);
-		-- AddItem(0,101,30001,1,1,-1,-1,-1,-1,-1,-1,-1,10);
-		-- AddItem(0,103,30001,1,1,-1,-1,-1,-1,-1,-1,-1,10);
-		AddItem(0,102,30001,1,1,-1,-1,-1,-1,-1,-1,-1,0);
-		AddItem(0,102,30002,1,1,-1,-1,-1,-1,-1,-1,-1,0);
-		AddItem(0,102,30003,1,1,-1,-1,-1,-1,-1,-1,-1,0);
+		AddItem(0,100,95,1,1,-1,-1,-1,-1,-1,-1,-1,10);
+		AddItem(0,101,95,1,1,-1,-1,-1,-1,-1,-1,-1,10);
+		AddItem(0,103,95,1,1,-1,-1,-1,-1,-1,-1,-1,10);
 	end 
 	if nBody==2 then
-		-- AddItem(0,100,30002,1,1,-1,-1,-1,-1,-1,-1,-1,10);
-		-- AddItem(0,101,30002,1,1,-1,-1,-1,-1,-1,-1,-1,10);
-		-- AddItem(0,103,30002,1,1,-1,-1,-1,-1,-1,-1,-1,10);
-		AddItem(0,102,30004,1,1,-1,-1,-1,-1,-1,-1,-1,0);
-		AddItem(0,102,30005,1,1,-1,-1,-1,-1,-1,-1,-1,0);
-		AddItem(0,102,30006,1,1,-1,-1,-1,-1,-1,-1,-1,0);
+		AddItem(0,100,96,1,1,-1,-1,-1,-1,-1,-1,-1,10);
+		AddItem(0,101,96,1,1,-1,-1,-1,-1,-1,-1,-1,10);
+		AddItem(0,103,96,1,1,-1,-1,-1,-1,-1,-1,-1,10);
 	end
 		if nBody==3 then
-		-- AddItem(0,100,30003,1,1,-1,-1,-1,-1,-1,-1,-1,10);
-		-- AddItem(0,101,30003,1,1,-1,-1,-1,-1,-1,-1,-1,10);
-		-- AddItem(0,103,30003,1,1,-1,-1,-1,-1,-1,-1,-1,10);
-		AddItem(0,102,30007,1,1,-1,-1,-1,-1,-1,-1,-1,0);
-		AddItem(0,102,30008,1,1,-1,-1,-1,-1,-1,-1,-1,0);
-		AddItem(0,102,30009,1,1,-1,-1,-1,-1,-1,-1,-1,0);
+		AddItem(0,100,97,1,1,-1,-1,-1,-1,-1,-1,-1,10);
+		AddItem(0,101,97,1,1,-1,-1,-1,-1,-1,-1,-1,10);
+		AddItem(0,103,97,1,1,-1,-1,-1,-1,-1,-1,-1,10);
 	end
 		if nBody==4 then
-		-- AddItem(0,100,30004,1,1,-1,-1,-1,-1,-1,-1,-1,10);
-		-- AddItem(0,101,30004,1,1,-1,-1,-1,-1,-1,-1,-1,10);
-		-- AddItem(0,103,30004,1,1,-1,-1,-1,-1,-1,-1,-1,10);
-		AddItem(0,102,30010,1,1,-1,-1,-1,-1,-1,-1,-1,0);
-		AddItem(0,102,30011,1,1,-1,-1,-1,-1,-1,-1,-1,0);
-		AddItem(0,102,30012,1,1,-1,-1,-1,-1,-1,-1,-1,0);
+		AddItem(0,100,98,1,1,-1,-1,-1,-1,-1,-1,-1,10);
+		AddItem(0,101,98,1,1,-1,-1,-1,-1,-1,-1,-1,10);
+		AddItem(0,103,98,1,1,-1,-1,-1,-1,-1,-1,-1,10);
 	end
 end
 
@@ -3807,14 +3795,15 @@ function Get_Mored()
 		-- "NhËn Thiªn NghÜa/thienghia_mod3_zin",
 		-- "NhËn ®­îc Trang BÞ Kim Xµ Lv3 +7 (lo¹i cò)/getkx3",
 		-- "NhËn Thiªn Chi tµng KiÕm/tctk",
+		 "NhËn tµng KiÕm/tk_8x",
 		 "HHVD/huyhoang5",
 		-- "Ngäc Thiªn NghÜa/thienghia_ngoc",
 		-- "uÈn Linh cÊp 2/nhanul_2",
 		 "uÈn Linh cÊp 3/nhanul_3",
 		-- "Vâ L©m b¸ Chñ/vlbc",
-	--"Ngoc dd 8/ngocdd8",
+	"Ngoc dd 8/ngocdd8",
 		-- "NhËn Vò KhÝ Nguyªn Tö/vknt",
-		--"NhËn Vò Kh¶m /vkkham",
+		"NhËn Vò Kh¶m /vkkham",
 		 "NhËn Vò Opt zin /vkopt",
 		-- "NhËn §å Long §»ng Phông Vò/longdang",
 
@@ -3823,23 +3812,23 @@ function Get_Mored()
 		--"NhËn Tö Quang Viªm §Õ/tuquangviemde",
 		"NhËn ®å buff/dobuffhttc",
 		-- "NhËn tö quang hiªn viªn thÇn binh/hienvienbinh",
-		--"NhËn Cöu Thiªn Ngäc/cuuthienngoc",
-    	--"NhËn B¹ch Kim Viªm §Õ/bkvd",
+		"NhËn Cöu Thiªn Ngäc/cuuthienngoc",
+    	"NhËn B¹ch Kim Viªm §Õ/bkvd",
 		-- "LuyÖn max skill trÊn ph¸i/maxtranphai",
 		-- -- "NhËn Th«ng Thiªn/getTiLi",
 		-- "NhËn Thien Chi T­íng Qu©n/thienchituongquan",
 			--	 "NhËn Loi Ho T­íng Qu©n/loihotuongquan",
 		-- "NhËn T­íng Qu©n/tuongquan",
-		-- -- "C¸c Lo¹i Ngäc/ngoctoc",
+		 "C¸c Lo¹i Ngäc/ngoctoc",
     -- "C¸c Lo¹i Ngäc/ngocdame",
 		-- -- " Ngäc/hhvd_5",
 
 		"§å 3 Lç/do3lo_8x",
-		--"§å chay vac/khamchayvac",
+		"§å chay vac/khamchayvac",
 		-- "QuÎ 8 qu¸i/que8w", 
 		 "Ngo¹i Trang/ngoaitrangnew", 
 		-- "Hµo HiÖp V« H¹/gethhvhlb", 
-		-- "NhËn trang søc ®eo h«ng 4 vs 5 sao/showKX",
+		 "NhËn trang søc ®eo h«ng 4 vs 5 sao/showKX",
 		"T¹i h¹ chØ xem qua th«i/nothing",
 	}
 	Say(g_szTitle.."------------------", getn(tSay), tSay);
@@ -5848,7 +5837,7 @@ function showKX()
 		g_szTitle.."Lùa chän",
 		-- "NhËn Th«n NguyÖt lÖnh (KX6)/Get_KimXa",
 		"Trang bÞ Kim xµ 4 (ngÉu nhiªn)/showKX4",
-		"Trang bÞ Kim xµ 5 (ngÉu nhiªn)/showKX5",
+		--"Trang bÞ Kim xµ 5 (ngÉu nhiªn)/showKX5",
 		-- "Trang bÞ Kim xµ 6 (ngÉu nhiªn)/showKX6",
 		-- "Trang bÞ Kim xµ 7 (ngÉu nhiªn)/showKX7",
 	}
@@ -6575,7 +6564,7 @@ function tlen(tList)
 end;
 
 function AddKX(nType,nSet,ID1,ID2,ID3,ID4,ID5,ID6)
-	local nResult,nItemIndex = AddItem(0,nType,nSet,1,4,-1,-1,-1,-1,-1,-1,0,10)
+	local nResult,nItemIndex = AddItem(0,nType,nSet,1,4,-1,-1,-1,-1,-1,-1,0,14)
     FeedItem(nItemIndex,1000000)
 	if ID5 ~= nil and ID6 ~= nil then 
 		SetItemFeedUpAttrs(nItemIndex,ID1,ID2,ID3,ID4,ID5,ID6);
@@ -7116,6 +7105,8 @@ end
 function khamchayvac()
 	AddItem(0,100,81,1,1,7,250,3,286,7,302,1,14);
 	AddItem(0,103,81,1,1,4,276,7,302,2,305,1,14);
+	AddItem(0,100,82,1,1,7,250,3,286,7,302,1,14);
+	AddItem(0,103,82,1,1,4,276,7,302,2,305,1,14);
 end
 
 function nhanmt()
