@@ -1,2 +1,0 @@
---活动开关
-WEEKEND_SWITCH = 1;
