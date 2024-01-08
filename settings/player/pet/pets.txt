@@ -36,9 +36,9 @@ ID	NpcTemplateId	NpcTemplateName	DefaultPetName	Introduce	Level	MinTianZi	MaxTia
 34	0	huoban_5_8	B¨ng N÷	N÷ nhi toµn th©n trµn ®Çy hµn khÝ, Èn c­ trong B¨ng T©m §éng, kh«ng thÝch n¬i ®«ng ng­êi, khi bÞ tÊn c«ng sÏ ph¸t ra hµn khÝ ®Ó ®ãng b¨ng ®èi ph­¬ng.	5	55	60	30097	5							0	-25	60			34
 35	0	huoban_5_9	Yªu Hå	Hå ly gian x¶o, th­êng c¶i trang ®Ó tiÕp cËn kÎ ®Þch, ®îi khi kÎ ®Þch l¬ lµ sÏ tiÕn hµnh tÊn c«ng.	5	60	60	30098	5	30090	5							50	1		35
 36	0	huoban_5_10	KiÕm t­îng	T­îng binh m· ngñ say ngh×n n¨m, vâ c«ng cao c­êng, søc m¹nh to lín, tõng ®­îc D­¬ng NghiÖp t­íng qu©n ®¸nh thøc, ®Õn Nh¹n M«n Quan b¶o vÖ quèc gia, dòng c¶m diÖt ®Þch nhËn ®­îc thµnh tÝch xuÊt s¾c.	5	60	60	30099	5	30090	5							50	1		36
-37	0	pet_huanxiong	TiÓu Ho¸n Hïng	TiÓu ho¸n hïng ®¸ng yªu, ®«i m¾t to long lanh, thÝch rõng rËm ë gÇn s«ng ngßi, ban ngµy th­êng nghØ ng¬i trªn c©y, buæi tèi míi ho¹t ®éng.	5	60	60	30100	5	30090	5							60	1		37
-38	0	pet_bawange	B¸ V­¬ng Ng¹c	C¸ sÊu ®Õn tõ C« §¶o, tÝnh t×nh ho¹t b¸t hiÕu ®éng, khi vui vÎ sÏ kh«ng ngõng ve vÉy chiÕc ®u«i, th©n thiÖn kh«ng h¹i ng­êi.	5	60	60	30100	5	30090	5							35	1		38
-39	0	pet_shaniao	Bæn §iÓu	Chim to mËp m¹p, vÎ ngoµi ®¸ng yªu, hiÒn lµnh vµ dòng c¶m, tõng v× b¹n ®ång hµnh mµ ®ì cung tªn cña ng­êi thî s¨n.	5	60	60	30100	5	30090	5							110	1		39
+37	0	pet_huanxiong	TiÓu Ho¸n Hïng	TiÓu ho¸n hïng ®¸ng yªu, ®«i m¾t to long lanh, thÝch rõng rËm ë gÇn s«ng ngßi, ban ngµy th­êng nghØ ng¬i trªn c©y, buæi tèi míi ho¹t ®éng.	5	70	70	30100	5	30090	5							60	1		37
+38	0	pet_bawange	B¸ V­¬ng Ng¹c	C¸ sÊu ®Õn tõ C« §¶o, tÝnh t×nh ho¹t b¸t hiÕu ®éng, khi vui vÎ sÏ kh«ng ngõng ve vÉy chiÕc ®u«i, th©n thiÖn kh«ng h¹i ng­êi.	5	70	70	30100	5	30090	5							35	1		38
+39	0	pet_shaniao	Bæn §iÓu	Chim to mËp m¹p, vÎ ngoµi ®¸ng yªu, hiÒn lµnh vµ dòng c¶m, tõng v× b¹n ®ång hµnh mµ ®ì cung tªn cña ng­êi thî s¨n.	5	70	70	30100	5	30090	5							110	1		39
 40	0	huoban_5_11	Gi¸o Chóng Tinh §µn (Thñy)	Ng­êi b¶o vÖ B¸i Háa Gi¸o ph©n ®µ H­ng Kh¸nh	5	55	55	30090	4	30100	1							70			40
 41	0	huoban_5_12	Gi¸o Chóng NguyÖt §µn (Thñy)	Ng­êi b¶o vÖ B¸i Háa Gi¸o ph©n ®µ Quúnh KÕt	5	55	55	30090	4	30091	1							70			41
 42	0	huoban_5_13	Gi¸o Chóng ThÇn §µn (Thñy)	Ng­êi b¶o vÖ B¸i Háa Gi¸o ph©n ®µ Thiªn Long Tù	5	55	55	30090	4	30094	1							70			42
