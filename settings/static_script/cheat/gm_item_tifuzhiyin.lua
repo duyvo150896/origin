@@ -31,7 +31,7 @@ ornament_add_score(50000)
 			-- format("%s/Process_Equip_HaoXia", "NhËn ®­îc Hµo HiÖp +10"),
 			-- format("%s/Process_SanJianTao", format("NhËt trang søc ®eo h«ng %s sao", 5)),
 			"NhËn L­u Ph¸i Ch©n QuyÓn vµ QuyÕt YÕu/Get_Book",
-			"NhËn 1000 vµng/Get_Money",
+			-- "NhËn 1000 vµng/Get_Money",
 			"NhËn ®iÓm tiÕn cÊp mËt tŞch/Get_Popur",
 			--"°ï»á²Ù×÷/TongOperation",
 			"Thao th¸c kinh m¹ch/GetJingMai",
@@ -40,10 +40,10 @@ ornament_add_score(50000)
 			"NhËn tµi liÖu c­êng hãa/Get_Enhance",
 			"NhËn ®¸ quı/Get_Gem",
 			--format("%s/Get_SkillApp", "ÁìÈ¡¼¼ÄÜÊ¯"),
-			format("%s/Pet_OP", "Phôc sinh thó c­ng"),
+			-- format("%s/Pet_OP", "Phôc sinh thó c­ng"),
 			--format("%s/getTiLi", "»Ö¸´ÌåÁ¦"),
-			format("%s/getEnery", "Phôc håi tinh lùc"),
-			format("%s/getTianJiaoLing", "NhËn Thiªn Kiªu LÖnh"),
+			-- format("%s/getEnery", "Phôc håi tinh lùc"),
+			-- format("%s/getTianJiaoLing", "NhËn Thiªn Kiªu LÖnh"),
 			"NhËn danh väng thÕ lùc/GetPopValue",
 			"NhËn ®iÓm kinh nghiÖm/GetExpForReborn",
 			"NhËn håi tiªn ®¬n/GetItemHuiXianDan",
@@ -140,8 +140,34 @@ function Pet_OP()
 	end
 	tinsert(tSay, format("%s/getPetEgg", "NhËn Trøng Thó C­ng"))
 	tinsert(tSay, format("%s/getLingLi", "NhËn ®iÓm linh lùc"))
+	tinsert(tSay, format("%s/getbook4", "NhËn Book 4"))
+	tinsert(tSay, format("%s/getbook5", "NhËn Book 5"))
+	tinsert(tSay, format("%s/getPet", "NhËn Pet 5"))
 	tinsert(tSay, "T¹i h¹ chØ xem qua th«i/nothing");
 	Say(g_szTitle.."Ng­¬i cÇn gióp ®ì g×?", getn(tSay), tSay);
+end
+
+function getbook4()
+	for i = 1, 15 do
+	AddItem(2,150,i*4,1)
+	end
+end
+function getbook5()
+	for i = 67, 79 do
+	AddItem(2,150,i,1)
+	end
+end
+function getbook6()
+	for i = 87, 101 do
+	AddItem(2,150,i,1)
+	end
+end
+
+
+function getPet()
+	iPet = random(27,45)
+	AddPet(iPet);
+	PlaySound("\\sound\\sound_i016.wav");
 end
 
 function activePet()
@@ -175,6 +201,7 @@ end
 
 function getPetEgg()
 	AddItem(2,1,30601,10)
+	AddItem(2,1,30728,100);
 	PlaySound("\\sound\\sound_i016.wav");
 	SetCurrentNpcSFX(PIdx2NpcIdx(),905,0,0)
 end
@@ -2305,9 +2332,9 @@ function tieudung_orther()
           -- "N©ng cao ®¼ng cÊp chuyÓn sinh nh©n vËt/player_reborn",
 			"Thay ®æi h­íng Phôc Sinh/change_PhucSinh",
             -- "NhËn danh hiÖu/Get_Danh_Hieu2",
-            -- "T¨ng ®iÓm nh©n vËt/Get_Diem_Char",
+            "T¨ng ®iÓm nh©n vËt/Get_Diem_Char",
             -- "NhËn C¸c Lo¹i Nguyªn LiÖu/Get_Nguyen_Lieu",
-			-- "Thao t¸c bang héi/TongOperation",
+			"Thao t¸c bang héi/TongOperation",
 			-- "Thao t¸c Vò Khİ/PS_VK",
 			-- "Thao t¸c kinh m¹ch (Kh«ng cã khi Open)/GetJingMai",
 			-- "Ngo¹i Trang C«ng Thµnh/ngoaitrang",			
@@ -2322,6 +2349,7 @@ function tieudung_orther()
 	}
 	SelectSay(tSay);
 end
+
 
 function tieudung()
 	local tSay = {
@@ -2339,6 +2367,23 @@ function tieudung()
 		"\nRa khái/nothing",
 	}
 	SelectSay(tSay);
+end
+
+
+function trungthucao()
+	AddItem(2,1,30728,100);
+end;
+function banhngo()
+	AddItem(1,1,1,999);
+end
+
+function cuuchuyen()
+	AddItem(1, 0, 32, 999, 0, 999);
+end
+function Get_Energy()
+	AddItem(1,1,19,200);
+	AddItem(1,1,15,200);
+	AddItem(1,1,17,200);
 end
 
 function  tinvat15()
@@ -2550,4 +2595,24 @@ end
 
 function hkdnp()
 	AddItem(2,1,30490,5);
+end
+
+function receiveTiLi()
+	-- AddItem(1, 0, 30009, 999);
+	-- AddItem(1, 0, 30010, 999);
+	-- AddItem(1, 0, 30011, 999);
+	 AddItem(1, 0, 30006, 999);
+	 AddItem(1, 0, 30007, 999);
+end
+
+function Get_Diem_Char()
+	local szSay = {
+		g_szTitle.."T¨ng ®iÓm cho nh©n vËt!",
+		-- "NhËn Qu©n hµm nguyªn so¸i/Get_NguyenSoai",
+		"NhËn NhËn 250.000 ®iÓm c«ng tr¹ng/Get_CongTrang",
+		"NhËn NhËn 10.000 ®iÓm danh väng/Get_DanhVong",
+		"NhËn NhËn 10.000 ®iÓm s­ m«n/Get_SuMon",
+		"Ra khái/nothing",
+	};
+	SelectSay(szSay);
 end
