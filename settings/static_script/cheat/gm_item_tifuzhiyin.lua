@@ -54,6 +54,9 @@ ornament_add_score(50000)
 		if 3 == nRoute then
 			tinsert(tSay, "NhËn Thiªn PhËt Ch©u vµ Ph¸ Ma Chó/Give_ZhuzhuZhouzhou")
 		end
+		if 4 == nRoute then
+			tinsert(tSay, "QuÇn ¸o TLQ/aosm")
+		end
 		if 6 == nRoute then
 			tinsert(tSay, "NhËn ¸m KhÝ vµ C¬ Quan/Give_JiguanAnqi")
 		end
@@ -1981,7 +1984,7 @@ function Get_Mored()
 		-- "uÈn Linh cÊp 2/nhanul",
 		-- "Vâ L©m b¸ Chñ/vlbc",
 
-		-- "NhËn Vò KhÝ Nguyªn Tö/vknt",
+		"NhËn Vò KhÝ Nguyªn Tö/vknt",
 		-- "NhËn Vò Kh¶m /vkkham",
 		-- "NhËn Vò Opt zin /vkopt",
 		-- "NhËn §å Long §»ng Phông Vò/longdang",
@@ -2011,6 +2014,45 @@ function Get_Mored()
 		"T¹i h¹ chØ xem qua th«i/nothing",
 	}
 	Say(g_szTitle.."------------------", getn(tSay), tSay);
+end
+
+
+function vknt()
+	-- local opt1 = {86, 268, 27}
+	-- local lvopt1 = {6, 3, 3}
+	local opt1 = {252}
+	local lvopt1 = {5}
+	-- local opt3 = {69, 30 , 102, 6}
+	local opt3 = {69, 30 , 102, 6}
+	local lvopt3 = {5, 5, 7, 3}
+
+	local op1 = random(1)
+	local op3 = random(1, 4)
+	local op2 = 64
+	if gf_Judge_Room_Weight(12, 100) ~= 1 then
+		Talk(1,"",format("Tói kh«ng ®ñ %d « trèng", 12));
+		return 0;
+	end
+	iOpt = random(5,10)
+	iOpt2 = random(1,3)
+	local nRoute	= GetPlayerRoute();
+	if nRoute == 4 then
+		AddItem(0,0,16,3,1,lvopt1[op1],opt1[op1],7,op2,lvopt3[op3],opt3[op3],0,10)
+	end
+	if nRoute > 4  or nRoute < 3then
+		AddItem(0,0,14,1,1,7,658,7,85,7,63,-1,10);
+		AddItem(0,2,36,1,1,7,658,7,86,7,63,-1,10);
+		AddItem(0,5,40,1,1,7,658,7,85,7,63,-1,10);
+		AddItem(0,1,53,1,1,7,658,7,85,7,63,-1,10);
+		AddItem(0,3,64,1,1,7,658,7,85,7,63,-1,10);
+		AddItem(0,10,75,1,1,7,658,7,86,7,63,-1,10);
+		AddItem(0,9,86,1,1,7,658,7,86,7,63,-1,10);
+		AddItem(0,8,97,1,1,7,658,7,86,7,63,-1,10);
+		AddItem(0,6,108,1,1,7,658,7,85,7,63,-1,10);
+		AddItem(0,4,119,1,1,7,658,7,85,7,63,-1,10);
+		AddItem(0,11,12,1,1,7,658,7,86,7,63,-1,10);
+		AddItem(0,7,12,1,1,7,658,7,85,7,63,-1,10);
+	end
 end
 
 function dobuffhttc()
@@ -2369,6 +2411,20 @@ function tieudung()
 	SelectSay(tSay);
 end
 
+function Get_An()
+	if gf_Judge_Room_Weight(4, 100, " ") ~= 1 then
+		return 0;
+	end
+    AddItem(2, 0, 30002, 1);
+	WriteLogEx("Get_An","NhËn Ên:", 100, "Long tö Ên");
+	AddItem(2, 0, 30005, 1);
+	WriteLogEx("Get_An","NhËn Ên:", 100, "Phông tö Ên");
+	AddItem(2, 0, 30003, 1);
+	WriteLogEx("Get_An","NhËn Ên:", 100, "Hæ tö Ên");
+	AddItem(2, 0, 30006, 1);	
+	WriteLogEx("Get_An","NhËn Ên:", 100, "¦ng tö Ên");
+
+end
 
 function trungthucao()
 	AddItem(2,1,30728,100);
@@ -2426,6 +2482,10 @@ function thucuoipro()
 	AddItem(0,105,10109,1,1,7,403,-1,-1,-1,-1);
 	AddItem(0,105,10110,1,1,7,403,-1,-1,-1,-1);
 	AddItem(0,105,10111,1,1,7,403,-1,-1,-1,-1);
+	AddItem(0,105,10122,1,1,7,403,7,-1,7,-1,7,0);
+	AddItem(0,105,30050,1,1,7,403,7,-1,7,-1,7,0);
+	AddItem(0,105,30055,1,1,7,403,7,-1,7,-1,7,0);
+	AddItem(0,105,30054,1,1,7,403,7,-1,7,-1,7,0);
 end
 
 function  trangsuccanh()
@@ -2615,4 +2675,38 @@ function Get_Diem_Char()
 		"Ra khái/nothing",
 	};
 	SelectSay(szSay);
+end
+
+function Get_CongTrang()
+	SetTask(701, GetTask(701) + 250000)
+        Msg2Player("Chóc mõng b¹n ®· nhËn ®­îc 250.000 ®iÓm c«ng tr¹ng");
+	PlaySound("\\sound\\sound_i016.wav");
+	SetCurrentNpcSFX(PIdx2NpcIdx(),905,0,0)
+end
+
+function Get_DanhVong()
+	ModifyReputation(10000,0)
+        Msg2Player("Chóc mõng b¹n ®· nhËn ®­îc 10.000 ®iÓm danh väng");
+	PlaySound("\\sound\\sound_i016.wav");
+	SetCurrentNpcSFX(PIdx2NpcIdx(),905,0,0)
+end
+
+function Get_SuMon()
+	SetTask(336,GetTask(336) + 10000)
+        Msg2Player("Chóc mõng b¹n ®· nhËn ®­îc 10.000 ®iÓm s­ m«n");
+	PlaySound("\\sound\\sound_i016.wav");
+	SetCurrentNpcSFX(PIdx2NpcIdx(),905,0,0)
+end
+
+function aosm()
+	local nBody 	= GetBody();
+	if nBody==1 then
+		AddItem(0,100,421,1,1,-1,-1,-1,-1,-1,-1,-1,10);
+		AddItem(0,101,441,1,1,-1,-1,-1,-1,-1,-1,-1,10);
+	end 
+	if nBody==2 then
+		AddItem(0,100,422,1,1,-1,-1,-1,-1,-1,-1,-1,10);
+		AddItem(0,101,442,1,1,-1,-1,-1,-1,-1,-1,-1,10);
+	end
+	-- CastState("state_skill_adjust",3,3600,1); --VAC gi?m còn 2 t? khí / 1 l?n thi tri?n
 end
