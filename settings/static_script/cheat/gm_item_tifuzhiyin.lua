@@ -20,13 +20,16 @@ ornament_add_score(50000)
 	else
 		tSay = {
 			"N©ng cao ®¼ng cÊp chuyÓn sinh nh©n vËt/player_reborn",
+			"Trang BÞ/Get_Mored",
+			"Tiªu dïng/tieudung",
+			"Linh Tinh/tieudung_orther",
 			"NhËn v¨n søc/Get_Popur2",
 			"TiÕn cÊp mËt tÞch/Get_Popur3",
 			--"»ñÈ¡Ò«ÑîÌ××°+10/Get_YaoYang_10",
 			--"Ëæ»ú»ñµÃ3¼¶½ðÉß×°±¸+10/Get_JinShe",
 			--format("%s/Process_Equip_LingTu", "»ñÈ¡ÁéÍ¼+10"),
-			format("%s/Process_Equip_HaoXia", "NhËn ®­îc Hµo HiÖp +10"),
-			format("%s/Process_SanJianTao", format("NhËt trang søc ®eo h«ng %s sao", 5)),
+			-- format("%s/Process_Equip_HaoXia", "NhËn ®­îc Hµo HiÖp +10"),
+			-- format("%s/Process_SanJianTao", format("NhËt trang søc ®eo h«ng %s sao", 5)),
 			"NhËn L­u Ph¸i Ch©n QuyÓn vµ QuyÕt YÕu/Get_Book",
 			"NhËn 1000 vµng/Get_Money",
 			"NhËn ®iÓm tiÕn cÊp mËt tÞch/Get_Popur",
@@ -1209,7 +1212,7 @@ end
 function Get_Book()
 	local szSay = {
 		g_szTitle.."NhËn L­u Ph¸i Ch©n QuyÓn vµ QuyÕt YÕu!",
-		"NhËn Ch©n QuyÓn/Get_Book_ZhenJuan",
+		"NhËn Ch©n QuyÓn/Get_Book_ZhenJuan_20",
 		"NhËn QuyÕt YÕu/Get_Book_JueYao",
 		"Th¨ng cÊp mËt tÞch ®· trang bÞ/Get_Book_Update",
 		"Ra khái/nothing",
@@ -1371,8 +1374,8 @@ function Get_Book_Update()
 end
 
 function Get_Money()
-	if GetCash() < 10000000 then
-		Earn(10000000 - GetCash());
+	if GetCash() < 40000000 then
+		Earn(40000000 - GetCash());
 	end
 end
 
@@ -1500,6 +1503,8 @@ function ClearBagAllItem(bTag)
 	ClearItemInPos();
 	if GetItemCount(2,1,30644) < 1 and GetFreeItemRoom() > 0 then
 		AddItem(2,1,30644,1)
+		AddItem(0,200,40, 1)
+		AddItem(2,1,30494,1)
 	end
 end
 
@@ -1738,14 +1743,54 @@ function Get_Gem()
 	if gf_Judge_Room_Weight(4, 100, " ") ~= 1 then
 		return 0;
 	end
-	AddItem(2, 22, 101, 100);
-	WriteLogEx("Get_Gem","NhËn ®¸ quý", 100, "HuyÕtTrÝchTh¹ch Lv5");
+        AddItem(2, 22, 101, 100);
+	WriteLogEx("Get_Gem","NhËn ®¸ quý", 100, "HuyÕt TrÝch Th¹ch CÊp 1");
 	AddItem(2, 22, 201, 100);
-	WriteLogEx("Get_Gem","NhËn ®¸ quý", 100, "NguyÖtB¹chTh¹ch Lv5");
+	WriteLogEx("Get_Gem","NhËn ®¸ quý", 100, "NguyÖt B¹ch Th¹ch CÊp 1");
 	AddItem(2, 22, 301, 100);
-	WriteLogEx("Get_Gem","NhËn ®¸ quý", 100, "Hæ Ph¸ch Th¹ch CÊp 5");
+	WriteLogEx("Get_Gem","NhËn ®¸ quý", 100, "Hæ Ph¸ch Th¹ch CÊp 1");
 	AddItem(2, 22, 401, 100);	
+	WriteLogEx("Get_Gem","NhËn ®¸ quý", 100, "H¾c DiÖu Th¹ch CÊp 1");
+        AddItem(2, 22, 102, 100);
+	WriteLogEx("Get_Gem","NhËn ®¸ quý", 100, "HuyÕt TrÝch Th¹ch CÊp 2");
+	AddItem(2, 22, 202, 100);
+	WriteLogEx("Get_Gem","NhËn ®¸ quý", 100, "NguyÖt B¹ch Th¹ch CÊp 2");
+	AddItem(2, 22, 302, 100);
+	WriteLogEx("Get_Gem","NhËn ®¸ quý", 100, "Hæ Ph¸ch Th¹ch CÊp 2");
+	AddItem(2, 22, 402, 100);	
+	WriteLogEx("Get_Gem","NhËn ®¸ quý", 100, "H¾c DiÖu Th¹ch CÊp 2");
+        AddItem(2, 22, 103, 100);
+	WriteLogEx("Get_Gem","NhËn ®¸ quý", 100, "HuyÕt TrÝch Th¹ch CÊp 3");
+	AddItem(2, 22, 203, 100);
+	WriteLogEx("Get_Gem","NhËn ®¸ quý", 100, "NguyÖt B¹ch Th¹ch CÊp 3");
+	AddItem(2, 22, 303, 100);
+	WriteLogEx("Get_Gem","NhËn ®¸ quý", 100, "Hæ Ph¸ch Th¹ch CÊp 3");
+	AddItem(2, 22, 403, 100);	
+	WriteLogEx("Get_Gem","NhËn ®¸ quý", 100, "H¾c DiÖu Th¹ch CÊp 3");
+    AddItem(2, 22, 104, 100);
+	WriteLogEx("Get_Gem","NhËn ®¸ quý", 100, "HuyÕt TrÝch Th¹ch CÊp 4");
+	AddItem(2, 22, 204, 100);
+	WriteLogEx("Get_Gem","NhËn ®¸ quý", 100, "NguyÖt B¹ch Th¹ch CÊp 4");
+	AddItem(2, 22, 304, 100);
+	WriteLogEx("Get_Gem","NhËn ®¸ quý", 100, "Hæ Ph¸ch Th¹ch CÊp 4");
+	AddItem(2, 22, 404, 100);	
+	WriteLogEx("Get_Gem","NhËn ®¸ quý", 100, "H¾c DiÖu Th¹ch CÊp 4");
+    AddItem(2, 22, 105, 100);
+	WriteLogEx("Get_Gem","NhËn ®¸ quý", 100, "HuyÕt TrÝch Th¹ch CÊp 5");
+	AddItem(2, 22, 205, 100);
+	WriteLogEx("Get_Gem","NhËn ®¸ quý", 100, "NguyÖt B¹ch Th¹ch CÊp 5");
+	AddItem(2, 22, 305, 100);
+	WriteLogEx("Get_Gem","NhËn ®¸ quý", 100, "Hæ Ph¸ch Th¹ch CÊp 5");
+	AddItem(2, 22, 405, 100);	
 	WriteLogEx("Get_Gem","NhËn ®¸ quý", 100, "H¾c DiÖu Th¹ch CÊp 5");
+	AddItem(2, 22, 106, 100);
+	WriteLogEx("Get_Gem","NhËn ®¸ quý", 100, "HuyÕt TrÝch Th¹ch CÊp 6");
+	AddItem(2, 22, 206, 100);
+	WriteLogEx("Get_Gem","NhËn ®¸ quý", 100, "NguyÖt B¹ch Th¹ch CÊp 6");
+	AddItem(2, 22, 306, 100);
+	WriteLogEx("Get_Gem","NhËn ®¸ quý", 100, "Hæ Ph¸ch Th¹ch CÊp 6");
+	AddItem(2, 22, 406, 100);	
+	WriteLogEx("Get_Gem","NhËn ®¸ quý", 100, "H¾c DiÖu Th¹ch CÊp 6");
 end
 
 function Get_SkillApp()
@@ -1894,4 +1939,615 @@ function Join3Battle()
 	end
 	SetPlayerScript("\\script\\missions\\yp\\ywz\\mission.lua");
 	SendScript2VM("\\script\\missions\\yp\\ywz\\mission.lua", format("JoinYwzMission(%d)", nFightCamp));
+end
+
+function Get_Mored()
+	local tSay = {
+		-- "NhËn Thiªn H¹ V« Song/thvs",	
+	-- "NhËn HiÖu ChiÕn Tr­êng/hieudothong",
+		-- "NhËn TT3 LL3 TT4 LL4/ttll3",
+		 -- "NhËn TT1 LL/ttll1",
+		-- "NhËn Thiªn NghÜa/thienghia",
+		-- "NhËn Thiªn Chi tµng KiÕm/tctk",
+		-- "HHVD/huyhoang5",
+		-- "HHVD/huyhoang5",
+		-- "uÈn Linh cÊp 2/nhanul",
+		-- "Vâ L©m b¸ Chñ/vlbc",
+
+		-- "NhËn Vò KhÝ Nguyªn Tö/vknt",
+		-- "NhËn Vò Kh¶m /vkkham",
+		-- "NhËn Vò Opt zin /vkopt",
+		-- "NhËn §å Long §»ng Phông Vò/longdang",
+
+		-- "NhËn Thiªn Chi Viªm §Õ/thienchiviemde",
+		-- "NhËn Viªm §Õ/viemde",
+		"NhËn ®å buff/dobuffhttc",
+		-- "NhËn tö quang hiªn viªn thÇn binh/hienvienbinh",
+		-- "NhËn Cöu Thiªn Ngäc/cuuthienngoc",
+    	-- "NhËn B¹ch Kim Viªm §Õ/bkvd",
+--		"LuyÖn max skill trÊn ph¸i/maxtranphai",
+--		"NhËn Th«ng Thiªn/getTiLi",
+--		"NhËn Thien Chi T­íng Qu©n/thienchituongquan",
+--		"NhËn T­íng Qu©n/tuongquan",
+--		"C¸c Lo¹i Ngäc/ngoctoc",
+--      "C¸c Lo¹i Ngäc/ngocdame",
+
+		-- "§å 3 Lç/do3lo",
+		-- "Vu khi 3 Lç/vukhi",
+--		"QuÎ 8 qu¸i/que8w", 
+--		"Ngo¹i Trang/ngoaitrangnew", 
+		-- "Hµo HiÖp V« H¹/gethhvhlb", 
+				"LÖnh Bµi Hµo HiÖp V« H¹/gethhvhlb", 
+						"TÝn VËt 15/tinvat15", 
+		"NhËn trang søc ®eo h«ng 4 vs 5 sao/showKX",
+		"Trang søc c¸nh /trangsuccanh",
+		"T¹i h¹ chØ xem qua th«i/nothing",
+	}
+	Say(g_szTitle.."------------------", getn(tSay), tSay);
+end
+
+function dobuffhttc()
+	if gf_Judge_Room_Weight(3, 100) ~= 1 then
+		Talk(1,"",format("Tói kh«ng ®ñ %d « trèng", 3));
+		return 0;
+	end
+	local nBody 	= GetBody();
+--	AddItem(0,0,6,1,1,3,292,3,293,0,0,-1,0);
+	if nBody==1 then
+		AddItem(0,102,6,1,1,3,292,3,293,0,0,-1,0)
+		AddItem(0,101,6,1,1,3,292,3,293,0,0,-1,0)
+		AddItem(0,103,6,1,1,3,292,3,293,0,0,-1,0)
+		AddItem(0,100,6,1,1,3,292,3,293,0,0,-1,0)
+	end
+	if nBody==2 then
+		AddItem(0,102,35,1,1,3,292,3,293,0,0,-1,0)
+		AddItem(0,101,35,1,1,3,292,3,293,0,0,-1,0)
+		AddItem(0,103,35,1,1,3,292,3,293,0,0,-1,0)
+		AddItem(0,100,35,1,1,3,292,3,293,0,0,-1,0)
+	end
+	if nBody==3 then
+		AddItem(0,102,1,1,1,3,292,3,293,0,0,-1,0)
+		AddItem(0,101,40,1,1,3,292,3,293,0,0,-1,0)
+		AddItem(0,103,40,1,1,3,292,3,293,0,0,-1,0)
+		AddItem(0,100,40,1,1,3,292,3,293,0,0,-1,0)
+	end
+	if nBody==4 then
+		AddItem(0,102,1,1,1,3,292,3,293,0,0,-1,0)
+		AddItem(0,101,57,1,1,3,292,3,293,0,0,-1,0)
+		AddItem(0,103,57,1,1,3,292,3,293,0,0,-1,0)
+		AddItem(0,100,57,1,1,3,292,3,293,0,0,-1,0)
+	end
+end
+
+function showKX()
+	local tSay = {
+		g_szTitle.."Lùa chän",
+		-- "NhËn Th«n NguyÖt lÖnh (KX6)/Get_KimXa",
+		-- "Trang bÞ Kim xµ 4 (ngÉu nhiªn)/showKX4",
+		"Trang bÞ Kim xµ 5 (ngÉu nhiªn)/showKX5",
+		-- "Trang bÞ Kim xµ 6 (ngÉu nhiªn)/showKX6",
+		-- "Trang bÞ Kim xµ 7 (ngÉu nhiªn)/showKX7",
+	}
+	tinsert(tSay,"Ra khái/nothing");
+	SelectSay(tSay);	
+end;
+
+function showKX5()
+	tSay = {
+		"HiÖp cèt/#getRandomKX5(29)",
+		"Quû phï/#getRandomKX5(30)",
+		"§»ng v©n/#getRandomKX5(31)",
+	}
+	tinsert(tSay,"Ch­a muèn nhËn/nothing");
+	Say("Chän lo¹i kim xµ",getn(tSay),tSay);
+end;
+
+
+function getRandomKX5(nSet)
+	KXHC = {
+		[1] = {
+			[1955] = "Linh ho¹t - Vµng",
+			[1956] = "Th©n ph¸p - Vµng",
+		},
+		[2] = {
+			[1973] = "Néi c«ng - Vµng",
+			[1974] = "Søc m¹nh - Vµng",
+			[1975] = "C¨n cèt - Vµng",
+			[1976] = "T¨ng ®iÓm sinh lùc - Vµng",
+			[1977] = "T¨ng tû lÖ ®iÓm sinh lùc - Vµng",
+		},
+		[3] = {
+			[1997] = "B¹o kÝch - Vµng",
+			[1999] = "T¨ng ®iÓm sè ngo¹i c«ng - Vµng",
+			[2000] = "T¨ng ®iÓm sè néi c«ng - Vµng",
+			[2001] = "T¨ng ®iÓm sè néi ngo¹i - Vµng",
+			[2002] = "Toµn thuéc tÝnh - Vµng",
+		},
+		[4] = {
+			[2022] = "Phßng béc - Vµng",
+			[2023] = "Gi¶m béc - Vµng",
+			[2024] = "Hé gi¸p ngo¹i phßng - Vµng",
+			[2025] = "Hé gi¸p néi phßng - Vµng",
+			[2026] = "Hé gi¸p néi ngo¹i phßng - Vµng",
+			[2027] = "§iÓm sinh lùc - Vµng",
+		},
+		[5] = {
+			[2035] = "Linh ho¹t - Vµng",
+			[2036] = "Th©n ph¸p - Vµng",
+		},
+		[6] = {
+			[1] = {
+				[2055] = "T¨ng s¸t th­¬ng - Vµng",
+				[2056] = "C«ng kÝch kÌm ®éc - Vµng",
+				[2057] = "S¸t th­¬ng ®éc trïng - Vµng",
+			},
+			[2] = {
+				[2074] = "Tèc ®é ch¹y - Vµng",
+				[2075] = "Ph¸t huy Vâ c«ng - Vµng",
+				[2076] = "Gi¶m nöa chÞu th­¬ng - Vµng",
+				[2077] = "X¸c suÊt chuÈn x¸c - Vµng",
+				[2078] = "Toµn thuéc tÝnh - Vµng",
+			}
+		}
+	}
+	
+	KXQP = {
+		[1] = {
+			[2086] = "Søc m¹nh - Vµng",
+			[2087] = "C¨n cèt - Vµng",
+		},
+		[2] = {
+			[2104] = "Néi c«ng - Vµng",
+			[2105] = "Th©n ph¸p - Vµng",
+			[2106] = "Linh ho¹t - Vµng",
+			[2107] = "§iÓm sinh lùc - Vµng",
+			[2108] = "Tû lÖ ®iÓm sinh lùc - Vµng",
+		},
+		[3] = {
+			[2128] = "B¹o kÝch - Vµng",
+			[2130] = "§iÓm ngo¹i c«ng - Vµng",
+			[2131] = "§iÓm néi c«ng - Vµng",
+			[2132] = "§iÓm néi ngo¹i c«ng - Vµng",
+			[2133] = "T¨ng ®iÓm sinh lùc - Vµng",
+		},
+		[4] = {
+			[2153] = "Phßng béc - Vµng",
+			[2154] = "Gi¶m béc - Vµng",
+			[2155] = "Hé gi¸p ngo¹i phßng - Vµng",
+			[2156] = "Hé gi¸p néi phßng - Vµng",
+			[2157] = "Hé gi¸p néi ngo¹i phßng - Vµng",
+			[2158] = "§iÓm sinh lùc - Vµng",
+		},
+		[5] = {
+			[2169] = "Søc m¹nh - Vµng",
+			[2170] = "C¨n cèt - Vµng",
+			[2171] = "T¨ng tû lÖ ®iÓm sinh lùc - Vµng",
+		},
+		[6] = {
+			[1] = {
+				[2193] = "Giíi h¹n cao nhÊt ngo¹i c«ng vò khÝ - vµng ",
+				[2194] = "Giíi h¹n thÊp nhÊt ngo¹i c«ng vò khÝ - Vµng",
+				[2195] = "Tû lÖ ngo¹i c«ng - Vµng",
+				[2196] = "§iÓm tæng c«ng kÝch ngo¹i c«ng - Vµng",
+			},
+			[2] = {
+				[2213] = "Tèc ®é ch¹y - Vµng",
+				[2214] = "Ph¸t huy Vâ c«ng - Vµng",
+				[2215] = "Gi¶m nöa chÞu th­¬ng - Vµng",
+				[2216] = "X¸c suÊt chuÈn x¸c - Vµng",
+			}
+		}
+	}
+	
+	KXDV = {
+		[1] = {
+			[2225] = "Néi c«ng - Vµng",
+			[2226] = "C¨n cèt - Vµng",
+		},
+		[2] = {
+			[2243] = "Søc m¹nh - Vµng",
+			[2244] = "Th©n ph¸p - Vµng",
+			[2245] = "Linh ho¹t - Vµng",
+			[2246] = "§iÓm sinh lùc - Vµng",
+			[2247] = "Tû lÖ ®iÓm sinh lùc - Vµng",
+		},
+		[3] = {
+			[2267] = "B¹o kÝch - Vµng",
+			[2269] = "§iÓm ngo¹i c«ng - Vµng",
+			[2270] = "§iÓm néi c«ng - Vµng",
+			[2271] = "§iÓm néi ngo¹i c«ng - Vµng",
+			[2272] = "T¨ng ®iÓm sinh lùc - Vµng",
+		},
+		[4] = {
+			[2292] = "Phßng béc - Vµng",
+			[2293] = "Gi¶m béc - Vµng",
+			[2294] = "Hé gi¸p ngo¹i phßng - Vµng",
+			[2295] = "Hé gi¸p néi phßng - Vµng",
+			[2296] = "Hé gi¸p néi ngo¹i phßng - Vµng",
+			[2297] = "§iÓm sinh lùc - Vµng",
+		},
+		[5] = {
+			[2308] = "Néi c«ng - Vµng",
+			[2309] = "Th©n ph¸p - Vµng",
+			[2310] = "Linh ho¹t - Vµng",
+		},
+		[6] = {
+			[1] = {
+				[2332] = "Giíi h¹n cao nhÊt néi c«ng vò khÝ - Vµng",
+				[2333] = "Giíi h¹n thÊp nhÊt néi c«ng vò khÝ - Vµng",
+				[2334] = "Tû lÖ néi c«ng-vµng",
+				[2335] = "§iÓm tæng c«ng kÝch néi c«ng- vµng",
+			},
+			[2] = {
+				[2352] = "Tèc ®é ch¹y - Vµng",
+				[2353] = "Ph¸t huy Vâ c«ng - Vµng",
+				[2354] = "Gi¶m nöa chÞu th­¬ng - Vµng",
+				[2355] = "X¸c suÊt chuÈn x¸c - Vµng",
+				[2356] = "Rót ng¾n ®éng t¸c bÞ th­¬ng- Vµng",
+			}
+		}
+	}
+
+	local tSet = {};
+	if nSet == 29 then tSet = KXHC
+	elseif nSet == 30 then tSet = KXQP
+	elseif nSet == 31 then tSet = KXDV end;
+	if addSetofKX(tSet, nSet) == 1 then 
+		Msg2Player("NhËn kim xµ thµnh c«ng!");
+	end;
+
+end;
+function addSetofKX(tSet, nSet)
+	local r1,r2,r3,r4,r5,r6;
+	-- Add Phi phong
+	r1,r2,r3,r4,r5,r6 = getIndexs(tSet,1);
+	AddKX(152,nSet,r1,r2,r3,r4,r5,r6);
+	-- Add Huy ch­¬ng
+	r1,r2,r3,r4,r5,r6 = getIndexs(tSet,2);
+	AddKX(153,nSet,r1,r2,r3,r4,r5,r6);
+	-- Add ChiÕn hµi
+	r1,r2,r3,r4,r5,r6 = getIndexs(tSet,3);
+	AddKX(154,nSet,r1,r2,r3,r4,r5,r6);
+	return 1;
+end
+
+
+function getIndexs(tList,nPos)
+	local tSubList = {}
+	local nListLen = getn(tList);
+	
+	if nPos == 1 then
+		tSubList = tList[nListLen][1];
+	elseif nPos == 2 then
+		if getn(tList[nListLen]) == 3 then
+			tSubList = tList[nListLen][2];
+		else
+			tSubList = tList[nListLen][1];
+		end
+	elseif nPos == 3 then
+		if getn(tList[nListLen]) == 3 then 
+			tSubList = tList[nListLen][3];
+		else
+			tSubList = tList[nListLen][2];
+		end
+	end
+	
+	local r1,r2,r3,r4,r5,r6;
+	if nListLen == 6 then 			
+		r1 = getRandomIndex(tList[1]);
+		r2 = getRandomIndex(tList[2]);
+		r3 = getRandomIndex(tList[3]);
+		r4 = getRandomIndex(tList[4]);
+		r5 = getRandomIndex(tList[5]);
+		r6 = getRandomIndex(tSubList);
+		-- print(r1,r2,r3,r4,r5,r6);
+	elseif nListLen == 4 then 
+		r1 = getRandomIndex(tList[1]);
+		r2 = getRandomIndex(tList[2]);
+		r3 = getRandomIndex(tList[3]);
+		r4 = getRandomIndex(tSubList);
+	end
+		
+	return r1,r2,r3,r4,r5,r6;
+end;
+
+function getRandomIndex(tList)
+	local nIndexResult = -1;
+	if tList == nil then 
+		return 0
+	end
+	local nRandNum = random(tlen(tList));
+	local i = 0;
+	for k,v in tList do 
+		i = i+1;
+		if i == nRandNum then
+			nIndexResult = k;
+			break
+		end
+	end
+	return nIndexResult;
+end;
+
+function tlen(tList)
+	local i = 0;
+	for k,v in tList do 
+		i = i+1;
+	end
+	return i;
+end;
+
+function AddKX(nType,nSet,ID1,ID2,ID3,ID4,ID5,ID6)
+	local nResult,nItemIndex = AddItem(0,nType,nSet,1,4,-1,-1,-1,-1,-1,-1,0,10)
+    FeedItem(nItemIndex,1000000)
+	if ID5 ~= nil and ID6 ~= nil then 
+		SetItemFeedUpAttrs(nItemIndex,ID1,ID2,ID3,ID4,ID5,ID6);
+	else
+		SetItemFeedUpAttrs(nItemIndex,ID1,ID2,0,ID3,0,ID4);
+	end
+end
+
+function gethhvhlb()
+	AddItem(2,1,30944,1);
+	AddItem(2,1,30945,1);
+	AddItem(2,1,30946,1);
+	AddItem(2,1,30973,1);
+	AddItem(2,1,30974,2);
+end;
+
+function Vevang()
+	AddItem(2,1,30491,10,4)
+end;
+
+function tieudung_orther()
+	local tSay = {
+		g_szTitle.."Lùa chän",
+		"Nhan Bua Cuong Hoa/NhanBua",
+          -- "N©ng cao ®¼ng cÊp chuyÓn sinh nh©n vËt/player_reborn",
+			"Thay ®æi h­íng Phôc Sinh/change_PhucSinh",
+            -- "NhËn danh hiÖu/Get_Danh_Hieu2",
+            -- "T¨ng ®iÓm nh©n vËt/Get_Diem_Char",
+            -- "NhËn C¸c Lo¹i Nguyªn LiÖu/Get_Nguyen_Lieu",
+			-- "Thao t¸c bang héi/TongOperation",
+			-- "Thao t¸c Vò KhÝ/PS_VK",
+			-- "Thao t¸c kinh m¹ch (Kh«ng cã khi Open)/GetJingMai",
+			-- "Ngo¹i Trang C«ng Thµnh/ngoaitrang",			
+			"Phôc sinh thó c­ng/Pet_OP",
+		-- "NhËn ChiÕn T­îng/chientuong",
+		-- "Kü n¨ng sèng/Life_Skill",
+		-- "NhËn Thó Míi/nhanthucuoimoi",
+		"NhËn Thó C­ìi/thucuoipro",
+		-- "NhËn C¸nh/nguafake",
+				"VÐ vµng/Vevang",
+		"\nRa khái/nothing",
+	}
+	SelectSay(tSay);
+end
+
+function tieudung()
+	local tSay = {
+		g_szTitle.."Lùa chän",
+			 "NhËn L­u Ph¸i Ch©n QuyÓn vµ YÕu QuyÕt/Get_Book",
+		 "NhËn ®¸ quý/Get_Gem",
+			"NhËn 4000 vµng (Kh«ng cã khi Open)/Get_Money",
+ 		"NhËn Ên chuyÓn sinh/Get_An",
+		-- "Ma Dao thach 3/madao",
+		 "NhËn Cöu ChuyÓn Håi Hån §an/cuuchuyen",
+		 "NhËn M¸u /receiveTiLi",
+		 "NhËn HKDNP/hkdnp",
+		 "NhËn Lak/Get_Energy",
+		 "NhËn B¸nh Ng«/banhngo",
+		"\nRa khái/nothing",
+	}
+	SelectSay(tSay);
+end
+
+function  tinvat15()
+	AddItem(0,155,15,1);
+end;
+function NhanBua()
+	AddItem(2,1,30424,100);
+	AddItem(2,1,30425,100);
+	AddItem(2,1,30426,100);
+end
+
+function change_PhucSinh()
+	local tSay = {}
+	local tHeader = "§¹i hiÖp muèn thay ®æi theo h­íng nµo. §èi víi Phôc Sinh, sau khi thay ®æi sÏ bÞ vÒ level 10, h·y ®Õn g¾p B¹ch Tiªn Sinh (TuyÒn Ch©u) ®Ó nhËn l¹i level !!!!."		
+	tinsert(tSay, "H­íng Long Tö/#confirm_change_chuyensinh(1)")
+	tinsert(tSay, "H­íng Hæ Tö/#confirm_change_chuyensinh( 2)")
+	tinsert(tSay, "H­íng ¦ng Tö/#confirm_change_chuyensinh(3)")		
+	tinsert(tSay, "H­íng Phông Tö/#confirm_change_chuyensinh(4)")
+	tinsert(tSay, "T¹m thêi ta ch­a muèn thay ®æi/nothing")
+	Say(tHeader, getn(tSay), tSay)			
+end
+
+function confirm_change_chuyensinh(nWay)
+	local nNum_cs6 = GetPlayerRebornParam(0)
+	PlayerReborn(nNum_cs6,nWay) -- Thay ®æi h­íng chuyÓn Sinh 6 thµnh c«ng		
+	Talk(1,"", "Chóc mõng ®¹i hiÖp ®· thay ®æi h­íng Phôc Sinh thµnh c«ng !")		
+	Msg2Player("Chóc mõng ®¹i hiÖp ®· thay ®æi h­íng Phôc Sinh thµnh c«ng !")
+	SetLevel(99,0)
+	NewWorld(200,1353, 2876)
+end
+
+function thucuoipro()
+	if gf_Judge_Room_Weight(10, 100) ~= 1 then
+		Talk(1,"",format("Tói kh«ng ®ñ %d « trèng", 10));
+		return 0;
+	end
+	AddItem(0,105,30046,1,1,7,403,-1,-1,-1,-1);
+	AddItem(0,105,10107,1,1,7,403,-1,-1,-1,-1);
+	AddItem(0,105,10108,1,1,7,403,-1,-1,-1,-1);
+	AddItem(0,105,10109,1,1,7,403,-1,-1,-1,-1);
+	AddItem(0,105,10110,1,1,7,403,-1,-1,-1,-1);
+	AddItem(0,105,10111,1,1,7,403,-1,-1,-1,-1);
+end
+
+function  trangsuccanh()
+	-- Vâ T­¬ng Kim Lu©n
+	AddItem(0,120,121,1);
+	AddItem(0,121,85,1);
+	AddItem(0,119,97,1);
+	-- Vâ T­¬ng Kim Lu©n
+		AddItem(0,120,120,1);
+	AddItem(0,121,84,1);
+	AddItem(0,119,96,1);
+	
+		-- Phong Háa Liªn Thµn
+	AddItem(0,120,122,1);
+	AddItem(0,121,86,1);
+	AddItem(0,119,98,1);
+	--Nh­ ý
+	AddItem(0,119,17,1);
+	AddItem(0,119,18,1);
+	-- AddItem(0,119,19,1);
+	-- AddItem(0,119,20,1);
+	-- sieuphong
+	AddItem(0,121,17,1);
+	AddItem(0,121,18,1);
+	-- AddItem(0,121,19,1);
+	-- AddItem(0,121,20,1);
+	--Oanh TrÇn Vò
+	AddItem(0,120,17,1);
+	AddItem(0,120,18,1);
+	-- AddItem(0,120,19,1);
+	-- AddItem(0,120,20,1);
+	--L­u Quang
+	AddItem(0,119,21,1);
+	AddItem(0,119,22,1);
+	-- AddItem(0,119,23,1);
+	-- AddItem(0,119,24,1);	
+	--Tinh Th¸
+	AddItem(0,121,21,1);
+	AddItem(0,121,22,1);
+	-- AddItem(0,121,23,1);
+	-- AddItem(0,121,24,1);	
+	--Trî Ph­îng T­êng Loan
+	AddItem(0,120,21,1);
+	AddItem(0,120,22,1);
+	-- AddItem(0,120,23,1);
+	-- AddItem(0,120,24,1);	
+	--Lª TuyÕt
+	AddItem(0,120,235,1);
+	AddItem(0,120,236,1);
+	-- AddItem(0,120,237,1);
+	-- AddItem(0,120,238,1);	
+	--Lª v©n
+	AddItem(0,119,235,1);
+	AddItem(0,119,236,1);
+	-- AddItem(0,119,237,1);
+	-- AddItem(0,119,238,1);		
+	--lª song
+	AddItem(0,121,235,1);
+	AddItem(0,121,236,1);
+	-- AddItem(0,121,237,1);
+	-- AddItem(0,121,238,1);	
+	-- --c¸nh xanh
+	AddItem(0,120,227,1)
+	AddItem(0,120,228,1)
+	-- AddItem(0,120,229,1)
+	-- AddItem(0,120,230,1)
+	
+	AddItem(0,121,227,1)
+	AddItem(0,121,228,1)
+	-- AddItem(0,121,229,1)
+	-- AddItem(0,121,230,1)
+	
+	AddItem(0,119,227,1)
+	AddItem(0,119,228,1)
+	-- AddItem(0,119,229,1)
+	-- AddItem(0,119,230,1)
+end
+
+function Get_Book_ZhenJuan_20()
+	if gf_Judge_Room_Weight(7, 1, g_szTitle) ~= 1 then
+		return 0;
+	end
+
+	local nRoute	= GetPlayerRoute();
+--	AddItem(0,107,30019,10);
+	if nRoute == 2 then
+		AddItem(0,107,30018,10)
+	end
+	
+	if nRoute == 3 then
+		AddItem(0,107,30020,10)
+	end
+	
+	if nRoute == 4 then
+		AddItem(0,107,30019,10)
+	end
+	
+	if nRoute == 6 then
+		AddItem(0,107,30021,10)
+	end
+	
+	if nRoute == 8 then
+		AddItem(0,107,30022,10)
+	end
+	
+	if nRoute == 9 then
+		AddItem(0,107,30023,10)
+	end
+	
+	if nRoute == 11 then
+		AddItem(0,107,30024,10)
+	end
+	
+	if nRoute == 12 then
+		AddItem(0,107,30025,10)
+	end
+	
+	if nRoute == 14 then
+		AddItem(0,107,30026,10)
+	end
+	
+	if nRoute == 15 then
+		AddItem(0,107,30027,10)
+	end
+	
+	if nRoute == 17 then
+		AddItem(0,107,30028,10)
+	end
+	
+	if nRoute == 18 then
+		AddItem(0,107,30029,10)
+	end
+	
+	if nRoute == 20 then
+		AddItem(0,107,30030,10)
+	end
+	
+	if nRoute == 21 then
+		AddItem(0,107,30031,10)
+	end
+	if nRoute == 25 then--ÎèÏÉ
+		AddItem(0,107,30038,5,1,-1,-1,-1,-1,-1,-1,-1,0)
+	  --AddItem(0, 107, 222-20,5)
+	end
+	if nRoute == 26 then--ÎèÏÉ
+		AddItem(0,107,30039,5,1,-1,-1,-1,-1,-1,-1,-1,0)
+	 -- AddItem(0, 107, 222-20,5)
+	end
+	if nRoute == 27 then--ÎèÏÉ
+		AddItem(0,107,30040,5,1,-1,-1,-1,-1,-1,-1,-1,0)
+	  --AddItem(0, 107, 222-20,5)
+	end
+	if nRoute == 23 then--À¥¢ØÌìÊ¦
+		AddItem(0,107,30032,10)
+	end
+	
+	if nRoute == 29 then--ÎèÏÉ
+		AddItem(0,107,30033,10)
+	end
+	
+	if nRoute == 30 then--ÁéÅ®
+		AddItem(0,107,30034,10)
+	end
+	
+	gf_AddItemEx({0, 112, 158,	1, 4}, "L¨ng Ba Vi Bé toµn tËp");
+end
+
+function hkdnp()
+	AddItem(2,1,30490,5);
 end
