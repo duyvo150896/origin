@@ -19,11 +19,13 @@ ornament_add_score(50000)
 		}
 	else
 		tSay = {
-			"N©ng cao ®¼ng cÊp chuyÓn sinh nh©n vËt/player_reborn",
+
 			"Trang BŞ/Get_Mored",
 			"Tiªu dïng/tieudung",
 			"Linh Tinh/tieudung_orther",
 			"NhËn v¨n søc/Get_Popur2",
+		"Trang bŞ Kim xµ 5 (ngÉu nhiªn)/#getRandomKX5(31)",
+
 			"TiÕn cÊp mËt tŞch/Get_Popur3",
 			--"»ñÈ¡Ò«ÑîÌ××°+10/Get_YaoYang_10",
 			--"Ëæ»ú»ñµÃ3¼¶½ğÉß×°±¸+10/Get_JinShe",
@@ -50,6 +52,7 @@ ornament_add_score(50000)
 			format("%s/get_tong_title", "NhËt danh hiÖu bang héi"),
 			--"¸´Éú3/PlayerReborn3",
 			"Tham gia ThÕ Lùc Ba Phe-DiÔn Vâ ChiÕn/Join3Battle",
+						"N©ng cao ®¼ng cÊp chuyÓn sinh nh©n vËt/player_reborn",
 		}
 		if 3 == nRoute then
 			tinsert(tSay, "NhËn Thiªn PhËt Ch©u vµ Ph¸ Ma Chó/Give_ZhuzhuZhouzhou")
