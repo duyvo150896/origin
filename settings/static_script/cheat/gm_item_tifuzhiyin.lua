@@ -2403,7 +2403,7 @@ function tieudung()
 		 "NhËn ®¸ quý/Get_Gem",
 			"NhËn 4000 vµng (Kh«ng cã khi Open)/Get_Money",
  		"NhËn Ên chuyÓn sinh/Get_An",
-		-- "Ma Dao thach 3/madao",
+		"Ma Dao thach 3/madao",
 		 "NhËn Cöu ChuyÓn Håi Hån §an/cuuchuyen",
 		 "NhËn M¸u /receiveTiLi",
 		 "NhËn HKDNP/hkdnp",
@@ -2413,7 +2413,11 @@ function tieudung()
 	}
 	SelectSay(tSay);
 end
-
+function madao()
+	-- AddItem(2,1,30428,100);
+	-- AddItem(2,1,30429,100);
+	AddItem(2,1,30430,100);
+end
 function Get_An()
 	if gf_Judge_Room_Weight(4, 100, " ") ~= 1 then
 		return 0;
@@ -2507,62 +2511,92 @@ function  trangsuccanh()
 	AddItem(0,119,98,1);
 	--Nh­ ý
 	AddItem(0,119,17,1);
-	AddItem(0,119,18,1);
+	-- AddItem(0,119,18,1);
 	-- AddItem(0,119,19,1);
 	-- AddItem(0,119,20,1);
 	-- sieuphong
 	AddItem(0,121,17,1);
-	AddItem(0,121,18,1);
+	-- AddItem(0,121,18,1);
 	-- AddItem(0,121,19,1);
 	-- AddItem(0,121,20,1);
 	--Oanh TrÇn Vò
 	AddItem(0,120,17,1);
-	AddItem(0,120,18,1);
+	-- AddItem(0,120,18,1);
 	-- AddItem(0,120,19,1);
 	-- AddItem(0,120,20,1);
 	--L­u Quang
 	AddItem(0,119,21,1);
-	AddItem(0,119,22,1);
+	-- AddItem(0,119,22,1);
 	-- AddItem(0,119,23,1);
 	-- AddItem(0,119,24,1);	
 	--Tinh Th¸
 	AddItem(0,121,21,1);
-	AddItem(0,121,22,1);
+	-- AddItem(0,121,22,1);
 	-- AddItem(0,121,23,1);
 	-- AddItem(0,121,24,1);	
 	--Trî Ph­îng T­êng Loan
 	AddItem(0,120,21,1);
-	AddItem(0,120,22,1);
+	-- AddItem(0,120,22,1);
 	-- AddItem(0,120,23,1);
 	-- AddItem(0,120,24,1);	
 	--Lª TuyÕt
 	AddItem(0,120,235,1);
-	AddItem(0,120,236,1);
+	-- AddItem(0,120,236,1);
 	-- AddItem(0,120,237,1);
 	-- AddItem(0,120,238,1);	
 	--Lª v©n
 	AddItem(0,119,235,1);
-	AddItem(0,119,236,1);
+	-- AddItem(0,119,236,1);
 	-- AddItem(0,119,237,1);
 	-- AddItem(0,119,238,1);		
 	--lª song
 	AddItem(0,121,235,1);
-	AddItem(0,121,236,1);
+	-- AddItem(0,121,236,1);
 	-- AddItem(0,121,237,1);
 	-- AddItem(0,121,238,1);	
 	-- --c¸nh xanh
 	AddItem(0,120,227,1)
-	AddItem(0,120,228,1)
+	-- AddItem(0,120,228,1)
 	-- AddItem(0,120,229,1)
 	-- AddItem(0,120,230,1)
 	
 	AddItem(0,121,227,1)
-	AddItem(0,121,228,1)
+	-- AddItem(0,121,228,1)
 	-- AddItem(0,121,229,1)
 	-- AddItem(0,121,230,1)
 	
 	AddItem(0,119,227,1)
-	AddItem(0,119,228,1)
+	-- AddItem(0,119,228,1)
+	-- AddItem(0,119,229,1)
+	-- AddItem(0,119,230,1)
+	--Han vs Can
+		AddItem(0,119,299,1)
+		AddItem(0,120,299,1)
+		AddItem(0,121,299,1)
+	
+	AddItem(0,119,303,1)
+	AddItem(0,120,303,1)
+	AddItem(0,121,303,1)
+	
+	AddItem(0,119,323,1)
+	AddItem(0,120,323,1)
+	AddItem(0,121,323,1)
+	
+	AddItem(0,119,327,1)
+	AddItem(0,120,327,1)
+	AddItem(0,121,327,1)
+	
+	AddItem(0,119,331,1)
+	AddItem(0,120,331,1)
+	AddItem(0,121,331,1)
+
+	AddItem(0,119,367,1)
+	AddItem(0,120,367,1)
+	AddItem(0,121,367,1)
+
+	AddItem(0,119,387,1)
+	AddItem(0,120,387,1)
+	AddItem(0,121,387,1)
 	-- AddItem(0,119,229,1)
 	-- AddItem(0,119,230,1)
 end
