@@ -1876,11 +1876,11 @@ end
 Include("\\script\\isolate\\functions\\tong_title\\head.lua")
 tThings = {
 		{"LÞch luyÖn", function() 
-				gf_Modify('Popur2', 1000)
+				gf_Modify('Popur2', 10000)
 			end
 		},
 		{"§é cèng hiÕn Bang héi", function() 
-				add_tong_gxd(100)
+				add_tong_gxd(1000)
 			end
 		},
 		{"V¨n Søc-§Çu (Kh¾c b¶n)", function()
@@ -1904,7 +1904,8 @@ tThings = {
 			end
 		},
 		{"L­u Kim", function()
-			AddItem(2,1,31096,10)
+			AddItem(2,1,31096,999)
+			AddItem(2,201,13,999)
 			end
 		},
 	}
@@ -2599,6 +2600,14 @@ function  trangsuccanh()
 	AddItem(0,121,387,1)
 	-- AddItem(0,119,229,1)
 	-- AddItem(0,119,230,1)
+	
+	AddItem(0,119,251,1)
+	AddItem(0,120,251,1)
+	AddItem(0,121,251,1)
+	
+	AddItem(0,119,271,1)
+	AddItem(0,120,271,1)
+	AddItem(0,121,271,1)
 end
 
 function Get_Book_ZhenJuan_20()
