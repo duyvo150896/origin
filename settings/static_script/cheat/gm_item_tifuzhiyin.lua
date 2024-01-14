@@ -2218,7 +2218,7 @@ function getRandomKX5(nSet)
 			[2226] = "C¨n cèt - Vµng",
 		},
 		[2] = {
-			[2243] = "Søc m¹nh - Vµng",
+			-- [2243] = "Søc m¹nh - Vµng",
 			[2244] = "Th©n ph¸p - Vµng",
 			[2245] = "Linh ho¹t - Vµng",
 			[2246] = "§iÓm sinh lùc - Vµng",
@@ -2226,7 +2226,7 @@ function getRandomKX5(nSet)
 		},
 		[3] = {
 			[2267] = "B¹o kÝch - Vµng",
-			[2269] = "§iÓm ngo¹i c«ng - Vµng",
+			-- [2269] = "§iÓm ngo¹i c«ng - Vµng",
 			[2270] = "§iÓm néi c«ng - Vµng",
 			[2271] = "§iÓm néi ngo¹i c«ng - Vµng",
 			[2272] = "T¨ng ®iÓm sinh lùc - Vµng",
@@ -2234,9 +2234,9 @@ function getRandomKX5(nSet)
 		[4] = {
 			[2292] = "Phßng béc - Vµng",
 			[2293] = "Gi¶m béc - Vµng",
-			[2294] = "Hé gi¸p ngo¹i phßng - Vµng",
-			[2295] = "Hé gi¸p néi phßng - Vµng",
-			[2296] = "Hé gi¸p néi ngo¹i phßng - Vµng",
+			-- [2294] = "Hé gi¸p ngo¹i phßng - Vµng",
+			-- [2295] = "Hé gi¸p néi phßng - Vµng",
+			-- [2296] = "Hé gi¸p néi ngo¹i phßng - Vµng",
 			[2297] = "§iÓm sinh lùc - Vµng",
 		},
 		[5] = {
@@ -2246,10 +2246,10 @@ function getRandomKX5(nSet)
 		},
 		[6] = {
 			[1] = {
-				[2332] = "Giíi h¹n cao nhÊt néi c«ng vò khÝ - Vµng",
-				[2333] = "Giíi h¹n thÊp nhÊt néi c«ng vò khÝ - Vµng",
+				-- [2332] = "Giíi h¹n cao nhÊt néi c«ng vò khÝ - Vµng",
+				-- [2333] = "Giíi h¹n thÊp nhÊt néi c«ng vò khÝ - Vµng",
 				[2334] = "Tû lÖ néi c«ng-vµng",
-				[2335] = "§iÓm tæng c«ng kÝch néi c«ng- vµng",
+				-- [2335] = "§iÓm tæng c«ng kÝch néi c«ng- vµng",
 			},
 			[2] = {
 				[2352] = "Tèc ®é ch¹y - Vµng",
@@ -2417,7 +2417,7 @@ end
 function madao()
 	-- AddItem(2,1,30428,100);
 	-- AddItem(2,1,30429,100);
-	AddItem(2,1,30430,100);
+	AddItem(2,1,30430,999);
 end
 function Get_An()
 	if gf_Judge_Room_Weight(4, 100, " ") ~= 1 then
