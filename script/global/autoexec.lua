@@ -165,8 +165,12 @@ function main()
 	AddReborn3TaskNpc(); --复生3任务NPC
 	--SendScript2VM("\\script\\function\\vip_card\\ac_head.lua", "ac_RegisterEvents()"); --注册活动卡事件
 	AddJDYYNpc(); --添加剑荡燕云NPC
+	NPCLuyenCong();
 end;
-
+function NPCLuyenCong()
+	local nNpcIndex = CreateNpc("Xa phu Trung Nguy猲","LC",  219, 1520, 2988)
+	SetNpcScript(nNpcIndex, "\\script\\global\\npc_luyencong.lua")
+end
 function ApplyRelayInitData()
 	GetBattleData(0,7)			-- 取战场信息
 	ApplyCityWarData(0,0)			-- 取攻城战信息
